@@ -1,0 +1,224 @@
+{
+  "updated_at": "2026-10-25 00:51:06",
+  "battery": "조회 불가 (센서 정보 미제공)",
+  "kis_system": {
+    "name": "한투 500만 원 AI 자율 매매 펀드",
+    "mode": "100% 오토파일럿 (Full Autonomous Trading)",
+    "budget_limit": 5000000,
+    "frozen_reserve": 45000000,
+    "buy_threshold": 75,
+    "sell_threshold": 70,
+    "target_order_krw": 450000,
+    "max_per_stock_krw": 1500000,
+    "max_share_price_krw": 500000,
+    "auto_trade": true,
+    "schedule": "평일 정규장 10:00 / 14:30 (1일 2회 정기 자율 매매)",
+    "realtime_monitor": "정규장 5분 주기 급락 감시 (2시간 쿨다운 & -1.0%p 재개입)",
+    "rebalance_mode": true,
+    "rebalance_deadline": "2026-11-06",
+    "current_excess_amt": 5452500,
+    "macro_filter": {
+      "benchmark": "코스피200 (069500 KODEX 200)",
+      "rules": [
+        {
+          "regime": "☀️ 정상·강세장",
+          "condition": "지수 20일 이동평균선 상회 및 안정세",
+          "effect": "기본 매수 기준(75점↑) 적용"
+        },
+        {
+          "regime": "⚠️ 약세·조정장",
+          "condition": "지수 -1.2% 하락 또는 20일선 하회",
+          "effect": "매수 커트라인 +7점 강화 (82점↑ 필수)"
+        },
+        {
+          "regime": "🚨 패닉 폭락장",
+          "condition": "지수 당일 -2.5% 이상 급락",
+          "effect": "소나기 피하기 원칙 - 당일 신규 매수 전면 동결(락다운)"
+        }
+      ]
+    },
+    "volatility_guard": {
+      "indicator": "14일 일평균 변동성 진폭 비율 (ATR %)",
+      "tiers": [
+        {
+          "tier": "저변동 방어주",
+          "range": "ATR < 1.8%",
+          "warn": "-4.0%",
+          "stop": "-5.5%",
+          "desc": "빠른 손절로 추세 붕괴 방어"
+        },
+        {
+          "tier": "중변동 표준주",
+          "range": "1.8% <= ATR <= 3.0%",
+          "warn": "-5.0%",
+          "stop": "-7.0%",
+          "desc": "표준 리스크 관리선 적용"
+        },
+        {
+          "tier": "고변동 주도주",
+          "range": "ATR > 3.0%",
+          "warn": "-6.0%",
+          "stop": "-8.5%",
+          "desc": "일시적 흔들기에 억울한 손절(휩소) 방지"
+        }
+      ]
+    },
+    "execution_engine": {
+      "order_type": "현재가 지정가 주문 (호가 공백 방어)",
+      "unfilled_guard": "주문 12초 후 체결 잔량 조회 ➡️ 미체결 시 시장가 정정 및 취소 후 재주문 (100% 체결 보증)"
+    },
+    "watch_basket": [
+      {
+        "code": "005930",
+        "name": "삼성전자"
+      },
+      {
+        "code": "005380",
+        "name": "현대차"
+      },
+      {
+        "code": "105560",
+        "name": "KB금융"
+      },
+      {
+        "code": "035420",
+        "name": "NAVER"
+      },
+      {
+        "code": "267260",
+        "name": "HD현대일렉트릭"
+      },
+      {
+        "code": "091160",
+        "name": "KODEX 반도체"
+      }
+    ]
+  },
+  "toss_system": {
+    "name": "토스증권 실전 계좌 AI 자문 비서",
+    "account_no": "17601069723",
+    "mode": "100% 조회 전용 자문 비서 (Safety First - 주문 집행 0%)",
+    "krw_cash": 289734,
+    "usd_cash": 516.0,
+    "schedule": "평일 10:05 / 14:35 (매일 2회 전 종목 AI 타점 정기 브리핑)",
+    "features": [
+      "100% 안전한 읽기 전용: 시스템 오류나 AI 환각으로 인한 오주문 사고 원천 차단",
+      "가용 예수금 기반 현실적 코칭: 현재 예수금으로 살 수 있는 1~3주 단위 분할 물타기/불타기 제시",
+      "1:1 자연어 대화: 텔레그램 방에서 자유 질문 시 실시간 계좌 기반 맞춤 답변",
+      "AI 추천 유망주 바스켓: 포트폴리오 빈틈(빅테크, S&P500 지수, 전력인프라) 보완 우량주 추천"
+    ],
+    "holdings_count": 5,
+    "holdings": [
+      {
+        "symbol": "005930",
+        "name": "삼성전자",
+        "marketCountry": "KR",
+        "currency": "KRW",
+        "quantity": 21.0,
+        "lastPrice": 213500.0,
+        "averagePurchasePrice": 264000.0,
+        "profitLossRate": -19.12,
+        "profitLossAmount": -1060500.0,
+        "rsi": 26.0,
+        "investor_summary": "최근(10-23) 순매수: 외국인 -735,905주, 기관 +362,734주 (개인 +11,630주)",
+        "ai_decision": "추매 추천",
+        "ai_score": 82,
+        "ai_action_tip": "토스 원화 예수금 28.9만 원으로 1주 추가 매수 시 평단가 264,000원 -> 262,250원으로 하락 효과",
+        "ai_reason": "14일 RSI가 26.0으로 강한 과매도 구간에 진입해 있고 기관의 저가 매수세가 유입되는 중입니다. 테일러 공장 투자 및 노조 성과급 개선 추진 등 펀더멘털 개선 기대감이 있어 현재의 큰 낙폭은 평단가를 낮추기 좋은 기회입니다."
+      },
+      {
+        "symbol": "000660",
+        "name": "SK하이닉스",
+        "marketCountry": "KR",
+        "currency": "KRW",
+        "quantity": 1.0,
+        "lastPrice": 1263000.0,
+        "averagePurchasePrice": 1710000.0,
+        "profitLossRate": -26.14,
+        "profitLossAmount": -447000.0,
+        "rsi": 21.1,
+        "investor_summary": "최근(10-23) 순매수: 외국인 -507,444주, 기관 +456,833주 (개인 +73,520주)",
+        "ai_decision": "홀딩 관망",
+        "ai_score": 62,
+        "ai_action_tip": "가용 예수금(28.9만 원)으로 현재가(126.3만 원) 주식 추가 매수가 불가능하므로, 14일 RSI 21.1의 과매도 반등을 기다리며 홀딩 유지",
+        "ai_reason": "14일 RSI가 21.1로 극심한 과매도 구간이나, 현재 가용 예수금(약 28.9만 원)이 주가(126.3만 원)에 못 미쳐 추가 매수가 불가능합니다. 솔리다임 미국 상장 중단 및 외국인 매도세 속에서 섣부른 대응보다는 반등 흐름을 지켜보며 홀딩하는 것이 안전합니다."
+      },
+      {
+        "symbol": "KO",
+        "name": "코카콜라",
+        "marketCountry": "US",
+        "currency": "USD",
+        "quantity": 4.0,
+        "lastPrice": 92.71,
+        "averagePurchasePrice": 88.02,
+        "profitLossRate": 5.32,
+        "profitLossAmount": 18.76,
+        "rsi": 70.1,
+        "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
+        "ai_decision": "분할매도 추천",
+        "ai_score": 85,
+        "ai_action_tip": "토스 앱에서 현재 보유 중인 4주 중 1~2주 일부 매도를 통해 확실한 수익 실현 권장",
+        "ai_reason": "14일 RSI가 70.5로 단기 과열 구간에 진입했으며, 최근 EU 그린워싱 이슈 등 규제 노이즈가 발생한 시점에서 +5.41%의 수익률을 확정하는 것이 유리합니다. 당일 -2.89% 조정을 보이고 있으나, 충분히 매력적인 수익권이므로 비중을 일부 축소하여 리스크를 관리하세요."
+      },
+      {
+        "symbol": "SCHD",
+        "name": "SCHD",
+        "marketCountry": "US",
+        "currency": "USD",
+        "quantity": 4.0,
+        "lastPrice": 35.27,
+        "averagePurchasePrice": 34.3786,
+        "profitLossRate": 2.59,
+        "profitLossAmount": 3.5656,
+        "rsi": 84.4,
+        "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
+        "ai_decision": "분할매도 추천",
+        "ai_score": 85,
+        "ai_action_tip": "현재가 $35.26 기준 전고점 과열 구간이므로, 보유 4주 중 일부(1~2주)를 분할 매도하여 수익을 실현하거나 예수금을 확보하세요.",
+        "ai_reason": "14일 RSI가 84.1로 강력한 과열 구간에 진입하여 단기 조정 압력이 높고, 현재 +2.56%의 수익률을 기록 중이므로 일부 이익 실현이 유리합니다. 최근 삼성자산운용의 유사 상품 출시 등 경쟁 심화 뉴스와 연계하여 포트폴리오 비중을 점검할 시점입니다."
+      },
+      {
+        "symbol": "SGOV",
+        "name": "SGOV",
+        "marketCountry": "US",
+        "currency": "USD",
+        "quantity": 3.0,
+        "lastPrice": 100.66,
+        "averagePurchasePrice": 100.58,
+        "profitLossRate": 0.07,
+        "profitLossAmount": 0.24,
+        "rsi": 100.0,
+        "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
+        "ai_decision": "추매 추천",
+        "ai_score": 85,
+        "ai_action_tip": "가용 예수금 $516.00 중 $100.65를 활용해 1주 추가 매수 시 안전한 초단기 국채 포트폴리오 비중 확대 효과",
+        "ai_reason": "고금리 장기화 우려로 자금이 단기국채 ETF로 몰리는 머니무브 흐름이 이어지며 SGOV의 안정적 펀더멘털이 부각되고 있습니다. 평단가($100.58)와 현재가($100.65)가 거의 일치하고 넉넉한 달러 예수금을 보유하고 있어, 적립식 관점의 추가 매수에 매우 유리한 타이밍입니다."
+      }
+    ]
+  },
+  "infrastructure": {
+    "hardware": "삼성 갤럭시 S10 (안드로이드 Termux 리눅스 상시 구동 홈서버)",
+    "ai_brain": "Google Gemini 3.5 Flash / Flash Lite (6단계 자동 모델 폴백 체인)",
+    "kis_api": "한국투자증권 국내주식 주문/시세/잔고/수급/차트 Open API",
+    "toss_api": "토스증권 WTS OAuth2 & 시세/보유종목/예수금 Open API",
+    "communication": "텔레그램 봇 2채널 완전 분리 (@jmu_trading_bot + @jmu_toss_assistant_bot)",
+    "dashboards": [
+      {
+        "name": "한투 500만 펀드 대시보드",
+        "url": "https://jmu9203-svg.github.io/kis-dashboard/"
+      },
+      {
+        "name": "토스 실전 비서 대시보드",
+        "url": "https://jmu9203-svg.github.io/toss-dashboard/"
+      },
+      {
+        "name": "내 배당금 캘린더",
+        "url": "https://jmu9203-svg.github.io/dividend-calendar/"
+      },
+      {
+        "name": "시스템 구조 & 전략 백서",
+        "url": "https://jmu9203-svg.github.io/system-architecture/"
+      }
+    ]
+  }
+}
