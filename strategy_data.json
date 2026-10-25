@@ -1,7 +1,148 @@
 {
-  "updated_at": "2026-10-25 22:36:13",
+  "updated_at": "2026-10-25 22:39:10",
   "battery": "85% (⚡ 충전 중, 23.9°C)",
-  "market_intel": {},
+  "market_intel": {
+    "updated_at": "2026-10-25 22:34:22",
+    "us_bigtech_summary": "오는 10월 28일 알파벳(구글, EPS $2.94), 마이크로소프트(EPS $4.71)를 시작으로 29일 아마존(EPS $2.01), 인텔(EPS $0.28) 등 주요 빅테크의 실적 발표가 집중되어 있습니다. 증시 운명을 좌우할 대형 기술주들의 AI 설비투자(CapEx) 성과 검증이 최대 화두입니다.",
+    "us_official_calendar": [
+      {
+        "date": "2026-10-27",
+        "dday": 2,
+        "symbol": "KO",
+        "kr_name": "코카콜라",
+        "time_desc": "미 장시작 전(한국시간 당일 밤 21:30경)",
+        "eps_forecast": "$0.87",
+        "quarter": "Sep/2026"
+      },
+      {
+        "date": "2026-10-28",
+        "dday": 3,
+        "symbol": "GOOG",
+        "kr_name": "알파벳(구글)",
+        "time_desc": "미 장마감 후(한국시간 익일 새벽 05:00경)",
+        "eps_forecast": "$2.94",
+        "quarter": "Sep/2026"
+      },
+      {
+        "date": "2026-10-28",
+        "dday": 3,
+        "symbol": "MSFT",
+        "kr_name": "마이크로소프트",
+        "time_desc": "미 장마감 후(한국시간 익일 새벽 05:00경)",
+        "eps_forecast": "$4.71",
+        "quarter": "Sep/2026"
+      },
+      {
+        "date": "2026-10-28",
+        "dday": 3,
+        "symbol": "KLAC",
+        "kr_name": "KLA(반도체장비)",
+        "time_desc": "미 장마감 후(한국시간 익일 새벽 05:00경)",
+        "eps_forecast": "$1.18",
+        "quarter": "Sep/2026"
+      },
+      {
+        "date": "2026-10-29",
+        "dday": 4,
+        "symbol": "AMZN",
+        "kr_name": "아마존",
+        "time_desc": "미 장마감 후(한국시간 익일 새벽 05:00경)",
+        "eps_forecast": "$2.01",
+        "quarter": "Sep/2026"
+      },
+      {
+        "date": "2026-10-29",
+        "dday": 4,
+        "symbol": "LLY",
+        "kr_name": "일라이릴리",
+        "time_desc": "미 장시작 전(한국시간 당일 밤 21:30경)",
+        "eps_forecast": "$5.38",
+        "quarter": "Sep/2026"
+      },
+      {
+        "date": "2026-10-29",
+        "dday": 4,
+        "symbol": "INTC",
+        "kr_name": "인텔",
+        "time_desc": "미 장마감 후(한국시간 익일 새벽 05:00경)",
+        "eps_forecast": "$0.28",
+        "quarter": "Sep/2026"
+      }
+    ],
+    "kr_macro_summary": "코스피는 美 반도체 급락 및 외국인 수급 변동성 확대 속에서 삼성전자, SK하이닉스, 현대차 등 시총 상위 기업들의 3분기 실적 발표 슈퍼위크(10/27~10/29)를 맞이하고 있습니다. 환율 하락과 외인 매도세 속에서 실적 발표 직전 추격 매수를 자제하고 리스크 관리가 필요합니다.",
+    "earnings_alert_level": "HIGH_VOLATILITY",
+    "stock_notes": {
+      "005930": {
+        "name": "삼성전자",
+        "earnings_imminent": true,
+        "earnings_status": "2026-10-29 (D-4) 3분기 경영실적 공식 발표 예정",
+        "memo": "분기 영업익 100조 기대감 및 HBM4 성과가 주목되나, 발표 직전 추격 매수를 금지하고 외국인 수급과 실적 컨센서스 부합 여부 확인 후 진입할 것.",
+        "official_ir_schedule": "2026-10-29 (D-4) 2026년 3분기 경영실적 발표",
+        "ir_date": "2026-10-29",
+        "ir_dday": 4,
+        "consensus_target_price": "495,227"
+      },
+      "000660": {
+        "name": "SK하이닉스",
+        "earnings_imminent": true,
+        "earnings_status": "2026-10-28 (D-3) 2026년 3분기 경영실적 공식 발표 예정",
+        "memo": "최근 주가 급락과 실적 발표가 맞물려 변동성이 극심하므로, 공식 실적 및 메모리 업황 가이던스를 확인한 뒤 분할 매수 관점으로 접근할 것.",
+        "official_ir_schedule": "2026-10-28 (D-3) 2026년 3분기 경영실적",
+        "ir_date": "2026-10-28",
+        "ir_dday": 3,
+        "consensus_target_price": "3,257,727"
+      },
+      "005380": {
+        "name": "현대차",
+        "earnings_imminent": true,
+        "earnings_status": "2026-10-29 (D-4) 2026년 3분기 경영실적 공식 발표 예정",
+        "memo": "낮아진 눈높이와 환율 리스크가 상존하므로, 실적 발표 전까지 포지션을 축소하고 확정 실적 및 환율 방어력을 검증한 후 대응할 것.",
+        "official_ir_schedule": "2026-10-29 (D-4) 현대자동차, 2026년 3분기 경영실적",
+        "ir_date": "2026-10-29",
+        "ir_dday": 4,
+        "consensus_target_price": "598,800"
+      },
+      "105560": {
+        "name": "KB금융",
+        "earnings_imminent": true,
+        "earnings_status": "2026-10-29 (D-4) 2026년 3분기 경영실적 공식 발표 예정",
+        "memo": "금융주 중 가장 양호한 실적이 예상되나 대내외 매크로 불확실성을 고려해 분할 매수 위주로 대응하고 실적 발표 직후 변동성에 유의할 것.",
+        "official_ir_schedule": "2026-10-29 (D-4) 2026년 3분기 경영실적",
+        "ir_date": "2026-10-29",
+        "ir_dday": 4,
+        "consensus_target_price": "219,850"
+      },
+      "035420": {
+        "name": "NAVER",
+        "earnings_imminent": false,
+        "earnings_status": "공식 확정 IR 일정 미등록(발표 완료 또는 대기)",
+        "memo": "핵심 성장 스토리와 3분기 우려 요인이 혼재되어 있으므로, IT 섹터 전반의 수급 흐름을 모니터링하며 보수적으로 관망할 것.",
+        "official_ir_schedule": "향후 공식 IR 일정 미등록",
+        "ir_date": null,
+        "ir_dday": null,
+        "consensus_target_price": "320,125"
+      },
+      "267260": {
+        "name": "HD현대일렉트릭",
+        "earnings_imminent": true,
+        "earnings_status": "2026-10-27 (D-2) 2026년 3분기 경영실적 공식 발표 예정",
+        "memo": "전력기기 호실적 기대감이 유효하나 D-2 임박에 따른 환율 역풍 및 차익실현 매물 출회 가능성을 염두에 두고 단기 변동성에 철저히 대비할 것.",
+        "official_ir_schedule": "2026-10-27 (D-2) 2026년 3분기 경영실적",
+        "ir_date": "2026-10-27",
+        "ir_dday": 2,
+        "consensus_target_price": "1,069,167"
+      },
+      "091160": {
+        "name": "KODEX 반도체",
+        "earnings_imminent": true,
+        "earnings_status": "삼성전자·SK하이닉스 실적 발표(10/28~10/29) 직동 연동",
+        "memo": "한·미 반도체 주가 급락세와 대형주 실적 발표가 맞물려 있으므로, 지수 저점 확인 전까지 무리한 추격 매수를 금지하고 관망할 것.",
+        "official_ir_schedule": "향후 공식 IR 일정 미등록",
+        "ir_date": null,
+        "ir_dday": null
+      }
+    }
+  },
   "kis_system": {
     "name": "한투 500만 원 AI 자율 매매 펀드",
     "mode": "100% 오토파일럿 (Full Autonomous Trading)",
