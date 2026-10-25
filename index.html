@@ -283,7 +283,7 @@
     </div>
 
     <div class="guard-box" style="border-left: 3px solid var(--blue);">
-      <div class="guard-title" style="color: #60a5fa;">3️⃣ 12초 미체결 매수/매도 분리 정정 & 토스 WTS 예외 격리</div>
+      <div class="guard-title" style="color: #60a5fa;">3️⃣ 12초 미체결 매수/매도 분리 정정 &amp; 토스 WTS 예외 격리</div>
       <p style="color: var(--text-sub); line-height: 1.5; margin-bottom: 6px;">
         주문 12초 후 미체결 잔량 감지 시 <b>매수와 매도의 정정 방식을 엄격히 분리</b>하고, 듀얼 트랙 간 예외를 100% 격리합니다.
       </p>
@@ -291,6 +291,20 @@
         • <b>🔴 매도(익절·손절) 미체결</b>: <b>시장가('01') 즉시 정정</b> (또는 -1.5% 공격적 재주문)으로 100% 체결 보증<br>
         • <b>🟢 매수 미체결</b>: 한투 API 상한가(+30%) 증거금 거부 에러 방지를 위해 <b>시장가 전환 금지 → 현재가 +0.5% 재지정가('00') 정정</b> (또는 안전 취소)<br>
         • <b>🛡️ 토스 WTS 예외 격리(Isolation)</b>: 토스 OAuth2 세션 만료 시 트랙 1(한투) 스레드 영향 0% 보장 + 12시간 쿨다운 조용한 알림
+      </div>
+    </div>
+
+    <div class="guard-box" style="border-left: 3px solid var(--green); margin-top: 10px;">
+      <div class="guard-title" style="color: var(--green);">4️⃣ 실전 고수 5대 디테일 지표 (API 추가부하 0% · 트레일링 스탑)</div>
+      <p style="color: var(--text-sub); line-height: 1.5; margin-bottom: 6px;">
+        기존 시세·일봉·수급 데이터에서 전업 트레이더들이 확인하는 5대 알짜 지표를 추출하여 가산점/감점 및 대시세 추종 익절에 반영합니다.
+      </p>
+      <div style="font-size: 12px; background: rgba(0,0,0,0.3); padding: 8px 10px; border-radius: 8px; line-height: 1.6;">
+        • <b>📊 거래량 폭발 비율</b>: 20일 평균 거래량 대비 당일 거래량 비율(%) 산출 (가짜 반등 감점 / 대량 거래량 돌파 가산점)<br>
+        • <b>🌊 5일 누적 &amp; 연속 수급</b>: 당일 수급뿐 아니라 최근 5거래일 누적 합계 및 외국인·기관 연속 매집 일수 추적<br>
+        • <b>🕯️ 당일 캔들 모양</b>: 장중 고점 대비 밀린 '긴 윗꼬리 음봉(상투 위험)' 감점 vs '아래꼬리 양봉 반등' 가산점<br>
+        • <b>💱 원/달러 환율 &amp; SOXX</b>: 외국인 수급 스위치인 환율(USD/KRW)과 미 필라델피아 반도체(SOXX) 실시간 연동<br>
+        • <b>🚀 50% 반절 익절 + 트레일링 스탑</b>: 2주 이상 보유 종목이 목표 익절선 도달 시 <b>절반(50%)만 먼저 익절</b>하고, 나머지는 <b>최고 수익률 대비 -2.5%p 꺾일 때까지 대시세를 끝까지 추종</b>
       </div>
     </div>
   </div>
@@ -416,8 +430,9 @@
       if (intel.us_bigtech_summary) {
         document.getElementById('intelUsSummary').textContent = intel.us_bigtech_summary;
       }
+      const fxSoxx = (intel.fx_soxx_info || {}).summary;
       if (intel.kr_macro_summary) {
-        document.getElementById('intelKrSummary').textContent = intel.kr_macro_summary;
+        document.getElementById('intelKrSummary').innerHTML = (fxSoxx ? `<div style="color:#34d399;font-weight:700;margin-bottom:4px;">💱 ${fxSoxx}</div>` : '') + intel.kr_macro_summary;
       }
       const sNotes = intel.stock_notes || {};
       const notesEl = document.getElementById('intelStockNotes');
