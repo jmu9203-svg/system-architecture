@@ -305,7 +305,8 @@
       장중(10:00/14:30) AI 과부하를 막기 위해 <b>휴장 시간(평일 아침 08:30 &amp; 수동 <code>/research</code>)에 미리 분석해 둔 컨닝페이퍼</b>입니다. 정규장 매매 시 AI가 추가 API 호출 없이 0.001초 만에 이 노트를 참조합니다.
     </p>
     <div class="guard-box" style="margin-bottom: 8px;">
-      <div class="guard-title" style="color: #60a5fa;">🇺🇸 미국 빅테크 실적 &amp; 글로벌 어닝 동향</div>
+      <div class="guard-title" style="color: #60a5fa;">🇺🇸 미국 나스닥(Nasdaq) 공식 빅테크 실적발표 달력 &amp; 동향</div>
+      <div id="intelUsCalendar" style="font-size: 11px; color: #93c5fd; line-height: 1.6; margin-bottom: 6px; background: rgba(0,0,0,0.35); padding: 6px 8px; border-radius: 6px;">공식 달력 조회 중...</div>
       <div id="intelUsSummary" style="font-size: 12px; color: var(--text-main); line-height: 1.5;">데이터 로딩 중...</div>
     </div>
     <div class="guard-box" style="margin-bottom: 8px;">
@@ -401,6 +402,17 @@
       if (intel.updated_at) {
         document.getElementById('intelUpdated').textContent = '기준: ' + intel.updated_at;
       }
+      const usCal = intel.us_official_calendar || [];
+      const usCalEl = document.getElementById('intelUsCalendar');
+      if (usCalEl) {
+        if (usCal.length > 0) {
+          usCalEl.innerHTML = usCal.map(ev =>
+            `<div>📅 <b>${ev.date} (D-${ev.dday})</b> · <b>${ev.kr_name} (${ev.symbol})</b> — <span style="color:var(--text-sub);">${ev.time_desc}</span> | 예상 EPS: <b style="color:var(--gold);">${ev.eps_forecast}</b></div>`
+          ).join('');
+        } else {
+          usCalEl.textContent = '향후 7일 내 주요 미국 빅테크 공식 실적발표 일정 없음';
+        }
+      }
       if (intel.us_bigtech_summary) {
         document.getElementById('intelUsSummary').textContent = intel.us_bigtech_summary;
       }
@@ -413,10 +425,12 @@
       if (keys.length > 0 && notesEl) {
         notesEl.innerHTML = keys.map(code => {
           const item = sNotes[code] || {};
-          const badge = item.earnings_imminent ? '<span style="color:#f04452;font-weight:700;">[🔔 실적임박 주의]</span> ' : '<span style="color:#00c471;">[📌 일반]</span> ';
+          const badge = item.earnings_imminent ? '<span style="color:#f04452;font-weight:700;">[🔔 공식 실적임박]</span> ' : '<span style="color:#00c471;">[📌 일반]</span> ';
+          const irLine = item.official_ir_schedule ? `<div style="color:#fbbf24;font-weight:600;margin-top:2px;">🗓️ 공식 일정: ${item.official_ir_schedule}${item.consensus_target_price ? ' | 증권사 목표주가: ' + item.consensus_target_price + '원' : ''}</div>` : '';
           return `<div style="background:rgba(0,0,0,0.3);padding:8px 10px;border-radius:8px;font-size:12px;line-height:1.5;">
-            <b>${item.name || code} (${code})</b> ${badge}<span style="color:var(--text-sub);">${item.earnings_status || ''}</span><br>
-            <span style="color:#e5e7eb;">➡️ ${item.memo || ''}</span>
+            <b>${item.name || code} (${code})</b> ${badge}<span style="color:var(--text-sub);">${item.earnings_status || ''}</span>
+            ${irLine}
+            <div style="color:#e5e7eb;margin-top:2px;">➡️ ${item.memo || ''}</div>
           </div>`;
         }).join('');
       }
