@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-26 23:23:01",
-  "battery": "54% (🔋 배터리 사용 중, 26.0°C)",
+  "updated_at": "2026-10-26 23:33:12",
+  "battery": "53% (🔋 배터리 사용 중, 26.2°C)",
   "market_intel": {
     "updated_at": "2026-10-25 23:01:56",
     "fx_soxx_info": {
@@ -152,12 +152,12 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-10-26 23:22:28",
-    "checked_ts": 1793024548,
+    "checked_at": "2026-10-26 23:32:40",
+    "checked_ts": 1793025160,
     "date": "2026-10-26",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
-    "scheduler_heartbeat_sec_ago": 23,
+    "scheduler_heartbeat_sec_ago": 3,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 4643635,
     "market_opened_today": false,
@@ -184,8 +184,8 @@
     "circuit_breaker_limit_pct": -3.5,
     "circuit_breaker_tripped": false,
     "circuit_breaker_reason": "",
-    "battery_str": "54% (🔋 배터리 사용 중, 26.0°C)",
-    "battery_pct": 54,
+    "battery_str": "53% (🔋 배터리 사용 중, 26.2°C)",
+    "battery_pct": 53,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
       "✅ 4,500만 원 동결금 및 500만 원 시드 분리 무결성 정상",
@@ -492,16 +492,12 @@
     },
     "watch_basket": [
       {
-        "code": "005930",
-        "name": "삼성전자"
-      },
-      {
         "code": "005380",
         "name": "현대차"
       },
       {
-        "code": "105560",
-        "name": "KB금융"
+        "code": "005930",
+        "name": "삼성전자"
       },
       {
         "code": "035420",
@@ -512,12 +508,12 @@
         "name": "HD현대일렉트릭"
       },
       {
-        "code": "091160",
-        "name": "KODEX 반도체"
-      },
-      {
         "code": "465580",
         "name": "ACE 미국빅테크TOP7 Plus"
+      },
+      {
+        "code": "105560",
+        "name": "KB금융"
       },
       {
         "code": "381180",
@@ -678,11 +674,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 92.14,
+        "lastPrice": 92.3,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 4.68,
-        "profitLossAmount": 16.48,
-        "rsi": 69.1,
+        "profitLossRate": 4.86,
+        "profitLossAmount": 17.12,
+        "rsi": 69.7,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 65,
@@ -695,11 +691,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 35.31,
+        "lastPrice": 35.3,
         "averagePurchasePrice": 34.3786,
-        "profitLossRate": 2.7,
-        "profitLossAmount": 3.7256,
-        "rsi": 84.0,
+        "profitLossRate": 2.68,
+        "profitLossAmount": 3.6856,
+        "rsi": 83.9,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 65,
