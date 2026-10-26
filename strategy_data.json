@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26 15:20:13",
+  "updated_at": "2026-10-26 15:25:42",
   "battery": "72% (🔋 배터리 사용 중, 23.8°C)",
   "market_intel": {
     "updated_at": "2026-10-26 08:30:11",
@@ -175,7 +175,7 @@
     "realtime_monitor": "정규장 5분 주기 급락 감시 (2시간 쿨다운 & -1.0%p 재개입)",
     "rebalance_mode": true,
     "rebalance_deadline": "2026-11-06",
-    "current_excess_amt": 0,
+    "current_excess_amt": 2318000,
     "macro_filter": {
       "benchmark": "코스피200 (069500 KODEX 200)",
       "rules": [
@@ -318,11 +318,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 93.23,
+        "lastPrice": 93.17,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 5.91,
-        "profitLossAmount": 20.84,
-        "rsi": 72.6,
+        "profitLossRate": 5.85,
+        "profitLossAmount": 20.6,
+        "rsi": 72.5,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 68,
