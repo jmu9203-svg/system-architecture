@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-10-26 21:10:47",
-  "battery": "59% (🔋 배터리 사용 중, 24.1°C)",
+  "updated_at": "2026-10-26 21:14:20",
+  "battery": "조회 불가 (센서 정보 미제공)",
   "market_intel": {
-    "updated_at": "2026-10-26 08:30:11",
+    "updated_at": "2026-10-25 23:01:56",
     "fx_soxx_info": {
-      "usd_krw": "1,325.50",
-      "usd_krw_change": "-0.50",
-      "usd_krw_rate": "-0.04",
+      "usd_krw": "1,326.90",
+      "usd_krw_change": "0.40",
+      "usd_krw_rate": "0.03",
       "soxx_price": "$478.20",
       "soxx_pct": "+0.53%",
-      "summary": "원/달러 환율: 1,325.50원 (전일대비 -0.50원 / -0.04%) | 미 필라델피아 반도체(SOXX): $478.20 (+0.53%)"
+      "summary": "원/달러 환율: 1,326.90원 (전일대비 0.40원 / 0.03%) | 미 필라델피아 반도체(SOXX): $478.20 (+0.53%)"
     },
-    "us_bigtech_summary": "10월 28일 알파벳(구글)과 마이크로소프트(MSFT)의 실적 발표를 시작으로 아마존, 인텔 등 빅테크 실적이 집중되며, 월가 컨센서스(MSFT $4.71, GOOG $2.94 등) 부합 여부가 나스닥 방향성을 결정합니다. 필라델피아 반도체 지수 반등세($478.20) 속에서 AI 설비투자 당위성 입증이 주요 관전 포인트입니다.",
+    "us_bigtech_summary": "10월 28일 마이크로소프트(EPS $4.71)와 알파벳(EPS $2.94)을 필두로 29일 아마존·인텔 등 빅테크 실적발표가 집중되어 있어 글로벌 증시의 변동성 확대가 예상됩니다. 미 필라델피아 반도체 지수 소폭 반등 속에서도 AI 설비투자 당위성 검증이 핵심 관전 포인트입니다.",
     "us_official_calendar": [
       {
         "date": "2026-10-27",
-        "dday": 1,
+        "dday": 2,
         "symbol": "KO",
         "kr_name": "코카콜라",
         "time_desc": "미 장시작 전(한국시간 당일 밤 21:30경)",
@@ -24,7 +24,7 @@
       },
       {
         "date": "2026-10-28",
-        "dday": 2,
+        "dday": 3,
         "symbol": "GOOG",
         "kr_name": "알파벳(구글)",
         "time_desc": "미 장마감 후(한국시간 익일 새벽 05:00경)",
@@ -33,7 +33,7 @@
       },
       {
         "date": "2026-10-28",
-        "dday": 2,
+        "dday": 3,
         "symbol": "MSFT",
         "kr_name": "마이크로소프트",
         "time_desc": "미 장마감 후(한국시간 익일 새벽 05:00경)",
@@ -42,7 +42,7 @@
       },
       {
         "date": "2026-10-28",
-        "dday": 2,
+        "dday": 3,
         "symbol": "KLAC",
         "kr_name": "KLA(반도체장비)",
         "time_desc": "미 장마감 후(한국시간 익일 새벽 05:00경)",
@@ -51,7 +51,7 @@
       },
       {
         "date": "2026-10-29",
-        "dday": 3,
+        "dday": 4,
         "symbol": "AMZN",
         "kr_name": "아마존",
         "time_desc": "미 장마감 후(한국시간 익일 새벽 05:00경)",
@@ -60,7 +60,7 @@
       },
       {
         "date": "2026-10-29",
-        "dday": 3,
+        "dday": 4,
         "symbol": "LLY",
         "kr_name": "일라이릴리",
         "time_desc": "미 장시작 전(한국시간 당일 밤 21:30경)",
@@ -69,71 +69,62 @@
       },
       {
         "date": "2026-10-29",
-        "dday": 3,
+        "dday": 4,
         "symbol": "INTC",
         "kr_name": "인텔",
         "time_desc": "미 장마감 후(한국시간 익일 새벽 05:00경)",
         "eps_forecast": "$0.28",
         "quarter": "Sep/2026"
-      },
-      {
-        "date": "2026-11-02",
-        "dday": 7,
-        "symbol": "AAPL",
-        "kr_name": "애플",
-        "time_desc": "미 장마감 후(한국시간 익일 새벽 05:00경)",
-        "eps_forecast": "$2",
-        "quarter": "Sep/2026"
       }
     ],
-    "kr_macro_summary": "원/달러 환율이 1,325.50원으로 안정세를 보이는 가운데, 10월 27일부터 29일까지 삼성전자, SK하이닉스, 현대차, KB금융 등 국내 대기업들의 3분기 공식 실적 발표가 집중됩니다. 외국인 수급의 변동성이 큰 시점이므로 실적 발표 직전 추격 매수를 자제하고 리스크 관리가 필요합니다.",
+    "kr_macro_summary": "원/달러 환율 1,326원대 속에서 외국인 수급 불확실성이 지속되는 가운데, 10월 27일 HD현대일렉트릭을 시작으로 28일 SK하이닉스, 29일 삼성전자·현대차·KB금융 등 국내 대형주들의 3분기 공식 실적 발표가 밀집해 있어 신중한 대응이 요구됩니다.",
     "earnings_alert_level": "HIGH_VOLATILITY",
     "stock_notes": {
       "005930": {
         "name": "삼성전자",
         "earnings_imminent": true,
-        "earnings_status": "2026-10-29 (D-3) 3분기 경영실적 공식 발표 예정",
-        "memo": "D-3 임박 및 HBM4 이슈가 집중되는 구간으로, 장중 AI는 성급한 추격 매수를 삼가고 실적 및 외인 수급 확인 후 진입할 것.",
-        "official_ir_schedule": "2026-10-29 (D-3) 2026년 3분기 경영실적 발표",
+        "earnings_status": "2026-10-29 (D-4) 3분기 경영실적 공식 발표 예정",
+        "memo": "DRAM 실적 기대감 유효하나 실적 발표 직전 추격 매수를 자제하고 공식 실적 및 외국인 수급 방향성 확인 후 진입할 것.",
+        "official_ir_schedule": "2026-10-29 (D-4) 2026년 3분기 경영실적 발표",
         "ir_date": "2026-10-29",
-        "ir_dday": 3,
+        "ir_dday": 4,
         "consensus_target_price": "495,227"
       },
       "000660": {
         "name": "SK하이닉스",
         "earnings_imminent": true,
-        "earnings_status": "2026-10-28 (D-2) 3분기 경영실적 공식 발표 예정",
-        "memo": "D-2 코앞이며 미국 빅테크 실적과 직결되므로, 실적 발표 전까지 변동성 확대에 대비해 신규 매수 보류 및 포지션 축소.",
-        "official_ir_schedule": "2026-10-28 (D-2) 2026년 3분기 경영실적",
+        "earnings_status": "2026-10-28 (D-3) 3분기 경영실적 공식 발표 예정",
+        "memo": "HBM4 모멘텀과 실적 발표 임박에 따른 변동성이 크므로, 장중 무리한 베팅을 피하고 실적 컨센서스 부합 여부 체크 후 대응할 것.",
+        "official_ir_schedule": "2026-10-28 (D-3) 2026년 3분기 경영실적",
         "ir_date": "2026-10-28",
-        "ir_dday": 2,
+        "ir_dday": 3,
         "consensus_target_price": "3,257,727"
       },
       "005380": {
         "name": "현대차",
         "earnings_imminent": true,
-        "earnings_status": "2026-10-29 (D-3) 현대자동차, 2026년 3분기 경영실적 공식 발표 예정",
-        "memo": "환율 리스크와 컨센서스 하회 우려가 상존하므로, 공식 실적 및 환율 방향성 확인 전까지 관망 유지.",
-        "official_ir_schedule": "2026-10-29 (D-3) 현대자동차, 2026년 3분기 경영실적",
+        "earnings_status": "2026-10-29 (D-4) 3분기 경영실적 공식 발표 예정",
+        "memo": "환율 리스크 및 눈높이 조정 우려가 있으므로 공식 실적 발표 전까지는 보수적인 관점을 유지할 것.",
+        "official_ir_schedule": "2026-10-29 (D-4) 현대자동차, 2026년 3분기 경영실적",
         "ir_date": "2026-10-29",
-        "ir_dday": 3,
+        "ir_dday": 4,
         "consensus_target_price": "598,800"
       },
       "105560": {
         "name": "KB금융",
         "earnings_imminent": true,
-        "earnings_status": "2026-10-29 (D-3) 2026년 3분기 경영실적 공식 발표 예정",
-        "memo": "금융주 중 가장 양호한 실적 흐름이 예상되나 발표 직전이므로 변동성에 유의하며 분할 매관 관점 접근.",
-        "official_ir_schedule": "2026-10-29 (D-3) 2026년 3분기 경영실적",
+        "earnings_status": "2026-10-29 (D-4) 3분기 경영실적 공식 발표 예정",
+        "memo": "견조한 펀더멘털과 호실적 전망이 우세하나 실적 발표일 직전까지는 외국인 수급 변동성을 모니터링하며 분할 매조지할 것.",
+        "official_ir_schedule": "2026-10-29 (D-4) 2026년 3분기 경영실적",
         "ir_date": "2026-10-29",
-        "ir_dday": 3,
+        "ir_dday": 4,
         "consensus_target_price": "219,850"
       },
       "035420": {
         "name": "NAVER",
         "earnings_imminent": false,
-        "earnings_status": "공식 확정 IR 일정 미등록 (발표 완료 또는 대기)",
-        "memo": "3분기 우려와 기대가 혼재된 구간으로, IT 섹터 전반의 미국 빅테크 실적 연동 흐름을 모니터링하며 대응.",
+        "earnings_status": "공식 IR 일정 미등록 (실적 시즌 영향권)",
+        "memo": "성장 스토리와 우려가 혼재되어 있으므로 빅테크 실적발표와 연동된 섹터 흐름을 확인하며 보수적으로 접근할 것.",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
@@ -142,23 +133,50 @@
       "267260": {
         "name": "HD현대일렉트릭",
         "earnings_imminent": true,
-        "earnings_status": "2026-10-27 (D-1) 2026년 3분기 경영실적 공식 발표 예정",
-        "memo": "D-1 초읽기에 돌입했으므로 일시적 환율 역풍 및 최대 실적 기대감을 감안해 신규 진입은 실적 발표 직후로 이연.",
-        "official_ir_schedule": "2026-10-27 (D-1) 2026년 3분기 경영실적",
+        "earnings_status": "2026-10-27 (D-2) 3분기 경영실적 공식 발표 예정",
+        "memo": "실적 발표가 코앞으로 다가온 만큼 일시적 환율 역풍 및 패키지 공급 효과를 감안해 신규 추격 매수보다는 발표 후 대응할 것.",
+        "official_ir_schedule": "2026-10-27 (D-2) 2026년 3분기 경영실적",
         "ir_date": "2026-10-27",
-        "ir_dday": 1,
+        "ir_dday": 2,
         "consensus_target_price": "1,069,167"
       },
       "091160": {
         "name": "KODEX 반도체",
         "earnings_imminent": true,
-        "earnings_status": "한·미 반도체(SK하이닉스·인텔 등) 공식 실적발표 주간과 연동",
-        "memo": "미국 반도체 지수 및 국내 메모리 거물들의 실적 발표 러시와 직결되므로, 변동성 완화 전까지 무리한 레버리지 매매 금지.",
+        "earnings_status": "한·미 반도체 핵심 기업 실적 발표 주간 연동",
+        "memo": "삼성전자·SK하이닉스 및 미국 반도체 실적 발표를 앞두고 변동성이 극심하므로 AI 자동매매 시 비중을 축소하고 관망할 것.",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null
       }
     }
+  },
+  "watchdog": {
+    "checked_at": "2026-10-26 21:14:20",
+    "checked_ts": 1793016860,
+    "date": "2026-10-26",
+    "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
+    "thread_status": "🟢 모든 스레드 정상 박동 중",
+    "scheduler_heartbeat_sec_ago": 0,
+    "monitor_heartbeat_sec_ago": 0,
+    "opening_fund_eval": 5000000,
+    "current_fund_eval": 4854559,
+    "daily_pnl_krw": -145441,
+    "daily_pnl_pct": -2.91,
+    "circuit_breaker_limit_pct": -3.5,
+    "circuit_breaker_tripped": false,
+    "circuit_breaker_reason": "",
+    "battery_str": "조회 불가 (센서 정보 미제공)",
+    "battery_pct": 100,
+    "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
+    "integrity_checks": [
+      "✅ 4,500만 원 동결금 및 500만 원 시드 분리 무결성 정상",
+      "✅ 손절/익절 가드레일 누락 착오 0건"
+    ],
+    "anomaly_count": 0,
+    "anomalies": [],
+    "last_battery_alert_ts": 0.0,
+    "last_anomaly_alert_ts": 0.0
   },
   "kis_system": {
     "name": "한투 500만 원 AI 자율 매매 펀드",
@@ -175,7 +193,7 @@
     "realtime_monitor": "정규장 5분 주기 급락 감시 (2시간 쿨다운 & -1.0%p 재개입)",
     "rebalance_mode": true,
     "rebalance_deadline": "2026-11-06",
-    "current_excess_amt": 2334000,
+    "current_excess_amt": 5452500,
     "macro_filter": {
       "benchmark": "코스피200 (069500 KODEX 200)",
       "rules": [
@@ -284,16 +302,16 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 21.0,
-        "lastPrice": 214000.0,
+        "lastPrice": 213500.0,
         "averagePurchasePrice": 264000.0,
-        "profitLossRate": -18.93,
-        "profitLossAmount": -1050000.0,
-        "rsi": 25.4,
-        "investor_summary": "최근(10-26) 순매수: 외인 -1,189,281주, 기관 +792,815주 (개인 +346,055주) | [5일누적: 외인 +2,217,872주, 기관 -2,555,287주]",
+        "profitLossRate": -19.12,
+        "profitLossAmount": -1060500.0,
+        "rsi": 26.0,
+        "investor_summary": "최근(10-23) 순매수: 외국인 -735,905주, 기관 +362,734주 (개인 +11,630주)",
         "ai_decision": "홀딩 관망",
         "ai_score": 62,
-        "ai_action_tip": "토스 원화 예수금(28.9만)이 1주 단가(21.4만 원)보다 적어 물리적으로 1주 추가 매수가 가능하나, D-3 실적 발표 및 외인 수급 불안정으로 추가 입금 전까지 매수를 보류하고 홀딩 관망하세요.",
-        "ai_reason": "삼성전자는 경기민감주(GROWTH_CYCLICAL)로 현재 RSI 25.7의 과매도 구간이나 20일선 하회 및 실적 발표를 앞두고 있어 변동성이 큽니다. 잔여 예수금으로 단 1주 매수가 가능하지만, 외국인 대량 매도세가 진정되고 바닥이 확인될 때까지 마지막 탄약을 아끼며 관망하는 것이 현명합니다."
+        "ai_action_tip": "토스 원화 예수금(28.9만)으로 1주 매수가 가능하나 외인 대량 매도 중이므로 추가 입금 전까지 홀딩 관망",
+        "ai_reason": "삼성전자는 경기민감주(GROWTH_CYCLICAL) 성격의 반도체 종목으로, 20일선 하회 및 RSI 26.0 과매도 구간이나 외국인 대량 순매도세가 이어져 바닥 확인이 필요합니다. 현재 원화 예수금으로는 딱 1주만 매수 가능한 마지막 탄약이므로, 성급한 추매보다 외인 수급이 진정될 때까지 대기해야 합니다."
       },
       {
         "symbol": "000660",
@@ -301,16 +319,16 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 1.0,
-        "lastPrice": 1290000.0,
+        "lastPrice": 1263000.0,
         "averagePurchasePrice": 1710000.0,
-        "profitLossRate": -24.56,
-        "profitLossAmount": -420000.0,
-        "rsi": 22.3,
-        "investor_summary": "최근(10-26) 순매수: 외인 -303,430주, 기관 +257,491주 (개인 +27,436주) | [5일누적: 외인 -969,961주, 기관 +325,305주]",
+        "profitLossRate": -26.14,
+        "profitLossAmount": -447000.0,
+        "rsi": 21.1,
+        "investor_summary": "최근(10-23) 순매수: 외국인 -507,444주, 기관 +456,833주 (개인 +73,520주)",
         "ai_decision": "홀딩 관망",
-        "ai_score": 62,
-        "ai_action_tip": "토스 원화 예수금(28.9만 원)이 1주 단가(129만 원)보다 적어 추가 입금 전까지 홀딩 관망",
-        "ai_reason": "SK하이닉스는 경기민감 성장주(GROWTH_CYCLICAL)로 RSI 22.6의 과매도 구간이나, 28일 실적 발표와 16조 특별배당설 등 대형 이벤트를 앞두고 변동성이 극심합니다. 현재 가용 예수금으로는 1주 매수가 원천 불가능하므로, 발표 이후 외국인 수급 및 바닥 확인 시까지 무리한 추매를 자제하고 홀딩하는 것이 안전합니다."
+        "ai_score": 60,
+        "ai_action_tip": "원화 예수금(28.9만 원)이 현재 1주 단가(126.3만 원)보다 적어 추가 입금 전까지 홀딩 관망",
+        "ai_reason": "SK하이닉스는 경기민감형 성장주[GROWTH_CYCLICAL]로 현재 RSI 21.1의 과매도 구간이나, 외국인의 대량 순매도세가 이어지고 있어 바닥 확인이 필요합니다. 또한 현재 가용 예수금으로는 1주 매수가 불가능하므로 추가 입금 없는 무리한 추매보다 관망을 유지해야 합니다."
       },
       {
         "symbol": "KO",
@@ -318,16 +336,16 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 92.55,
+        "lastPrice": 92.71,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 5.14,
-        "profitLossAmount": 18.12,
-        "rsi": 70.9,
+        "profitLossRate": 5.32,
+        "profitLossAmount": 18.76,
+        "rsi": 70.1,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 68,
-        "ai_action_tip": "토스 앱에서 배당 안전판 자산으로 현재 수량 유지 및 추가 하락 시 달러 예수금 활용 저가 분할매수 준비",
-        "ai_reason": "코카콜라는 포트폴리오의 든든한 장기 배당 방어주로, 단기 RSI 과열(72.4)에도 불구하고 절대 매도하지 않고 코어 자산으로 홀딩해야 합니다. 현재 가용 달러 예수금($516.00)으로 추가 매수가 물리적으로 가능하나, 추후 증시 조정으로 RSI가 안정될 때까지 관망하며 배당 수령 및 포트폴리오 안전판 역할을 유지하는 것이 유리합니다."
+        "ai_action_tip": "토스증권 앱에서 매도 버튼을 누르지 마시고, 배당금 수령과 포트폴리오 안전판 유지를 위해 현재 수량을 그대로 홀딩하세요.",
+        "ai_reason": "코카콜라는 포트폴리오의 장기 배당 방어주(DIVIDEND_DEFENSIVE)로, 단기 RSI 70.1 과열이나 +5.32%의 소폭 수익률만으로는 매도하지 않습니다. 현재 가용 예수금($516)이 있으나 추가 매수는 추후 증시 조정으로 RSI가 낮아질 때까지 인내하고 현재는 홀딩 관망하는 것이 유리합니다."
       },
       {
         "symbol": "SCHD",
@@ -335,16 +353,16 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 35.25,
+        "lastPrice": 35.27,
         "averagePurchasePrice": 34.3786,
-        "profitLossRate": 2.53,
-        "profitLossAmount": 3.4856,
-        "rsi": 83.3,
+        "profitLossRate": 2.59,
+        "profitLossAmount": 3.5656,
+        "rsi": 84.4,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 68,
-        "ai_action_tip": "토스 앱에서 배당 재투자를 위한 예수금을 유지하며 단기 RSI 과열(83.9)에 흔들리지 말고 홀딩하세요.",
-        "ai_reason": "본 종목은 포트폴리오의 든든한 배당 방어주(DIVIDEND_DEFENSIVE)이자 장기 코어 자산으로, +2.65%의 소폭 수익이나 단기 RSI 과열(83.9)을 이유로 매도하는 것은 적절하지 않습니다. 가용 예수금 $516.00가 있으나 현 구간은 추격 매수보다는 20일선 부근 및 RSI 40~50 조정을 기다리며 홀딩 관망하는 것이 유리합니다."
+        "ai_action_tip": "토스증권 앱에서 SCHD를 매도하지 말고 배당 수령과 장기 적립식 홀딩 관망을 유지하세요.",
+        "ai_reason": "SCHD는 포트폴리오의 든든한 배당 안전판이자 장기 코어 자산으로, 단기 RSI 과열(84.4)이나 소폭의 수익률(+2.59%)만으로는 매도하지 않습니다. 현재 가용 예수금($516.00)으로 온주 매수가 가능하나, 추세 과열 구간이므로 추매는 자제하고 추후 RSI가 40~50 아래로 조정받을 때까지 홀딩 관망하는 것이 유리합니다."
       },
       {
         "symbol": "SGOV",
@@ -360,8 +378,8 @@
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "추매 추천",
         "ai_score": 85,
-        "ai_action_tip": "토스증권 앱에서 남은 달러 예수금($516)으로 SGOV를 추가 매수하여 파킹 자산을 늘리거나 향후 빅테크 조정 시 대기 자금(Dry Powder)으로 활용하세요.",
-        "ai_reason": "SGOV는 주가 차익용이 아닌 달러 파킹 통장(초단기 미국채 ETF)으로, 현재 가용 예수금($516)으로 추가 매수가 충분히 가능합니다. 기술적 지표(RSI 100)는 금리 누적에 따른 자연스러운 현상이므로 현금 보관 및 월배당 수취 목적으로 유리합니다."
+        "ai_action_tip": "토스증권 달러 예수금 $516.00으로 SGOV 5주를 추가 매수하거나, 향후 성장주 조정 시 사용할 'Dry Powder(현금 탄약)'로 계속 유지하세요.",
+        "ai_reason": "SGOV는 주가 차익용이 아닌 달러 파킹 통장(초단기 미국채 ETF)이며, RSI 100은 과열이 아닌 금리 누적에 따른 정상적인 현상입니다. 현재 가용 예수금($516)으로 온주 매수가 충분히 가능하므로 고금리 시기 안정적인 이자 수취와 비상 대기 자금으로서 매력을 유지합니다."
       }
     ]
   },
