@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26 21:40:30",
+  "updated_at": "2026-10-26 21:48:16",
   "battery": "조회 불가 (센서 정보 미제공)",
   "market_intel": {
     "updated_at": "2026-10-25 23:01:56",
@@ -152,13 +152,13 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-10-26 21:40:27",
-    "checked_ts": 1793018427,
+    "checked_at": "2026-10-26 21:48:15",
+    "checked_ts": 1793018895,
     "date": "2026-10-26",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
     "scheduler_heartbeat_sec_ago": 0,
-    "monitor_heartbeat_sec_ago": -2,
+    "monitor_heartbeat_sec_ago": -1,
     "opening_fund_eval": 5000000,
     "current_fund_eval": 4854559,
     "peak_fund_eval": 5000000,
@@ -197,13 +197,13 @@
     "last_anomaly_alert_ts": 0.0
   },
   "ai_audit": {
-    "updated_at": "2026-10-26 21:40:30",
+    "updated_at": "2026-10-26 21:48:16",
     "items": {
       "005930": {
         "code": "005930",
         "name": "삼성전자",
         "sector": "반도체·IT하드웨어",
-        "checked_at": "2026-10-26 21:40:30",
+        "checked_at": "2026-10-26 21:48:16",
         "price": 215500,
         "ma20": 211190,
         "rsi": 19.5,
@@ -219,7 +219,7 @@
         "decision": "관망",
         "score_gap": 22,
         "hit_rate_pct": 100.0,
-        "hit_desc": "초기 표본 누적 중",
+        "hit_desc": "직전 관망·방어(58점) 판정 적중✅ (변동 +0.0%)",
         "audit_status": "PASS",
         "audit_badge": "🟢 팩트 검증 통과 (정량 80점 ↔ AI 58점 | 뉴스·포지션 가중치 반영)",
         "reason": "휴장일 사전 팩트체크 기준 수급·RSI·공식 어닝 일정을 종합 반영하여 관망 유지합니다."
@@ -228,7 +228,7 @@
         "code": "005380",
         "name": "현대차",
         "sector": "자동차·모빌리티",
-        "checked_at": "2026-10-26 21:40:30",
+        "checked_at": "2026-10-26 21:48:16",
         "price": 295500,
         "ma20": 289590,
         "rsi": 26.7,
@@ -244,7 +244,7 @@
         "decision": "관망",
         "score_gap": 22,
         "hit_rate_pct": 100.0,
-        "hit_desc": "초기 표본 누적 중",
+        "hit_desc": "직전 관망·방어(58점) 판정 적중✅ (변동 +0.0%)",
         "audit_status": "PASS",
         "audit_badge": "🟢 팩트 검증 통과 (정량 80점 ↔ AI 58점 | 뉴스·포지션 가중치 반영)",
         "reason": "휴장일 사전 팩트체크 기준 수급·RSI·공식 어닝 일정을 종합 반영하여 관망 유지합니다."
@@ -253,7 +253,7 @@
         "code": "105560",
         "name": "KB금융",
         "sector": "금융·밸류업지주",
-        "checked_at": "2026-10-26 21:40:30",
+        "checked_at": "2026-10-26 21:48:16",
         "price": 153000,
         "ma20": 149940,
         "rsi": 29.0,
@@ -269,7 +269,7 @@
         "decision": "관망",
         "score_gap": 22,
         "hit_rate_pct": 100.0,
-        "hit_desc": "초기 표본 누적 중",
+        "hit_desc": "직전 관망·방어(58점) 판정 적중✅ (변동 +0.0%)",
         "audit_status": "PASS",
         "audit_badge": "🟢 팩트 검증 통과 (정량 80점 ↔ AI 58점 | 뉴스·포지션 가중치 반영)",
         "reason": "휴장일 사전 팩트체크 기준 수급·RSI·공식 어닝 일정을 종합 반영하여 관망 유지합니다."
@@ -278,7 +278,7 @@
         "code": "035420",
         "name": "NAVER",
         "sector": "플랫폼·바이오",
-        "checked_at": "2026-10-26 21:40:30",
+        "checked_at": "2026-10-26 21:48:16",
         "price": 173600,
         "ma20": 170128,
         "rsi": 29.3,
@@ -294,7 +294,7 @@
         "decision": "관망",
         "score_gap": 22,
         "hit_rate_pct": 100.0,
-        "hit_desc": "초기 표본 누적 중",
+        "hit_desc": "직전 관망·방어(58점) 판정 적중✅ (변동 +0.0%)",
         "audit_status": "PASS",
         "audit_badge": "🟢 팩트 검증 통과 (정량 80점 ↔ AI 58점 | 뉴스·포지션 가중치 반영)",
         "reason": "휴장일 사전 팩트체크 기준 수급·RSI·공식 어닝 일정을 종합 반영하여 관망 유지합니다."
@@ -303,7 +303,7 @@
         "code": "267260",
         "name": "HD현대일렉트릭",
         "sector": "전력망·중공업·방산",
-        "checked_at": "2026-10-26 21:40:30",
+        "checked_at": "2026-10-26 21:48:16",
         "price": 470000,
         "ma20": 460600,
         "rsi": 18.3,
@@ -319,7 +319,7 @@
         "decision": "관망",
         "score_gap": 17,
         "hit_rate_pct": 100.0,
-        "hit_desc": "초기 표본 누적 중",
+        "hit_desc": "직전 관망·방어(58점) 판정 적중✅ (변동 +0.0%)",
         "audit_status": "PASS",
         "audit_badge": "🟢 팩트 검증 통과 (정량 75점 ↔ AI 58점 | 뉴스·포지션 가중치 반영)",
         "reason": "휴장일 사전 팩트체크 기준 수급·RSI·공식 어닝 일정을 종합 반영하여 관망 유지합니다."
@@ -328,7 +328,7 @@
         "code": "091160",
         "name": "KODEX 반도체",
         "sector": "반도체·IT하드웨어",
-        "checked_at": "2026-10-26 21:40:30",
+        "checked_at": "2026-10-26 21:48:16",
         "price": 107590,
         "ma20": 105438,
         "rsi": 17.5,
@@ -344,7 +344,7 @@
         "decision": "관망",
         "score_gap": 22,
         "hit_rate_pct": 100.0,
-        "hit_desc": "초기 표본 누적 중",
+        "hit_desc": "직전 관망·방어(58점) 판정 적중✅ (변동 +0.0%)",
         "audit_status": "PASS",
         "audit_badge": "🟢 팩트 검증 통과 (정량 80점 ↔ AI 58점 | 뉴스·포지션 가중치 반영)",
         "reason": "휴장일 사전 팩트체크 기준 수급·RSI·공식 어닝 일정을 종합 반영하여 관망 유지합니다."
