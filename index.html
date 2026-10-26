@@ -127,6 +127,44 @@
     이 백서는 고정된 정적 문서가 아닙니다. 텔레그램 채팅방에서 <b>"매수 기준 80점으로 변경해줘"</b>, <b>"감시 목록에 OOO 추가해줘"</b>라고 설정을 바꾸면 <b>이 사이트의 모든 수치와 감시 종목이 실시간으로 자동 갱신</b>됩니다.
   </div>
 
+  <!-- External Server Alive / Dead Siren Banner (25-minute Stale Check) -->
+  <div id="serverAliveBanner" style="background: rgba(16, 185, 129, 0.12); border: 1px solid rgba(16, 185, 129, 0.35); border-radius: 14px; padding: 12px 16px; margin-bottom: 18px; font-size: 12px; display: flex; justify-content: space-between; align-items: center;">
+    <span id="serverAliveText">🟢 <b>홈서버 생존 신호(Heartbeat) 정상</b> — 5분 주기 자체 감시견 가동 중</span>
+    <span id="serverAliveAge" style="color: var(--text-sub); font-weight: 600;">방금 동기화</span>
+  </div>
+
+  <!-- Section 0.5: 5-Layer Self-Watchdog & Integrity Audit Scorecard -->
+  <div class="section-header">
+    <div class="section-title">🩺 5중 실시간 자체 감시(Self-Watchdog) &amp; 무결성 성적표</div>
+    <div class="section-sub" id="wdCheckedAt">5분 주기 자동 감사</div>
+  </div>
+  <div class="card" style="border-left: 4px solid var(--green);">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+      <span style="font-size:13px; font-weight:700; color:#34d399;" id="wdOverallStatus">🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)</span>
+      <span style="font-size:11px; background:var(--pill-bg); padding:3px 8px; border-radius:8px; color:var(--text-sub);">명령어: <code>/health</code></span>
+    </div>
+    <div class="param-row">
+      <span class="param-label">1️⃣ 백그라운드 스레드 심장박동</span>
+      <span class="param-val" style="color:var(--green);" id="wdThreadStatus">🟢 모든 스레드 정상 박동 중</span>
+    </div>
+    <div class="param-row">
+      <span class="param-label">2️⃣ 일일 비정상 손실 서킷 브레이커 (-3.5% 한도)</span>
+      <span class="param-val" id="wdCircuitStatus">🟢 안전 (당일 손실 한도 이내)</span>
+    </div>
+    <div class="param-row">
+      <span class="param-label">3️⃣ 4,500만 원 동결금 &amp; 손절 규칙 무결성</span>
+      <span class="param-val" style="color:var(--green);" id="wdIntegrityStatus">✅ 무결성 정상 · 손절 누락 0건</span>
+    </div>
+    <div class="param-row">
+      <span class="param-label">4️⃣ 공기계 배터리 방전 감시 (25% 이하 경보)</span>
+      <span class="param-val" id="wdBatteryStatus">🔋 100% (⚡ 완충됨)</span>
+    </div>
+    <div class="param-row">
+      <span class="param-label">5️⃣ 3대 외부 API 통신망 상태</span>
+      <span class="param-val" style="font-size:11px;" id="wdApiStatus">한투: 🟢 | 토스: 🟢 | Gemini: 🟢</span>
+    </div>
+  </div>
+
   <!-- Section 1: System Hardware & Cloud Architecture -->
   <div class="section-header">
     <div class="section-title">🏛️ 4계층 시스템 하드웨어 & 클라우드 인프라</div>
@@ -355,6 +393,7 @@
   <div class="card" style="font-size: 13px; line-height: 1.8;">
     <div>• <code style="color: var(--gold); font-weight: 700;">/report</code> : 한투 500만 펀드 전 종목 AI 분석 & 즉시 자율 매매 리포트</div>
     <div>• <code style="color: #34d399; font-weight: 700;">/research</code> : 휴장시간 미국 빅테크 &amp; 종목별 실적발표(어닝) 사전 리서치 즉시 실행</div>
+    <div>• <code style="color: #f472b6; font-weight: 700;">/health</code> (또는 <code>자가진단</code>) : 5중 자체 감시견(스레드 박동·일일 서킷브레이커·무결성) 즉시 점검</div>
     <div>• <code style="color: #60a5fa; font-weight: 700;">/toss</code> : 토스 실전 계좌 전 종목 AI 타점 진단 & 예수금 브리핑</div>
     <div>• <code style="color: var(--green); font-weight: 700;">/battery</code> : 공기계 홈서버 배터리 잔량 및 충전 상태 즉시 확인</div>
     <div>• <code style="color: #c4b5fd; font-weight: 700;">/update</code> : GitHub 비공개 저장소 최신 코드 무선 원격 다운로드 & 자동 재시작</div>
@@ -387,6 +426,60 @@
         document.getElementById('deviceBattery').textContent = '🔋 ' + d.battery;
       }
       document.getElementById('lastUpdated').textContent = '최근 전략 백서 동기화: ' + (d.updated_at || '--');
+
+      // 외부 역감시: 최근 동기화 시각(updated_at)이 현재 브라우저 시각 대비 25분 이상 지났는지 판별
+      if (d.updated_at) {
+        const parsed = new Date(d.updated_at.replace(' ', 'T'));
+        if (!isNaN(parsed.getTime())) {
+          const diffMin = Math.max(0, Math.round((Date.now() - parsed.getTime()) / 60000));
+          const banner = document.getElementById('serverAliveBanner');
+          const txt = document.getElementById('serverAliveText');
+          const age = document.getElementById('serverAliveAge');
+          age.textContent = diffMin <= 1 ? '방금 동기화됨' : `${diffMin}분 전 동기화`;
+          if (diffMin > 25) {
+            banner.style.background = 'rgba(239, 68, 68, 0.18)';
+            banner.style.borderColor = '#ef4444';
+            txt.innerHTML = '🚨 <b>[경보] 공기계 홈서버 응답 지연 감지!</b> — 25분 이상 갱신이 없습니다. 휴대폰 전원/와이파이를 확인하세요.';
+          } else {
+            banner.style.background = 'rgba(16, 185, 129, 0.12)';
+            banner.style.borderColor = 'rgba(16, 185, 129, 0.35)';
+            txt.innerHTML = '🟢 <b>홈서버 생존 신호(Heartbeat) 정상</b> — 5분 주기 자체 감시견 가동 중';
+          }
+        }
+      }
+
+      // 5중 실시간 자체 감시(Watchdog) 성적표 렌더링
+      const wd = d.watchdog || {};
+      if (wd.checked_at) {
+        document.getElementById('wdCheckedAt').textContent = '최근 감사: ' + wd.checked_at;
+      }
+      if (wd.overall_status) {
+        document.getElementById('wdOverallStatus').textContent = wd.overall_status;
+      }
+      if (wd.thread_status) {
+        document.getElementById('wdThreadStatus').textContent = wd.thread_status;
+      }
+      if (wd.circuit_breaker_tripped !== undefined) {
+        const cbEl = document.getElementById('wdCircuitStatus');
+        const dpnl = wd.daily_pnl_krw || 0;
+        const dpct = wd.daily_pnl_pct || 0;
+        if (wd.circuit_breaker_tripped) {
+          cbEl.style.color = '#ef4444';
+          cbEl.textContent = `🚨 발동됨 (당일 ${dpct.toFixed(2)}% / 신규매수 잠금)`;
+        } else {
+          cbEl.style.color = '#10b981';
+          cbEl.textContent = `🟢 안전 (금일 ${dpnl >= 0 ? '+' : ''}${dpnl.toLocaleString()}원 / ${dpct >= 0 ? '+' : ''}${dpct.toFixed(2)}%)`;
+        }
+      }
+      if (wd.integrity_checks && wd.integrity_checks.length > 0) {
+        document.getElementById('wdIntegrityStatus').textContent = wd.integrity_checks[0];
+      }
+      if (wd.battery_str) {
+        document.getElementById('wdBatteryStatus').textContent = '🔋 ' + wd.battery_str;
+      }
+      if (wd.api_status) {
+        document.getElementById('wdApiStatus').textContent = wd.api_status;
+      }
 
       const kis = d.kis_system || {};
       document.getElementById('kisAutoTrade').textContent = kis.auto_trade ? '자율 매매 활성 (ON)' : '매매 중단 (OFF)';
