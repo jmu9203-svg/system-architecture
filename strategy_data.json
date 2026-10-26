@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26 21:53:19",
+  "updated_at": "2026-10-26 21:54:27",
   "battery": "57% (🔋 배터리 사용 중, 26.8°C)",
   "market_intel": {
     "updated_at": "2026-10-25 23:01:56",
@@ -152,12 +152,12 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-10-26 21:52:52",
-    "checked_ts": 1793019172,
+    "checked_at": "2026-10-26 21:53:59",
+    "checked_ts": 1793019239,
     "date": "2026-10-26",
     "overall_status": "⚠️ 주의 항목 1건 감지 (일일 손실 서킷브레이커 가동 중 (-7.13%))",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
-    "scheduler_heartbeat_sec_ago": 1,
+    "scheduler_heartbeat_sec_ago": 0,
     "monitor_heartbeat_sec_ago": -1,
     "opening_fund_eval": 5000000,
     "current_fund_eval": 4643635,
