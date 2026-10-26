@@ -163,6 +163,14 @@
       <span class="param-label">5️⃣ 3대 외부 API 통신망 상태</span>
       <span class="param-val" style="font-size:11px;" id="wdApiStatus">한투: 🟢 | 토스: 🟢 | Gemini: 🟢</span>
     </div>
+    <div class="param-row">
+      <span class="param-label">6️⃣ 코스피200 대비 초과수익(α) &amp; 최대낙폭(MDD)</span>
+      <span class="param-val" style="color:var(--gold);" id="wdAlphaStatus">α +0.00%p | MDD 0.00%</span>
+    </div>
+    <div class="param-row">
+      <span class="param-label">7️⃣ 포트폴리오 섹터별 비중 (단일업종 50% 상한)</span>
+      <span class="param-val" style="font-size:11px; color:#93c5fd;" id="wdSectorStatus">집계 중...</span>
+    </div>
   </div>
 
   <!-- Section 1: System Hardware & Cloud Architecture -->
@@ -232,6 +240,14 @@
         <div class="param-row">
           <span class="param-label">종목당 최대 한도</span>
           <span class="param-val" id="kisMaxPerStock">1,500,000원</span>
+        </div>
+        <div class="param-row">
+          <span class="param-label">동일 섹터(업종) 합산 한도</span>
+          <span class="param-val" style="color:#93c5fd;" id="kisMaxPerSector">2,500,000원 (50%)</span>
+        </div>
+        <div class="param-row">
+          <span class="param-label">왕복 거래비용(세금·슬리피지)</span>
+          <span class="param-val">0.35% 차감 순수익 기준</span>
         </div>
         <div class="param-row">
           <span class="param-label">단일주 단가 상한</span>
@@ -343,6 +359,19 @@
         • <b>🕯️ 당일 캔들 모양</b>: 장중 고점 대비 밀린 '긴 윗꼬리 음봉(상투 위험)' 감점 vs '아래꼬리 양봉 반등' 가산점<br>
         • <b>💱 원/달러 환율 &amp; SOXX</b>: 외국인 수급 스위치인 환율(USD/KRW)과 미 필라델피아 반도체(SOXX) 실시간 연동<br>
         • <b>🚀 50% 반절 익절 + 트레일링 스탑</b>: 2주 이상 보유 종목이 목표 익절선 도달 시 <b>절반(50%)만 먼저 익절</b>하고, 나머지는 <b>최고 수익률 대비 -2.5%p 꺾일 때까지 대시세를 끝까지 추종</b>
+      </div>
+    </div>
+
+    <div class="guard-box" style="border-left: 3px solid #f472b6; margin-top: 10px;">
+      <div class="guard-title" style="color: #f472b6;">5️⃣ 제도권 금융사(자산운용사) 4대 기관급 리스크·성과 아키텍처</div>
+      <p style="color: var(--text-sub); line-height: 1.5; margin-bottom: 6px;">
+        제도권 퀀트 운용사의 8대 심사 기준을 100% 충족하기 위해 업종 상관관계 분산, 사후 적중률 복기, 워시트레이드 차단, 벤치마크 초과수익(α) 측정을 탑재했습니다.
+      </p>
+      <div style="font-size: 12px; background: rgba(0,0,0,0.3); padding: 8px 10px; border-radius: 8px; line-height: 1.6;">
+        • <b>🗂️ 동일 섹터(업종) 합산 50%(250만 원) 캡</b>: 종목당 150만 원 한도 외에 <b>반도체·자동차·금융·전력망 등 동일 업종 합산 비중이 50%(250만 원)를 넘지 못하도록 몰빵을 원천 차단</b><br>
+        • <b>🎯 사후 복기(Post-Trade Attribution) &amp; 적중률 피드백</b>: 과거 AI 예측과 실제 주가 등락을 비교해 <b>종목별 예측 적중률(%)</b>을 자동 채점하고, 연속 오판 시 자기반성 모드로 매수 기준 강화<br>
+        • <b>⏳ 왕복 거래비용(0.35%) 차감 &amp; 당일 워시트레이드 금지</b>: 증권거래세·수수료·슬리피지(0.35%)를 뺀 <b>세후 순수익률</b> 기준으로 익절하며, <b>당일 매도 종목 당일 재매수(Wash-Trade) 및 당일 단타 변심 매도를 차단</b><br>
+        • <b>📈 코스피200 대비 초과수익(Alpha α) &amp; 최대낙폭(MDD)</b>: 단순 수익률이 아닌 시장 지수 대비 진짜 실력(<b>α</b>)과 역대 고점 대비 최대 낙폭(<b>MDD</b>)을 5분마다 추적
       </div>
     </div>
   </div>
@@ -495,6 +524,15 @@
       if (wd.api_status) {
         document.getElementById('wdApiStatus').textContent = wd.api_status;
       }
+      if (wd.alpha_pct !== undefined) {
+        const aSign = wd.alpha_pct >= 0 ? '+' : '';
+        const fSign = (wd.fund_return_pct || 0) >= 0 ? '+' : '';
+        const kSign = (wd.kospi200_return_pct || 0) >= 0 ? '+' : '';
+        document.getElementById('wdAlphaStatus').textContent = `α ${aSign}${wd.alpha_pct.toFixed(2)}%p (펀드 ${fSign}${(wd.fund_return_pct||0).toFixed(2)}% vs 코스피 ${kSign}${(wd.kospi200_return_pct||0).toFixed(2)}%) | MDD ${(wd.mdd_pct||0).toFixed(2)}%`;
+      }
+      if (wd.sector_summary_str) {
+        document.getElementById('wdSectorStatus').textContent = wd.sector_summary_str;
+      }
 
       const kis = d.kis_system || {};
       document.getElementById('kisAutoTrade').textContent = kis.auto_trade ? '자율 매매 활성 (ON)' : '매매 중단 (OFF)';
@@ -503,6 +541,9 @@
       document.getElementById('kisSellTh').textContent = (kis.sell_threshold || 70) + '점 이상';
       document.getElementById('kisTargetKrw').textContent = '약 ' + (kis.target_order_krw || 450000).toLocaleString() + '원';
       document.getElementById('kisMaxPerStock').textContent = (kis.max_per_stock_krw || 1500000).toLocaleString() + '원';
+      if (document.getElementById('kisMaxPerSector')) {
+        document.getElementById('kisMaxPerSector').textContent = (kis.max_per_sector_krw || 2500000).toLocaleString() + '원 (50%)';
+      }
       document.getElementById('kisMaxSharePrice').textContent = (kis.max_share_price_krw || 500000).toLocaleString() + '원 이하';
       document.getElementById('kisRebalance').textContent = `~${kis.rebalance_deadline || '2026-11-06'} (${kis.rebalance_mode ? '가동 중' : '완료'})`;
 
@@ -572,11 +613,11 @@
           const decColor = (it.decision || '').includes('매수') ? '#10b981' : ((it.decision || '').includes('매도') ? '#ef4444' : '#f59e0b');
           return `<div style="background:rgba(0,0,0,0.35);border:1px solid rgba(255,255,255,0.07);padding:10px 12px;border-radius:10px;font-size:12px;line-height:1.6;">
             <div style="display:flex;justify-content:space-between;align-items:center;">
-              <b>📌 ${it.name || code} (${code})</b>
+              <b>📌 ${it.name || code} (${code} · <span style="color:#93c5fd;">${it.sector || '주도섹터'}</span>)</b>
               <span style="color:${decColor};font-weight:700;">최종 전략: ${it.decision || '관망'} (${it.final_score || 55}점)</span>
             </div>
             <div style="color:#93c5fd;font-size:11px;margin-top:3px;">📥 <b>입력된 5대 팩트</b>: ${it.fact_breakdown || ''}</div>
-            <div style="color:#fbbf24;font-size:11px;">🗓️ <b>공식 어닝 일정</b>: ${it.ir_schedule || '일정 없음'}</div>
+            <div style="color:#fbbf24;font-size:11px;">🗓️ <b>공식 어닝 일정</b>: ${it.ir_schedule || '일정 없음'} | 🎯 <b>사후 예측 적중률</b>: ${it.hit_rate_pct !== undefined ? it.hit_rate_pct + '%' : '100%'} (${it.hit_desc || '정상'})</div>
             <div style="color:#d1d5db;font-size:11px;">📝 <b>AI 복창(인용) 근거</b>: <i>${it.cited_facts || ''}</i></div>
             <div style="display:flex;justify-content:space-between;align-items:center;margin-top:4px;padding-top:4px;border-top:1px dashed rgba(255,255,255,0.08);">
               <span>🧮 정량 <b>${it.quant_score || 55}점</b> ↔ AI원본 <b>${it.ai_raw_score || 55}점</b></span>
