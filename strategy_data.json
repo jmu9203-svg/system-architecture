@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26 18:12:54",
+  "updated_at": "2026-10-26 18:23:21",
   "battery": "65% (🔋 배터리 사용 중, 23.6°C)",
   "market_intel": {
     "updated_at": "2026-10-26 08:30:11",
@@ -301,11 +301,11 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 1.0,
-        "lastPrice": 1288000.0,
+        "lastPrice": 1290000.0,
         "averagePurchasePrice": 1710000.0,
-        "profitLossRate": -24.67,
-        "profitLossAmount": -422000.0,
-        "rsi": 22.2,
+        "profitLossRate": -24.56,
+        "profitLossAmount": -420000.0,
+        "rsi": 22.3,
         "investor_summary": "최근(10-26) 순매수: 외인 -303,154주, 기관 +241,427주 (개인 +50,201주) | [5일누적: 외인 -969,685주, 기관 +309,241주]",
         "ai_decision": "홀딩 관망",
         "ai_score": 62,
