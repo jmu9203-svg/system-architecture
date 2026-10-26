@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-26 22:57:09",
-  "battery": "55% (🔋 배터리 사용 중, 26.3°C)",
+  "updated_at": "2026-10-26 23:01:48",
+  "battery": "54% (🔋 배터리 사용 중, 26.0°C)",
   "market_intel": {
     "updated_at": "2026-10-25 23:01:56",
     "fx_soxx_info": {
@@ -152,13 +152,13 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-10-26 22:06:44",
-    "checked_ts": 1793020004,
+    "checked_at": "2026-10-26 23:01:16",
+    "checked_ts": 1793023276,
     "date": "2026-10-26",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
-    "scheduler_heartbeat_sec_ago": 0,
-    "monitor_heartbeat_sec_ago": -1,
+    "scheduler_heartbeat_sec_ago": 2,
+    "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 4643635,
     "market_opened_today": false,
     "current_fund_eval": 4643635,
@@ -184,8 +184,8 @@
     "circuit_breaker_limit_pct": -3.5,
     "circuit_breaker_tripped": false,
     "circuit_breaker_reason": "",
-    "battery_str": "57% (🔋 배터리 사용 중, 26.8°C)",
-    "battery_pct": 57,
+    "battery_str": "54% (🔋 배터리 사용 중, 26.0°C)",
+    "battery_pct": 54,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
       "✅ 4,500만 원 동결금 및 500만 원 시드 분리 무결성 정상",
@@ -492,12 +492,16 @@
     },
     "watch_basket": [
       {
+        "code": "005930",
+        "name": "삼성전자"
+      },
+      {
         "code": "005380",
         "name": "현대차"
       },
       {
-        "code": "005930",
-        "name": "삼성전자"
+        "code": "105560",
+        "name": "KB금융"
       },
       {
         "code": "035420",
@@ -508,12 +512,12 @@
         "name": "HD현대일렉트릭"
       },
       {
-        "code": "465580",
-        "name": "ACE 미국빅테크TOP7 Plus"
+        "code": "091160",
+        "name": "KODEX 반도체"
       },
       {
-        "code": "105560",
-        "name": "KB금융"
+        "code": "465580",
+        "name": "ACE 미국빅테크TOP7 Plus"
       },
       {
         "code": "381180",
@@ -674,16 +678,16 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 92.5,
+        "lastPrice": 92.48,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 5.08,
-        "profitLossAmount": 17.92,
-        "rsi": 70.7,
+        "profitLossRate": 5.06,
+        "profitLossAmount": 17.84,
+        "rsi": 70.6,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 65,
-        "ai_action_tip": "포트폴리오 배당 안전판 종목 — 단기 RSI(70.7)와 무관하게 매도 없이 장기 보유 유지 (조정 시 달러 예수금으로만 적립 추매)",
-        "ai_reason": "수익률(+5.08%) 구간에서 단순 RSI(70.7) 상승만으로 매도하면 매매·환전 수수료 손실 및 배당권 상실이 발생합니다. 반도체 변동성을 완충하는 배당 코어 자산이므로 든든하게 홀딩을 유지합니다."
+        "ai_action_tip": "포트폴리오 배당 안전판 종목 — 단기 RSI(71.8)와 무관하게 매도 없이 장기 보유 유지 (조정 시 달러 예수금으로만 적립 추매)",
+        "ai_reason": "수익률(+5.41%) 구간에서 단순 RSI(71.8) 상승만으로 매도하면 매매·환전 수수료 손실 및 배당권 상실이 발생합니다. 반도체 변동성을 완충하는 배당 코어 자산이므로 든든하게 홀딩을 유지합니다."
       },
       {
         "symbol": "SCHD",
@@ -691,16 +695,16 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 35.21,
+        "lastPrice": 35.41,
         "averagePurchasePrice": 34.3786,
-        "profitLossRate": 2.41,
-        "profitLossAmount": 3.3256,
-        "rsi": 82.5,
+        "profitLossRate": 3.0,
+        "profitLossAmount": 4.1256,
+        "rsi": 84.4,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 65,
-        "ai_action_tip": "포트폴리오 배당 안전판 종목 — 단기 RSI(82.5)와 무관하게 매도 없이 장기 보유 유지 (조정 시 달러 예수금으로만 적립 추매)",
-        "ai_reason": "수익률(+2.41%) 구간에서 단순 RSI(82.5) 상승만으로 매도하면 매매·환전 수수료 손실 및 배당권 상실이 발생합니다. 반도체 변동성을 완충하는 배당 코어 자산이므로 든든하게 홀딩을 유지합니다."
+        "ai_action_tip": "포트폴리오 배당 안전판 종목 — 단기 RSI(83.8)와 무관하게 매도 없이 장기 보유 유지 (조정 시 달러 예수금으로만 적립 추매)",
+        "ai_reason": "수익률(+2.59%) 구간에서 단순 RSI(83.8) 상승만으로 매도하면 매매·환전 수수료 손실 및 배당권 상실이 발생합니다. 반도체 변동성을 완충하는 배당 코어 자산이므로 든든하게 홀딩을 유지합니다."
       },
       {
         "symbol": "SGOV",
