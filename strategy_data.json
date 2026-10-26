@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26 22:52:53",
+  "updated_at": "2026-10-26 22:57:09",
   "battery": "55% (🔋 배터리 사용 중, 26.3°C)",
   "market_intel": {
     "updated_at": "2026-10-25 23:01:56",
@@ -152,13 +152,13 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-10-26 22:52:26",
-    "checked_ts": 1793022746,
+    "checked_at": "2026-10-26 22:06:44",
+    "checked_ts": 1793020004,
     "date": "2026-10-26",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
-    "scheduler_heartbeat_sec_ago": 7,
-    "monitor_heartbeat_sec_ago": 0,
+    "scheduler_heartbeat_sec_ago": 0,
+    "monitor_heartbeat_sec_ago": -1,
     "opening_fund_eval": 4643635,
     "market_opened_today": false,
     "current_fund_eval": 4643635,
@@ -184,8 +184,8 @@
     "circuit_breaker_limit_pct": -3.5,
     "circuit_breaker_tripped": false,
     "circuit_breaker_reason": "",
-    "battery_str": "55% (🔋 배터리 사용 중, 26.3°C)",
-    "battery_pct": 55,
+    "battery_str": "57% (🔋 배터리 사용 중, 26.8°C)",
+    "battery_pct": 57,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
       "✅ 4,500만 원 동결금 및 500만 원 시드 분리 무결성 정상",
@@ -492,16 +492,12 @@
     },
     "watch_basket": [
       {
-        "code": "005930",
-        "name": "삼성전자"
-      },
-      {
         "code": "005380",
         "name": "현대차"
       },
       {
-        "code": "105560",
-        "name": "KB금융"
+        "code": "005930",
+        "name": "삼성전자"
       },
       {
         "code": "035420",
@@ -512,10 +508,115 @@
         "name": "HD현대일렉트릭"
       },
       {
-        "code": "091160",
-        "name": "KODEX 반도체"
+        "code": "465580",
+        "name": "ACE 미국빅테크TOP7 Plus"
+      },
+      {
+        "code": "105560",
+        "name": "KB금융"
+      },
+      {
+        "code": "381180",
+        "name": "TIGER 미국필라델피아반도체나스닥"
+      },
+      {
+        "code": "138040",
+        "name": "메리츠금융지주"
+      },
+      {
+        "code": "066570",
+        "name": "LG전자"
       }
-    ]
+    ],
+    "last_rotation": {
+      "rotated_at": "2026-10-26 22:56:21",
+      "universe_size": 30,
+      "watch_size": 9,
+      "core_stocks": [
+        {
+          "code": "005380",
+          "name": "현대차",
+          "sector": "자동차·모빌리티",
+          "role": "현재 보유 중 (익절·손절 밀착 관리)"
+        },
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "sector": "반도체·IT하드웨어",
+          "role": "현재 보유 중 (익절·손절 밀착 관리)"
+        },
+        {
+          "code": "035420",
+          "name": "NAVER",
+          "sector": "플랫폼·바이오",
+          "role": "현재 보유 중 (익절·손절 밀착 관리)"
+        },
+        {
+          "code": "267260",
+          "name": "HD현대일렉트릭",
+          "sector": "전력망·중공업·방산",
+          "role": "현재 보유 중 (익절·손절 밀착 관리)"
+        },
+        {
+          "code": "465580",
+          "name": "ACE 미국빅테크TOP7 Plus",
+          "sector": "미국증시·글로벌빅테크",
+          "role": "🇺🇸 미국 빅테크 코어 ETF"
+        },
+        {
+          "code": "105560",
+          "name": "KB금융",
+          "sector": "금융·밸류업지주",
+          "role": "🇰🇷 한국 대표 코어 우량주"
+        }
+      ],
+      "dynamic_leaders": [
+        {
+          "code": "381180",
+          "name": "TIGER 미국필라델피아반도체나스닥",
+          "sector": "미국증시·글로벌빅테크",
+          "is_us_etf": true,
+          "price": 36905,
+          "chg_rate": -1.82,
+          "frgn_today": 233910,
+          "orgn_today": -157073,
+          "leader_score": 80,
+          "reason": "당일 외인 순매수(+233,910주) · 5일 합산 메이저 순매수(+273,883주) · 조정 중 메이저 저가매수 유입(-1.82%) · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
+        },
+        {
+          "code": "138040",
+          "name": "메리츠금융지주",
+          "sector": "금융·밸류업지주",
+          "is_us_etf": false,
+          "price": 124700,
+          "chg_rate": -2.43,
+          "frgn_today": 30206,
+          "orgn_today": 776,
+          "leader_score": 88,
+          "reason": "당일 외인(+30,206)·기관(+776) 쌍끌이 매수 · 5일 누적 외인·기관 동반 매집 · 조정 중 메이저 저가매수 유입(-2.43%)"
+        },
+        {
+          "code": "066570",
+          "name": "LG전자",
+          "sector": "반도체·IT하드웨어",
+          "is_us_etf": false,
+          "price": 156500,
+          "chg_rate": -0.38,
+          "frgn_today": 14434,
+          "orgn_today": 15579,
+          "leader_score": 78,
+          "reason": "당일 외인(+14,434)·기관(+15,579) 쌍끌이 매수 · 조정 중 메이저 저가매수 유입(-0.38%)"
+        }
+      ],
+      "added": [
+        "TIGER 미국필라델피아반도체나스닥(381180)",
+        "LG전자(066570)"
+      ],
+      "removed": [
+        "TIGER 미국테크TOP10 INDXX(381170)"
+      ]
+    },
+    "master_universe_size": 30
   },
   "toss_system": {
     "name": "토스증권 실전 계좌 AI 자문 비서",
@@ -573,16 +674,16 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 92.17,
+        "lastPrice": 92.5,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 4.71,
-        "profitLossAmount": 16.6,
-        "rsi": 69.2,
+        "profitLossRate": 5.08,
+        "profitLossAmount": 17.92,
+        "rsi": 70.7,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 65,
-        "ai_action_tip": "포트폴리오 배당 안전판 종목 — 단기 RSI(71.8)와 무관하게 매도 없이 장기 보유 유지 (조정 시 달러 예수금으로만 적립 추매)",
-        "ai_reason": "수익률(+5.41%) 구간에서 단순 RSI(71.8) 상승만으로 매도하면 매매·환전 수수료 손실 및 배당권 상실이 발생합니다. 반도체 변동성을 완충하는 배당 코어 자산이므로 든든하게 홀딩을 유지합니다."
+        "ai_action_tip": "포트폴리오 배당 안전판 종목 — 단기 RSI(70.7)와 무관하게 매도 없이 장기 보유 유지 (조정 시 달러 예수금으로만 적립 추매)",
+        "ai_reason": "수익률(+5.08%) 구간에서 단순 RSI(70.7) 상승만으로 매도하면 매매·환전 수수료 손실 및 배당권 상실이 발생합니다. 반도체 변동성을 완충하는 배당 코어 자산이므로 든든하게 홀딩을 유지합니다."
       },
       {
         "symbol": "SCHD",
@@ -590,16 +691,16 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 35.32,
+        "lastPrice": 35.21,
         "averagePurchasePrice": 34.3786,
-        "profitLossRate": 2.73,
-        "profitLossAmount": 3.7656,
-        "rsi": 84.0,
+        "profitLossRate": 2.41,
+        "profitLossAmount": 3.3256,
+        "rsi": 82.5,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 65,
-        "ai_action_tip": "포트폴리오 배당 안전판 종목 — 단기 RSI(83.8)와 무관하게 매도 없이 장기 보유 유지 (조정 시 달러 예수금으로만 적립 추매)",
-        "ai_reason": "수익률(+2.59%) 구간에서 단순 RSI(83.8) 상승만으로 매도하면 매매·환전 수수료 손실 및 배당권 상실이 발생합니다. 반도체 변동성을 완충하는 배당 코어 자산이므로 든든하게 홀딩을 유지합니다."
+        "ai_action_tip": "포트폴리오 배당 안전판 종목 — 단기 RSI(82.5)와 무관하게 매도 없이 장기 보유 유지 (조정 시 달러 예수금으로만 적립 추매)",
+        "ai_reason": "수익률(+2.41%) 구간에서 단순 RSI(82.5) 상승만으로 매도하면 매매·환전 수수료 손실 및 배당권 상실이 발생합니다. 반도체 변동성을 완충하는 배당 코어 자산이므로 든든하게 홀딩을 유지합니다."
       },
       {
         "symbol": "SGOV",
@@ -607,10 +708,10 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 3.0,
-        "lastPrice": 100.68,
+        "lastPrice": 100.67,
         "averagePurchasePrice": 100.58,
-        "profitLossRate": 0.09,
-        "profitLossAmount": 0.3,
+        "profitLossRate": 0.08,
+        "profitLossAmount": 0.27,
         "rsi": 100.0,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "추매 추천",
