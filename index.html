@@ -371,6 +371,20 @@
     </div>
   </div>
 
+  <!-- Section 3.8: AI Strategy 5-Fact Cross-Verification Audit Table -->
+  <div class="section-header">
+    <div class="section-title">🕵️‍♂️ AI 전략 수립 5대 팩트체크 &amp; 정량 교차검증 감사표</div>
+    <div class="section-sub" id="auditUpdatedAt">명령어: <code>/audit</code></div>
+  </div>
+  <div class="card" style="border-left: 4px solid #f472b6;">
+    <p style="font-size: 12px; color: var(--text-sub); line-height: 1.5; margin-bottom: 10px;">
+      AI가 자료를 대충 읽거나 환각(Hallucination)으로 전략을 짜는 것을 막기 위해, 파이썬이 <b>5대 원본 팩트(20일선 추세 · 14일 RSI · 5일 누적/연속 수급 · 거래량/캔들 · 공식 어닝 D-Day)</b>로 독립적인 <b>'순수 정량 점수'</b>를 계산해 AI 전략 점수와 1:1 대조하고 모순이나 과대평가 발견 시 즉시 자동 교정합니다.
+    </p>
+    <div id="aiAuditTable" style="display: flex; flex-direction: column; gap: 8px;">
+      <!-- 동적 렌더링 -->
+    </div>
+  </div>
+
   <!-- Section 4: Live Watch Basket -->
   <div class="section-header">
     <div class="section-title">📡 실시간 감시 레이더 바스켓</div>
@@ -392,6 +406,7 @@
   </div>
   <div class="card" style="font-size: 13px; line-height: 1.8;">
     <div>• <code style="color: var(--gold); font-weight: 700;">/report</code> : 한투 500만 펀드 전 종목 AI 분석 & 즉시 자율 매매 리포트</div>
+    <div>• <code style="color: #fb7185; font-weight: 700;">/audit</code> (또는 <code>검증</code>) : 5대 입력 팩트 vs 파이썬 정량 점수 vs AI 점수 1:1 대조 감사표</div>
     <div>• <code style="color: #34d399; font-weight: 700;">/research</code> : 휴장시간 미국 빅테크 &amp; 종목별 실적발표(어닝) 사전 리서치 즉시 실행</div>
     <div>• <code style="color: #f472b6; font-weight: 700;">/health</code> (또는 <code>자가진단</code>) : 5중 자체 감시견(스레드 박동·일일 서킷브레이커·무결성) 즉시 점검</div>
     <div>• <code style="color: #60a5fa; font-weight: 700;">/toss</code> : 토스 실전 계좌 전 종목 AI 타점 진단 & 예수금 브리핑</div>
@@ -539,6 +554,34 @@
             <b>${item.name || code} (${code})</b> ${badge}<span style="color:var(--text-sub);">${item.earnings_status || ''}</span>
             ${irLine}
             <div style="color:#e5e7eb;margin-top:2px;">➡️ ${item.memo || ''}</div>
+          </div>`;
+        }).join('');
+      }
+
+      // AI 전략 수립 5대 팩트체크 & 정량 교차검증 감사표 렌더링
+      const auditObj = d.ai_audit || {};
+      if (auditObj.updated_at) {
+        document.getElementById('auditUpdatedAt').textContent = '최근 검증: ' + auditObj.updated_at;
+      }
+      const auditItems = auditObj.items || {};
+      const auditEl = document.getElementById('aiAuditTable');
+      const auditKeys = Object.keys(auditItems);
+      if (auditEl && auditKeys.length > 0) {
+        auditEl.innerHTML = auditKeys.map(code => {
+          const it = auditItems[code] || {};
+          const decColor = (it.decision || '').includes('매수') ? '#10b981' : ((it.decision || '').includes('매도') ? '#ef4444' : '#f59e0b');
+          return `<div style="background:rgba(0,0,0,0.35);border:1px solid rgba(255,255,255,0.07);padding:10px 12px;border-radius:10px;font-size:12px;line-height:1.6;">
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <b>📌 ${it.name || code} (${code})</b>
+              <span style="color:${decColor};font-weight:700;">최종 전략: ${it.decision || '관망'} (${it.final_score || 55}점)</span>
+            </div>
+            <div style="color:#93c5fd;font-size:11px;margin-top:3px;">📥 <b>입력된 5대 팩트</b>: ${it.fact_breakdown || ''}</div>
+            <div style="color:#fbbf24;font-size:11px;">🗓️ <b>공식 어닝 일정</b>: ${it.ir_schedule || '일정 없음'}</div>
+            <div style="color:#d1d5db;font-size:11px;">📝 <b>AI 복창(인용) 근거</b>: <i>${it.cited_facts || ''}</i></div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:4px;padding-top:4px;border-top:1px dashed rgba(255,255,255,0.08);">
+              <span>🧮 정량 <b>${it.quant_score || 55}점</b> ↔ AI원본 <b>${it.ai_raw_score || 55}점</b></span>
+              <span style="color:#34d399;font-weight:700;">${it.audit_badge || '✅ 검증 통과'}</span>
+            </div>
           </div>`;
         }).join('');
       }
