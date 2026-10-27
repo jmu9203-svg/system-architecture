@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-28 00:34:32",
-  "battery": "85% (⚡ 충전 중, 27.6°C)",
+  "updated_at": "2026-10-28 00:45:08",
+  "battery": "85% (⚡ 충전 중, 26.5°C)",
   "market_intel": {
     "updated_at": "2026-10-27 08:30:06",
     "fx_soxx_info": {
@@ -277,12 +277,12 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-10-28 00:34:00",
-    "checked_ts": 1793115240,
+    "checked_at": "2026-10-28 00:44:34",
+    "checked_ts": 1793115874,
     "date": "2026-10-28",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
-    "scheduler_heartbeat_sec_ago": 20,
+    "scheduler_heartbeat_sec_ago": 4,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 4741100,
     "market_opened_today": false,
@@ -308,7 +308,7 @@
     "circuit_breaker_limit_pct": -3.5,
     "circuit_breaker_tripped": false,
     "circuit_breaker_reason": "",
-    "battery_str": "85% (⚡ 충전 중, 27.6°C)",
+    "battery_str": "85% (⚡ 충전 중, 26.5°C)",
     "battery_pct": 85,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
@@ -977,11 +977,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 92.15,
+        "lastPrice": 92.29,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 4.69,
-        "profitLossAmount": 16.52,
-        "rsi": 70.7,
+        "profitLossRate": 4.85,
+        "profitLossAmount": 17.08,
+        "rsi": 71.4,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "관망",
         "ai_score": 67,
@@ -998,7 +998,7 @@
         "averagePurchasePrice": 34.3786,
         "profitLossRate": 2.18,
         "profitLossAmount": 3.0056,
-        "rsi": 84.8,
+        "rsi": 84.4,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "관망",
         "ai_score": 66,
