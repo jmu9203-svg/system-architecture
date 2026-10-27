@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-27 21:02:13",
-  "battery": "58% (🔋 배터리 사용 중, 23.7°C)",
+  "updated_at": "2026-10-27 21:12:50",
+  "battery": "57% (🔋 배터리 사용 중, 23.7°C)",
   "market_intel": {
     "updated_at": "2026-10-27 08:30:06",
     "fx_soxx_info": {
@@ -277,12 +277,12 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-10-27 21:01:38",
-    "checked_ts": 1793102498,
+    "checked_at": "2026-10-27 21:12:15",
+    "checked_ts": 1793103135,
     "date": "2026-10-27",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
-    "scheduler_heartbeat_sec_ago": 4,
+    "scheduler_heartbeat_sec_ago": 16,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 4826885,
     "market_opened_today": true,
@@ -310,8 +310,8 @@
     "circuit_breaker_limit_pct": -3.5,
     "circuit_breaker_tripped": false,
     "circuit_breaker_reason": "",
-    "battery_str": "58% (🔋 배터리 사용 중, 23.7°C)",
-    "battery_pct": 58,
+    "battery_str": "57% (🔋 배터리 사용 중, 23.7°C)",
+    "battery_pct": 57,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
       "✅ 4,500만 원 동결금 및 500만 원 시드 분리 무결성 정상",
@@ -979,11 +979,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 93.39,
+        "lastPrice": 92.92,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 6.1,
-        "profitLossAmount": 21.48,
-        "rsi": 74.5,
+        "profitLossRate": 5.56,
+        "profitLossAmount": 19.6,
+        "rsi": 73.7,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "관망",
         "ai_score": 67,
