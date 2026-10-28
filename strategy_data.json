@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28 12:45:44",
+  "updated_at": "2026-10-28 12:47:40",
   "battery": "78% (🔋 배터리 사용 중, 22.3°C)",
   "market_intel": {
     "updated_at": "2026-10-25 23:01:56",
@@ -418,6 +418,96 @@
       ]
     }
   },
+  "api_matrix": [
+    {
+      "id": "kis",
+      "name": "한국투자증권 Open API",
+      "provider": "한국투자증권 KIS Developers",
+      "category": "Trading & Quotes",
+      "status_badge": "🟢 정상 가동 (Active)",
+      "status_color": "#10b981",
+      "role": "한투 500만 펀드 자율 주문(지정가/시장가), 5분 급락 감시, 수급 데이터 수신",
+      "mode": "OAuth2 24시간 자동 토큰 갱신 & 상시 발주 엔진",
+      "quota": "초당 20건 제한 엄수 (REST API)"
+    },
+    {
+      "id": "toss",
+      "name": "토스증권 Open API",
+      "provider": "토스증권 Toss Securities WTS",
+      "category": "Brokerage & Orders",
+      "status_badge": "🟢 정상 연동 (Active)",
+      "status_color": "#3b82f6",
+      "role": "토스 실전 계좌 보유종목, 예수금 잔고 분석, 대화형 수동 매매 주문 (POST /orders)",
+      "mode": "대화형 승인 수동 주문 (무단 자동매매 0% 동결)",
+      "quota": "자택 공인 IP 인가 / Windows 개발 PC 시뮬레이션 가드"
+    },
+    {
+      "id": "gemini",
+      "name": "Google Gemini 3.5 Flash",
+      "provider": "Google DeepMind",
+      "category": "AI Brain (1.2x)",
+      "status_badge": "🟢 정상 가동 (Active)",
+      "status_color": "#8b5cf6",
+      "role": "3대 빅테크 앙상블 핵심 AI 두뇌, 거시경제 레짐 판정 & 리스크 균형추 (가중치 1.2x)",
+      "mode": "정규 매매 & 5분 긴급 감시 전용 쿼터",
+      "quota": "분당 15 RPM / 일일 1,500 RPD 쿼터 가드"
+    },
+    {
+      "id": "gemini_chat",
+      "name": "Google Gemini Chat",
+      "provider": "Google DeepMind (독립 계정)",
+      "category": "AI PB Chatbot",
+      "status_badge": "🟢 독립 분리 (Isolated)",
+      "status_color": "#a78bfa",
+      "role": "토스 전담 PB 1:1 대화 상담, 자연어 수동 주문 의도 AI 파서",
+      "mode": "별도 전용 키(GEMINI_CHAT_API_KEY)로 매매 쿼터와 100% 분리 격리",
+      "quota": "대화 폭주 시에도 매매 감시 지연 0% 원천 보장"
+    },
+    {
+      "id": "groq",
+      "name": "Groq LPU (GPT-OSS 120B)",
+      "provider": "Groq Cloud",
+      "category": "AI Auditor (1.1x)",
+      "status_badge": "🟢 초고속 가동 (Active)",
+      "status_color": "#f59e0b",
+      "role": "1,200억 파라미터 초대형 독립 퀀트 감사관 (가중치 1.1x), 대화 2중 백업 가로채기",
+      "mode": "실측 1.14초 초저지연 LPU 추론 (Fast Failover)",
+      "quota": "무료 티어 활성 (초당 30 RPM)"
+    },
+    {
+      "id": "nvidia",
+      "name": "NVIDIA Nemotron 3.5",
+      "provider": "OpenRouter / NVIDIA",
+      "category": "AI Reasoning (1.0x)",
+      "status_badge": "🟢 정상 가동 (Active)",
+      "status_color": "#10b981",
+      "role": "엔비디아 심층 추론(Reasoning) 팩트 판정관 (가중치 1.0x), 2/3 다수결 합의",
+      "mode": "0.8초 무중단 Gemini Flash-Lite 자동 가로채기 방패 탑재",
+      "quota": "Free Tier 활성 (OpenRouter)"
+    },
+    {
+      "id": "telegram",
+      "name": "Telegram Bot API",
+      "provider": "Telegram",
+      "category": "Channels & Control",
+      "status_badge": "🟢 상시 박동 (Active)",
+      "status_color": "#38bdf8",
+      "role": "한투 자율 알림방(@jmu_trading_bot) + 토스 PB & 수동 주문방(@jmu_toss_assistant_bot) 듀얼 가동",
+      "mode": "실시간 긴급 경보, 2중 확인 인라인 버튼 주문 집행, 롱폴링 리스너",
+      "quota": "메시지 초당 30건 제한 준수"
+    },
+    {
+      "id": "github",
+      "name": "GitHub API & Pages",
+      "provider": "GitHub",
+      "category": "Cloud & Deploy",
+      "status_badge": "🟢 실시간 동기화 (Live Sync)",
+      "status_color": "#c4b5fd",
+      "role": "4대 반응형 웹 패밀리 자동 배포, /update 무선 원격 배포 및 코드 동기화",
+      "mode": "REST API v3 Contents 자동 푸시 & 무선 무중단 재기동",
+      "quota": "시간당 5,000회 인증 쿼터"
+    }
+  ],
   "kis_system": {
     "name": "한투 500만 원 AI 자율 매매 펀드",
     "mode": "100% 오토파일럿 (Full Autonomous Trading)",
@@ -433,6 +523,7 @@
     "auto_trade": true,
     "schedule": "평일 정규장 10:00 / 14:30 (1일 2회 정기 자율 매매)",
     "realtime_monitor": "정규장 5분 주기 급락 감시 (2시간 쿨다운 & -1.0%p 재개입)",
+    "off_hours_monitor": "야간/주말/휴장일 10분 주기 절전 감시 자동 전환",
     "rebalance_mode": true,
     "rebalance_deadline": "2026-11-06",
     "current_excess_amt": 215800,
@@ -624,15 +715,23 @@
     "master_universe_size": 30
   },
   "toss_system": {
-    "name": "토스증권 실전 계좌 AI 자문 비서",
+    "name": "토스증권 실전 계좌 AI 자문 & 대화형 수동 매매 비서",
     "account_no": "17601069723",
-    "mode": "100% 조회 전용 자문 비서 (Safety First - 주문 집행 0%)",
+    "mode": "대화형 스마트 수동 매매 & 자문 (무단 자동매매 0% 영구 차단)",
     "krw_cash": 289734,
     "usd_cash": 516.0,
     "schedule": "평일 10:05 / 14:35 (한투와 5분 시차 분산 스케줄링)",
+    "manual_pipeline": {
+      "intent_parser": "Gemini 3.5 Flash-Lite + Groq 120B 자연어 주문 의도 파서",
+      "confirmation": "2중 확인 인터랙티브 인라인 카드 발송 (즉시 실행 vs 취소)",
+      "safety_guard": "Windows 개발 PC 시뮬레이션(Dry-run) 모드 / 자택 공인 IP 인가",
+      "unauthorized_trade": "0% 영구 차단 (대표님 명시 승인 건만 발주)"
+    },
     "features": [
-      "100% 안전한 읽기 전용: 시스템 오류나 AI 환각으로 인한 오주문 사고 원천 차단",
-      "트랙 간 예외 완벽 격리(Isolation): 토스 WTS OAuth2 세션 만료 시 트랙 1(한투) 스레드 영향 0% 및 12시간 쿨다운 조용한 알림",
+      "무단 자동 매매 0% 차단: 봇이 백그라운드에서 임의로 주식을 매매하지 않음",
+      "대화형 수동 주문 파이프라인: '메리츠 1주 사줘', '삼전 2주 매수해줘' 지시 시 2중 확인 버튼을 통해 안전 발주",
+      "개발 PC IP 보호 안전 가드: 연구실 Windows 환경에서는 실제 호출을 차단하고 Dry-run 시뮬레이션 수행",
+      "트랙 간 예외 완벽 격리(Isolation): 토스 세션 만료 시 트랙 1(한투) 영향 0% 및 12시간 쿨다운 조용한 알림",
       "가용 예수금 기반 현실적 코칭: 현재 예수금으로 살 수 있는 1~3주 단위 분할 물타기/불타기 제시",
       "1:1 자연어 대화: 텔레그램 방에서 자유 질문 시 실시간 계좌 기반 맞춤 답변",
       "AI 추천 유망주 바스켓: 포트폴리오 빈틈(빅테크, S&P500 지수, 전력인프라) 보완 우량주 추천"
@@ -753,7 +852,7 @@
     ],
     "chat_engine": "독립 구글 계정 전용 키(GEMINI_CHAT_API_KEY) + Groq 120B 2중 백업 (대화/매매 쿼터 100% 완전 격리)",
     "kis_api": "한국투자증권 국내주식 주문/시세/잔고/수급/차트 Open API",
-    "toss_api": "토스증권 WTS OAuth2 & 시세/보유종목/예수금 Open API",
+    "toss_api": "토스증권 WTS OAuth2 & 시세/보유종목/예수금 Open API (대화형 수동 매매 지원)",
     "communication": "텔레그램 봇 2채널 완전 분리 (@jmu_trading_bot + @jmu_toss_assistant_bot)",
     "dashboards": [
       {
