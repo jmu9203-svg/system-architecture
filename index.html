@@ -32,72 +32,173 @@
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
-    body { background-color: var(--bg); color: var(--text-main); padding: 16px; max-width: 680px; margin: 0 auto; -webkit-font-smoothing: antialiased; }
+    body { background-color: var(--bg); color: var(--text-main); padding: 14px; max-width: 720px; margin: 0 auto; -webkit-font-smoothing: antialiased; }
 
     /* Top Family Navigation Bar (4 Sites) */
-    .nav-tabs { display: flex; gap: 4px; background: #161b22; padding: 4px; border-radius: 12px; margin-bottom: 16px; border: 1px solid var(--card-border); overflow-x: auto; }
+    .nav-tabs { display: flex; gap: 4px; background: #161b22; padding: 4px; border-radius: 12px; margin-bottom: 14px; border: 1px solid var(--card-border); overflow-x: auto; }
     .nav-tab-item { flex: 1; text-align: center; padding: 8px 6px; font-size: 12px; font-weight: 600; color: var(--text-sub); text-decoration: none; border-radius: 8px; transition: all 0.2s; white-space: nowrap; }
     .nav-tab-item:hover { color: var(--text-main); }
     .nav-tab-item.active { background: #21262d; color: #fff; border: 1px solid rgba(255,255,255,0.1); }
 
     /* Header */
-    .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
-    .title-group h1 { font-size: 20px; font-weight: 800; display: flex; align-items: center; gap: 8px; }
-    .title-group p { font-size: 12px; color: var(--text-sub); margin-top: 4px; }
+    .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+    .title-group h1 { font-size: 19px; font-weight: 800; display: flex; align-items: center; gap: 8px; }
+    .title-group p { font-size: 12px; color: var(--text-sub); margin-top: 3px; }
     .badge-tag { font-size: 11px; background: var(--purple-bg); color: #c4b5fd; border: 1px solid rgba(139, 92, 246, 0.4); padding: 2px 8px; border-radius: 12px; font-weight: 700; }
     
-    .status-badge { display: flex; align-items: center; gap: 6px; background: var(--pill-bg); border: 1px solid var(--card-border); padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; color: var(--text-main); }
+    .status-badge { display: flex; align-items: center; gap: 6px; background: var(--pill-bg); border: 1px solid var(--card-border); padding: 5px 10px; border-radius: 20px; font-size: 11px; font-weight: 600; color: var(--text-main); }
     .pulse-dot { width: 8px; height: 8px; background-color: #a78bfa; border-radius: 50%; box-shadow: 0 0 8px #a78bfa; animation: pulse 2s infinite; }
     @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
 
     /* Dynamic Sync Notice Banner */
-    .sync-banner { background: linear-gradient(135deg, rgba(139, 92, 246, 0.12), rgba(59, 130, 246, 0.08)); border: 1px solid rgba(139, 92, 246, 0.3); border-radius: 14px; padding: 14px 16px; margin-bottom: 20px; font-size: 13px; line-height: 1.5; }
-    .sync-title { font-weight: 700; color: #c4b5fd; display: flex; align-items: center; gap: 6px; margin-bottom: 4px; }
+    .sync-banner { background: linear-gradient(135deg, rgba(139, 92, 246, 0.12), rgba(59, 130, 246, 0.08)); border: 1px solid rgba(139, 92, 246, 0.3); border-radius: 12px; padding: 12px 14px; margin-bottom: 14px; font-size: 12px; line-height: 1.5; }
+    .sync-title { font-weight: 700; color: #c4b5fd; display: flex; align-items: center; gap: 6px; margin-bottom: 3px; }
 
-    /* Section Styles */
-    .section-header { margin: 24px 0 12px 0; display: flex; justify-content: space-between; align-items: center; }
-    .section-title { font-size: 16px; font-weight: 700; display: flex; align-items: center; gap: 6px; }
-    .section-sub { font-size: 12px; color: var(--text-sub); }
+    /* External Server Alive / Dead Siren Banner */
+    .server-banner { border-radius: 12px; padding: 10px 14px; margin-bottom: 14px; font-size: 12px; display: flex; justify-content: space-between; align-items: center; }
 
-    /* Cards */
-    .card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 16px; padding: 18px; margin-bottom: 14px; }
-    .card-title { font-size: 15px; font-weight: 700; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; }
+    /* Quick Filter Pills (Scroll Reduction Tool) */
+    .filter-pills-bar { display: flex; gap: 6px; overflow-x: auto; padding: 4px 2px 10px 2px; margin-bottom: 8px; -webkit-overflow-scrolling: touch; }
+    .filter-pills-bar::-webkit-scrollbar { height: 4px; }
+    .filter-pills-bar::-webkit-scrollbar-thumb { background: #30363d; border-radius: 4px; }
+    .pill-btn { background: var(--pill-bg); border: 1px solid var(--card-border); color: var(--text-sub); padding: 6px 12px; border-radius: 20px; font-size: 11px; font-weight: 600; white-space: nowrap; cursor: pointer; transition: all 0.15s; }
+    .pill-btn:hover { color: #fff; border-color: rgba(255,255,255,0.2); }
+    .pill-btn.active { background: rgba(139, 92, 246, 0.2); color: #c4b5fd; border-color: rgba(139, 92, 246, 0.6); }
+
+    /* Expand / Collapse All Controls */
+    .expand-controls { display: flex; justify-content: space-between; align-items: center; padding: 4px 6px; margin-bottom: 12px; font-size: 11px; color: var(--text-sub); }
+    .btn-group { display: flex; gap: 6px; }
+    .btn-toggle { background: #21262d; border: 1px solid var(--card-border); color: var(--text-sub); font-size: 11px; padding: 4px 10px; border-radius: 6px; cursor: pointer; transition: all 0.15s; }
+    .btn-toggle:hover { color: #fff; background: #30363d; }
+
+    /* ========================================================
+       Interactive Accordion Item Styles
+       ======================================================== */
+    .accordion-item {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      transition: border-color 0.25s, box-shadow 0.25s;
+    }
+    .accordion-item.active {
+      border-color: rgba(139, 92, 246, 0.45);
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
+    }
+    .accordion-header {
+      padding: 14px 16px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+      background: #161b22;
+      transition: background 0.15s;
+    }
+    .accordion-header:hover {
+      background: #1c2128;
+    }
+    .accordion-title-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .accordion-icon {
+      font-size: 18px;
+    }
+    .accordion-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .accordion-sub {
+      font-size: 11px;
+      color: var(--text-sub);
+      margin-top: 2px;
+    }
+    .accordion-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .accordion-badge {
+      font-size: 10px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 10px;
+      white-space: nowrap;
+    }
+    .accordion-chevron {
+      font-size: 13px;
+      color: var(--text-sub);
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      display: inline-block;
+    }
+    .accordion-item.active .accordion-chevron {
+      transform: rotate(180deg);
+      color: #c4b5fd;
+    }
+    .accordion-content {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease, padding 0.3s ease;
+      padding: 0 16px;
+    }
+    .accordion-item.active .accordion-content {
+      max-height: 4000px;
+      opacity: 1;
+      padding: 12px 16px 16px 16px;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    /* API Status Matrix Grid */
+    .api-grid { display: grid; grid-template-columns: 1fr; gap: 8px; margin-top: 6px; }
+    @media (min-width: 580px) { .api-grid { grid-template-columns: 1fr 1fr; } }
+    .api-card { background: rgba(0,0,0,0.25); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px; padding: 12px; font-size: 12px; }
+    .api-head { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 6px; }
+    .api-name { font-weight: 700; font-size: 13px; color: #fff; }
+    .api-role { color: var(--text-sub); font-size: 11px; line-height: 1.4; margin-bottom: 4px; }
+    .api-mode { font-size: 11px; color: #93c5fd; background: rgba(59,130,246,0.08); padding: 4px 6px; border-radius: 6px; }
 
     /* Architecture Grid */
-    .arch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 20px; }
-    .arch-box { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 12px; padding: 14px; font-size: 12px; }
-    .arch-icon { font-size: 20px; margin-bottom: 6px; }
-    .arch-name { font-weight: 700; font-size: 13px; color: #fff; margin-bottom: 2px; }
+    .arch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 6px; }
+    .arch-box { background: rgba(0,0,0,0.25); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px; padding: 12px; font-size: 12px; }
+    .arch-icon { font-size: 18px; margin-bottom: 4px; }
+    .arch-name { font-weight: 700; font-size: 12px; color: #fff; margin-bottom: 2px; }
     .arch-desc { color: var(--text-sub); font-size: 11px; line-height: 1.4; }
 
     /* Dual Track Columns */
-    .track-grid { display: grid; grid-template-columns: 1fr; gap: 14px; margin-bottom: 20px; }
-    @media (min-width: 600px) { .track-grid { grid-template-columns: 1fr 1fr; } }
-    .track-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 16px; padding: 18px; display: flex; flex-direction: column; justify-content: space-between; }
-    .track-header { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
-    .track-badge { font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 6px; }
-    .track-kis { border-left: 4px solid var(--green); }
-    .track-toss { border-left: 4px solid var(--blue); }
+    .track-grid { display: grid; grid-template-columns: 1fr; gap: 10px; margin-top: 6px; }
+    @media (min-width: 580px) { .track-grid { grid-template-columns: 1fr 1fr; } }
+    .track-card { background: rgba(0,0,0,0.25); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 14px; }
+    .track-kis { border-left: 3px solid var(--green); }
+    .track-toss { border-left: 3px solid var(--blue); }
+    .track-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
     
-    .param-row { display: flex; justify-content: space-between; padding: 7px 0; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 13px; }
+    .param-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.04); font-size: 12px; }
     .param-row:last-child { border-bottom: none; }
     .param-label { color: var(--text-sub); }
     .param-val { font-weight: 700; color: #fff; }
     .highlight-val { color: var(--gold); }
 
     /* Guardrail Boxes */
-    .guard-box { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 14px; margin-bottom: 10px; font-size: 13px; }
-    .guard-title { font-weight: 700; margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
+    .guard-box { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px; padding: 12px; margin-bottom: 8px; font-size: 12px; }
+    .guard-title { font-weight: 700; margin-bottom: 4px; display: flex; align-items: center; gap: 6px; }
 
     /* Watchlist Tags Grid */
-    .watch-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 8px; margin-top: 10px; }
-    .watch-tag { background: var(--pill-bg); border: 1px solid var(--card-border); border-radius: 10px; padding: 10px 12px; }
-    .watch-tag-name { font-weight: 700; font-size: 13px; }
+    .watch-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 6px; margin-top: 8px; }
+    .watch-tag { background: var(--pill-bg); border: 1px solid var(--card-border); border-radius: 8px; padding: 8px 10px; font-size: 12px; }
+    .watch-tag-name { font-weight: 700; font-size: 12px; }
     .watch-tag-code { font-size: 11px; color: var(--text-sub); margin-top: 2px; }
 
     /* Footer */
-    .footer { text-align: center; color: var(--text-sub); font-size: 12px; padding: 24px 0 10px 0; border-top: 1px solid var(--card-border); margin-top: 20px; }
-    .footer-detail { display: flex; justify-content: center; gap: 12px; margin-top: 6px; }
+    .footer { text-align: center; color: var(--text-sub); font-size: 11px; padding: 20px 0 10px 0; border-top: 1px solid var(--card-border); margin-top: 16px; }
+    .footer-detail { display: flex; justify-content: center; gap: 10px; margin-top: 4px; }
   </style>
 </head>
 <body>
@@ -114,7 +215,7 @@
   <div class="header">
     <div class="title-group">
       <h1>시스템 &amp; 전략 백서 <span class="badge-tag">Blueprint</span></h1>
-      <p>AI 자율 매매 및 토스 자문 아키텍처 실시간 규격</p>
+      <p>AI 자율 매매 &amp; 토스 수동매매 아키텍처 실시간 규격</p>
     </div>
     <div style="display:flex; gap:6px; align-items:center;">
       <div class="status-badge" style="color:var(--text-sub);">
@@ -130,327 +231,474 @@
   <!-- Dynamic Sync Notice Banner -->
   <div class="sync-banner">
     <div class="sync-title">⚡ 실시간 동적 자동 동기화 (Live Sync Architecture)</div>
-    이 백서는 고정된 정적 문서가 아닙니다. 텔레그램 채팅방에서 <b>"매수 기준 80점으로 변경해줘"</b>, <b>"감시 목록에 OOO 추가해줘"</b>라고 설정을 바꾸면 <b>이 사이트의 모든 수치와 감시 종목이 실시간으로 자동 갱신</b>됩니다.
+    이 백서는 고정된 정적 문서가 아닙니다. 텔레그램 채팅방에서 <b>"매수 기준 80점으로 변경해줘"</b>, <b>"감시 목록에 OOO 추가해줘"</b>라고 설정을 바꾸거나 주문을 실행하면 <b>이 사이트의 모든 수치와 파라미터가 실시간으로 자동 갱신</b>됩니다.
   </div>
 
   <!-- External Server Alive / Dead Siren Banner (25-minute Stale Check) -->
-  <div id="serverAliveBanner" style="background: rgba(16, 185, 129, 0.12); border: 1px solid rgba(16, 185, 129, 0.35); border-radius: 14px; padding: 12px 16px; margin-bottom: 18px; font-size: 12px; display: flex; justify-content: space-between; align-items: center;">
+  <div id="serverAliveBanner" class="server-banner" style="background: rgba(16, 185, 129, 0.12); border: 1px solid rgba(16, 185, 129, 0.35);">
     <span id="serverAliveText">🟢 <b>홈서버 생존 신호(Heartbeat) 정상</b> — 5분 주기 자체 감시견 가동 중</span>
     <span id="serverAliveAge" style="color: var(--text-sub); font-weight: 600;">방금 동기화</span>
   </div>
 
-  <!-- Section 0.5: 5-Layer Self-Watchdog & Integrity Audit Scorecard -->
-  <div class="section-header">
-    <div class="section-title">🩺 5중 실시간 자체 감시(Self-Watchdog) &amp; 무결성 성적표</div>
-    <div class="section-sub" id="wdCheckedAt">5분 주기 자동 감사</div>
+  <!-- Quick Filter Pills (Scroll Reduction Tool) -->
+  <div class="filter-pills-bar">
+    <button class="pill-btn active" id="pill-all" onclick="openSingleSection('all')">전체 보기</button>
+    <button class="pill-btn" id="pill-api" onclick="openSingleSection('acc-api')">📡 8대 API 상태</button>
+    <button class="pill-btn" id="pill-watchdog" onclick="openSingleSection('acc-watchdog')">🩺 자체 감시견</button>
+    <button class="pill-btn" id="pill-tracks" onclick="openSingleSection('acc-tracks')">⚖️ 2대 운용축</button>
+    <button class="pill-btn" id="pill-guards" onclick="openSingleSection('acc-guards')">🛡️ 퀀트 가드레일</button>
+    <button class="pill-btn" id="pill-hardware" onclick="openSingleSection('acc-hardware')">🧠 3대 빅테크 AI</button>
+    <button class="pill-btn" id="pill-research" onclick="openSingleSection('acc-research')">🌅 사전 리서치</button>
+    <button class="pill-btn" id="pill-audit" onclick="openSingleSection('acc-audit')">🕵️ 팩트체크 감사표</button>
+    <button class="pill-btn" id="pill-rotation" onclick="openSingleSection('acc-rotation')">🔄 30선 로테이션</button>
+    <button class="pill-btn" id="pill-commands" onclick="openSingleSection('acc-commands')">⌨️ 텔레그램 치트시트</button>
   </div>
-  <div class="card" style="border-left: 4px solid var(--green);">
-    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-      <span style="font-size:13px; font-weight:700; color:#34d399;" id="wdOverallStatus">🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)</span>
-      <span style="font-size:11px; background:var(--pill-bg); padding:3px 8px; border-radius:8px; color:var(--text-sub);">명령어: <code>/health</code></span>
-    </div>
-    <div class="param-row">
-      <span class="param-label">1️⃣ 백그라운드 스레드 심장박동</span>
-      <span class="param-val" style="color:var(--green);" id="wdThreadStatus">🟢 모든 스레드 정상 박동 중</span>
-    </div>
-    <div class="param-row">
-      <span class="param-label">2️⃣ 일일 비정상 손실 서킷 브레이커 (-3.5% 한도)</span>
-      <span class="param-val" id="wdCircuitStatus">🟢 안전 (당일 손실 한도 이내)</span>
-    </div>
-    <div class="param-row">
-      <span class="param-label">3️⃣ 4,500만 원 동결금 &amp; 손절 규칙 무결성</span>
-      <span class="param-val" style="color:var(--green);" id="wdIntegrityStatus">✅ 무결성 정상 · 손절 누락 0건</span>
-    </div>
-    <div class="param-row">
-      <span class="param-label">4️⃣ 공기계 배터리 방전 감시 (25% 이하 경보)</span>
-      <span class="param-val" id="wdBatteryStatus">🔋 100% (⚡ 완충됨)</span>
-    </div>
-    <div class="param-row">
-      <span class="param-label">5️⃣ 3대 외부 API 통신망 상태</span>
-      <span class="param-val" style="font-size:11px;" id="wdApiStatus">한투: 🟢 | 토스: 🟢 | 3대 AI 앙상블: 🟢</span>
-    </div>
-    <div class="param-row">
-      <span class="param-label">6️⃣ 코스피200 대비 초과수익(α) &amp; 최대낙폭(MDD)</span>
-      <span class="param-val" style="color:var(--gold);" id="wdAlphaStatus">α +0.00%p | MDD 0.00%</span>
-    </div>
-    <div class="param-row">
-      <span class="param-label">7️⃣ 포트폴리오 섹터별 비중 (단일업종 50% 상한)</span>
-      <span class="param-val" style="font-size:11px; color:#93c5fd;" id="wdSectorStatus">집계 중...</span>
+
+  <!-- Expand / Collapse All Controls -->
+  <div class="expand-controls">
+    <span>💡 파트 제목을 누르면 접고 펼칠 수 있습니다.</span>
+    <div class="btn-group">
+      <button class="btn-toggle" onclick="expandAll(true)">모두 펼치기</button>
+      <button class="btn-toggle" onclick="expandAll(false)">모두 접기</button>
     </div>
   </div>
 
-  <!-- Section 1: System Hardware & Cloud Architecture -->
-  <div class="section-header">
-    <div class="section-title">🏛️ 4계층 시스템 하드웨어 & 클라우드 인프라</div>
-    <div class="section-sub">무중단 오토파일럿</div>
-  </div>
-  <div class="arch-grid">
-    <div class="arch-box">
-      <div class="arch-icon">📱</div>
-      <div class="arch-name">홈서버 (Galaxy S10)</div>
-      <div class="arch-desc">안드로이드 Termux 환경에서 24시간 365일 무중단 가동. 배터리 및 충전 상태 실시간 원격 관제.</div>
+  <!-- ========================================================
+       ACCORDION SECTION 0: 실시간 8대 API 통신망 & 통합 관제 매트릭스 (NEW!)
+       ======================================================== -->
+  <div class="accordion-item active" id="acc-api">
+    <div class="accordion-header" onclick="toggleAccordion('acc-api')">
+      <div class="accordion-title-wrap">
+        <span class="accordion-icon">📡</span>
+        <div>
+          <div class="accordion-title">실시간 8대 API 통신망 &amp; 통합 관제 매트릭스</div>
+          <div class="accordion-sub">증권사 듀얼 API · 빅테크 3사 AI · 텔레그램 · 클라우드 실시간 상태</div>
+        </div>
+      </div>
+      <div class="accordion-right">
+        <span class="accordion-badge" style="background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.4);" id="apiSummaryBadge">8/8 정상 가동</span>
+        <span class="accordion-chevron">▾</span>
+      </div>
     </div>
-    <div class="arch-box">
-      <div class="arch-icon">🧠</div>
-      <div class="arch-name">미국 3대 빅테크 이종 앙상블 AI</div>
-      <div class="arch-desc">Google Gemini(70B) + Groq(120B) + NVIDIA Nemotron 이종 3사 동시 병렬 교차검증 & 2/3 다수결 합의. 0.8초 무중단 Gemini Flash-Lite 백업 가드 및 대화 쿼터 100% 완전 격리.</div>
-    </div>
-    <div class="arch-box">
-      <div class="arch-icon">📡</div>
-      <div class="arch-name">증권사 듀얼 Open API</div>
-      <div class="arch-desc">한국투자증권(주문/시세/잔고/수급) + 토스증권(WTS OAuth2 토큰/보유종목/예수금) 공식 연동.</div>
-    </div>
-    <div class="arch-box">
-      <div class="arch-icon">💬</div>
-      <div class="arch-name">텔레그램 & 4대 웹 패밀리</div>
-      <div class="arch-desc">한투/토스 독립 텔레그램 봇 채널 분리 + GitHub Pages 기반 4대 실시간 반응형 웹 대시보드 구축.</div>
+    <div class="accordion-content">
+      <p style="font-size: 12px; color: var(--text-sub); line-height: 1.5; margin-bottom: 8px;">
+        시스템 전 영역에 걸쳐 사용 중인 8개 외부 API의 실시간 가동 상태, 보안 격리 쿼터, 운영 모드 및 안전장치를 한눈에 모니터링합니다.
+      </p>
+      <div class="api-grid" id="apiMatrixGrid">
+        <!-- 동적 렌더링 -->
+      </div>
     </div>
   </div>
 
-  <!-- Section 2: Dual-Track Investment Strategy -->
-  <div class="section-header">
-    <div class="section-title">⚖️ 2대 운용 축 (한투 자율펀드 vs 토스 자문비서)</div>
-    <div class="section-sub">실시간 동적 파라미터</div>
+  <!-- ========================================================
+       ACCORDION SECTION 1: 5중 실시간 자체 감시(Self-Watchdog) & 무결성 성적표
+       ======================================================== -->
+  <div class="accordion-item active" id="acc-watchdog">
+    <div class="accordion-header" onclick="toggleAccordion('acc-watchdog')">
+      <div class="accordion-title-wrap">
+        <span class="accordion-icon">🩺</span>
+        <div>
+          <div class="accordion-title">5중 실시간 자체 감시(Self-Watchdog) &amp; 무결성 성적표</div>
+          <div class="accordion-sub" id="wdCheckedAt">5분 주기 자동 감사 가동 중</div>
+        </div>
+      </div>
+      <div class="accordion-right">
+        <span class="accordion-badge" style="background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.4);" id="wdOverallBadge">통과 (착오 0건)</span>
+        <span class="accordion-chevron">▾</span>
+      </div>
+    </div>
+    <div class="accordion-content">
+      <div class="param-row">
+        <span class="param-label">1️⃣ 백그라운드 스레드 심장박동</span>
+        <span class="param-val" style="color:var(--green);" id="wdThreadStatus">🟢 모든 스레드 정상 박동 중</span>
+      </div>
+      <div class="param-row">
+        <span class="param-label">2️⃣ 일일 비정상 손실 서킷 브레이커 (-3.5% 한도)</span>
+        <span class="param-val" id="wdCircuitStatus">🟢 안전 (당일 손실 한도 이내)</span>
+      </div>
+      <div class="param-row">
+        <span class="param-label">3️⃣ 4,500만 원 동결금 &amp; 손절 규칙 무결성</span>
+        <span class="param-val" style="color:var(--green);" id="wdIntegrityStatus">✅ 무결성 정상 · 손절 누락 0건</span>
+      </div>
+      <div class="param-row">
+        <span class="param-label">4️⃣ 공기계 배터리 방전 감시 (25% 이하 경보)</span>
+        <span class="param-val" id="wdBatteryStatus">🔋 100% (⚡ 완충됨)</span>
+      </div>
+      <div class="param-row">
+        <span class="param-label">5️⃣ 3대 외부 API 통신망 상태</span>
+        <span class="param-val" style="font-size:11px;" id="wdApiStatus">한투: 🟢 | 토스: 🟢 | 3대 AI 앙상블: 🟢</span>
+      </div>
+      <div class="param-row">
+        <span class="param-label">6️⃣ 코스피200 대비 초과수익(α) &amp; 최대낙폭(MDD)</span>
+        <span class="param-val" style="color:var(--gold);" id="wdAlphaStatus">α +0.00%p | MDD 0.00%</span>
+      </div>
+      <div class="param-row">
+        <span class="param-label">7️⃣ 포트폴리오 섹터별 비중 (단일업종 50% 상한)</span>
+        <span class="param-val" style="font-size:11px; color:#93c5fd;" id="wdSectorStatus">집계 중...</span>
+      </div>
+    </div>
   </div>
-  <div class="track-grid">
-    <!-- Track 1: KIS -->
-    <div class="track-card track-kis">
-      <div>
-        <div class="track-header">
-          <span style="font-size: 18px;">🟢</span>
-          <div>
-            <h3 style="font-size: 15px;">한투 500만 원 AI 펀드</h3>
-            <span style="font-size: 11px; color: var(--green); font-weight: 700;">100% 자율 매매 (Autopilot)</span>
+
+  <!-- ========================================================
+       ACCORDION SECTION 2: 2대 운용 축 (한투 자율펀드 vs 토스 대화형 수동매매)
+       ======================================================== -->
+  <div class="accordion-item" id="acc-tracks">
+    <div class="accordion-header" onclick="toggleAccordion('acc-tracks')">
+      <div class="accordion-title-wrap">
+        <span class="accordion-icon">⚖️</span>
+        <div>
+          <div class="accordion-title">2대 운용 축 (한투 500만 자율펀드 vs 토스 수동매매)</div>
+          <div class="accordion-sub">오토파일럿 vs 대화형 스마트 2중 확인 주문 체계</div>
+        </div>
+      </div>
+      <div class="accordion-right">
+        <span class="accordion-badge" style="background: rgba(59, 130, 246, 0.2); color: #93c5fd; border: 1px solid rgba(59, 130, 246, 0.4);">실시간 파라미터</span>
+        <span class="accordion-chevron">▾</span>
+      </div>
+    </div>
+    <div class="accordion-content">
+      <div class="track-grid">
+        <!-- Track 1: KIS -->
+        <div class="track-card track-kis">
+          <div class="track-header">
+            <span style="font-size: 16px;">🟢</span>
+            <div>
+              <h3 style="font-size: 14px;">한투 500만 원 AI 펀드</h3>
+              <span style="font-size: 11px; color: var(--green); font-weight: 700;">100% 자율 매매 (Autopilot)</span>
+            </div>
+          </div>
+          <div class="param-row">
+            <span class="param-label">운용 모드</span>
+            <span class="param-val" id="kisAutoTrade">자율 매매 활성 (ON)</span>
+          </div>
+          <div class="param-row">
+            <span class="param-label">운용 예산 (동결금 제외)</span>
+            <span class="param-val" id="kisBudget">5,000,000원</span>
+          </div>
+          <div class="param-row">
+            <span class="param-label">매수 커트라인</span>
+            <span class="param-val highlight-val" id="kisBuyTh">75점 이상</span>
+          </div>
+          <div class="param-row">
+            <span class="param-label">매도 커트라인</span>
+            <span class="param-val highlight-val" id="kisSellTh">70점 이상</span>
+          </div>
+          <div class="param-row">
+            <span class="param-label">1회 목표 주문금액</span>
+            <span class="param-val" id="kisTargetKrw">약 450,000원 (9%)</span>
+          </div>
+          <div class="param-row">
+            <span class="param-label">종목당 최대 한도</span>
+            <span class="param-val" id="kisMaxPerStock">1,500,000원</span>
+          </div>
+          <div class="param-row">
+            <span class="param-label">동일 섹터(업종) 한도</span>
+            <span class="param-val" style="color:#93c5fd;" id="kisMaxPerSector">2,500,000원 (50%)</span>
+          </div>
+          <div class="param-row">
+            <span class="param-label">정기 매매 시각</span>
+            <span class="param-val">평일 10:00 / 14:30</span>
+          </div>
+          <div class="param-row">
+            <span class="param-label">실시간 긴급 감시</span>
+            <span class="param-val" style="font-size:11px;">장중 5분 / 야간·휴장 10분</span>
+          </div>
+          <div class="param-row">
+            <span class="param-label">연착륙 리밸런싱</span>
+            <span class="param-val" style="color: var(--gold);" id="kisRebalance">~2026-11-06</span>
           </div>
         </div>
-        <div class="param-row">
-          <span class="param-label">운용 모드</span>
-          <span class="param-val" id="kisAutoTrade">자율 매매 활성 (ON)</span>
-        </div>
-        <div class="param-row">
-          <span class="param-label">설정 원금 (동결금 제외)</span>
-          <span class="param-val" id="kisBudget">5,000,000원</span>
-        </div>
-        <div class="param-row">
-          <span class="param-label">매수 판단 커트라인</span>
-          <span class="param-val highlight-val" id="kisBuyTh">75점 이상</span>
-        </div>
-        <div class="param-row">
-          <span class="param-label">매도 판단 커트라인</span>
-          <span class="param-val highlight-val" id="kisSellTh">70점 이상</span>
-        </div>
-        <div class="param-row">
-          <span class="param-label">1회 목표 주문금액</span>
-          <span class="param-val" id="kisTargetKrw">약 450,000원 (9%)</span>
-        </div>
-        <div class="param-row">
-          <span class="param-label">종목당 최대 한도</span>
-          <span class="param-val" id="kisMaxPerStock">1,500,000원</span>
-        </div>
-        <div class="param-row">
-          <span class="param-label">동일 섹터(업종) 합산 한도</span>
-          <span class="param-val" style="color:#93c5fd;" id="kisMaxPerSector">2,500,000원 (50%)</span>
-        </div>
-        <div class="param-row">
-          <span class="param-label">왕복 거래비용(세금·슬리피지)</span>
-          <span class="param-val">0.35% 차감 순수익 기준</span>
-        </div>
-        <div class="param-row">
-          <span class="param-label">단일주 단가 상한</span>
-          <span class="param-val" id="kisMaxSharePrice">500,000원 이하</span>
-        </div>
-        <div class="param-row">
-          <span class="param-label">정기 매매 시각</span>
-          <span class="param-val">평일 10:00 / 14:30</span>
-        </div>
-        <div class="param-row">
-          <span class="param-label">연착륙 리밸런싱</span>
-          <span class="param-val" style="color: var(--gold);" id="kisRebalance">~2026-11-06 (가동 중)</span>
-        </div>
-      </div>
-    </div>
 
-    <!-- Track 2: Toss -->
-    <div class="track-card track-toss">
-      <div>
-        <div class="track-header">
-          <span style="font-size: 18px;">💙</span>
-          <div>
-            <h3 style="font-size: 15px;">토스 실전계좌 AI 비서</h3>
-            <span style="font-size: 11px; color: #60a5fa; font-weight: 700;">100% 안전 조회 전용 (Read-Only)</span>
+        <!-- Track 2: Toss -->
+        <div class="track-card track-toss">
+          <div class="track-header">
+            <span style="font-size: 16px;">💙</span>
+            <div>
+              <h3 style="font-size: 14px;">토스 실전 AI 비서 &amp; 수동매매</h3>
+              <span style="font-size: 11px; color: #60a5fa; font-weight: 700;">대화형 승인 주문 (User-Authorized)</span>
+            </div>
+          </div>
+          <div class="param-row">
+            <span class="param-label">토스 계좌번호</span>
+            <span class="param-val" id="tossAccountNo">17601069723</span>
+          </div>
+          <div class="param-row">
+            <span class="param-label">무단 자동 매매 차단</span>
+            <span class="param-val" style="color: var(--green);">0% 원천 동결 (무단매매 0건)</span>
+          </div>
+          <div class="param-row">
+            <span class="param-label">대화형 수동 매매</span>
+            <span class="param-val" style="color: #60a5fa;">자연어 명령 ➡️ 2중 승인 발주</span>
+          </div>
+          <div class="param-row">
+            <span class="param-label">개발 PC 안전 가드</span>
+            <span class="param-val" style="font-size:11px;">Windows 시뮬레이션 (IP 보호)</span>
+          </div>
+          <div class="param-row">
+            <span class="param-label">정기 자문 브리핑</span>
+            <span class="param-val">평일 10:05 / 14:35</span>
+          </div>
+          <div class="param-row">
+            <span class="param-label">가용 원화 예수금</span>
+            <span class="param-val" id="tossKrwCash">--원</span>
+          </div>
+          <div class="param-row">
+            <span class="param-label">가용 달러 예수금</span>
+            <span class="param-val" id="tossUsdCash">$--</span>
+          </div>
+          <div class="param-row">
+            <span class="param-label">1:1 자연어 대화</span>
+            <span class="param-val">토스방 자유 질문 시 실시간 PB 응답</span>
           </div>
         </div>
-        <div class="param-row">
-          <span class="param-label">토스 계좌번호</span>
-          <span class="param-val" id="tossAccountNo">17601069723</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       ACCORDION SECTION 3: 3대 핵심 퀀트 리스크 관리 안전장치
+       ======================================================== -->
+  <div class="accordion-item" id="acc-guards">
+    <div class="accordion-header" onclick="toggleAccordion('acc-guards')">
+      <div class="accordion-title-wrap">
+        <span class="accordion-icon">🛡️</span>
+        <div>
+          <div class="accordion-title">3대 핵심 퀀트 리스크 관리 안전장치 &amp; 금융사 규격</div>
+          <div class="accordion-sub">코스피 레짐 · 14일 ATR 손익비 · 12초 미체결 정정 · 섹터 50% 캡</div>
         </div>
-        <div class="param-row">
-          <span class="param-label">오주문 방어 보증</span>
-          <span class="param-val" style="color: var(--green);">주문 집행 0% (안전성 100%)</span>
+      </div>
+      <div class="accordion-right">
+        <span class="accordion-badge" style="background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.4);">원금 방어 5대장</span>
+        <span class="accordion-chevron">▾</span>
+      </div>
+    </div>
+    <div class="accordion-content">
+      <div class="guard-box" style="border-left: 3px solid var(--purple);">
+        <div class="guard-title" style="color: #c4b5fd;">1️⃣ 거시경제(Macro) 코스피200 시장 날씨 레짐 필터</div>
+        <p style="color: var(--text-sub); line-height: 1.5; margin-bottom: 4px;">
+          개별 종목 매수 전 <b>코스피200(KODEX 200)</b>의 당일 등락률과 <b>20일 이동평균선(MA20)</b>을 사전 검사하여 '떨어지는 칼날'을 방지합니다.
+        </p>
+        <div style="font-size: 11px; background: rgba(0,0,0,0.3); padding: 6px 8px; border-radius: 6px; line-height: 1.6;">
+          • <b>☀️ 정상·강세장</b>: 기본 매수 기준(75점↑) 적용<br>
+          • <b>⚠️ 약세·조정장 (지수 -1.2% or 20일선 하회)</b>: 매수 커트라인 <b>+7점 상향 (82점↑ 필수)</b><br>
+          • <b>🚨 패닉 폭락장 (지수 -2.5% 급락)</b>: 소나기 피하기 원칙 — <b>당일 모든 신규 매수 100% 락다운</b>
         </div>
-        <div class="param-row">
-          <span class="param-label">정기 자문 브리핑</span>
-          <span class="param-val">평일 10:05 / 14:35</span>
+      </div>
+
+      <div class="guard-box" style="border-left: 3px solid var(--gold);">
+        <div class="guard-title" style="color: var(--gold);">2️⃣ 14일 ATR 체급별 동적 익절선 &amp; 손절선 (기대 손익비 최적화)</div>
+        <p style="color: var(--text-sub); line-height: 1.5; margin-bottom: 4px;">
+          최근 14일 일평균 변동성(ATR %) 체급에 맞춰 <b>손절선과 목표 익절선(과열 익절선 포함)을 동시 연동</b>하여 모든 체급에서 1:1 이상의 유리한 기대 손익비(Risk/Reward Ratio)를 확보합니다.
+        </p>
+        <div style="font-size: 11px; background: rgba(0,0,0,0.3); padding: 6px 8px; border-radius: 6px; line-height: 1.6;">
+          • <b>🐢 저변동 방어주 (ATR &lt; 1.8%, 배당/통신)</b>: 목표익절 <b>+6.0%</b> (과열 +3.0%) / 손절 <b>-5.5%</b> <i>(손익비 1.09)</i><br>
+          • <b>🐕 중변동 표준주 (1.8% ~ 3.0%, 현대차/KB)</b>: 목표익절 <b>+8.5%</b> (과열 +4.5%) / 손절 <b>-7.0%</b> <i>(손익비 1.21)</i><br>
+          • <b>🐆 고변동 주도주 (ATR &gt; 3.0%, 삼성전자/반도체)</b>: 목표익절 <b>+12.0%</b> (과열 +6.0%) / 손절 <b>-8.5%</b> <i>(손익비 1.41)</i>
         </div>
-        <div class="param-row">
-          <span class="param-label">가용 원화 예수금</span>
-          <span class="param-val" id="tossKrwCash">--원</span>
+      </div>
+
+      <div class="guard-box" style="border-left: 3px solid var(--blue);">
+        <div class="guard-title" style="color: #60a5fa;">3️⃣ 12초 미체결 매수/매도 분리 정정 &amp; 토스 WTS 예외 격리</div>
+        <p style="color: var(--text-sub); line-height: 1.5; margin-bottom: 4px;">
+          주문 12초 후 미체결 잔량 감지 시 <b>매수와 매도의 정정 방식을 엄격히 분리</b>하고, 듀얼 트랙 간 예외를 100% 격리합니다.
+        </p>
+        <div style="font-size: 11px; background: rgba(0,0,0,0.3); padding: 6px 8px; border-radius: 6px; line-height: 1.6;">
+          • <b>🔴 매도 미체결</b>: <b>시장가('01') 즉시 정정</b>으로 100% 체결 보증 (손절 지연 원천 차단)<br>
+          • <b>🟢 매수 미체결</b>: 한투 API 상한가(+30%) 증거금 거부 에러 방지를 위해 <b>현재가 +0.5% 재지정가('00') 정정</b> (또는 안전 취소)<br>
+          • <b>🛡️ 토스 WTS 예외 격리(Isolation)</b>: 토스 OAuth2 만료 시 트랙 1(한투) 영향 0% 보장
         </div>
-        <div class="param-row">
-          <span class="param-label">가용 달러 예수금</span>
-          <span class="param-val" id="tossUsdCash">$--</span>
+      </div>
+
+      <div class="guard-box" style="border-left: 3px solid var(--green);">
+        <div class="guard-title" style="color: var(--green);">4️⃣ 실전 고수 5대 디테일 지표 &amp; 50% 반절익절 트레일링 스탑</div>
+        <p style="color: var(--text-sub); line-height: 1.5; margin-bottom: 4px;">
+          기존 시세·일봉·수급 데이터에서 전업 트레이더들이 확인하는 5대 알짜 지표를 추출하여 가산점/감점 및 대시세 추종 익절에 반영합니다.
+        </p>
+        <div style="font-size: 11px; background: rgba(0,0,0,0.3); padding: 6px 8px; border-radius: 6px; line-height: 1.6;">
+          • <b>📊 거래량 폭발 비율</b>: 20일 평균 거래량 대비 당일 거래량 비율(%)로 돌파 진위 감별<br>
+          • <b>🌊 5일 누적 수급</b>: 최근 5거래일 누적 합계 및 외국인·기관 연속 매집 일수 추적<br>
+          • <b>🚀 50% 반절 익절 + 트레일링 스탑</b>: 2주 이상 보유 종목 목표가 도달 시 절반만 익절 후 나머지는 최고점 대비 -2.5%p 꺾일 때까지 대시세 추종
         </div>
-        <div class="param-row">
-          <span class="param-label">실전 코칭 방식</span>
-          <span class="param-val">예수금 기반 소수점 분할 물타기</span>
-        </div>
-        <div class="param-row">
-          <span class="param-label">1:1 자연어 대화</span>
-          <span class="param-val">토스방 자유 질문 시 실시간 PB 응답</span>
+      </div>
+
+      <div class="guard-box" style="border-left: 3px solid #f472b6;">
+        <div class="guard-title" style="color: #f472b6;">5️⃣ 제도권 금융사(자산운용사) 4대 기관급 리스크·성과 아키텍처</div>
+        <div style="font-size: 11px; background: rgba(0,0,0,0.3); padding: 6px 8px; border-radius: 6px; line-height: 1.6;">
+          • <b>🗂️ 동일 섹터(업종) 50%(250만 원) 캡</b>: 반도체·자동차·금융 등 단일 업종 몰빵 원천 차단<br>
+          • <b>🎯 사후 복기(Post-Trade Attribution)</b>: AI 예측과 실제 등락 대조해 종목별 적중률 채점<br>
+          • <b>⏳ 왕복 거래비용(0.35%) 차감 &amp; 당일 워시트레이드 금지</b>: 세후 순수익 기준 익절 및 당일 단타 변심 매도 차단<br>
+          • <b>📈 코스피200 대비 초과수익(α) &amp; 최대낙폭(MDD)</b>: 단순 수익률이 아닌 시장 대비 초과 성과 5분 주기 추적
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Section 3: Professional Quant Guardrails -->
-  <div class="section-header">
-    <div class="section-title">🛡️ 3대 핵심 퀀트 리스크 관리 안전장치</div>
-    <div class="section-sub">주린이 원금 방어 알고리즘</div>
+  <!-- ========================================================
+       ACCORDION SECTION 4: 4계층 하드웨어 & 미국 3대 빅테크 AI 앙상블
+       ======================================================== -->
+  <div class="accordion-item" id="acc-hardware">
+    <div class="accordion-header" onclick="toggleAccordion('acc-hardware')">
+      <div class="accordion-title-wrap">
+        <span class="accordion-icon">🏛️</span>
+        <div>
+          <div class="accordion-title">4계층 시스템 하드웨어 &amp; 미국 3대 빅테크 AI 앙상블</div>
+          <div class="accordion-sub">Galaxy S10 홈서버 · Google Gemini · Groq 120B · NVIDIA Nemotron</div>
+        </div>
+      </div>
+      <div class="accordion-right">
+        <span class="accordion-badge" style="background: rgba(139, 92, 246, 0.2); color: #c4b5fd; border: 1px solid rgba(139, 92, 246, 0.4);">하이브리드 3사 합의</span>
+        <span class="accordion-chevron">▾</span>
+      </div>
+    </div>
+    <div class="accordion-content">
+      <div class="arch-grid">
+        <div class="arch-box">
+          <div class="arch-icon">📱</div>
+          <div class="arch-name">홈서버 (Galaxy S10)</div>
+          <div class="arch-desc">안드로이드 Termux 리눅스 환경에서 24시간 365일 무중단 가동. 배터리 및 충전 상태 실시간 원격 관제.</div>
+        </div>
+        <div class="arch-box">
+          <div class="arch-icon">🧠</div>
+          <div class="arch-name">미국 3대 빅테크 이종 앙상블 AI</div>
+          <div class="arch-desc">Google Gemini(70B) + Groq(120B) + NVIDIA Nemotron 이종 3사 동시 병렬 질의 &amp; 2/3 다수결 합의. 0.8초 무중단 Flash-Lite 백업 가드.</div>
+        </div>
+        <div class="arch-box">
+          <div class="arch-icon">📡</div>
+          <div class="arch-name">증권사 듀얼 Open API</div>
+          <div class="arch-desc">한국투자증권(주문/시세/잔고/수급) + 토스증권(WTS OAuth2 토큰/보유종목/수동주문) 공식 연동.</div>
+        </div>
+        <div class="arch-box">
+          <div class="arch-icon">💬</div>
+          <div class="arch-name">텔레그램 &amp; 4대 웹 패밀리</div>
+          <div class="arch-desc">한투/토스 독립 텔레그램 봇 채널 분리 + GitHub Pages 기반 4대 실시간 반응형 웹 대시보드 구축.</div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="card">
-    <div class="guard-box" style="border-left: 3px solid var(--purple);">
-      <div class="guard-title" style="color: #c4b5fd;">1️⃣ 거시경제(Macro) 코스피200 시장 날씨 레짐 필터</div>
-      <p style="color: var(--text-sub); line-height: 1.5; margin-bottom: 6px;">
-        개별 종목 매수 전 <b>코스피200(KODEX 200)</b>의 당일 등락률과 <b>20일 이동평균선(MA20)</b>을 사전 검사하여 '떨어지는 칼날'을 방지합니다.
+
+  <!-- ========================================================
+       ACCORDION SECTION 5: 휴장시간 AI 사전 리서치 컨닝페이퍼
+       ======================================================== -->
+  <div class="accordion-item" id="acc-research">
+    <div class="accordion-header" onclick="toggleAccordion('acc-research')">
+      <div class="accordion-title-wrap">
+        <span class="accordion-icon">🌅</span>
+        <div>
+          <div class="accordion-title">휴장시간 AI 사전 리서치 컨닝페이퍼</div>
+          <div class="accordion-sub" id="intelUpdated">평일 08:30 자동 갱신</div>
+        </div>
+      </div>
+      <div class="accordion-right">
+        <span class="accordion-badge" style="background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.4);">나스닥 어닝 달력</span>
+        <span class="accordion-chevron">▾</span>
+      </div>
+    </div>
+    <div class="accordion-content">
+      <p style="font-size: 12px; color: var(--text-sub); line-height: 1.5; margin-bottom: 8px;">
+        장중(10:00/14:30) AI 과부하를 막기 위해 <b>휴장 시간(평일 아침 08:30 &amp; 수동 <code>/research</code>)에 미리 분석해 둔 컨닝페이퍼</b>입니다. 정규장 매매 시 AI가 추가 API 호출 없이 0.001초 만에 이 노트를 참조합니다.
       </p>
-      <div style="font-size: 12px; background: rgba(0,0,0,0.3); padding: 8px 10px; border-radius: 8px; line-height: 1.6;">
-        • <b>☀️ 정상·강세장</b>: 기본 매수 기준(75점↑) 적용<br>
-        • <b>⚠️ 약세·조정장 (지수 -1.2% or 20일선 하회)</b>: 매수 커트라인 <b>+7점 상향 (82점↑ 필수)</b><br>
-        • <b>🚨 패닉 폭락장 (지수 -2.5% 급락)</b>: 소나기 피하기 원칙 — <b>당일 모든 신규 매수 100% 락다운</b>
+      <div class="guard-box">
+        <div class="guard-title" style="color: #60a5fa;">🇺🇸 미국 나스닥(Nasdaq) 공식 빅테크 실적발표 달력 &amp; 동향</div>
+        <div id="intelUsCalendar" style="font-size: 11px; color: #93c5fd; line-height: 1.6; margin-bottom: 6px; background: rgba(0,0,0,0.35); padding: 6px 8px; border-radius: 6px;">공식 달력 조회 중...</div>
+        <div id="intelUsSummary" style="font-size: 12px; color: var(--text-main); line-height: 1.5;">데이터 로딩 중...</div>
+      </div>
+      <div class="guard-box">
+        <div class="guard-title" style="color: var(--gold);">🇰🇷 한국 증시 매크로 &amp; 외국인 수급 핵심</div>
+        <div id="intelKrSummary" style="font-size: 12px; color: var(--text-main); line-height: 1.5;">데이터 로딩 중...</div>
+      </div>
+      <div style="font-size: 12px; font-weight: 700; color: #c4b5fd; margin: 8px 0 6px;">📅 종목별 실적발표(어닝) 일정 &amp; 장중 AI 대응 지침</div>
+      <div id="intelStockNotes" style="display: flex; flex-direction: column; gap: 6px;">
+        <!-- 동적 렌더링 -->
       </div>
     </div>
+  </div>
 
-    <div class="guard-box" style="border-left: 3px solid var(--gold);">
-      <div class="guard-title" style="color: var(--gold);">2️⃣ 14일 ATR 체급별 동적 익절선 & 손절선 (기대 손익비 최적화)</div>
-      <p style="color: var(--text-sub); line-height: 1.5; margin-bottom: 6px;">
-        최근 14일 일평균 변동성(ATR %) 체급에 맞춰 <b>손절선과 목표 익절선(과열 익절선 포함)을 동시 연동</b>하여 모든 체급에서 1:1 이상의 유리한 기대 손익비(Risk/Reward Ratio)를 확보합니다.
+  <!-- ========================================================
+       ACCORDION SECTION 6: AI 전략 수립 5대 팩트체크 & 정량 교차검증 감사표
+       ======================================================== -->
+  <div class="accordion-item" id="acc-audit">
+    <div class="accordion-header" onclick="toggleAccordion('acc-audit')">
+      <div class="accordion-title-wrap">
+        <span class="accordion-icon">🕵️‍♂️</span>
+        <div>
+          <div class="accordion-title">AI 전략 수립 5대 팩트체크 &amp; 정량 교차검증 감사표</div>
+          <div class="accordion-sub" id="auditUpdatedAt">명령어: /audit</div>
+        </div>
+      </div>
+      <div class="accordion-right">
+        <span class="accordion-badge" style="background: rgba(244, 114, 182, 0.2); color: #f472b6; border: 1px solid rgba(244, 114, 182, 0.4);">환각 방지 1:1 대조</span>
+        <span class="accordion-chevron">▾</span>
+      </div>
+    </div>
+    <div class="accordion-content">
+      <p style="font-size: 12px; color: var(--text-sub); line-height: 1.5; margin-bottom: 8px;">
+        AI가 자료를 대충 읽거나 환각(Hallucination)으로 전략을 짜는 것을 막기 위해, 파이썬이 <b>5대 원본 팩트(20일선 추세 · 14일 RSI · 5일 누적/연속 수급 · 거래량/캔들 · 공식 어닝 D-Day)</b>로 독립적인 <b>'순수 정량 점수'</b>를 계산해 AI 전략 점수와 1:1 대조하고 모순이나 과대평가 발견 시 즉시 자동 교정합니다.
       </p>
-      <div style="font-size: 12px; background: rgba(0,0,0,0.3); padding: 8px 10px; border-radius: 8px; line-height: 1.6;">
-        • <b>🐢 저변동 방어주 (ATR &lt; 1.8%, 배당/통신)</b>: 목표익절 <b>+6.0%</b> (과열 +3.0%) / 경고 -4.0% / 손절 <b>-5.5%</b> <i>(손익비 1.09 · 빠른 회전율)</i><br>
-        • <b>🐕 중변동 표준주 (1.8% ~ 3.0%, 현대차/KB)</b>: 목표익절 <b>+8.5%</b> (과열 +4.5%) / 경고 -5.0% / 손절 <b>-7.0%</b> <i>(손익비 1.21 · 밸런스)</i><br>
-        • <b>🐆 고변동 주도주 (ATR &gt; 3.0%, 삼성전자/반도체)</b>: 목표익절 <b>+12.0%</b> (과열 +6.0%) / 경고 -6.0% / 손절 <b>-8.5%</b> <i>(손익비 1.41 · 추세 극대화)</i>
+      <div id="aiAuditTable" style="display: flex; flex-direction: column; gap: 6px;">
+        <!-- 동적 렌더링 -->
       </div>
     </div>
+  </div>
 
-    <div class="guard-box" style="border-left: 3px solid var(--blue);">
-      <div class="guard-title" style="color: #60a5fa;">3️⃣ 12초 미체결 매수/매도 분리 정정 &amp; 토스 WTS 예외 격리</div>
-      <p style="color: var(--text-sub); line-height: 1.5; margin-bottom: 6px;">
-        주문 12초 후 미체결 잔량 감지 시 <b>매수와 매도의 정정 방식을 엄격히 분리</b>하고, 듀얼 트랙 간 예외를 100% 격리합니다.
+  <!-- ========================================================
+       ACCORDION SECTION 7: 한·미 30선 마스터 유니버스 & AI 자율 주도주 로테이션
+       ======================================================== -->
+  <div class="accordion-item" id="acc-rotation">
+    <div class="accordion-header" onclick="toggleAccordion('acc-rotation')">
+      <div class="accordion-title-wrap">
+        <span class="accordion-icon">🔄</span>
+        <div>
+          <div class="accordion-title">한·미 30선 마스터 유니버스 &amp; AI 자율 주도주 로테이션</div>
+          <div class="accordion-sub" id="rotUpdatedAt">매일 08:30 / 10:00 수급 스캔 자동 교체</div>
+        </div>
+      </div>
+      <div class="accordion-right">
+        <span class="accordion-badge" style="background: rgba(59, 130, 246, 0.2); color: #93c5fd; border: 1px solid rgba(59, 130, 246, 0.4);">30선 마스터 풀</span>
+        <span class="accordion-chevron">▾</span>
+      </div>
+    </div>
+    <div class="accordion-content">
+      <p style="font-size: 12px; color: var(--text-sub); line-height: 1.5; margin-bottom: 8px;">
+        고정된 국내 종목만 바라보지 않고, <b>미국 대표 지수·빅테크 ETF 6종(환전수수료 0원·매도거래세 0% 면제)</b>과 <b>한국 5대 핵심 산업 대표 우량주 24종</b>으로 구성된 <b>총 30선 마스터 유니버스 풀</b>을 AI가 매일 스캔합니다.
       </p>
-      <div style="font-size: 12px; background: rgba(0,0,0,0.3); padding: 8px 10px; border-radius: 8px; line-height: 1.6;">
-        • <b>🔴 매도(익절·손절) 미체결</b>: <b>시장가('01') 즉시 정정</b> (또는 -1.5% 공격적 재주문)으로 100% 체결 보증<br>
-        • <b>🟢 매수 미체결</b>: 한투 API 상한가(+30%) 증거금 거부 에러 방지를 위해 <b>시장가 전환 금지 → 현재가 +0.5% 재지정가('00') 정정</b> (또는 안전 취소)<br>
-        • <b>🛡️ 토스 WTS 예외 격리(Isolation)</b>: 토스 OAuth2 세션 만료 시 트랙 1(한투) 스레드 영향 0% 보장 + 12시간 쿨다운 조용한 알림
+      <div id="rotationSummaryBox" style="background: rgba(59, 130, 246, 0.08); border: 1px solid rgba(59, 130, 246, 0.25); border-radius: 8px; padding: 8px 10px; margin-bottom: 8px; font-size: 11px; line-height: 1.6;">
+        <div>🌐 <b>마스터 풀 30선 스캔 대기 중</b> — 명령어 <code>/rotate</code> 또는 매일 아침 자동 실행</div>
       </div>
-    </div>
-
-    <div class="guard-box" style="border-left: 3px solid var(--green); margin-top: 10px;">
-      <div class="guard-title" style="color: var(--green);">4️⃣ 실전 고수 5대 디테일 지표 (API 추가부하 0% · 트레일링 스탑)</div>
-      <p style="color: var(--text-sub); line-height: 1.5; margin-bottom: 6px;">
-        기존 시세·일봉·수급 데이터에서 전업 트레이더들이 확인하는 5대 알짜 지표를 추출하여 가산점/감점 및 대시세 추종 익절에 반영합니다.
-      </p>
-      <div style="font-size: 12px; background: rgba(0,0,0,0.3); padding: 8px 10px; border-radius: 8px; line-height: 1.6;">
-        • <b>📊 거래량 폭발 비율</b>: 20일 평균 거래량 대비 당일 거래량 비율(%) 산출 (가짜 반등 감점 / 대량 거래량 돌파 가산점)<br>
-        • <b>🌊 5일 누적 &amp; 연속 수급</b>: 당일 수급뿐 아니라 최근 5거래일 누적 합계 및 외국인·기관 연속 매집 일수 추적<br>
-        • <b>🕯️ 당일 캔들 모양</b>: 장중 고점 대비 밀린 '긴 윗꼬리 음봉(상투 위험)' 감점 vs '아래꼬리 양봉 반등' 가산점<br>
-        • <b>💱 원/달러 환율 &amp; SOXX</b>: 외국인 수급 스위치인 환율(USD/KRW)과 미 필라델피아 반도체(SOXX) 실시간 연동<br>
-        • <b>🚀 50% 반절 익절 + 트레일링 스탑</b>: 2주 이상 보유 종목이 목표 익절선 도달 시 <b>절반(50%)만 먼저 익절</b>하고, 나머지는 <b>최고 수익률 대비 -2.5%p 꺾일 때까지 대시세를 끝까지 추종</b>
-      </div>
-    </div>
-
-    <div class="guard-box" style="border-left: 3px solid #f472b6; margin-top: 10px;">
-      <div class="guard-title" style="color: #f472b6;">5️⃣ 제도권 금융사(자산운용사) 4대 기관급 리스크·성과 아키텍처</div>
-      <p style="color: var(--text-sub); line-height: 1.5; margin-bottom: 6px;">
-        제도권 퀀트 운용사의 8대 심사 기준을 100% 충족하기 위해 업종 상관관계 분산, 사후 적중률 복기, 워시트레이드 차단, 벤치마크 초과수익(α) 측정을 탑재했습니다.
-      </p>
-      <div style="font-size: 12px; background: rgba(0,0,0,0.3); padding: 8px 10px; border-radius: 8px; line-height: 1.6;">
-        • <b>🗂️ 동일 섹터(업종) 합산 50%(250만 원) 캡</b>: 종목당 150만 원 한도 외에 <b>반도체·자동차·금융·전력망 등 동일 업종 합산 비중이 50%(250만 원)를 넘지 못하도록 몰빵을 원천 차단</b><br>
-        • <b>🎯 사후 복기(Post-Trade Attribution) &amp; 적중률 피드백</b>: 과거 AI 예측과 실제 주가 등락을 비교해 <b>종목별 예측 적중률(%)</b>을 자동 채점하고, 연속 오판 시 자기반성 모드로 매수 기준 강화<br>
-        • <b>⏳ 왕복 거래비용(0.35%) 차감 &amp; 당일 워시트레이드 금지</b>: 증권거래세·수수료·슬리피지(0.35%)를 뺀 <b>세후 순수익률</b> 기준으로 익절하며, <b>당일 매도 종목 당일 재매수(Wash-Trade) 및 당일 단타 변심 매도를 차단</b><br>
-        • <b>📈 코스피200 대비 초과수익(Alpha α) &amp; 최대낙폭(MDD)</b>: 단순 수익률이 아닌 시장 지수 대비 진짜 실력(<b>α</b>)과 역대 고점 대비 최대 낙폭(<b>MDD</b>)을 5분마다 추적
+      <div class="watch-grid" id="watchGrid">
+        <!-- 동적 렌더링 -->
       </div>
     </div>
   </div>
 
-  <!-- Section 3.5: Pre-Market Off-Hours AI Research Note -->
-  <div class="section-header">
-    <div class="section-title">🌅 휴장시간 AI 사전 리서치 컨닝페이퍼</div>
-    <div class="section-sub" id="intelUpdated">평일 08:30 자동 갱신</div>
-  </div>
-  <div class="card" style="border-left: 3px solid var(--green);">
-    <p style="font-size: 12px; color: var(--text-sub); line-height: 1.5; margin-bottom: 10px;">
-      장중(10:00/14:30) AI 과부하를 막기 위해 <b>휴장 시간(평일 아침 08:30 &amp; 수동 <code>/research</code>)에 미리 분석해 둔 컨닝페이퍼</b>입니다. 정규장 매매 시 AI가 추가 API 호출 없이 0.001초 만에 이 노트를 참조합니다.
-    </p>
-    <div class="guard-box" style="margin-bottom: 8px;">
-      <div class="guard-title" style="color: #60a5fa;">🇺🇸 미국 나스닥(Nasdaq) 공식 빅테크 실적발표 달력 &amp; 동향</div>
-      <div id="intelUsCalendar" style="font-size: 11px; color: #93c5fd; line-height: 1.6; margin-bottom: 6px; background: rgba(0,0,0,0.35); padding: 6px 8px; border-radius: 6px;">공식 달력 조회 중...</div>
-      <div id="intelUsSummary" style="font-size: 12px; color: var(--text-main); line-height: 1.5;">데이터 로딩 중...</div>
+  <!-- ========================================================
+       ACCORDION SECTION 8: 텔레그램 간편 명령어 치트시트
+       ======================================================== -->
+  <div class="accordion-item" id="acc-commands">
+    <div class="accordion-header" onclick="toggleAccordion('acc-commands')">
+      <div class="accordion-title-wrap">
+        <span class="accordion-icon">⌨️</span>
+        <div>
+          <div class="accordion-title">텔레그램 간편 명령어 치트시트</div>
+          <div class="accordion-sub">한투 자율 봇 &amp; 토스 수동매매 비서 조작 명령어</div>
+        </div>
+      </div>
+      <div class="accordion-right">
+        <span class="accordion-badge" style="background: rgba(139, 92, 246, 0.2); color: #c4b5fd; border: 1px solid rgba(139, 92, 246, 0.4);">원격 조종</span>
+        <span class="accordion-chevron">▾</span>
+      </div>
     </div>
-    <div class="guard-box" style="margin-bottom: 8px;">
-      <div class="guard-title" style="color: var(--gold);">🇰🇷 한국 증시 매크로 &amp; 외국인 수급 핵심</div>
-      <div id="intelKrSummary" style="font-size: 12px; color: var(--text-main); line-height: 1.5;">데이터 로딩 중...</div>
+    <div class="accordion-content" style="font-size: 12px; line-height: 1.8;">
+      <div>• <code style="color: var(--gold); font-weight: 700;">/report</code> : 한투 500만 펀드 전 종목 AI 분석 &amp; 즉시 자율 매매 리포트</div>
+      <div>• <code style="color: #38bdf8; font-weight: 700;">/toss</code> (또는 <code>리포트</code>) : 토스 실전 계좌 전 종목 AI 타점 진단 &amp; 예수금 브리핑</div>
+      <div>• <code style="color: #60a5fa; font-weight: 700;">"메리츠 1주 사줘"</code> (또는 <code>/buy 메리츠 1</code>) : 🛒 <b>토스증권 대화형 수동 매매 (2중 확인 버튼)</b></div>
+      <div>• <code style="color: #ef4444; font-weight: 700;">"삼전 1주 팔아줘"</code> (또는 <code>/sell 삼전 1</code>) : 🛒 <b>토스증권 대화형 수동 매도 (2중 확인 버튼)</b></div>
+      <div>• <code style="color: #38bdf8; font-weight: 700;">/rotate</code> (또는 <code>주도주</code>) : 한·미 우량주·미국ETF 30선 실시간 수급 스캔 &amp; 감시종목 자동 교체</div>
+      <div>• <code style="color: #fb7185; font-weight: 700;">/audit</code> (또는 <code>검증</code>) : 5대 입력 팩트 vs 파이썬 정량 점수 vs AI 점수 1:1 대조 감사표</div>
+      <div>• <code style="color: #34d399; font-weight: 700;">/research</code> : 휴장시간 미국 빅테크 &amp; 종목별 실적발표(어닝) 사전 리서치 즉시 실행</div>
+      <div>• <code style="color: #f472b6; font-weight: 700;">/health</code> (또는 <code>자가진단</code>) : 5중 자체 감시견(스레드 박동·서킷브레이커·무결성) 즉시 점검</div>
+      <div>• <code style="color: var(--green); font-weight: 700;">/battery</code> : 공기계 홈서버 배터리 잔량 및 충전 상태 즉시 확인</div>
+      <div>• <code style="color: #c4b5fd; font-weight: 700;">/update</code> : GitHub 비공개 저장소 최신 코드 무선 원격 다운로드 &amp; 자동 재시작</div>
     </div>
-    <div style="font-size: 12px; font-weight: 700; color: #c4b5fd; margin: 10px 0 6px;">📅 종목별 실적발표(어닝) 일정 &amp; 장중 AI 대응 지침</div>
-    <div id="intelStockNotes" style="display: flex; flex-direction: column; gap: 6px;">
-      <!-- 동적 렌더링 -->
-    </div>
-  </div>
-
-  <!-- Section 3.8: AI Strategy 5-Fact Cross-Verification Audit Table -->
-  <div class="section-header">
-    <div class="section-title">🕵️‍♂️ AI 전략 수립 5대 팩트체크 &amp; 정량 교차검증 감사표</div>
-    <div class="section-sub" id="auditUpdatedAt">명령어: <code>/audit</code></div>
-  </div>
-  <div class="card" style="border-left: 4px solid #f472b6;">
-    <p style="font-size: 12px; color: var(--text-sub); line-height: 1.5; margin-bottom: 10px;">
-      AI가 자료를 대충 읽거나 환각(Hallucination)으로 전략을 짜는 것을 막기 위해, 파이썬이 <b>5대 원본 팩트(20일선 추세 · 14일 RSI · 5일 누적/연속 수급 · 거래량/캔들 · 공식 어닝 D-Day)</b>로 독립적인 <b>'순수 정량 점수'</b>를 계산해 AI 전략 점수와 1:1 대조하고 모순이나 과대평가 발견 시 즉시 자동 교정합니다.
-    </p>
-    <div id="aiAuditTable" style="display: flex; flex-direction: column; gap: 8px;">
-      <!-- 동적 렌더링 -->
-    </div>
-  </div>
-
-  <!-- Section 4: Live Watch Basket & AI Dynamic Leader Rotation -->
-  <div class="section-header">
-    <div class="section-title">🔄 한·미 30선 마스터 유니버스 &amp; AI 자율 주도주 로테이션</div>
-    <div class="section-sub" id="rotUpdatedAt">매일 08:30 / 10:00 수급 스캔 자동 교체</div>
-  </div>
-  <div class="card">
-    <p style="font-size: 12px; color: var(--text-sub); line-height: 1.5; margin-bottom: 10px;">
-      고정된 국내 종목만 바라보지 않고, <b>미국 대표 지수·빅테크 ETF 6종(환전수수료 0원·매도거래세 0% 면제)</b>과 <b>한국 5대 핵심 산업 대표 우량주 24종</b>으로 구성된 <b>총 30선 마스터 유니버스 풀</b>을 AI가 매일 스캔합니다. 보유·코어 앵커 종목을 지키는 동시에 외국인·기관 당일 및 5일 누적 매집이 폭발하는 주도주를 감시 바스켓에 스스로 편입합니다.
-    </p>
-    <div id="rotationSummaryBox" style="background: rgba(59, 130, 246, 0.08); border: 1px solid rgba(59, 130, 246, 0.25); border-radius: 10px; padding: 10px 12px; margin-bottom: 12px; font-size: 12px; line-height: 1.6;">
-      <div>🌐 <b>마스터 풀 30선 스캔 대기 중</b> — 명령어 <code>/rotate</code> 또는 매일 아침 자동 실행</div>
-    </div>
-    <div class="watch-grid" id="watchGrid">
-      <!-- 동적 렌더링 -->
-    </div>
-  </div>
-
-  <!-- Section 5: Telegram Commands Cheat Sheet -->
-  <div class="section-header">
-    <div class="section-title">⌨️ 텔레그램 간편 명령어 치트시트</div>
-    <div class="section-sub">언제든 입력 가능</div>
-  </div>
-  <div class="card" style="font-size: 13px; line-height: 1.8;">
-    <div>• <code style="color: var(--gold); font-weight: 700;">/report</code> : 한투 500만 펀드 전 종목 AI 분석 &amp; 즉시 자율 매매 리포트</div>
-    <div>• <code style="color: #38bdf8; font-weight: 700;">/rotate</code> (또는 <code>주도주</code>) : 한·미 우량주·미국ETF 30선 실시간 수급 스캔 &amp; 감시종목 자동 교체</div>
-    <div>• <code style="color: #fb7185; font-weight: 700;">/audit</code> (또는 <code>검증</code>) : 5대 입력 팩트 vs 파이썬 정량 점수 vs AI 점수 1:1 대조 감사표</div>
-    <div>• <code style="color: #34d399; font-weight: 700;">/research</code> : 휴장시간 미국 빅테크 &amp; 종목별 실적발표(어닝) 사전 리서치 즉시 실행</div>
-    <div>• <code style="color: #f472b6; font-weight: 700;">/health</code> (또는 <code>자가진단</code>) : 5중 자체 감시견(스레드 박동·일일 서킷브레이커·무결성) 즉시 점검</div>
-    <div>• <code style="color: #60a5fa; font-weight: 700;">/toss</code> : 토스 실전 계좌 전 종목 AI 타점 진단 & 예수금 브리핑</div>
-    <div>• <code style="color: var(--green); font-weight: 700;">/battery</code> : 공기계 홈서버 배터리 잔량 및 충전 상태 즉시 확인</div>
-    <div>• <code style="color: #c4b5fd; font-weight: 700;">/update</code> : GitHub 비공개 저장소 최신 코드 무선 원격 다운로드 & 자동 재시작</div>
   </div>
 
   <!-- Footer -->
@@ -464,6 +712,59 @@
   </div>
 
   <script>
+    // Accordion Toggle
+    function toggleAccordion(id) {
+      const el = document.getElementById(id);
+      if (el) {
+        el.classList.toggle('active');
+      }
+    }
+
+    // Expand or Collapse All
+    function expandAll(expand) {
+      document.querySelectorAll('.accordion-item').forEach(item => {
+        if (expand) {
+          item.classList.add('active');
+        } else {
+          item.classList.remove('active');
+        }
+      });
+      // reset pill active status
+      document.querySelectorAll('.pill-btn').forEach(btn => btn.classList.remove('active'));
+      const allBtn = document.getElementById('pill-all');
+      if (allBtn && expand) allBtn.classList.add('active');
+    }
+
+    // Single Section Focus (Scroll Reduction Magic)
+    function openSingleSection(targetId) {
+      document.querySelectorAll('.pill-btn').forEach(btn => btn.classList.remove('active'));
+      
+      if (targetId === 'all') {
+        expandAll(true);
+        const allBtn = document.getElementById('pill-all');
+        if (allBtn) allBtn.classList.add('active');
+        return;
+      }
+
+      // Close all, open targeted one and smooth scroll
+      document.querySelectorAll('.accordion-item').forEach(item => {
+        if (item.id === targetId) {
+          item.classList.add('active');
+        } else {
+          item.classList.remove('active');
+        }
+      });
+
+      const pillId = 'pill-' + targetId.replace('acc-', '');
+      const pill = document.getElementById(pillId);
+      if (pill) pill.classList.add('active');
+
+      const targetEl = document.getElementById(targetId);
+      if (targetEl) {
+        targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
     async function loadData() {
       try {
         const res = await fetch('strategy_data.json?t=' + new Date().getTime());
@@ -502,13 +803,37 @@
         }
       }
 
+      // 8대 API 통신망 & 통합 관제 매트릭스 렌더링
+      const apiMatrix = d.api_matrix || [];
+      const apiGrid = document.getElementById('apiMatrixGrid');
+      if (apiGrid && apiMatrix.length > 0) {
+        apiGrid.innerHTML = apiMatrix.map(api => {
+          return `
+            <div class="api-card">
+              <div class="api-head">
+                <div>
+                  <div class="api-name">${api.name}</div>
+                  <div style="font-size:10px;color:var(--text-sub);">${api.provider} · <span style="color:#c4b5fd;">${api.category}</span></div>
+                </div>
+                <span style="font-size:11px;font-weight:700;color:${api.status_color || '#10b981'};background:rgba(255,255,255,0.06);padding:2px 8px;border-radius:10px;white-space:nowrap;">
+                  ${api.status_badge || '🟢 Active'}
+                </span>
+              </div>
+              <div class="api-role">${api.role}</div>
+              <div class="api-mode">⚙️ ${api.mode || api.quota || ''}</div>
+            </div>
+          `;
+        }).join('');
+      }
+
       // 5중 실시간 자체 감시(Watchdog) 성적표 렌더링
       const wd = d.watchdog || {};
       if (wd.checked_at) {
         document.getElementById('wdCheckedAt').textContent = '최근 감사: ' + wd.checked_at;
       }
       if (wd.overall_status) {
-        document.getElementById('wdOverallStatus').textContent = wd.overall_status;
+        const badgeEl = document.getElementById('wdOverallBadge');
+        if (badgeEl) badgeEl.textContent = wd.overall_status.includes('착오 0건') ? '통과 (착오 0건)' : '주의 감지';
       }
       if (wd.thread_status) {
         document.getElementById('wdThreadStatus').textContent = wd.thread_status;
@@ -544,6 +869,7 @@
         document.getElementById('wdSectorStatus').textContent = wd.sector_summary_str;
       }
 
+      // KIS 트랙
       const kis = d.kis_system || {};
       document.getElementById('kisAutoTrade').textContent = kis.auto_trade ? '자율 매매 활성 (ON)' : '매매 중단 (OFF)';
       document.getElementById('kisBudget').textContent = (kis.budget_limit || 5000000).toLocaleString() + '원';
@@ -554,14 +880,15 @@
       if (document.getElementById('kisMaxPerSector')) {
         document.getElementById('kisMaxPerSector').textContent = (kis.max_per_sector_krw || 2500000).toLocaleString() + '원 (50%)';
       }
-      document.getElementById('kisMaxSharePrice').textContent = (kis.max_share_price_krw || 500000).toLocaleString() + '원 이하';
       document.getElementById('kisRebalance').textContent = `~${kis.rebalance_deadline || '2026-11-06'} (${kis.rebalance_mode ? '가동 중' : '완료'})`;
 
+      // Toss 트랙
       const toss = d.toss_system || {};
       document.getElementById('tossAccountNo').textContent = toss.account_no || '17601069723';
       document.getElementById('tossKrwCash').textContent = (toss.krw_cash || 0).toLocaleString() + '원';
       document.getElementById('tossUsdCash').textContent = '$' + (toss.usd_cash || 0).toFixed(2);
 
+      // 감시 바스켓
       const wGrid = document.getElementById('watchGrid');
       const basket = kis.watch_basket || [];
       wGrid.innerHTML = basket.map(b => {
@@ -575,6 +902,7 @@
         `;
       }).join('');
 
+      // 로테이션
       const rot = kis.last_rotation || (d.market_intel || {}).last_rotation || {};
       if (rot.rotated_at && document.getElementById('rotUpdatedAt')) {
         document.getElementById('rotUpdatedAt').textContent = '최근 로테이션: ' + rot.rotated_at;
@@ -588,6 +916,7 @@
         rotBox.innerHTML = `<div style="font-weight:700;color:#60a5fa;margin-bottom:4px;">🚀 AI 수급·모멘텀 스캐너 선발 주도주 (${rot.universe_size || 30}선 풀 스캔)</div>` + dynLines;
       }
 
+      // 사전 리서치 노트
       const intel = d.market_intel || {};
       if (intel.updated_at) {
         document.getElementById('intelUpdated').textContent = '기준: ' + intel.updated_at;
@@ -638,16 +967,16 @@
         auditEl.innerHTML = auditKeys.map(code => {
           const it = auditItems[code] || {};
           const decColor = (it.decision || '').includes('매수') ? '#10b981' : ((it.decision || '').includes('매도') ? '#ef4444' : '#f59e0b');
-          return `<div style="background:rgba(0,0,0,0.35);border:1px solid rgba(255,255,255,0.07);padding:10px 12px;border-radius:10px;font-size:12px;line-height:1.6;">
+          return `<div style="background:rgba(0,0,0,0.35);border:1px solid rgba(255,255,255,0.07);padding:8px 10px;border-radius:8px;font-size:11px;line-height:1.6;">
             <div style="display:flex;justify-content:space-between;align-items:center;">
               <b>📌 ${it.name || code} (${code} · <span style="color:#93c5fd;">${it.sector || '주도섹터'}</span>)</b>
-              <span style="color:${decColor};font-weight:700;">최종 전략: ${it.decision || '관망'} (${it.final_score || 55}점)</span>
+              <span style="color:${decColor};font-weight:700;">최종: ${it.decision || '관망'} (${it.final_score || 55}점)</span>
             </div>
-            <div style="color:#93c5fd;font-size:11px;margin-top:3px;">📥 <b>입력된 5대 팩트</b>: ${it.fact_breakdown || ''}</div>
-            <div style="color:#fbbf24;font-size:11px;">🗓️ <b>공식 어닝 일정</b>: ${it.ir_schedule || '일정 없음'} | 🎯 <b>사후 예측 적중률</b>: ${it.hit_rate_pct !== undefined ? it.hit_rate_pct + '%' : '100%'} (${it.hit_desc || '정상'})</div>
-            <div style="color:#d1d5db;font-size:11px;">📝 <b>AI 복창(인용) 근거</b>: <i>${it.cited_facts || ''}</i></div>
-            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:4px;padding-top:4px;border-top:1px dashed rgba(255,255,255,0.08);">
-              <span>🧮 정량 <b>${it.quant_score || 55}점</b> ↔ AI원본 <b>${it.ai_raw_score || 55}점</b></span>
+            <div style="color:#93c5fd;font-size:11px;margin-top:2px;">📥 <b>입력 팩트</b>: ${it.fact_breakdown || ''}</div>
+            <div style="color:#fbbf24;font-size:11px;">🗓️ <b>어닝 일정</b>: ${it.ir_schedule || '일정 없음'} | 🎯 <b>적중률</b>: ${it.hit_rate_pct !== undefined ? it.hit_rate_pct + '%' : '100%'}</div>
+            <div style="color:#d1d5db;font-size:11px;">📝 <b>AI 복창 근거</b>: <i>${it.cited_facts || ''}</i></div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:3px;padding-top:3px;border-top:1px dashed rgba(255,255,255,0.08);">
+              <span>🧮 정량 <b>${it.quant_score || 55}점</b> ↔ AI <b>${it.ai_raw_score || 55}점</b></span>
               <span style="color:#34d399;font-weight:700;">${it.audit_badge || '✅ 검증 통과'}</span>
             </div>
           </div>`;
