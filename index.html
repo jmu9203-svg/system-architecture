@@ -807,6 +807,19 @@
       const apiMatrix = d.api_matrix || [];
       const apiGrid = document.getElementById('apiMatrixGrid');
       if (apiGrid && apiMatrix.length > 0) {
+        let activeCount = 0;
+        apiMatrix.forEach(api => {
+          if ((api.status_badge || '').includes('🟢')) activeCount++;
+        });
+        const summaryBadge = document.getElementById('apiSummaryBadge');
+        if (summaryBadge) {
+          summaryBadge.textContent = `${activeCount}/${apiMatrix.length} 정상 가동`;
+          if (activeCount < apiMatrix.length) {
+            summaryBadge.style.color = '#fbbf24';
+            summaryBadge.style.background = 'rgba(245, 158, 11, 0.2)';
+            summaryBadge.style.borderColor = 'rgba(245, 158, 11, 0.4)';
+          }
+        }
         apiGrid.innerHTML = apiMatrix.map(api => {
           return `
             <div class="api-card">
