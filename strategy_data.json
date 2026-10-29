@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30 07:07:22",
+  "updated_at": "2026-10-30 07:18:00",
   "battery": "85% (⚡ 충전 중, 23.2°C)",
   "market_intel": {
     "updated_at": "2026-10-29 08:30:16",
@@ -256,12 +256,12 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-10-30 07:06:54",
-    "checked_ts": 1793311614,
+    "checked_at": "2026-10-30 07:17:27",
+    "checked_ts": 1793312247,
     "date": "2026-10-30",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
-    "scheduler_heartbeat_sec_ago": 0,
+    "scheduler_heartbeat_sec_ago": 8,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 4832317,
     "market_opened_today": false,
@@ -1399,10 +1399,10 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 35.77,
+        "lastPrice": 35.78,
         "averagePurchasePrice": 34.3786,
-        "profitLossRate": 4.04,
-        "profitLossAmount": 5.5656,
+        "profitLossRate": 4.07,
+        "profitLossAmount": 5.6056,
         "rsi": 86.4,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "관망",
