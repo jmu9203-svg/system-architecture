@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29 12:47:00",
+  "updated_at": "2026-10-29 12:48:58",
   "battery": "78% (🔋 배터리 사용 중, 21.4°C)",
   "market_intel": {
     "updated_at": "2026-10-29 08:30:16",
@@ -256,12 +256,12 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-10-29 12:46:24",
-    "checked_ts": 1793245584,
+    "checked_at": "2026-10-29 12:48:26",
+    "checked_ts": 1793245706,
     "date": "2026-10-29",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
-    "scheduler_heartbeat_sec_ago": 5,
+    "scheduler_heartbeat_sec_ago": 2,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 4934456,
     "market_opened_today": true,
@@ -270,9 +270,9 @@
     "mdd_pct": -38.01,
     "fund_return_pct": -3.63,
     "kospi200_base_price": 87886,
-    "kospi200_cur_price": 93100,
-    "kospi200_return_pct": 5.93,
-    "alpha_pct": -9.56,
+    "kospi200_cur_price": 93055,
+    "kospi200_return_pct": 5.88,
+    "alpha_pct": -9.51,
     "sector_map": {
       "플랫폼·바이오": 1385600
     },
@@ -970,7 +970,7 @@
       "provider": "토스증권 Toss Securities WTS",
       "category": "Brokerage & Orders",
       "status_badge": "🟢 정상 연동 (Active)",
-      "status_color": "#3b82f6",
+      "status_color": "#10b981",
       "role": "토스 실전 계좌 보유종목, 예수금 잔고 분석, 대화형 수동 매매 주문 (POST /orders)",
       "mode": "대화형 승인 수동 주문 (무단 자동매매 0% 동결)",
       "quota": "자택 공인 IP 인가 / Windows 개발 PC 시뮬레이션 가드"
@@ -981,7 +981,7 @@
       "provider": "Google DeepMind",
       "category": "AI Brain (1.2x)",
       "status_badge": "🟢 정상 가동 (Active)",
-      "status_color": "#8b5cf6",
+      "status_color": "#10b981",
       "role": "3대 빅테크 앙상블 핵심 AI 두뇌, 거시경제 레짐 판정 & 리스크 균형추 (가중치 1.2x)",
       "mode": "정규 매매 & 5분 긴급 감시 전용 쿼터",
       "quota": "분당 15 RPM / 일일 1,500 RPD 쿼터 가드"
@@ -992,7 +992,7 @@
       "provider": "Google DeepMind (독립 계정)",
       "category": "AI PB Chatbot",
       "status_badge": "🟢 독립 분리 (Isolated)",
-      "status_color": "#a78bfa",
+      "status_color": "#10b981",
       "role": "토스 전담 PB 1:1 대화 상담, 자연어 수동 주문 의도 AI 파서",
       "mode": "별도 전용 키(GEMINI_CHAT_API_KEY)로 매매 쿼터와 100% 분리 격리",
       "quota": "대화 폭주 시에도 매매 감시 지연 0% 원천 보장"
@@ -1003,19 +1003,19 @@
       "provider": "Groq Cloud",
       "category": "AI Auditor (1.1x)",
       "status_badge": "🟢 초고속 가동 (Active)",
-      "status_color": "#f59e0b",
+      "status_color": "#10b981",
       "role": "1,200억 파라미터 초대형 독립 퀀트 감사관 (가중치 1.1x), 대화 2중 백업 가로채기",
       "mode": "실측 1.14초 초저지연 LPU 추론 (Fast Failover)",
       "quota": "무료 티어 활성 (초당 30 RPM)"
     },
     {
-      "id": "nvidia",
-      "name": "NVIDIA Nemotron 3.5",
-      "provider": "OpenRouter / NVIDIA",
+      "id": "openrouter",
+      "name": "Meta Llama 3.3 (70B Instruct)",
+      "provider": "OpenRouter / Meta",
       "category": "AI Reasoning (1.0x)",
       "status_badge": "🟢 정상 가동 (Active)",
       "status_color": "#10b981",
-      "role": "엔비디아 심층 추론(Reasoning) 팩트 판정관 (가중치 1.0x), 2/3 다수결 합의",
+      "role": "메타(Meta) 700억 파라미터 최고봉 오픈가중치 퀀트 판정관 (가중치 1.0x), 2/3 다수결 합의",
       "mode": "0.8초 무중단 Gemini Flash-Lite 자동 가로채기 방패 탑재",
       "quota": "Free Tier 활성 (OpenRouter)"
     },
@@ -1025,7 +1025,7 @@
       "provider": "Telegram",
       "category": "Channels & Control",
       "status_badge": "🟢 상시 박동 (Active)",
-      "status_color": "#38bdf8",
+      "status_color": "#10b981",
       "role": "한투 자율 알림방(@jmu_trading_bot) + 토스 PB & 수동 주문방(@jmu_toss_assistant_bot) 듀얼 가동",
       "mode": "실시간 긴급 경보, 2중 확인 인라인 버튼 주문 집행, 롱폴링 리스너",
       "quota": "메시지 초당 30건 제한 준수"
@@ -1036,7 +1036,7 @@
       "provider": "GitHub",
       "category": "Cloud & Deploy",
       "status_badge": "🟢 실시간 동기화 (Live Sync)",
-      "status_color": "#c4b5fd",
+      "status_color": "#10b981",
       "role": "4대 반응형 웹 패밀리 자동 배포, /update 무선 원격 배포 및 코드 동기화",
       "mode": "REST API v3 Contents 자동 푸시 & 무선 무중단 재기동",
       "quota": "시간당 5,000회 인증 쿼터"
@@ -1122,43 +1122,59 @@
     },
     "watch_basket": [
       {
-        "code": "035420",
-        "name": "NAVER"
-      },
-      {
-        "code": "465580",
-        "name": "ACE 미국빅테크TOP7 Plus"
+        "code": "005380",
+        "name": "현대차"
       },
       {
         "code": "005930",
         "name": "삼성전자"
       },
       {
-        "code": "005380",
-        "name": "현대차"
+        "code": "035420",
+        "name": "NAVER"
+      },
+      {
+        "code": "267260",
+        "name": "HD현대일렉트릭"
+      },
+      {
+        "code": "465580",
+        "name": "ACE 미국빅테크TOP7 Plus"
       },
       {
         "code": "105560",
         "name": "KB금융"
       },
       {
-        "code": "381170",
-        "name": "TIGER 미국테크TOP10 INDXX"
+        "code": "381180",
+        "name": "TIGER 미국필라델피아반도체나스닥"
       },
       {
-        "code": "012330",
-        "name": "현대모비스"
+        "code": "138040",
+        "name": "메리츠금융지주"
       },
       {
-        "code": "035720",
-        "name": "카카오"
+        "code": "066570",
+        "name": "LG전자"
       }
     ],
     "last_rotation": {
-      "rotated_at": "2026-10-29 10:00:27",
+      "rotated_at": "2026-10-26 22:56:21",
       "universe_size": 30,
-      "watch_size": 8,
+      "watch_size": 9,
       "core_stocks": [
+        {
+          "code": "005380",
+          "name": "현대차",
+          "sector": "자동차·모빌리티",
+          "role": "현재 보유 중 (익절·손절 밀착 관리)"
+        },
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "sector": "반도체·IT하드웨어",
+          "role": "현재 보유 중 (익절·손절 밀착 관리)"
+        },
         {
           "code": "035420",
           "name": "NAVER",
@@ -1166,22 +1182,16 @@
           "role": "현재 보유 중 (익절·손절 밀착 관리)"
         },
         {
+          "code": "267260",
+          "name": "HD현대일렉트릭",
+          "sector": "전력망·중공업·방산",
+          "role": "현재 보유 중 (익절·손절 밀착 관리)"
+        },
+        {
           "code": "465580",
           "name": "ACE 미국빅테크TOP7 Plus",
           "sector": "미국증시·글로벌빅테크",
           "role": "🇺🇸 미국 빅테크 코어 ETF"
-        },
-        {
-          "code": "005930",
-          "name": "삼성전자",
-          "sector": "반도체·IT하드웨어",
-          "role": "🇰🇷 한국 대표 코어 우량주"
-        },
-        {
-          "code": "005380",
-          "name": "현대차",
-          "sector": "자동차·모빌리티",
-          "role": "🇰🇷 한국 대표 코어 우량주"
         },
         {
           "code": "105560",
@@ -1192,45 +1202,48 @@
       ],
       "dynamic_leaders": [
         {
-          "code": "381170",
-          "name": "TIGER 미국테크TOP10 INDXX",
+          "code": "381180",
+          "name": "TIGER 미국필라델피아반도체나스닥",
           "sector": "미국증시·글로벌빅테크",
           "is_us_etf": true,
-          "price": 30015,
-          "chg_rate": -1.72,
-          "frgn_today": -73008,
-          "orgn_today": 85400,
-          "leader_score": 85,
-          "reason": "당일 기관 순매수(+85,400주) · 5일 누적 외인·기관 동반 매집 · 조정 중 메이저 저가매수 유입(-1.72%) · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
+          "price": 36905,
+          "chg_rate": -1.82,
+          "frgn_today": 233910,
+          "orgn_today": -157073,
+          "leader_score": 80,
+          "reason": "당일 외인 순매수(+233,910주) · 5일 합산 메이저 순매수(+273,883주) · 조정 중 메이저 저가매수 유입(-1.82%) · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
         },
         {
-          "code": "012330",
-          "name": "현대모비스",
-          "sector": "자동차·모빌리티",
+          "code": "138040",
+          "name": "메리츠금융지주",
+          "sector": "금융·밸류업지주",
           "is_us_etf": false,
-          "price": 347500,
-          "chg_rate": -1.28,
-          "frgn_today": 21752,
-          "orgn_today": 10407,
+          "price": 124700,
+          "chg_rate": -2.43,
+          "frgn_today": 30206,
+          "orgn_today": 776,
           "leader_score": 88,
-          "reason": "당일 외인(+21,752)·기관(+10,407) 쌍끌이 매수 · 5일 누적 외인·기관 동반 매집 · 조정 중 메이저 저가매수 유입(-1.28%)"
+          "reason": "당일 외인(+30,206)·기관(+776) 쌍끌이 매수 · 5일 누적 외인·기관 동반 매집 · 조정 중 메이저 저가매수 유입(-2.43%)"
         },
         {
-          "code": "035720",
-          "name": "카카오",
-          "sector": "플랫폼·바이오",
+          "code": "066570",
+          "name": "LG전자",
+          "sector": "반도체·IT하드웨어",
           "is_us_etf": false,
-          "price": 29300,
-          "chg_rate": -1.68,
-          "frgn_today": 62390,
-          "orgn_today": 22969,
-          "leader_score": 88,
-          "reason": "당일 외인(+62,390)·기관(+22,969) 쌍끌이 매수 · 5일 누적 외인·기관 동반 매집 · 조정 중 메이저 저가매수 유입(-1.68%)"
+          "price": 156500,
+          "chg_rate": -0.38,
+          "frgn_today": 14434,
+          "orgn_today": 15579,
+          "leader_score": 78,
+          "reason": "당일 외인(+14,434)·기관(+15,579) 쌍끌이 매수 · 조정 중 메이저 저가매수 유입(-0.38%)"
         }
       ],
-      "added": [],
+      "added": [
+        "TIGER 미국필라델피아반도체나스닥(381180)",
+        "LG전자(066570)"
+      ],
       "removed": [
-        "HD현대일렉트릭(267260)"
+        "TIGER 미국테크TOP10 INDXX(381170)"
       ]
     },
     "master_universe_size": 30
@@ -1265,11 +1278,11 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 1.0,
-        "lastPrice": 128900.0,
+        "lastPrice": 128700.0,
         "averagePurchasePrice": 123100.0,
-        "profitLossRate": 4.71,
-        "profitLossAmount": 5800.0,
-        "rsi": 54.8,
+        "profitLossRate": 4.54,
+        "profitLossAmount": 5600.0,
+        "rsi": 54.4,
         "investor_summary": "최근(10/28) 순매수: 외국인 +51,291주(4일연속매수🔥), 기관 -61,126주(2일연속매도⚠️) | [5일누적 합계: 외인 +110,760주, 기관 -58,744주]",
         "ai_decision": "관망",
         "ai_score": 67,
@@ -1282,11 +1295,11 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 21.0,
-        "lastPrice": 228000.0,
+        "lastPrice": 228500.0,
         "averagePurchasePrice": 264000.0,
-        "profitLossRate": -13.63,
-        "profitLossAmount": -756000.0,
-        "rsi": 39.3,
+        "profitLossRate": -13.44,
+        "profitLossAmount": -745500.0,
+        "rsi": 39.4,
         "investor_summary": "최근(10/28) 순매수: 외국인 +1,522,344주(2일연속매수🔥), 기관 +1,620,180주(4일연속매수🔥) | [5일누적 합계: 외인 +135,681주, 기관 +2,887,163주]",
         "ai_decision": "관망",
         "ai_score": 61,
@@ -1299,11 +1312,11 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 1.0,
-        "lastPrice": 1504000.0,
+        "lastPrice": 1503000.0,
         "averagePurchasePrice": 1710000.0,
-        "profitLossRate": -12.04,
-        "profitLossAmount": -206000.0,
-        "rsi": 41.4,
+        "profitLossRate": -12.1,
+        "profitLossAmount": -207000.0,
+        "rsi": 41.3,
         "investor_summary": "최근(10/28) 순매수: 외국인 +258,356주, 기관 +149,385주(4일연속매수🔥) | [5일누적 합계: 외인 -547,777주, 기관 +771,825주]",
         "ai_decision": "관망",
         "ai_score": 62,
@@ -1333,10 +1346,10 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 35.35,
+        "lastPrice": 35.34,
         "averagePurchasePrice": 34.3786,
-        "profitLossRate": 2.82,
-        "profitLossAmount": 3.8856,
+        "profitLossRate": 2.79,
+        "profitLossAmount": 3.8456,
         "rsi": 85.3,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "관망",
@@ -1378,9 +1391,9 @@
         "role": "1,200억 파라미터 초대형 독립 퀀트 감사관 (가중치 1.1x)"
       },
       {
-        "provider": "NVIDIA",
-        "model": "Nemotron 3.5 via OpenRouter",
-        "role": "엔비디아 심층 추론 팩트 판정관 (가중치 1.0x)"
+        "provider": "Meta",
+        "model": "Llama 3.3 (70B Instruct via OpenRouter)",
+        "role": "메타 심층 추론 팩트 판정관 (가중치 1.0x)"
       },
       {
         "provider": "Google (Failover)",
