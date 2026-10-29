@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-29 14:26:52",
-  "battery": "75% (🔋 배터리 사용 중, 21.6°C)",
+  "updated_at": "2026-10-29 14:32:28",
+  "battery": "74% (🔋 배터리 사용 중, 21.4°C)",
   "market_intel": {
     "updated_at": "2026-10-29 08:30:16",
     "fx_soxx_info": {
@@ -256,37 +256,37 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-10-29 14:26:03",
-    "checked_ts": 1793251563,
+    "checked_at": "2026-10-29 14:31:58",
+    "checked_ts": 1793251918,
     "date": "2026-10-29",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
-    "scheduler_heartbeat_sec_ago": 8,
+    "scheduler_heartbeat_sec_ago": 113,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 4934456,
     "market_opened_today": true,
-    "current_fund_eval": 4829117,
+    "current_fund_eval": 4830717,
     "peak_fund_eval": 7648676,
     "mdd_pct": -38.01,
-    "fund_return_pct": -3.42,
+    "fund_return_pct": -3.39,
     "kospi200_base_price": 87886,
-    "kospi200_cur_price": 94985,
-    "kospi200_return_pct": 8.08,
-    "alpha_pct": -11.5,
+    "kospi200_cur_price": 95055,
+    "kospi200_return_pct": 8.16,
+    "alpha_pct": -11.55,
     "sector_map": {
-      "플랫폼·바이오": 1396000
+      "플랫폼·바이오": 1397600
     },
-    "sector_summary_str": "플랫폼·바이오: 1,396,000원(시드대비 27.9%)",
+    "sector_summary_str": "플랫폼·바이오: 1,397,600원(시드대비 28.0%)",
     "max_per_sector_krw": 2500000,
     "bought_today": [],
     "sold_today": [],
-    "daily_pnl_krw": -105339,
-    "daily_pnl_pct": -2.11,
+    "daily_pnl_krw": -103739,
+    "daily_pnl_pct": -2.07,
     "circuit_breaker_limit_pct": -3.5,
     "circuit_breaker_tripped": false,
     "circuit_breaker_reason": "",
-    "battery_str": "75% (🔋 배터리 사용 중, 21.6°C)",
-    "battery_pct": 75,
+    "battery_str": "74% (🔋 배터리 사용 중, 21.4°C)",
+    "battery_pct": 74,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
       "✅ 4,500만 원 동결금 및 500만 원 시드 분리 무결성 정상",
@@ -298,57 +298,57 @@
     "last_anomaly_alert_ts": 0.0
   },
   "ai_audit": {
-    "updated_at": "2026-10-29 12:56:04",
+    "updated_at": "2026-10-29 14:31:57",
     "items": {
       "005930": {
         "code": "005930",
         "name": "삼성전자",
         "sector": "반도체·IT하드웨어",
-        "checked_at": "2026-10-29 12:54:36",
-        "price": 229500,
-        "ma20": 237625,
-        "rsi": 37.7,
-        "vol_ratio_pct": 100.2,
-        "candle_desc": "⚠️ 긴 윗꼬리 음봉 (장중 고점 249,000원 대비 -7.8% 밀림 — 상단 매물대 저항 강함, 고점 추격매수 감점)",
+        "checked_at": "2026-10-29 14:31:32",
+        "price": 232250,
+        "ma20": 237750,
+        "rsi": 38.5,
+        "vol_ratio_pct": 118.4,
+        "candle_desc": "⚠️ 긴 윗꼬리 음봉 (장중 고점 249,000원 대비 -6.8% 밀림 — 상단 매물대 저항 강함, 고점 추격매수 감점)",
         "flow_summary": "최근(10/28) 순매수: 외국인 +1,522,344주(2일연속매수🔥), 기관 +1,620,180주(4일연속매수🔥) | [5일누적 합계: 외인 +135,681주, 기관 +2,887,163주]",
         "ir_schedule": "2026-10-29 (D-Day(오늘)) 2026년 3분기 경영실적 발표",
-        "fact_breakdown": "시장레짐(약세조정 -5점) | 20일선 하회(-5점) | RSI 37.7 눌림목(+6점) | 외인기관수급(+16점) | 거래량100%·캔들(-7점) | 공식실적 D-0 임박주의(-8점)",
-        "cited_facts": "코스피200 약세·조정장(-2.29%), 삼성전자 3분기 실적 발표 D-Day(오늘), 외인·기관 5일 누적 대량 순매수, 긴 윗꼬리 음봉(-5.17%), 14일 RSI 37.7",
+        "fact_breakdown": "시장레짐(약세조정 -5점) | 20일선 하회(-5점) | RSI 38.5 눌림목(+6점) | 외인기관수급(+16점) | 거래량118%·캔들(-7점) | 공식실적 D-0 임박주의(-8점)",
+        "cited_facts": "1. 삼성전자 3분기 실적 발표 D-Day(오늘)로 불확실성 극대화 2. 당일 주가 -4.03% 하락 및 긴 윗꼬리 음봉(장중 고점 대비 -6.8% 밀림) 3. 14일 RSI 38.5로 과매도 직전이나 추세 약세 4. 외국인/기관 5일 누적 순매수(외인 +13.5만주, 기관 +288.7만주) 5. 최근 AI 예측 적중률 저조(25%)로 보수적 대응 필요",
         "quant_score": 52,
-        "ai_raw_score": 54,
-        "final_score": 54,
+        "ai_raw_score": 53,
+        "final_score": 53,
         "decision": "관망",
-        "score_gap": 2,
+        "score_gap": 1,
         "hit_rate_pct": 25.0,
-        "hit_desc": "직전 관망·방어(53점) 판정 적중✅ (변동 -3.6%)",
+        "hit_desc": "직전 관망·방어(53점) 판정 적중✅ (변동 -2.4%)",
         "audit_status": "PASS",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 52점 ↔ AI 54점)",
-        "reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 54점 · 편차 8점 | Google:3.5-flash-lite(58점 관망), Groq:qwen/qwen3.8-27b(50점 관망), Meta:llama-3.3-70b-instruct(55점 관망))] 코스피 약세장 및 실적 발표 당일 장중 고점 대비 크게 밀린 긴 윗꼬리 음봉(-5.17%)이 발생하여 추격 매수 리스크가 큽니다. 외인·기관의 연속 순매수와 대규모 3분기 실적 모멘텀은 긍정적이나, 사후 적중률 감점 및 단기 상단 매물대 저항을 고려해 공식 실적 가이던스와 주가 반응을 확인한 뒤 진입하기 위해 관망을 유지합니다."
+        "audit_badge": "✅ 5대 팩트 일치 (정량 52점 ↔ AI 53점)",
+        "reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 53점 · 편차 8점 | Groq:qwen/qwen3.8-27b(50점 관망), Google:3.5-flash-lite(58점 관망), Meta:llama-3.3-70b-instruct(50점 관망))] 오늘이 삼성전자 공식 실적 발표일(D-Day)인 만큼 장중 변동성과 추격매수 리스크가 극대화된 상태이며, 당일 긴 윗꼬리 음봉과 -4%대 급락은 상단 매물대 저항이 강함을 시사합니다. 또한 최근 AI 예측 적중률이 낮아 보수적 점수(-4점)를 적용해야 하며, 실적 컨센서스 상회 여부와 외국인 수급 방향성이 명확히 확인되는 시점까지 신규 진입을 자제하고 관망하는 것이 원금 보호에 유리합니다."
       },
       "005380": {
         "code": "005380",
         "name": "현대차",
         "sector": "자동차·모빌리티",
-        "checked_at": "2026-10-29 12:54:11",
-        "price": 289500,
-        "ma20": 315550,
-        "rsi": 34.2,
-        "vol_ratio_pct": 42.5,
-        "candle_desc": "🔻 음봉 흐름 (시가 293,000원 → 현재 289,000원)",
+        "checked_at": "2026-10-29 14:31:57",
+        "price": 299500,
+        "ma20": 316075,
+        "rsi": 38.5,
+        "vol_ratio_pct": 117.8,
+        "candle_desc": "⚠️ 윗꼬리 발생 (장중 고점 309,500원 대비 -3.2% 후퇴 — 단기 차익매물 출회)",
         "flow_summary": "최근(10/28) 순매수: 외국인 -13,428주, 기관 +19,213주 | [5일누적 합계: 외인 +91,213주, 기관 -91,330주]",
         "ir_schedule": "2026-10-29 (D-Day(오늘)) 현대자동차, 2026년 3분기 경영실적",
-        "fact_breakdown": "시장레짐(약세조정 -5점) | 20일선 하회(-5점) | RSI 34.2 과매도반등(+12점) | 외인기관수급(-3점) | 거래량42%·캔들(-5점) | 공식실적 D-0 임박주의(-8점)",
-        "cited_facts": "코스피200 약세장(-2.29%), 현대차 실적발표 D-0, 14일 RSI 34.2, 거래량 42% 부족, 미보유 상태(qty 0)",
-        "quant_score": 41,
+        "fact_breakdown": "시장레짐(약세조정 -5점) | 20일선 하회(-5점) | RSI 38.5 눌림목(+6점) | 외인기관수급(-3점) | 거래량118%·캔들(-7점) | 공식실적 D-0 임박주의(-8점)",
+        "cited_facts": "코스피200 약세장, 현대차 3분기 실적발표 D-0(매출 3.4%↓, 영업익 5.5%↑), RSI 38.5, 윗꼬리 음봉 발생(장중 고점 대비 -3.2% 후퇴), 외인 5일 누적 +91,213주 / 기관 5일 누적 -91,330주",
+        "quant_score": 33,
         "ai_raw_score": 64,
         "final_score": 64,
         "decision": "관망",
-        "score_gap": 23,
-        "hit_rate_pct": 100.0,
-        "hit_desc": "직전 관망·방어(58점) 판정 적중✅ (변동 +0.3%)",
+        "score_gap": 31,
+        "hit_rate_pct": 75.0,
+        "hit_desc": "직전 관망(58점) 후 +3.8% 상승(기회놓침)",
         "audit_status": "PASS",
-        "audit_badge": "🟢 팩트 검증 통과 (정량 41점 ↔ AI 64점 | 뉴스·포지션 가중치 반영)",
-        "reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [2:1 관망 우세] (평균 64점 · 편차 25점 | Google:3.5-flash-lite(58점 관망), Groq:gpt-oss-120b(55점 관망), Meta:llama-3.3-70b-instruct(80점 매수))] 현재 코스피200 약세장 및 현대차 3분기 실적 발표 당일의 변동성 확대 국면입니다. 14일 RSI가 34.2로 과매도 진입 상태이나, 거래량이 20일 평균 대비 42%로 크게 부족하고 음봉 흐름을 보여 가짜 반등 위험이 있으므로, 확실한 저가 매수세 유입을 확인하기 전까지 신규 진입을 보류하고 관망합니다."
+        "audit_badge": "🟢 팩트 검증 통과 (정량 33점 ↔ AI 64점 | 뉴스·포지션 가중치 반영)",
+        "reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [2:1 관망 우세] (평균 64점 · 편차 25점 | Google:3.5-flash-lite(58점 관망), Groq:qwen/qwen3.8-27b(55점 관망), Meta:llama-3.3-70b-instruct(80점 매수))] 코스피200 약세장 속에서 현대차가 오늘 3분기 실적을 발표했으나 매출 감소 및 윗꼬리 캔들이 발생하며 차익실현 매물이 출회되었습니다. RSI가 38.5로 낮아 낙폭과대 구간이나 단기 변동성과 수급 혼조세가 뚜렷하여, 추가적인 저점 다지기와 수급 방향성을 확인한 후 진입하기 위해 관망합니다."
       },
       "105560": {
         "code": "105560",
@@ -379,26 +379,26 @@
         "code": "035420",
         "name": "NAVER",
         "sector": "플랫폼·바이오",
-        "checked_at": "2026-10-29 12:54:00",
-        "price": 173200,
-        "ma20": 181130,
-        "rsi": 37.9,
-        "vol_ratio_pct": 73.7,
-        "candle_desc": "⚠️ 긴 윗꼬리 음봉 (장중 고점 177,500원 대비 -2.4% 밀림 — 상단 매물대 저항 강함, 고점 추격매수 감점)",
+        "checked_at": "2026-10-29 14:30:37",
+        "price": 174600,
+        "ma20": 181200,
+        "rsi": 39.2,
+        "vol_ratio_pct": 94.7,
+        "candle_desc": "🔻 음봉 흐름 (시가 175,400원 → 현재 174,600원)",
         "flow_summary": "최근(10/28) 순매수: 외국인 -9,617주(2일연속매도⚠️), 기관 -171,060주(2일연속매도⚠️) | [5일누적 합계: 외인 +99,003주, 기관 -346,306주]",
         "ir_schedule": "향후 공식 IR 일정 미등록",
-        "fact_breakdown": "시장레짐(약세조정 -5점) | 20일선 하회(-5점) | RSI 37.9 눌림목(+6점) | 외인기관수급(-12점) | 거래량74%·캔들(-7점) | 실적일정 중립(0점)",
-        "cited_facts": "코스피200 약세장(-2.29%), NAVER 현재가 173,200원(MA20 하회, 평단가 대비 -2.92%), 14일 RSI 37.9, 외국인·기관 2일 연속 매도(5일 기관 누적 -346,306주), 긴 윗꼬리 음봉",
-        "quant_score": 32,
+        "fact_breakdown": "시장레짐(약세조정 -5점) | 20일선 하회(-5점) | RSI 39.2 눌림목(+6점) | 외인기관수급(-12점) | 거래량95%·캔들(+0점) | 실적일정 중립(0점)",
+        "cited_facts": "MA20 181,200 above current 174,600; RSI 39.2; foreigner 5‑day net buy 99,003; institution 5‑day net sell 346,306; volume 95% of 20‑day average",
+        "quant_score": 39,
         "ai_raw_score": 54,
         "final_score": 54,
         "decision": "관망",
-        "score_gap": 22,
+        "score_gap": 15,
         "hit_rate_pct": 75.0,
-        "hit_desc": "직전 관망·방어(51점) 판정 적중✅ (변동 -0.9%)",
+        "hit_desc": "직전 관망·방어(51점) 판정 적중✅ (변동 -0.1%)",
         "audit_status": "PASS",
-        "audit_badge": "🟢 팩트 검증 통과 (정량 32점 ↔ AI 54점 | 뉴스·포지션 가중치 반영)",
-        "reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 54점 · 편차 3점 | Google:3.5-flash-lite(52점 관망), Groq:gpt-oss-120b(55점 관망), Meta:llama-3.3-70b-instruct(55점 관망))] 코스피200 약세장 및 주요 대기업 실적 슈퍼위크 속에서 NAVER가 20일선 아래로 조정을 받고 있고 외인·기관이 동반 순매도세를 보이고 있습니다. 14일 RSI가 37.9로 낮아졌으나 긴 윗꼬리 음봉과 수급 이탈이 뚜렷해 추가 매수보다는 현 포지션을 유지하며 추세 반전을 확인하는 관망 대응이 타당합니다."
+        "audit_badge": "✅ 5대 팩트 일치 (정량 39점 ↔ AI 54점)",
+        "reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 54점 · 편차 3점 | Groq:gpt-oss-20b(55점 관망), Google:3.5-flash-lite(52점 관망), Meta:llama-3.3-70b-instruct(55점 관망))] 현재 NAVER는 약세장에 진입해 MA20 아래에서 거래되고, RSI가 40 이하로 과매도 상태이며 거래량이 평균 이하입니다. 외국인 5일 누적 매수는 있으나 기관은 대규모 매도 중이므로 단기 매수 신호가 부족합니다. 따라서 현재 보유 포지션을 유지하고 추가 매수는 보류합니다."
       },
       "267260": {
         "code": "267260",
@@ -454,26 +454,26 @@
         "code": "465580",
         "name": "ACE 미국빅테크TOP7 Plus",
         "sector": "미국증시·글로벌빅테크",
-        "checked_at": "2026-10-29 12:55:01",
-        "price": 23500,
-        "ma20": 24140,
-        "rsi": 28.6,
-        "vol_ratio_pct": 28.0,
-        "candle_desc": "🔻 음봉 흐름 (시가 23,570원 → 현재 23,495원)",
+        "checked_at": "2026-10-29 14:31:08",
+        "price": 23605,
+        "ma20": 24146,
+        "rsi": 29.6,
+        "vol_ratio_pct": 29.7,
+        "candle_desc": "🟢 양봉 흐름 유지 (시가 23,570원 → 현재 23,605원)",
         "flow_summary": "최근(10/28) 순매수: 외국인 -521주, 기관 +370주 | [5일누적 합계: 외인 +3,274주, 기관 +24,258주]",
         "ir_schedule": "향후 공식 IR 일정 미등록",
-        "fact_breakdown": "시장레짐(약세조정 -5점) | 20일선 하회(-5점) | RSI 28.6 과매도반등(+12점) | 외인기관수급(+7점) | 거래량28%·캔들(-5점) | 실적일정 중립(0점)",
-        "cited_facts": "약세장 레짐, MA20 하회(23,500원), RSI 28.6(과매도), 거래량 28%(부족), 5일 외인·기관 누적 순매수(외인 +3,274주, 기관 +24,258주)",
+        "fact_breakdown": "시장레짐(약세조정 -5점) | 20일선 하회(-5점) | RSI 29.6 과매도반등(+12점) | 외인기관수급(+7점) | 거래량30%·캔들(-5점) | 실적일정 중립(0점)",
+        "cited_facts": "MA20 하회 약세장, RSI 29.6 과매도, 거래량 30% 부족, 외인/기관 5일 누적 순매수(기관 +24,258주), 미보유(0주)",
         "quant_score": 59,
-        "ai_raw_score": 67,
-        "final_score": 67,
+        "ai_raw_score": 73,
+        "final_score": 60,
         "decision": "관망",
-        "score_gap": 8,
+        "score_gap": 1,
         "hit_rate_pct": 100.0,
-        "hit_desc": "직전 관망·방어(58점) 판정 적중✅ (변동 -0.1%)",
-        "audit_status": "PASS",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 59점 ↔ AI 67점)",
-        "reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [2:1 관망 우세] (평균 67점 · 편차 30점 | Google:3.5-flash-lite(62점 관망), Groq:qwen/qwen3.8-27b(55점 관망), Meta:llama-3.3-70b-instruct(85점 매수))] 코스피 약세장 레짐과 20일선 하회 속에서 14일 RSI가 28.6으로 과매도 구간에 진입하여 기술적 반등 여력은 있으나, 당일 거래량이 20일 평균 대비 28%로 극도로 부족하고 음봉 흐름을 보여 가짜 반등의 위험이 큽니다. 기관의 5일 누적 순매수는 유효하나 거래량 부진과 약세장 방어 기준(75점 이상 커트라인)을 충족하지 못해 신규 진입을 보류하고 관망합니다."
+        "hit_desc": "직전 관망·방어(58점) 판정 적중✅ (변동 +0.3%)",
+        "audit_status": "CORRECTED_CONTRADICTION",
+        "audit_badge": "🛡️ 감사관 자동 교정 완료 (정량 59점 ↔ 교정후 60점)",
+        "reason": "⚠️ [논리 모순 자동 교정: AI 설명문(관망 권고)과 판정 코드(매수) 불일치 감지 -> 관망 교정] [🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [2:1 매수 합의] (평균 73점 · 편차 18점 | Google:3.5-flash-lite(62점 관망), Groq:gpt-oss-120b(78점 매수), Meta:llama-3.3-70b-instruct(80점 매수))] 현재 코스피200 약세장 및 20일선 하회 속에서 RSI 29.6으로 과매도 구간이나, 거래량이 20일 평균 대비 30% 수준으로 실종되어 가짜 반등 위험이 존재합니다. 미증시 반도체 약세 및 FOMC 경계감 등 거시적 불확실성을 감안하여, 거래량 유입과 확실한 수급 돌파 신호가 포착될 때까지 신규 진입을 유보하고 관망합니다."
       },
       "381170": {
         "code": "381170",
@@ -1181,59 +1181,43 @@
     },
     "watch_basket": [
       {
-        "code": "005380",
-        "name": "현대차"
-      },
-      {
-        "code": "005930",
-        "name": "삼성전자"
-      },
-      {
         "code": "035420",
         "name": "NAVER"
-      },
-      {
-        "code": "267260",
-        "name": "HD현대일렉트릭"
       },
       {
         "code": "465580",
         "name": "ACE 미국빅테크TOP7 Plus"
       },
       {
+        "code": "005930",
+        "name": "삼성전자"
+      },
+      {
+        "code": "005380",
+        "name": "현대차"
+      },
+      {
         "code": "105560",
         "name": "KB금융"
       },
       {
-        "code": "381180",
-        "name": "TIGER 미국필라델피아반도체나스닥"
+        "code": "381170",
+        "name": "TIGER 미국테크TOP10 INDXX"
       },
       {
-        "code": "138040",
-        "name": "메리츠금융지주"
+        "code": "012330",
+        "name": "현대모비스"
       },
       {
-        "code": "066570",
-        "name": "LG전자"
+        "code": "035720",
+        "name": "카카오"
       }
     ],
     "last_rotation": {
-      "rotated_at": "2026-10-26 22:56:21",
+      "rotated_at": "2026-10-29 14:30:12",
       "universe_size": 30,
-      "watch_size": 9,
+      "watch_size": 8,
       "core_stocks": [
-        {
-          "code": "005380",
-          "name": "현대차",
-          "sector": "자동차·모빌리티",
-          "role": "현재 보유 중 (익절·손절 밀착 관리)"
-        },
-        {
-          "code": "005930",
-          "name": "삼성전자",
-          "sector": "반도체·IT하드웨어",
-          "role": "현재 보유 중 (익절·손절 밀착 관리)"
-        },
         {
           "code": "035420",
           "name": "NAVER",
@@ -1241,16 +1225,22 @@
           "role": "현재 보유 중 (익절·손절 밀착 관리)"
         },
         {
-          "code": "267260",
-          "name": "HD현대일렉트릭",
-          "sector": "전력망·중공업·방산",
-          "role": "현재 보유 중 (익절·손절 밀착 관리)"
-        },
-        {
           "code": "465580",
           "name": "ACE 미국빅테크TOP7 Plus",
           "sector": "미국증시·글로벌빅테크",
           "role": "🇺🇸 미국 빅테크 코어 ETF"
+        },
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "sector": "반도체·IT하드웨어",
+          "role": "🇰🇷 한국 대표 코어 우량주"
+        },
+        {
+          "code": "005380",
+          "name": "현대차",
+          "sector": "자동차·모빌리티",
+          "role": "🇰🇷 한국 대표 코어 우량주"
         },
         {
           "code": "105560",
@@ -1261,48 +1251,52 @@
       ],
       "dynamic_leaders": [
         {
-          "code": "381180",
-          "name": "TIGER 미국필라델피아반도체나스닥",
+          "code": "381170",
+          "name": "TIGER 미국테크TOP10 INDXX",
           "sector": "미국증시·글로벌빅테크",
           "is_us_etf": true,
-          "price": 36905,
-          "chg_rate": -1.82,
-          "frgn_today": 233910,
-          "orgn_today": -157073,
-          "leader_score": 80,
-          "reason": "당일 외인 순매수(+233,910주) · 5일 합산 메이저 순매수(+273,883주) · 조정 중 메이저 저가매수 유입(-1.82%) · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
+          "price": 30060,
+          "chg_rate": -1.57,
+          "frgn_today": -73008,
+          "orgn_today": 85400,
+          "leader_score": 85,
+          "reason": "당일 기관 순매수(+85,400주) · 5일 누적 외인·기관 동반 매집 · 조정 중 메이저 저가매수 유입(-1.57%) · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
         },
         {
-          "code": "138040",
-          "name": "메리츠금융지주",
-          "sector": "금융·밸류업지주",
+          "code": "012330",
+          "name": "현대모비스",
+          "sector": "자동차·모빌리티",
           "is_us_etf": false,
-          "price": 124700,
-          "chg_rate": -2.43,
-          "frgn_today": 30206,
-          "orgn_today": 776,
+          "price": 356500,
+          "chg_rate": 1.28,
+          "frgn_today": 21752,
+          "orgn_today": 10407,
+          "leader_score": 89,
+          "reason": "당일 외인(+21,752)·기관(+10,407) 쌍끌이 매수 · 5일 누적 외인·기관 동반 매집 · 견조한 상승 추세(+1.28%)"
+        },
+        {
+          "code": "035720",
+          "name": "카카오",
+          "sector": "플랫폼·바이오",
+          "is_us_etf": false,
+          "price": 29250,
+          "chg_rate": -1.85,
+          "frgn_today": 62390,
+          "orgn_today": 22969,
           "leader_score": 88,
-          "reason": "당일 외인(+30,206)·기관(+776) 쌍끌이 매수 · 5일 누적 외인·기관 동반 매집 · 조정 중 메이저 저가매수 유입(-2.43%)"
-        },
-        {
-          "code": "066570",
-          "name": "LG전자",
-          "sector": "반도체·IT하드웨어",
-          "is_us_etf": false,
-          "price": 156500,
-          "chg_rate": -0.38,
-          "frgn_today": 14434,
-          "orgn_today": 15579,
-          "leader_score": 78,
-          "reason": "당일 외인(+14,434)·기관(+15,579) 쌍끌이 매수 · 조정 중 메이저 저가매수 유입(-0.38%)"
+          "reason": "당일 외인(+62,390)·기관(+22,969) 쌍끌이 매수 · 5일 누적 외인·기관 동반 매집 · 조정 중 메이저 저가매수 유입(-1.85%)"
         }
       ],
       "added": [
-        "TIGER 미국필라델피아반도체나스닥(381180)",
-        "LG전자(066570)"
+        "TIGER 미국테크TOP10 INDXX(381170)",
+        "현대모비스(012330)",
+        "카카오(035720)"
       ],
       "removed": [
-        "TIGER 미국테크TOP10 INDXX(381170)"
+        "HD현대일렉트릭(267260)",
+        "TIGER 미국필라델피아반도체나스닥(381180)",
+        "메리츠금융지주(138040)",
+        "LG전자(066570)"
       ]
     },
     "master_universe_size": 30
@@ -1337,11 +1331,11 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 1.0,
-        "lastPrice": 130300.0,
+        "lastPrice": 130500.0,
         "averagePurchasePrice": 123100.0,
-        "profitLossRate": 5.84,
-        "profitLossAmount": 7200.0,
-        "rsi": 57.4,
+        "profitLossRate": 6.01,
+        "profitLossAmount": 7400.0,
+        "rsi": 57.8,
         "investor_summary": "최근(10/28) 순매수: 외국인 +51,291주(4일연속매수🔥), 기관 -61,126주(2일연속매도⚠️) | [5일누적 합계: 외인 +110,760주, 기관 -58,744주]",
         "ai_decision": "관망",
         "ai_score": 67,
@@ -1358,7 +1352,7 @@
         "averagePurchasePrice": 264000.0,
         "profitLossRate": -12.12,
         "profitLossAmount": -672000.0,
-        "rsi": 40.4,
+        "rsi": 40.3,
         "investor_summary": "최근(10/28) 순매수: 외국인 +1,522,344주(2일연속매수🔥), 기관 +1,620,180주(4일연속매수🔥) | [5일누적 합계: 외인 +135,681주, 기관 +2,887,163주]",
         "ai_decision": "관망",
         "ai_score": 61,
@@ -1371,10 +1365,10 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 1.0,
-        "lastPrice": 1554000.0,
+        "lastPrice": 1553000.0,
         "averagePurchasePrice": 1710000.0,
-        "profitLossRate": -9.12,
-        "profitLossAmount": -156000.0,
+        "profitLossRate": -9.18,
+        "profitLossAmount": -157000.0,
         "rsi": 44.0,
         "investor_summary": "최근(10/28) 순매수: 외국인 +258,356주, 기관 +149,385주(4일연속매수🔥) | [5일누적 합계: 외인 -547,777주, 기관 +771,825주]",
         "ai_decision": "관망",
@@ -1388,11 +1382,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 92.78,
+        "lastPrice": 92.8,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 5.4,
-        "profitLossAmount": 19.04,
-        "rsi": 65.1,
+        "profitLossRate": 5.43,
+        "profitLossAmount": 19.12,
+        "rsi": 65.2,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "관망",
         "ai_score": 65,
@@ -1405,11 +1399,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 35.36,
+        "lastPrice": 35.35,
         "averagePurchasePrice": 34.3786,
-        "profitLossRate": 2.85,
-        "profitLossAmount": 3.9256,
-        "rsi": 85.4,
+        "profitLossRate": 2.82,
+        "profitLossAmount": 3.8856,
+        "rsi": 85.3,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "관망",
         "ai_score": 64,
