@@ -242,7 +242,7 @@
 
   <!-- Quick Filter Pills (Scroll Reduction Tool) -->
   <div class="filter-pills-bar">
-    <button class="pill-btn active" id="pill-all" onclick="openSingleSection('all')">전체 보기</button>
+    <button class="pill-btn" id="pill-all" onclick="openSingleSection('all')">전체 펼치기</button>
     <button class="pill-btn" id="pill-api" onclick="openSingleSection('acc-api')">📡 8대 API 상태</button>
     <button class="pill-btn" id="pill-watchdog" onclick="openSingleSection('acc-watchdog')">🩺 자체 감시견</button>
     <button class="pill-btn" id="pill-tracks" onclick="openSingleSection('acc-tracks')">⚖️ 2대 운용축</button>
@@ -266,7 +266,7 @@
   <!-- ========================================================
        ACCORDION SECTION 0: 실시간 8대 API 통신망 & 통합 관제 매트릭스 (NEW!)
        ======================================================== -->
-  <div class="accordion-item active" id="acc-api">
+  <div class="accordion-item" id="acc-api">
     <div class="accordion-header" onclick="toggleAccordion('acc-api')">
       <div class="accordion-title-wrap">
         <span class="accordion-icon">📡</span>
@@ -293,7 +293,7 @@
   <!-- ========================================================
        ACCORDION SECTION 1: 5중 실시간 자체 감시(Self-Watchdog) & 무결성 성적표
        ======================================================== -->
-  <div class="accordion-item active" id="acc-watchdog">
+  <div class="accordion-item" id="acc-watchdog">
     <div class="accordion-header" onclick="toggleAccordion('acc-watchdog')">
       <div class="accordion-title-wrap">
         <span class="accordion-icon">🩺</span>
@@ -542,7 +542,7 @@
         <span class="accordion-icon">🏛️</span>
         <div>
           <div class="accordion-title">4계층 시스템 하드웨어 &amp; 미국 3대 빅테크 AI 앙상블</div>
-          <div class="accordion-sub">Galaxy S10 홈서버 · Google Gemini · Groq 120B · Meta Llama 3.3</div>
+          <div class="accordion-sub">Galaxy S10 홈서버 · Google Gemini · Groq 120B · Meta Llama 3.3 · 7대 데이터 팩트</div>
         </div>
       </div>
       <div class="accordion-right">
@@ -572,6 +572,85 @@
           <div class="arch-name">텔레그램 &amp; 4대 웹 패밀리</div>
           <div class="arch-desc">한투/토스 독립 텔레그램 봇 채널 분리 + GitHub Pages 기반 4대 실시간 반응형 웹 대시보드 구축.</div>
         </div>
+      </div>
+
+      <!-- 3대 AI 7대 실시간 입력 데이터 팩트 매트릭스 -->
+      <div style="font-size: 13px; font-weight: 700; color: #c4b5fd; margin: 18px 0 6px; display: flex; align-items: center; gap: 6px;">
+        <span>📊 미국 3대 AI(Google·Groq·Meta)가 매매 판단에 분석하는 7대 실시간 데이터 팩트</span>
+      </div>
+      <p style="font-size: 12px; color: var(--text-sub); line-height: 1.5; margin-bottom: 10px;">
+        AI는 단순 차트나 감에 의존하지 않고, 파이썬 퀀트 수집 엔진이 초단위로 정제하여 주입하는 <b>7개 핵심 데이터 팩트</b>를 독립적으로 교차 검증하여 채점(0~100점)과 판단(매수/매도/관망)을 내립니다.
+      </p>
+
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <div class="guard-box" style="border-left: 3px solid #60a5fa;">
+          <div class="guard-title" style="color: #60a5fa;">1️⃣ 거시경제 코스피200 시장 레짐 (시장 날씨 환경)</div>
+          <div style="color: var(--text-sub); font-size: 11px; line-height: 1.5;">
+            코스피200 지수의 당일 등락률 및 20일 이동평균선(MA20) 위치를 확인하여 매수 기준을 동적으로 조절합니다.<br>
+            • <b>☀️ 정상·강세장</b>: 기본 매수 기준(75점 이상) 적용<br>
+            • <b>⚠️ 약세·조정장</b>: 매수 커트라인 <b>+7점 상향 (82점 이상 필수)</b><br>
+            • <b>🚨 패닉 폭락장 (-2.5% 급락)</b>: 떨어지는 칼날 잡기 원천 차단 — <b>당일 모든 신규 매수 100% 락다운</b>
+          </div>
+        </div>
+
+        <div class="guard-box" style="border-left: 3px solid #f59e0b;">
+          <div class="guard-title" style="color: #fbbf24;">2️⃣ 14일 RSI 상대강도지수 (과매수 / 과매도 모멘텀)</div>
+          <div style="color: var(--text-sub); font-size: 11px; line-height: 1.5;">
+            • <b>과열 구간 (RSI ≥ 68)</b>: 고점 추격 매수 엄격 금지 및 차익실현(익절) 타점 검토<br>
+            • <b>과매도 구간 (RSI ≤ 35)</b>: 낙폭과대에 따른 기술적 저가 반등 매수 기회 검토<br>
+            • <b>안정 구간 (35 &lt; RSI &lt; 68)</b>: 추세 지속 및 수급 결합 확인
+          </div>
+        </div>
+
+        <div class="guard-box" style="border-left: 3px solid #10b981;">
+          <div class="guard-title" style="color: #34d399;">3️⃣ 실전 고수 3대 수급 디테일 (거래량 · 캔들 모양 · 5일 연속 매집)</div>
+          <div style="color: var(--text-sub); font-size: 11px; line-height: 1.5;">
+            • <b>📊 20일 평균 대비 거래량</b>: 거래량 120% 이상 폭발 시 진짜 돌파 인정(가산점), 55% 이하 실종 시 가짜 반등 감별(감점)<br>
+            • <b>🕯️ 당일 캔들 형태</b>: 장중 고점 대비 밀린 '긴 윗꼬리 음봉' 감점 vs 저가 매수세가 받쳐준 '아래꼬리 양봉' 가산점<br>
+            • <b>🌊 5일 누적 수급</b>: 당일 반짝 단타가 아닌 <b>'최근 5거래일 외국인·기관 연속 순매집'</b> 여부 추적
+          </div>
+        </div>
+
+        <div class="guard-box" style="border-left: 3px solid #ec4899;">
+          <div class="guard-title" style="color: #f472b6;">4️⃣ 기업 공식 IR &amp; 어닝 캘린더 (실적 발표 D-Day)</div>
+          <div style="color: var(--text-sub); font-size: 11px; line-height: 1.5;">
+            • 전자공시(DART) 및 나스닥 공식 실적 발표 일정 연동<br>
+            • <b>실적 발표 D-2일 이내 초근접 시</b>: 어닝 쇼크 등 돌발 변동성을 피하기 위해 <b>매수 기준선 +5점 강화(깜깜이 도박 방지)</b>
+          </div>
+        </div>
+
+        <div class="guard-box" style="border-left: 3px solid #8b5cf6;">
+          <div class="guard-title" style="color: #c4b5fd;">5️⃣ 실시간 최신 뉴스 헤드라인 (구글 뉴스 RSS 실시간 4건)</div>
+          <div style="color: var(--text-sub); font-size: 11px; line-height: 1.5;">
+            • <b>🔴 돌발 악재 필터링</b>: 횡령, 배임, 대규모 유상증자, 소송 등 위험 키워드 포착 시 즉시 매수 차단<br>
+            • <b>🟢 호재 모멘텀 대조</b>: 대규모 수주, 어닝 서프라이즈 등 호재 뉴스가 메이저 수급과 동반될 때 매수 확신도 대폭 상향<br>
+            • <b>🛡️ 찌라시 설거지 방지</b>: 호재 기사에도 불구하고 외인·기관이 대량 매도 중이면 '개미 유인 설거지'로 간파하여 매수 거부
+          </div>
+        </div>
+
+        <div class="guard-box" style="border-left: 3px solid #06b6d4;">
+          <div class="guard-title" style="color: #22d3ee;">6️⃣ 20일 이동평균선(MA20) &amp; 14일 ATR 변동성 프로파일</div>
+          <div style="color: var(--text-sub); font-size: 11px; line-height: 1.5;">
+            • <b>단기 추세선(MA20)</b>: 주가가 20일선 위에 안착하여 상승 추세를 타고 있는지 확인<br>
+            • <b>14일 ATR 체급 분류</b>: 저변동(방어주), 중변동(표준주), 고변동(성장주)으로 분류하여 체급별 최적 맞춤형 익절선(+6~12%)과 손절선(-5.5~-8.5%) 자동 산정
+          </div>
+        </div>
+
+        <div class="guard-box" style="border-left: 3px solid #eab308;">
+          <div class="guard-title" style="color: #fde047;">7️⃣ 펀드 실시간 포지션 &amp; 계좌 잔고 한도 (자산운용사 규격)</div>
+          <div style="color: var(--text-sub); font-size: 11px; line-height: 1.5;">
+            • <b>현재 포지션</b>: 보유 수량, 평단가, 거래비용(0.35%) 차감 순수익률을 기반으로 익절/손절/홀딩 판단<br>
+            • <b>몰빵 원천 차단</b>: 1회 매수액 45만 원, 종목당 한도 150만 원(시드 30%), 섹터 한도 250만 원(시드 50%) 초과 여부 검사
+          </div>
+        </div>
+      </div>
+
+      <!-- AI 3사 다수결 합의 룰 요약 박스 -->
+      <div style="background: rgba(139, 92, 246, 0.08); border: 1px solid rgba(139, 92, 246, 0.25); border-radius: 10px; padding: 10px 12px; margin-top: 10px; font-size: 11px; line-height: 1.6;">
+        <b style="color: #c4b5fd;">🗳️ 미국 3대 AI 앙상블 합의 및 최종 채점 룰:</b><br>
+        • <b>다수결 합의</b>: Google Gemini 3.5, Groq 120B, Meta Llama 3.3 중 <b>2/3 이상 찬성</b> 시에만 최종 방향성 결정<br>
+        • <b>매수 확신도</b>: 가중 평균 점수가 <b>75점(약세장 82점) 이상</b>일 때 약 45만 원 단위 자동 분할 매수 실행<br>
+        • <b>22점 편차 리스크 필터</b>: 3사 간 점수 차이가 22점 이상 벌어지면 '이견 발생'으로 간주하여 매수를 보류하고 <b>관망(보유 유지)</b>으로 자동 전환
       </div>
     </div>
   </div>
