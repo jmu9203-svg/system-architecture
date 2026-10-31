@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-31 21:08:51",
-  "battery": "81% (⚡ 충전 중, 25.5°C)",
+  "updated_at": "2026-10-31 21:19:30",
+  "battery": "85% (⚡ 충전 중, 25.3°C)",
   "market_intel": {
     "updated_at": "2026-10-30 08:30:15",
     "fx_soxx_info": {
@@ -216,12 +216,12 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-10-31 21:08:17",
-    "checked_ts": 1793448497,
+    "checked_at": "2026-10-31 21:18:55",
+    "checked_ts": 1793449135,
     "date": "2026-10-31",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
-    "scheduler_heartbeat_sec_ago": 12,
+    "scheduler_heartbeat_sec_ago": 0,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 4811517,
     "market_opened_today": false,
@@ -245,8 +245,8 @@
     "circuit_breaker_limit_pct": -3.5,
     "circuit_breaker_tripped": false,
     "circuit_breaker_reason": "",
-    "battery_str": "81% (⚡ 충전 중, 25.5°C)",
-    "battery_pct": 81,
+    "battery_str": "85% (⚡ 충전 중, 25.3°C)",
+    "battery_pct": 85,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
       "✅ 4,500만 원 동결금 및 500만 원 시드 분리 무결성 정상",
