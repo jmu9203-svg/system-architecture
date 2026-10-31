@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-01 02:35:12",
-  "battery": "조회 불가 (센서 정보 미제공)",
+  "updated_at": "2026-11-01 02:36:10",
+  "battery": "85% (충전 중)",
   "market_intel": {
     "updated_at": "2026-11-01 01:59:17",
     "fx_soxx_info": {
@@ -873,20 +873,38 @@
     }
   },
   "flight_recorder": {
-    "has_data": false,
+    "has_data": true,
     "file_name": "flight_log_2026_W44.jsonl",
     "file_path": "C:\\AI_stock\\kis-stock-bot-main\\logs\\flight_log_2026_W44.jsonl",
-    "period": "데이터 없음",
+    "period": "2026-11-01 02:35:40 ~ 2026-11-01 02:35:40",
     "commit_hash": "b99a59b",
-    "total_events": 0,
+    "total_events": 1,
     "error_count": 0,
     "warn_count": 0,
-    "categories": {},
+    "level_counts": {
+      "INFO": 1
+    },
+    "categories": {
+      "KIS_API": 1
+    },
     "top_errors": [],
-    "top_code_locations": {},
-    "top_api_codes": {},
-    "thread_distribution": {},
-    "stats": {}
+    "top_code_locations": [],
+    "top_api_codes": [],
+    "thread_distribution": {
+      "MainThread": 1
+    },
+    "stats": {
+      "api_throttles": 0,
+      "api_naver_fallbacks": 0,
+      "ai_429_retries": 0,
+      "ai_backup_fallbacks": 0,
+      "ai_parse_failures": 0,
+      "quant_overrides": 0,
+      "order_unfilled_revises": 0,
+      "circuit_breaker_trips": 0,
+      "orders_executed": 0,
+      "telegram_delivery_fails": 0
+    }
   },
   "env_diagnostic": {
     "kis": true,
