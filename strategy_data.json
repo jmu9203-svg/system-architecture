@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31 11:48:52",
+  "updated_at": "2026-10-31 11:59:49",
   "battery": "81% (🔋 배터리 사용 중, 21.9°C)",
   "market_intel": {
     "updated_at": "2026-10-30 08:30:15",
@@ -216,12 +216,12 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-10-31 11:47:55",
-    "checked_ts": 1793414875,
+    "checked_at": "2026-10-31 11:58:57",
+    "checked_ts": 1793415537,
     "date": "2026-10-31",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
-    "scheduler_heartbeat_sec_ago": 17,
+    "scheduler_heartbeat_sec_ago": 4,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 4811517,
     "market_opened_today": false,
