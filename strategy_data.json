@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31 10:10:20",
+  "updated_at": "2026-10-31 10:21:26",
   "battery": "84% (🔋 배터리 사용 중, 22.4°C)",
   "market_intel": {
     "updated_at": "2026-10-30 08:30:15",
@@ -216,27 +216,27 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-10-31 10:09:29",
-    "checked_ts": 1793408969,
+    "checked_at": "2026-10-31 10:20:33",
+    "checked_ts": 1793409633,
     "date": "2026-10-31",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
-    "scheduler_heartbeat_sec_ago": 11,
+    "scheduler_heartbeat_sec_ago": 0,
     "monitor_heartbeat_sec_ago": 0,
-    "opening_fund_eval": 4811517,
+    "opening_fund_eval": 4799517,
     "market_opened_today": false,
-    "current_fund_eval": 4811517,
+    "current_fund_eval": 4799517,
     "peak_fund_eval": 7648676,
     "mdd_pct": -38.01,
-    "fund_return_pct": -3.77,
+    "fund_return_pct": -4.01,
     "kospi200_base_price": 87886,
     "kospi200_cur_price": 90800,
     "kospi200_return_pct": 3.32,
-    "alpha_pct": -7.09,
+    "alpha_pct": -7.33,
     "sector_map": {
-      "플랫폼·바이오": 1378400
+      "플랫폼·바이오": 1366400
     },
-    "sector_summary_str": "플랫폼·바이오: 1,378,400원(시드대비 27.6%)",
+    "sector_summary_str": "플랫폼·바이오: 1,366,400원(시드대비 27.3%)",
     "max_per_sector_krw": 2500000,
     "bought_today": [],
     "sold_today": [],
