@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-01 03:00:19",
-  "battery": "85% (⚡ 충전 중, 22.9°C)",
+  "updated_at": "2026-11-01 03:00:58",
+  "battery": "확인 중",
   "market_intel": {
     "updated_at": "2026-11-01 01:59:17",
     "fx_soxx_info": {
@@ -875,7 +875,7 @@
   "flight_recorder": {
     "has_data": true,
     "file_name": "flight_log_2026_W44.jsonl",
-    "file_path": "c:\\AI_stock\\kis-stock-bot-main\\logs\\flight_log_2026_W44.jsonl",
+    "file_path": "C:\\AI_stock\\kis-stock-bot-main\\logs\\flight_log_2026_W44.jsonl",
     "period": "2026-11-01 02:35:40 ~ 2026-11-01 02:35:40",
     "commit_hash": "b99a59b",
     "total_events": 1,
