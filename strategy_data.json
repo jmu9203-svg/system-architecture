@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-31 14:00:01",
-  "battery": "77% (🔋 배터리 사용 중, 21.8°C)",
+  "updated_at": "2026-10-31 14:11:00",
+  "battery": "77% (🔋 배터리 사용 중, 22.0°C)",
   "market_intel": {
     "updated_at": "2026-10-30 08:30:15",
     "fx_soxx_info": {
@@ -216,12 +216,12 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-10-31 13:59:12",
-    "checked_ts": 1793422752,
+    "checked_at": "2026-10-31 14:10:07",
+    "checked_ts": 1793423407,
     "date": "2026-10-31",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
-    "scheduler_heartbeat_sec_ago": 18,
+    "scheduler_heartbeat_sec_ago": 23,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 4811517,
     "market_opened_today": false,
@@ -245,7 +245,7 @@
     "circuit_breaker_limit_pct": -3.5,
     "circuit_breaker_tripped": false,
     "circuit_breaker_reason": "",
-    "battery_str": "77% (🔋 배터리 사용 중, 21.8°C)",
+    "battery_str": "77% (🔋 배터리 사용 중, 22.0°C)",
     "battery_pct": 77,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
