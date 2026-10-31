@@ -987,7 +987,14 @@
       if (document.getElementById('kisMaxPerSector')) {
         document.getElementById('kisMaxPerSector').textContent = (kis.max_per_sector_krw || 2500000).toLocaleString() + '원 (50%)';
       }
-      document.getElementById('kisRebalance').textContent = `~${kis.rebalance_deadline || '2026-11-06'} (${kis.rebalance_mode ? '가동 중' : '완료'})`;
+            const rebEl = document.getElementById('kisRebalance');
+      if (kis.rebalance_mode) {
+        rebEl.style.color = 'var(--gold)';
+        rebEl.textContent = `⚖️ 연착륙 감축 중 (~${kis.rebalance_deadline || '2026-11-06'})`;
+      } else {
+        rebEl.style.color = '#34d399';
+        rebEl.textContent = '✅ 정상화 완료 (초과액 0원 · 일반운용)';
+      }
 
       // Toss 트랙
       const toss = d.toss_system || {};
