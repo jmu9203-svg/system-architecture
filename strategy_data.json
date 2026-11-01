@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02 00:05:25",
+  "updated_at": "2026-11-02 00:06:27",
   "battery": "85% (⚡ 충전 중, 22.5°C)",
   "market_intel": {
     "updated_at": "2026-10-30 08:30:15",
@@ -216,8 +216,8 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-02 00:04:49",
-    "checked_ts": 1793545489,
+    "checked_at": "2026-11-02 00:05:33",
+    "checked_ts": 1793545533,
     "date": "2026-11-02",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
@@ -1414,7 +1414,7 @@
       "name": "토스증권 Open API",
       "provider": "토스증권 Toss Securities WTS",
       "category": "Brokerage & Orders",
-      "status_badge": "🟢 정상 연동 (Active)",
+      "status_badge": "🟢 토큰 연동 (Active)",
       "status_color": "#10b981",
       "role": "토스 실전 계좌 보유종목, 예수금 잔고 분석, 대화형 수동 매매 주문 (POST /orders)",
       "mode": "대화형 승인 수동 주문 (무단 자동매매 0% 동결)",
@@ -1425,7 +1425,7 @@
       "name": "Google Gemini 3.5 Flash",
       "provider": "Google DeepMind",
       "category": "AI Brain (1.2x)",
-      "status_badge": "🟢 정상 가동 (Active)",
+      "status_badge": "🟢 정상 등록 (Active)",
       "status_color": "#10b981",
       "role": "3대 빅테크 앙상블 핵심 AI 두뇌, 거시경제 레짐 판정 & 리스크 균형추 (가중치 1.2x)",
       "mode": "정규 매매 & 5분 긴급 감시 전용 쿼터",
