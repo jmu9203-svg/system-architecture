@@ -345,15 +345,15 @@
   </div>
 
   <!-- ========================================================
-       ACCORDION SECTION 1-B: 일일 시스템 비행기 블랙박스(Daily Flight Recorder) & 구글 드라이브 자동 동기화 (NEW!)
+       ACCORDION SECTION 1-B: 주간 시스템 비행기 블랙박스(Flight Recorder) & Antigravity 무인 패치 루프 (NEW!)
        ======================================================== -->
   <div class="accordion-item" id="acc-flight">
     <div class="accordion-header" onclick="toggleAccordion('acc-flight')">
       <div class="accordion-title-wrap">
         <span class="accordion-icon">✈️</span>
         <div>
-          <div class="accordion-title">일일 비행기록장치(Daily Flight Recorder) &amp; 구글 드라이브 동기화</div>
-          <div class="accordion-sub" id="flCheckedAt">매일 15:40 / 23:50 구글 드라이브 'AI_Stock_Daily_Logs' 자동 업로드 &amp; 텔레그램 듀얼 전송</div>
+          <div class="accordion-title">주간 비행기 블랙박스(Flight Recorder) &amp; Antigravity 패치 루프</div>
+          <div class="accordion-sub" id="flCheckedAt">금요일 15:40 주간 로그 텔레그램 전송 &amp; Antigravity 무인 패치 파이프라인</div>
         </div>
       </div>
       <div class="accordion-right">
@@ -363,36 +363,36 @@
     </div>
     <div class="accordion-content">
 
-      <!-- 1. 3단계 일일 패치 라이프사이클 카드 -->
+      <!-- 1. 3단계 주간 패치 라이프사이클 카드 -->
       <div style="background: linear-gradient(135deg, rgba(56, 189, 248, 0.08), rgba(139, 92, 246, 0.08)); border: 1px solid rgba(56, 189, 248, 0.25); border-radius: 12px; padding: 14px; margin-bottom: 14px;">
         <div style="font-size: 13px; font-weight: 800; color: #38bdf8; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
-          <span>☁️</span> 3단계 일일 구글 드라이브 동기화 &amp; 무인 패치 파이프라인 (Daily CI/CD)
+          <span>🔄</span> 3단계 주간 무인 패치 파이프라인 (CI/CD Closed Loop)
         </div>
         <div style="font-size: 12px; color: var(--text-sub); line-height: 1.7;">
           <div style="margin-bottom: 6px;">
-            <b style="color: var(--text-main);">1️⃣ 24/7 일일 블랙박스 상시 기록</b>: 8대 모듈(API·AI·주문·감시견)에서 발생하는 모든 에러·재시도·슬리피지를 <code style="color:#60a5fa;">logs/flight_log_YYYY-MM-DD.jsonl</code> 파일에 일자별로 실시간 원자적(Atomic) 기록. (최근 14일 보존 후 자동 정리)
+            <b style="color: var(--text-main);">1️⃣ 24/7 블랙박스 상시 기록</b>: 8대 모듈(API·AI·주문·감시견)에서 발생하는 모든 에러·재시도·슬리피지를 <code style="color:#60a5fa;">logs/flight_log_YYYY_Www.jsonl</code> 파일에 주차별로 실시간 원자적(Atomic) 누적. (4주 초과분 자동 정리)
           </div>
           <div style="margin-bottom: 6px;">
-            <b style="color: var(--text-main);">2️⃣ 매일 2회 구글 드라이브 자동 업로드</b>: 평일 15:40(장마감 결산) 및 매일 23:50(자정 전 최종 결산) 시점에 <b>구글 앱스 스크립트(GAS) Webhook을 통해 구글 드라이브 'AI_Stock_Daily_Logs' 폴더로 당일 로그 파일 자동 업로드 &amp; 텔레그램 문서(sendDocument) 듀얼 전송</b>. (수시 업로드: <code>/log</code>)
+            <b style="color: var(--text-main);">2️⃣ 금요일 15:40 텔레그램 자동 전송</b>: 한국 증시 정규장 마감 직후, 1주일간의 시스템 종합 성적표와 함께 <b>실제 원본 로그 파일(.jsonl)을 텔레그램 문서(sendDocument)로 대표님께 자동 전송</b>. (수시 추출: <code>/log</code>)
           </div>
           <div>
-            <b style="color: var(--text-main);">3️⃣ Antigravity 당일 핀포인트 패치</b>: 구글 드라이브의 일일 로그를 Antigravity에 공유하면 AI가 <b>정확한 코드 결함 라인(`loc`), 증권사 거절코드(`msg_cd`), LLM 원문(`raw_snippet`)을 단 1초 만에 식별 및 패치</b> ➡️ Git Push ➡️ 텔레그램 <code>/update</code>로 갤럭시 S10에 즉각 무선 배포!
+            <b style="color: var(--text-main);">3️⃣ Antigravity 원인 분석 ➡️ 무선 원격 패치</b>: 텔레그램으로 받은 로그를 Antigravity에 업로드하면 AI가 <b>정확한 코드 결함 라인을 자동 식별 및 패치</b> ➡️ 연구실 PC Git Push ➡️ 텔레그램 <code>/update</code> 전송으로 갤럭시 S10에 무중단 무선 배포!
           </div>
         </div>
       </div>
 
-      <!-- 2. 실시간 블랙박스 일일 메트릭 그리드 -->
+      <!-- 2. 실시간 블랙박스 주간 메트릭 그리드 -->
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px;">
         <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--card-border); border-radius: 10px; padding: 10px 12px;">
-          <div style="font-size: 11px; color: var(--text-sub); margin-bottom: 3px;">활성 일일 로그 파일</div>
-          <div style="font-size: 12px; font-weight: 700; color: #38bdf8;" id="flActiveFileName">flight_log_YYYY-MM-DD.jsonl</div>
+          <div style="font-size: 11px; color: var(--text-sub); margin-bottom: 3px;">활성 주간 로그 파일</div>
+          <div style="font-size: 12px; font-weight: 700; color: #38bdf8;" id="flActiveFileName">flight_log_2026_W44.jsonl</div>
         </div>
         <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--card-border); border-radius: 10px; padding: 10px 12px;">
-          <div style="font-size: 11px; color: var(--text-sub); margin-bottom: 3px;">구글 드라이브 자동 백업 시각</div>
-          <div style="font-size: 12px; font-weight: 700; color: var(--gold);">매일 15:40(장마감) &amp; 23:50(자정 전)</div>
+          <div style="font-size: 11px; color: var(--text-sub); margin-bottom: 3px;">정기 자동 발송 시각</div>
+          <div style="font-size: 12px; font-weight: 700; color: var(--gold);">매주 금요일 15:40 (장마감 직후)</div>
         </div>
         <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--card-border); border-radius: 10px; padding: 10px 12px;">
-          <div style="font-size: 11px; color: var(--text-sub); margin-bottom: 3px;">오늘 누적 기록 이벤트</div>
+          <div style="font-size: 11px; color: var(--text-sub); margin-bottom: 3px;">이번 주 누적 이벤트</div>
           <div style="font-size: 13px; font-weight: 800; color: var(--text-main);" id="flTotalEvents">--건</div>
         </div>
         <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--card-border); border-radius: 10px; padding: 10px 12px;">
@@ -1191,7 +1191,7 @@
       }
       if (fl.period) {
         const ckEl = document.getElementById('flCheckedAt');
-        if (ckEl && fl.has_data) ckEl.textContent = `당일 집계: ${fl.period} (매일 15:40·23:50 구글 드라이브 동기화)`;
+        if (ckEl && fl.has_data) ckEl.textContent = `집계 기간: ${fl.period} (매주 금 15:40 전송)`;
       }
 
       // KIS 트랙
