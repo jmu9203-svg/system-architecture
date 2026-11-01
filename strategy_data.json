@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01 23:43:04",
+  "updated_at": "2026-11-01 23:44:05",
   "battery": "85% (⚡ 충전 중, 22.5°C)",
   "market_intel": {
     "updated_at": "2026-10-30 08:30:15",
@@ -216,12 +216,12 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-01 23:42:28",
-    "checked_ts": 1793544148,
+    "checked_at": "2026-11-01 23:43:09",
+    "checked_ts": 1793544189,
     "date": "2026-11-01",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
-    "scheduler_heartbeat_sec_ago": 5,
+    "scheduler_heartbeat_sec_ago": 0,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 4811517,
     "market_opened_today": false,
@@ -1979,12 +1979,13 @@
       }
     ],
     "flight_recorder": {
-      "name": "주간 비행기 블랙박스(Flight Recorder) & Antigravity 무인 패치 파이프라인",
-      "storage_mode": "이벤트 기반 실시간 원자적 기록 (Event-Driven Realtime Append)",
+      "name": "일일 비행기록장치(Daily Flight Recorder) & 구글 드라이브 자동 동기화",
+      "storage_mode": "일자별 자동 분할 및 이벤트 실시간 원자적 기록 (flight_log_YYYY-MM-DD.jsonl)",
       "active_file": "flight_log_2026_W44.jsonl",
-      "auto_purge": "4주 경과 파일 자동 삭제 (공기계 100% 저장공간 보호)",
-      "delivery_schedule": "매주 금요일 15:40 텔레그램 sendDocument 자동 발송",
-      "manual_command": "/log (즉시 추출) / /log_summary (텍스트 요약)",
+      "google_drive_folder": "AI_Stock_Daily_Logs (구글 앱스 스크립트 웹훅 다이렉트 업로드)",
+      "auto_purge": "최근 14일 초과 파일 자동 삭제 (공기계 100% 저장공간 보호)",
+      "delivery_schedule": "평일 15:40(장마감 결산) & 매일 23:50(자정 전 최종 결산) 구글 드라이브 동기화 및 텔레그램 발송",
+      "manual_command": "/log (구글 드라이브 즉시 업로드) / /log_summary (텍스트 요약)",
       "patch_loop": "Antigravity 6대 메타데이터 핀포인트 분석 ➡️ Git Push ➡️ /update 원격 무선 배포",
       "metadata_fields": [
         "loc: 결함 발생 코드 위치 (file:line in func)",
@@ -1994,7 +1995,7 @@
         "tg_error: 텔레그램 마크다운 파싱 에러 전문",
         "ver: Git 빌드 커밋 해시"
       ],
-      "noise_filter": "5분 단순 반복 핑퐁 배제 / 하루 10~30줄 / 주간 20~50KB 초경량"
+      "noise_filter": "5분 단순 반복 핑퐁 배제 / 하루 10~30줄 / 당일 10~25KB 초경량"
     },
     "chat_engine": "독립 구글 계정 전용 키(GEMINI_CHAT_API_KEY) + Groq 120B 2중 백업 (대화/매매 쿼터 100% 완전 격리)",
     "kis_api": "한국투자증권 국내주식 주문/시세/잔고/수급/차트 Open API",
