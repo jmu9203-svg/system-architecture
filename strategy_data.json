@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-11-02 08:30:19",
+  "updated_at": "2026-11-02 08:30:36",
   "battery": "84% (⚡ 충전 중, 23.3°C)",
   "market_intel": {
-    "updated_at": "2026-10-30 08:30:15",
+    "updated_at": "2026-11-02 08:30:10",
     "fx_soxx_info": {
-      "usd_krw": "1,338.50",
-      "usd_krw_change": "-2.00",
-      "usd_krw_rate": "-0.15",
-      "soxx_price": "$489.50",
-      "soxx_pct": "-4.74%",
-      "summary": "원/달러 환율: 1,338.50원 (전일대비 -2.00원 / -0.15%) | 미 필라델피아 반도체(SOXX): $489.50 (-4.74%)"
+      "usd_krw": "1,336.00",
+      "usd_krw_change": "0.20",
+      "usd_krw_rate": "0.01",
+      "soxx_price": "$471.51",
+      "soxx_pct": "-8.24%",
+      "summary": "원/달러 환율: 1,336.00원 (전일대비 0.20원 / 0.01%) | 미 필라델피아 반도체(SOXX): $471.51 (-8.24%)"
     },
     "last_rotation": {
-      "rotated_at": "2026-10-30 08:30:16",
+      "rotated_at": "2026-11-02 08:30:12",
       "universe_size": 30,
       "watch_size": 8,
       "core_stocks": [
@@ -49,54 +49,55 @@
       ],
       "dynamic_leaders": [
         {
-          "code": "381170",
-          "name": "TIGER 미국테크TOP10 INDXX",
+          "code": "381180",
+          "name": "TIGER 미국필라델피아반도체나스닥",
           "sector": "미국증시·글로벌빅테크",
           "is_us_etf": true,
-          "price": 30035,
+          "price": 38285,
           "chg_rate": 0.0,
-          "frgn_today": 10075,
-          "orgn_today": -14029,
-          "leader_score": 81,
-          "reason": "당일 외인 순매수(+10,075주) · 5일 합산 메이저 순매수(+28,451주) · 견조한 상승 추세(+0.00%) · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
-        },
-        {
-          "code": "035720",
-          "name": "카카오",
-          "sector": "플랫폼·바이오",
-          "is_us_etf": false,
-          "price": 29300,
-          "chg_rate": 0.0,
-          "frgn_today": 13287,
-          "orgn_today": 52887,
+          "frgn_today": 105841,
+          "orgn_today": 17482,
           "leader_score": 89,
-          "reason": "당일 외인(+13,287)·기관(+52,887) 쌍끌이 매수 · 5일 누적 외인·기관 동반 매집 · 견조한 상승 추세(+0.00%)"
+          "reason": "당일 외인(+105,841)·기관(+17,482) 쌍끌이 매수 · 5일 합산 메이저 순매수(+70,940주) · 견조한 상승 추세(+0.00%) · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
         },
         {
           "code": "138040",
           "name": "메리츠금융지주",
           "sector": "금융·밸류업지주",
           "is_us_etf": false,
-          "price": 131400,
+          "price": 133200,
           "chg_rate": 0.0,
-          "frgn_today": 34335,
-          "orgn_today": 38930,
-          "leader_score": 83,
-          "reason": "당일 외인(+34,335)·기관(+38,930) 쌍끌이 매수 · 5일 합산 메이저 순매수(+114,971주) · 견조한 상승 추세(+0.00%)"
+          "frgn_today": -43039,
+          "orgn_today": 98546,
+          "leader_score": 80,
+          "reason": "당일 기관 순매수(+98,546주) · 5일 누적 외인·기관 동반 매집 · 견조한 상승 추세(+0.00%)"
+        },
+        {
+          "code": "035720",
+          "name": "카카오",
+          "sector": "플랫폼·바이오",
+          "is_us_etf": false,
+          "price": 29450,
+          "chg_rate": 0.0,
+          "frgn_today": -25785,
+          "orgn_today": 280728,
+          "leader_score": 80,
+          "reason": "당일 기관 순매수(+280,728주) · 5일 누적 외인·기관 동반 매집 · 견조한 상승 추세(+0.00%)"
         }
       ],
       "added": [
-        "메리츠금융지주(138040)"
+        "카카오(035720)"
       ],
       "removed": [
-        "현대모비스(012330)"
+        "HD현대일렉트릭(267260)",
+        "LG전자(066570)"
       ]
     },
-    "us_bigtech_summary": "향후 7일 내 애플(11/2, EPS $1.98), AMD(11/3, EPS $1.68), 퀄컴(11/4, EPS $1.46)의 공식 실적발표가 대기 중이며, 미 필라델피아 반도체 지수 하락(-4.74%)과 맞물려 변동성 확대가 예상됩니다.",
+    "us_bigtech_summary": "오늘 애플(AAPL)의 공식 실적발표(월가 EPS 예상치 $1.98)를 시작으로 AMD, 퀄컴 등 핵심 빅테크의 실적 시험대가 본격화됩니다. 필라델피아 반도체 지수(SOXX)가 8.24% 급락한 가운데, 장중 나스닥 흐름과 연동된 변동성에 철저한 대비가 필요합니다.",
     "us_official_calendar": [
       {
         "date": "2026-11-02",
-        "dday": 3,
+        "dday": 0,
         "symbol": "AAPL",
         "kr_name": "애플",
         "time_desc": "미 장마감 후(한국시간 익일 새벽 05:00경)",
@@ -105,7 +106,7 @@
       },
       {
         "date": "2026-11-03",
-        "dday": 4,
+        "dday": 1,
         "symbol": "AMD",
         "kr_name": "AMD",
         "time_desc": "미 장마감 후(한국시간 익일 새벽 05:00경)",
@@ -114,7 +115,7 @@
       },
       {
         "date": "2026-11-04",
-        "dday": 5,
+        "dday": 2,
         "symbol": "QCOM",
         "kr_name": "퀄컴",
         "time_desc": "미 장마감 후(한국시간 익일 새벽 05:00경)",
@@ -122,70 +123,70 @@
         "quarter": "Sep/2026"
       }
     ],
-    "kr_macro_summary": "원/달러 환율은 1,338.50원으로 안정세를 보이는 가운데, 삼성전자와 SK하이닉스가 사상 최대 실적을 발표하며 반도체 장세를 이끌고 있으나 외국인 수급에 대한 면밀한 모니터링이 요구됩니다.",
-    "earnings_alert_level": "CAUTION",
+    "kr_macro_summary": "원/달러 환율이 1,336원 대에서 안정세를 보이는 한편, 외국인의 지속적인 수급 이탈 우려 속에서 국내 주요 기업들의 실적 시즌이 전개되고 있습니다. 미국 반도체주 급락 여파로 국내 반도체 및 관련 종목들의 장중 변동성 확대에 유의해야 합니다.",
+    "earnings_alert_level": "HIGH_VOLATILITY",
     "stock_notes": {
       "005930": {
         "name": "삼성전자",
         "earnings_imminent": false,
-        "earnings_status": "공식 IR 일정 미등록(발표 완료) | 환율 영향 속 3분기 영업이익 107조 돌파",
-        "memo": "추격 매수 자제 및 글로벌 반도체 지수 흐름과 외국인 수급 추이를 확인하며 분할 관점으로 접근하세요.",
+        "earnings_status": "공식 IR 일정 미등록 (실적발표 완료)",
+        "memo": "미국 반도체 지수 급락 및 외인 수급 변동성을 주시하며 추격 매수를 자제하고 지지선 방어 여부를 확인하세요.",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
-        "consensus_target_price": "492,500"
+        "consensus_target_price": "490,227"
       },
       "000660": {
         "name": "SK하이닉스",
         "earnings_imminent": false,
-        "earnings_status": "공식 IR 일정 미등록(발표 완료) | 분기 매출 첫 100조 돌파 및 영업이익률 80% 기록",
-        "memo": "역대급 실적 발표 직후 단기 차익실현 매물 출회 가능성이 높으므로 공식 주주환원 방안과 수급을 확인 후 진입하세요.",
+        "earnings_status": "공식 IR 일정 미등록 (실적발표 완료)",
+        "memo": "글로벌 반도체 섹터 약세 영향을 직접적으로 받으므로, SOXX 반등 시그널과 연동하여 분할 매수로 접근하세요.",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
-        "consensus_target_price": "3,274,545"
+        "consensus_target_price": "3,097,000"
       },
       "005380": {
         "name": "현대차",
         "earnings_imminent": false,
-        "earnings_status": "공식 IR 일정 미등록(발표 완료) | 3분기 영업익 2조 6,772억 원으로 컨센서스 상회",
-        "memo": "실적 호조에도 환율 리스크가 상존하므로 4분기 가이던스와 외국인 순매수세를 모니터링하며 보수적으로 대응하세요.",
+        "earnings_status": "공식 IR 일정 미등록 (실적발표 완료)",
+        "memo": "3분기 호실적 발표 이후 주가 조정 국면이므로, 실적 컨센서스 대비 주가 괴리율과 수급 유입 여부를 체크하세요.",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
-        "consensus_target_price": "596,000"
+        "consensus_target_price": "536,250"
       },
       "105560": {
         "name": "KB금융",
         "earnings_imminent": false,
-        "earnings_status": "공식 IR 일정 미등록(발표 완료) | 4대 금융 호실적 속 주주환원 재원 기대감 유효",
-        "memo": "안정적인 펀더멘털을 바탕으로 하방 경직성이 확보되었으나, 대형주 수급 변화에 연동하여 분할 매매로 대응하세요.",
+        "earnings_status": "공식 IR 일정 미등록 (실적발표 완료)",
+        "memo": "압도적 자본력과 주주환원 모멘텀이 유효하나, 거시경제 변동성에 따른 방어주 관점의 분할 접근을 유지하세요.",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
-        "consensus_target_price": "220,313"
+        "consensus_target_price": "220,294"
       },
       "035420": {
         "name": "NAVER",
         "earnings_imminent": true,
-        "earnings_status": "2026-11-12 (D-13) 3분기 실적 공식 확정 발표 예정",
-        "memo": "발표일(D-13)까지 기간이 남아있으나 AI DC 사업 및 글로벌 테넌트 관련 뉴스 흐름과 수급을 우선 점검하세요.",
-        "official_ir_schedule": "2026-11-12 (D-13) 2026년 3분기 실적",
+        "earnings_status": "2026-11-12 (D-10) '2026년 3분기 실적' 공식 발표 예정",
+        "memo": "AI DC 사업 확장 및 브룩필드 투자 가시화를 모니터링하되, 실적 발표를 앞두고 변동성 관리에 집중하세요.",
+        "official_ir_schedule": "2026-11-12 (D-10) 2026년 3분기 실적",
         "ir_date": "2026-11-12",
-        "ir_dday": 13,
+        "ir_dday": 10,
         "consensus_target_price": "319,696"
       },
       "267260": {
         "name": "HD현대일렉트릭",
         "earnings_imminent": false,
-        "earnings_status": "공식 IR 일정 미등록(또는 발표 완료)",
-        "memo": "전력기기 섹터 전반의 모멘텀과 실적 가시성을 체크하며 실적 시즌 변동성에 대비한 리스크 관리를 수행하세요."
+        "earnings_status": "공식 IR 일정 미등록 (추적 대상 종목)",
+        "memo": "전력기기 업황 모멘텀을 체크하며, 대형 이벤트 전후의 수급 공백 가능성에 유의하여 대응하세요."
       },
       "091160": {
         "name": "KODEX 반도체",
         "earnings_imminent": true,
-        "earnings_status": "애플(11/2), AMD(11/3), 퀄컴(11/4) 등 미 빅테크 실적 일정과 연동",
-        "memo": "미 필라델피아 반도체 지수 급락(-4.74%)의 영향이 반영될 수 있으므로 미국 빅테크 실적 발표 전까지 추격 매수를 엄금합니다."
+        "earnings_status": "미국 빅테크(AAPL, AMD) 및 국내 반도체 실적 주간 연동",
+        "memo": "필라델피아 반도체 지수(-8.24%) 폭락 여파가 직결되므로 장중 성급한 진입을 금하고 저점 매물대 지지를 확인하세요."
       },
       "465580": {
         "name": "ACE 미국빅테크TOP7 Plus",
@@ -193,25 +194,26 @@
         "ir_date": null,
         "ir_dday": null
       },
-      "381170": {
-        "name": "TIGER 미국테크TOP10 INDXX",
+      "381180": {
+        "name": "TIGER 미국필라델피아반도체나스닥",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null
       },
-      "035720": {
-        "name": "카카오",
-        "official_ir_schedule": "2026-11-05 (D-6) 2026년 3분기 경영실적",
-        "ir_date": "2026-11-05",
-        "ir_dday": 6,
-        "consensus_target_price": "49,310"
-      },
       "138040": {
         "name": "메리츠금융지주",
-        "official_ir_schedule": "2026-11-11 (D-12) 2026년 3분기 경영실적",
+        "official_ir_schedule": "2026-11-11 (D-9) 2026년 3분기 경영실적",
         "ir_date": "2026-11-11",
-        "ir_dday": 12,
+        "ir_dday": 9,
         "consensus_target_price": "153,833"
+      },
+      "035720": {
+        "name": "카카오",
+        "official_ir_schedule": "2026-11-05 (D-3) 2026년 3분기 경영실적",
+        "ir_date": "2026-11-05",
+        "ir_dday": 3,
+        "earnings_imminent": true,
+        "consensus_target_price": "49,310"
       }
     }
   },
