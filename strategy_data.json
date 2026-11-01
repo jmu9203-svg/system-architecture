@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01 23:11:30",
+  "updated_at": "2026-11-01 23:13:21",
   "battery": "85% (⚡ 충전 중, 22.5°C)",
   "market_intel": {
     "updated_at": "2026-11-01 01:59:17",
@@ -876,22 +876,24 @@
     "has_data": true,
     "file_name": "flight_log_2026-11-01.jsonl",
     "file_path": "c:\\AI_stock\\kis-stock-bot-main\\logs\\flight_log_2026-11-01.jsonl",
-    "period": "2026-11-01 23:09:29 ~ 2026-11-01 23:09:29",
+    "period": "2026-11-01 23:09:29 ~ 2026-11-01 23:13:14",
     "commit_hash": "2ff7ab1",
-    "total_events": 1,
+    "total_events": 2,
     "error_count": 0,
-    "warn_count": 0,
+    "warn_count": 1,
     "level_counts": {
-      "INFO": 1
+      "INFO": 1,
+      "WARN": 1
     },
     "categories": {
-      "TEST": 1
+      "TEST": 1,
+      "SYSTEM": 1
     },
     "top_errors": [],
     "top_code_locations": [],
     "top_api_codes": [],
     "thread_distribution": {
-      "MainThread": 1
+      "MainThread": 2
     },
     "stats": {
       "api_throttles": 0,
