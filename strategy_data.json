@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01 22:15:26",
+  "updated_at": "2026-11-01 22:26:06",
   "battery": "85% (⚡ 충전 중, 22.5°C)",
   "market_intel": {
     "updated_at": "2026-10-30 08:30:15",
@@ -216,12 +216,12 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-01 22:14:52",
-    "checked_ts": 1793538892,
+    "checked_at": "2026-11-01 22:25:30",
+    "checked_ts": 1793539530,
     "date": "2026-11-01",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
-    "scheduler_heartbeat_sec_ago": 8,
+    "scheduler_heartbeat_sec_ago": 21,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 4811517,
     "market_opened_today": false,
@@ -258,7 +258,7 @@
     "last_anomaly_alert_ts": 0.0
   },
   "ai_audit": {
-    "updated_at": "2026-11-01 22:15:20",
+    "updated_at": "2026-11-01 22:15:43",
     "items": {
       "005930": {
         "code": "005930",
@@ -590,7 +590,7 @@
         "code": "138040",
         "name": "메리츠금융지주",
         "sector": "금융·밸류업지주",
-        "checked_at": "2026-11-01 01:49:28",
+        "checked_at": "2026-11-01 22:15:35",
         "price": 131700,
         "ma20": 129075,
         "rsi": 53.6,
@@ -599,7 +599,7 @@
         "flow_summary": "최근(10/30) 순매수: 외국인 -43,039주, 기관 +98,546주(2일연속매수🔥) | [5일누적 합계: 외인 +84,566주, 기관 +53,337주]",
         "ir_schedule": "2026-11-11 (D-12) 2026년 3분기 경영실적",
         "fact_breakdown": "시장레짐(폭락장 -15점) | 20일선 상회(+6점) | RSI 53.6 중립안정(+3점) | 외인기관수급(+11점) | 거래량130%·캔들(+0점) | 공식실적 D-12(0점)",
-        "cited_facts": "코스피200 패닉 폭락장(-3.88%), MA20 상회 및 상승추세, 14일 RSI 53.6(중립), 기관 2일 연속 및 5일 누적 순매수, 현재 보유수량 0주",
+        "cited_facts": "코스피200 패닉 폭락장(-3.88%), 메리츠금융지주 MA20 상회(131,700원), 14일 RSI 53.6(중립), 기관 2일 연속 순매수 및 5일 누적 외인·기관 동반 순매수, 보유 수량 0주(미보유 상태)",
         "quant_score": 60,
         "ai_raw_score": 62,
         "final_score": 62,
@@ -613,30 +613,30 @@
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 45,
+            "score": 50,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 62,
-            "decision": "관망"
+            "score": 80,
+            "decision": "매수"
           },
           {
             "provider": "Meta",
             "model": "Llama 3.3",
-            "score": 80,
-            "decision": "매수"
+            "score": 55,
+            "decision": "관망"
           }
         ],
         "consensus": "2:1 관망 우세",
-        "reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [2:1 관망 우세] (평균 62점 · 편차 35점 | Google:3.5-flash-lite(45점 관망), Groq:gpt-oss-120b(62점 관망), Meta:llama-3.3-70b-instruct(80점 매수))] 현재 거시경제 장세가 코스피200 -3.88% 급락인 패닉 폭락장으로 당일 신규매수가 전면 차단되어 있으며, 종목 자체의 펀더멘털과 수급은 양호하나 매크로 리스크 방어를 위해 무리한 진입을 피하고 관망을 유지합니다."
+        "reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [2:1 관망 우세] (평균 62점 · 편차 30점 | Google:3.5-flash-lite(50점 관망), Groq:gpt-oss-20b(80점 매수), Meta:llama-3.3-70b-instruct(55점 관망))] 현재 코스피200 시장이 -3.88% 패닉 폭락장으로 진입하여 원칙에 따라 당일 신규 매수를 전면 차단합니다. 메리츠금융지주는 기관의 연속 순매수와 양호한 수급을 유지하고 있으나, 매크로 변동성이 극심한 상황이므로 자산 보호를 위해 관망을 유지합니다."
       },
       "066570": {
         "code": "066570",
         "name": "LG전자",
         "sector": "반도체·IT하드웨어",
-        "checked_at": "2026-11-01 01:49:38",
+        "checked_at": "2026-11-01 22:15:43",
         "price": 147800,
         "ma20": 177060,
         "rsi": 16.8,
@@ -645,38 +645,38 @@
         "flow_summary": "최근(10/30) 순매수: 외국인 -30,808주(2일연속매도⚠️), 기관 +46,279주(2일연속매수🔥) | [5일누적 합계: 외인 -82,434주, 기관 -12,948주]",
         "ir_schedule": "일정 없음",
         "fact_breakdown": "시장레짐(폭락장 -15점) | 20일선 하회(-5점) | RSI 16.8 극단과매도 반등(+15점) | 외인기관수급(-7점) | 거래량88%·캔들(-7점) | 실적일정 중립(0점)",
-        "cited_facts": "코스피200 패닉 폭락장(-3.88%), MA20 하회(177,060원), RSI 16.8(과매도), 긴 윗꼬리 음봉 및 외인 2일 연속 매도, 미 필라델피아 반도체 급락(-4.74%)",
+        "cited_facts": "코스피200 패닉 폭락장(-3.88%), LG전자 14일 RSI 16.8(과매도), 외인 2일 연속 매도 및 5일 누적 순매도, 장중 고점 대비 밀린 긴 윗꼬리 음봉, 미 필라델피아 반도체 지수 하락(-4.74%)",
         "quant_score": 36,
-        "ai_raw_score": 47,
-        "final_score": 47,
+        "ai_raw_score": 50,
+        "final_score": 50,
         "decision": "관망",
-        "score_gap": 11,
+        "score_gap": 14,
         "hit_rate_pct": 100.0,
-        "hit_desc": "직전 관망·방어(51점) 판정 적중✅ (변동 -1.1%)",
+        "hit_desc": "직전 관망·방어(47점) 판정 적중✅ (변동 +0.0%)",
         "audit_status": "PASS",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 36점 ↔ AI 47점 | 편차 11점)",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 36점 ↔ AI 50점 | 편차 14점)",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 45,
+            "score": 42,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 55,
+            "score": 58,
             "decision": "관망"
           },
           {
             "provider": "Meta",
             "model": "Llama 3.3",
-            "score": 40,
+            "score": 50,
             "decision": "관망"
           }
         ],
         "consensus": "3:0 관망 우세",
-        "reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 47점 · 편차 15점 | Google:3.5-flash-lite(45점 관망), Groq:gpt-oss-20b(55점 관망), Meta:llama-3.3-70b-instruct(40점 관망))] 현재 코스피200 시장 상태가 -3.88% 패닉 폭락장으로 당일 신규 매수가 전면 차단되어 있으며, 긴 윗꼬리 음봉과 외국인 2일 연속 순매도 등 하방 압력이 거세 리스크 관리를 위해 관망을 유지합니다."
+        "reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 50점 · 편차 16점 | Google:3.5-flash-lite(42점 관망), Groq:gpt-oss-120b(58점 관망), Meta:llama-3.3-70b-instruct(50점 관망))] 코스피200 시장이 -3.88% 패닉 폭락장을 기록 중이며 당일 신규 매수 전면 차단 원칙에 해당합니다. 14일 RSI가 16.8로 극심한 과매도 상태이나, 긴 윗꼬리 음봉과 외국인 수급 이탈 등 하방 압력이 거세어 무리한 진입을 자제하고 철저히 관망을 유지합니다."
       },
       "018260": {
         "code": "018260",
@@ -1345,25 +1345,25 @@
     "has_data": true,
     "file_name": "flight_log_2026_W44.jsonl",
     "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026_W44.jsonl",
-    "period": "2026-11-01 06:02:44 ~ 2026-11-01 22:15:20",
+    "period": "2026-11-01 06:02:44 ~ 2026-11-01 22:15:43",
     "commit_hash": "v2.0-live",
-    "total_events": 8,
+    "total_events": 10,
     "error_count": 0,
-    "warn_count": 7,
+    "warn_count": 9,
     "level_counts": {
       "INFO": 1,
-      "WARN": 7
+      "WARN": 9
     },
     "categories": {
       "KIS_API": 1,
-      "QUANT_AUDITOR": 7
+      "QUANT_AUDITOR": 9
     },
     "top_errors": [],
     "top_code_locations": [],
     "top_api_codes": [],
     "thread_distribution": {
       "Thread-2 (monitor)": 1,
-      "MainThread": 7
+      "MainThread": 9
     },
     "stats": {
       "api_throttles": 0,
@@ -1371,7 +1371,7 @@
       "ai_429_retries": 0,
       "ai_backup_fallbacks": 0,
       "ai_parse_failures": 0,
-      "quant_overrides": 7,
+      "quant_overrides": 9,
       "order_unfilled_revises": 0,
       "circuit_breaker_trips": 0,
       "orders_executed": 0,
