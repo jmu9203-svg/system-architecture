@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-02 23:51:02",
-  "battery": "85% (⚡ 충전 중, 26.0°C)",
+  "updated_at": "2026-11-03 00:01:52",
+  "battery": "85% (⚡ 충전 중, 24.9°C)",
   "market_intel": {
     "updated_at": "2026-11-02 08:30:10",
     "fx_soxx_info": {
@@ -218,15 +218,15 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-02 23:50:23",
-    "checked_ts": 1793631023,
-    "date": "2026-11-02",
+    "checked_at": "2026-11-03 00:01:08",
+    "checked_ts": 1793631668,
+    "date": "2026-11-03",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
-    "scheduler_heartbeat_sec_ago": 1,
+    "scheduler_heartbeat_sec_ago": 12,
     "monitor_heartbeat_sec_ago": 0,
-    "opening_fund_eval": 4794717,
-    "market_opened_today": true,
+    "opening_fund_eval": 4836317,
+    "market_opened_today": false,
     "current_fund_eval": 4836317,
     "peak_fund_eval": 7648676,
     "mdd_pct": -38.01,
@@ -242,12 +242,12 @@
     "max_per_sector_krw": 2500000,
     "bought_today": [],
     "sold_today": [],
-    "daily_pnl_krw": 41600,
-    "daily_pnl_pct": 0.87,
+    "daily_pnl_krw": 0,
+    "daily_pnl_pct": 0.0,
     "circuit_breaker_limit_pct": -3.5,
     "circuit_breaker_tripped": false,
     "circuit_breaker_reason": "",
-    "battery_str": "85% (⚡ 충전 중, 26.0°C)",
+    "battery_str": "85% (⚡ 충전 중, 24.9°C)",
     "battery_pct": 85,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
@@ -1446,114 +1446,32 @@
   },
   "flight_recorder": {
     "has_data": true,
-    "file_name": "flight_log_2026-11-02.jsonl",
-    "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-02.jsonl",
-    "period": "2026-11-02 00:50:54 ~ 2026-11-02 23:50:27",
+    "file_name": "flight_log_2026_W44.jsonl",
+    "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026_W44.jsonl",
+    "period": "2026-11-01 06:02:44 ~ 2026-11-01 22:58:18",
     "commit_hash": "v2.0-live",
-    "total_events": 39,
-    "error_count": 4,
-    "warn_count": 34,
+    "total_events": 29,
+    "error_count": 0,
+    "warn_count": 28,
     "level_counts": {
-      "WARN": 34,
       "INFO": 1,
-      "ERROR": 4
+      "WARN": 28
     },
     "categories": {
-      "QUANT_AUDITOR": 25,
-      "KIS_API": 8,
-      "TELEGRAM": 4,
-      "SYSTEM": 2
+      "KIS_API": 2,
+      "QUANT_AUDITOR": 27
     },
-    "top_errors": [
-      {
-        "ts": "2026-11-02 10:06:04",
-        "ver": "v2.0-live",
-        "thread": "Thread-1 (checker)",
-        "loc": "telegram_interactive_bot.py:1030 in send_telegram_chunked()",
-        "lvl": "ERROR",
-        "cat": "TELEGRAM",
-        "msg": "텔레그램 메시지 발송 실패 (HTTP 400): {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: can't parse entities: Can't find end of the entity starting at",
-        "error_type": "",
-        "error_str": "",
-        "raw_snippet": "",
-        "msg_cd": null,
-        "ctx": {
-          "http_status": 400,
-          "telegram_response": "{\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 5744\"}",
-          "text_snippet": "💙 *[토스증권 실전계좌 AI 포트폴리오 자문 브리핑]*\n_(※ 100% 안전한 조회 전용 비서입니다. 추천 타점을 참고해 토스 앱에서 직접 매매하세요!)_\n\n🏦 *[토스 계좌 자산 요약 (`17601069723`)]*\n• 🇰🇷 국내주식 평가금: *6,262,450원* (원금 7,377,100원 / 손익 *-1,114,650원*)\n• 🇺🇸 미국주식 평가금: *$1,020.31* (원금 $992.69 / 손익 *$+27.62*)\n• 📊 계좌 통합 수익률: *-12.57%*\n• 💵 주문가능 예수금: 원화 *168,453원* | 달러 *... [TRUNCATED]"
-        }
-      },
-      {
-        "ts": "2026-11-02 10:06:07",
-        "ver": "v2.0-live",
-        "thread": "Thread-1 (checker)",
-        "loc": "telegram_interactive_bot.py:1030 in send_telegram_chunked()",
-        "lvl": "ERROR",
-        "cat": "TELEGRAM",
-        "msg": "텔레그램 메시지 발송 실패 (HTTP 400): {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: can't parse entities: Can't find end of the entity starting at",
-        "error_type": "",
-        "error_str": "",
-        "raw_snippet": "",
-        "msg_cd": null,
-        "ctx": {
-          "http_status": 400,
-          "telegram_response": "{\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 3068\"}",
-          "text_snippet": "🇺🇸 *코카콜라* (`KO`) — *4주* 보유 | RSI: 62.2\n  • 손익: *+6.50%* (`$+22.92`) | 현재 `$93.75` (평단 `$88.02`)\n  • 수급: _미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)_\n  • 🟡 *AI 판정*: *관망* (*65점*)\n  • 📌 *실전 팁*: *현재 포지션 유지 및 추세 관망 권장*\n  • 💡 *근거*: _[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 65점 · 편차 6점 | Google:3.5-... [TRUNCATED]"
-        }
-      },
-      {
-        "ts": "2026-11-02 14:36:47",
-        "ver": "v2.0-live",
-        "thread": "Thread-1 (checker)",
-        "loc": "telegram_interactive_bot.py:1030 in send_telegram_chunked()",
-        "lvl": "ERROR",
-        "cat": "TELEGRAM",
-        "msg": "텔레그램 메시지 발송 실패 (HTTP 400): {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: can't parse entities: Can't find end of the entity starting at",
-        "error_type": "",
-        "error_str": "",
-        "raw_snippet": "",
-        "msg_cd": null,
-        "ctx": {
-          "http_status": 400,
-          "telegram_response": "{\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 6411\"}",
-          "text_snippet": "💙 *[토스증권 실전계좌 AI 포트폴리오 자문 브리핑]*\n_(※ 100% 안전한 조회 전용 비서입니다. 추천 타점을 참고해 토스 앱에서 직접 매매하세요!)_\n\n🏦 *[토스 계좌 자산 요약 (`17601069723`)]*\n• 🇰🇷 국내주식 평가금: *6,472,950원* (원금 7,377,100원 / 손익 *-904,150원*)\n• 🇺🇸 미국주식 평가금: *$1,020.35* (원금 $992.69 / 손익 *$+27.66*)\n• 📊 계좌 통합 수익률: *-10.15%*\n• 💵 주문가능 예수금: 원화 *168,453원* | 달러 *$3... [TRUNCATED]"
-        }
-      },
-      {
-        "ts": "2026-11-02 14:36:50",
-        "ver": "v2.0-live",
-        "thread": "Thread-1 (checker)",
-        "loc": "telegram_interactive_bot.py:1030 in send_telegram_chunked()",
-        "lvl": "ERROR",
-        "cat": "TELEGRAM",
-        "msg": "텔레그램 메시지 발송 실패 (HTTP 400): {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: can't parse entities: Can't find end of the entity starting at",
-        "error_type": "",
-        "error_str": "",
-        "raw_snippet": "",
-        "msg_cd": null,
-        "ctx": {
-          "http_status": 400,
-          "telegram_response": "{\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 1859\"}",
-          "text_snippet": "🇺🇸 *SCHD* (`SCHD`) — *4주* 보유 | RSI: 85.9\n  • 손익: *+4.19%* (`$+5.77`) | 현재 `$35.82` (평단 `$34.38`)\n  • 수급: _미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)_\n  • 🟡 *AI 판정*: *관망* (*63점*)\n  • 📌 *실전 팁*: *현재 포지션 유지 및 추세 관망 권장*\n  • 💡 *근거*: _[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 63점 · 편차 8점 | Google:3.5... [TRUNCATED]"
-        }
-      }
-    ],
-    "top_code_locations": [
-      [
-        "telegram_interactive_bot.py:1030 in send_telegram_chunked()",
-        4
-      ]
-    ],
+    "top_errors": [],
+    "top_code_locations": [],
     "top_api_codes": [
       [
         "HTTP_500",
-        7
+        1
       ]
     ],
     "thread_distribution": {
-      "MainThread": 9,
-      "Thread-2 (monitor)": 5,
-      "Thread-1 (checker)": 25
+      "Thread-2 (monitor)": 1,
+      "MainThread": 28
     },
     "stats": {
       "api_throttles": 0,
@@ -1561,11 +1479,11 @@
       "ai_429_retries": 0,
       "ai_backup_fallbacks": 0,
       "ai_parse_failures": 0,
-      "quant_overrides": 25,
+      "quant_overrides": 27,
       "order_unfilled_revises": 0,
       "circuit_breaker_trips": 0,
       "orders_executed": 0,
-      "telegram_delivery_fails": 4
+      "telegram_delivery_fails": 0
     }
   },
   "env_diagnostic": {
@@ -2015,11 +1933,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 94.94,
+        "lastPrice": 94.91,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 7.86,
-        "profitLossAmount": 27.68,
-        "rsi": 65.4,
+        "profitLossRate": 7.82,
+        "profitLossAmount": 27.56,
+        "rsi": 65.2,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "관망",
         "ai_score": 65,
@@ -2054,11 +1972,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 35.91,
+        "lastPrice": 35.95,
         "averagePurchasePrice": 34.3786,
-        "profitLossRate": 4.45,
-        "profitLossAmount": 6.1256,
-        "rsi": 86.3,
+        "profitLossRate": 4.57,
+        "profitLossAmount": 6.2856,
+        "rsi": 86.4,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "관망",
         "ai_score": 63,
@@ -2093,11 +2011,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 5.0,
-        "lastPrice": 100.43,
+        "lastPrice": 100.42,
         "averagePurchasePrice": 100.62,
-        "profitLossRate": -0.18,
-        "profitLossAmount": -0.95,
-        "rsi": 41.2,
+        "profitLossRate": -0.19,
+        "profitLossAmount": -1.0,
+        "rsi": 40.8,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "관망",
         "ai_score": 79,
@@ -2156,7 +2074,7 @@
     "flight_recorder": {
       "name": "일일 비행기록장치(Daily Flight Recorder) & 구글 드라이브 자동 동기화",
       "storage_mode": "일자별 자동 분할 및 이벤트 실시간 원자적 기록 (flight_log_YYYY-MM-DD.jsonl)",
-      "active_file": "flight_log_2026-11-02.jsonl",
+      "active_file": "flight_log_2026_W44.jsonl",
       "google_drive_folder": "AI_Stock_Daily_Logs (구글 앱스 스크립트 웹훅 다이렉트 업로드)",
       "auto_purge": "최근 14일 초과 파일 자동 삭제 (공기계 100% 저장공간 보호)",
       "delivery_schedule": "평일 15:40(장마감 결산) & 매일 23:50(자정 전 최종 결산) 구글 드라이브 동기화 및 텔레그램 발송",
