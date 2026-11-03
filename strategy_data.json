@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03 23:57:27",
+  "updated_at": "2026-11-04 00:08:13",
   "battery": "85% (⚡ 충전 중, 24.0°C)",
   "market_intel": {
     "updated_at": "2026-11-03 08:30:09",
@@ -211,15 +211,15 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-03 23:56:48",
-    "checked_ts": 1793717808,
-    "date": "2026-11-03",
+    "checked_at": "2026-11-04 00:07:32",
+    "checked_ts": 1793718452,
+    "date": "2026-11-04",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
-    "scheduler_heartbeat_sec_ago": 10,
+    "scheduler_heartbeat_sec_ago": 4,
     "monitor_heartbeat_sec_ago": 0,
-    "opening_fund_eval": 4822717,
-    "market_opened_today": true,
+    "opening_fund_eval": 4785117,
+    "market_opened_today": false,
     "current_fund_eval": 4785117,
     "peak_fund_eval": 7648676,
     "mdd_pct": -38.01,
@@ -235,8 +235,8 @@
     "max_per_sector_krw": 2500000,
     "bought_today": [],
     "sold_today": [],
-    "daily_pnl_krw": -37600,
-    "daily_pnl_pct": -0.78,
+    "daily_pnl_krw": 0,
+    "daily_pnl_pct": 0.0,
     "circuit_breaker_limit_pct": -3.5,
     "circuit_breaker_tripped": false,
     "circuit_breaker_reason": "",
@@ -1593,99 +1593,44 @@
   },
   "flight_recorder": {
     "has_data": true,
-    "file_name": "flight_log_2026-11-03.jsonl",
-    "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-03.jsonl",
-    "period": "2026-11-03 00:44:22 ~ 2026-11-03 23:46:02",
+    "file_name": "flight_log_2026_W44.jsonl",
+    "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026_W44.jsonl",
+    "period": "2026-11-01 06:02:44 ~ 2026-11-01 22:58:18",
     "commit_hash": "v2.0-live",
-    "total_events": 22,
-    "error_count": 2,
-    "warn_count": 18,
+    "total_events": 29,
+    "error_count": 0,
+    "warn_count": 28,
     "level_counts": {
-      "INFO": 2,
-      "WARN": 18,
-      "ERROR": 2
+      "INFO": 1,
+      "WARN": 28
     },
     "categories": {
-      "KIS_API": 11,
-      "AI_ENSEMBLE": 1,
-      "QUANT_AUDITOR": 8,
-      "TELEGRAM": 1,
-      "AI_PARSE": 1
+      "KIS_API": 2,
+      "QUANT_AUDITOR": 27
     },
-    "top_errors": [
-      {
-        "ts": "2026-11-03 10:06:20",
-        "ver": "v2.0-live",
-        "thread": "Thread-1 (checker)",
-        "loc": "telegram_interactive_bot.py:1030 in send_telegram_chunked()",
-        "lvl": "ERROR",
-        "cat": "TELEGRAM",
-        "msg": "텔레그램 메시지 발송 실패 (HTTP 400): {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: can't parse entities: Can't find end of the entity starting at",
-        "error_type": "",
-        "error_str": "",
-        "raw_snippet": "",
-        "msg_cd": null,
-        "ctx": {
-          "http_status": 400,
-          "telegram_response": "{\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 6754\"}",
-          "text_snippet": "💙 *[토스증권 실전계좌 AI 포트폴리오 자문 브리핑]*\n_(※ 100% 안전한 조회 전용 비서입니다. 추천 타점을 참고해 토스 앱에서 직접 매매하세요!)_\n\n🏦 *[토스 계좌 자산 요약 (`17601069723`)]*\n• 🇰🇷 국내주식 평가금: *6,186,100원* (원금 7,377,100원 / 손익 *-1,191,000원*)\n• 🇺🇸 미국주식 평가금: *$1,029.04* (원금 $992.69 / 손익 *$+36.35*)\n• 📊 계좌 통합 수익률: *-13.26%*\n• 💵 주문가능 예수금: 원화 *668,453원* | 달러 *... [TRUNCATED]"
-        }
-      },
-      {
-        "ts": "2026-11-03 19:50:09",
-        "ver": "v2.0-live",
-        "thread": "ThreadPoolExecutor-3_0",
-        "loc": "ai_analyst.py:104 in _call_single_gemini_api()",
-        "lvl": "ERROR",
-        "cat": "AI_PARSE",
-        "msg": "[Google:gemini-3.5-flash-lite] LLM 응답 JSON 파싱 실패",
-        "error_type": "JSONDecodeError",
-        "error_str": "Expecting value: line 1 column 1 (char 0)",
-        "raw_snippet": "```json\n{\n  \"decision\": \"매수\",\n  \"score\": 88,\n  \"reason\": \"RSI 30.9의 과매도 및",
-        "msg_cd": null,
-        "ctx": {
-          "provider": "Google",
-          "model": "gemini-3.5-flash-lite",
-          "raw_snippet": "```json\n{\n  \"decision\": \"매수\",\n  \"score\": 88,\n  \"reason\": \"RSI 30.9의 과매도 및",
-          "raw_length": 73,
-          "error_type": "JSONDecodeError",
-          "error_str": "Expecting value: line 1 column 1 (char 0)",
-          "traceback": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/ai_analyst.py\", line 96, in _call_single_gemini_api\n    d = json.loads(text, strict=False)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/__init__.py\", line 365, in loads\n    return cls(**kw).decode(s)\n           ~~~~~~~~~~~~~~~~^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 363, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n"
-        }
-      }
-    ],
-    "top_code_locations": [
-      [
-        "telegram_interactive_bot.py:1030 in send_telegram_chunked()",
-        1
-      ],
-      [
-        "ai_analyst.py:104 in _call_single_gemini_api()",
-        1
-      ]
-    ],
+    "top_errors": [],
+    "top_code_locations": [],
     "top_api_codes": [
       [
         "HTTP_500",
-        9
+        1
       ]
     ],
     "thread_distribution": {
-      "Thread-2 (monitor)": 10,
-      "Thread-1 (checker)": 11,
-      "ThreadPoolExecutor-3_0": 1
+      "Thread-2 (monitor)": 1,
+      "MainThread": 28
     },
     "stats": {
-      "api_throttles": 9,
-      "api_naver_fallbacks": 1,
+      "api_throttles": 1,
+      "api_naver_fallbacks": 3,
       "ai_429_retries": 0,
       "ai_backup_fallbacks": 0,
-      "ai_parse_failures": 1,
-      "quant_overrides": 8,
+      "ai_parse_failures": 0,
+      "quant_overrides": 27,
       "order_unfilled_revises": 0,
       "circuit_breaker_trips": 0,
       "orders_executed": 0,
-      "telegram_delivery_fails": 1
+      "telegram_delivery_fails": 0
     }
   },
   "env_diagnostic": {
@@ -2145,11 +2090,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 94.4,
+        "lastPrice": 94.34,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 7.24,
-        "profitLossAmount": 25.52,
-        "rsi": 58.0,
+        "profitLossRate": 7.18,
+        "profitLossAmount": 25.28,
+        "rsi": 57.8,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "관망",
         "ai_score": 65,
@@ -2184,11 +2129,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 35.54,
+        "lastPrice": 35.52,
         "averagePurchasePrice": 34.3786,
-        "profitLossRate": 3.37,
-        "profitLossAmount": 4.6456,
-        "rsi": 76.2,
+        "profitLossRate": 3.32,
+        "profitLossAmount": 4.5656,
+        "rsi": 75.6,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "관망",
         "ai_score": 63,
@@ -2223,11 +2168,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 5.0,
-        "lastPrice": 100.43,
+        "lastPrice": 100.44,
         "averagePurchasePrice": 100.62,
-        "profitLossRate": -0.18,
-        "profitLossAmount": -0.95,
-        "rsi": 39.4,
+        "profitLossRate": -0.17,
+        "profitLossAmount": -0.9,
+        "rsi": 40.0,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "관망",
         "ai_score": 84,
@@ -2286,7 +2231,7 @@
     "flight_recorder": {
       "name": "일일 비행기록장치(Daily Flight Recorder) & 구글 드라이브 자동 동기화",
       "storage_mode": "일자별 자동 분할 및 이벤트 실시간 원자적 기록 (flight_log_YYYY-MM-DD.jsonl)",
-      "active_file": "flight_log_2026-11-03.jsonl",
+      "active_file": "flight_log_2026_W44.jsonl",
       "google_drive_folder": "AI_Stock_Daily_Logs (구글 앱스 스크립트 웹훅 다이렉트 업로드)",
       "auto_purge": "최근 14일 초과 파일 자동 삭제 (공기계 100% 저장공간 보호)",
       "delivery_schedule": "평일 15:40(장마감 결산) & 매일 23:50(자정 전 최종 결산) 구글 드라이브 동기화 및 텔레그램 발송",
