@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03 10:02:51",
+  "updated_at": "2026-11-03 10:08:43",
   "battery": "83% (🔋 배터리 사용 중, 22.2°C)",
   "market_intel": {
     "updated_at": "2026-11-03 08:30:09",
@@ -211,32 +211,32 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-03 10:02:22",
-    "checked_ts": 1793667742,
+    "checked_at": "2026-11-03 10:08:00",
+    "checked_ts": 1793668080,
     "date": "2026-11-03",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
-    "scheduler_heartbeat_sec_ago": 123,
+    "scheduler_heartbeat_sec_ago": 21,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 4822717,
     "market_opened_today": true,
-    "current_fund_eval": 4811517,
+    "current_fund_eval": 4812317,
     "peak_fund_eval": 7648676,
     "mdd_pct": -38.01,
-    "fund_return_pct": -3.77,
+    "fund_return_pct": -3.75,
     "kospi200_base_price": 87886,
-    "kospi200_cur_price": 89620,
-    "kospi200_return_pct": 1.97,
-    "alpha_pct": -5.74,
+    "kospi200_cur_price": 90190,
+    "kospi200_return_pct": 2.62,
+    "alpha_pct": -6.37,
     "sector_map": {
-      "플랫폼·바이오": 1378400
+      "플랫폼·바이오": 1379200
     },
-    "sector_summary_str": "플랫폼·바이오: 1,378,400원(시드대비 27.6%)",
+    "sector_summary_str": "플랫폼·바이오: 1,379,200원(시드대비 27.6%)",
     "max_per_sector_krw": 2500000,
     "bought_today": [],
     "sold_today": [],
-    "daily_pnl_krw": -11200,
-    "daily_pnl_pct": -0.23,
+    "daily_pnl_krw": -10400,
+    "daily_pnl_pct": -0.22,
     "circuit_breaker_limit_pct": -3.5,
     "circuit_breaker_tripped": false,
     "circuit_breaker_reason": "",
@@ -1595,31 +1595,57 @@
     "has_data": true,
     "file_name": "flight_log_2026-11-03.jsonl",
     "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-03.jsonl",
-    "period": "2026-11-03 00:44:22 ~ 2026-11-03 10:02:32",
+    "period": "2026-11-03 00:44:22 ~ 2026-11-03 10:07:57",
     "commit_hash": "v2.0-live",
-    "total_events": 15,
-    "error_count": 0,
-    "warn_count": 14,
+    "total_events": 18,
+    "error_count": 1,
+    "warn_count": 16,
     "level_counts": {
       "INFO": 1,
-      "WARN": 14
+      "WARN": 16,
+      "ERROR": 1
     },
     "categories": {
-      "KIS_API": 6,
+      "KIS_API": 8,
       "AI_ENSEMBLE": 1,
-      "QUANT_AUDITOR": 8
+      "QUANT_AUDITOR": 8,
+      "TELEGRAM": 1
     },
-    "top_errors": [],
-    "top_code_locations": [],
+    "top_errors": [
+      {
+        "ts": "2026-11-03 10:06:20",
+        "ver": "v2.0-live",
+        "thread": "Thread-1 (checker)",
+        "loc": "telegram_interactive_bot.py:1030 in send_telegram_chunked()",
+        "lvl": "ERROR",
+        "cat": "TELEGRAM",
+        "msg": "텔레그램 메시지 발송 실패 (HTTP 400): {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: can't parse entities: Can't find end of the entity starting at",
+        "error_type": "",
+        "error_str": "",
+        "raw_snippet": "",
+        "msg_cd": null,
+        "ctx": {
+          "http_status": 400,
+          "telegram_response": "{\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 6754\"}",
+          "text_snippet": "💙 *[토스증권 실전계좌 AI 포트폴리오 자문 브리핑]*\n_(※ 100% 안전한 조회 전용 비서입니다. 추천 타점을 참고해 토스 앱에서 직접 매매하세요!)_\n\n🏦 *[토스 계좌 자산 요약 (`17601069723`)]*\n• 🇰🇷 국내주식 평가금: *6,186,100원* (원금 7,377,100원 / 손익 *-1,191,000원*)\n• 🇺🇸 미국주식 평가금: *$1,029.04* (원금 $992.69 / 손익 *$+36.35*)\n• 📊 계좌 통합 수익률: *-13.26%*\n• 💵 주문가능 예수금: 원화 *668,453원* | 달러 *... [TRUNCATED]"
+        }
+      }
+    ],
+    "top_code_locations": [
+      [
+        "telegram_interactive_bot.py:1030 in send_telegram_chunked()",
+        1
+      ]
+    ],
     "top_api_codes": [
       [
         "HTTP_500",
-        5
+        7
       ]
     ],
     "thread_distribution": {
-      "Thread-2 (monitor)": 5,
-      "Thread-1 (checker)": 10
+      "Thread-2 (monitor)": 7,
+      "Thread-1 (checker)": 11
     },
     "stats": {
       "api_throttles": 0,
@@ -1631,7 +1657,7 @@
       "order_unfilled_revises": 0,
       "circuit_breaker_trips": 0,
       "orders_executed": 0,
-      "telegram_delivery_fails": 0
+      "telegram_delivery_fails": 1
     }
   },
   "env_diagnostic": {
@@ -1959,16 +1985,16 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 1.0,
-        "lastPrice": 130700.0,
+        "lastPrice": 129950.0,
         "averagePurchasePrice": 123100.0,
-        "profitLossRate": 6.17,
-        "profitLossAmount": 7600.0,
-        "rsi": 50.0,
+        "profitLossRate": 5.56,
+        "profitLossAmount": 6850.0,
+        "rsi": 48.4,
         "investor_summary": "최근(11/02 마감) 순매수: 외국인 -6,559주(2일연속매도⚠️), 기관 -13,462주 | [5일누적 합계: 외인 +47,801주, 기관 +39,099주]",
         "ai_decision": "관망",
         "ai_score": 62,
         "ai_action_tip": "현재 포지션 유지 및 추세 관망 권장",
-        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 62점 · 편차 5점 | Google:3.5-flash-lite(65점 관망), Groq:qwen/qwen3.8-27b(62점 관망), Meta:llama-3.3-70b-instruct(60점 관망))] 메리츠금융지주는 성장·경기민감주(GROWTH_CYCLICAL)이나, 최근 외국인 매도세와 윗꼬리 저항(-2.8%)으로 단기 변동성이 확대된 상태입니다. 현재 예수금으로 딱 1주 매수가 가능하지만 남은 탄약인 만큼, 실적 발표 전후 바닥을 확인하고 신중하게 타이밍을 조절해야 합니다.",
+        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 62점 · 편차 5점 | Google:3.5-flash-lite(65점 관망), Groq:qwen/qwen3.8-27b(62점 관망), Meta:llama-3.3-70b-instruct(60점 관망))] 메리츠금융지주는 경기민감/성장주(GROWTH_CYCLICAL)로 현재 20일선 위에서 양봉을 유지하며 +5.68% 수익권이나, 최근 외국인과 기관의 단기 순매도 전환 및 14일 RSI 48.6의 중립적 모멘텀을 고려할 때 성급한 추매보다는 신중한 홀딩 관망이 유리합니다.",
         "checked_at": "2026-11-01 00:39:52",
         "ai_models": [
           {
@@ -1998,34 +2024,34 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 21.0,
-        "lastPrice": 221000.0,
+        "lastPrice": 221500.0,
         "averagePurchasePrice": 264000.0,
-        "profitLossRate": -16.28,
-        "profitLossAmount": -903000.0,
-        "rsi": 45.7,
+        "profitLossRate": -16.09,
+        "profitLossAmount": -892500.0,
+        "rsi": 45.9,
         "investor_summary": "최근(11/02 마감) 순매수: 외국인 +515,900주, 기관 +733,138주(5일연속매수🔥) | [5일누적 합계: 외인 +1,499,182주, 기관 +4,753,935주]",
         "ai_decision": "관망",
-        "ai_score": 62,
+        "ai_score": 68,
         "ai_action_tip": "현재 포지션 유지 및 추세 관망 권장",
-        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 62점 · 편차 0점 | Groq:gpt-oss-120b(62점 관망), Google:3.5-flash-lite(62점 관망), Meta:llama-3.3-70b-instruct(62점 관망))] 삼성전자는 반도체 성장주이며 현 현금으로는 추가 매수가 물리적으로 불가능합니다. 외국인 순매도 지속과 RSI 49.1(중립)으로 판단해 당분간 보유 관망이 최선입니다. (단, 현재 원화 예수금 168,453원으로는 1주 추가 매수가 물리적으로 불가능하여 보유 관망합니다.)",
+        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 68점 · 편차 20점 | Google:3.5-flash-lite(65점 관망), Groq:gpt-oss-120b(80점 관망), Meta:llama-3.3-70b-instruct(60점 관망))] 삼성전자는 경기민감형 성장주로 현재 20일선 하회 및 -16.28% 손실 구간에 있으나, 기관 5일 연속 순매수세 유입과 미국 빅테크 실적 발표를 앞두고 있어 성급한 추매보다는 홀딩 관망이 유리합니다.",
         "checked_at": "2026-11-01 00:39:53",
         "ai_models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 62,
+            "score": 65,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 62,
+            "score": 80,
             "decision": "관망"
           },
           {
             "provider": "Meta",
             "model": "Llama 3.3",
-            "score": 62,
+            "score": 60,
             "decision": "관망"
           }
         ],
@@ -2037,16 +2063,16 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 1.0,
-        "lastPrice": 1411000.0,
+        "lastPrice": 1419000.0,
         "averagePurchasePrice": 1710000.0,
-        "profitLossRate": -17.48,
-        "profitLossAmount": -299000.0,
-        "rsi": 49.3,
+        "profitLossRate": -17.01,
+        "profitLossAmount": -291000.0,
+        "rsi": 49.7,
         "investor_summary": "최근(11/02 마감) 순매수: 외국인 -160,311주(2일연속매도⚠️), 기관 +171,970주 | [5일누적 합계: 외인 +42,125주, 기관 +136,076주]",
         "ai_decision": "관망",
-        "ai_score": 61,
+        "ai_score": 59,
         "ai_action_tip": "현재 포지션 유지 및 추세 관망 권장",
-        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 61점 · 편차 2점 | Groq:gpt-oss-120b(62점 관망), Google:3.5-flash-lite(62점 관망), Meta:llama-3.3-70b-instruct(60점 관망))] SK하이닉스는 성장·주기성 반도체 주로 외국인 순매도 압력이 지속되고 RSI 51.4로 중립이며, 현재 예수금으로는 1주 매수가 물리적으로 불가능합니다.",
+        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 59점 · 편차 4점 | Google:3.5-flash-lite(62점 관망), Groq:gpt-oss-120b(58점 관망), Meta:llama-3.3-70b-instruct(58점 관망))] SK하이닉스는 경기민감 성장주(GROWTH_CYCLICAL)로 현재 20일선 하회 및 외국인 2일 연속 순매도세로 단기 변동성이 확대된 국면입니다. 물리적 예수금 한계와 더불어 AMD 등 미 빅테크 실적 발표에 따른 반도체 섹터의 방향성을 확인하기 전까지는 현 보유 수량(1주)을 유지하며 관망하는 것이 안전합니다.",
         "checked_at": "2026-11-01 00:39:53",
         "ai_models": [
           {
@@ -2058,13 +2084,13 @@
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 62,
+            "score": 58,
             "decision": "관망"
           },
           {
             "provider": "Meta",
             "model": "Llama 3.3",
-            "score": 60,
+            "score": 58,
             "decision": "관망"
           }
         ],
@@ -2076,16 +2102,16 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 95.81,
+        "lastPrice": 95.57,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 8.85,
-        "profitLossAmount": 31.16,
-        "rsi": 63.5,
+        "profitLossRate": 8.57,
+        "profitLossAmount": 30.2,
+        "rsi": 62.5,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "관망",
-        "ai_score": 65,
+        "ai_score": 63,
         "ai_action_tip": "현재 포지션 유지 및 추세 관망 권장",
-        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 65점 · 편차 6점 | Groq:gpt-oss-120b(62점 관망), Google:3.5-flash-lite(68점 관망), Meta:llama-3.3-70b-instruct(65점 관망))] 코카콜라는 배당 방어주로 장기 안전판 역할을 하며 RSI 61.9로 과열되지 않았습니다. 소폭 수익과 가용 현금이 있지만 추가 매수에 대한 과매도·수급 신호가 없어 관망이 최선입니다.",
+        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 63점 · 편차 8점 | Google:3.5-flash-lite(68점 관망), Groq:gpt-oss-120b(62점 관망), Meta:llama-3.3-70b-instruct(60점 관망))] 코카콜라는 포트폴리오를 지탱하는 대표적인 배당 방어주(DIVIDEND_DEFENSIVE)로, 현재 단기 RSI(63.3)와 소폭의 음봉 조정에도 불구하고 절대 매도하지 않고 코어 자산으로 가져가야 합니다. 현재 달러 예수금($314.72)으로 소수점 적립 매수가 물리적으로 가능하이나, 당장의 기계적 추매보다는 환율(1,346원)과 글로벌 빅테크 실적발표에 따른 시장 변동성을 관망하며 현금을 보유하는 것이 유리합니다.",
         "checked_at": "2026-11-01 00:39:53",
         "ai_models": [
           {
@@ -2103,7 +2129,7 @@
           {
             "provider": "Meta",
             "model": "Llama 3.3",
-            "score": 65,
+            "score": 60,
             "decision": "관망"
           }
         ],
@@ -2115,16 +2141,16 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 35.95,
+        "lastPrice": 35.93,
         "averagePurchasePrice": 34.3786,
-        "profitLossRate": 4.57,
-        "profitLossAmount": 6.2856,
-        "rsi": 85.0,
+        "profitLossRate": 4.51,
+        "profitLossAmount": 6.2056,
+        "rsi": 84.9,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "관망",
         "ai_score": 63,
         "ai_action_tip": "현재 포지션 유지 및 추세 관망 권장",
-        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 63점 · 편차 8점 | Google:3.5-flash-lite(68점 관망), Groq:gpt-oss-20b(60점 관망), Meta:llama-3.3-70b-instruct(60점 관망))] SCHD는 포트폴리오의 든든한 배당 안전판(DIVIDEND_DEFENSIVE)이자 장기 코어 자산으로, 단기 RSI 과열(85.9)에도 불구하고 매도 대상이 아닙니다. 현재 보유 중인 달러 예수금($314.72)은 추후 증시 조정으로 RSI가 낮아질 때의 저점 매수 탄약으로 아껴두며 안정적으로 홀딩 관망하시는 것을 추천합니다.",
+        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 63점 · 편차 8점 | Google:3.5-flash-lite(68점 관망), Groq:gpt-oss-120b(62점 관망), Meta:llama-3.3-70b-instruct(60점 관망))] 본 종목(SCHD)은 포트폴리오의 장기 코어 자산이자 배당 안전판으로, 단기 RSI 과열(84.9)이나 소폭 수익률(+4.51%)을 이유로 매도하지 않고 보유를 이어가야 합니다. 현재 달러 가용 예수금이 있으나 단기 과열 구간이 진정되는 조정 시점까지 추가 매수를 유보하고 홀딩 관망하는 것이 현명합니다.",
         "checked_at": "2026-11-01 00:39:54",
         "ai_models": [
           {
@@ -2136,7 +2162,7 @@
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 60,
+            "score": 62,
             "decision": "관망"
           },
           {
@@ -2161,21 +2187,21 @@
         "rsi": 38.8,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "관망",
-        "ai_score": 79,
+        "ai_score": 84,
         "ai_action_tip": "현재 포지션 유지 및 추세 관망 권장",
-        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 79점 · 편차 17점 | Meta:llama-3.3-70b-instruct(85점 관망), Groq:gpt-oss-120b(84점 관망), Google:3.5-flash-lite(68점 관망))] SGOV는 달러 파킹 통장으로서의 역할을 하며, 현재 보유 예수금으로 추가 매수가 가능합니다. 또한, 고금리 우려에 따른 미 단기국채 ETF로의 자금 이동이 확인되며, 이는 달러 파킹 목적에 부합합니다.",
+        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 84점 · 편차 3점 | Groq:gpt-oss-120b(82점 관망), Google:3.5-flash-lite(85점 관망), Meta:llama-3.3-70b-instruct(85점 관망))] SGOV는 초단기 미국채 파킹 ETF로 현금 보유 목적에 적합하고, 현재 $314.72의 가용 예수금으로 최소 1주를 추가 매수할 수 있습니다. RSI 40으로 과매도 신호는 없으며, 단기 변동성도 낮아 추가 파킹을 권장합니다.",
         "checked_at": "2026-11-01 00:39:54",
         "ai_models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 68,
+            "score": 85,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 84,
+            "score": 82,
             "decision": "관망"
           },
           {
