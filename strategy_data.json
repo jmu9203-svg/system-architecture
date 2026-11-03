@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-03 19:39:15",
-  "battery": "63% (🔋 배터리 사용 중, 20.9°C)",
+  "updated_at": "2026-11-03 19:50:36",
+  "battery": "62% (🔋 배터리 사용 중, 20.8°C)",
   "market_intel": {
     "updated_at": "2026-11-03 08:30:09",
     "fx_soxx_info": {
@@ -211,12 +211,12 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-03 19:38:38",
-    "checked_ts": 1793702318,
+    "checked_at": "2026-11-03 19:49:23",
+    "checked_ts": 1793702963,
     "date": "2026-11-03",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
-    "scheduler_heartbeat_sec_ago": 19,
+    "scheduler_heartbeat_sec_ago": 0,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 4822717,
     "market_opened_today": true,
@@ -240,8 +240,8 @@
     "circuit_breaker_limit_pct": -3.5,
     "circuit_breaker_tripped": false,
     "circuit_breaker_reason": "",
-    "battery_str": "63% (🔋 배터리 사용 중, 20.9°C)",
-    "battery_pct": 63,
+    "battery_str": "62% (🔋 배터리 사용 중, 20.8°C)",
+    "battery_pct": 62,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
       "✅ 4,500만 원 동결금 및 500만 원 시드 분리 무결성 정상",
@@ -1595,21 +1595,22 @@
     "has_data": true,
     "file_name": "flight_log_2026-11-03.jsonl",
     "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-03.jsonl",
-    "period": "2026-11-03 00:44:22 ~ 2026-11-03 10:48:10",
+    "period": "2026-11-03 00:44:22 ~ 2026-11-03 19:50:09",
     "commit_hash": "v2.0-live",
-    "total_events": 20,
-    "error_count": 1,
+    "total_events": 21,
+    "error_count": 2,
     "warn_count": 18,
     "level_counts": {
       "INFO": 1,
       "WARN": 18,
-      "ERROR": 1
+      "ERROR": 2
     },
     "categories": {
       "KIS_API": 10,
       "AI_ENSEMBLE": 1,
       "QUANT_AUDITOR": 8,
-      "TELEGRAM": 1
+      "TELEGRAM": 1,
+      "AI_PARSE": 1
     },
     "top_errors": [
       {
@@ -1629,11 +1630,37 @@
           "telegram_response": "{\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 6754\"}",
           "text_snippet": "💙 *[토스증권 실전계좌 AI 포트폴리오 자문 브리핑]*\n_(※ 100% 안전한 조회 전용 비서입니다. 추천 타점을 참고해 토스 앱에서 직접 매매하세요!)_\n\n🏦 *[토스 계좌 자산 요약 (`17601069723`)]*\n• 🇰🇷 국내주식 평가금: *6,186,100원* (원금 7,377,100원 / 손익 *-1,191,000원*)\n• 🇺🇸 미국주식 평가금: *$1,029.04* (원금 $992.69 / 손익 *$+36.35*)\n• 📊 계좌 통합 수익률: *-13.26%*\n• 💵 주문가능 예수금: 원화 *668,453원* | 달러 *... [TRUNCATED]"
         }
+      },
+      {
+        "ts": "2026-11-03 19:50:09",
+        "ver": "v2.0-live",
+        "thread": "ThreadPoolExecutor-3_0",
+        "loc": "ai_analyst.py:104 in _call_single_gemini_api()",
+        "lvl": "ERROR",
+        "cat": "AI_PARSE",
+        "msg": "[Google:gemini-3.5-flash-lite] LLM 응답 JSON 파싱 실패",
+        "error_type": "JSONDecodeError",
+        "error_str": "Expecting value: line 1 column 1 (char 0)",
+        "raw_snippet": "```json\n{\n  \"decision\": \"매수\",\n  \"score\": 88,\n  \"reason\": \"RSI 30.9의 과매도 및",
+        "msg_cd": null,
+        "ctx": {
+          "provider": "Google",
+          "model": "gemini-3.5-flash-lite",
+          "raw_snippet": "```json\n{\n  \"decision\": \"매수\",\n  \"score\": 88,\n  \"reason\": \"RSI 30.9의 과매도 및",
+          "raw_length": 73,
+          "error_type": "JSONDecodeError",
+          "error_str": "Expecting value: line 1 column 1 (char 0)",
+          "traceback": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/ai_analyst.py\", line 96, in _call_single_gemini_api\n    d = json.loads(text, strict=False)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/__init__.py\", line 365, in loads\n    return cls(**kw).decode(s)\n           ~~~~~~~~~~~~~~~~^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 363, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n"
+        }
       }
     ],
     "top_code_locations": [
       [
         "telegram_interactive_bot.py:1030 in send_telegram_chunked()",
+        1
+      ],
+      [
+        "ai_analyst.py:104 in _call_single_gemini_api()",
         1
       ]
     ],
@@ -1645,14 +1672,15 @@
     ],
     "thread_distribution": {
       "Thread-2 (monitor)": 9,
-      "Thread-1 (checker)": 11
+      "Thread-1 (checker)": 11,
+      "ThreadPoolExecutor-3_0": 1
     },
     "stats": {
       "api_throttles": 9,
       "api_naver_fallbacks": 1,
       "ai_429_retries": 0,
       "ai_backup_fallbacks": 0,
-      "ai_parse_failures": 0,
+      "ai_parse_failures": 1,
       "quant_overrides": 8,
       "order_unfilled_revises": 0,
       "circuit_breaker_trips": 0,
@@ -1844,43 +1872,59 @@
     },
     "watch_basket": [
       {
-        "code": "035420",
-        "name": "NAVER"
-      },
-      {
-        "code": "465580",
-        "name": "ACE 미국빅테크TOP7 Plus"
+        "code": "005380",
+        "name": "현대차"
       },
       {
         "code": "005930",
         "name": "삼성전자"
       },
       {
-        "code": "005380",
-        "name": "현대차"
+        "code": "035420",
+        "name": "NAVER"
+      },
+      {
+        "code": "267260",
+        "name": "HD현대일렉트릭"
+      },
+      {
+        "code": "465580",
+        "name": "ACE 미국빅테크TOP7 Plus"
       },
       {
         "code": "105560",
         "name": "KB금융"
       },
       {
-        "code": "133690",
-        "name": "TIGER 미국나스닥100"
+        "code": "381180",
+        "name": "TIGER 미국필라델피아반도체나스닥"
       },
       {
-        "code": "018260",
-        "name": "삼성에스디에스"
+        "code": "138040",
+        "name": "메리츠금융지주"
       },
       {
-        "code": "012330",
-        "name": "현대모비스"
+        "code": "066570",
+        "name": "LG전자"
       }
     ],
     "last_rotation": {
-      "rotated_at": "2026-11-03 14:30:33",
+      "rotated_at": "2026-10-26 22:56:21",
       "universe_size": 30,
-      "watch_size": 8,
+      "watch_size": 9,
       "core_stocks": [
+        {
+          "code": "005380",
+          "name": "현대차",
+          "sector": "자동차·모빌리티",
+          "role": "현재 보유 중 (익절·손절 밀착 관리)"
+        },
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "sector": "반도체·IT하드웨어",
+          "role": "현재 보유 중 (익절·손절 밀착 관리)"
+        },
         {
           "code": "035420",
           "name": "NAVER",
@@ -1888,22 +1932,16 @@
           "role": "현재 보유 중 (익절·손절 밀착 관리)"
         },
         {
+          "code": "267260",
+          "name": "HD현대일렉트릭",
+          "sector": "전력망·중공업·방산",
+          "role": "현재 보유 중 (익절·손절 밀착 관리)"
+        },
+        {
           "code": "465580",
           "name": "ACE 미국빅테크TOP7 Plus",
           "sector": "미국증시·글로벌빅테크",
           "role": "🇺🇸 미국 빅테크 코어 ETF"
-        },
-        {
-          "code": "005930",
-          "name": "삼성전자",
-          "sector": "반도체·IT하드웨어",
-          "role": "🇰🇷 한국 대표 코어 우량주"
-        },
-        {
-          "code": "005380",
-          "name": "현대차",
-          "sector": "자동차·모빌리티",
-          "role": "🇰🇷 한국 대표 코어 우량주"
         },
         {
           "code": "105560",
@@ -1914,52 +1952,48 @@
       ],
       "dynamic_leaders": [
         {
-          "code": "133690",
-          "name": "TIGER 미국나스닥100",
+          "code": "381180",
+          "name": "TIGER 미국필라델피아반도체나스닥",
           "sector": "미국증시·글로벌빅테크",
           "is_us_etf": true,
-          "price": 165800,
-          "chg_rate": -2.59,
-          "frgn_today": 33625,
-          "orgn_today": -114529,
-          "leader_score": 76,
-          "reason": "당일 외인 순매수(+33,625주) · 조정 중 메이저 저가매수 유입(-2.59%) · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
+          "price": 36905,
+          "chg_rate": -1.82,
+          "frgn_today": 233910,
+          "orgn_today": -157073,
+          "leader_score": 80,
+          "reason": "당일 외인 순매수(+233,910주) · 5일 합산 메이저 순매수(+273,883주) · 조정 중 메이저 저가매수 유입(-1.82%) · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
         },
         {
-          "code": "018260",
-          "name": "삼성에스디에스",
+          "code": "138040",
+          "name": "메리츠금융지주",
+          "sector": "금융·밸류업지주",
+          "is_us_etf": false,
+          "price": 124700,
+          "chg_rate": -2.43,
+          "frgn_today": 30206,
+          "orgn_today": 776,
+          "leader_score": 88,
+          "reason": "당일 외인(+30,206)·기관(+776) 쌍끌이 매수 · 5일 누적 외인·기관 동반 매집 · 조정 중 메이저 저가매수 유입(-2.43%)"
+        },
+        {
+          "code": "066570",
+          "name": "LG전자",
           "sector": "반도체·IT하드웨어",
           "is_us_etf": false,
-          "price": 202000,
-          "chg_rate": -3.12,
-          "frgn_today": 34907,
-          "orgn_today": 3870,
-          "leader_score": 88,
-          "reason": "당일 외인(+34,907)·기관(+3,870) 쌍끌이 매수 · 5일 누적 외인·기관 동반 매집 · 조정 중 메이저 저가매수 유입(-3.12%)"
-        },
-        {
-          "code": "012330",
-          "name": "현대모비스",
-          "sector": "자동차·모빌리티",
-          "is_us_etf": false,
-          "price": 350000,
-          "chg_rate": 0.0,
-          "frgn_today": 3197,
-          "orgn_today": 33106,
-          "leader_score": 83,
-          "reason": "당일 외인(+3,197)·기관(+33,106) 쌍끌이 매수 · 5일 합산 메이저 순매수(+98,531주) · 견조한 상승 추세(+0.00%)"
+          "price": 156500,
+          "chg_rate": -0.38,
+          "frgn_today": 14434,
+          "orgn_today": 15579,
+          "leader_score": 78,
+          "reason": "당일 외인(+14,434)·기관(+15,579) 쌍끌이 매수 · 조정 중 메이저 저가매수 유입(-0.38%)"
         }
       ],
       "added": [
-        "TIGER 미국나스닥100(133690)",
-        "삼성에스디에스(018260)",
-        "현대모비스(012330)"
+        "TIGER 미국필라델피아반도체나스닥(381180)",
+        "LG전자(066570)"
       ],
       "removed": [
-        "HD현대일렉트릭(267260)",
-        "TIGER 미국필라델피아반도체나스닥(381180)",
-        "메리츠금융지주(138040)",
-        "LG전자(066570)"
+        "TIGER 미국테크TOP10 INDXX(381170)"
       ]
     },
     "master_universe_size": 30
@@ -1994,11 +2028,11 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 1.0,
-        "lastPrice": 130200.0,
+        "lastPrice": 130700.0,
         "averagePurchasePrice": 123100.0,
-        "profitLossRate": 5.76,
-        "profitLossAmount": 7100.0,
-        "rsi": 48.8,
+        "profitLossRate": 6.17,
+        "profitLossAmount": 7600.0,
+        "rsi": 50.0,
         "investor_summary": "최근(11-03) 순매수: 외인 -14,930주, 기관 +15,735주 (개인 -758주) | [5일누적: 외인 +78,390주, 기관 +84,081주]",
         "ai_decision": "관망",
         "ai_score": 62,
@@ -2037,7 +2071,7 @@
         "averagePurchasePrice": 264000.0,
         "profitLossRate": -15.9,
         "profitLossAmount": -882000.0,
-        "rsi": 46.2,
+        "rsi": 46.0,
         "investor_summary": "최근(11-03) 순매수: 외인 -942,213주, 기관 -177,061주 (개인 +1,283,261주) | [5일누적: 외인 -130,106주, 기관 +4,509,141주]",
         "ai_decision": "관망",
         "ai_score": 62,
@@ -2072,11 +2106,11 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 1.0,
-        "lastPrice": 1418000.0,
+        "lastPrice": 1415000.0,
         "averagePurchasePrice": 1710000.0,
-        "profitLossRate": -17.07,
-        "profitLossAmount": -292000.0,
-        "rsi": 49.6,
+        "profitLossRate": -17.25,
+        "profitLossAmount": -295000.0,
+        "rsi": 49.5,
         "investor_summary": "최근(11-03) 순매수: 외인 -455,990주, 기관 -196,597주 (개인 +391,563주) | [5일누적: 외인 -260,964주, 기관 -126,217주]",
         "ai_decision": "관망",
         "ai_score": 61,
@@ -2115,7 +2149,7 @@
         "averagePurchasePrice": 88.02,
         "profitLossRate": 8.06,
         "profitLossAmount": 28.4,
-        "rsi": 60.8,
+        "rsi": 60.7,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "관망",
         "ai_score": 65,
@@ -2150,11 +2184,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 35.86,
+        "lastPrice": 35.83,
         "averagePurchasePrice": 34.3786,
-        "profitLossRate": 4.3,
-        "profitLossAmount": 5.9256,
-        "rsi": 83.7,
+        "profitLossRate": 4.22,
+        "profitLossAmount": 5.8056,
+        "rsi": 82.9,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "관망",
         "ai_score": 63,
@@ -2189,11 +2223,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 5.0,
-        "lastPrice": 100.44,
+        "lastPrice": 100.43,
         "averagePurchasePrice": 100.62,
-        "profitLossRate": -0.17,
-        "profitLossAmount": -0.9,
-        "rsi": 40.0,
+        "profitLossRate": -0.18,
+        "profitLossAmount": -0.95,
+        "rsi": 38.8,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "관망",
         "ai_score": 84,
@@ -2209,7 +2243,7 @@
           },
           {
             "provider": "Groq",
-            "model": "Groq 120B",
+            "model": "Groq 20B",
             "score": 80,
             "decision": "관망"
           },
