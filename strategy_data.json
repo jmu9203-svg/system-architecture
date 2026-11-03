@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-11-04 08:23:50",
+  "updated_at": "2026-11-04 08:30:24",
   "battery": "85% (⚡ 충전 중, 22.9°C)",
   "market_intel": {
-    "updated_at": "2026-11-03 08:30:09",
+    "updated_at": "2026-11-04 08:30:01",
     "fx_soxx_info": {
-      "usd_krw": "1,346.00",
-      "usd_krw_change": "0.00",
-      "usd_krw_rate": "0.00",
-      "soxx_price": "$458.70",
-      "soxx_pct": "+1.11%",
-      "summary": "원/달러 환율: 1,346.00원 (전일대비 0.00원 / 0.00%) | 미 필라델피아 반도체(SOXX): $458.70 (+1.11%)"
+      "usd_krw": "1,345.00",
+      "usd_krw_change": "-1.00",
+      "usd_krw_rate": "-0.07",
+      "soxx_price": "$474.47",
+      "soxx_pct": "+2.04%",
+      "summary": "원/달러 환율: 1,345.00원 (전일대비 -1.00원 / -0.07%) | 미 필라델피아 반도체(SOXX): $474.47 (+2.04%)"
     },
     "last_rotation": {
-      "rotated_at": "2026-11-03 08:30:10",
+      "rotated_at": "2026-11-04 08:30:02",
       "universe_size": 30,
       "watch_size": 8,
       "core_stocks": [
@@ -49,67 +49,52 @@
       ],
       "dynamic_leaders": [
         {
-          "code": "133690",
-          "name": "TIGER 미국나스닥100",
+          "code": "381180",
+          "name": "TIGER 미국필라델피아반도체나스닥",
           "sector": "미국증시·글로벌빅테크",
           "is_us_etf": true,
-          "price": 170205,
+          "price": 36065,
           "chg_rate": 0.0,
-          "frgn_today": 33625,
-          "orgn_today": -114529,
+          "frgn_today": 227604,
+          "orgn_today": -258505,
           "leader_score": 77,
-          "reason": "당일 외인 순매수(+33,625주) · 견조한 상승 추세(+0.00%) · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
+          "reason": "당일 외인 순매수(+227,604주) · 견조한 상승 추세(+0.00%) · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
         },
         {
-          "code": "018260",
-          "name": "삼성에스디에스",
-          "sector": "반도체·IT하드웨어",
+          "code": "138040",
+          "name": "메리츠금융지주",
+          "sector": "금융·밸류업지주",
           "is_us_etf": false,
-          "price": 208500,
+          "price": 130400,
           "chg_rate": 0.0,
-          "frgn_today": 34907,
-          "orgn_today": 3870,
-          "leader_score": 89,
-          "reason": "당일 외인(+34,907)·기관(+3,870) 쌍끌이 매수 · 5일 누적 외인·기관 동반 매집 · 견조한 상승 추세(+0.00%)"
+          "frgn_today": -14955,
+          "orgn_today": 16068,
+          "leader_score": 80,
+          "reason": "당일 기관 순매수(+16,068주) · 5일 누적 외인·기관 동반 매집 · 견조한 상승 추세(+0.00%)"
         },
         {
-          "code": "012330",
-          "name": "현대모비스",
-          "sector": "자동차·모빌리티",
+          "code": "267260",
+          "name": "HD현대일렉트릭",
+          "sector": "전력망·중공업·방산",
           "is_us_etf": false,
-          "price": 350000,
+          "price": 439000,
           "chg_rate": 0.0,
-          "frgn_today": 3197,
-          "orgn_today": 33106,
-          "leader_score": 83,
-          "reason": "당일 외인(+3,197)·기관(+33,106) 쌍끌이 매수 · 5일 합산 메이저 순매수(+98,531주) · 견조한 상승 추세(+0.00%)"
+          "frgn_today": 18892,
+          "orgn_today": -15869,
+          "leader_score": 75,
+          "reason": "당일 외인 순매수(+18,892주) · 5일 합산 메이저 순매수(+13,109주) · 견조한 상승 추세(+0.00%)"
         }
       ],
-      "added": [
-        "TIGER 미국나스닥100(133690)",
-        "삼성에스디에스(018260)",
-        "현대모비스(012330)"
-      ],
+      "added": [],
       "removed": [
-        "TIGER 미국필라델피아반도체나스닥(381180)",
-        "카카오(035720)",
-        "메리츠금융지주(138040)"
+        "LG전자(066570)"
       ]
     },
-    "us_bigtech_summary": "오늘(11월 3일) AMD(EPS 예상치 $1.68)를 시작으로 내일(11월 4일) 퀄컴(EPS 예상치 $1.46)의 공식 실적발표가 예정되어 있어 나스닥 반도체 섹터의 변동성 확대가 예상됩니다. 미 필라델피아 반도체 지수(SOXX)가 1.11% 상승 마감한 가운데, 빅테크 실적이 AI 투자 부담 우려를 잠재울 수 있을지 주목됩니다.",
+    "us_bigtech_summary": "2026년 11월 4일(D-0) 퀄컴(QCOM)이 미 장 마감 후 실적을 발표할 예정이며, 월가 EPS 예상치는 $1.46입니다. 필라델피아 반도체 지수(SOXX)가 2.04% 반등하며 기술주 전반에 긍정적인 모멘텀을 제공하고 있습니다.",
     "us_official_calendar": [
       {
-        "date": "2026-11-03",
-        "dday": 0,
-        "symbol": "AMD",
-        "kr_name": "AMD",
-        "time_desc": "미 장마감 후(한국시간 익일 새벽 05:00경)",
-        "eps_forecast": "$1.68",
-        "quarter": "Sep/2026"
-      },
-      {
         "date": "2026-11-04",
-        "dday": 1,
+        "dday": 0,
         "symbol": "QCOM",
         "kr_name": "퀄컴",
         "time_desc": "미 장마감 후(한국시간 익일 새벽 05:00경)",
@@ -117,24 +102,24 @@
         "quarter": "Sep/2026"
       }
     ],
-    "kr_macro_summary": "원/달러 환율이 1,346.00원으로 보합세를 보이는 가운데 유가 급락과 외국인 수급 불안정성으로 코스피는 혼조세가 예상됩니다. 대형주들의 3분기 실적 발표 시즌이 마무리 국면에 접어들며 개별 종목별 펀더멘털과 수급에 따른 차별화 장세가 전개되고 있습니다.",
+    "kr_macro_summary": "원/달러 환율은 1,345.00원으로 소폭 하락(-0.07%)하며 안정세를 보이는 가운데, 외국인의 지속적인 수급 공방 속에서 주요 기업들의 3분기 실적 발표 및 AI·데이터센터 관련 모멘텀이 주가 방향성을 결정하고 있습니다.",
     "earnings_alert_level": "CAUTION",
     "stock_notes": {
       "005930": {
         "name": "삼성전자",
         "earnings_imminent": false,
-        "earnings_status": "공식 실적발표 일정 미등록 (발표 완료)",
-        "memo": "사상 최대 실적 기대감과 메모리 호조세가 유입 중이나 미국 반도체 실적 발표 직전이므로 추격 매수 자제 및 외인 수급 밀집 여부 확인 필수.",
+        "earnings_status": "공식 IR 일정 미등록(발표 완료 상태)",
+        "memo": "HBM4 및 4분기 실적 기대감이 상존하나, 추격 매수보다는 외국인 수급 방향성과 반도체 업종 추이를 확인하며 분할 접근할 것.",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
-        "consensus_target_price": "490,227"
+        "consensus_target_price": "479,474"
       },
       "000660": {
         "name": "SK하이닉스",
         "earnings_imminent": false,
-        "earnings_status": "공식 실적발표 일정 미등록 (발표 완료)",
-        "memo": "목표주가 상향 리포트에도 불구하고 단기 주가 변동성이 확대되고 있으므로, AMD 등 미국 반도체 실적 연동성 확인 후 분할 매수 대응.",
+        "earnings_status": "공식 IR 일정 미등록(발표 완료 상태)",
+        "memo": "역대급 실적 전망과 HBM 모멘텀이 유효하나, 미국 빅테크 실적 및 필라델피아 반도체 지수 연동성을 체크하며 보수적으로 진입할 것.",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
@@ -143,44 +128,48 @@
       "005380": {
         "name": "현대차",
         "earnings_imminent": false,
-        "earnings_status": "공식 실적발표 일정 미등록 (발표 완료)",
-        "memo": "3분기 컨센서스 상회 실적에도 주가가 조정을 받은 바, 로보틱스 및 4분기 판매 반등 모멘텀 발생 시에만 제한적 비중 확대.",
+        "earnings_status": "공식 IR 일정 미등록(발표 완료 상태)",
+        "memo": "3분기 컨센서스 상회 실적 발표 이후 주가 등락이 이어지고 있으므로, 로보틱스 및 4분기 판매 반등 가시성 확인 후 매매에 임할 것.",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
-        "consensus_target_price": "536,250"
+        "consensus_target_price": "532,083"
       },
       "105560": {
         "name": "KB금융",
         "earnings_imminent": false,
-        "earnings_status": "공식 실적발표 일정 미등록 (발표 완료)",
-        "memo": "높은 CET-1 비율과 압도적인 주주환원 정책 모멘텀이 유효하므로 저점 매수 기회로 활용하되, 외국인 금융주 수급 이탈 여부 모니터링.",
+        "earnings_status": "공식 IR 일정 미등록(발표 완료 상태)",
+        "memo": "높은 CET-1 비율과 주주환원정책 고도화 기대감으로 방어력이 우수하므로 조정 시 안정적인 분할 매수 관점을 유지할 것.",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
-        "consensus_target_price": "220,294"
+        "consensus_target_price": "219,722"
       },
       "035420": {
         "name": "NAVER",
         "earnings_imminent": true,
-        "earnings_status": "2026-11-12 (D-9) '2026년 3분기 실적' 공식 확정 발표",
-        "memo": "공식 실적 발표일(D-9)이 임박함에 따라 AI DC 및 글로벌 테넌트 관련 모멘텀을 주시하며 성급한 진입보다는 실적 가시성 확인 후 대응.",
-        "official_ir_schedule": "2026-11-12 (D-9) 2026년 3분기 실적",
+        "earnings_status": "2026-11-12 (D-8) 3분기 실적 공식 발표 예정",
+        "memo": "D-8 앞두고 브룩필드 투자 확정 및 AI DC 사업 모멘텀이 부각 중이나, 실적 발표 전까지 변동성에 대비해 비중을 조절할 것.",
+        "official_ir_schedule": "2026-11-12 (D-8) 2026년 3분기 실적",
         "ir_date": "2026-11-12",
-        "ir_dday": 9,
+        "ir_dday": 8,
         "consensus_target_price": "319,696"
       },
       "267260": {
         "name": "HD현대일렉트릭",
         "earnings_imminent": false,
-        "earnings_status": "공식 실적발표 일정 미등록 (실적 시즌 영향권)",
-        "memo": "영업이익 컨센서스 하회 우려 속에서도 중장기 전력기기 전망이 밝으므로 단기 낙폭 과대 시 분할 매수 관점 유지."
+        "earnings_status": "공식 IR 일정 미등록(발표 완료 상태)",
+        "memo": "컨센서스를 소폭 하회했으나 데이터센터 수요 확중에 따른 중장기 마진 개선 기대감이 유효하므로 눌림목 중심 대응할 것.",
+        "official_ir_schedule": "향후 공식 IR 일정 미등록",
+        "ir_date": null,
+        "ir_dday": null,
+        "consensus_target_price": "859,412"
       },
       "091160": {
         "name": "KODEX 반도체",
-        "earnings_imminent": true,
-        "earnings_status": "AMD(11/3), 퀄컴(11/4) 미 빅테크 실적발표 일정 직연동",
-        "memo": "미국 나스닥 주요 반도체 기업들의 실적 발표 직전 단계이므로, 지수 추격 매수를 자제하고 발표 직후 변동성 완화 시점에 진입."
+        "earnings_imminent": false,
+        "earnings_status": "미국 퀄컴 실적 및 필라델피아 반도체 지수(SOXX) 연동",
+        "memo": "SOXX 지수 강세(+2.04%)와 오늘 밤 퀄컴 실적 발표를 앞두고 있으므로, 결과 확인 전까지 추격 매수를 자제하고 리스크를 관리할 것."
       },
       "465580": {
         "name": "ACE 미국빅테크TOP7 Plus",
@@ -188,25 +177,18 @@
         "ir_date": null,
         "ir_dday": null
       },
-      "133690": {
-        "name": "TIGER 미국나스닥100",
+      "381180": {
+        "name": "TIGER 미국필라델피아반도체나스닥",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null
       },
-      "018260": {
-        "name": "삼성에스디에스",
-        "official_ir_schedule": "향후 공식 IR 일정 미등록",
-        "ir_date": null,
-        "ir_dday": null,
-        "consensus_target_price": "275,867"
-      },
-      "012330": {
-        "name": "현대모비스",
-        "official_ir_schedule": "향후 공식 IR 일정 미등록",
-        "ir_date": null,
-        "ir_dday": null,
-        "consensus_target_price": "629,500"
+      "138040": {
+        "name": "메리츠금융지주",
+        "official_ir_schedule": "2026-11-11 (D-7) 2026년 3분기 경영실적",
+        "ir_date": "2026-11-11",
+        "ir_dday": 7,
+        "consensus_target_price": "153,833"
       }
     }
   },
@@ -1837,24 +1819,20 @@
     },
     "watch_basket": [
       {
-        "code": "005380",
-        "name": "현대차"
+        "code": "035420",
+        "name": "NAVER"
+      },
+      {
+        "code": "465580",
+        "name": "ACE 미국빅테크TOP7 Plus"
       },
       {
         "code": "005930",
         "name": "삼성전자"
       },
       {
-        "code": "035420",
-        "name": "NAVER"
-      },
-      {
-        "code": "267260",
-        "name": "HD현대일렉트릭"
-      },
-      {
-        "code": "465580",
-        "name": "ACE 미국빅테크TOP7 Plus"
+        "code": "005380",
+        "name": "현대차"
       },
       {
         "code": "105560",
@@ -1869,27 +1847,15 @@
         "name": "메리츠금융지주"
       },
       {
-        "code": "066570",
-        "name": "LG전자"
+        "code": "267260",
+        "name": "HD현대일렉트릭"
       }
     ],
     "last_rotation": {
-      "rotated_at": "2026-10-26 22:56:21",
+      "rotated_at": "2026-11-04 08:30:02",
       "universe_size": 30,
-      "watch_size": 9,
+      "watch_size": 8,
       "core_stocks": [
-        {
-          "code": "005380",
-          "name": "현대차",
-          "sector": "자동차·모빌리티",
-          "role": "현재 보유 중 (익절·손절 밀착 관리)"
-        },
-        {
-          "code": "005930",
-          "name": "삼성전자",
-          "sector": "반도체·IT하드웨어",
-          "role": "현재 보유 중 (익절·손절 밀착 관리)"
-        },
         {
           "code": "035420",
           "name": "NAVER",
@@ -1897,16 +1863,22 @@
           "role": "현재 보유 중 (익절·손절 밀착 관리)"
         },
         {
-          "code": "267260",
-          "name": "HD현대일렉트릭",
-          "sector": "전력망·중공업·방산",
-          "role": "현재 보유 중 (익절·손절 밀착 관리)"
-        },
-        {
           "code": "465580",
           "name": "ACE 미국빅테크TOP7 Plus",
           "sector": "미국증시·글로벌빅테크",
           "role": "🇺🇸 미국 빅테크 코어 ETF"
+        },
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "sector": "반도체·IT하드웨어",
+          "role": "🇰🇷 한국 대표 코어 우량주"
+        },
+        {
+          "code": "005380",
+          "name": "현대차",
+          "sector": "자동차·모빌리티",
+          "role": "🇰🇷 한국 대표 코어 우량주"
         },
         {
           "code": "105560",
@@ -1921,44 +1893,41 @@
           "name": "TIGER 미국필라델피아반도체나스닥",
           "sector": "미국증시·글로벌빅테크",
           "is_us_etf": true,
-          "price": 36905,
-          "chg_rate": -1.82,
-          "frgn_today": 233910,
-          "orgn_today": -157073,
-          "leader_score": 80,
-          "reason": "당일 외인 순매수(+233,910주) · 5일 합산 메이저 순매수(+273,883주) · 조정 중 메이저 저가매수 유입(-1.82%) · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
+          "price": 36065,
+          "chg_rate": 0.0,
+          "frgn_today": 227604,
+          "orgn_today": -258505,
+          "leader_score": 77,
+          "reason": "당일 외인 순매수(+227,604주) · 견조한 상승 추세(+0.00%) · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
         },
         {
           "code": "138040",
           "name": "메리츠금융지주",
           "sector": "금융·밸류업지주",
           "is_us_etf": false,
-          "price": 124700,
-          "chg_rate": -2.43,
-          "frgn_today": 30206,
-          "orgn_today": 776,
-          "leader_score": 88,
-          "reason": "당일 외인(+30,206)·기관(+776) 쌍끌이 매수 · 5일 누적 외인·기관 동반 매집 · 조정 중 메이저 저가매수 유입(-2.43%)"
+          "price": 130400,
+          "chg_rate": 0.0,
+          "frgn_today": -14955,
+          "orgn_today": 16068,
+          "leader_score": 80,
+          "reason": "당일 기관 순매수(+16,068주) · 5일 누적 외인·기관 동반 매집 · 견조한 상승 추세(+0.00%)"
         },
         {
-          "code": "066570",
-          "name": "LG전자",
-          "sector": "반도체·IT하드웨어",
+          "code": "267260",
+          "name": "HD현대일렉트릭",
+          "sector": "전력망·중공업·방산",
           "is_us_etf": false,
-          "price": 156500,
-          "chg_rate": -0.38,
-          "frgn_today": 14434,
-          "orgn_today": 15579,
-          "leader_score": 78,
-          "reason": "당일 외인(+14,434)·기관(+15,579) 쌍끌이 매수 · 조정 중 메이저 저가매수 유입(-0.38%)"
+          "price": 439000,
+          "chg_rate": 0.0,
+          "frgn_today": 18892,
+          "orgn_today": -15869,
+          "leader_score": 75,
+          "reason": "당일 외인 순매수(+18,892주) · 5일 합산 메이저 순매수(+13,109주) · 견조한 상승 추세(+0.00%)"
         }
       ],
-      "added": [
-        "TIGER 미국필라델피아반도체나스닥(381180)",
-        "LG전자(066570)"
-      ],
+      "added": [],
       "removed": [
-        "TIGER 미국테크TOP10 INDXX(381170)"
+        "LG전자(066570)"
       ]
     },
     "master_universe_size": 30
