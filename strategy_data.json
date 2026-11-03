@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-03 10:48:50",
-  "battery": "82% (🔋 배터리 사용 중, 21.7°C)",
+  "updated_at": "2026-11-03 10:50:55",
+  "battery": "81% (🔋 배터리 사용 중, 21.5°C)",
   "market_intel": {
     "updated_at": "2026-11-03 08:30:09",
     "fx_soxx_info": {
@@ -211,37 +211,37 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-03 10:48:12",
-    "checked_ts": 1793670492,
+    "checked_at": "2026-11-03 10:50:00",
+    "checked_ts": 1793670600,
     "date": "2026-11-03",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
-    "scheduler_heartbeat_sec_ago": 9,
+    "scheduler_heartbeat_sec_ago": 1,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 4822717,
     "market_opened_today": true,
-    "current_fund_eval": 4813117,
+    "current_fund_eval": 4810717,
     "peak_fund_eval": 7648676,
     "mdd_pct": -38.01,
-    "fund_return_pct": -3.74,
+    "fund_return_pct": -3.79,
     "kospi200_base_price": 87886,
-    "kospi200_cur_price": 90405,
-    "kospi200_return_pct": 2.87,
-    "alpha_pct": -6.61,
+    "kospi200_cur_price": 90400,
+    "kospi200_return_pct": 2.86,
+    "alpha_pct": -6.65,
     "sector_map": {
-      "플랫폼·바이오": 1380000
+      "플랫폼·바이오": 1377600
     },
-    "sector_summary_str": "플랫폼·바이오: 1,380,000원(시드대비 27.6%)",
+    "sector_summary_str": "플랫폼·바이오: 1,377,600원(시드대비 27.6%)",
     "max_per_sector_krw": 2500000,
     "bought_today": [],
     "sold_today": [],
-    "daily_pnl_krw": -9600,
-    "daily_pnl_pct": -0.2,
+    "daily_pnl_krw": -12000,
+    "daily_pnl_pct": -0.25,
     "circuit_breaker_limit_pct": -3.5,
     "circuit_breaker_tripped": false,
     "circuit_breaker_reason": "",
-    "battery_str": "82% (🔋 배터리 사용 중, 21.7°C)",
-    "battery_pct": 82,
+    "battery_str": "81% (🔋 배터리 사용 중, 21.5°C)",
+    "battery_pct": 81,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
       "✅ 4,500만 원 동결금 및 500만 원 시드 분리 무결성 정상",
@@ -1648,7 +1648,7 @@
       "Thread-1 (checker)": 11
     },
     "stats": {
-      "api_throttles": 0,
+      "api_throttles": 9,
       "api_naver_fallbacks": 1,
       "ai_429_retries": 0,
       "ai_backup_fallbacks": 0,
@@ -1844,43 +1844,59 @@
     },
     "watch_basket": [
       {
-        "code": "035420",
-        "name": "NAVER"
-      },
-      {
-        "code": "465580",
-        "name": "ACE 미국빅테크TOP7 Plus"
+        "code": "005380",
+        "name": "현대차"
       },
       {
         "code": "005930",
         "name": "삼성전자"
       },
       {
-        "code": "005380",
-        "name": "현대차"
+        "code": "035420",
+        "name": "NAVER"
+      },
+      {
+        "code": "267260",
+        "name": "HD현대일렉트릭"
+      },
+      {
+        "code": "465580",
+        "name": "ACE 미국빅테크TOP7 Plus"
       },
       {
         "code": "105560",
         "name": "KB금융"
       },
       {
-        "code": "133690",
-        "name": "TIGER 미국나스닥100"
+        "code": "381180",
+        "name": "TIGER 미국필라델피아반도체나스닥"
       },
       {
-        "code": "018260",
-        "name": "삼성에스디에스"
+        "code": "138040",
+        "name": "메리츠금융지주"
       },
       {
-        "code": "012330",
-        "name": "현대모비스"
+        "code": "066570",
+        "name": "LG전자"
       }
     ],
     "last_rotation": {
-      "rotated_at": "2026-11-03 10:00:26",
+      "rotated_at": "2026-10-26 22:56:21",
       "universe_size": 30,
-      "watch_size": 8,
+      "watch_size": 9,
       "core_stocks": [
+        {
+          "code": "005380",
+          "name": "현대차",
+          "sector": "자동차·모빌리티",
+          "role": "현재 보유 중 (익절·손절 밀착 관리)"
+        },
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "sector": "반도체·IT하드웨어",
+          "role": "현재 보유 중 (익절·손절 밀착 관리)"
+        },
         {
           "code": "035420",
           "name": "NAVER",
@@ -1888,22 +1904,16 @@
           "role": "현재 보유 중 (익절·손절 밀착 관리)"
         },
         {
+          "code": "267260",
+          "name": "HD현대일렉트릭",
+          "sector": "전력망·중공업·방산",
+          "role": "현재 보유 중 (익절·손절 밀착 관리)"
+        },
+        {
           "code": "465580",
           "name": "ACE 미국빅테크TOP7 Plus",
           "sector": "미국증시·글로벌빅테크",
           "role": "🇺🇸 미국 빅테크 코어 ETF"
-        },
-        {
-          "code": "005930",
-          "name": "삼성전자",
-          "sector": "반도체·IT하드웨어",
-          "role": "🇰🇷 한국 대표 코어 우량주"
-        },
-        {
-          "code": "005380",
-          "name": "현대차",
-          "sector": "자동차·모빌리티",
-          "role": "🇰🇷 한국 대표 코어 우량주"
         },
         {
           "code": "105560",
@@ -1914,44 +1924,49 @@
       ],
       "dynamic_leaders": [
         {
-          "code": "133690",
-          "name": "TIGER 미국나스닥100",
+          "code": "381180",
+          "name": "TIGER 미국필라델피아반도체나스닥",
           "sector": "미국증시·글로벌빅테크",
           "is_us_etf": true,
-          "price": 166610,
-          "chg_rate": -2.11,
-          "frgn_today": 33625,
-          "orgn_today": -114529,
-          "leader_score": 76,
-          "reason": "당일 외인 순매수(+33,625주) · 조정 중 메이저 저가매수 유입(-2.11%) · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
+          "price": 36905,
+          "chg_rate": -1.82,
+          "frgn_today": 233910,
+          "orgn_today": -157073,
+          "leader_score": 80,
+          "reason": "당일 외인 순매수(+233,910주) · 5일 합산 메이저 순매수(+273,883주) · 조정 중 메이저 저가매수 유입(-1.82%) · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
         },
         {
-          "code": "018260",
-          "name": "삼성에스디에스",
+          "code": "138040",
+          "name": "메리츠금융지주",
+          "sector": "금융·밸류업지주",
+          "is_us_etf": false,
+          "price": 124700,
+          "chg_rate": -2.43,
+          "frgn_today": 30206,
+          "orgn_today": 776,
+          "leader_score": 88,
+          "reason": "당일 외인(+30,206)·기관(+776) 쌍끌이 매수 · 5일 누적 외인·기관 동반 매집 · 조정 중 메이저 저가매수 유입(-2.43%)"
+        },
+        {
+          "code": "066570",
+          "name": "LG전자",
           "sector": "반도체·IT하드웨어",
           "is_us_etf": false,
-          "price": 207500,
-          "chg_rate": -0.48,
-          "frgn_today": 34907,
-          "orgn_today": 3870,
-          "leader_score": 88,
-          "reason": "당일 외인(+34,907)·기관(+3,870) 쌍끌이 매수 · 5일 누적 외인·기관 동반 매집 · 조정 중 메이저 저가매수 유입(-0.48%)"
-        },
-        {
-          "code": "012330",
-          "name": "현대모비스",
-          "sector": "자동차·모빌리티",
-          "is_us_etf": false,
-          "price": 346000,
-          "chg_rate": -1.14,
-          "frgn_today": 3197,
-          "orgn_today": 33106,
-          "leader_score": 82,
-          "reason": "당일 외인(+3,197)·기관(+33,106) 쌍끌이 매수 · 5일 합산 메이저 순매수(+98,531주) · 조정 중 메이저 저가매수 유입(-1.14%)"
+          "price": 156500,
+          "chg_rate": -0.38,
+          "frgn_today": 14434,
+          "orgn_today": 15579,
+          "leader_score": 78,
+          "reason": "당일 외인(+14,434)·기관(+15,579) 쌍끌이 매수 · 조정 중 메이저 저가매수 유입(-0.38%)"
         }
       ],
-      "added": [],
-      "removed": []
+      "added": [
+        "TIGER 미국필라델피아반도체나스닥(381180)",
+        "LG전자(066570)"
+      ],
+      "removed": [
+        "TIGER 미국테크TOP10 INDXX(381170)"
+      ]
     },
     "master_universe_size": 30
   },
@@ -2024,11 +2039,11 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 21.0,
-        "lastPrice": 222000.0,
+        "lastPrice": 221500.0,
         "averagePurchasePrice": 264000.0,
-        "profitLossRate": -15.9,
-        "profitLossAmount": -882000.0,
-        "rsi": 46.0,
+        "profitLossRate": -16.09,
+        "profitLossAmount": -892500.0,
+        "rsi": 45.9,
         "investor_summary": "최근(11/02 마감) 순매수: 외국인 +515,900주, 기관 +733,138주(5일연속매수🔥) | [5일누적 합계: 외인 +1,499,182주, 기관 +4,753,935주]",
         "ai_decision": "관망",
         "ai_score": 68,
@@ -2063,10 +2078,10 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 1.0,
-        "lastPrice": 1418000.0,
+        "lastPrice": 1416000.0,
         "averagePurchasePrice": 1710000.0,
-        "profitLossRate": -17.07,
-        "profitLossAmount": -292000.0,
+        "profitLossRate": -17.19,
+        "profitLossAmount": -294000.0,
         "rsi": 49.6,
         "investor_summary": "최근(11/02 마감) 순매수: 외국인 -160,311주(2일연속매도⚠️), 기관 +171,970주 | [5일누적 합계: 외인 +42,125주, 기관 +136,076주]",
         "ai_decision": "관망",
@@ -2102,10 +2117,10 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 95.58,
+        "lastPrice": 95.59,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 8.58,
-        "profitLossAmount": 30.24,
+        "profitLossRate": 8.6,
+        "profitLossAmount": 30.28,
         "rsi": 62.5,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "관망",
@@ -2141,11 +2156,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 35.9,
+        "lastPrice": 35.89,
         "averagePurchasePrice": 34.3786,
-        "profitLossRate": 4.42,
-        "profitLossAmount": 6.0856,
-        "rsi": 84.8,
+        "profitLossRate": 4.39,
+        "profitLossAmount": 6.0456,
+        "rsi": 84.5,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "관망",
         "ai_score": 63,
