@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05 03:40:04",
+  "updated_at": "2026-11-05 03:51:10",
   "battery": "85% (⚡ 충전 중, 22.5°C)",
   "market_intel": {
     "updated_at": "2026-11-04 08:30:01",
@@ -193,12 +193,12 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-05 03:39:23",
-    "checked_ts": 1793817563,
+    "checked_at": "2026-11-05 03:50:11",
+    "checked_ts": 1793818211,
     "date": "2026-11-05",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
-    "scheduler_heartbeat_sec_ago": 14,
+    "scheduler_heartbeat_sec_ago": 11,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 4799517,
     "market_opened_today": false,
@@ -1715,26 +1715,60 @@
     }
   },
   "flight_recorder": {
-    "has_data": false,
+    "has_data": true,
     "file_name": "flight_log_2026-11-05.jsonl",
     "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-05.jsonl",
-    "period": "기록 없음",
+    "period": "2026-11-05 03:50:50 ~ 2026-11-05 03:50:50",
     "commit_hash": "v2.0-live",
-    "total_events": 0,
-    "error_count": 0,
+    "total_events": 1,
+    "error_count": 1,
     "warn_count": 0,
-    "level_counts": {},
-    "categories": {},
-    "top_errors": [],
-    "top_code_locations": [],
+    "level_counts": {
+      "ERROR": 1
+    },
+    "categories": {
+      "AI_PARSE": 1
+    },
+    "top_errors": [
+      {
+        "ts": "2026-11-05 03:50:50",
+        "ver": "v2.0-live",
+        "thread": "ThreadPoolExecutor-17_0",
+        "loc": "ai_analyst.py:104 in _call_single_gemini_api()",
+        "lvl": "ERROR",
+        "cat": "AI_PARSE",
+        "msg": "[Google:gemini-3.5-flash-lite] LLM 응답 JSON 파싱 실패",
+        "error_type": "JSONDecodeError",
+        "error_str": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
+        "raw_snippet": "{",
+        "msg_cd": null,
+        "ctx": {
+          "provider": "Google",
+          "model": "gemini-3.5-flash-lite",
+          "raw_snippet": "{",
+          "raw_length": 1,
+          "error_type": "JSONDecodeError",
+          "error_str": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
+          "traceback": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/ai_analyst.py\", line 96, in _call_single_gemini_api\n    d = json.loads(text, strict=False)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/__init__.py\", line 365, in loads\n    return cls(**kw).decode(s)\n           ~~~~~~~~~~~~~~~~^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 361, in raw_decode\n    obj, end = self.scan_once(s, idx)\n               ~~~~~~~~~~~~~~^^^^^^^^\njson.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)\n"
+        }
+      }
+    ],
+    "top_code_locations": [
+      [
+        "ai_analyst.py:104 in _call_single_gemini_api()",
+        1
+      ]
+    ],
     "top_api_codes": [],
-    "thread_distribution": {},
+    "thread_distribution": {
+      "ThreadPoolExecutor-17_0": 1
+    },
     "stats": {
       "api_throttles": 0,
       "api_naver_fallbacks": 0,
       "ai_429_retries": 0,
       "ai_backup_fallbacks": 0,
-      "ai_parse_failures": 0,
+      "ai_parse_failures": 1,
       "quant_overrides": 0,
       "order_unfilled_revises": 0,
       "circuit_breaker_trips": 0,
@@ -2199,11 +2233,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 96.08,
+        "lastPrice": 96.19,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 9.15,
-        "profitLossAmount": 32.24,
-        "rsi": 62.0,
+        "profitLossRate": 9.28,
+        "profitLossAmount": 32.68,
+        "rsi": 62.2,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "관망",
         "ai_score": 71,
@@ -2238,11 +2272,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 36.11,
+        "lastPrice": 36.12,
         "averagePurchasePrice": 34.3786,
-        "profitLossRate": 5.03,
-        "profitLossAmount": 6.9256,
-        "rsi": 77.4,
+        "profitLossRate": 5.06,
+        "profitLossAmount": 6.9656,
+        "rsi": 77.5,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "관망",
         "ai_score": 70,
@@ -2277,11 +2311,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 5.0,
-        "lastPrice": 100.45,
+        "lastPrice": 100.44,
         "averagePurchasePrice": 100.62,
-        "profitLossRate": -0.16,
-        "profitLossAmount": -0.85,
-        "rsi": 40.0,
+        "profitLossRate": -0.17,
+        "profitLossAmount": -0.9,
+        "rsi": 39.3,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "관망",
         "ai_score": 84,
