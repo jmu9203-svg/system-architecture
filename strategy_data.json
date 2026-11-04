@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04 17:14:02",
+  "updated_at": "2026-11-04 17:31:41",
   "battery": "69% (🔋 배터리 사용 중, 20.5°C)",
   "market_intel": {
     "updated_at": "2026-11-04 08:30:01",
@@ -193,8 +193,8 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-04 17:13:20",
-    "checked_ts": 1793780000,
+    "checked_at": "2026-11-04 17:21:27",
+    "checked_ts": 1793780487,
     "date": "2026-11-04",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
@@ -1718,18 +1718,19 @@
     "has_data": true,
     "file_name": "flight_log_2026-11-04.jsonl",
     "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-04.jsonl",
-    "period": "2026-11-04 08:01:28 ~ 2026-11-04 14:32:47",
+    "period": "2026-11-04 08:01:28 ~ 2026-11-04 17:30:37",
     "commit_hash": "v2.0-live",
-    "total_events": 7,
+    "total_events": 13,
     "error_count": 2,
-    "warn_count": 5,
+    "warn_count": 11,
     "level_counts": {
       "ERROR": 2,
-      "WARN": 5
+      "WARN": 11
     },
     "categories": {
       "AI_PARSE": 2,
-      "QUANT_AUDITOR": 5
+      "QUANT_AUDITOR": 5,
+      "AI_ENSEMBLE": 6
     },
     "top_errors": [
       {
@@ -1787,7 +1788,8 @@
     "thread_distribution": {
       "ThreadPoolExecutor-13_2": 1,
       "Thread-1 (checker)": 5,
-      "ThreadPoolExecutor-31_2": 1
+      "ThreadPoolExecutor-31_2": 1,
+      "Thread-2 (monitor)": 6
     },
     "stats": {
       "api_throttles": 0,
@@ -1986,43 +1988,59 @@
     },
     "watch_basket": [
       {
-        "code": "035420",
-        "name": "NAVER"
-      },
-      {
-        "code": "465580",
-        "name": "ACE 미국빅테크TOP7 Plus"
+        "code": "005380",
+        "name": "현대차"
       },
       {
         "code": "005930",
         "name": "삼성전자"
       },
       {
-        "code": "005380",
-        "name": "현대차"
+        "code": "035420",
+        "name": "NAVER"
+      },
+      {
+        "code": "267260",
+        "name": "HD현대일렉트릭"
+      },
+      {
+        "code": "465580",
+        "name": "ACE 미국빅테크TOP7 Plus"
       },
       {
         "code": "105560",
         "name": "KB금융"
       },
       {
-        "code": "381170",
-        "name": "TIGER 미국테크TOP10 INDXX"
+        "code": "381180",
+        "name": "TIGER 미국필라델피아반도체나스닥"
       },
       {
         "code": "138040",
         "name": "메리츠금융지주"
       },
       {
-        "code": "064350",
-        "name": "현대로템"
+        "code": "066570",
+        "name": "LG전자"
       }
     ],
     "last_rotation": {
-      "rotated_at": "2026-11-04 14:30:10",
+      "rotated_at": "2026-10-26 22:56:21",
       "universe_size": 30,
-      "watch_size": 8,
+      "watch_size": 9,
       "core_stocks": [
+        {
+          "code": "005380",
+          "name": "현대차",
+          "sector": "자동차·모빌리티",
+          "role": "현재 보유 중 (익절·손절 밀착 관리)"
+        },
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "sector": "반도체·IT하드웨어",
+          "role": "현재 보유 중 (익절·손절 밀착 관리)"
+        },
         {
           "code": "035420",
           "name": "NAVER",
@@ -2030,22 +2048,16 @@
           "role": "현재 보유 중 (익절·손절 밀착 관리)"
         },
         {
+          "code": "267260",
+          "name": "HD현대일렉트릭",
+          "sector": "전력망·중공업·방산",
+          "role": "현재 보유 중 (익절·손절 밀착 관리)"
+        },
+        {
           "code": "465580",
           "name": "ACE 미국빅테크TOP7 Plus",
           "sector": "미국증시·글로벌빅테크",
           "role": "🇺🇸 미국 빅테크 코어 ETF"
-        },
-        {
-          "code": "005930",
-          "name": "삼성전자",
-          "sector": "반도체·IT하드웨어",
-          "role": "🇰🇷 한국 대표 코어 우량주"
-        },
-        {
-          "code": "005380",
-          "name": "현대차",
-          "sector": "자동차·모빌리티",
-          "role": "🇰🇷 한국 대표 코어 우량주"
         },
         {
           "code": "105560",
@@ -2056,47 +2068,48 @@
       ],
       "dynamic_leaders": [
         {
-          "code": "381170",
-          "name": "TIGER 미국테크TOP10 INDXX",
+          "code": "381180",
+          "name": "TIGER 미국필라델피아반도체나스닥",
           "sector": "미국증시·글로벌빅테크",
           "is_us_etf": true,
-          "price": 28730,
-          "chg_rate": 1.23,
-          "frgn_today": 42564,
-          "orgn_today": -66479,
-          "leader_score": 77,
-          "reason": "당일 외인 순매수(+42,564주) · 견조한 상승 추세(+1.23%) · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
+          "price": 36905,
+          "chg_rate": -1.82,
+          "frgn_today": 233910,
+          "orgn_today": -157073,
+          "leader_score": 80,
+          "reason": "당일 외인 순매수(+233,910주) · 5일 합산 메이저 순매수(+273,883주) · 조정 중 메이저 저가매수 유입(-1.82%) · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
         },
         {
           "code": "138040",
           "name": "메리츠금융지주",
           "sector": "금융·밸류업지주",
           "is_us_etf": false,
-          "price": 131300,
-          "chg_rate": 0.69,
-          "frgn_today": -14955,
-          "orgn_today": 16068,
-          "leader_score": 80,
-          "reason": "당일 기관 순매수(+16,068주) · 5일 누적 외인·기관 동반 매집 · 견조한 상승 추세(+0.69%)"
+          "price": 124700,
+          "chg_rate": -2.43,
+          "frgn_today": 30206,
+          "orgn_today": 776,
+          "leader_score": 88,
+          "reason": "당일 외인(+30,206)·기관(+776) 쌍끌이 매수 · 5일 누적 외인·기관 동반 매집 · 조정 중 메이저 저가매수 유입(-2.43%)"
         },
         {
-          "code": "064350",
-          "name": "현대로템",
-          "sector": "전력망·중공업·방산",
+          "code": "066570",
+          "name": "LG전자",
+          "sector": "반도체·IT하드웨어",
           "is_us_etf": false,
-          "price": 79200,
-          "chg_rate": 2.72,
-          "frgn_today": 2813,
-          "orgn_today": -820,
-          "leader_score": 75,
-          "reason": "당일 외인 순매수(+2,813주) · 5일 합산 메이저 순매수(+83,501주) · 견조한 상승 추세(+2.72%)"
+          "price": 156500,
+          "chg_rate": -0.38,
+          "frgn_today": 14434,
+          "orgn_today": 15579,
+          "leader_score": 78,
+          "reason": "당일 외인(+14,434)·기관(+15,579) 쌍끌이 매수 · 조정 중 메이저 저가매수 유입(-0.38%)"
         }
       ],
       "added": [
-        "현대로템(064350)"
+        "TIGER 미국필라델피아반도체나스닥(381180)",
+        "LG전자(066570)"
       ],
       "removed": [
-        "HD현대일렉트릭(267260)"
+        "TIGER 미국테크TOP10 INDXX(381170)"
       ]
     },
     "master_universe_size": 30
@@ -2131,11 +2144,11 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 1.0,
-        "lastPrice": 131800.0,
+        "lastPrice": 132000.0,
         "averagePurchasePrice": 123100.0,
-        "profitLossRate": 7.06,
-        "profitLossAmount": 8700.0,
-        "rsi": 54.2,
+        "profitLossRate": 7.22,
+        "profitLossAmount": 8900.0,
+        "rsi": 54.6,
         "investor_summary": "최근(11-04) 순매수: 외인 -3,759주, 기관 +20,057주 (개인 -16,548주) | [5일누적: 외인 +39,120주, 기관 +164,339주]",
         "ai_decision": "관망",
         "ai_score": 63,
@@ -2248,11 +2261,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 94.67,
+        "lastPrice": 94.52,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 7.55,
-        "profitLossAmount": 26.6,
-        "rsi": 58.4,
+        "profitLossRate": 7.38,
+        "profitLossAmount": 26.0,
+        "rsi": 57.9,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "관망",
         "ai_score": 71,
@@ -2287,11 +2300,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 35.56,
+        "lastPrice": 35.57,
         "averagePurchasePrice": 34.3786,
-        "profitLossRate": 3.43,
-        "profitLossAmount": 4.7256,
-        "rsi": 73.4,
+        "profitLossRate": 3.46,
+        "profitLossAmount": 4.7656,
+        "rsi": 73.5,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "관망",
         "ai_score": 70,
