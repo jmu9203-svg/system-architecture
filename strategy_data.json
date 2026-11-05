@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05 14:41:21",
+  "updated_at": "2026-11-05 14:48:20",
   "battery": "74% (🔋 배터리 사용 중, 20.7°C)",
   "market_intel": {
     "updated_at": "2026-11-05 08:30:02",
@@ -196,32 +196,32 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-05 14:40:02",
-    "checked_ts": 1793857202,
+    "checked_at": "2026-11-05 14:46:58",
+    "checked_ts": 1793857618,
     "date": "2026-11-05",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
-    "scheduler_heartbeat_sec_ago": 3,
+    "scheduler_heartbeat_sec_ago": 15,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 4885117,
     "market_opened_today": true,
-    "current_fund_eval": 4919517,
+    "current_fund_eval": 4909117,
     "peak_fund_eval": 7648676,
     "mdd_pct": -38.01,
-    "fund_return_pct": -1.61,
+    "fund_return_pct": -1.82,
     "kospi200_base_price": 87886,
-    "kospi200_cur_price": 84600,
-    "kospi200_return_pct": -3.74,
-    "alpha_pct": 2.13,
+    "kospi200_cur_price": 84255,
+    "kospi200_return_pct": -4.13,
+    "alpha_pct": 2.31,
     "sector_map": {
-      "플랫폼·바이오": 1486400
+      "플랫폼·바이오": 1476000
     },
-    "sector_summary_str": "플랫폼·바이오: 1,486,400원(시드대비 29.7%)",
+    "sector_summary_str": "플랫폼·바이오: 1,476,000원(시드대비 29.5%)",
     "max_per_sector_krw": 2500000,
     "bought_today": [],
     "sold_today": [],
-    "daily_pnl_krw": 34400,
-    "daily_pnl_pct": 0.7,
+    "daily_pnl_krw": 24000,
+    "daily_pnl_pct": 0.49,
     "circuit_breaker_limit_pct": -3.5,
     "circuit_breaker_tripped": false,
     "circuit_breaker_reason": "",
@@ -1899,42 +1899,20 @@
     "has_data": true,
     "file_name": "flight_log_2026-11-05.jsonl",
     "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-05.jsonl",
-    "period": "2026-11-05 03:50:50 ~ 2026-11-05 14:36:37",
+    "period": "2026-11-05 03:50:50 ~ 2026-11-05 14:48:11",
     "commit_hash": "v2.0-live",
-    "total_events": 18,
-    "error_count": 11,
+    "total_events": 19,
+    "error_count": 12,
     "warn_count": 7,
     "level_counts": {
-      "ERROR": 11,
+      "ERROR": 12,
       "WARN": 7
     },
     "categories": {
-      "AI_PARSE": 11,
+      "AI_PARSE": 12,
       "AI_ENSEMBLE": 7
     },
     "top_errors": [
-      {
-        "ts": "2026-11-05 13:01:45",
-        "ver": "v2.0-live",
-        "thread": "ThreadPoolExecutor-1_0",
-        "loc": "ai_analyst.py:104 in _call_single_gemini_api()",
-        "lvl": "ERROR",
-        "cat": "AI_PARSE",
-        "msg": "[Google:gemini-3.5-flash-lite] LLM 응답 JSON 파싱 실패",
-        "error_type": "JSONDecodeError",
-        "error_str": "Expecting property name enclosed in double quotes: line 3 column 15 (char 36)",
-        "raw_snippet": "{\n  \"decision\": \"매수\",\n  \"score\": 88,",
-        "msg_cd": null,
-        "ctx": {
-          "provider": "Google",
-          "model": "gemini-3.5-flash-lite",
-          "raw_snippet": "{\n  \"decision\": \"매수\",\n  \"score\": 88,",
-          "raw_length": 36,
-          "error_type": "JSONDecodeError",
-          "error_str": "Expecting property name enclosed in double quotes: line 3 column 15 (char 36)",
-          "traceback": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/ai_analyst.py\", line 96, in _call_single_gemini_api\n    d = json.loads(text, strict=False)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/__init__.py\", line 365, in loads\n    return cls(**kw).decode(s)\n           ~~~~~~~~~~~~~~~~^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 361, in raw_decode\n    obj, end = self.scan_once(s, idx)\n               ~~~~~~~~~~~~~~^^^^^^^^\njson.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 3 column 15 (char 36)\n"
-        }
-      },
       {
         "ts": "2026-11-05 13:01:51",
         "ver": "v2.0-live",
@@ -2132,18 +2110,40 @@
           "error_str": "Expecting value: line 1 column 1 (char 0)",
           "traceback": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/ai_analyst.py\", line 96, in _call_single_gemini_api\n    d = json.loads(text, strict=False)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/__init__.py\", line 365, in loads\n    return cls(**kw).decode(s)\n           ~~~~~~~~~~~~~~~~^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 363, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n"
         }
+      },
+      {
+        "ts": "2026-11-05 14:48:11",
+        "ver": "v2.0-live",
+        "thread": "ThreadPoolExecutor-1_0",
+        "loc": "ai_analyst.py:104 in _call_single_gemini_api()",
+        "lvl": "ERROR",
+        "cat": "AI_PARSE",
+        "msg": "[Google:gemini-3.5-flash-lite] LLM 응답 JSON 파싱 실패",
+        "error_type": "JSONDecodeError",
+        "error_str": "Unterminated string starting at: line 4 column 13 (char 49)",
+        "raw_snippet": "{\n  \"decision\": \"매수\",\n  \"score\": 85,\n  \"reason\": \"직전 거래일 +3.17% 상승에 그",
+        "msg_cd": null,
+        "ctx": {
+          "provider": "Google",
+          "model": "gemini-3.5-flash-lite",
+          "raw_snippet": "{\n  \"decision\": \"매수\",\n  \"score\": 85,\n  \"reason\": \"직전 거래일 +3.17% 상승에 그",
+          "raw_length": 69,
+          "error_type": "JSONDecodeError",
+          "error_str": "Unterminated string starting at: line 4 column 13 (char 49)",
+          "traceback": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/ai_analyst.py\", line 96, in _call_single_gemini_api\n    d = json.loads(text, strict=False)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/__init__.py\", line 365, in loads\n    return cls(**kw).decode(s)\n           ~~~~~~~~~~~~~~~~^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 361, in raw_decode\n    obj, end = self.scan_once(s, idx)\n               ~~~~~~~~~~~~~~^^^^^^^^\njson.decoder.JSONDecodeError: Unterminated string starting at: line 4 column 13 (char 49)\n"
+        }
       }
     ],
     "top_code_locations": [
       [
         "ai_analyst.py:104 in _call_single_gemini_api()",
-        11
+        12
       ]
     ],
     "top_api_codes": [],
     "thread_distribution": {
       "ThreadPoolExecutor-17_0": 2,
-      "ThreadPoolExecutor-1_0": 1,
+      "ThreadPoolExecutor-1_0": 2,
       "ThreadPoolExecutor-2_0": 1,
       "ThreadPoolExecutor-4_0": 1,
       "ThreadPoolExecutor-10_0": 1,
@@ -2158,7 +2158,7 @@
       "api_naver_fallbacks": 0,
       "ai_429_retries": 0,
       "ai_backup_fallbacks": 0,
-      "ai_parse_failures": 11,
+      "ai_parse_failures": 12,
       "quant_overrides": 0,
       "order_unfilled_revises": 0,
       "circuit_breaker_trips": 0,
@@ -2350,43 +2350,59 @@
     },
     "watch_basket": [
       {
-        "code": "035420",
-        "name": "NAVER"
-      },
-      {
-        "code": "465580",
-        "name": "ACE 미국빅테크TOP7 Plus"
+        "code": "005380",
+        "name": "현대차"
       },
       {
         "code": "005930",
         "name": "삼성전자"
       },
       {
-        "code": "005380",
-        "name": "현대차"
+        "code": "035420",
+        "name": "NAVER"
+      },
+      {
+        "code": "267260",
+        "name": "HD현대일렉트릭"
+      },
+      {
+        "code": "465580",
+        "name": "ACE 미국빅테크TOP7 Plus"
       },
       {
         "code": "105560",
         "name": "KB금융"
       },
       {
-        "code": "458730",
-        "name": "TIGER 미국배당다우존스"
+        "code": "381180",
+        "name": "TIGER 미국필라델피아반도체나스닥"
       },
       {
         "code": "138040",
         "name": "메리츠금융지주"
       },
       {
-        "code": "051910",
-        "name": "LG화학"
+        "code": "066570",
+        "name": "LG전자"
       }
     ],
     "last_rotation": {
-      "rotated_at": "2026-11-05 14:30:27",
+      "rotated_at": "2026-10-26 22:56:21",
       "universe_size": 30,
-      "watch_size": 8,
+      "watch_size": 9,
       "core_stocks": [
+        {
+          "code": "005380",
+          "name": "현대차",
+          "sector": "자동차·모빌리티",
+          "role": "현재 보유 중 (익절·손절 밀착 관리)"
+        },
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "sector": "반도체·IT하드웨어",
+          "role": "현재 보유 중 (익절·손절 밀착 관리)"
+        },
         {
           "code": "035420",
           "name": "NAVER",
@@ -2394,22 +2410,16 @@
           "role": "현재 보유 중 (익절·손절 밀착 관리)"
         },
         {
+          "code": "267260",
+          "name": "HD현대일렉트릭",
+          "sector": "전력망·중공업·방산",
+          "role": "현재 보유 중 (익절·손절 밀착 관리)"
+        },
+        {
           "code": "465580",
           "name": "ACE 미국빅테크TOP7 Plus",
           "sector": "미국증시·글로벌빅테크",
           "role": "🇺🇸 미국 빅테크 코어 ETF"
-        },
-        {
-          "code": "005930",
-          "name": "삼성전자",
-          "sector": "반도체·IT하드웨어",
-          "role": "🇰🇷 한국 대표 코어 우량주"
-        },
-        {
-          "code": "005380",
-          "name": "현대차",
-          "sector": "자동차·모빌리티",
-          "role": "🇰🇷 한국 대표 코어 우량주"
         },
         {
           "code": "105560",
@@ -2420,50 +2430,48 @@
       ],
       "dynamic_leaders": [
         {
-          "code": "458730",
-          "name": "TIGER 미국배당다우존스",
+          "code": "381180",
+          "name": "TIGER 미국필라델피아반도체나스닥",
           "sector": "미국증시·글로벌빅테크",
           "is_us_etf": true,
-          "price": 15405,
-          "chg_rate": 2.26,
-          "frgn_today": 74946,
-          "orgn_today": -159790,
-          "leader_score": 77,
-          "reason": "당일 외인 순매수(+74,946주) · 견조한 상승 추세(+2.26%) · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
+          "price": 36905,
+          "chg_rate": -1.82,
+          "frgn_today": 233910,
+          "orgn_today": -157073,
+          "leader_score": 80,
+          "reason": "당일 외인 순매수(+233,910주) · 5일 합산 메이저 순매수(+273,883주) · 조정 중 메이저 저가매수 유입(-1.82%) · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
         },
         {
           "code": "138040",
           "name": "메리츠금융지주",
           "sector": "금융·밸류업지주",
           "is_us_etf": false,
-          "price": 134800,
-          "chg_rate": 1.97,
-          "frgn_today": -14955,
-          "orgn_today": 16068,
-          "leader_score": 80,
-          "reason": "당일 기관 순매수(+16,068주) · 5일 누적 외인·기관 동반 매집 · 견조한 상승 추세(+1.97%)"
+          "price": 124700,
+          "chg_rate": -2.43,
+          "frgn_today": 30206,
+          "orgn_today": 776,
+          "leader_score": 88,
+          "reason": "당일 외인(+30,206)·기관(+776) 쌍끌이 매수 · 5일 누적 외인·기관 동반 매집 · 조정 중 메이저 저가매수 유입(-2.43%)"
         },
         {
-          "code": "051910",
-          "name": "LG화학",
-          "sector": "플랫폼·바이오",
+          "code": "066570",
+          "name": "LG전자",
+          "sector": "반도체·IT하드웨어",
           "is_us_etf": false,
-          "price": 248000,
-          "chg_rate": 0.4,
-          "frgn_today": 29542,
-          "orgn_today": -30059,
-          "leader_score": 75,
-          "reason": "당일 외인 순매수(+29,542주) · 5일 합산 메이저 순매수(+30,495주) · 견조한 상승 추세(+0.40%)"
+          "price": 156500,
+          "chg_rate": -0.38,
+          "frgn_today": 14434,
+          "orgn_today": 15579,
+          "leader_score": 78,
+          "reason": "당일 외인(+14,434)·기관(+15,579) 쌍끌이 매수 · 조정 중 메이저 저가매수 유입(-0.38%)"
         }
       ],
       "added": [
-        "TIGER 미국배당다우존스(458730)",
-        "LG화학(051910)"
-      ],
-      "removed": [
-        "HD현대일렉트릭(267260)",
         "TIGER 미국필라델피아반도체나스닥(381180)",
         "LG전자(066570)"
+      ],
+      "removed": [
+        "TIGER 미국테크TOP10 INDXX(381170)"
       ]
     },
     "master_universe_size": 30
@@ -2498,11 +2506,11 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 1.0,
-        "lastPrice": 135500.0,
+        "lastPrice": 135000.0,
         "averagePurchasePrice": 123100.0,
-        "profitLossRate": 10.07,
-        "profitLossAmount": 12400.0,
-        "rsi": 61.2,
+        "profitLossRate": 9.66,
+        "profitLossAmount": 11900.0,
+        "rsi": 60.4,
         "investor_summary": "최근(11/04 마감) 순매수: 외국인 -3,617주(4일연속매도⚠️), 기관 +20,414주(2일연속매수🔥) | [5일누적 합계: 외인 -33,835주, 기관 +160,496주]",
         "ai_decision": "관망",
         "ai_score": 63,
@@ -2537,11 +2545,11 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 22.0,
-        "lastPrice": 201500.0,
+        "lastPrice": 200250.0,
         "averagePurchasePrice": 261136.363636,
-        "profitLossRate": -22.83,
-        "profitLossAmount": -1312000.0,
-        "rsi": 44.5,
+        "profitLossRate": -23.31,
+        "profitLossAmount": -1339500.0,
+        "rsi": 44.1,
         "investor_summary": "최근(11/04 마감) 순매수: 외국인 -3,828,533주(2일연속매도⚠️), 기관 +770,856주 | [5일누적 합계: 외인 -5,857,946주, 기관 +3,334,500주]",
         "ai_decision": "관망",
         "ai_score": 62,
@@ -2576,11 +2584,11 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 1.0,
-        "lastPrice": 1265000.0,
+        "lastPrice": 1257500.0,
         "averagePurchasePrice": 1710000.0,
-        "profitLossRate": -26.02,
-        "profitLossAmount": -445000.0,
-        "rsi": 50.1,
+        "profitLossRate": -26.46,
+        "profitLossAmount": -452500.0,
+        "rsi": 49.6,
         "investor_summary": "최근(11/04 마감) 순매수: 외국인 -835,459주(4일연속매도⚠️), 기관 +197,941주 | [5일누적 합계: 외인 -1,455,367주, 기관 -121,425주]",
         "ai_decision": "관망",
         "ai_score": 58,
@@ -2615,11 +2623,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 96.67,
+        "lastPrice": 96.76,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 9.82,
-        "profitLossAmount": 34.6,
-        "rsi": 58.8,
+        "profitLossRate": 9.92,
+        "profitLossAmount": 34.96,
+        "rsi": 59.0,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "관망",
         "ai_score": 65,
