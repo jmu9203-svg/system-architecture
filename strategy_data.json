@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06 07:16:05",
+  "updated_at": "2026-11-06 07:26:58",
   "battery": "84% (⚡ 충전 중, 23.6°C)",
   "market_intel": {
     "updated_at": "2026-11-05 08:30:02",
@@ -196,12 +196,12 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-06 07:15:21",
-    "checked_ts": 1793916921,
+    "checked_at": "2026-11-06 07:26:10",
+    "checked_ts": 1793917570,
     "date": "2026-11-06",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
-    "scheduler_heartbeat_sec_ago": 19,
+    "scheduler_heartbeat_sec_ago": 18,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2500000,
     "market_opened_today": false,
@@ -2864,10 +2864,10 @@
         "rsi": 60.7,
         "investor_summary": "최근(11-05) 순매수: 외인 +146,398주, 기관 +21,752주 (개인 -162,900주) | [5일누적: 외인 +135,909주, 기관 +146,341주]",
         "ai_decision": "홀딩 관망",
-        "ai_score": 66,
-        "ai_action_tip": "현재 예수금으로 추가 매수가 가능하지만, 목표 수익에 근접한 상태이므로 관망하며 현금 보존을 권장합니다.",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 66점 · 편차 3점 | Groq:gpt-oss-120b(65점 관망), Google:3.5-flash-lite(68점 관망))] GROWTH_CYCLICAL 종목으로 외인·기관 순매수가 지속되고 RSI 60.7로 과매수 구간에 없으며 단기 상승 추세를 보이고 있습니다. 그러나 현재 수익률이 목표(+10%)에 근접하고 추가 매수 시 실질적인 평단 인하 효과가 제한적이므로 관망이 바람직합니다.",
-        "checked_at": "2026-11-06 03:26:30",
+        "ai_score": 65,
+        "ai_action_tip": "현재 예수금으로 추가 매수가 가능하지만, 목표 수익 10%에 미치지 못한 상태이므로 관망하며 현금 보존을 권장합니다.",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 65점 · 편차 6점 | Groq:gpt-oss-120b(62점 관망), Google:3.5-flash-lite(68점 관망))] GROWTH_CYCLICAL 자산 특성상 상승 추세와 외인·기관 순매수가 긍정적이지만 RSI 60.7은 과매수 구간이 아니며 현재 수익률이 9.66%로 목표치에 미치지 못합니다. 따라서 추가 매수보다는 현 포지션을 유지하며 시장 상황을 지켜보는 것이 바람직합니다.",
+        "checked_at": "2026-11-06 07:26:38",
         "ai_models": [
           {
             "provider": "Google",
@@ -2878,7 +2878,7 @@
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 65,
+            "score": 62,
             "decision": "관망"
           }
         ],
@@ -2956,10 +2956,10 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 0.340143,
-        "lastPrice": 280.39,
+        "lastPrice": 280.38,
         "averagePurchasePrice": 293.699999,
         "profitLossRate": -4.53,
-        "profitLossAmount": -4.527304,
+        "profitLossAmount": -4.530705,
         "rsi": 27.8,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "매수",
@@ -2989,10 +2989,10 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 95.66,
+        "lastPrice": 95.72,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 8.67,
-        "profitLossAmount": 30.56,
+        "profitLossRate": 8.74,
+        "profitLossAmount": 30.8,
         "rsi": 64.6,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
