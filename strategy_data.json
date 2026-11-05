@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-05 14:34:52",
-  "battery": "75% (🔋 배터리 사용 중, 20.8°C)",
+  "updated_at": "2026-11-05 14:41:21",
+  "battery": "74% (🔋 배터리 사용 중, 20.7°C)",
   "market_intel": {
     "updated_at": "2026-11-05 08:30:02",
     "fx_soxx_info": {
@@ -196,37 +196,37 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-05 14:34:23",
-    "checked_ts": 1793856863,
+    "checked_at": "2026-11-05 14:40:02",
+    "checked_ts": 1793857202,
     "date": "2026-11-05",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
-    "scheduler_heartbeat_sec_ago": 246,
+    "scheduler_heartbeat_sec_ago": 3,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 4885117,
     "market_opened_today": true,
-    "current_fund_eval": 4906717,
+    "current_fund_eval": 4919517,
     "peak_fund_eval": 7648676,
     "mdd_pct": -38.01,
-    "fund_return_pct": -1.87,
+    "fund_return_pct": -1.61,
     "kospi200_base_price": 87886,
-    "kospi200_cur_price": 84420,
-    "kospi200_return_pct": -3.94,
-    "alpha_pct": 2.07,
+    "kospi200_cur_price": 84600,
+    "kospi200_return_pct": -3.74,
+    "alpha_pct": 2.13,
     "sector_map": {
-      "플랫폼·바이오": 1473600
+      "플랫폼·바이오": 1486400
     },
-    "sector_summary_str": "플랫폼·바이오: 1,473,600원(시드대비 29.5%)",
+    "sector_summary_str": "플랫폼·바이오: 1,486,400원(시드대비 29.7%)",
     "max_per_sector_krw": 2500000,
     "bought_today": [],
     "sold_today": [],
-    "daily_pnl_krw": 21600,
-    "daily_pnl_pct": 0.44,
+    "daily_pnl_krw": 34400,
+    "daily_pnl_pct": 0.7,
     "circuit_breaker_limit_pct": -3.5,
     "circuit_breaker_tripped": false,
     "circuit_breaker_reason": "",
-    "battery_str": "75% (🔋 배터리 사용 중, 20.8°C)",
-    "battery_pct": 75,
+    "battery_str": "74% (🔋 배터리 사용 중, 20.7°C)",
+    "battery_pct": 74,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
       "✅ 4,500만 원 동결금 및 500만 원 시드 분리 무결성 정상",
@@ -1899,42 +1899,20 @@
     "has_data": true,
     "file_name": "flight_log_2026-11-05.jsonl",
     "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-05.jsonl",
-    "period": "2026-11-05 03:50:50 ~ 2026-11-05 14:32:40",
+    "period": "2026-11-05 03:50:50 ~ 2026-11-05 14:36:37",
     "commit_hash": "v2.0-live",
-    "total_events": 10,
-    "error_count": 7,
-    "warn_count": 3,
+    "total_events": 18,
+    "error_count": 11,
+    "warn_count": 7,
     "level_counts": {
-      "ERROR": 7,
-      "WARN": 3
+      "ERROR": 11,
+      "WARN": 7
     },
     "categories": {
-      "AI_PARSE": 7,
-      "AI_ENSEMBLE": 3
+      "AI_PARSE": 11,
+      "AI_ENSEMBLE": 7
     },
     "top_errors": [
-      {
-        "ts": "2026-11-05 03:50:50",
-        "ver": "v2.0-live",
-        "thread": "ThreadPoolExecutor-17_0",
-        "loc": "ai_analyst.py:104 in _call_single_gemini_api()",
-        "lvl": "ERROR",
-        "cat": "AI_PARSE",
-        "msg": "[Google:gemini-3.5-flash-lite] LLM 응답 JSON 파싱 실패",
-        "error_type": "JSONDecodeError",
-        "error_str": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
-        "raw_snippet": "{",
-        "msg_cd": null,
-        "ctx": {
-          "provider": "Google",
-          "model": "gemini-3.5-flash-lite",
-          "raw_snippet": "{",
-          "raw_length": 1,
-          "error_type": "JSONDecodeError",
-          "error_str": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
-          "traceback": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/ai_analyst.py\", line 96, in _call_single_gemini_api\n    d = json.loads(text, strict=False)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/__init__.py\", line 365, in loads\n    return cls(**kw).decode(s)\n           ~~~~~~~~~~~~~~~~^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 361, in raw_decode\n    obj, end = self.scan_once(s, idx)\n               ~~~~~~~~~~~~~~^^^^^^^^\njson.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)\n"
-        }
-      },
       {
         "ts": "2026-11-05 13:01:45",
         "ver": "v2.0-live",
@@ -2066,30 +2044,121 @@
           "error_str": "Expecting value: line 1 column 1 (char 0)",
           "traceback": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/ai_analyst.py\", line 96, in _call_single_gemini_api\n    d = json.loads(text, strict=False)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/__init__.py\", line 365, in loads\n    return cls(**kw).decode(s)\n           ~~~~~~~~~~~~~~~~^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 363, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n"
         }
+      },
+      {
+        "ts": "2026-11-05 14:35:25",
+        "ver": "v2.0-live",
+        "thread": "ThreadPoolExecutor-17_0",
+        "loc": "ai_analyst.py:104 in _call_single_gemini_api()",
+        "lvl": "ERROR",
+        "cat": "AI_PARSE",
+        "msg": "[Google:gemini-3.5-flash-lite] LLM 응답 JSON 파싱 실패",
+        "error_type": "JSONDecodeError",
+        "error_str": "Unterminated string starting at: line 4 column 17 (char 56)",
+        "raw_snippet": "{\n  \"decision\": \"홀딩 관망\",\n  \"score\": 68,\n  \"action_tip\": \"원화 예수금(46.7만)으로 1주 추가 매수가 가능하나, 외인 4일 연속 매도세",
+        "msg_cd": null,
+        "ctx": {
+          "provider": "Google",
+          "model": "gemini-3.5-flash-lite",
+          "raw_snippet": "{\n  \"decision\": \"홀딩 관망\",\n  \"score\": 68,\n  \"action_tip\": \"원화 예수금(46.7만)으로 1주 추가 매수가 가능하나, 외인 4일 연속 매도세",
+          "raw_length": 101,
+          "error_type": "JSONDecodeError",
+          "error_str": "Unterminated string starting at: line 4 column 17 (char 56)",
+          "traceback": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/ai_analyst.py\", line 96, in _call_single_gemini_api\n    d = json.loads(text, strict=False)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/__init__.py\", line 365, in loads\n    return cls(**kw).decode(s)\n           ~~~~~~~~~~~~~~~~^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 361, in raw_decode\n    obj, end = self.scan_once(s, idx)\n               ~~~~~~~~~~~~~~^^^^^^^^\njson.decoder.JSONDecodeError: Unterminated string starting at: line 4 column 17 (char 56)\n"
+        }
+      },
+      {
+        "ts": "2026-11-05 14:35:43",
+        "ver": "v2.0-live",
+        "thread": "ThreadPoolExecutor-18_0",
+        "loc": "ai_analyst.py:104 in _call_single_gemini_api()",
+        "lvl": "ERROR",
+        "cat": "AI_PARSE",
+        "msg": "[Google:gemini-3.5-flash-lite] LLM 응답 JSON 파싱 실패",
+        "error_type": "JSONDecodeError",
+        "error_str": "Expecting value: line 1 column 1 (char 0)",
+        "raw_snippet": "```json\n{\n  \"decision\": \"홀딩 관망\",\n  \"score\":",
+        "msg_cd": null,
+        "ctx": {
+          "provider": "Google",
+          "model": "gemini-3.5-flash-lite",
+          "raw_snippet": "```json\n{\n  \"decision\": \"홀딩 관망\",\n  \"score\":",
+          "raw_length": 43,
+          "error_type": "JSONDecodeError",
+          "error_str": "Expecting value: line 1 column 1 (char 0)",
+          "traceback": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/ai_analyst.py\", line 96, in _call_single_gemini_api\n    d = json.loads(text, strict=False)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/__init__.py\", line 365, in loads\n    return cls(**kw).decode(s)\n           ~~~~~~~~~~~~~~~~^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 363, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n"
+        }
+      },
+      {
+        "ts": "2026-11-05 14:35:59",
+        "ver": "v2.0-live",
+        "thread": "ThreadPoolExecutor-19_0",
+        "loc": "ai_analyst.py:104 in _call_single_gemini_api()",
+        "lvl": "ERROR",
+        "cat": "AI_PARSE",
+        "msg": "[Google:gemini-3.5-flash-lite] LLM 응답 JSON 파싱 실패",
+        "error_type": "JSONDecodeError",
+        "error_str": "Expecting value: line 1 column 1 (char 0)",
+        "raw_snippet": "```json\n{\n  \"decision\": \"홀딩 관망\",\n  \"score\": 62,\n  \"action_tip\": \"현재 원화 예수금(46.7만)이 1주 단가(126.3만)보다 적어 추가 입금 전까지 매수가 불가능하므로, 외인 순매도 진정 시까지 홀딩 관망하세요.\",\n  \"reason\": \"SK하이닉스는 HBM 독점력을 지닌 경기민감주([GROWTH_CYCLICAL])이나, 현재 외국인 4일 연속 대량 매도와 20일선 하회 구간에 있습니다. 물리적 가용 예수금 부족 및 단기 조정 흐름을 고려할 때, 무리한 추가 매수보다는 현물 홀",
+        "msg_cd": null,
+        "ctx": {
+          "provider": "Google",
+          "model": "gemini-3.5-flash-lite",
+          "raw_snippet": "```json\n{\n  \"decision\": \"홀딩 관망\",\n  \"score\": 62,\n  \"action_tip\": \"현재 원화 예수금(46.7만)이 1주 단가(126.3만)보다 적어 추가 입금 전까지 매수가 불가능하므로, 외인 순매도 진정 시까지 홀딩 관망하세요.\",\n  \"reason\": \"SK하이닉스는 HBM 독점력을 지닌 경기민감주([GROWTH_CYCLICAL])이나, 현재 외국인 4일 연속 대량 매도와 20일선 하회 구간에 있습니다. 물리적 가용 예수금 부족 및 단기 조정 흐름을 고려할 때, 무리한 추가 매수보다는 현물 홀",
+          "raw_length": 299,
+          "error_type": "JSONDecodeError",
+          "error_str": "Expecting value: line 1 column 1 (char 0)",
+          "traceback": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/ai_analyst.py\", line 96, in _call_single_gemini_api\n    d = json.loads(text, strict=False)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/__init__.py\", line 365, in loads\n    return cls(**kw).decode(s)\n           ~~~~~~~~~~~~~~~~^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 363, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n"
+        }
+      },
+      {
+        "ts": "2026-11-05 14:36:37",
+        "ver": "v2.0-live",
+        "thread": "ThreadPoolExecutor-20_0",
+        "loc": "ai_analyst.py:104 in _call_single_gemini_api()",
+        "lvl": "ERROR",
+        "cat": "AI_PARSE",
+        "msg": "[Google:gemini-3.5-flash-lite] LLM 응답 JSON 파싱 실패",
+        "error_type": "JSONDecodeError",
+        "error_str": "Expecting value: line 1 column 1 (char 0)",
+        "raw_snippet": "```json\n{\n  \"decision",
+        "msg_cd": null,
+        "ctx": {
+          "provider": "Google",
+          "model": "gemini-3.5-flash-lite",
+          "raw_snippet": "```json\n{\n  \"decision",
+          "raw_length": 21,
+          "error_type": "JSONDecodeError",
+          "error_str": "Expecting value: line 1 column 1 (char 0)",
+          "traceback": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/ai_analyst.py\", line 96, in _call_single_gemini_api\n    d = json.loads(text, strict=False)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/__init__.py\", line 365, in loads\n    return cls(**kw).decode(s)\n           ~~~~~~~~~~~~~~~~^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 363, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n"
+        }
       }
     ],
     "top_code_locations": [
       [
         "ai_analyst.py:104 in _call_single_gemini_api()",
-        7
+        11
       ]
     ],
     "top_api_codes": [],
     "thread_distribution": {
-      "ThreadPoolExecutor-17_0": 1,
+      "ThreadPoolExecutor-17_0": 2,
       "ThreadPoolExecutor-1_0": 1,
       "ThreadPoolExecutor-2_0": 1,
       "ThreadPoolExecutor-4_0": 1,
       "ThreadPoolExecutor-10_0": 1,
-      "Thread-1 (checker)": 4,
-      "ThreadPoolExecutor-12_0": 1
+      "Thread-1 (checker)": 8,
+      "ThreadPoolExecutor-12_0": 1,
+      "ThreadPoolExecutor-18_0": 1,
+      "ThreadPoolExecutor-19_0": 1,
+      "ThreadPoolExecutor-20_0": 1
     },
     "stats": {
       "api_throttles": 0,
       "api_naver_fallbacks": 0,
       "ai_429_retries": 0,
       "ai_backup_fallbacks": 0,
-      "ai_parse_failures": 7,
+      "ai_parse_failures": 11,
       "quant_overrides": 0,
       "order_unfilled_revises": 0,
       "circuit_breaker_trips": 0,
@@ -2429,16 +2498,16 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 1.0,
-        "lastPrice": 135000.0,
+        "lastPrice": 135500.0,
         "averagePurchasePrice": 123100.0,
-        "profitLossRate": 9.66,
-        "profitLossAmount": 11900.0,
-        "rsi": 60.4,
+        "profitLossRate": 10.07,
+        "profitLossAmount": 12400.0,
+        "rsi": 61.2,
         "investor_summary": "최근(11/04 마감) 순매수: 외국인 -3,617주(4일연속매도⚠️), 기관 +20,414주(2일연속매수🔥) | [5일누적 합계: 외인 -33,835주, 기관 +160,496주]",
         "ai_decision": "관망",
-        "ai_score": 68,
+        "ai_score": 63,
         "ai_action_tip": "현재 포지션 유지 및 추세 관망 권장",
-        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [2:1 관망 우세] (평균 68점 · 편차 18점 | Groq:gpt-oss-120b(78점 매도), Google:3.5-flash-lite(65점 관망), Meta:llama-3.3-70b-instruct(60점 관망))] 가격이 MA20 위에 위치해 단기 상승세이며 RSI 64.9로 과열되지 않아 추가 매수가 가능하지만, 외국인 순매도가 지속되고 목표수익률 10% 이상 달성돼 일부 이익 실현이 바람직합니다.",
+        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 63점 · 편차 5점 | Groq:gpt-oss-120b(65점 관망), Meta:llama-3.3-70b-instruct(60점 관망), Google:3.5-flash-lite(65점 관망))] GROWTH_CYCLICAL 종목으로 현재 9.66% 상승해 목표 수익에 근접했으나 외국인 연속 순매도와 실적 발표 전 불확실성이 남아 있습니다. RSI 60.4는 과열도 아니고 과매도도 아니며, 기관 순매수는 긍정적이지만 현금 여유가 제한적이므로 신중히 관망하는 것이 바람직합니다.",
         "checked_at": "2026-11-01 00:39:52",
         "ai_models": [
           {
@@ -2450,8 +2519,8 @@
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 78,
-            "decision": "매도"
+            "score": 65,
+            "decision": "관망"
           },
           {
             "provider": "Meta",
@@ -2460,7 +2529,7 @@
             "decision": "관망"
           }
         ],
-        "consensus": "2:1 관망 우세"
+        "consensus": "3:0 관망 우세"
       },
       {
         "symbol": "005930",
@@ -2468,16 +2537,16 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 22.0,
-        "lastPrice": 200750.0,
+        "lastPrice": 201500.0,
         "averagePurchasePrice": 261136.363636,
-        "profitLossRate": -23.12,
-        "profitLossAmount": -1328500.0,
-        "rsi": 44.4,
+        "profitLossRate": -22.83,
+        "profitLossAmount": -1312000.0,
+        "rsi": 44.5,
         "investor_summary": "최근(11/04 마감) 순매수: 외국인 -3,828,533주(2일연속매도⚠️), 기관 +770,856주 | [5일누적 합계: 외인 -5,857,946주, 기관 +3,334,500주]",
         "ai_decision": "관망",
-        "ai_score": 61,
+        "ai_score": 62,
         "ai_action_tip": "현재 포지션 유지 및 추세 관망 권장",
-        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 61점 · 편차 2점 | Groq:gpt-oss-120b(62점 관망), Google:3.5-flash-lite(62점 관망), Meta:llama-3.3-70b-instruct(60점 관망))] 삼성전자는 성장·주기성(GROWTH_CYCLICAL) 종목으로 RSI 46.1 수준이며 외국인 연속 순매도로 매도 압력이 남아 있습니다. 현 예수금으로는 제한된 매수만 가능하므로 추가 매수는 외국인 순매수 전환 또는 실적 발표 후 바닥 확인 시 조건부로 진행하는 것이 바람직합니다.",
+        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 62점 · 편차 0점 | Groq:gpt-oss-120b(62점 관망), Meta:llama-3.3-70b-instruct(62점 관망), Google:flash-lite-latest(62점 관망))] 삼성전자는 성장·주기성(GROWTH_CYCLICAL) 종목으로 RSI 44.4로 중립이며, 외국인 순매도가 2일 연속 이어져 단기 하방 압력이 있습니다. 현 예수금으로는 제한된 매수만 가능하므로, 실현 손실을 확대하기보다 외국인 매도 전환 시점까지 보유를 유지하는 것이 바람직합니다.",
         "checked_at": "2026-11-01 00:39:53",
         "ai_models": [
           {
@@ -2495,7 +2564,7 @@
           {
             "provider": "Meta",
             "model": "Llama 3.3",
-            "score": 60,
+            "score": 62,
             "decision": "관망"
           }
         ],
@@ -2507,16 +2576,16 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 1.0,
-        "lastPrice": 1259000.0,
+        "lastPrice": 1265000.0,
         "averagePurchasePrice": 1710000.0,
-        "profitLossRate": -26.37,
-        "profitLossAmount": -451000.0,
-        "rsi": 49.8,
+        "profitLossRate": -26.02,
+        "profitLossAmount": -445000.0,
+        "rsi": 50.1,
         "investor_summary": "최근(11/04 마감) 순매수: 외국인 -835,459주(4일연속매도⚠️), 기관 +197,941주 | [5일누적 합계: 외인 -1,455,367주, 기관 -121,425주]",
         "ai_decision": "관망",
         "ai_score": 58,
         "ai_action_tip": "현재 포지션 유지 및 추세 관망 권장",
-        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 58점 · 편차 7점 | Groq:gpt-oss-120b(55점 관망), Google:3.5-flash-lite(62점 관망), Meta:llama-3.3-70b-instruct(58점 관망))] GROWTH_CYCLICAL인 반도체 주식으로 외국인 순매도가 지속되고 RSI가 중립 수준이며, 현금 부족으로 물리적 매수가 불가능하므로 추가 매수는 보류합니다. (단, 현재 원화 예수금 668,453원으로는 1주 추가 매수가 물리적으로 불가능하여 보유 관망합니다.)",
+        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 58점 · 편차 7점 | Groq:gpt-oss-120b(55점 관망), Meta:llama-3.3-70b-instruct(58점 관망), Google:3.5-flash-lite(62점 관망))] GROWTH_CYCLICAL인 반도체 주식으로 외국인 순매도가 지속되고 RSI 50으로 중립이며, 현금 부족으로 물리적 매수가 불가능하므로 추가 매수는 보류합니다. (단, 현재 원화 예수금 467,423원으로는 1주 추가 매수가 물리적으로 불가능하여 보유 관망합니다.)",
         "checked_at": "2026-11-01 00:39:53",
         "ai_models": [
           {
@@ -2546,16 +2615,16 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 96.74,
+        "lastPrice": 96.67,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 9.9,
-        "profitLossAmount": 34.88,
-        "rsi": 59.0,
+        "profitLossRate": 9.82,
+        "profitLossAmount": 34.6,
+        "rsi": 58.8,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "관망",
-        "ai_score": 63,
+        "ai_score": 65,
         "ai_action_tip": "현재 포지션 유지 및 추세 관망 권장",
-        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 63점 · 편차 8점 | Groq:gpt-oss-120b(60점 관망), Google:3.5-flash-lite(68점 관망), Meta:llama-3.3-70b-instruct(62점 관망))] KO는 배당 방어주로 장기 보유가 핵심이며, RSI 57.9는 과매도 구간이 아닙니다. 현금으로 소수점 매수가 가능하지만 과매도·외인 유입 신호가 없어 추가 매수는 보류합니다.",
+        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 65점 · 편차 8점 | Groq:gpt-oss-120b(66점 관망), Meta:llama-3.3-70b-instruct(60점 관망), Google:flash-lite-latest(68점 관망))] KO는 배당 방어주로 장기 보유가 적합하고, 현재 RSI 59로 과열되지 않아 매도는 부적절합니다. 현금으로 소량 추가 매수가 가능하지만, 명확한 과매도 신호가 없어 관망을 권장합니다.",
         "checked_at": "2026-11-01 00:39:53",
         "ai_models": [
           {
@@ -2567,13 +2636,13 @@
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 60,
+            "score": 66,
             "decision": "관망"
           },
           {
             "provider": "Meta",
             "model": "Llama 3.3",
-            "score": 62,
+            "score": 60,
             "decision": "관망"
           }
         ],
@@ -2594,7 +2663,7 @@
         "ai_decision": "관망",
         "ai_score": 63,
         "ai_action_tip": "현재 포지션 유지 및 추세 관망 권장",
-        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 63점 · 편차 8점 | Groq:gpt-oss-120b(62점 관망), Google:3.5-flash-lite(68점 관망), Meta:llama-3.3-70b-instruct(60점 관망))] 배당 방어주인 SCHD는 장기 코어 자산이며 RSI가 70 이상으로 과열돼 단기 매수는 부적절합니다. 현금 여유가 있어도 현재는 관망 상태를 유지하는 것이 바람직합니다.",
+        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 63점 · 편차 8점 | Groq:gpt-oss-120b(62점 관망), Meta:llama-3.3-70b-instruct(60점 관망), Google:3.5-flash-lite(68점 관망))] SCHD는 배당 방어주로 장기 코어 자산이며, 현금으로 1주 이상 매수 가능하지만 RSI가 70~85 구간의 과열을 보여 단기 매수는 부적절합니다. 외국인·기관 수급이 특별히 강력히 유입된 신호도 없으므로 현재는 관망이 최선입니다.",
         "checked_at": "2026-11-01 00:39:54",
         "ai_models": [
           {
@@ -2628,24 +2697,24 @@
         "averagePurchasePrice": 100.62,
         "profitLossRate": -0.16,
         "profitLossAmount": -0.85,
-        "rsi": 36.2,
+        "rsi": 34.8,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "관망",
-        "ai_score": 84,
+        "ai_score": 86,
         "ai_action_tip": "현재 포지션 유지 및 추세 관망 권장",
-        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 84점 · 편차 3점 | Groq:gpt-oss-120b(82점 관망), Google:3.5-flash-lite(85점 관망), Meta:llama-3.3-70b-instruct(85점 관망))] SGOV는 초단기 미국채 파킹 ETF로 현금 보전과 이자 수익을 목표로 하며, 현재 예수금으로 1주 이상 매수가 가능하고 RSI가 36으로 과매도 구간에 해당합니다. 외국인·기관 수급이 크게 악화되지 않은 상황에서 추가 매수로 현금 효율을 높이는 것이 바람직합니다.",
+        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 86점 · 편차 4점 | Groq:gpt-oss-120b(84점 관망), Meta:llama-3.3-70b-instruct(85점 관망), Google:3.5-flash-lite(88점 관망))] SGOV는 초단기 미국채 파킹 ETF로 현금 보유 시 이자 수익을 극대화하기 위해 추가 매수가 적합합니다. RSI 34.8은 과매도 신호이며 가용 예수금 $216.37으로 2주 이상 물리적 매수가 가능하므로 추매를 권장합니다.",
         "checked_at": "2026-11-01 00:39:54",
         "ai_models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 85,
+            "score": 88,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 82,
+            "score": 84,
             "decision": "관망"
           },
           {
