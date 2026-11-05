@@ -322,7 +322,7 @@
         <span class="param-val" id="wdCircuitStatus">🟢 안전 (당일 손실 한도 이내)</span>
       </div>
       <div class="param-row">
-        <span class="param-label">3️⃣ 4,500만 원 동결금 &amp; 손절 규칙 무결성</span>
+        <span class="param-label">3️⃣ 실전 예수금 무결성 &amp; 손절 규칙 감시 (동결금 0원 · 가용 예수금 실시간 100% 연동)</span>
         <span class="param-val" style="color:var(--green);" id="wdIntegrityStatus">✅ 무결성 정상 · 손절 누락 0건</span>
       </div>
       <div class="param-row">
@@ -524,8 +524,8 @@
       <div class="accordion-title-wrap">
         <span class="accordion-icon">⚖️</span>
         <div>
-          <div class="accordion-title">2대 운용 축 (한투 500만 자율펀드 vs 토스 수동매매)</div>
-          <div class="accordion-sub">오토파일럿 vs 대화형 스마트 2중 확인 주문 체계</div>
+          <div class="accordion-title">2대 운용 축 (한투 실전 자율운용 vs 토스 PB 실전비서)</div>
+          <div class="accordion-sub">오토파일럿 (국내 10:00/14:30 + 미국 23:30) vs 대화형 스마트 2중 확인 주문 체계</div>
         </div>
       </div>
       <div class="accordion-right">
@@ -540,17 +540,17 @@
           <div class="track-header">
             <span style="font-size: 16px;">🟢</span>
             <div>
-              <h3 style="font-size: 14px;">한투 500만 원 AI 펀드</h3>
+              <h3 style="font-size: 14px;">한투 실전 AI 자율 운용 (국내 &amp; 미국)</h3>
               <span style="font-size: 11px; color: var(--green); font-weight: 700;">100% 자율 매매 (Autopilot)</span>
             </div>
           </div>
           <div class="param-row">
             <span class="param-label">운용 모드</span>
-            <span class="param-val" id="kisAutoTrade">자율 매매 활성 (ON)</span>
+            <span class="param-val" id="kisAutoTrade">실전 계좌 자율 매매 (REAL)</span>
           </div>
           <div class="param-row">
-            <span class="param-label">운용 예산 (동결금 제외)</span>
-            <span class="param-val" id="kisBudget">5,000,000원</span>
+            <span class="param-label">실전 운용 자산 (실시간 예수금 연동)</span>
+            <span class="param-val" id="kisBudget">2,500,000원</span>
           </div>
           <div class="param-row">
             <span class="param-label">매수 커트라인</span>
@@ -562,27 +562,27 @@
           </div>
           <div class="param-row">
             <span class="param-label">1회 목표 주문금액</span>
-            <span class="param-val" id="kisTargetKrw">약 450,000원 (9%)</span>
+            <span class="param-val" id="kisTargetKrw">약 250,000원 (10%)</span>
           </div>
           <div class="param-row">
             <span class="param-label">종목당 최대 한도</span>
-            <span class="param-val" id="kisMaxPerStock">1,500,000원</span>
+            <span class="param-val" id="kisMaxPerStock">750,000원 (30% 리스크 상한)</span>
           </div>
           <div class="param-row">
             <span class="param-label">동일 섹터(업종) 한도</span>
-            <span class="param-val" style="color:#93c5fd;" id="kisMaxPerSector">2,500,000원 (50%)</span>
+            <span class="param-val" style="color:#93c5fd;" id="kisMaxPerSector">1,250,000원 (50%)</span>
           </div>
           <div class="param-row">
             <span class="param-label">정기 매매 시각</span>
-            <span class="param-val">평일 10:00 / 14:30</span>
+            <span class="param-val">국내 10:00, 14:30 · 미국 23:30</span>
           </div>
           <div class="param-row">
             <span class="param-label">실시간 긴급 감시</span>
             <span class="param-val" style="font-size:11px;">장중 5분 / 야간·휴장 10분</span>
           </div>
           <div class="param-row">
-            <span class="param-label">연착륙 리밸런싱</span>
-            <span class="param-val" style="color: var(--gold);" id="kisRebalance">~2026-11-06</span>
+            <span class="param-label">계좌 운용 상태</span>
+            <span class="param-val" style="color: #34d399;" id="kisRebalance">실전 정상화 완료 (제약 없음)</span>
           </div>
         </div>
 
@@ -944,7 +944,8 @@
       </div>
     </div>
     <div class="accordion-content" style="font-size: 12px; line-height: 1.8;">
-      <div>• <code style="color: var(--gold); font-weight: 700;">/report</code> : 한투 500만 펀드 전 종목 AI 분석 &amp; 즉시 자율 매매 리포트</div>
+      <div>• <code style="color: var(--gold); font-weight: 700;">/report</code> : 한투 실전 계좌(국내+미국) AI 분석 &amp; 자율 매매 리포트</div>
+          <div>• <code style="color: var(--gold); font-weight: 700;">/sync</code> (또는 <code style="color: var(--gold); font-weight: 700;">/site</code>, <code style="color: var(--gold); font-weight: 700;">사이트</code>, <code style="color: var(--gold); font-weight: 700;">동기화</code>) : 4대 대시보드 실시간 잔고 원클릭 초고속 동기화</div>
       <div>• <code style="color: #38bdf8; font-weight: 700;">/toss</code> (또는 <code>리포트</code>) : 토스 실전 계좌 전 종목 AI 타점 진단 &amp; 예수금 브리핑</div>
       <div>• <code style="color: #60a5fa; font-weight: 700;">"메리츠 1주 사줘"</code> (또는 <code>/buy 메리츠 1</code>) : 🛒 <b>토스증권 대화형 수동 매매 (2중 확인 버튼)</b></div>
       <div>• <code style="color: #ef4444; font-weight: 700;">"삼전 1주 팔아줘"</code> (또는 <code>/sell 삼전 1</code>) : 🛒 <b>토스증권 대화형 수동 매도 (2중 확인 버튼)</b></div>
@@ -1197,13 +1198,13 @@
       // KIS 트랙
       const kis = d.kis_system || {};
       document.getElementById('kisAutoTrade').textContent = kis.auto_trade ? '자율 매매 활성 (ON)' : '매매 중단 (OFF)';
-      document.getElementById('kisBudget').textContent = (kis.budget_limit || 5000000).toLocaleString() + '원';
+      document.getElementById('kisBudget').textContent = (kis.budget_limit || 2500000).toLocaleString() + '원';
       document.getElementById('kisBuyTh').textContent = (kis.buy_threshold || 75) + '점 이상';
       document.getElementById('kisSellTh').textContent = (kis.sell_threshold || 70) + '점 이상';
-      document.getElementById('kisTargetKrw').textContent = '약 ' + (kis.target_order_krw || 450000).toLocaleString() + '원';
-      document.getElementById('kisMaxPerStock').textContent = (kis.max_per_stock_krw || 1500000).toLocaleString() + '원';
+      document.getElementById('kisTargetKrw').textContent = '약 ' + (kis.target_order_krw || 250000).toLocaleString() + '원';
+      document.getElementById('kisMaxPerStock').textContent = (kis.max_per_stock_krw || 750000).toLocaleString() + '원';
       if (document.getElementById('kisMaxPerSector')) {
-        document.getElementById('kisMaxPerSector').textContent = (kis.max_per_sector_krw || 2500000).toLocaleString() + '원 (50%)';
+        document.getElementById('kisMaxPerSector').textContent = (kis.max_per_sector_krw || 1250000).toLocaleString() + '원 (50%)';
       }
             const rebEl = document.getElementById('kisRebalance');
       if (kis.rebalance_mode) {
@@ -1211,7 +1212,7 @@
         rebEl.textContent = `⚖️ 연착륙 감축 중 (~${kis.rebalance_deadline || '2026-11-06'})`;
       } else {
         rebEl.style.color = '#34d399';
-        rebEl.textContent = '✅ 정상화 완료 (초과액 0원 · 일반운용)';
+        rebEl.textContent = '✅ 실전 정상화 완료 (동결금 0원 · 전액 실시간 연동)';
       }
 
       // Toss 트랙
@@ -1224,12 +1225,12 @@
       const wGrid = document.getElementById('watchGrid');
       const basket = kis.watch_basket || [];
       wGrid.innerHTML = basket.map(b => {
-        const isUs = ['465580', '133690', '360750', '381180', '381170', '458730'].includes(b.code) || (b.name || '').includes('미국');
+        const isUs = ['465580', '133690', '360750', '381180', '381170', '458730', 'AAPL', 'NVDA', 'TSLA', 'SGOV', 'SCHD'].includes(b.code) || b.marketCountry === 'US' || (b.name || '').includes('미국');
         const flag = isUs ? '🇺🇸 ' : '🇰🇷 ';
         return `
           <div class="watch-tag" style="${isUs ? 'border-color: rgba(59, 130, 246, 0.45); background: rgba(59, 130, 246, 0.08);' : ''}">
             <div class="watch-tag-name">${flag}${b.name}</div>
-            <div class="watch-tag-code">${b.code}${isUs ? ' · 미국ETF(무환전)' : ''}</div>
+            <div class="watch-tag-code">${b.code}${isUs ? ' · 미국 직거래/통합증거금' : ''}</div>
           </div>
         `;
       }).join('');
