@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05 23:31:48",
+  "updated_at": "2026-11-05 23:36:53",
   "battery": "85% (⚡ 충전 중, 22.8°C)",
   "market_intel": {
     "updated_at": "2026-11-05 08:30:02",
@@ -196,12 +196,12 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-05 23:25:00",
-    "checked_ts": 1793888700,
+    "checked_at": "2026-11-05 23:35:48",
+    "checked_ts": 1793889348,
     "date": "2026-11-05",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
-    "scheduler_heartbeat_sec_ago": 0,
+    "scheduler_heartbeat_sec_ago": 47,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 4885117,
     "market_opened_today": true,
@@ -236,7 +236,7 @@
     "last_anomaly_alert_ts": 0.0
   },
   "ai_audit": {
-    "updated_at": "2026-11-05 14:33:55",
+    "updated_at": "2026-11-05 23:36:49",
     "items": {
       "005930": {
         "code": "005930",
@@ -1088,6 +1088,98 @@
         ],
         "consensus": "3:0 관망 우세",
         "reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 50점 · 편차 10점 | Groq:gpt-oss-120b(55점 관망), Google:3.5-flash-lite(45점 관망), Meta:llama-3.3-70b-instruct(50점 관망))] 코스피가 급락한 패닉 장이라 보수적으로 접근해야 하며, RSI는 중립이고 외국인 순매도·기관 순매수가 혼재돼 진입 신호가 약합니다. 긍정적 실적과 수출 확대 뉴스가 있지만 특허소송·기술유출 리스크가 존재해 당장은 관망이 적절합니다."
+      },
+      "AAPL": {
+        "code": "AAPL",
+        "name": "애플 (AAPL)",
+        "sector": "기타·분산섹터",
+        "checked_at": "2026-11-05 23:35:45",
+        "price": 352.65,
+        "ma20": 0,
+        "rsi": 57.0,
+        "vol_ratio_pct": 100.0,
+        "candle_desc": "확인 중",
+        "flow_summary": "글로벌 헤지펀드 및 기관 수급 추적 중",
+        "ir_schedule": "일정 없음",
+        "fact_breakdown": "시장레짐(폭락장 -15점) | 20일선 중립(0점) | RSI 57.0 중립안정(+3점) | 외인기관수급(+0점) | 거래량100%·캔들(+0점) | 실적일정 중립(0점)",
+        "cited_facts": "코스피200 -5.69% 급락으로 시장 패닉, 원/달러 1,341.50원 안정, AAPL 현재가 $352.65(+0.90%), 14일 RSI 57.0(중립), ATR 2.20% 중변동, 현금 5,000,000원·종목당 한도 1,500,000원·보유 0주",
+        "quant_score": 43,
+        "ai_raw_score": 51,
+        "final_score": 51,
+        "decision": "관망",
+        "score_gap": 8,
+        "hit_rate_pct": null,
+        "hit_desc": "초기 표본 수집 중 (평가 데이터 없음)",
+        "audit_status": "PASS",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 43점 ↔ AI 51점 | 편차 8점)",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 45,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 55,
+            "decision": "관망"
+          },
+          {
+            "provider": "NVIDIA",
+            "model": "Nemotron 3.5",
+            "score": 52,
+            "decision": "관망"
+          }
+        ],
+        "consensus": "3:0 관망 우세",
+        "reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+NVIDIA) 교차검증 [3:0 관망 우세] (평균 51점 · 편차 10점 | Groq:gpt-oss-120b(55점 관망), NVIDIA:nemotron-3.5-lightning(52점 관망), Google:3.5-flash-lite(45점 관망))] 현재 시장는 급락 상황으로 보수적 접근이 필요하고, AAPL의 RSI는 중립이며 매수 신호가 부족합니다. 현금과 한도는 충분하지만, 기술적·거시적 위험이 높아 즉시 진입보다는 관망이 바람직합니다."
+      },
+      "NVDA": {
+        "code": "NVDA",
+        "name": "엔비디아 (NVDA)",
+        "sector": "기타·분산섹터",
+        "checked_at": "2026-11-05 23:36:49",
+        "price": 193.72,
+        "ma20": 0,
+        "rsi": 33.1,
+        "vol_ratio_pct": 100.0,
+        "candle_desc": "확인 중",
+        "flow_summary": "글로벌 헤지펀드 및 기관 수급 추적 중",
+        "ir_schedule": "일정 없음",
+        "fact_breakdown": "시장레짐(폭락장 -15점) | 20일선 중립(0점) | RSI 33.1 과매도반등(+12점) | 외인기관수급(+0점) | 거래량100%·캔들(+0점) | 실적일정 중립(0점)",
+        "cited_facts": "코스피200 -5.69% 급락으로 시장은 패닉 폭락장, NVDA 현재가 $193.72(-3.20%), 14일 RSI 33.1(과매도), 14일 ATR 2.20% (중변동), 거래량 평시 수준, 현금 5,000,000원·종목당 한도 1,500,000원·목표 매수액 약 450,000원(1주)",
+        "quant_score": 52,
+        "ai_raw_score": 53,
+        "final_score": 53,
+        "decision": "관망",
+        "score_gap": 1,
+        "hit_rate_pct": null,
+        "hit_desc": "초기 표본 수집 중 (평가 데이터 없음)",
+        "audit_status": "PASS",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 52점 ↔ AI 53점 | 편차 1점)",
+        "models": [
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 58,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq Qwen",
+            "score": 50,
+            "decision": "관망"
+          },
+          {
+            "provider": "NVIDIA",
+            "model": "Nemotron 3.5",
+            "score": 52,
+            "decision": "관망"
+          }
+        ],
+        "consensus": "3:0 관망 우세",
+        "reason": "[🤖 이종 2사 앙상블(Groq+NVIDIA) 교차검증 [3:0 관망 우세] (평균 53점 · 편차 8점 | Groq:gpt-oss-120b(58점 관망), NVIDIA:nemotron-3.5-lightning(52점 관망), Groq:qwen/qwen3.8-27b(50점 관망))] 시장 전반이 급락한 상황에서 보수적으로 접근해야 하며, NVDA는 과매도 RSI와 중변동성을 보이지만 아직 명확한 매수 신호가 부족합니다. 현금과 한도는 충분하지만, 추가 진입은 추후 시장 안정과 거래량 회복을 확인한 뒤 검토합니다."
       }
     },
     "prediction_history": {
@@ -1890,6 +1982,26 @@
           "score": 50,
           "quant_score": 34
         }
+      ],
+      "AAPL": [
+        {
+          "date": "2026-11-05",
+          "checked_at": "2026-11-05 23:35:45",
+          "price": 352.65,
+          "decision": "관망",
+          "score": 51,
+          "quant_score": 43
+        }
+      ],
+      "NVDA": [
+        {
+          "date": "2026-11-05",
+          "checked_at": "2026-11-05 23:36:49",
+          "price": 193.72,
+          "decision": "관망",
+          "score": 53,
+          "quant_score": 52
+        }
       ]
     }
   },
@@ -1897,44 +2009,22 @@
     "has_data": true,
     "file_name": "flight_log_2026-11-05.jsonl",
     "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-05.jsonl",
-    "period": "2026-11-05 03:50:50 ~ 2026-11-05 23:31:33",
+    "period": "2026-11-05 03:50:50 ~ 2026-11-05 23:36:49",
     "commit_hash": "v2.0-live",
-    "total_events": 239,
-    "error_count": 70,
-    "warn_count": 168,
+    "total_events": 249,
+    "error_count": 71,
+    "warn_count": 177,
     "level_counts": {
-      "ERROR": 70,
-      "WARN": 168,
+      "ERROR": 71,
+      "WARN": 177,
       "INFO": 1
     },
     "categories": {
-      "AI_PARSE": 70,
-      "AI_ENSEMBLE": 168,
+      "AI_PARSE": 71,
+      "AI_ENSEMBLE": 177,
       "KIS_API": 1
     },
     "top_errors": [
-      {
-        "ts": "2026-11-05 23:08:24",
-        "ver": "v2.0-live",
-        "thread": "Thread-3 (toss_worker)",
-        "loc": "ai_analyst.py:105 in _call_single_gemini_api()",
-        "lvl": "ERROR",
-        "cat": "AI_PARSE",
-        "msg": "[Google:gemini-flash-lite-latest] LLM 응답 JSON 파싱 실패",
-        "error_type": "JSONDecodeError",
-        "error_str": "Expecting value: line 1 column 1 (char 0)",
-        "raw_snippet": "```json\n{\n  \"decision\": \"홀딩 관망\",\n  \"score\": 68,\n  \"action_tip\": \"현재 원화 예수금(3,967,423원)으로 29주까지 매수 가능하나, D-6(11월 11일) 실적 발표를 앞두고 윗꼬리 저항이 발생했으므로 추가 매수보다는 현 보유 물량을 유지하며 실적 방향성을 확인하세요.\",\n  \"reason",
-        "msg_cd": null,
-        "ctx": {
-          "provider": "Google",
-          "model": "gemini-flash-lite-latest",
-          "raw_snippet": "```json\n{\n  \"decision\": \"홀딩 관망\",\n  \"score\": 68,\n  \"action_tip\": \"현재 원화 예수금(3,967,423원)으로 29주까지 매수 가능하나, D-6(11월 11일) 실적 발표를 앞두고 윗꼬리 저항이 발생했으므로 추가 매수보다는 현 보유 물량을 유지하며 실적 방향성을 확인하세요.\",\n  \"reason",
-          "raw_length": 192,
-          "error_type": "JSONDecodeError",
-          "error_str": "Expecting value: line 1 column 1 (char 0)",
-          "traceback": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/ai_analyst.py\", line 97, in _call_single_gemini_api\n    d = json.loads(text, strict=False)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/__init__.py\", line 365, in loads\n    return cls(**kw).decode(s)\n           ~~~~~~~~~~~~~~~~^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 363, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n"
-        }
-      },
       {
         "ts": "2026-11-05 23:09:03",
         "ver": "v2.0-live",
@@ -2132,12 +2222,34 @@
           "error_str": "Expecting value: line 1 column 1 (char 0)",
           "traceback": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/ai_analyst.py\", line 97, in _call_single_gemini_api\n    d = json.loads(text, strict=False)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/__init__.py\", line 365, in loads\n    return cls(**kw).decode(s)\n           ~~~~~~~~~~~~~~~~^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 363, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n"
         }
+      },
+      {
+        "ts": "2026-11-05 23:35:52",
+        "ver": "v2.0-live",
+        "thread": "ThreadPoolExecutor-2_0",
+        "loc": "ai_analyst.py:105 in _call_single_gemini_api()",
+        "lvl": "ERROR",
+        "cat": "AI_PARSE",
+        "msg": "[Google:gemini-3.5-flash-lite] LLM 응답 JSON 파싱 실패",
+        "error_type": "JSONDecodeError",
+        "error_str": "Unterminated string starting at: line 6 column 13 (char 188)",
+        "raw_snippet": "{\n  \"cited_facts\": \"코스피200 패닉 폭락장(-5.69%), NVDA 현재가 $193.72(-3.20%), ATR 14일 일평균 변동성 2.20%, 14일 RSI 33.1 과매도 구간, 미보유 상태(qty 0)\",\n  \"decision\": \"관망\",\n  \"score\": 50,\n  \"qty\": 0,\n  \"reason\": \"당일 코스피200 시장의 극심한 패닉 폭락장(-5.69%)으로 인해 신규 매수 전면 차단 및 보수적 접근이 요구되며, NVDA의 RSI가 33.1로 과매도 구간에 진입했으나 거시경제적 하방 리스크가 너무 커서 즉",
+        "msg_cd": null,
+        "ctx": {
+          "provider": "Google",
+          "model": "gemini-3.5-flash-lite",
+          "raw_snippet": "{\n  \"cited_facts\": \"코스피200 패닉 폭락장(-5.69%), NVDA 현재가 $193.72(-3.20%), ATR 14일 일평균 변동성 2.20%, 14일 RSI 33.1 과매도 구간, 미보유 상태(qty 0)\",\n  \"decision\": \"관망\",\n  \"score\": 50,\n  \"qty\": 0,\n  \"reason\": \"당일 코스피200 시장의 극심한 패닉 폭락장(-5.69%)으로 인해 신규 매수 전면 차단 및 보수적 접근이 요구되며, NVDA의 RSI가 33.1로 과매도 구간에 진입했으나 거시경제적 하방 리스크가 너무 커서 즉",
+          "raw_length": 307,
+          "error_type": "JSONDecodeError",
+          "error_str": "Unterminated string starting at: line 6 column 13 (char 188)",
+          "traceback": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/ai_analyst.py\", line 97, in _call_single_gemini_api\n    d = json.loads(text, strict=False)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/__init__.py\", line 365, in loads\n    return cls(**kw).decode(s)\n           ~~~~~~~~~~~~~~~~^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 361, in raw_decode\n    obj, end = self.scan_once(s, idx)\n               ~~~~~~~~~~~~~~^^^^^^^^\njson.decoder.JSONDecodeError: Unterminated string starting at: line 6 column 13 (char 188)\n"
+        }
       }
     ],
     "top_code_locations": [
       [
         "ai_analyst.py:105 in _call_single_gemini_api()",
-        36
+        37
       ],
       [
         "ai_analyst.py:104 in _call_single_gemini_api()",
@@ -2147,9 +2259,9 @@
     "top_api_codes": [],
     "thread_distribution": {
       "ThreadPoolExecutor-17_0": 3,
-      "ThreadPoolExecutor-1_0": 6,
-      "ThreadPoolExecutor-2_0": 3,
-      "ThreadPoolExecutor-4_0": 5,
+      "ThreadPoolExecutor-1_0": 8,
+      "ThreadPoolExecutor-2_0": 10,
+      "ThreadPoolExecutor-4_0": 6,
       "ThreadPoolExecutor-10_0": 3,
       "Thread-1 (checker)": 8,
       "ThreadPoolExecutor-12_0": 3,
@@ -2197,9 +2309,9 @@
     "stats": {
       "api_throttles": 0,
       "api_naver_fallbacks": 0,
-      "ai_429_retries": 63,
+      "ai_429_retries": 66,
       "ai_backup_fallbacks": 0,
-      "ai_parse_failures": 70,
+      "ai_parse_failures": 71,
       "quant_overrides": 0,
       "order_unfilled_revises": 0,
       "circuit_breaker_trips": 0,
@@ -2664,11 +2776,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 0.340143,
-        "lastPrice": 294.72,
+        "lastPrice": 292.7,
         "averagePurchasePrice": 293.699999,
-        "profitLossRate": 0.34,
-        "profitLossAmount": 0.346945,
-        "rsi": 34.8,
+        "profitLossRate": -0.34,
+        "profitLossAmount": -0.340143,
+        "rsi": 33.2,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 66,
@@ -2703,11 +2815,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 96.57,
+        "lastPrice": 95.86,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 9.71,
-        "profitLossAmount": 34.2,
-        "rsi": 65.9,
+        "profitLossRate": 8.9,
+        "profitLossAmount": 31.36,
+        "rsi": 65.1,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 62,
@@ -2742,11 +2854,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 36.32,
+        "lastPrice": 36.31,
         "averagePurchasePrice": 34.3786,
-        "profitLossRate": 5.64,
-        "profitLossAmount": 7.7656,
-        "rsi": 73.3,
+        "profitLossRate": 5.61,
+        "profitLossAmount": 7.7256,
+        "rsi": 73.5,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 60,
@@ -2781,10 +2893,10 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 5.0,
-        "lastPrice": 100.45,
+        "lastPrice": 100.46,
         "averagePurchasePrice": 100.62,
-        "profitLossRate": -0.16,
-        "profitLossAmount": -0.85,
+        "profitLossRate": -0.15,
+        "profitLossAmount": -0.8,
         "rsi": 38.1,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
