@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-05 16:41:23",
-  "battery": "70% (🔋 배터리 사용 중, 20.6°C)",
+  "updated_at": "2026-11-05 16:52:10",
+  "battery": "69% (🔋 배터리 사용 중, 20.8°C)",
   "market_intel": {
     "updated_at": "2026-11-05 08:30:02",
     "fx_soxx_info": {
@@ -196,12 +196,12 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-05 16:40:46",
-    "checked_ts": 1793864446,
+    "checked_at": "2026-11-05 16:51:28",
+    "checked_ts": 1793865088,
     "date": "2026-11-05",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
-    "scheduler_heartbeat_sec_ago": 8,
+    "scheduler_heartbeat_sec_ago": 0,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 4885117,
     "market_opened_today": true,
@@ -225,8 +225,8 @@
     "circuit_breaker_limit_pct": -3.5,
     "circuit_breaker_tripped": false,
     "circuit_breaker_reason": "",
-    "battery_str": "70% (🔋 배터리 사용 중, 20.6°C)",
-    "battery_pct": 70,
+    "battery_str": "69% (🔋 배터리 사용 중, 20.8°C)",
+    "battery_pct": 69,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
       "✅ 4,500만 원 동결금 및 500만 원 시드 분리 무결성 정상",
@@ -1899,42 +1899,20 @@
     "has_data": true,
     "file_name": "flight_log_2026-11-05.jsonl",
     "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-05.jsonl",
-    "period": "2026-11-05 03:50:50 ~ 2026-11-05 14:48:11",
+    "period": "2026-11-05 03:50:50 ~ 2026-11-05 16:49:32",
     "commit_hash": "v2.0-live",
-    "total_events": 19,
-    "error_count": 12,
+    "total_events": 20,
+    "error_count": 13,
     "warn_count": 7,
     "level_counts": {
-      "ERROR": 12,
+      "ERROR": 13,
       "WARN": 7
     },
     "categories": {
-      "AI_PARSE": 12,
+      "AI_PARSE": 13,
       "AI_ENSEMBLE": 7
     },
     "top_errors": [
-      {
-        "ts": "2026-11-05 13:01:51",
-        "ver": "v2.0-live",
-        "thread": "ThreadPoolExecutor-2_0",
-        "loc": "ai_analyst.py:104 in _call_single_gemini_api()",
-        "lvl": "ERROR",
-        "cat": "AI_PARSE",
-        "msg": "[Google:gemini-3.5-flash-lite] LLM 응답 JSON 파싱 실패",
-        "error_type": "JSONDecodeError",
-        "error_str": "Expecting property name enclosed in double quotes: line 3 column 15 (char 36)",
-        "raw_snippet": "{\n  \"decision\": \"매수\",\n  \"score\": 88,",
-        "msg_cd": null,
-        "ctx": {
-          "provider": "Google",
-          "model": "gemini-3.5-flash-lite",
-          "raw_snippet": "{\n  \"decision\": \"매수\",\n  \"score\": 88,",
-          "raw_length": 36,
-          "error_type": "JSONDecodeError",
-          "error_str": "Expecting property name enclosed in double quotes: line 3 column 15 (char 36)",
-          "traceback": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/ai_analyst.py\", line 96, in _call_single_gemini_api\n    d = json.loads(text, strict=False)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/__init__.py\", line 365, in loads\n    return cls(**kw).decode(s)\n           ~~~~~~~~~~~~~~~~^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 361, in raw_decode\n    obj, end = self.scan_once(s, idx)\n               ~~~~~~~~~~~~~~^^^^^^^^\njson.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 3 column 15 (char 36)\n"
-        }
-      },
       {
         "ts": "2026-11-05 13:02:24",
         "ver": "v2.0-live",
@@ -2132,12 +2110,34 @@
           "error_str": "Unterminated string starting at: line 4 column 13 (char 49)",
           "traceback": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/ai_analyst.py\", line 96, in _call_single_gemini_api\n    d = json.loads(text, strict=False)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/__init__.py\", line 365, in loads\n    return cls(**kw).decode(s)\n           ~~~~~~~~~~~~~~~~^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 361, in raw_decode\n    obj, end = self.scan_once(s, idx)\n               ~~~~~~~~~~~~~~^^^^^^^^\njson.decoder.JSONDecodeError: Unterminated string starting at: line 4 column 13 (char 49)\n"
         }
+      },
+      {
+        "ts": "2026-11-05 16:49:32",
+        "ver": "v2.0-live",
+        "thread": "ThreadPoolExecutor-9_0",
+        "loc": "ai_analyst.py:104 in _call_single_gemini_api()",
+        "lvl": "ERROR",
+        "cat": "AI_PARSE",
+        "msg": "[Google:gemini-3.5-flash-lite] LLM 응답 JSON 파싱 실패",
+        "error_type": "JSONDecodeError",
+        "error_str": "Unterminated string starting at: line 4 column 17 (char 56)",
+        "raw_snippet": "{\n  \"decision\": \"추매 추천\",\n  \"score\": 88,\n  \"action_tip\": \"토스 앱에서 남은 달러 예수금($216.37)으로 SGOV를 추가 매수하여 월배당 재원을 늘리거나 향후 시장",
+        "msg_cd": null,
+        "ctx": {
+          "provider": "Google",
+          "model": "gemini-3.5-flash-lite",
+          "raw_snippet": "{\n  \"decision\": \"추매 추천\",\n  \"score\": 88,\n  \"action_tip\": \"토스 앱에서 남은 달러 예수금($216.37)으로 SGOV를 추가 매수하여 월배당 재원을 늘리거나 향후 시장",
+          "raw_length": 117,
+          "error_type": "JSONDecodeError",
+          "error_str": "Unterminated string starting at: line 4 column 17 (char 56)",
+          "traceback": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/ai_analyst.py\", line 96, in _call_single_gemini_api\n    d = json.loads(text, strict=False)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/__init__.py\", line 365, in loads\n    return cls(**kw).decode(s)\n           ~~~~~~~~~~~~~~~~^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 361, in raw_decode\n    obj, end = self.scan_once(s, idx)\n               ~~~~~~~~~~~~~~^^^^^^^^\njson.decoder.JSONDecodeError: Unterminated string starting at: line 4 column 17 (char 56)\n"
+        }
       }
     ],
     "top_code_locations": [
       [
         "ai_analyst.py:104 in _call_single_gemini_api()",
-        12
+        13
       ]
     ],
     "top_api_codes": [],
@@ -2151,14 +2151,15 @@
       "ThreadPoolExecutor-12_0": 1,
       "ThreadPoolExecutor-18_0": 1,
       "ThreadPoolExecutor-19_0": 1,
-      "ThreadPoolExecutor-20_0": 1
+      "ThreadPoolExecutor-20_0": 1,
+      "ThreadPoolExecutor-9_0": 1
     },
     "stats": {
       "api_throttles": 0,
       "api_naver_fallbacks": 0,
       "ai_429_retries": 0,
       "ai_backup_fallbacks": 0,
-      "ai_parse_failures": 12,
+      "ai_parse_failures": 13,
       "quant_overrides": 0,
       "order_unfilled_revises": 0,
       "circuit_breaker_trips": 0,
@@ -2480,7 +2481,7 @@
     "name": "토스증권 실전 계좌 AI 자문 & 대화형 수동 매매 비서",
     "account_no": "17601069723",
     "mode": "대화형 스마트 수동 매매 & 자문 (무단 자동매매 0% 영구 차단)",
-    "krw_cash": 467423,
+    "krw_cash": 6467423,
     "usd_cash": 216.37,
     "schedule": "평일 10:05 / 14:35 (한투와 5분 시차 분산 스케줄링)",
     "manual_pipeline": {
@@ -2506,28 +2507,28 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 1.0,
-        "lastPrice": 134500.0,
+        "lastPrice": 134400.0,
         "averagePurchasePrice": 123100.0,
-        "profitLossRate": 9.26,
-        "profitLossAmount": 11400.0,
-        "rsi": 59.6,
+        "profitLossRate": 9.17,
+        "profitLossAmount": 11300.0,
+        "rsi": 59.4,
         "investor_summary": "최근(11-05) 순매수: 외인 +74,445주, 기관 +29,719주 (개인 -97,882주) | [5일누적: 외인 +63,956주, 기관 +154,308주]",
         "ai_decision": "관망",
-        "ai_score": 63,
+        "ai_score": 70,
         "ai_action_tip": "현재 포지션 유지 및 추세 관망 권장",
-        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 63점 · 편차 5점 | Groq:gpt-oss-120b(65점 관망), Meta:llama-3.3-70b-instruct(60점 관망), Google:3.5-flash-lite(65점 관망))] GROWTH_CYCLICAL 종목으로 현재 9.66% 상승해 목표 수익에 근접했으나 외국인 연속 순매도와 실적 발표 전 불확실성이 남아 있습니다. RSI 60.4는 과열도 아니고 과매도도 아니며, 기관 순매수는 긍정적이지만 현금 여유가 제한적이므로 신중히 관망하는 것이 바람직합니다.",
+        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 70점 · 편차 22점 | Groq:gpt-oss-120b(82점 관망), Google:3.5-flash-lite(68점 관망), Meta:llama-3.3-70b-instruct(60점 관망))] GROWTH_CYCLICAL 자산으로 현재 9% 상승 중이며 외인·기관 순매수가 강세입니다. RSI 59.4로 과매도는 아니지만, 현금 여유가 충분하므로 신중히 1주 추가 매수를 권합니다.",
         "checked_at": "2026-11-01 00:39:52",
         "ai_models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 65,
+            "score": 68,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 65,
+            "score": 82,
             "decision": "관망"
           },
           {
@@ -2552,9 +2553,9 @@
         "rsi": 45.3,
         "investor_summary": "최근(11-05) 순매수: 외인 -5,717,974주, 기관 +10,455주 (개인 +6,001,826주) | [5일누적: 외인 -11,994,361주, 기관 +3,218,608주]",
         "ai_decision": "관망",
-        "ai_score": 62,
+        "ai_score": 61,
         "ai_action_tip": "현재 포지션 유지 및 추세 관망 권장",
-        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 62점 · 편차 0점 | Groq:gpt-oss-120b(62점 관망), Meta:llama-3.3-70b-instruct(62점 관망), Google:flash-lite-latest(62점 관망))] 삼성전자는 성장·주기성(GROWTH_CYCLICAL) 종목으로 RSI 44.4로 중립이며, 외국인 순매도가 2일 연속 이어져 단기 하방 압력이 있습니다. 현 예수금으로는 제한된 매수만 가능하므로, 실현 손실을 확대하기보다 외국인 매도 전환 시점까지 보유를 유지하는 것이 바람직합니다.",
+        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 61점 · 편차 2점 | Google:3.5-flash-lite(62점 관망), Groq:gpt-oss-120b(62점 관망), Meta:llama-3.3-70b-instruct(60점 관망))] 삼성전자는 경기민감형 성장주(GROWTH_CYCLICAL)로 현재 20일선 하회 및 외국인 대량 순매도가 이어지고 있어, 소수점 매수가 불가능한 국내 주식 특성상 보유 예수금으로 무리한 1주 추가 매수보다는 수급 전환 시점까지 신중한 관망이 필수적입니다.",
         "checked_at": "2026-11-01 00:39:53",
         "ai_models": [
           {
@@ -2567,84 +2568,6 @@
             "provider": "Groq",
             "model": "Groq 120B",
             "score": 62,
-            "decision": "관망"
-          },
-          {
-            "provider": "Meta",
-            "model": "Llama 3.3",
-            "score": 62,
-            "decision": "관망"
-          }
-        ],
-        "consensus": "3:0 관망 우세"
-      },
-      {
-        "symbol": "000660",
-        "name": "SK하이닉스",
-        "marketCountry": "KR",
-        "currency": "KRW",
-        "quantity": 1.0,
-        "lastPrice": 1276000.0,
-        "averagePurchasePrice": 1710000.0,
-        "profitLossRate": -25.38,
-        "profitLossAmount": -434000.0,
-        "rsi": 50.5,
-        "investor_summary": "최근(11-05) 순매수: 외인 -1,203,527주, 기관 +229,996주 (개인 +706,315주) | [5일누적: 외인 -3,089,752주, 기관 +207,808주]",
-        "ai_decision": "관망",
-        "ai_score": 58,
-        "ai_action_tip": "현재 포지션 유지 및 추세 관망 권장",
-        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 58점 · 편차 7점 | Groq:gpt-oss-120b(55점 관망), Meta:llama-3.3-70b-instruct(58점 관망), Google:3.5-flash-lite(62점 관망))] GROWTH_CYCLICAL인 반도체 주식으로 외국인 순매도가 지속되고 RSI 50으로 중립이며, 현금 부족으로 물리적 매수가 불가능하므로 추가 매수는 보류합니다. (단, 현재 원화 예수금 467,423원으로는 1주 추가 매수가 물리적으로 불가능하여 보유 관망합니다.)",
-        "checked_at": "2026-11-01 00:39:53",
-        "ai_models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 62,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 55,
-            "decision": "관망"
-          },
-          {
-            "provider": "Meta",
-            "model": "Llama 3.3",
-            "score": 58,
-            "decision": "관망"
-          }
-        ],
-        "consensus": "3:0 관망 우세"
-      },
-      {
-        "symbol": "KO",
-        "name": "코카콜라",
-        "marketCountry": "US",
-        "currency": "USD",
-        "quantity": 4.0,
-        "lastPrice": 96.76,
-        "averagePurchasePrice": 88.02,
-        "profitLossRate": 9.92,
-        "profitLossAmount": 34.96,
-        "rsi": 59.0,
-        "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
-        "ai_decision": "관망",
-        "ai_score": 65,
-        "ai_action_tip": "현재 포지션 유지 및 추세 관망 권장",
-        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 65점 · 편차 8점 | Groq:gpt-oss-120b(66점 관망), Meta:llama-3.3-70b-instruct(60점 관망), Google:flash-lite-latest(68점 관망))] KO는 배당 방어주로 장기 보유가 적합하고, 현재 RSI 59로 과열되지 않아 매도는 부적절합니다. 현금으로 소량 추가 매수가 가능하지만, 명확한 과매도 신호가 없어 관망을 권장합니다.",
-        "checked_at": "2026-11-01 00:39:53",
-        "ai_models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 68,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 66,
             "decision": "관망"
           },
           {
@@ -2657,21 +2580,99 @@
         "consensus": "3:0 관망 우세"
       },
       {
+        "symbol": "000660",
+        "name": "SK하이닉스",
+        "marketCountry": "KR",
+        "currency": "KRW",
+        "quantity": 1.0,
+        "lastPrice": 1277000.0,
+        "averagePurchasePrice": 1710000.0,
+        "profitLossRate": -25.32,
+        "profitLossAmount": -433000.0,
+        "rsi": 50.6,
+        "investor_summary": "최근(11-05) 순매수: 외인 -1,203,527주, 기관 +229,996주 (개인 +706,315주) | [5일누적: 외인 -3,089,752주, 기관 +207,808주]",
+        "ai_decision": "관망",
+        "ai_score": 61,
+        "ai_action_tip": "현재 포지션 유지 및 추세 관망 권장",
+        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 61점 · 편차 2점 | Groq:gpt-oss-120b(62점 관망), Google:3.5-flash-lite(62점 관망), Meta:llama-3.3-70b-instruct(60점 관망))] 반도체 성장주인 SK하이닉스는 현재 20일선 하회·외국인 순매도 상황이며 RSI가 중립 수준입니다. 현금 여유가 있더라도 타이밍을 기다리는 것이 안전합니다.",
+        "checked_at": "2026-11-01 00:39:53",
+        "ai_models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 62,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 62,
+            "decision": "관망"
+          },
+          {
+            "provider": "Meta",
+            "model": "Llama 3.3",
+            "score": 60,
+            "decision": "관망"
+          }
+        ],
+        "consensus": "3:0 관망 우세"
+      },
+      {
+        "symbol": "KO",
+        "name": "코카콜라",
+        "marketCountry": "US",
+        "currency": "USD",
+        "quantity": 4.0,
+        "lastPrice": 96.68,
+        "averagePurchasePrice": 88.02,
+        "profitLossRate": 9.83,
+        "profitLossAmount": 34.64,
+        "rsi": 58.8,
+        "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
+        "ai_decision": "관망",
+        "ai_score": 71,
+        "ai_action_tip": "현재 포지션 유지 및 추세 관망 권장",
+        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 71점 · 편차 20점 | Groq:gpt-oss-120b(82점 관망), Google:3.5-flash-lite(68점 관망), Meta:llama-3.3-70b-instruct(62점 관망))] 배당 방어주인 코카콜라는 현재 RSI 58.8로 과매도 구간은 아니지만 과열도 없어 추가 매수가 안전합니다. 가용 예수금 $216.37으로 1주 이상 매수가 가능하고, 단기 상승 추세와 안정적인 수급을 고려해 추매를 권장합니다.",
+        "checked_at": "2026-11-01 00:39:53",
+        "ai_models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 68,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 82,
+            "decision": "관망"
+          },
+          {
+            "provider": "Meta",
+            "model": "Llama 3.3",
+            "score": 62,
+            "decision": "관망"
+          }
+        ],
+        "consensus": "3:0 관망 우세"
+      },
+      {
         "symbol": "SCHD",
         "name": "SCHD",
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 36.26,
+        "lastPrice": 36.25,
         "averagePurchasePrice": 34.3786,
-        "profitLossRate": 5.47,
-        "profitLossAmount": 7.5256,
-        "rsi": 76.8,
+        "profitLossRate": 5.44,
+        "profitLossAmount": 7.4856,
+        "rsi": 76.7,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "관망",
         "ai_score": 63,
         "ai_action_tip": "현재 포지션 유지 및 추세 관망 권장",
-        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 63점 · 편차 8점 | Groq:gpt-oss-120b(62점 관망), Meta:llama-3.3-70b-instruct(60점 관망), Google:3.5-flash-lite(68점 관망))] SCHD는 배당 방어주로 장기 코어 자산이며, 현금으로 1주 이상 매수 가능하지만 RSI가 70~85 구간의 과열을 보여 단기 매수는 부적절합니다. 외국인·기관 수급이 특별히 강력히 유입된 신호도 없으므로 현재는 관망이 최선입니다.",
+        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 63점 · 편차 8점 | Groq:gpt-oss-120b(62점 관망), Google:3.5-flash-lite(68점 관망), Meta:llama-3.3-70b-instruct(60점 관망))] SCHD는 배당 방어주로 장기 보유가 적합하고, RSI 76.8로 단기 과열이 확인됩니다. 현금으로 소수점 매수가 가능하지만, 과열 상황에서는 추가 매수를 삼가고 관망하는 것이 바람직합니다.",
         "checked_at": "2026-11-01 00:39:54",
         "ai_models": [
           {
@@ -2708,15 +2709,15 @@
         "rsi": 34.8,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "관망",
-        "ai_score": 86,
+        "ai_score": 85,
         "ai_action_tip": "현재 포지션 유지 및 추세 관망 권장",
-        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 86점 · 편차 4점 | Groq:gpt-oss-120b(84점 관망), Meta:llama-3.3-70b-instruct(85점 관망), Google:3.5-flash-lite(88점 관망))] SGOV는 초단기 미국채 파킹 ETF로 현금 보유 시 이자 수익을 극대화하기 위해 추가 매수가 적합합니다. RSI 34.8은 과매도 신호이며 가용 예수금 $216.37으로 2주 이상 물리적 매수가 가능하므로 추매를 권장합니다.",
+        "ai_reason": "[🤖 미국 3대 빅테크 이종 앙상블(Google+Groq+Meta) 교차검증 [3:0 관망 우세] (평균 85점 · 편차 1점 | Meta:llama-3.3-70b-instruct(85점 관망), Groq:gpt-oss-120b(84점 관망), Google:flash-lite-latest(85점 관망))] SGOV는 달러 파킹 통장으로서의 역할을 하며, 현재 보유 예수금으로 실제 1주 이상 물리적 매수가 가능하고, 달러 파킹 목적에 부합합니다. 또한, 고금리 우려에 따른 미 단기국채 ETF로의 자금 이동이 확인되며, 이는 추가 매수를 위한 긍정적인 신호입니다.",
         "checked_at": "2026-11-01 00:39:54",
         "ai_models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 88,
+            "score": 85,
             "decision": "관망"
           },
           {
