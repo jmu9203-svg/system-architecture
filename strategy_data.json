@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07 02:45:32",
+  "updated_at": "2026-11-07 02:57:15",
   "battery": "78% (🔋 배터리 사용 중, 21.8°C)",
   "market_intel": {
     "updated_at": "2026-11-06 08:30:03",
@@ -211,12 +211,12 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-07 02:44:51",
-    "checked_ts": 1793987091,
+    "checked_at": "2026-11-07 02:55:37",
+    "checked_ts": 1793987737,
     "date": "2026-11-07",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
-    "scheduler_heartbeat_sec_ago": 0,
+    "scheduler_heartbeat_sec_ago": 21,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2500000,
     "market_opened_today": false,
@@ -2290,40 +2290,60 @@
   },
   "flight_recorder": {
     "has_data": true,
-    "file_name": "flight_log_2026_W44.jsonl",
-    "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026_W44.jsonl",
-    "period": "2026-11-01 06:02:44 ~ 2026-11-01 22:58:18",
+    "file_name": "flight_log_2026-11-07.jsonl",
+    "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-07.jsonl",
+    "period": "2026-11-07 02:56:24 ~ 2026-11-07 02:56:24",
     "commit_hash": "v2.0-live",
-    "total_events": 29,
-    "error_count": 0,
-    "warn_count": 28,
+    "total_events": 1,
+    "error_count": 1,
+    "warn_count": 0,
     "level_counts": {
-      "INFO": 1,
-      "WARN": 28
+      "ERROR": 1
     },
     "categories": {
-      "KIS_API": 2,
-      "QUANT_AUDITOR": 27
+      "AI_PARSE": 1
     },
-    "top_errors": [],
-    "top_code_locations": [],
-    "top_api_codes": [
+    "top_errors": [
+      {
+        "ts": "2026-11-07 02:56:24",
+        "ver": "v2.0-live",
+        "thread": "ThreadPoolExecutor-108_0",
+        "loc": "ai_analyst.py:97 in _call_single_gemini_api()",
+        "lvl": "ERROR",
+        "cat": "AI_PARSE",
+        "msg": "[Google:gemini-3.5-flash-lite] LLM 응답 JSON 파싱 실패",
+        "error_type": "JSONDecodeError",
+        "error_str": "Expecting value: line 1 column 1 (char 0)",
+        "raw_snippet": "```json",
+        "msg_cd": null,
+        "ctx": {
+          "provider": "Google",
+          "model": "gemini-3.5-flash-lite",
+          "raw_snippet": "```json",
+          "raw_length": 7,
+          "error_type": "JSONDecodeError",
+          "error_str": "Expecting value: line 1 column 1 (char 0)",
+          "traceback": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/ai_analyst.py\", line 89, in _call_single_gemini_api\n    d = json.loads(text, strict=False)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/__init__.py\", line 365, in loads\n    return cls(**kw).decode(s)\n           ~~~~~~~~~~~~~~~~^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 363, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n"
+        }
+      }
+    ],
+    "top_code_locations": [
       [
-        "HTTP_500",
+        "ai_analyst.py:97 in _call_single_gemini_api()",
         1
       ]
     ],
+    "top_api_codes": [],
     "thread_distribution": {
-      "Thread-2 (monitor)": 1,
-      "MainThread": 28
+      "ThreadPoolExecutor-108_0": 1
     },
     "stats": {
-      "api_throttles": 1,
-      "api_naver_fallbacks": 3,
+      "api_throttles": 0,
+      "api_naver_fallbacks": 0,
       "ai_429_retries": 0,
       "ai_backup_fallbacks": 0,
-      "ai_parse_failures": 0,
-      "quant_overrides": 27,
+      "ai_parse_failures": 1,
+      "quant_overrides": 0,
       "order_unfilled_revises": 0,
       "circuit_breaker_trips": 0,
       "orders_executed": 0,
@@ -2672,10 +2692,10 @@
         "rsi": 54.7,
         "investor_summary": "최근(11-06) 순매수: 외인 +21,787주, 기관 -8,536주 (개인 -13,005주) | [5일누적: 외인 +182,468주, 기관 +37,511주]",
         "ai_decision": "홀딩 관망",
-        "ai_score": 73,
-        "ai_action_tip": "현재 예수금으로 1주 추가 매수가 가능하나 D-5 실적발표 및 변동성 장세를 고려하여 현금 보존 및 홀딩을 권장합니다.",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [1:1 의견 분립 (안전 관망 채택)] (평균 73점 · 편차 10점 | Groq:gpt-oss-120b(78점 매수), Google:3.5-flash-lite(68점 관망))] 메리츠금융지주는 성장·주기주 성격을 띠며 현재 20일선 위에서 양봉 반등과 외국인 순매수(5일 누적 +18만 주)가 유입되고 있으나, 오는 11월 11일 3분기 실적 발표를 앞두고 있어 4,71만 원의 소중한 가용 예수금을 아끼며 단기 관망하는 것이 유리합니다.",
-        "checked_at": "2026-11-06 22:47:10",
+        "ai_score": 65,
+        "ai_action_tip": "현재 예수금으로 추가 매수가 가능하지만, 목표 수익률에 미치지 못하고 과매수 신호도 없어 관망하며 현금 보존을 권장합니다.",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 65점 · 편차 6점 | Groq:gpt-oss-120b(62점 관망), Google:3.5-flash-lite(68점 관망))] GROWTH_CYCLICAL 자산으로 현재 주가가 MA20 위에 있어 단기 상승세이지만 RSI 54.7은 중립이며 7% 수익률은 목표 10%에 미치지 못합니다. 외인 순매수는 있지만 기관·개인 매도 압력이 있어 추가 매수보다는 관망이 바람직합니다.",
+        "checked_at": "2026-11-07 02:56:05",
         "ai_models": [
           {
             "provider": "Google",
@@ -2686,11 +2706,11 @@
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 78,
-            "decision": "매수"
+            "score": 62,
+            "decision": "관망"
           }
         ],
-        "consensus": "1:1 의견 분립 (안전 관망 채택)"
+        "consensus": "2:0 관망 우세"
       },
       {
         "symbol": "005930",
@@ -2707,18 +2727,18 @@
         "ai_decision": "홀딩 관망",
         "ai_score": 64,
         "ai_action_tip": "현재 22주 보유 중으로 1주 추매 시 평단 인하 폭이 -1.13%(261,136원→258,191원)에 불과하고 국내 계좌 내 반도체 비중이 과다하므로, 원화 예수금(4,717,955원)을 아끼고 홀딩 관망하세요.",
-        "ai_reason": "[🤖 Groq 단일 체인(Fallback) 교차검증 [2:0 관망 우세] (평균 58점 · 편차 7점 | Groq:gpt-oss-20b(62점 관망), Groq:qwen/qwen3.8-27b(55점 관망))] [5단계 퀀트 전략 — 섹터 편중 & 물타기 실효성 가드레일 작동] 최근 단기 조정(최근 5거래일 -12.1%)으로 Wilder 14일 RSI(35.6)가 과매도 근접 구간에 진입했으나, 이미 22주를 보유 중이어서 원화 예수금으로 1주를 더 사더라도 평단가 인하 효과가 -1.13%로 미미하며, 국내 계좌 내 반도체 고비중 편중 리스크가 있어 현금 보존 또는 타 업종(금융·배당주) 분산이 훨씬 유리합니다.",
-        "checked_at": "2026-11-06 22:47:15",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 62점 · 편차 0점 | Groq:gpt-oss-120b(62점 관망), Google:3.5-flash-lite(62점 관망))] [5단계 퀀트 전략 — 섹터 편중 & 물타기 실효성 가드레일 작동] 최근 단기 조정(최근 5거래일 -12.1%)으로 Wilder 14일 RSI(35.6)가 과매도 근접 구간에 진입했으나, 이미 22주를 보유 중이어서 원화 예수금으로 1주를 더 사더라도 평단가 인하 효과가 -1.13%로 미미하며, 국내 계좌 내 반도체 고비중 편중 리스크가 있어 현금 보존 또는 타 업종(금융·배당주) 분산이 훨씬 유리합니다.",
+        "checked_at": "2026-11-07 02:56:11",
         "ai_models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": "-",
-            "decision": "미호출"
+            "score": 62,
+            "decision": "관망"
           },
           {
             "provider": "Groq",
-            "model": "Groq 20B",
+            "model": "Groq 120B",
             "score": 62,
             "decision": "관망"
           }
@@ -2738,10 +2758,10 @@
         "rsi": 36.0,
         "investor_summary": "최근(11-06) 순매수: 외인 -1,652,002주, 기관 +777,585주 (개인 +535,634주) | [5일누적: 외인 -4,579,607주, 기관 +1,171,733주]",
         "ai_decision": "홀딩 관망",
-        "ai_score": 61,
-        "ai_action_tip": "현재 예수금으로 추가 1주 매수가 가능하지만, 과매도와 외인 순매도 상황을 고려해 추가 매수는 보류하고 현금 보존을 권장합니다.",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 61점 · 편차 2점 | Groq:gpt-oss-120b(60점 관망), Google:3.5-flash-lite(62점 관망))] SK하이닉스는 성장·주기형(GROWTH_CYCLICAL) 종목으로 RSI 36으로 과매도 근접하지만 외인 순매도가 지속되고 있어 단기 반등 확신이 낮습니다. 현금 여유가 제한적이며 포트폴리오 내 반도체 비중이 높아 리스크 관리 차원에서 관망이 바람직합니다.",
-        "checked_at": "2026-11-06 22:47:16",
+        "ai_score": 62,
+        "ai_action_tip": "현재 예수금으로 추가 매수가 가능하지만, 반도체 섹터 비중 과다와 급락 추세를 고려해 추가 매수는 자제하고 현 포지션을 관망하세요.",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 62점 · 편차 0점 | Groq:gpt-oss-120b(62점 관망), Google:3.5-flash-lite(62점 관망))] SK하이닉스는 성장·주기형(GROWTH_CYCLICAL) 종목으로 14일 RSI 36(과매도 근접)이나 최근 5일 -15.46% 하락 및 외인 순매도 압력이 지속됩니다. 현 예수금으로 1주 이상 매수가 가능하지만 섹터 편중과 추가 매수 시 평단 인하 효과가 미미해 현금 보존을 권장합니다.",
+        "checked_at": "2026-11-07 02:56:16",
         "ai_models": [
           {
             "provider": "Google",
@@ -2752,7 +2772,7 @@
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 60,
+            "score": 62,
             "decision": "관망"
           }
         ],
@@ -2764,17 +2784,17 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 0.340143,
-        "lastPrice": 285.58,
+        "lastPrice": 285.12,
         "averagePurchasePrice": 293.699999,
-        "profitLossRate": -2.76,
-        "profitLossAmount": -2.761962,
-        "rsi": 30.5,
+        "profitLossRate": -2.92,
+        "profitLossAmount": -2.918427,
+        "rsi": 30.0,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 74,
-        "ai_action_tip": "현재 보유 예수금($216.37)으로 소수점 적립 매수 또는 관망 유지 권장",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [1:1 의견 분립 (안전 관망 채택)] (평균 74점 · 편차 17점 | Groq:gpt-oss-120b(82점 매수), Google:3.5-flash-lite(65점 관망))] 알파벳 A는 경기민감 성장주(GROWTH_CYCLICAL)로 14일 RSI 28.0의 단기 과매도 구간이나, 20일선($317.34) 하회 및 나스닥 기술주 폭락 장세와 AI 재고·실적 불확실성이 존재합니다. 따라서 보유 예수금을 활용한 무리한 추가 매수보다는 신중한 리스크 관리와 함께 홀딩 관망을 유지하는 것이 바람직합니다.",
-        "checked_at": "2026-11-06 22:47:21",
+        "ai_action_tip": "현재 $216.37의 달러 예수금으로 소수점 적립 매수가 가능하나, 단기 조정 구간과 AI 칩 재고 이슈에 따른 변동성을 고려하여 추가 매수보다는 현 상태 홀딩 및 관망을 권장합니다.",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [1:1 의견 분립 (안전 관망 채택)] (평균 74점 · 편차 17점 | Groq:gpt-oss-120b(82점 매수), Google:flash-lite-latest(65점 관망))] 성장·경기민감주(GROWTH_CYCLICAL)인 알파벳 A는 현재 20일 이동평균선을 하회하고 Wilder 14일 RSI 30.0으로 과매도 구간에 근접해 있으나, AI 칩 재고 증가 이슈 및 빅테크 실적 장세 속에서 바닥 확인이 필요하므로 서두르지 않고 관망하는 것이 안전합니다.",
+        "checked_at": "2026-11-07 02:56:21",
         "ai_models": [
           {
             "provider": "Google",
@@ -2797,17 +2817,17 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 96.14,
+        "lastPrice": 96.06,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 9.22,
-        "profitLossAmount": 32.48,
-        "rsi": 65.7,
+        "profitLossRate": 9.13,
+        "profitLossAmount": 32.16,
+        "rsi": 65.4,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 65,
-        "ai_action_tip": "현재 예수금으로 배당 안전판 비중을 유지하며 향후 기술주 조정 시 추매를 위한 달러 자금(Dry Powder)으로 홀딩 관망 권장",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 65점 · 편차 6점 | Google:3.5-flash-lite(68점 관망), Groq:gpt-oss-120b(62점 관망))] 코카콜라는 포트폴리오의 든든한 장기 배당 방어주이자 안전판으로, 단기 RSI 56.7과 소폭 수익률(-1.96% 일간 조정) 구간에서 매도할 이유가 전혀 없습니다. 현재 달러 예수금($216.37)으로 온주 매수($94.00)가 물리적으로 가능하나, 기술주 폭락 장세 속에서 배당 매력과 포트폴리오 밸런스를 지키기 위해 무리한 추매보다는 안정적인 홀딩 관망이 유효합니다.",
-        "checked_at": "2026-11-06 22:47:25",
+        "ai_action_tip": "현재 예수금으로 추가 매수보다는 포트폴리오의 든든한 배당 안전판으로서 물량을 유지하며 홀딩 관망을 권장합니다.",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 65점 · 편차 6점 | Google:3.5-flash-lite(68점 관망), Groq:gpt-oss-120b(62점 관망))] 코카콜라는 대표적인 장기 배당 방어주로, 현재 단기 상승 추세 및 65.4의 RSI 수치에서도 단기 차익 실현보다는 배당 수령과 포트폴리오 방어를 위해 홀딩하는 것이 유리합니다. 특히 가용 달러 예수금($216.37)은 추후 증시 조정으로 RSI가 낮아질 때의 저점 추매용 건전한 대기 자금(Dry Powder)으로 보유하는 것이 적합합니다.",
+        "checked_at": "2026-11-07 02:56:29",
         "ai_models": [
           {
             "provider": "Google",
@@ -2830,17 +2850,17 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 35.25,
+        "lastPrice": 35.24,
         "averagePurchasePrice": 34.3786,
-        "profitLossRate": 2.53,
-        "profitLossAmount": 3.4856,
+        "profitLossRate": 2.5,
+        "profitLossAmount": 3.4456,
         "rsi": 56.2,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
-        "ai_score": 65,
-        "ai_action_tip": "현재 달러 예수금 $216.37로 온주 추가 매수가 가능하나, 배당 방어주 특성상 단기 매도보다는 장기 홀딩 및 배당 재투자를 권장합니다.",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 65점 · 편차 6점 | Google:3.5-flash-lite(68점 관망), Groq:gpt-oss-120b(62점 관망))] SCHD는 포트폴리오의 든든한 배당 안전판(DIVIDEND_DEFENSIVE)이자 장기 코어 자산으로, 현재 RSI 52.4의 안정적인 구간을 지나고 있어 단기 변동성에도 흔들림 없이 홀딩하는 것이 유리합니다. 최근 글로벌 증시 변동성 속에서도 20일 이동평균선을 상회하며 견조한 흐름을 유지하고 있으므로 지속적인 보유를 추천합니다.",
-        "checked_at": "2026-11-06 22:47:31",
+        "ai_score": 66,
+        "ai_action_tip": "현재 예수금 ($216.37)으로 추가 매수가 가능하나, 배당 방어주 특성을 고려해 포트폴리오 안전판으로 홀딩 관망을 권장합니다.",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 66점 · 편차 3점 | Google:3.5-flash-lite(68점 관망), Groq:gpt-oss-120b(65점 관망))] 본 종목은 포트폴리오의 장기 배당 안전판(DIVIDEND_DEFENSIVE)으로, 단기 RSI(56.2) 및 소폭 수익률(+2.50%)을 이유로 매도하기보다는 꾸준한 홀딩과 배당 수령이 유리합니다. 현재 20일선 위에서 안정적인 단기 상승세를 보이고 있으므로, 향후 시장 조정으로 RSI가 낮아질 때까지 달러 예수금을 유지하며 관망하는 전략이 적절합니다.",
+        "checked_at": "2026-11-07 02:56:41",
         "ai_models": [
           {
             "provider": "Google",
@@ -2851,7 +2871,7 @@
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 62,
+            "score": 65,
             "decision": "관망"
           }
         ],
@@ -2920,7 +2940,7 @@
     "flight_recorder": {
       "name": "일일 비행기록장치(Daily Flight Recorder) & 구글 드라이브 자동 동기화",
       "storage_mode": "일자별 자동 분할 및 이벤트 실시간 원자적 기록 (flight_log_YYYY-MM-DD.jsonl)",
-      "active_file": "flight_log_2026_W44.jsonl",
+      "active_file": "flight_log_2026-11-07.jsonl",
       "google_drive_folder": "AI_Stock_Daily_Logs (구글 앱스 스크립트 웹훅 다이렉트 업로드)",
       "auto_purge": "최근 14일 초과 파일 자동 삭제 (공기계 100% 저장공간 보호)",
       "delivery_schedule": "평일 15:40(장마감 결산) & 매일 23:50(자정 전 최종 결산) 구글 드라이브 동기화 및 텔레그램 발송",
