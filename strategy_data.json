@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-06 22:36:36",
-  "battery": "55% (🔋 배터리 사용 중, 20.5°C)",
+  "updated_at": "2026-11-06 22:47:53",
+  "battery": "59% (⚡ 충전 중, 22.9°C)",
   "market_intel": {
     "updated_at": "2026-11-06 08:30:03",
     "fx_soxx_info": {
@@ -211,12 +211,12 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-06 22:35:53",
-    "checked_ts": 1793972153,
+    "checked_at": "2026-11-06 22:46:42",
+    "checked_ts": 1793972802,
     "date": "2026-11-06",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
-    "scheduler_heartbeat_sec_ago": 21,
+    "scheduler_heartbeat_sec_ago": 19,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2500000,
     "market_opened_today": true,
@@ -238,8 +238,8 @@
     "circuit_breaker_limit_pct": -3.5,
     "circuit_breaker_tripped": false,
     "circuit_breaker_reason": "",
-    "battery_str": "55% (🔋 배터리 사용 중, 20.5°C)",
-    "battery_pct": 55,
+    "battery_str": "59% (⚡ 충전 중, 22.9°C)",
+    "battery_pct": 59,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
       "✅ 실전 계좌 예수금 및 자산 무결성 정상 (실시간 100% 연동)",
@@ -2866,7 +2866,7 @@
     "name": "토스증권 실전 계좌 AI 자문 & 대화형 수동 매매 비서",
     "account_no": "17601069723",
     "mode": "대화형 스마트 수동 매매 & 자문 (무단 자동매매 0% 영구 차단)",
-    "krw_cash": 3967423,
+    "krw_cash": 4717955,
     "usd_cash": 216.37,
     "schedule": "평일 10:05 / 14:35 (한투와 5분 시차 분산 스케줄링)",
     "manual_pipeline": {
@@ -2899,22 +2899,22 @@
         "rsi": 54.7,
         "investor_summary": "최근(11-06) 순매수: 외인 +21,787주, 기관 -8,536주 (개인 -13,005주) | [5일누적: 외인 +182,468주, 기관 +37,511주]",
         "ai_decision": "홀딩 관망",
-        "ai_score": 74,
-        "ai_action_tip": "현재 예수금으로 추가 매수가 가능하지만, RSI가 중립 수준이고 외인·기관 수급이 뚜렷하지 않으므로 당분간 관망하고 현금 보존을 권장합니다.",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [1:1 의견 분립 (안전 관망 채택)] (평균 74점 · 편차 23점 | Groq:gpt-oss-120b(62점 관망), Google:3.5-flash-lite(85점 매수))] 메리츠금융지주는 성장·주기성 자산으로 현재 20일선 위에서 소폭 상승세를 보이며 RSI 55로 과매수·과매도 구역에 있지 않습니다. 외인 순매수는 있지만 기관·개인 매도와 혼재돼 명확한 매수 신호가 부족하므로 추가 매수보다는 보유 관망이 적절합니다.",
-        "checked_at": "2026-11-06 18:37:52",
+        "ai_score": 73,
+        "ai_action_tip": "현재 예수금으로 1주 추가 매수가 가능하나 D-5 실적발표 및 변동성 장세를 고려하여 현금 보존 및 홀딩을 권장합니다.",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [1:1 의견 분립 (안전 관망 채택)] (평균 73점 · 편차 10점 | Groq:gpt-oss-120b(78점 매수), Google:3.5-flash-lite(68점 관망))] 메리츠금융지주는 성장·주기주 성격을 띠며 현재 20일선 위에서 양봉 반등과 외국인 순매수(5일 누적 +18만 주)가 유입되고 있으나, 오는 11월 11일 3분기 실적 발표를 앞두고 있어 4,71만 원의 소중한 가용 예수금을 아끼며 단기 관망하는 것이 유리합니다.",
+        "checked_at": "2026-11-06 22:47:10",
         "ai_models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 85,
-            "decision": "매수"
+            "score": 68,
+            "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 62,
-            "decision": "관망"
+            "score": 78,
+            "decision": "매수"
           }
         ],
         "consensus": "1:1 의견 분립 (안전 관망 채택)"
@@ -2933,9 +2933,9 @@
         "investor_summary": "최근(11-06) 순매수: 외인 -859,417주, 기관 -509,167주 (개인 +1,112,324주) | [5일누적: 외인 -12,468,780주, 기관 +1,286,546주]",
         "ai_decision": "홀딩 관망",
         "ai_score": 64,
-        "ai_action_tip": "현재 22주 보유 중으로 1주 추매 시 평단 인하 폭이 -1.13%(261,136원→258,191원)에 불과하고 국내 계좌 내 반도체 비중이 과다하므로, 원화 예수금(3,967,423원)을 아끼고 홀딩 관망하세요.",
+        "ai_action_tip": "현재 22주 보유 중으로 1주 추매 시 평단 인하 폭이 -1.13%(261,136원→258,191원)에 불과하고 국내 계좌 내 반도체 비중이 과다하므로, 원화 예수금(4,717,955원)을 아끼고 홀딩 관망하세요.",
         "ai_reason": "[🤖 Groq 단일 체인(Fallback) 교차검증 [2:0 관망 우세] (평균 58점 · 편차 7점 | Groq:gpt-oss-20b(62점 관망), Groq:qwen/qwen3.8-27b(55점 관망))] [5단계 퀀트 전략 — 섹터 편중 & 물타기 실효성 가드레일 작동] 최근 단기 조정(최근 5거래일 -12.1%)으로 Wilder 14일 RSI(35.6)가 과매도 근접 구간에 진입했으나, 이미 22주를 보유 중이어서 원화 예수금으로 1주를 더 사더라도 평단가 인하 효과가 -1.13%로 미미하며, 국내 계좌 내 반도체 고비중 편중 리스크가 있어 현금 보존 또는 타 업종(금융·배당주) 분산이 훨씬 유리합니다.",
-        "checked_at": "2026-11-06 20:05:05",
+        "checked_at": "2026-11-06 22:47:15",
         "ai_models": [
           {
             "provider": "Google",
@@ -2965,10 +2965,10 @@
         "rsi": 36.0,
         "investor_summary": "최근(11-06) 순매수: 외인 -1,652,002주, 기관 +777,585주 (개인 +535,634주) | [5일누적: 외인 -4,579,607주, 기관 +1,171,733주]",
         "ai_decision": "홀딩 관망",
-        "ai_score": 62,
-        "ai_action_tip": "현재 예수금으로 추가 매수가 가능하지만, 외인 순매도와 약세 추세를 고려해 관망하고 현금 보존을 권장합니다.",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 62점 · 편차 0점 | Groq:gpt-oss-120b(62점 관망), Google:3.5-flash-lite(62점 관망))] GROWTH_CYCLICAL인 반도체 주로 RSI가 36.5로 과매도 근접하지만 외인 순매도가 지속되고 최근 5일 -14.52% 하락세가 이어지고 있습니다. 현금 여유가 있어 매수 가능하지만, 수급 악화와 단기 변동성을 감안해 추가 매수보다는 관망이 바람직합니다.",
-        "checked_at": "2026-11-06 18:37:59",
+        "ai_score": 61,
+        "ai_action_tip": "현재 예수금으로 추가 1주 매수가 가능하지만, 과매도와 외인 순매도 상황을 고려해 추가 매수는 보류하고 현금 보존을 권장합니다.",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 61점 · 편차 2점 | Groq:gpt-oss-120b(60점 관망), Google:3.5-flash-lite(62점 관망))] SK하이닉스는 성장·주기형(GROWTH_CYCLICAL) 종목으로 RSI 36으로 과매도 근접하지만 외인 순매도가 지속되고 있어 단기 반등 확신이 낮습니다. 현금 여유가 제한적이며 포트폴리오 내 반도체 비중이 높아 리스크 관리 차원에서 관망이 바람직합니다.",
+        "checked_at": "2026-11-06 22:47:16",
         "ai_models": [
           {
             "provider": "Google",
@@ -2979,7 +2979,7 @@
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 62,
+            "score": 60,
             "decision": "관망"
           }
         ],
@@ -2991,28 +2991,28 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 0.340143,
-        "lastPrice": 282.53,
+        "lastPrice": 282.74,
         "averagePurchasePrice": 293.699999,
-        "profitLossRate": -3.8,
-        "profitLossAmount": -3.799398,
-        "rsi": 27.8,
+        "profitLossRate": -3.73,
+        "profitLossAmount": -3.727968,
+        "rsi": 28.0,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
-        "ai_score": 70,
-        "ai_action_tip": "현재 보유 예수금($216.37)으로 소수점 적립 매수 여유가 있으나, 단기 조정 구간과 AI 칩 재고 이슈에 따른 시장 변동성을 고려해 추가 매수보다는 홀딩 관망을 권장합니다.",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [1:1 의견 분립 (안전 관망 채택)] (평균 70점 · 편차 16점 | Groq:gpt-oss-120b(78점 매수), Google:3.5-flash-lite(62점 관망))] 알파벳 A(GOOGL)는 성장·경기민감주(GROWTH_CYCLICAL)이나, Wilder 14일 RSI 31.3으로 과매도 근접 구간임에도 20일선($317.53) 하회 및 AI 칩 재고 이슈 등 기술주 전반의 리스크가 상존합니다. 따라서 가용 예수금을 방어적으로 유지하며 바닥 다지기를 확인하는 홀딩 관망 전략이 유효합니다.",
-        "checked_at": "2026-11-06 18:38:04",
+        "ai_score": 74,
+        "ai_action_tip": "현재 보유 예수금($216.37)으로 소수점 적립 매수 또는 관망 유지 권장",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [1:1 의견 분립 (안전 관망 채택)] (평균 74점 · 편차 17점 | Groq:gpt-oss-120b(82점 매수), Google:3.5-flash-lite(65점 관망))] 알파벳 A는 경기민감 성장주(GROWTH_CYCLICAL)로 14일 RSI 28.0의 단기 과매도 구간이나, 20일선($317.34) 하회 및 나스닥 기술주 폭락 장세와 AI 재고·실적 불확실성이 존재합니다. 따라서 보유 예수금을 활용한 무리한 추가 매수보다는 신중한 리스크 관리와 함께 홀딩 관망을 유지하는 것이 바람직합니다.",
+        "checked_at": "2026-11-06 22:47:21",
         "ai_models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 62,
+            "score": 65,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 78,
+            "score": 82,
             "decision": "매수"
           }
         ],
@@ -3024,17 +3024,17 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 94.03,
+        "lastPrice": 94.0,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 6.82,
-        "profitLossAmount": 24.04,
-        "rsi": 56.8,
+        "profitLossRate": 6.79,
+        "profitLossAmount": 23.92,
+        "rsi": 56.7,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 65,
-        "ai_action_tip": "현재 예수금으로 추가 매수가 가능하지만 RSI가 중립 구간이므로 당분간 관망하고, RSI가 50 이하로 하락 시 소량 매수를 검토하세요.",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 65점 · 편차 6점 | Groq:gpt-oss-120b(62점 관망), Google:3.5-flash-lite(68점 관망))] 배당 방어주인 KO는 현재 20일선 위에 있어 단기 상승 추세이며, RSI 57.2로 과매도 상태가 아닙니다. 가용 예수금으로 1주 이상 매수가 가능하지만, 규정상 단기 수익률(+6.9%)만으로는 매수 신호가 부족하므로 관망을 권고합니다.",
-        "checked_at": "2026-11-06 18:38:09",
+        "ai_action_tip": "현재 예수금으로 배당 안전판 비중을 유지하며 향후 기술주 조정 시 추매를 위한 달러 자금(Dry Powder)으로 홀딩 관망 권장",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 65점 · 편차 6점 | Google:3.5-flash-lite(68점 관망), Groq:gpt-oss-120b(62점 관망))] 코카콜라는 포트폴리오의 든든한 장기 배당 방어주이자 안전판으로, 단기 RSI 56.7과 소폭 수익률(-1.96% 일간 조정) 구간에서 매도할 이유가 전혀 없습니다. 현재 달러 예수금($216.37)으로 온주 매수($94.00)가 물리적으로 가능하나, 기술주 폭락 장세 속에서 배당 매력과 포트폴리오 밸런스를 지키기 위해 무리한 추매보다는 안정적인 홀딩 관망이 유효합니다.",
+        "checked_at": "2026-11-06 22:47:25",
         "ai_models": [
           {
             "provider": "Google",
@@ -3057,17 +3057,17 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 34.97,
+        "lastPrice": 34.95,
         "averagePurchasePrice": 34.3786,
-        "profitLossRate": 1.72,
-        "profitLossAmount": 2.3656,
-        "rsi": 52.6,
+        "profitLossRate": 1.66,
+        "profitLossAmount": 2.2856,
+        "rsi": 52.4,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 65,
-        "ai_action_tip": "현재 달러 예수금 $216.37로 추가 적립 매수가 가능하나, 장기 코어 자산으로서 흔들림 없이 홀딩하며 배당 수령 및 추가 조정 시 추매를 준비하세요.",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 65점 · 편차 6점 | Google:3.5-flash-lite(68점 관망), Groq:gpt-oss-120b(62점 관망))] 본 종목은 포트폴리오의 든든한 배당 안전판(DIVIDEND_DEFENSIVE)으로, 단기 RSI 54.5 및 소폭 조정 국면에서도 절대 매도가 아닌 홀딩 관망이 원칙입니다. 글로벌 증시 변동성 속에서 배당 수익을 확보하며 추후 RSI 40~50선으로 하락할 때를 대기 자금(Dry Powder) 활용의 적기로 삼아야 합니다.",
-        "checked_at": "2026-11-06 18:38:14",
+        "ai_action_tip": "현재 달러 예수금 $216.37로 온주 추가 매수가 가능하나, 배당 방어주 특성상 단기 매도보다는 장기 홀딩 및 배당 재투자를 권장합니다.",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 65점 · 편차 6점 | Google:3.5-flash-lite(68점 관망), Groq:gpt-oss-120b(62점 관망))] SCHD는 포트폴리오의 든든한 배당 안전판(DIVIDEND_DEFENSIVE)이자 장기 코어 자산으로, 현재 RSI 52.4의 안정적인 구간을 지나고 있어 단기 변동성에도 흔들림 없이 홀딩하는 것이 유리합니다. 최근 글로벌 증시 변동성 속에서도 20일 이동평균선을 상회하며 견조한 흐름을 유지하고 있으므로 지속적인 보유를 추천합니다.",
+        "checked_at": "2026-11-06 22:47:31",
         "ai_models": [
           {
             "provider": "Google",
