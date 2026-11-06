@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06 18:27:18",
+  "updated_at": "2026-11-06 18:38:39",
   "battery": "64% (🔋 배터리 사용 중, 21.1°C)",
   "market_intel": {
     "updated_at": "2026-11-06 08:30:03",
@@ -211,12 +211,12 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-06 18:26:31",
-    "checked_ts": 1793957191,
+    "checked_at": "2026-11-06 18:37:23",
+    "checked_ts": 1793957843,
     "date": "2026-11-06",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
-    "scheduler_heartbeat_sec_ago": 9,
+    "scheduler_heartbeat_sec_ago": 12,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2500000,
     "market_opened_today": true,
@@ -2892,29 +2892,29 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 1.0,
-        "lastPrice": 131500.0,
+        "lastPrice": 132300.0,
         "averagePurchasePrice": 123100.0,
-        "profitLossRate": 6.82,
-        "profitLossAmount": 8400.0,
-        "rsi": 53.6,
+        "profitLossRate": 7.47,
+        "profitLossAmount": 9200.0,
+        "rsi": 55.1,
         "investor_summary": "최근(11-06) 순매수: 외인 +22,429주, 기관 -8,988주 (개인 -12,931주) | [5일누적: 외인 +183,110주, 기관 +37,059주]",
         "ai_decision": "홀딩 관망",
-        "ai_score": 71,
-        "ai_action_tip": "D-5 실적 발표를 앞두고 변동성 확대가 예상되므로, 현재 예수금(약 30주 매수 가능)을 보존하며 추가 매수 없이 보유분만 유지하세요.",
-        "ai_reason": "[🤖 Groq 단일 체인(Fallback) 교차검증 [1:1 의견 분립 (안전 관망 채택)] (평균 71점 · 편차 18점 | Groq:gpt-oss-20b(80점 매수), Groq:qwen/qwen3.8-27b(62점 관망))] 외국인과 기관의 동반 순매수 및 골든크로스 신호가 긍정적이지만, 11월 11일 3분기 실적 발표(D-5)라는 명확한 이벤트 리스크가 존재합니다. 또한 미국 기술주 폭락 여파로 인한 시장 전반의 긴장감이 높아져, 실적 확인 전까지 현금성 자산(Dry Powder)을 확보하는 것이 리스크 관리 측면에서 유리합니다.",
-        "checked_at": "2026-11-06 14:35:09",
+        "ai_score": 74,
+        "ai_action_tip": "현재 예수금으로 추가 매수가 가능하지만, RSI가 중립 수준이고 외인·기관 수급이 뚜렷하지 않으므로 당분간 관망하고 현금 보존을 권장합니다.",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [1:1 의견 분립 (안전 관망 채택)] (평균 74점 · 편차 23점 | Groq:gpt-oss-120b(62점 관망), Google:3.5-flash-lite(85점 매수))] 메리츠금융지주는 성장·주기성 자산으로 현재 20일선 위에서 소폭 상승세를 보이며 RSI 55로 과매수·과매도 구역에 있지 않습니다. 외인 순매수는 있지만 기관·개인 매도와 혼재돼 명확한 매수 신호가 부족하므로 추가 매수보다는 보유 관망이 적절합니다.",
+        "checked_at": "2026-11-06 18:37:52",
         "ai_models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": "-",
-            "decision": "미호출"
+            "score": 85,
+            "decision": "매수"
           },
           {
             "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 80,
-            "decision": "매수"
+            "model": "Groq 120B",
+            "score": 62,
+            "decision": "관망"
           }
         ],
         "consensus": "1:1 의견 분립 (안전 관망 채택)"
@@ -2925,17 +2925,17 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 22.0,
-        "lastPrice": 193900.0,
+        "lastPrice": 194400.0,
         "averagePurchasePrice": 261136.363636,
-        "profitLossRate": -25.74,
-        "profitLossAmount": -1479200.0,
-        "rsi": 35.7,
+        "profitLossRate": -25.55,
+        "profitLossAmount": -1468200.0,
+        "rsi": 35.8,
         "investor_summary": "최근(11-06) 순매수: 외인 -722,675주, 기관 -218,356주 (개인 +909,131주) | [5일누적: 외인 -12,332,038주, 기관 +1,577,357주]",
         "ai_decision": "홀딩 관망",
         "ai_score": 64,
-        "ai_action_tip": "현재 22주 보유 중으로 1주 추매 시 평단 인하 폭이 -1.12%(261,136원→258,213원)에 불과하고 국내 계좌 내 반도체 비중이 과다하므로, 원화 예수금(3,967,423원)을 아끼고 홀딩 관망하세요.",
-        "ai_reason": "[🤖 Groq 단일 체인(Fallback) 교차검증 [2:0 관망 우세] (평균 58점 · 편차 7점 | Groq:gpt-oss-20b(62점 관망), Groq:qwen/qwen3.8-27b(55점 관망))] [5단계 퀀트 전략 — 섹터 편중 & 물타기 실효성 가드레일 작동] 최근 단기 조정(최근 5거래일 -11.9%)으로 Wilder 14일 RSI(35.7)가 과매도 근접 구간에 진입했으나, 이미 22주를 보유 중이어서 원화 예수금으로 1주를 더 사더라도 평단가 인하 효과가 -1.12%로 미미하며, 국내 계좌 내 반도체 고비중 편중 리스크가 있어 현금 보존 또는 타 업종(금융·배당주) 분산이 훨씬 유리합니다.",
-        "checked_at": "2026-11-06 18:27:01",
+        "ai_action_tip": "현재 22주 보유 중으로 1주 추매 시 평단 인하 폭이 -1.11%(261,136원→258,234원)에 불과하고 국내 계좌 내 반도체 비중이 과다하므로, 원화 예수금(3,967,423원)을 아끼고 홀딩 관망하세요.",
+        "ai_reason": "[🤖 Groq 단일 체인(Fallback) 교차검증 [2:0 관망 우세] (평균 58점 · 편차 7점 | Groq:gpt-oss-20b(62점 관망), Groq:qwen/qwen3.8-27b(55점 관망))] [5단계 퀀트 전략 — 섹터 편중 & 물타기 실효성 가드레일 작동] 최근 단기 조정(최근 5거래일 -11.6%)으로 Wilder 14일 RSI(35.8)가 과매도 근접 구간에 진입했으나, 이미 22주를 보유 중이어서 원화 예수금으로 1주를 더 사더라도 평단가 인하 효과가 -1.11%로 미미하며, 국내 계좌 내 반도체 고비중 편중 리스크가 있어 현금 보존 또는 타 업종(금융·배당주) 분산이 훨씬 유리합니다.",
+        "checked_at": "2026-11-06 18:37:58",
         "ai_models": [
           {
             "provider": "Google",
@@ -2958,32 +2958,32 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 1.0,
-        "lastPrice": 1185000.0,
+        "lastPrice": 1190000.0,
         "averagePurchasePrice": 1710000.0,
-        "profitLossRate": -30.7,
-        "profitLossAmount": -525000.0,
-        "rsi": 36.4,
+        "profitLossRate": -30.4,
+        "profitLossAmount": -520000.0,
+        "rsi": 36.5,
         "investor_summary": "최근(11-06) 순매수: 외인 -1,684,622주, 기관 +749,390주 (개인 +609,042주) | [5일누적: 외인 -4,612,227주, 기관 +1,143,538주]",
         "ai_decision": "홀딩 관망",
-        "ai_score": 68,
-        "ai_action_tip": "현재 예수금(396만 원)으로 1주(115만 원) 매수는 물리적으로 가능하나, 외인 5일 연속 매도 및 미 반도체 지수 약세 리스크가 상존하므로 추가 매수 없이 기존 1주 홀딩 관망 권장",
-        "ai_reason": "[🤖 Groq 단일 체인(Fallback) 교차검증 [1:1 의견 분립 (안전 관망 채택)] (평균 68점 · 편차 25점 | Groq:gpt-oss-20b(80점 매수), Groq:qwen/qwen3.8-27b(55점 관망))] GROWTH_CYCLICAL 자산으로서 RSI 35.4의 단기 과매도 신호에도 불구하고 외국인 5일 연속 대규모 순매도(-293만 주)와 미 반도체 지수(SOXX) 약세라는 거시적 리스크가 상존합니다. 물리적 매수 가능 여력(3주)이 있으나, AMAT 실적 발표 전 불확실성이 높고 평단(171만 원) 대비 손실이 커 추가 매수 시 변동성 확대 리스크가 크므로 현금 보존이 우선입니다.",
-        "checked_at": "2026-11-06 14:36:13",
+        "ai_score": 62,
+        "ai_action_tip": "현재 예수금으로 추가 매수가 가능하지만, 외인 순매도와 약세 추세를 고려해 관망하고 현금 보존을 권장합니다.",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 62점 · 편차 0점 | Groq:gpt-oss-120b(62점 관망), Google:3.5-flash-lite(62점 관망))] GROWTH_CYCLICAL인 반도체 주로 RSI가 36.5로 과매도 근접하지만 외인 순매도가 지속되고 최근 5일 -14.52% 하락세가 이어지고 있습니다. 현금 여유가 있어 매수 가능하지만, 수급 악화와 단기 변동성을 감안해 추가 매수보다는 관망이 바람직합니다.",
+        "checked_at": "2026-11-06 18:37:59",
         "ai_models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": "-",
-            "decision": "미호출"
+            "score": 62,
+            "decision": "관망"
           },
           {
             "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 80,
-            "decision": "매수"
+            "model": "Groq 120B",
+            "score": 62,
+            "decision": "관망"
           }
         ],
-        "consensus": "1:1 의견 분립 (안전 관망 채택)"
+        "consensus": "2:0 관망 우세"
       },
       {
         "symbol": "GOOGL",
@@ -2991,28 +2991,28 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 0.340143,
-        "lastPrice": 286.3,
+        "lastPrice": 286.66,
         "averagePurchasePrice": 293.699999,
-        "profitLossRate": -2.51,
-        "profitLossAmount": -2.517059,
-        "rsi": 31.0,
+        "profitLossRate": -2.39,
+        "profitLossAmount": -2.394607,
+        "rsi": 31.3,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
-        "ai_score": 71,
-        "ai_action_tip": "현재 예수금으로 소수점 매수는 가능하나, 기술주 전반의 변동성 확대와 실적 발표 전 리스크를 고려해 추가 매수 없이 기존 포지션 유지 및 관망 권장",
-        "ai_reason": "[🤖 Groq 단일 체인(Fallback) 교차검증 [1:1 의견 분립 (안전 관망 채택)] (평균 71점 · 편차 18점 | Groq:gpt-oss-20b(80점 매수), Groq:qwen/qwen3.8-27b(62점 관망))] 미국 주식 특성상 소수점 매수가 가능하나, 나스닥100의 극심한 변동성과 AMAT 실적 발표를 앞둔 시점에서 RSI 28.4의 과매도 신호가 바닥을 확정짓기엔 불확실성이 큽니다. 따라서 물리적 매수 가능 여부와 무관하게, 기술주 섹터의 리스크 관리 차원에서 신규 자금 투입을 자제하고 기존 보유분을 유지하는 것이 안전합니다.",
-        "checked_at": "2026-11-06 14:36:46",
+        "ai_score": 70,
+        "ai_action_tip": "현재 보유 예수금($216.37)으로 소수점 적립 매수 여유가 있으나, 단기 조정 구간과 AI 칩 재고 이슈에 따른 시장 변동성을 고려해 추가 매수보다는 홀딩 관망을 권장합니다.",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [1:1 의견 분립 (안전 관망 채택)] (평균 70점 · 편차 16점 | Groq:gpt-oss-120b(78점 매수), Google:3.5-flash-lite(62점 관망))] 알파벳 A(GOOGL)는 성장·경기민감주(GROWTH_CYCLICAL)이나, Wilder 14일 RSI 31.3으로 과매도 근접 구간임에도 20일선($317.53) 하회 및 AI 칩 재고 이슈 등 기술주 전반의 리스크가 상존합니다. 따라서 가용 예수금을 방어적으로 유지하며 바닥 다지기를 확인하는 홀딩 관망 전략이 유효합니다.",
+        "checked_at": "2026-11-06 18:38:04",
         "ai_models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": "-",
-            "decision": "미호출"
+            "score": 62,
+            "decision": "관망"
           },
           {
             "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 80,
+            "model": "Groq 120B",
+            "score": 78,
             "decision": "매수"
           }
         ],
@@ -3024,28 +3024,28 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 94.16,
+        "lastPrice": 94.12,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 6.97,
-        "profitLossAmount": 24.56,
-        "rsi": 57.4,
+        "profitLossRate": 6.93,
+        "profitLossAmount": 24.4,
+        "rsi": 57.2,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
-        "ai_score": 62,
-        "ai_action_tip": "현재 예수금으로 추가 매수는 필요 없으며, 배당 수령과 장기 안전판 유지에 집중하세요",
-        "ai_reason": "[🤖 Groq 단일 체인(Fallback) 교차검증 [2:0 관망 우세] (평균 62점 · 편차 5점 | Groq:gpt-oss-20b(60점 관망), Groq:qwen/qwen3.8-27b(65점 관망))] 코카콜라는 배당방어주로서 RSI가 과열 수준이 아니고, 최근 5일 상승 추세와 20일선 상회가 보이지만 과도한 과열이 없으므로 매도 권유가 부적절합니다. 현재 예수금으로 추가 매수가 가능하지만, 배당 수익과 안정성을 우선시해 관망이 최선입니다",
-        "checked_at": "2026-11-06 14:37:19",
+        "ai_score": 65,
+        "ai_action_tip": "현재 예수금으로 추가 매수가 가능하지만 RSI가 중립 구간이므로 당분간 관망하고, RSI가 50 이하로 하락 시 소량 매수를 검토하세요.",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 65점 · 편차 6점 | Groq:gpt-oss-120b(62점 관망), Google:3.5-flash-lite(68점 관망))] 배당 방어주인 KO는 현재 20일선 위에 있어 단기 상승 추세이며, RSI 57.2로 과매도 상태가 아닙니다. 가용 예수금으로 1주 이상 매수가 가능하지만, 규정상 단기 수익률(+6.9%)만으로는 매수 신호가 부족하므로 관망을 권고합니다.",
+        "checked_at": "2026-11-06 18:38:09",
         "ai_models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": "-",
-            "decision": "미호출"
+            "score": 68,
+            "decision": "관망"
           },
           {
             "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 60,
+            "model": "Groq 120B",
+            "score": 62,
             "decision": "관망"
           }
         ],
@@ -3057,28 +3057,28 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 35.08,
+        "lastPrice": 35.11,
         "averagePurchasePrice": 34.3786,
-        "profitLossRate": 2.04,
-        "profitLossAmount": 2.8056,
-        "rsi": 54.0,
+        "profitLossRate": 2.12,
+        "profitLossAmount": 2.9256,
+        "rsi": 54.5,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
-        "ai_score": 62,
-        "ai_action_tip": "현재 예수금으로 추가 매수는 불가능하므로 현재 보유를 유지하고 배당 수령을 기다리세요",
-        "ai_reason": "[🤖 Groq 단일 체인(Fallback) 교차검증 [2:0 관망 우세] (평균 62점 · 편차 5점 | Groq:gpt-oss-20b(60점 관망), Groq:qwen/qwen3.8-27b(65점 관망))] SCHD는 배당 방어주로서 단기 RSI 56.5가 과열 수준이 아니며, 최근 5일 등락 -1.43%와 20일선 상회가 단기 상승추세를 보여 주지만 과도한 매도는 금지됩니다. 물리적 매수 가능 여부와 외인/기관 수급이 제한적이므로 현재 보유를 관망하는 것이 가장 안전합니다",
-        "checked_at": "2026-11-06 14:37:52",
+        "ai_score": 65,
+        "ai_action_tip": "현재 달러 예수금 $216.37로 추가 적립 매수가 가능하나, 장기 코어 자산으로서 흔들림 없이 홀딩하며 배당 수령 및 추가 조정 시 추매를 준비하세요.",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 65점 · 편차 6점 | Google:3.5-flash-lite(68점 관망), Groq:gpt-oss-120b(62점 관망))] 본 종목은 포트폴리오의 든든한 배당 안전판(DIVIDEND_DEFENSIVE)으로, 단기 RSI 54.5 및 소폭 조정 국면에서도 절대 매도가 아닌 홀딩 관망이 원칙입니다. 글로벌 증시 변동성 속에서 배당 수익을 확보하며 추후 RSI 40~50선으로 하락할 때를 대기 자금(Dry Powder) 활용의 적기로 삼아야 합니다.",
+        "checked_at": "2026-11-06 18:38:14",
         "ai_models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": "-",
-            "decision": "미호출"
+            "score": 68,
+            "decision": "관망"
           },
           {
             "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 60,
+            "model": "Groq 120B",
+            "score": 62,
             "decision": "관망"
           }
         ],
@@ -3094,13 +3094,13 @@
         "averagePurchasePrice": 100.62,
         "profitLossRate": -0.13,
         "profitLossAmount": -0.7,
-        "rsi": 40.7,
+        "rsi": 40.9,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 68,
         "ai_action_tip": "월초 배당락 직후 국채 이자 재누적 구간 — 기존 파킹 포지션은 든든히 홀딩 유지하되 유휴 달러 예수금 파킹 시에만 활용하세요.",
-        "ai_reason": "[🤖 Groq 단일 체인(Fallback) 교차검증 [2:0 관망 우세] (평균 66점 · 편차 1점 | Groq:gpt-oss-20b(65점 관망), Groq:qwen/qwen3.8-27b(66점 관망))] SGOV의 14일 RSI(40.7)는 주가 하락이나 기술적 과매도 신호가 아니라, 매월 초 배당락(-$0.32)으로 월배당금이 지급된 직후 다시 초단기 미국채 이자가 하루 $0.01~$0.02씩 계단식으로 누적되기 시작하는 정상적인 금리 사이클입니다. 연 4~5% 달러 월배당 이자를 안정적으로 수령하면서 향후 빅테크·배당주 조정 시 투입할 대기 자금(Dry Powder)으로서 든든하게 홀딩 관망합니다.",
-        "checked_at": "2026-11-06 17:54:38",
+        "ai_reason": "[🤖 Groq 단일 체인(Fallback) 교차검증 [2:0 관망 우세] (평균 66점 · 편차 1점 | Groq:gpt-oss-20b(65점 관망), Groq:qwen/qwen3.8-27b(66점 관망))] SGOV의 14일 RSI(40.9)는 주가 하락이나 기술적 과매도 신호가 아니라, 매월 초 배당락(-$0.32)으로 월배당금이 지급된 직후 다시 초단기 미국채 이자가 하루 $0.01~$0.02씩 계단식으로 누적되기 시작하는 정상적인 금리 사이클입니다. 연 4~5% 달러 월배당 이자를 안정적으로 수령하면서 향후 빅테크·배당주 조정 시 투입할 대기 자금(Dry Powder)으로서 든든하게 홀딩 관망합니다.",
+        "checked_at": "2026-11-06 18:38:23",
         "ai_models": [
           {
             "provider": "Google",
