@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-07 21:53:50",
-  "battery": "40% (🔋 배터리 사용 중, 20.1°C)",
+  "updated_at": "2026-11-07 22:05:47",
+  "battery": "39% (🔋 배터리 사용 중, 20.6°C)",
   "market_intel": {
     "updated_at": "2026-11-06 08:30:03",
     "fx_soxx_info": {
@@ -211,8 +211,8 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-07 21:52:01",
-    "checked_ts": 1794055921,
+    "checked_at": "2026-11-07 22:04:16",
+    "checked_ts": 1794056656,
     "date": "2026-11-07",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
@@ -238,11 +238,11 @@
     "circuit_breaker_limit_pct": -3.5,
     "circuit_breaker_tripped": false,
     "circuit_breaker_reason": "",
-    "battery_str": "40% (🔋 배터리 사용 중, 20.1°C)",
-    "battery_pct": 40,
+    "battery_str": "39% (🔋 배터리 사용 중, 20.6°C)",
+    "battery_pct": 39,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
-      "✅ 실전 계좌 예수금 및 자산 무결성 정상 (실시간 100% 연동)",
+      "✅ 4,500만 원 동결금 및 500만 원 시드 분리 무결성 정상",
       "✅ 손절/익절 가드레일 누락 착오 0건"
     ],
     "anomaly_count": 0,
@@ -2292,17 +2292,17 @@
     "has_data": true,
     "file_name": "flight_log_2026-11-07.jsonl",
     "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-07.jsonl",
-    "period": "2026-11-07 02:56:24 ~ 2026-11-07 21:53:10",
+    "period": "2026-11-07 02:56:24 ~ 2026-11-07 22:05:04",
     "commit_hash": "v2.0-live",
-    "total_events": 6,
-    "error_count": 5,
+    "total_events": 7,
+    "error_count": 6,
     "warn_count": 0,
     "level_counts": {
-      "ERROR": 5,
+      "ERROR": 6,
       "INFO": 1
     },
     "categories": {
-      "AI_PARSE": 5,
+      "AI_PARSE": 6,
       "KIS_API": 1
     },
     "top_errors": [
@@ -2415,12 +2415,34 @@
           "error_str": "Unterminated string starting at: line 2 column 15 (char 16)",
           "traceback": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/ai_analyst.py\", line 89, in _call_single_gemini_api\n    d = json.loads(text, strict=False)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/__init__.py\", line 365, in loads\n    return cls(**kw).decode(s)\n           ~~~~~~~~~~~~~~~~^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 361, in raw_decode\n    obj, end = self.scan_once(s, idx)\n               ~~~~~~~~~~~~~~^^^^^^^^\njson.decoder.JSONDecodeError: Unterminated string starting at: line 2 column 15 (char 16)\n"
         }
+      },
+      {
+        "ts": "2026-11-07 22:05:04",
+        "ver": "v2.0-live",
+        "thread": "ThreadPoolExecutor-0_0",
+        "loc": "ai_analyst.py:97 in _call_single_gemini_api()",
+        "lvl": "ERROR",
+        "cat": "AI_PARSE",
+        "msg": "[Google:gemini-3.5-flash-lite] LLM 응답 JSON 파싱 실패",
+        "error_type": "JSONDecodeError",
+        "error_str": "Unterminated string starting at: line 4 column 13 (char 49)",
+        "raw_snippet": "{\n  \"decision\": \"매수\",\n  \"score\": 86,\n  \"reason\": \"VOO는 52주 최고가 대비 -5.91% 조정을 받아 전고점 추격매수 위험이 없고, RSI 34.8과 20일선 하회(-3.7%)로 전형적인 과매도 및 눌림목 매수 기회를 제공하며 정량 점",
+        "msg_cd": null,
+        "ctx": {
+          "provider": "Google",
+          "model": "gemini-3.5-flash-lite",
+          "raw_snippet": "{\n  \"decision\": \"매수\",\n  \"score\": 86,\n  \"reason\": \"VOO는 52주 최고가 대비 -5.91% 조정을 받아 전고점 추격매수 위험이 없고, RSI 34.8과 20일선 하회(-3.7%)로 전형적인 과매도 및 눌림목 매수 기회를 제공하며 정량 점",
+          "raw_length": 154,
+          "error_type": "JSONDecodeError",
+          "error_str": "Unterminated string starting at: line 4 column 13 (char 49)",
+          "traceback": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/ai_analyst.py\", line 89, in _call_single_gemini_api\n    d = json.loads(text, strict=False)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/__init__.py\", line 365, in loads\n    return cls(**kw).decode(s)\n           ~~~~~~~~~~~~~~~~^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 361, in raw_decode\n    obj, end = self.scan_once(s, idx)\n               ~~~~~~~~~~~~~~^^^^^^^^\njson.decoder.JSONDecodeError: Unterminated string starting at: line 4 column 13 (char 49)\n"
+        }
       }
     ],
     "top_code_locations": [
       [
         "ai_analyst.py:97 in _call_single_gemini_api()",
-        5
+        6
       ]
     ],
     "top_api_codes": [],
@@ -2430,14 +2452,15 @@
       "ThreadPoolExecutor-139_0": 1,
       "Thread-2 (monitor)": 1,
       "ThreadPoolExecutor-156_0": 1,
-      "ThreadPoolExecutor-3_0": 1
+      "ThreadPoolExecutor-3_0": 1,
+      "ThreadPoolExecutor-0_0": 1
     },
     "stats": {
       "api_throttles": 0,
       "api_naver_fallbacks": 0,
       "ai_429_retries": 0,
       "ai_backup_fallbacks": 0,
-      "ai_parse_failures": 5,
+      "ai_parse_failures": 6,
       "quant_overrides": 0,
       "order_unfilled_revises": 0,
       "circuit_breaker_trips": 0,
@@ -2550,7 +2573,7 @@
     }
   ],
   "kis_system": {
-    "name": "한투 실전 AI 자율 운용 계좌 (10154692)",
+    "name": "한투 500만 원 AI 자율 매매 펀드",
     "mode": "100% 오토파일럿 (Full Autonomous Trading)",
     "budget_limit": 2500000,
     "frozen_reserve": 0,
