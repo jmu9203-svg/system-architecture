@@ -314,8 +314,8 @@
     </div>
     <div class="accordion-content">
       <div class="param-row">
-        <span class="param-label">1️⃣ 백그라운드 스레드 심장박동</span>
-        <span class="param-val" style="color:var(--green);" id="wdThreadStatus">🟢 모든 스레드 정상 박동 중</span>
+        <span class="param-label">1️⃣ 4대 백그라운드 스레드 심장박동 (한투 메인·토스 대화형·스케줄러·5분 감시망)</span>
+        <span class="param-val" style="color:var(--green);" id="wdThreadStatus">🟢 4대 스레드 정상 박동 중</span>
       </div>
       <div class="param-row">
         <span class="param-label">2️⃣ 일일 비정상 손실 서킷 브레이커 (-3.5% 한도)</span>
@@ -698,12 +698,24 @@
         </div>
       </div>
 
+      <div class="guard-box" style="border-left: 3px solid #38bdf8;">
+        <div class="guard-title" style="color: #38bdf8;">📐 정통 Welles Wilder RMA 방식 14일 RSI 퀀트 알고리즘</div>
+        <p style="color: var(--text-sub); line-height: 1.5; margin-bottom: 4px;">
+          단순 14일 이동평균(SMA) 절단 방식 대신 블룸버그/트레이딩뷰 및 백테스트 2.0 엔진과 100% 일치하는 <b>정통 Welles Wilder Running Moving Average (RMA) 지수 평활 방식</b>을 적용합니다.
+        </p>
+        <div style="font-size: 11px; background: rgba(0,0,0,0.3); padding: 6px 8px; border-radius: 6px; line-height: 1.6;">
+          • <b>수학적 점화식</b>: <code>RMA_t = (RMA_{t-1} × 13 + Change_t) / 14</code><br>
+          • <b>과매도(눌림목) 타점</b>: <b>RSI ≤ 30</b> (우량주 분할 매수 진입 타점)<br>
+          • <b>과열(차익실현) 타점</b>: <b>RSI ≥ 68~70</b> (분할 익절 트레일링 가동)
+        </div>
+      </div>
+
       <div class="guard-box" style="border-left: 3px solid #f472b6;">
         <div class="guard-title" style="color: #f472b6;">5️⃣ 제도권 금융사(자산운용사) 4대 기관급 리스크·성과 아키텍처</div>
         <div style="font-size: 11px; background: rgba(0,0,0,0.3); padding: 6px 8px; border-radius: 6px; line-height: 1.6;">
           • <b>🗂️ 동일 섹터(업종) 50%(250만 원) 캡</b>: 반도체·자동차·금융 등 단일 업종 몰빵 원천 차단<br>
           • <b>🎯 사후 복기(Post-Trade Attribution)</b>: AI 예측과 실제 등락 대조해 종목별 적중률 채점<br>
-          • <b>⏳ 왕복 거래비용(0.35%) 차감 &amp; 당일 워시트레이드 금지</b>: 세후 순수익 기준 익절 및 당일 단타 변심 매도 차단<br>
+          • <b>⏳ 차등 퀀트 마찰비용 모델링</b>: 국내주식 0.35% (거래세 0.18%+수수료 0.015%+슬리피지) · 국내 ETF 0.15% · 미국주식 0.18% (통합증거금 SEC 수수료 반영)<br>
           • <b>📈 코스피200 대비 초과수익(α) &amp; 최대낙폭(MDD)</b>: 단순 수익률이 아닌 시장 대비 초과 성과 5분 주기 추적
         </div>
       </div>
@@ -920,6 +932,10 @@
       <div id="rotationSummaryBox" style="background: rgba(59, 130, 246, 0.08); border: 1px solid rgba(59, 130, 246, 0.25); border-radius: 8px; padding: 8px 10px; margin-bottom: 8px; font-size: 11px; line-height: 1.6;">
         <div>🌐 <b>마스터 풀 30선 스캔 대기 중</b> — 명령어 <code>/rotate</code> 또는 매일 아침 자동 실행</div>
       </div>
+      <div style="font-size: 11px; background: rgba(0,0,0,0.3); padding: 6px 8px; border-radius: 6px; line-height: 1.6; margin-bottom: 8px;">
+        • <b>🚫 거래정지 &amp; 0거래량 무조건 실격 필터</b>: 장중 거래정지, 감자/합병, 유동성 결핍 종목은 퀀트 점수 0점 처리하여 매수 후보군에서 사전 원천 배제<br>
+        • <b>🤖 Gemini + Groq 120B / Qwen 듀얼 자동 폴백 리서치</b>: 빅테크 장애 시에도 초고속 LPU 엔진이 중단 없이 심층 분석 유지
+      </div>
       <div class="watch-grid" id="watchGrid">
         <!-- 동적 렌더링 -->
       </div>
@@ -949,6 +965,12 @@
       <div>• <code style="color: #38bdf8; font-weight: 700;">/toss</code> (또는 <code>리포트</code>) : 토스 실전 계좌 전 종목 AI 타점 진단 &amp; 예수금 브리핑</div>
       <div>• <code style="color: #60a5fa; font-weight: 700;">"메리츠 1주 사줘"</code> (또는 <code>/buy 메리츠 1</code>) : 🛒 <b>토스증권 대화형 수동 매매 (2중 확인 버튼)</b></div>
       <div>• <code style="color: #ef4444; font-weight: 700;">"삼전 1주 팔아줘"</code> (또는 <code>/sell 삼전 1</code>) : 🛒 <b>토스증권 대화형 수동 매도 (2중 확인 버튼)</b></div>
+      <div>• <code style="color: #38bdf8; font-weight: 700;">/calendar</code> (또는 <code>/휴장일</code>) : 📅 한·미 증시 실시간 개장/휴장일, 운영시간, 서머타임(DST) 조회</div>
+      <div>• <code style="color: #f59e0b; font-weight: 700;">/warning [종목]</code> (또는 <code>/경고</code>) : ⚠️ 토스증권 투자경고/위험/관리/거래정지 레이더 즉시 확인</div>
+      <div>• <code style="color: #34d399; font-weight: 700;">/orders</code> (또는 <code>/체결내역</code>) : 📋 토스증권 당일 체결 및 대기 주문 현황 실시간 조회</div>
+      <div>• <code style="color: #818cf8; font-weight: 700;">/friction [종목] [수량]</code> (또는 <code>/수수료</code>) : 🛡️ 실시간 매도가능수량 및 제세공과금·수수료 사전 계산</div>
+      <div>• <code style="color: #38bdf8; font-weight: 700;">/screen</code> (또는 <code>/스크리너</code>) : 🔍 코스피/코스닥 20일선 지지 + Wilder RSI 눌림목 퀀트 발굴</div>
+      <div>• <code style="color: #a78bfa; font-weight: 700;">/backtest</code> (또는 <code>/백테스트</code>) : 📊 5개년 누적 성과 백테스트 실행 및 CAGR/MDD/샤프지수 리포트</div>
       <div>• <code style="color: #38bdf8; font-weight: 700;">/rotate</code> (또는 <code>주도주</code>) : 한·미 우량주·미국ETF 30선 실시간 수급 스캔 &amp; 감시종목 자동 교체</div>
       <div>• <code style="color: #fb7185; font-weight: 700;">/audit</code> (또는 <code>검증</code>) : 5대 입력 팩트 vs 파이썬 정량 점수 vs AI 점수 1:1 대조 감사표</div>
       <div>• <code style="color: #34d399; font-weight: 700;">/research</code> : 휴장시간 미국 빅테크 &amp; 종목별 실적발표(어닝) 사전 리서치 즉시 실행</div>
