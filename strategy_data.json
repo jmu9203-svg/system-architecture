@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07 16:06:24",
+  "updated_at": "2026-11-07 16:17:11",
   "battery": "52% (🔋 배터리 사용 중, 20.5°C)",
   "market_intel": {
     "updated_at": "2026-11-06 08:30:03",
@@ -211,12 +211,12 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-07 16:05:43",
-    "checked_ts": 1794035143,
+    "checked_at": "2026-11-07 16:16:30",
+    "checked_ts": 1794035790,
     "date": "2026-11-07",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
-    "scheduler_heartbeat_sec_ago": 12,
+    "scheduler_heartbeat_sec_ago": 9,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2500000,
     "market_opened_today": false,
@@ -2292,16 +2292,18 @@
     "has_data": true,
     "file_name": "flight_log_2026-11-07.jsonl",
     "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-07.jsonl",
-    "period": "2026-11-07 02:56:24 ~ 2026-11-07 11:14:16",
+    "period": "2026-11-07 02:56:24 ~ 2026-11-07 16:16:28",
     "commit_hash": "v2.0-live",
-    "total_events": 3,
+    "total_events": 4,
     "error_count": 3,
     "warn_count": 0,
     "level_counts": {
-      "ERROR": 3
+      "ERROR": 3,
+      "INFO": 1
     },
     "categories": {
-      "AI_PARSE": 3
+      "AI_PARSE": 3,
+      "KIS_API": 1
     },
     "top_errors": [
       {
@@ -2381,7 +2383,8 @@
     "thread_distribution": {
       "ThreadPoolExecutor-108_0": 1,
       "ThreadPoolExecutor-136_0": 1,
-      "ThreadPoolExecutor-139_0": 1
+      "ThreadPoolExecutor-139_0": 1,
+      "Thread-2 (monitor)": 1
     },
     "stats": {
       "api_throttles": 0,
