@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07 22:16:34",
+  "updated_at": "2026-11-07 22:22:07",
   "battery": "39% (🔋 배터리 사용 중, 20.6°C)",
   "market_intel": {
     "updated_at": "2026-11-06 08:30:03",
@@ -211,12 +211,12 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-07 22:15:52",
-    "checked_ts": 1794057352,
+    "checked_at": "2026-11-07 22:21:16",
+    "checked_ts": 1794057676,
     "date": "2026-11-07",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
-    "scheduler_heartbeat_sec_ago": 20,
+    "scheduler_heartbeat_sec_ago": 0,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2500000,
     "market_opened_today": false,
@@ -242,7 +242,7 @@
     "battery_pct": 39,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
-      "✅ 4,500만 원 동결금 및 500만 원 시드 분리 무결성 정상",
+      "✅ 실전 계좌 예수금 및 자산 무결성 정상 (실시간 100% 연동)",
       "✅ 손절/익절 가드레일 누락 착오 0건"
     ],
     "anomaly_count": 0,
@@ -2573,7 +2573,7 @@
     }
   ],
   "kis_system": {
-    "name": "한투 500만 원 AI 자율 매매 펀드",
+    "name": "한투 실전 AI 자율 운용 계좌 (10154692)",
     "mode": "100% 오토파일럿 (Full Autonomous Trading)",
     "budget_limit": 2500000,
     "frozen_reserve": 0,
