@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-08 00:44:45",
-  "battery": "33% (🔋 배터리 사용 중, 22.9°C)",
+  "updated_at": "2026-11-08 00:56:08",
+  "battery": "32% (🔋 배터리 사용 중, 22.5°C)",
   "market_intel": {
     "updated_at": "2026-11-06 08:30:03",
     "fx_soxx_info": {
@@ -211,12 +211,12 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-08 00:43:37",
-    "checked_ts": 1794066217,
+    "checked_at": "2026-11-08 00:55:01",
+    "checked_ts": 1794066901,
     "date": "2026-11-08",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 모든 스레드 정상 박동 중",
-    "scheduler_heartbeat_sec_ago": 2,
+    "scheduler_heartbeat_sec_ago": 10,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2500000,
     "market_opened_today": false,
@@ -238,8 +238,8 @@
     "circuit_breaker_limit_pct": -3.5,
     "circuit_breaker_tripped": false,
     "circuit_breaker_reason": "",
-    "battery_str": "33% (🔋 배터리 사용 중, 22.9°C)",
-    "battery_pct": 33,
+    "battery_str": "32% (🔋 배터리 사용 중, 22.5°C)",
+    "battery_pct": 32,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
       "✅ 4,500만 원 동결금 및 500만 원 시드 분리 무결성 정상",
@@ -2292,109 +2292,21 @@
     "has_data": true,
     "file_name": "flight_log_2026-11-08.jsonl",
     "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-08.jsonl",
-    "period": "2026-11-08 00:10:01 ~ 2026-11-08 00:44:11",
+    "period": "2026-11-08 00:10:01 ~ 2026-11-08 00:55:34",
     "commit_hash": "v2.0-live",
-    "total_events": 66,
-    "error_count": 21,
-    "warn_count": 45,
+    "total_events": 79,
+    "error_count": 25,
+    "warn_count": 54,
     "level_counts": {
-      "CRITICAL": 20,
-      "WARN": 45,
+      "CRITICAL": 24,
+      "WARN": 54,
       "ERROR": 1
     },
     "categories": {
-      "KIS_API": 65,
+      "KIS_API": 78,
       "AI_PARSE": 1
     },
     "top_errors": [
-      {
-        "ts": "2026-11-08 00:21:47",
-        "ver": "v2.0-live",
-        "thread": "Thread-2 (monitor)",
-        "loc": "test_connection.py:384 in get_balance()",
-        "lvl": "CRITICAL",
-        "cat": "KIS_API",
-        "msg": "증권사 API 에러: [EGW00123] 기간이 만료된 token 입니다. (/uapi/domestic-stock/v1/trading/inquire-balance)",
-        "error_type": "",
-        "error_str": "",
-        "raw_snippet": "",
-        "msg_cd": "EGW00123",
-        "ctx": {
-          "attempt": 4,
-          "broker": "KIS",
-          "endpoint": "/uapi/domestic-stock/v1/trading/inquire-balance",
-          "msg_cd": "EGW00123",
-          "msg1": "기간이 만료된 token 입니다.",
-          "rt_cd": "1",
-          "http_status": 500
-        }
-      },
-      {
-        "ts": "2026-11-08 00:23:12",
-        "ver": "v2.0-live",
-        "thread": "ThreadPoolExecutor-4_0",
-        "loc": "ai_analyst.py:97 in _call_single_gemini_api()",
-        "lvl": "ERROR",
-        "cat": "AI_PARSE",
-        "msg": "[Google:gemini-3.5-flash-lite] LLM 응답 JSON 파싱 실패",
-        "error_type": "JSONDecodeError",
-        "error_str": "Unterminated string starting at: line 4 column 13 (char 49)",
-        "raw_snippet": "{\n  \"decision\": \"매수\",\n  \"score\": 88,\n  \"reason\": \"",
-        "msg_cd": null,
-        "ctx": {
-          "provider": "Google",
-          "model": "gemini-3.5-flash-lite",
-          "raw_snippet": "{\n  \"decision\": \"매수\",\n  \"score\": 88,\n  \"reason\": \"",
-          "raw_length": 50,
-          "error_type": "JSONDecodeError",
-          "error_str": "Unterminated string starting at: line 4 column 13 (char 49)",
-          "traceback": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/ai_analyst.py\", line 89, in _call_single_gemini_api\n    d = json.loads(text, strict=False)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/__init__.py\", line 365, in loads\n    return cls(**kw).decode(s)\n           ~~~~~~~~~~~~~~~~^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 361, in raw_decode\n    obj, end = self.scan_once(s, idx)\n               ~~~~~~~~~~~~~~^^^^^^^^\njson.decoder.JSONDecodeError: Unterminated string starting at: line 4 column 13 (char 49)\n"
-        }
-      },
-      {
-        "ts": "2026-11-08 00:31:55",
-        "ver": "v2.0-live",
-        "thread": "Thread-2 (monitor)",
-        "loc": "test_connection.py:384 in get_balance()",
-        "lvl": "CRITICAL",
-        "cat": "KIS_API",
-        "msg": "증권사 API 에러: [EGW00123] 기간이 만료된 token 입니다. (/uapi/domestic-stock/v1/trading/inquire-balance)",
-        "error_type": "",
-        "error_str": "",
-        "raw_snippet": "",
-        "msg_cd": "EGW00123",
-        "ctx": {
-          "attempt": 1,
-          "broker": "KIS",
-          "endpoint": "/uapi/domestic-stock/v1/trading/inquire-balance",
-          "msg_cd": "EGW00123",
-          "msg1": "기간이 만료된 token 입니다.",
-          "rt_cd": "1",
-          "http_status": 500
-        }
-      },
-      {
-        "ts": "2026-11-08 00:31:57",
-        "ver": "v2.0-live",
-        "thread": "Thread-2 (monitor)",
-        "loc": "test_connection.py:384 in get_balance()",
-        "lvl": "CRITICAL",
-        "cat": "KIS_API",
-        "msg": "증권사 API 에러: [EGW00123] 기간이 만료된 token 입니다. (/uapi/domestic-stock/v1/trading/inquire-balance)",
-        "error_type": "",
-        "error_str": "",
-        "raw_snippet": "",
-        "msg_cd": "EGW00123",
-        "ctx": {
-          "attempt": 2,
-          "broker": "KIS",
-          "endpoint": "/uapi/domestic-stock/v1/trading/inquire-balance",
-          "msg_cd": "EGW00123",
-          "msg1": "기간이 만료된 token 입니다.",
-          "rt_cd": "1",
-          "http_status": 500
-        }
-      },
       {
         "ts": "2026-11-08 00:31:59",
         "ver": "v2.0-live",
@@ -2526,12 +2438,100 @@
           "rt_cd": "1",
           "http_status": 500
         }
+      },
+      {
+        "ts": "2026-11-08 00:54:49",
+        "ver": "v2.0-live",
+        "thread": "Thread-2 (monitor)",
+        "loc": "test_connection.py:384 in get_balance()",
+        "lvl": "CRITICAL",
+        "cat": "KIS_API",
+        "msg": "증권사 API 에러: [EGW00123] 기간이 만료된 token 입니다. (/uapi/domestic-stock/v1/trading/inquire-balance)",
+        "error_type": "",
+        "error_str": "",
+        "raw_snippet": "",
+        "msg_cd": "EGW00123",
+        "ctx": {
+          "attempt": 1,
+          "broker": "KIS",
+          "endpoint": "/uapi/domestic-stock/v1/trading/inquire-balance",
+          "msg_cd": "EGW00123",
+          "msg1": "기간이 만료된 token 입니다.",
+          "rt_cd": "1",
+          "http_status": 500
+        }
+      },
+      {
+        "ts": "2026-11-08 00:54:50",
+        "ver": "v2.0-live",
+        "thread": "Thread-2 (monitor)",
+        "loc": "test_connection.py:384 in get_balance()",
+        "lvl": "CRITICAL",
+        "cat": "KIS_API",
+        "msg": "증권사 API 에러: [EGW00123] 기간이 만료된 token 입니다. (/uapi/domestic-stock/v1/trading/inquire-balance)",
+        "error_type": "",
+        "error_str": "",
+        "raw_snippet": "",
+        "msg_cd": "EGW00123",
+        "ctx": {
+          "attempt": 2,
+          "broker": "KIS",
+          "endpoint": "/uapi/domestic-stock/v1/trading/inquire-balance",
+          "msg_cd": "EGW00123",
+          "msg1": "기간이 만료된 token 입니다.",
+          "rt_cd": "1",
+          "http_status": 500
+        }
+      },
+      {
+        "ts": "2026-11-08 00:54:53",
+        "ver": "v2.0-live",
+        "thread": "Thread-2 (monitor)",
+        "loc": "test_connection.py:384 in get_balance()",
+        "lvl": "CRITICAL",
+        "cat": "KIS_API",
+        "msg": "증권사 API 에러: [EGW00123] 기간이 만료된 token 입니다. (/uapi/domestic-stock/v1/trading/inquire-balance)",
+        "error_type": "",
+        "error_str": "",
+        "raw_snippet": "",
+        "msg_cd": "EGW00123",
+        "ctx": {
+          "attempt": 3,
+          "broker": "KIS",
+          "endpoint": "/uapi/domestic-stock/v1/trading/inquire-balance",
+          "msg_cd": "EGW00123",
+          "msg1": "기간이 만료된 token 입니다.",
+          "rt_cd": "1",
+          "http_status": 500
+        }
+      },
+      {
+        "ts": "2026-11-08 00:54:56",
+        "ver": "v2.0-live",
+        "thread": "Thread-2 (monitor)",
+        "loc": "test_connection.py:384 in get_balance()",
+        "lvl": "CRITICAL",
+        "cat": "KIS_API",
+        "msg": "증권사 API 에러: [EGW00123] 기간이 만료된 token 입니다. (/uapi/domestic-stock/v1/trading/inquire-balance)",
+        "error_type": "",
+        "error_str": "",
+        "raw_snippet": "",
+        "msg_cd": "EGW00123",
+        "ctx": {
+          "attempt": 4,
+          "broker": "KIS",
+          "endpoint": "/uapi/domestic-stock/v1/trading/inquire-balance",
+          "msg_cd": "EGW00123",
+          "msg1": "기간이 만료된 token 입니다.",
+          "rt_cd": "1",
+          "http_status": 500
+        }
       }
     ],
     "top_code_locations": [
       [
         "test_connection.py:384 in get_balance()",
-        20
+        24
       ],
       [
         "ai_analyst.py:97 in _call_single_gemini_api()",
@@ -2541,11 +2541,11 @@
     "top_api_codes": [
       [
         "EGW00123",
-        20
+        24
       ]
     ],
     "thread_distribution": {
-      "Thread-2 (monitor)": 65,
+      "Thread-2 (monitor)": 78,
       "ThreadPoolExecutor-4_0": 1
     },
     "stats": {
