@@ -247,7 +247,7 @@
   <!-- Quick Filter Pills (Scroll Reduction Tool) -->
   <div class="filter-pills-bar">
     <button class="pill-btn" id="pill-all" onclick="openSingleSection('all')">전체 펼치기</button>
-    <button class="pill-btn" id="pill-api" onclick="openSingleSection('acc-api')">📡 8대 API 상태</button>
+    <button class="pill-btn" id="pill-api" onclick="openSingleSection('acc-api')">📡 9대 API 상태</button>
     <button class="pill-btn" id="pill-watchdog" onclick="openSingleSection('acc-watchdog')">🩺 자체 감시견</button>
     <button class="pill-btn" id="pill-flight" onclick="openSingleSection('acc-flight')">✈️ 비행기 블랙박스</button>
     <button class="pill-btn" id="pill-tracks" onclick="openSingleSection('acc-tracks')">⚖️ 2대 운용축</button>
@@ -269,25 +269,25 @@
   </div>
 
   <!-- ========================================================
-       ACCORDION SECTION 0: 실시간 8대 API 통신망 & 통합 관제 매트릭스 (NEW!)
+       ACCORDION SECTION 0: 실시간 9대 API 통신망 & 통합 관제 매트릭스 (NEW!)
        ======================================================== -->
   <div class="accordion-item" id="acc-api">
     <div class="accordion-header" onclick="toggleAccordion('acc-api')">
       <div class="accordion-title-wrap">
         <span class="accordion-icon">📡</span>
         <div>
-          <div class="accordion-title">실시간 8대 API 통신망 &amp; 통합 관제 매트릭스</div>
-          <div class="accordion-sub">증권사 듀얼 API · 빅테크 3사 AI · 텔레그램 · 클라우드 실시간 상태</div>
+          <div class="accordion-title">실시간 9대 API 통신망 &amp; 통합 관제 매트릭스</div>
+          <div class="accordion-sub">증권사 듀얼 API · 빅테크 3사 AI · 금감원 DART · 텔레그램 · 클라우드 실시간 상태</div>
         </div>
       </div>
       <div class="accordion-right">
-        <span class="accordion-badge" style="background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.4);" id="apiSummaryBadge">8/8 정상 가동</span>
+        <span class="accordion-badge" style="background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.4);" id="apiSummaryBadge">9/9 정상 가동</span>
         <span class="accordion-chevron">▾</span>
       </div>
     </div>
     <div class="accordion-content">
       <p style="font-size: 12px; color: var(--text-sub); line-height: 1.5; margin-bottom: 8px;">
-        시스템 전 영역에 걸쳐 사용 중인 8개 외부 API의 실시간 가동 상태, 보안 격리 쿼터, 운영 모드 및 안전장치를 한눈에 모니터링합니다.
+        시스템 전 영역에 걸쳐 사용 중인 9개 외부 API의 실시간 가동 상태, 보안 격리 쿼터, 운영 모드 및 안전장치를 한눈에 모니터링합니다.
       </p>
       <div class="api-grid" id="apiMatrixGrid">
         <!-- 동적 렌더링 -->
@@ -989,7 +989,8 @@
       <div>• <code style="color: var(--green); font-weight: 700;">/battery</code> : 공기계 홈서버 배터리 잔량 및 충전 상태 즉시 확인</div>
       <div>• <code style="color: #38bdf8; font-weight: 700;">/log</code> (또는 <code>/logs</code>, <code>/weekly_log</code>, <code>/블랙박스</code>) : ✈️ <b>1주일치 비행기 블랙박스 진단 리포트 + 원본 로그 파일(.jsonl) 즉시 추출</b></div>
       <div>• <code style="color: #67e8f9; font-weight: 700;">/log_summary</code> (또는 <code>/로그요약</code>) : ✈️ 파일 다운로드 없이 주간 에러·경고 통계 요약표 즉시 열람</div>
-      <div>• <code style="color: #38bdf8; font-weight: 700;">/env</code> : 8대 API 키(Groq·OpenRouter·Gemini Chat 등) 및 환경변수 원격 진단</div>
+      <div>• <code style="color: #38bdf8; font-weight: 700;">/dart [종목]</code> (또는 <code>/공시</code>) : 📋 <b>금융감독원 Open DART 전자공시(실적·배당·유상증자·CB) 실시간 원문 조회</b></div>
+      <div>• <code style="color: #38bdf8; font-weight: 700;">/env</code> : 9대 API 키(한투·토스·DART·Groq·Gemini 등) 및 환경변수 원격 진단</div>
       <div>• <code style="color: #a78bfa; font-weight: 700;">/set_env &lt;KEY&gt; &lt;VAL&gt;</code> : 공기계 홈서버 .env 환경변수 무선 원격 등록 &amp; 즉시 적용</div>
       <div>• <code style="color: #c4b5fd; font-weight: 700;">/update</code> : GitHub 비공개 저장소 최신 코드 무선 원격 다운로드 &amp; 자동 재시작</div>
     </div>
