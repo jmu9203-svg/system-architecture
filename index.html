@@ -591,8 +591,8 @@
           <div class="track-header">
             <span style="font-size: 16px;">💙</span>
             <div>
-              <h3 style="font-size: 14px;">토스 실전 AI 비서 &amp; 수동매매</h3>
-              <span style="font-size: 11px; color: #60a5fa; font-weight: 700;">대화형 승인 주문 (User-Authorized)</span>
+              <h3 style="font-size: 14px;">토스 실전 AI 비서 &amp; 100% 자율 매매</h3>
+              <span style="font-size: 11px; color: #60a5fa; font-weight: 700;">100% 완전 자율 매매 (Option B)</span>
             </div>
           </div>
           <div class="param-row">
@@ -600,12 +600,20 @@
             <span class="param-val" id="tossAccountNo">17601069723</span>
           </div>
           <div class="param-row">
-            <span class="param-label">무단 자동 매매 차단</span>
-            <span class="param-val" style="color: var(--green);">0% 원천 동결 (무단매매 0건)</span>
+            <span class="param-label">운용 모드</span>
+            <span class="param-val" style="color: var(--green);" id="tossModeVal">⚡ 100% 완전 자율 매매 (Option B)</span>
           </div>
           <div class="param-row">
-            <span class="param-label">대화형 수동 매매</span>
-            <span class="param-val" style="color: #60a5fa;">자연어 명령 ➡️ 2중 승인 발주</span>
+            <span class="param-label">안전 예수금 마지노선</span>
+            <span class="param-val" style="color: var(--gold);">500,000원 (미만 시 매수 절대 차단)</span>
+          </div>
+          <div class="param-row">
+            <span class="param-label">당일 최대 매수 한도</span>
+            <span class="param-val" style="color: #60a5fa;">1,700,000원 상한 가드</span>
+          </div>
+          <div class="param-row">
+            <span class="param-label">대화형 수동 매매 병행</span>
+            <span class="param-val" style="color: #60a5fa;">자연어 명령 ➡️ 2중 확인 주문 지원</span>
           </div>
           <div class="param-row">
             <span class="param-label">개발 PC 안전 가드</span>
@@ -963,6 +971,9 @@
       <div>• <code style="color: var(--gold); font-weight: 700;">/report</code> : 한투 실전 계좌(국내+미국) AI 분석 &amp; 자율 매매 리포트</div>
           <div>• <code style="color: var(--gold); font-weight: 700;">/sync</code> (또는 <code style="color: var(--gold); font-weight: 700;">/site</code>, <code style="color: var(--gold); font-weight: 700;">사이트</code>, <code style="color: var(--gold); font-weight: 700;">동기화</code>) : 4대 대시보드 실시간 잔고 원클릭 초고속 동기화</div>
       <div>• <code style="color: #38bdf8; font-weight: 700;">/toss</code> (또는 <code>리포트</code>) : 토스 실전 계좌 전 종목 AI 타점 진단 &amp; 예수금 브리핑</div>
+      <div>• <code style="color: #38bdf8; font-weight: 700;">/toss_auto [on/off]</code> (또는 <code>/토스자율</code>) : ⚡ <b>토스증권 100% 완전 자율 매매 모드(옵션 B) ON/OFF 원격 전환 &amp; 상태 확인</b></div>
+      <div>• <code style="color: #60a5fa; font-weight: 700;">/plan</code> (또는 <code>/전략</code>, <code>/마스터플랜</code>) : 📋 토스 마스터플랜(471.8만 원) 정량 타점 및 감시 상태 리포트</div>
+      <div>• <code style="color: #34d399; font-weight: 700;">/unlock [스텝]</code> / <code style="color: #ef4444; font-weight: 700;">/lock [스텝]</code> : 🔓🔒 특정 스텝 수동 해제 / 잠금</div>
       <div>• <code style="color: #60a5fa; font-weight: 700;">"메리츠 1주 사줘"</code> (또는 <code>/buy 메리츠 1</code>) : 🛒 <b>토스증권 대화형 수동 매매 (2중 확인 버튼)</b></div>
       <div>• <code style="color: #ef4444; font-weight: 700;">"삼전 1주 팔아줘"</code> (또는 <code>/sell 삼전 1</code>) : 🛒 <b>토스증권 대화형 수동 매도 (2중 확인 버튼)</b></div>
       <div>• <code style="color: #38bdf8; font-weight: 700;">/calendar</code> (또는 <code>/휴장일</code>) : 📅 한·미 증시 실시간 개장/휴장일, 운영시간, 서머타임(DST) 조회</div>
