@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08 15:25:09",
+  "updated_at": "2026-11-08 15:36:37",
   "battery": "85% (⚡ 충전 중, 21.6°C)",
   "market_intel": {
     "updated_at": "2026-11-06 08:30:03",
@@ -211,13 +211,13 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-08 15:24:09",
-    "checked_ts": 1794119049,
+    "checked_at": "2026-11-08 15:35:32",
+    "checked_ts": 1794119732,
     "date": "2026-11-08",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 4대 스레드(메인·토스·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 14,
-    "toss_bot_sec_ago": 14,
+    "main_bot_sec_ago": 0,
+    "toss_bot_sec_ago": 2,
     "scheduler_heartbeat_sec_ago": 0,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2500000,
@@ -244,7 +244,7 @@
     "battery_pct": 85,
     "api_status": "한투 API: 🔴 점검필요 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
-      "✅ 실전 계좌 예수금 및 자산 무결성 정상 (실시간 100% 연동)",
+      "✅ 4,500만 원 동결금 및 500만 원 시드 분리 무결성 정상",
       "✅ 손절/익절 가드레일 누락 착오 0건"
     ],
     "anomaly_count": 0,
@@ -2294,46 +2294,24 @@
     "has_data": true,
     "file_name": "flight_log_2026-11-08.jsonl",
     "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-08.jsonl",
-    "period": "2026-11-08 00:10:01 ~ 2026-11-08 15:24:36",
+    "period": "2026-11-08 00:10:01 ~ 2026-11-08 15:36:00",
     "commit_hash": "v2.0-live",
-    "total_events": 1035,
-    "error_count": 346,
-    "warn_count": 689,
+    "total_events": 1062,
+    "error_count": 358,
+    "warn_count": 704,
     "level_counts": {
       "CRITICAL": 336,
-      "WARN": 689,
-      "ERROR": 10
+      "WARN": 704,
+      "ERROR": 22
     },
     "categories": {
-      "KIS_API": 1033,
+      "KIS_API": 1060,
       "AI_PARSE": 1,
       "AI_ENSEMBLE": 1
     },
     "top_errors": [
       {
-        "ts": "2026-11-08 15:12:51",
-        "ver": "v2.0-live",
-        "thread": "Thread-2 (monitor)",
-        "loc": "test_connection.py:384 in get_balance()",
-        "lvl": "CRITICAL",
-        "cat": "KIS_API",
-        "msg": "증권사 API 에러: [EGW00123] 기간이 만료된 token 입니다. (/uapi/domestic-stock/v1/trading/inquire-balance)",
-        "error_type": "",
-        "error_str": "",
-        "raw_snippet": "",
-        "msg_cd": "EGW00123",
-        "ctx": {
-          "attempt": 4,
-          "broker": "KIS",
-          "endpoint": "/uapi/domestic-stock/v1/trading/inquire-balance",
-          "msg_cd": "EGW00123",
-          "msg1": "기간이 만료된 token 입니다.",
-          "rt_cd": "1",
-          "http_status": 500
-        }
-      },
-      {
-        "ts": "2026-11-08 15:24:09",
+        "ts": "2026-11-08 15:35:15",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:141 in get_access_token()",
@@ -2349,7 +2327,7 @@
         }
       },
       {
-        "ts": "2026-11-08 15:24:10",
+        "ts": "2026-11-08 15:35:32",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:141 in get_access_token()",
@@ -2365,7 +2343,7 @@
         }
       },
       {
-        "ts": "2026-11-08 15:24:10",
+        "ts": "2026-11-08 15:35:33",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:141 in get_access_token()",
@@ -2381,7 +2359,7 @@
         }
       },
       {
-        "ts": "2026-11-08 15:24:27",
+        "ts": "2026-11-08 15:35:34",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:141 in get_access_token()",
@@ -2397,7 +2375,7 @@
         }
       },
       {
-        "ts": "2026-11-08 15:24:29",
+        "ts": "2026-11-08 15:35:51",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:141 in get_access_token()",
@@ -2413,7 +2391,7 @@
         }
       },
       {
-        "ts": "2026-11-08 15:24:31",
+        "ts": "2026-11-08 15:35:53",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:141 in get_access_token()",
@@ -2429,7 +2407,7 @@
         }
       },
       {
-        "ts": "2026-11-08 15:24:33",
+        "ts": "2026-11-08 15:35:54",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:141 in get_access_token()",
@@ -2445,7 +2423,7 @@
         }
       },
       {
-        "ts": "2026-11-08 15:24:34",
+        "ts": "2026-11-08 15:35:56",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:141 in get_access_token()",
@@ -2461,7 +2439,23 @@
         }
       },
       {
-        "ts": "2026-11-08 15:24:36",
+        "ts": "2026-11-08 15:35:58",
+        "ver": "v2.0-live",
+        "thread": "Thread-2 (monitor)",
+        "loc": "test_connection.py:141 in get_access_token()",
+        "lvl": "ERROR",
+        "cat": "KIS_API",
+        "msg": "한투 REAL 토큰 발급 실패 (HTTP 403)",
+        "error_type": "",
+        "error_str": "",
+        "raw_snippet": "",
+        "msg_cd": null,
+        "ctx": {
+          "response": "{\"error_code\":\"EGW00103\",\"error_description\":\"유효하지 않은 AppKey입니다.\"}"
+        }
+      },
+      {
+        "ts": "2026-11-08 15:36:00",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:141 in get_access_token()",
@@ -2484,7 +2478,7 @@
       ],
       [
         "test_connection.py:141 in get_access_token()",
-        9
+        21
       ],
       [
         "ai_analyst.py:97 in _call_single_gemini_api()",
@@ -2498,7 +2492,7 @@
       ]
     ],
     "thread_distribution": {
-      "Thread-2 (monitor)": 1033,
+      "Thread-2 (monitor)": 1060,
       "ThreadPoolExecutor-4_0": 1,
       "ThreadPoolExecutor-14_0": 1
     },
@@ -2524,7 +2518,8 @@
         "14:30-15:15"
       ],
       "auto_execute_after_minutes": 15,
-      "enable_timeout_auto_exec": false
+      "enable_timeout_auto_exec": false,
+      "auto_trade": true
     },
     "daily_stats": {
       "date": "2026-11-07",
@@ -2548,6 +2543,7 @@
           "require_intraday_rebound_pct_from_low": 1.2
         },
         "rationale": "보유 1주(평단 171만원) 상태에서 110만~115.5만원 구간 아랫꼬리 지지(+1.2% 이상 반등) 확인 시 딱 1주 추매하여 평단가를 142만~143만원대로 인하",
+        "signal_state": null,
         "last_executed_at": "2026-11-07T23:43:49.982974"
       },
       {
@@ -2651,8 +2647,8 @@
       "category": "Brokerage & Orders",
       "status_badge": "🟢 토큰 연동 (Active)",
       "status_color": "#10b981",
-      "role": "토스 실전 계좌 보유종목, 예수금 잔고 분석, 대화형 수동 매매 주문 (POST /orders)",
-      "mode": "대화형 승인 수동 주문 (무단 자동매매 0% 동결)",
+      "role": "토스 실전 계좌 보유종목, 예수금 잔고 분석, 100% 완전 자율 매매 (Option B) & 대화형 주문 (POST /orders)",
+      "mode": "100% 완전 자율 매매 가동 (예수금 50만 원 하한선 보호)",
       "quota": "자택 공인 IP 인가 / Windows 개발 PC 시뮬레이션 가드"
     },
     {
@@ -2723,7 +2719,7 @@
     }
   ],
   "kis_system": {
-    "name": "한투 실전 AI 자율 운용 계좌 (10154692)",
+    "name": "한투 500만 원 AI 자율 매매 펀드",
     "mode": "100% 오토파일럿 (Full Autonomous Trading)",
     "budget_limit": 2500000,
     "frozen_reserve": 0,
@@ -2925,25 +2921,33 @@
     "master_universe_size": 30
   },
   "toss_system": {
-    "name": "토스증권 실전 계좌 AI 자문 & 대화형 수동 매매 비서",
+    "name": "토스증권 실전 계좌 AI 자문 & 100% 완전 자율 매매 (Option B)",
     "account_no": "17601069723",
-    "mode": "대화형 스마트 수동 매매 & 자문 (무단 자동매매 0% 영구 차단)",
+    "mode": "100% 완전 자율 매매 가동 (Option B) + 대화형 수동 주문 병행",
     "krw_cash": 4717955,
     "usd_cash": 216.37,
-    "schedule": "평일 10:05 / 14:35 (한투와 5분 시차 분산 스케줄링)",
-    "manual_pipeline": {
+    "schedule": "장중 상시 정량 타점 백그라운드 감시 (10:00~10:35, 14:30~15:15 KST)",
+    "auto_trade": true,
+    "krw_hard_floor": 500000,
+    "daily_max_buy_krw": 1700000,
+    "auto_pipeline": {
+      "auto_trade": true,
+      "krw_hard_floor": 500000,
+      "daily_max_buy_krw": 1700000,
+      "volatility_guard": "09:00~09:59 장초반 변동성 방어 자동 차단",
       "intent_parser": "Gemini 3.5 Flash-Lite + Groq 120B 자연어 주문 의도 파서",
-      "confirmation": "2중 확인 인터랙티브 인라인 카드 발송 (즉시 실행 vs 취소)",
       "safety_guard": "Windows 개발 PC 시뮬레이션(Dry-run) 모드 / 자택 공인 IP 인가",
-      "unauthorized_trade": "0% 영구 차단 (대표님 명시 승인 건만 발주)"
+      "execution_trigger": "마스터플랜 정량 타점 도달 시 4중 가드레일 검증 후 즉시 자동 집행"
     },
     "features": [
-      "무단 자동 매매 0% 차단: 봇이 백그라운드에서 임의로 주식을 매매하지 않음",
-      "대화형 수동 주문 파이프라인: '메리츠 1주 사줘', '삼전 2주 매수해줘' 지시 시 2중 확인 버튼을 통해 안전 발주",
+      "100% 완전 자율 매매 (옵션 B): 텔레그램 확인 없이도 정량 타점 도달 시 즉시 자동 지정가 매수 집행",
+      "예수금 50만원 하한선 보호: 잔여 예수금이 50만원 이하로 침범하는 주문은 100% 자동 차단",
+      "당일 누적 매수 170만원 한도: 과도한 쏠림 방지를 위해 하루 최대 매수 금액 170만원 제한",
+      "장초반(09:00~09:59) 변동성 방어: 뇌동매매 방지를 위해 10:00 이전 마스터플랜 주문 차단",
+      "원격 모드 전환 지원: /toss_auto on / off 명령어로 자율 모드와 수동 모드를 자유롭게 전환",
+      "대화형 수동 주문 병행: '메리츠 1주 사줘', '삼전 2주 매수해줘' 지시 시 2중 확인 카드로 수동 발주 가능",
       "개발 PC IP 보호 안전 가드: 연구실 Windows 환경에서는 실제 호출을 차단하고 Dry-run 시뮬레이션 수행",
       "트랙 간 예외 완벽 격리(Isolation): 토스 세션 만료 시 트랙 1(한투) 영향 0% 및 12시간 쿨다운 조용한 알림",
-      "가용 예수금 기반 현실적 코칭: 현재 예수금으로 살 수 있는 1~3주 단위 분할 물타기/불타기 제시",
-      "1:1 자연어 대화: 텔레그램 방에서 자유 질문 시 실시간 계좌 기반 맞춤 답변",
       "AI 추천 유망주 바스켓: 포트폴리오 빈틈(빅테크, S&P500 지수, 전력인프라) 보완 우량주 추천"
     ],
     "holdings_count": 7,
