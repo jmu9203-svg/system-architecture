@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08 18:43:53",
+  "updated_at": "2026-11-08 18:54:57",
   "battery": "85% (⚡ 충전 중, 21.6°C)",
   "market_intel": {
     "updated_at": "2026-11-06 08:30:03",
@@ -211,14 +211,14 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-08 18:42:50",
-    "checked_ts": 1794130970,
+    "checked_at": "2026-11-08 18:53:58",
+    "checked_ts": 1794131638,
     "date": "2026-11-08",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 4대 스레드(메인·토스·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 0,
-    "toss_bot_sec_ago": 2,
-    "scheduler_heartbeat_sec_ago": 0,
+    "main_bot_sec_ago": 9,
+    "toss_bot_sec_ago": 9,
+    "scheduler_heartbeat_sec_ago": 18,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2500000,
     "market_opened_today": false,
@@ -2294,168 +2294,168 @@
     "has_data": true,
     "file_name": "flight_log_2026-11-08.jsonl",
     "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-08.jsonl",
-    "period": "2026-11-08 00:10:01 ~ 2026-11-08 18:43:17",
+    "period": "2026-11-08 00:10:01 ~ 2026-11-08 18:54:25",
     "commit_hash": "v2.0-live",
-    "total_events": 1385,
-    "error_count": 529,
-    "warn_count": 856,
+    "total_events": 1402,
+    "error_count": 538,
+    "warn_count": 864,
     "level_counts": {
       "CRITICAL": 336,
-      "WARN": 856,
-      "ERROR": 193
+      "WARN": 864,
+      "ERROR": 202
     },
     "categories": {
-      "KIS_API": 1383,
+      "KIS_API": 1400,
       "AI_PARSE": 1,
       "AI_ENSEMBLE": 1
     },
     "top_errors": [
       {
-        "ts": "2026-11-08 18:38:44",
-        "ver": "v2.0-live",
-        "thread": "Thread-2 (monitor)",
-        "loc": "test_connection.py:141 in get_access_token()",
-        "lvl": "ERROR",
-        "cat": "KIS_API",
-        "msg": "한투 REAL 토큰 발급 실패 (HTTP 403)",
-        "error_type": "",
-        "error_str": "",
-        "raw_snippet": "",
-        "msg_cd": null,
-        "ctx": {
-          "response": "{\"error_code\":\"EGW00103\",\"error_description\":\"유효하지 않은 AppKey입니다.\"}"
-        }
-      },
-      {
-        "ts": "2026-11-08 18:42:50",
-        "ver": "v2.0-live",
-        "thread": "Thread-2 (monitor)",
-        "loc": "test_connection.py:141 in get_access_token()",
-        "lvl": "ERROR",
-        "cat": "KIS_API",
-        "msg": "한투 REAL 토큰 발급 실패 (HTTP 403)",
-        "error_type": "",
-        "error_str": "",
-        "raw_snippet": "",
-        "msg_cd": null,
-        "ctx": {
-          "response": "{\"error_code\":\"EGW00103\",\"error_description\":\"유효하지 않은 AppKey입니다.\"}"
-        }
-      },
-      {
-        "ts": "2026-11-08 18:42:51",
-        "ver": "v2.0-live",
-        "thread": "Thread-2 (monitor)",
-        "loc": "test_connection.py:141 in get_access_token()",
-        "lvl": "ERROR",
-        "cat": "KIS_API",
-        "msg": "한투 REAL 토큰 발급 실패 (HTTP 403)",
-        "error_type": "",
-        "error_str": "",
-        "raw_snippet": "",
-        "msg_cd": null,
-        "ctx": {
-          "response": "{\"error_code\":\"EGW00103\",\"error_description\":\"유효하지 않은 AppKey입니다.\"}"
-        }
-      },
-      {
-        "ts": "2026-11-08 18:42:52",
-        "ver": "v2.0-live",
-        "thread": "Thread-2 (monitor)",
-        "loc": "test_connection.py:141 in get_access_token()",
-        "lvl": "ERROR",
-        "cat": "KIS_API",
-        "msg": "한투 REAL 토큰 발급 실패 (HTTP 403)",
-        "error_type": "",
-        "error_str": "",
-        "raw_snippet": "",
-        "msg_cd": null,
-        "ctx": {
-          "response": "{\"error_code\":\"EGW00103\",\"error_description\":\"유효하지 않은 AppKey입니다.\"}"
-        }
-      },
-      {
-        "ts": "2026-11-08 18:43:09",
-        "ver": "v2.0-live",
-        "thread": "Thread-2 (monitor)",
-        "loc": "test_connection.py:141 in get_access_token()",
-        "lvl": "ERROR",
-        "cat": "KIS_API",
-        "msg": "한투 REAL 토큰 발급 실패 (HTTP 403)",
-        "error_type": "",
-        "error_str": "",
-        "raw_snippet": "",
-        "msg_cd": null,
-        "ctx": {
-          "response": "{\"error_code\":\"EGW00103\",\"error_description\":\"유효하지 않은 AppKey입니다.\"}"
-        }
-      },
-      {
-        "ts": "2026-11-08 18:43:10",
-        "ver": "v2.0-live",
-        "thread": "Thread-2 (monitor)",
-        "loc": "test_connection.py:141 in get_access_token()",
-        "lvl": "ERROR",
-        "cat": "KIS_API",
-        "msg": "한투 REAL 토큰 발급 실패 (HTTP 403)",
-        "error_type": "",
-        "error_str": "",
-        "raw_snippet": "",
-        "msg_cd": null,
-        "ctx": {
-          "response": "{\"error_code\":\"EGW00103\",\"error_description\":\"유효하지 않은 AppKey입니다.\"}"
-        }
-      },
-      {
-        "ts": "2026-11-08 18:43:12",
-        "ver": "v2.0-live",
-        "thread": "Thread-2 (monitor)",
-        "loc": "test_connection.py:141 in get_access_token()",
-        "lvl": "ERROR",
-        "cat": "KIS_API",
-        "msg": "한투 REAL 토큰 발급 실패 (HTTP 403)",
-        "error_type": "",
-        "error_str": "",
-        "raw_snippet": "",
-        "msg_cd": null,
-        "ctx": {
-          "response": "{\"error_code\":\"EGW00103\",\"error_description\":\"유효하지 않은 AppKey입니다.\"}"
-        }
-      },
-      {
-        "ts": "2026-11-08 18:43:14",
-        "ver": "v2.0-live",
-        "thread": "Thread-2 (monitor)",
-        "loc": "test_connection.py:141 in get_access_token()",
-        "lvl": "ERROR",
-        "cat": "KIS_API",
-        "msg": "한투 REAL 토큰 발급 실패 (HTTP 403)",
-        "error_type": "",
-        "error_str": "",
-        "raw_snippet": "",
-        "msg_cd": null,
-        "ctx": {
-          "response": "{\"error_code\":\"EGW00103\",\"error_description\":\"유효하지 않은 AppKey입니다.\"}"
-        }
-      },
-      {
-        "ts": "2026-11-08 18:43:15",
-        "ver": "v2.0-live",
-        "thread": "Thread-2 (monitor)",
-        "loc": "test_connection.py:141 in get_access_token()",
-        "lvl": "ERROR",
-        "cat": "KIS_API",
-        "msg": "한투 REAL 토큰 발급 실패 (HTTP 403)",
-        "error_type": "",
-        "error_str": "",
-        "raw_snippet": "",
-        "msg_cd": null,
-        "ctx": {
-          "response": "{\"error_code\":\"EGW00103\",\"error_description\":\"유효하지 않은 AppKey입니다.\"}"
-        }
-      },
-      {
         "ts": "2026-11-08 18:43:17",
+        "ver": "v2.0-live",
+        "thread": "Thread-2 (monitor)",
+        "loc": "test_connection.py:141 in get_access_token()",
+        "lvl": "ERROR",
+        "cat": "KIS_API",
+        "msg": "한투 REAL 토큰 발급 실패 (HTTP 403)",
+        "error_type": "",
+        "error_str": "",
+        "raw_snippet": "",
+        "msg_cd": null,
+        "ctx": {
+          "response": "{\"error_code\":\"EGW00103\",\"error_description\":\"유효하지 않은 AppKey입니다.\"}"
+        }
+      },
+      {
+        "ts": "2026-11-08 18:53:58",
+        "ver": "v2.0-live",
+        "thread": "Thread-2 (monitor)",
+        "loc": "test_connection.py:141 in get_access_token()",
+        "lvl": "ERROR",
+        "cat": "KIS_API",
+        "msg": "한투 REAL 토큰 발급 실패 (HTTP 403)",
+        "error_type": "",
+        "error_str": "",
+        "raw_snippet": "",
+        "msg_cd": null,
+        "ctx": {
+          "response": "{\"error_code\":\"EGW00103\",\"error_description\":\"유효하지 않은 AppKey입니다.\"}"
+        }
+      },
+      {
+        "ts": "2026-11-08 18:53:59",
+        "ver": "v2.0-live",
+        "thread": "Thread-2 (monitor)",
+        "loc": "test_connection.py:141 in get_access_token()",
+        "lvl": "ERROR",
+        "cat": "KIS_API",
+        "msg": "한투 REAL 토큰 발급 실패 (HTTP 403)",
+        "error_type": "",
+        "error_str": "",
+        "raw_snippet": "",
+        "msg_cd": null,
+        "ctx": {
+          "response": "{\"error_code\":\"EGW00103\",\"error_description\":\"유효하지 않은 AppKey입니다.\"}"
+        }
+      },
+      {
+        "ts": "2026-11-08 18:53:59",
+        "ver": "v2.0-live",
+        "thread": "Thread-2 (monitor)",
+        "loc": "test_connection.py:141 in get_access_token()",
+        "lvl": "ERROR",
+        "cat": "KIS_API",
+        "msg": "한투 REAL 토큰 발급 실패 (HTTP 403)",
+        "error_type": "",
+        "error_str": "",
+        "raw_snippet": "",
+        "msg_cd": null,
+        "ctx": {
+          "response": "{\"error_code\":\"EGW00103\",\"error_description\":\"유효하지 않은 AppKey입니다.\"}"
+        }
+      },
+      {
+        "ts": "2026-11-08 18:54:16",
+        "ver": "v2.0-live",
+        "thread": "Thread-2 (monitor)",
+        "loc": "test_connection.py:141 in get_access_token()",
+        "lvl": "ERROR",
+        "cat": "KIS_API",
+        "msg": "한투 REAL 토큰 발급 실패 (HTTP 403)",
+        "error_type": "",
+        "error_str": "",
+        "raw_snippet": "",
+        "msg_cd": null,
+        "ctx": {
+          "response": "{\"error_code\":\"EGW00103\",\"error_description\":\"유효하지 않은 AppKey입니다.\"}"
+        }
+      },
+      {
+        "ts": "2026-11-08 18:54:18",
+        "ver": "v2.0-live",
+        "thread": "Thread-2 (monitor)",
+        "loc": "test_connection.py:141 in get_access_token()",
+        "lvl": "ERROR",
+        "cat": "KIS_API",
+        "msg": "한투 REAL 토큰 발급 실패 (HTTP 403)",
+        "error_type": "",
+        "error_str": "",
+        "raw_snippet": "",
+        "msg_cd": null,
+        "ctx": {
+          "response": "{\"error_code\":\"EGW00103\",\"error_description\":\"유효하지 않은 AppKey입니다.\"}"
+        }
+      },
+      {
+        "ts": "2026-11-08 18:54:20",
+        "ver": "v2.0-live",
+        "thread": "Thread-2 (monitor)",
+        "loc": "test_connection.py:141 in get_access_token()",
+        "lvl": "ERROR",
+        "cat": "KIS_API",
+        "msg": "한투 REAL 토큰 발급 실패 (HTTP 403)",
+        "error_type": "",
+        "error_str": "",
+        "raw_snippet": "",
+        "msg_cd": null,
+        "ctx": {
+          "response": "{\"error_code\":\"EGW00103\",\"error_description\":\"유효하지 않은 AppKey입니다.\"}"
+        }
+      },
+      {
+        "ts": "2026-11-08 18:54:22",
+        "ver": "v2.0-live",
+        "thread": "Thread-2 (monitor)",
+        "loc": "test_connection.py:141 in get_access_token()",
+        "lvl": "ERROR",
+        "cat": "KIS_API",
+        "msg": "한투 REAL 토큰 발급 실패 (HTTP 403)",
+        "error_type": "",
+        "error_str": "",
+        "raw_snippet": "",
+        "msg_cd": null,
+        "ctx": {
+          "response": "{\"error_code\":\"EGW00103\",\"error_description\":\"유효하지 않은 AppKey입니다.\"}"
+        }
+      },
+      {
+        "ts": "2026-11-08 18:54:23",
+        "ver": "v2.0-live",
+        "thread": "Thread-2 (monitor)",
+        "loc": "test_connection.py:141 in get_access_token()",
+        "lvl": "ERROR",
+        "cat": "KIS_API",
+        "msg": "한투 REAL 토큰 발급 실패 (HTTP 403)",
+        "error_type": "",
+        "error_str": "",
+        "raw_snippet": "",
+        "msg_cd": null,
+        "ctx": {
+          "response": "{\"error_code\":\"EGW00103\",\"error_description\":\"유효하지 않은 AppKey입니다.\"}"
+        }
+      },
+      {
+        "ts": "2026-11-08 18:54:25",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:141 in get_access_token()",
@@ -2478,7 +2478,7 @@
       ],
       [
         "test_connection.py:141 in get_access_token()",
-        192
+        201
       ],
       [
         "ai_analyst.py:97 in _call_single_gemini_api()",
@@ -2492,7 +2492,7 @@
       ]
     ],
     "thread_distribution": {
-      "Thread-2 (monitor)": 1383,
+      "Thread-2 (monitor)": 1400,
       "ThreadPoolExecutor-4_0": 1,
       "ThreadPoolExecutor-14_0": 1
     },
