@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09 00:35:12",
+  "updated_at": "2026-11-09 00:42:40",
   "battery": "84% (⚡ 충전 중, 22.2°C)",
   "market_intel": {
     "updated_at": "2026-11-06 08:30:03",
@@ -211,15 +211,15 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-09 00:34:16",
-    "checked_ts": 1794152056,
+    "checked_at": "2026-11-09 00:41:47",
+    "checked_ts": 1794152507,
     "date": "2026-11-08",
-    "overall_status": "⚠️ 주의 항목 1건 감지 (한투 잔고 조회 일시 지연 (balance_ok=False - 서킷브레이커 오발동 방어 중))",
+    "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 15,
-    "toss_bot_sec_ago": 2,
-    "toss_strategy_monitor_sec_ago": 9,
-    "scheduler_heartbeat_sec_ago": 4,
+    "main_bot_sec_ago": 1,
+    "toss_bot_sec_ago": 3,
+    "toss_strategy_monitor_sec_ago": 1,
+    "scheduler_heartbeat_sec_ago": 1,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2500000,
     "market_opened_today": false,
@@ -244,15 +244,13 @@
     "circuit_breaker_reason": "",
     "battery_str": "84% (⚡ 충전 중, 22.2°C)",
     "battery_pct": 84,
-    "api_status": "한투 API: 🔴 점검필요 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
+    "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
-      "⚠️ 한투 잔고 조회 일시 지연 (balance_ok=False - 서킷브레이커 오발동 방어 중)",
+      "✅ 실전 계좌 예수금 및 자산 무결성 정상 (실시간 100% 연동)",
       "✅ 손절/익절 가드레일 누락 착오 0건"
     ],
-    "anomaly_count": 1,
-    "anomalies": [
-      "한투 잔고 조회 일시 지연 (balance_ok=False - 서킷브레이커 오발동 방어 중)"
-    ],
+    "anomaly_count": 0,
+    "anomalies": [],
     "last_battery_alert_ts": 0.0,
     "last_anomaly_alert_ts": 0.0,
     "last_thread_alert_ts": 0.0
@@ -2299,17 +2297,18 @@
     "has_data": true,
     "file_name": "flight_log_2026-11-09.jsonl",
     "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-09.jsonl",
-    "period": "2026-11-09 00:00:45 ~ 2026-11-09 00:34:44",
+    "period": "2026-11-09 00:00:45 ~ 2026-11-09 00:41:46",
     "commit_hash": "v2.0-live",
-    "total_events": 68,
+    "total_events": 69,
     "error_count": 36,
     "warn_count": 32,
     "level_counts": {
       "ERROR": 36,
-      "WARN": 32
+      "WARN": 32,
+      "INFO": 1
     },
     "categories": {
-      "KIS_API": 68
+      "KIS_API": 69
     },
     "top_errors": [
       {
@@ -2481,7 +2480,7 @@
     ],
     "top_api_codes": [],
     "thread_distribution": {
-      "Thread-2 (monitor)": 68
+      "Thread-2 (monitor)": 69
     },
     "stats": {
       "api_throttles": 0,
