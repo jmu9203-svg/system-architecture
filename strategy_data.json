@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10 04:02:20",
+  "updated_at": "2026-11-10 04:08:22",
   "battery": "85% (⚡ 충전 중, 23.4°C)",
   "market_intel": {
     "updated_at": "2026-11-09 08:30:09",
@@ -201,15 +201,15 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-10 04:01:37",
-    "checked_ts": 1794250897,
+    "checked_at": "2026-11-10 04:07:25",
+    "checked_ts": 1794251245,
     "date": "2026-11-09",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 11,
-    "toss_bot_sec_ago": 0,
-    "toss_strategy_monitor_sec_ago": 27,
-    "scheduler_heartbeat_sec_ago": 8,
+    "main_bot_sec_ago": 4,
+    "toss_bot_sec_ago": 8,
+    "toss_strategy_monitor_sec_ago": 15,
+    "scheduler_heartbeat_sec_ago": 6,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2500000,
     "market_opened_today": true,
@@ -2463,20 +2463,21 @@
     "has_data": true,
     "file_name": "flight_log_2026-11-10.jsonl",
     "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-10.jsonl",
-    "period": "2026-11-10 01:23:09 ~ 2026-11-10 02:09:35",
+    "period": "2026-11-10 01:23:09 ~ 2026-11-10 04:08:04",
     "commit_hash": "v2.0-live",
-    "total_events": 11,
+    "total_events": 12,
     "error_count": 1,
-    "warn_count": 4,
+    "warn_count": 5,
     "level_counts": {
       "ERROR": 1,
       "INFO": 6,
-      "WARN": 4
+      "WARN": 5
     },
     "categories": {
       "AI_PARSE": 1,
       "QUANT_FACTS": 6,
-      "KIS_API": 4
+      "KIS_API": 4,
+      "AI_ENSEMBLE": 1
     },
     "top_errors": [
       {
@@ -2517,7 +2518,8 @@
     "thread_distribution": {
       "ThreadPoolExecutor-139_0": 1,
       "Thread-16 (_worker)": 6,
-      "Thread-2 (monitor)": 4
+      "Thread-2 (monitor)": 4,
+      "ThreadPoolExecutor-157_0": 1
     },
     "stats": {
       "api_throttles": 0,
@@ -3133,10 +3135,10 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 0.340143,
-        "lastPrice": 290.15,
+        "lastPrice": 290.24,
         "averagePurchasePrice": 293.699999,
-        "profitLossRate": -1.2,
-        "profitLossAmount": -1.207508,
+        "profitLossRate": -1.17,
+        "profitLossAmount": -1.176895,
         "rsi": 34.5,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "매수",
@@ -3166,11 +3168,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 95.77,
+        "lastPrice": 95.79,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 8.8,
-        "profitLossAmount": 31.0,
-        "rsi": 64.6,
+        "profitLossRate": 8.82,
+        "profitLossAmount": 31.08,
+        "rsi": 64.7,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 65,
@@ -3199,10 +3201,10 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 35.73,
+        "lastPrice": 35.72,
         "averagePurchasePrice": 34.3786,
-        "profitLossRate": 3.93,
-        "profitLossAmount": 5.4056,
+        "profitLossRate": 3.9,
+        "profitLossAmount": 5.3656,
         "rsi": 61.0,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
