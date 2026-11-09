@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09 23:15:50",
+  "updated_at": "2026-11-09 23:27:07",
   "battery": "54% (🔋 배터리 사용 중, 20.5°C)",
   "market_intel": {
     "updated_at": "2026-11-09 08:30:09",
@@ -201,15 +201,15 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-09 23:15:03",
-    "checked_ts": 1794233703,
+    "checked_at": "2026-11-09 23:25:56",
+    "checked_ts": 1794234356,
     "date": "2026-11-09",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 6,
-    "toss_bot_sec_ago": 14,
-    "toss_strategy_monitor_sec_ago": 25,
-    "scheduler_heartbeat_sec_ago": 16,
+    "main_bot_sec_ago": 11,
+    "toss_bot_sec_ago": 13,
+    "toss_strategy_monitor_sec_ago": 18,
+    "scheduler_heartbeat_sec_ago": 18,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2500000,
     "market_opened_today": true,
@@ -2343,13 +2343,13 @@
     "has_data": true,
     "file_name": "flight_log_2026-11-09.jsonl",
     "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-09.jsonl",
-    "period": "2026-11-09 00:00:45 ~ 2026-11-09 23:04:47",
+    "period": "2026-11-09 00:00:45 ~ 2026-11-09 23:26:32",
     "commit_hash": "v2.0-live",
-    "total_events": 117,
-    "error_count": 36,
+    "total_events": 118,
+    "error_count": 37,
     "warn_count": 38,
     "level_counts": {
-      "ERROR": 36,
+      "ERROR": 37,
       "WARN": 38,
       "INFO": 43
     },
@@ -2358,25 +2358,10 @@
       "QUANT_FACTS": 40,
       "TOSS_API": 2,
       "AI_ENSEMBLE": 2,
-      "TELEGRAM": 4
+      "TELEGRAM": 4,
+      "AI_PARSE": 1
     },
     "top_errors": [
-      {
-        "ts": "2026-11-09 00:23:16",
-        "ver": "v2.0-live",
-        "thread": "Thread-2 (monitor)",
-        "loc": "test_connection.py:184 in get_access_token()",
-        "lvl": "ERROR",
-        "cat": "KIS_API",
-        "msg": "한투 REAL 토큰 발급 실패 (HTTP 403)",
-        "error_type": "",
-        "error_str": "",
-        "raw_snippet": "",
-        "msg_cd": null,
-        "ctx": {
-          "response": "{\"error_code\":\"EGW00103\",\"error_description\":\"유효하지 않은 AppKey입니다.\"}"
-        }
-      },
       {
         "ts": "2026-11-09 00:34:16",
         "ver": "v2.0-live",
@@ -2520,12 +2505,38 @@
         "ctx": {
           "response": "{\"error_code\":\"EGW00103\",\"error_description\":\"유효하지 않은 AppKey입니다.\"}"
         }
+      },
+      {
+        "ts": "2026-11-09 23:26:32",
+        "ver": "v2.0-live",
+        "thread": "ThreadPoolExecutor-128_0",
+        "loc": "ai_analyst.py:96 in _call_single_gemini_api()",
+        "lvl": "ERROR",
+        "cat": "AI_PARSE",
+        "msg": "[Google:gemini-3.5-flash-lite] LLM 응답 JSON 파싱 실패",
+        "error_type": "JSONDecodeError",
+        "error_str": "Expecting value: line 1 column 1 (char 0)",
+        "raw_snippet": "```json\n{\n  \"decision\": \"홀딩 관망\",\n  \"score\": 65,\n  \"action_tip\": \"현재 보유 예수금(약 306만 원)으로 123주 매수가 물리적으로 가능하나, 외인·기관의 강한 5일 누적 순매도와 단기 조정 국면을 고려해 무리한 추가 매수보다 현금 비중을 유지하며 바닥 다지기를 관망할 것을 권장합니다.\",\n  \"reason\": \"TIGER 미국S&P500은 대표적인 글로벌 성장·경기민감(GROWTH_CYCLICAL) 자산으로, 현재 Wilder 14일 RSI 36.7의 단기 과매도 국면과 MA20 하회 조정을 겪고 있습니다. 다만, 외인과 기관의 지속적인 수급 이탈세와 소수점 매수가 불가능한 국내 상장 ETF 특성을",
+        "msg_cd": null,
+        "ctx": {
+          "provider": "Google",
+          "model": "gemini-3.5-flash-lite",
+          "raw_snippet": "```json\n{\n  \"decision\": \"홀딩 관망\",\n  \"score\": 65,\n  \"action_tip\": \"현재 보유 예수금(약 306만 원)으로 123주 매수가 물리적으로 가능하나, 외인·기관의 강한 5일 누적 순매도와 단기 조정 국면을 고려해 무리한 추가 매수보다 현금 비중을 유지하며 바닥 다지기를 관망할 것을 권장합니다.\",\n  \"reason\": \"TIGER 미국S&P500은 대표적인 글로벌 성장·경기민감(GROWTH_CYCLICAL) 자산으로, 현재 Wilder 14일 RSI 36.7의 단기 과매도 국면과 MA20 하회 조정을 겪고 있습니다. 다만, 외인과 기관의 지속적인 수급 이탈세와 소수점 매수가 불가능한 국내 상장 ETF 특성을",
+          "raw_length": 367,
+          "error_type": "JSONDecodeError",
+          "error_str": "Expecting value: line 1 column 1 (char 0)",
+          "traceback": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/ai_analyst.py\", line 88, in _call_single_gemini_api\n    d = json.loads(text, strict=False)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/__init__.py\", line 365, in loads\n    return cls(**kw).decode(s)\n           ~~~~~~~~~~~~~~~~^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 363, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n"
+        }
       }
     ],
     "top_code_locations": [
       [
         "test_connection.py:184 in get_access_token()",
         36
+      ],
+      [
+        "ai_analyst.py:96 in _call_single_gemini_api()",
+        1
       ]
     ],
     "top_api_codes": [],
@@ -2540,14 +2551,15 @@
       "Thread-10 (_worker)": 8,
       "ThreadPoolExecutor-89_0": 1,
       "Thread-11 (_worker)": 8,
-      "MainThread": 1
+      "MainThread": 1,
+      "ThreadPoolExecutor-128_0": 1
     },
     "stats": {
       "api_throttles": 0,
       "api_naver_fallbacks": 5,
       "ai_429_retries": 0,
       "ai_backup_fallbacks": 0,
-      "ai_parse_failures": 0,
+      "ai_parse_failures": 1,
       "quant_overrides": 0,
       "order_unfilled_revises": 0,
       "circuit_breaker_trips": 0,
@@ -3132,8 +3144,8 @@
         "ai_decision": "홀딩 관망",
         "ai_score": 64,
         "ai_action_tip": "현재 20주 보유 중으로 1주 추매 시 평단 인하 폭이 -0.03%(24,930원→24,921원)에 불과하고 이미 충분한 수량을 보유하고 있으므로, 원화 예수금(3,065,120원)을 아끼고 홀딩 관망하세요.",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 62점 · 편차 5점 | Groq:gpt-oss-120b(60점 관망), Google:3.5-flash-lite(65점 관망))] [5단계 퀀트 전략 — 섹터 편중 & 물타기 실효성 가드레일 작동] 최근 단기 조정(최근 5거래일 -2.4%)으로 Wilder 14일 RSI(36.7)가 과매도 근접 구간에 진입했으나, 이미 20주를 보유 중이어서 원화 예수금으로 1주를 더 사더라도 평단가 인하 효과가 -0.03%로 미미하며, 단일 종목 과다 편중 리스크가 있어 현금 보존 또는 타 업종(금융·배당주) 분산이 훨씬 유리합니다.",
-        "checked_at": "2026-11-09 19:15:48",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 62점 · 편차 5점 | Groq:gpt-oss-120b(60점 관망), Google:flash-lite-latest(65점 관망))] [5단계 퀀트 전략 — 섹터 편중 & 물타기 실효성 가드레일 작동] 최근 단기 조정(최근 5거래일 -2.4%)으로 Wilder 14일 RSI(36.7)가 과매도 근접 구간에 진입했으나, 이미 20주를 보유 중이어서 원화 예수금으로 1주를 더 사더라도 평단가 인하 효과가 -0.03%로 미미하며, 단일 종목 과다 편중 리스크가 있어 현금 보존 또는 타 업종(금융·배당주) 분산이 훨씬 유리합니다.",
+        "checked_at": "2026-11-09 23:26:29",
         "ai_models": [
           {
             "provider": "Google",
@@ -3156,11 +3168,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 0.340143,
-        "lastPrice": 291.88,
+        "lastPrice": 293.07,
         "averagePurchasePrice": 293.699999,
-        "profitLossRate": -0.61,
-        "profitLossAmount": -0.619061,
-        "rsi": 35.8,
+        "profitLossRate": -0.21,
+        "profitLossAmount": -0.21429,
+        "rsi": 36.7,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "매수",
         "ai_score": 82,
@@ -3189,11 +3201,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 95.66,
+        "lastPrice": 95.75,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 8.67,
-        "profitLossAmount": 30.56,
-        "rsi": 64.3,
+        "profitLossRate": 8.78,
+        "profitLossAmount": 30.92,
+        "rsi": 64.6,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 75,
