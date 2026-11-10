@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-10 22:34:02",
-  "battery": "55% (🔋 배터리 사용 중, 20.3°C)",
+  "updated_at": "2026-11-10 22:45:44",
+  "battery": "54% (🔋 배터리 사용 중, 20.3°C)",
   "market_intel": {
     "updated_at": "2026-11-10 08:30:16",
     "fx_soxx_info": {
@@ -213,15 +213,15 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-10 22:33:10",
-    "checked_ts": 1794317590,
+    "checked_at": "2026-11-10 22:44:08",
+    "checked_ts": 1794318248,
     "date": "2026-11-10",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 3,
-    "toss_bot_sec_ago": 3,
-    "toss_strategy_monitor_sec_ago": 14,
-    "scheduler_heartbeat_sec_ago": 10,
+    "main_bot_sec_ago": 2,
+    "toss_bot_sec_ago": 2,
+    "toss_strategy_monitor_sec_ago": 11,
+    "scheduler_heartbeat_sec_ago": 17,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2500000,
     "market_opened_today": true,
@@ -244,8 +244,8 @@
     "circuit_breaker_limit_pct": -3.5,
     "circuit_breaker_tripped": false,
     "circuit_breaker_reason": "",
-    "battery_str": "55% (🔋 배터리 사용 중, 20.3°C)",
-    "battery_pct": 55,
+    "battery_str": "54% (🔋 배터리 사용 중, 20.3°C)",
+    "battery_pct": 54,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
       "✅ 실전 계좌 예수금 및 자산 무결성 정상 (실시간 100% 연동)",
@@ -2503,21 +2503,21 @@
     "has_data": true,
     "file_name": "flight_log_2026-11-10.jsonl",
     "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-10.jsonl",
-    "period": "2026-11-10 01:23:09 ~ 2026-11-10 18:21:00",
+    "period": "2026-11-10 01:23:09 ~ 2026-11-10 22:45:09",
     "commit_hash": "v2.0-live",
-    "total_events": 61,
+    "total_events": 63,
     "error_count": 7,
-    "warn_count": 10,
+    "warn_count": 11,
     "level_counts": {
       "ERROR": 7,
-      "INFO": 44,
-      "WARN": 10
+      "INFO": 45,
+      "WARN": 11
     },
     "categories": {
       "AI_PARSE": 7,
       "QUANT_FACTS": 44,
-      "KIS_API": 4,
-      "AI_ENSEMBLE": 1,
+      "KIS_API": 5,
+      "AI_ENSEMBLE": 2,
       "TELEGRAM": 5
     },
     "top_errors": [
@@ -2691,7 +2691,7 @@
     "thread_distribution": {
       "ThreadPoolExecutor-139_0": 1,
       "Thread-16 (_worker)": 6,
-      "Thread-2 (monitor)": 4,
+      "Thread-2 (monitor)": 5,
       "ThreadPoolExecutor-157_0": 1,
       "MainThread": 2,
       "Thread-3 (toss_worker)": 3,
@@ -2702,7 +2702,8 @@
       "ThreadPoolExecutor-9_0": 1,
       "ThreadPoolExecutor-12_0": 1,
       "ThreadPoolExecutor-18_0": 1,
-      "ThreadPoolExecutor-5_0": 2
+      "ThreadPoolExecutor-5_0": 2,
+      "ThreadPoolExecutor-14_0": 1
     },
     "stats": {
       "api_throttles": 0,
@@ -3197,10 +3198,10 @@
         "rsi": 48.0,
         "investor_summary": "최근(11-10) 순매수: 외인 +16,296주, 기관 -20,172주 (개인 +8,133주) | [5일누적: 외인 +196,080주, 기관 +9,492주]",
         "ai_decision": "홀딩 관망",
-        "ai_score": 65,
-        "ai_action_tip": "현재 예수금으로 추가 매수가 가능하지만, RSI가 중립이고 단기 하락 추세이므로 관망 후 추세 전환 시점에 매수 검토 권장합니다.",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 65점 · 편차 6점 | Groq:gpt-oss-120b(62점 관망), Google:3.5-flash-lite(68점 관망))] GROWTH_CYCLICAL 자산으로 외인 순매수는 미미하고 RSI 48.4로 과매도·과열 구간이 아니며, 20일선 하회와 최근 5일 -1.53% 하락으로 단기 조정 국면에 있습니다. 현 현금 여유가 충분하지만, 기술적·수급 신호가 강력하지 않아 추가 매수보다는 관망이 적절합니다.",
-        "checked_at": "2026-11-10 18:43:06",
+        "ai_score": 68,
+        "ai_action_tip": "현재 예수금으로 추가 매수가 가능하지만, RSI 중립 및 기관 매도 압력으로 관망을 권장합니다.",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 68점 · 편차 0점 | Groq:gpt-oss-120b(68점 관망), Google:3.5-flash-lite(68점 관망))] GROWTH_CYCLICAL 종목으로 외인 순매수는 있지만 기관 순매도가 상쇄하고 RSI 48로 과매도·과매수 구역이 아닙니다. 현재 20일선 하회와 변동성 확대로 단기 추가 매수 시점이 불확실하므로 관망이 바람직합니다.",
+        "checked_at": "2026-11-10 22:44:45",
         "ai_models": [
           {
             "provider": "Google",
@@ -3211,7 +3212,7 @@
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 62,
+            "score": 68,
             "decision": "관망"
           }
         ],
@@ -3263,10 +3264,10 @@
         "rsi": 39.2,
         "investor_summary": "최근(11-10) 순매수: 외인 +145,862주, 기관 +52,815주 (개인 -539,707주) | [5일누적: 외인 -3,720,033주, 기관 +1,371,773주]",
         "ai_decision": "홀딩 관망",
-        "ai_score": 61,
-        "ai_action_tip": "현재 예수금으로는 추가 매수가 가능하지만, 외인 순매도와 변동성 등을 고려해 추가 매수는 보류하고 현 포지션을 관망하세요.",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 61점 · 편차 2점 | Groq:gpt-oss-120b(60점 관망), Google:3.5-flash-lite(62점 관망))] 반도체 성장주인 SK하이닉스는 RSI 40으로 과매도에 가까우며 외인 순매도가 지속되고 있어 단기 하방 위험이 존재합니다. 현금 여유가 제한적이고 포트폴리오 내 반도체 비중이 높아 추가 매수보다는 현금 보존과 관망이 바람직합니다.",
-        "checked_at": "2026-11-10 18:43:13",
+        "ai_score": 62,
+        "ai_action_tip": "현재 예수금으로 1주 추가 매수가 가능하지만, 가격이 20일 이동평균선 이하이며 최근 5일 급락(-15.28%)과 RSI 39.2(과매도 근접) 상황이므로 추가 매수는 보류하고 현금 보존을 권장합니다.",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 62점 · 편차 0점 | Groq:gpt-oss-120b(62점 관망), Google:3.5-flash-lite(62점 관망))] 반도체 성장주인 SK하이닉스는 현재 20일선 하회와 약세 캔들 패턴으로 단기 하방 압력이 지속되고 있습니다. 외인·기관 순매수는 있지만 최근 5일 외인 순매도와 급락 추세, 그리고 현금 한계로 인한 매수 여력 부족을 고려해 관망이 최선입니다.",
+        "checked_at": "2026-11-10 22:44:56",
         "ai_models": [
           {
             "provider": "Google",
@@ -3277,7 +3278,7 @@
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 60,
+            "score": 62,
             "decision": "관망"
           }
         ],
@@ -3322,22 +3323,22 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 0.340143,
-        "lastPrice": 287.59,
+        "lastPrice": 287.48,
         "averagePurchasePrice": 293.699999,
-        "profitLossRate": -2.08,
-        "profitLossAmount": -2.078274,
+        "profitLossRate": -2.11,
+        "profitLossAmount": -2.11569,
         "rsi": 32.5,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "매수",
-        "ai_score": 84,
+        "ai_score": 82,
         "ai_action_tip": "현재 예수금으로 알파벳 A를 소수점 매수로 추가 매수하여 포지션을 확대하세요.",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 매수 합의] (평균 84점 · 편차 3점 | Groq:gpt-oss-120b(82점 매수), Google:3.5-flash-lite(85점 매수))] 알파벳 A는 성장·주기주이며 RSI 34.9로 과매도 구간에 진입, 최근 5거래일 상승세(+3.75%)가 확인됩니다. 가용 예수금($2,374.91)으로 충분히 추가 매수가 가능하므로 물리적 제약 없이 매수를 권고합니다.",
-        "checked_at": "2026-11-10 18:43:19",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 매수 합의] (평균 82점 · 편차 0점 | Groq:gpt-oss-120b(82점 매수), Google:3.5-flash-lite(82점 매수))] RSI 32.5로 과매도 구간에 진입했으며 5일간 상승세를 보이고 있어 바닥 매수 기회로 판단됩니다. 가용 예수금이 충분하고 소수점 매수가 가능하므로 물리적 매수가 가능해 추가 매수를 권고합니다.",
+        "checked_at": "2026-11-10 22:45:07",
         "ai_models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 85,
+            "score": 82,
             "decision": "매수"
           },
           {
@@ -3355,17 +3356,17 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 96.73,
+        "lastPrice": 96.83,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 9.89,
-        "profitLossAmount": 34.84,
-        "rsi": 67.2,
+        "profitLossRate": 10.0,
+        "profitLossAmount": 35.24,
+        "rsi": 67.5,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 65,
-        "ai_action_tip": "현재 예수금으로는 1주 추가 매수가 가능하지만, 배당 방어주 특성상 관망 유지 후 RSI가 40~50 이하로 하락 시 추매를 검토하세요.",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 65점 · 편차 6점 | Groq:gpt-oss-120b(62점 관망), Google:3.5-flash-lite(68점 관망))] KO는 장기 배당 방어주로 단기 RSI 65.7은 과열 구간이 아니며, 20일선 위에서 상승 추세를 유지하고 있어 매도는 부적절합니다. 추가 매수는 가능하지만 현재 수익률이 9.3% 수준이며 배당 수령을 위해 보유를 유지하는 것이 바람직합니다.",
-        "checked_at": "2026-11-10 18:43:29",
+        "ai_action_tip": "현재 예수금으로 추가 매수는 권장하지 않으며, 배당 수령과 포트폴리오 안전판 유지 차원에서 관망을 지속하세요.",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 65점 · 편차 6점 | Groq:gpt-oss-120b(62점 관망), Google:3.5-flash-lite(68점 관망))] KO는 배당 방어주로 장기 코어 자산이며 RSI 67.5로 과열 구간에 있지 않아 매도 위험이 낮습니다. 현재 예수금으로 물리적 매수가 가능하지만, 과매도 신호와 외인·기관 순유입이 확인되지 않아 추가 매수보다는 관망이 적절합니다.",
+        "checked_at": "2026-11-10 22:45:17",
         "ai_models": [
           {
             "provider": "Google",
@@ -3388,28 +3389,28 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 35.61,
+        "lastPrice": 35.6,
         "averagePurchasePrice": 34.3786,
-        "profitLossRate": 3.58,
-        "profitLossAmount": 4.9256,
-        "rsi": 59.6,
+        "profitLossRate": 3.55,
+        "profitLossAmount": 4.8856,
+        "rsi": 59.5,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
-        "ai_score": 61,
-        "ai_action_tip": "현재 예수금으로 추가 매수는 가능하지만, RSI가 중립 수준이고 단기 상승 추세가 약하므로 관망 후 RSI가 40~50 이하로 하락 시점에 소량 매수를 고려하세요.",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 61점 · 편차 8점 | Groq:gpt-oss-120b(57점 관망), Google:3.5-flash-lite(65점 관망))] SCHD는 배당 방어주로 장기 보유가 적합하며, 현재 RSI 60.5로 과매도 신호는 없고, 20일선 위에서 소폭 상승 중이지만 과열도 아닌 상태입니다. 현금 여유는 충분하지만 단기 매수 타이밍을 기다리는 것이 리스크 관리에 유리합니다.",
-        "checked_at": "2026-11-10 18:43:38",
+        "ai_score": 65,
+        "ai_action_tip": "현재 보유 중인 SCHD를 그대로 유지하고, RSI가 40~50 이하로 내려갈 때 추가 매수를 검토하세요.",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 65점 · 편차 6점 | Groq:gpt-oss-120b(62점 관망), Google:3.5-flash-lite(68점 관망))] 배당 방어주 특성상 단기 수익률(+3.55%)과 RSI(59.5)만으로 매도는 부적절하며, 추가 매수는 과매도 신호가 없어 보류합니다. 현재 예수금으로 충분히 매수가 가능하지만, 최근 추세와 RSI가 중립적이므로 관망이 최선입니다.",
+        "checked_at": "2026-11-10 22:45:22",
         "ai_models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 65,
+            "score": 68,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 57,
+            "score": 62,
             "decision": "관망"
           }
         ],
