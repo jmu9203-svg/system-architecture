@@ -221,7 +221,7 @@
       <h1>시스템 &amp; 전략 백서 <span class="badge-tag">Blueprint</span></h1>
       <p>AI 자율 매매 &amp; 토스 수동매매 아키텍처 실시간 규격 <span style="font-size:10px; color:#c4b5fd; background:rgba(139,92,246,0.2); padding:2px 6px; border-radius:6px; font-weight:700;">v2.6 최신</span></p>
     </div>
-    <div style="display:flex; gap:6px; align-items:center;">
+    <div style="display:flex; gap:6px; align-items:center; flex-wrap:wrap;">
       <div class="status-badge" style="background: var(--pill-bg); border: 1px solid var(--card-border); color: var(--text-main);">
         <span id="headerBattery">🔋 --</span>
       </div>
@@ -229,19 +229,10 @@
         <div class="pulse-dot"></div>
         <span id="statusText">실시간 규격</span>
       </div>
+      <div class="status-badge" style="background: rgba(255, 255, 255, 0.05); border: 1px solid var(--card-border); color: var(--text-sub);">
+        <span>🕒 </span><span id="watchdogSyncAge">방금 동기화</span>
+      </div>
     </div>
-  </div>
-
-  <!-- Dynamic Sync Notice Banner -->
-  <div class="sync-banner">
-    <div class="sync-title">⚡ 실시간 동적 자동 동기화 (Live Sync Architecture)</div>
-    이 백서는 고정된 정적 문서가 아닙니다. 텔레그램 채팅방에서 <b>"매수 기준 80점으로 변경해줘"</b>, <b>"감시 목록에 OOO 추가해줘"</b>라고 설정을 바꾸거나 주문을 실행하면 <b>이 사이트의 모든 수치와 파라미터가 실시간으로 자동 갱신</b>됩니다.
-  </div>
-
-  <!-- Watchdog Banner -->
-  <div id="watchdogBanner" style="background: rgba(139, 92, 246, 0.10); border: 1px solid rgba(139, 92, 246, 0.30); border-radius: 12px; padding: 10px 14px; margin-bottom: 16px; font-size: 12px; display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap;">
-    <span id="watchdogText">🟢 <b>홈서버 생존 신호(Heartbeat) 정상</b> — 5분 주기 퀀트 자체 감시 및 규격 실시간 동기화</span>
-    <span id="watchdogSyncAge" style="color: var(--text-sub); font-weight: 600; font-size: 11px; white-space: nowrap; flex-shrink: 0;">방금 동기화</span>
   </div>
 
   <!-- Quick Filter Pills (Scroll Reduction Tool) -->
