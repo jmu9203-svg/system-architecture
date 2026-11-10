@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11 00:22:33",
+  "updated_at": "2026-11-11 00:26:10",
   "battery": "85% (⚡ 충전 중, 22.5°C)",
   "market_intel": {
     "updated_at": "2026-11-10 08:30:16",
@@ -213,15 +213,15 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-11 00:21:40",
-    "checked_ts": 1794324100,
+    "checked_at": "2026-11-11 00:24:36",
+    "checked_ts": 1794324276,
     "date": "2026-11-10",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 4,
-    "toss_bot_sec_ago": 3,
-    "toss_strategy_monitor_sec_ago": 12,
-    "scheduler_heartbeat_sec_ago": 19,
+    "main_bot_sec_ago": 0,
+    "toss_bot_sec_ago": 2,
+    "toss_strategy_monitor_sec_ago": 0,
+    "scheduler_heartbeat_sec_ago": 0,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2500000,
     "market_opened_today": true,
@@ -248,7 +248,7 @@
     "battery_pct": 85,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
-      "✅ 실전 계좌 예수금 및 자산 무결성 정상 (실시간 100% 연동)",
+      "✅ 4,500만 원 동결금 및 500만 원 시드 분리 무결성 정상",
       "✅ 손절/익절 가드레일 누락 착오 0건"
     ],
     "anomaly_count": 0,
@@ -2501,40 +2501,60 @@
   },
   "flight_recorder": {
     "has_data": true,
-    "file_name": "flight_log_2026_W44.jsonl",
-    "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026_W44.jsonl",
-    "period": "2026-11-01 06:02:44 ~ 2026-11-01 22:58:18",
+    "file_name": "flight_log_2026-11-11.jsonl",
+    "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-11.jsonl",
+    "period": "2026-11-11 00:25:46 ~ 2026-11-11 00:25:46",
     "commit_hash": "v2.0-live",
-    "total_events": 29,
-    "error_count": 0,
-    "warn_count": 28,
+    "total_events": 1,
+    "error_count": 1,
+    "warn_count": 0,
     "level_counts": {
-      "INFO": 1,
-      "WARN": 28
+      "ERROR": 1
     },
     "categories": {
-      "KIS_API": 2,
-      "QUANT_AUDITOR": 27
+      "AI_PARSE": 1
     },
-    "top_errors": [],
-    "top_code_locations": [],
-    "top_api_codes": [
+    "top_errors": [
+      {
+        "ts": "2026-11-11 00:25:46",
+        "ver": "v2.0-live",
+        "thread": "ThreadPoolExecutor-4_0",
+        "loc": "ai_analyst.py:96 in _call_single_gemini_api()",
+        "lvl": "ERROR",
+        "cat": "AI_PARSE",
+        "msg": "[Google:gemini-3.5-flash-lite] LLM 응답 JSON 파싱 실패",
+        "error_type": "JSONDecodeError",
+        "error_str": "Unterminated string starting at: line 3 column 3 (char 24)",
+        "raw_snippet": "{\n  \"decision\": \"매수\",\n  \"",
+        "msg_cd": null,
+        "ctx": {
+          "provider": "Google",
+          "model": "gemini-3.5-flash-lite",
+          "raw_snippet": "{\n  \"decision\": \"매수\",\n  \"",
+          "raw_length": 25,
+          "error_type": "JSONDecodeError",
+          "error_str": "Unterminated string starting at: line 3 column 3 (char 24)",
+          "traceback": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/ai_analyst.py\", line 88, in _call_single_gemini_api\n    d = json.loads(text, strict=False)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/__init__.py\", line 365, in loads\n    return cls(**kw).decode(s)\n           ~~~~~~~~~~~~~~~~^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 361, in raw_decode\n    obj, end = self.scan_once(s, idx)\n               ~~~~~~~~~~~~~~^^^^^^^^\njson.decoder.JSONDecodeError: Unterminated string starting at: line 3 column 3 (char 24)\n"
+        }
+      }
+    ],
+    "top_code_locations": [
       [
-        "HTTP_500",
+        "ai_analyst.py:96 in _call_single_gemini_api()",
         1
       ]
     ],
+    "top_api_codes": [],
     "thread_distribution": {
-      "Thread-2 (monitor)": 1,
-      "MainThread": 28
+      "ThreadPoolExecutor-4_0": 1
     },
     "stats": {
-      "api_throttles": 1,
-      "api_naver_fallbacks": 3,
+      "api_throttles": 0,
+      "api_naver_fallbacks": 0,
       "ai_429_retries": 0,
       "ai_backup_fallbacks": 0,
-      "ai_parse_failures": 0,
-      "quant_overrides": 27,
+      "ai_parse_failures": 1,
+      "quant_overrides": 0,
       "order_unfilled_revises": 0,
       "circuit_breaker_trips": 0,
       "orders_executed": 0,
@@ -2776,7 +2796,7 @@
     }
   ],
   "kis_system": {
-    "name": "한투 실전 AI 자율 운용 계좌 (10154692)",
+    "name": "한투 500만 원 AI 자율 매매 펀드",
     "mode": "100% 오토파일럿 (Full Autonomous Trading)",
     "budget_limit": 2500000,
     "frozen_reserve": 0,
@@ -3146,11 +3166,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 0.340143,
-        "lastPrice": 291.24,
+        "lastPrice": 290.39,
         "averagePurchasePrice": 293.699999,
-        "profitLossRate": -0.83,
-        "profitLossAmount": -0.836752,
-        "rsi": 35.5,
+        "profitLossRate": -1.12,
+        "profitLossAmount": -1.125874,
+        "rsi": 34.8,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "매수",
         "ai_score": 82,
@@ -3179,11 +3199,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 96.15,
+        "lastPrice": 96.21,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 9.23,
-        "profitLossAmount": 32.52,
-        "rsi": 65.6,
+        "profitLossRate": 9.3,
+        "profitLossAmount": 32.76,
+        "rsi": 65.7,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 65,
@@ -3212,11 +3232,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 35.45,
+        "lastPrice": 35.44,
         "averagePurchasePrice": 34.3786,
-        "profitLossRate": 3.11,
-        "profitLossAmount": 4.2856,
-        "rsi": 57.4,
+        "profitLossRate": 3.08,
+        "profitLossAmount": 4.2456,
+        "rsi": 57.3,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 65,
@@ -3302,7 +3322,7 @@
     "flight_recorder": {
       "name": "일일 비행기록장치(Daily Flight Recorder) & 구글 드라이브 자동 동기화",
       "storage_mode": "일자별 자동 분할 및 이벤트 실시간 원자적 기록 (flight_log_YYYY-MM-DD.jsonl)",
-      "active_file": "flight_log_2026_W44.jsonl",
+      "active_file": "flight_log_2026-11-11.jsonl",
       "google_drive_folder": "AI_Stock_Daily_Logs (구글 앱스 스크립트 웹훅 다이렉트 업로드)",
       "auto_purge": "최근 14일 초과 파일 자동 삭제 (공기계 100% 저장공간 보호)",
       "delivery_schedule": "평일 15:40(장마감 결산) & 매일 23:50(자정 전 최종 결산) 구글 드라이브 동기화 및 텔레그램 발송",
