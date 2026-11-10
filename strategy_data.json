@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-11-11 08:26:08",
+  "updated_at": "2026-11-11 08:30:58",
   "battery": "85% (⚡ 충전 중, 22.5°C)",
   "market_intel": {
-    "updated_at": "2026-11-10 08:30:16",
+    "updated_at": "2026-11-11 08:30:22",
     "fx_soxx_info": {
-      "usd_krw": "1,342.00",
+      "usd_krw": "1,344.50",
       "usd_krw_change": "0.00",
       "usd_krw_rate": "0.00",
-      "soxx_price": "$146.9717",
-      "soxx_pct": "+0.14%",
-      "summary": "원/달러 환율: 1,342.00원 (전일대비 0.00원 / 0.00%) | 미 필라델피아 반도체(SOXX): $146.9717 (+0.14%)"
+      "soxx_price": "$147.48",
+      "soxx_pct": "+0.61%",
+      "summary": "원/달러 환율: 1,344.50원 (전일대비 0.00원 / 0.00%) | 미 필라델피아 반도체(SOXX): $147.48 (+0.61%)"
     },
     "last_rotation": {
-      "rotated_at": "2026-11-10 08:30:17",
+      "rotated_at": "2026-11-11 08:30:24",
       "universe_size": 30,
       "watch_size": 8,
       "core_stocks": [
@@ -43,66 +43,70 @@
       ],
       "dynamic_leaders": [
         {
-          "code": "458730",
-          "name": "TIGER 미국배당다우존스",
+          "code": "381170",
+          "name": "TIGER 미국테크TOP10 INDXX",
           "sector": "미국증시·글로벌빅테크",
           "is_us_etf": true,
-          "price": 15135,
+          "price": 28795,
           "chg_rate": 0.0,
-          "frgn_today": -49866,
-          "orgn_today": 54732,
+          "frgn_today": -67947,
+          "orgn_today": 61901,
           "leader_score": 86,
-          "reason": "당일 기관 순매수(+54,732주) · 5일 누적 외인·기관 동반 매집 · 견조한 상승 추세(+0.00%) · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
+          "reason": "당일 기관 순매수(+61,901주) · 5일 누적 외인·기관 동반 매집 · 견조한 상승 추세(+0.00%) · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
         },
         {
           "code": "035420",
           "name": "NAVER",
           "sector": "플랫폼·바이오",
           "is_us_etf": false,
-          "price": 187100,
+          "price": 193000,
           "chg_rate": 0.0,
-          "frgn_today": 13772,
-          "orgn_today": 168922,
+          "frgn_today": 236539,
+          "orgn_today": 120884,
           "leader_score": 89,
-          "reason": "당일 외인(+13,772)·기관(+168,922) 쌍끌이 매수 · 5일 누적 외인·기관 동반 매집 · 견조한 상승 추세(+0.00%)"
+          "reason": "당일 외인(+236,539)·기관(+120,884) 쌍끌이 매수 · 5일 누적 외인·기관 동반 매집 · 견조한 상승 추세(+0.00%)"
         },
         {
-          "code": "035720",
-          "name": "카카오",
+          "code": "051910",
+          "name": "LG화학",
           "sector": "플랫폼·바이오",
           "is_us_etf": false,
-          "price": 32100,
+          "price": 238000,
           "chg_rate": 0.0,
-          "frgn_today": -124054,
-          "orgn_today": 106768,
-          "leader_score": 80,
-          "reason": "당일 기관 순매수(+106,768주) · 5일 누적 외인·기관 동반 매집 · 견조한 상승 추세(+0.00%)"
+          "frgn_today": 16095,
+          "orgn_today": 24469,
+          "leader_score": 89,
+          "reason": "당일 외인(+16,095)·기관(+24,469) 쌍끌이 매수 · 5일 누적 외인·기관 동반 매집 · 견조한 상승 추세(+0.00%)"
         },
         {
-          "code": "066570",
-          "name": "LG전자",
-          "sector": "반도체·IT하드웨어",
+          "code": "012330",
+          "name": "현대모비스",
+          "sector": "자동차·모빌리티",
           "is_us_etf": false,
-          "price": 134700,
+          "price": 351500,
           "chg_rate": 0.0,
-          "frgn_today": -50883,
-          "orgn_today": 119392,
-          "leader_score": 74,
-          "reason": "당일 기관 순매수(+119,392주) · 5일 합산 메이저 순매수(+132,311주) · 견조한 상승 추세(+0.00%)"
+          "frgn_today": 9877,
+          "orgn_today": 13271,
+          "leader_score": 83,
+          "reason": "당일 외인(+9,877)·기관(+13,271) 쌍끌이 매수 · 5일 합산 메이저 순매수(+101,302주) · 견조한 상승 추세(+0.00%)"
         }
       ],
       "added": [
-        "카카오(035720)"
+        "TIGER 미국테크TOP10 INDXX(381170)",
+        "LG화학(051910)",
+        "현대모비스(012330)"
       ],
       "removed": [
-        "메리츠금융지주(138040)"
+        "TIGER 미국배당다우존스(458730)",
+        "카카오(035720)",
+        "LG전자(066570)"
       ]
     },
-    "us_bigtech_summary": "미국 나스닥 공식 빅테크 실적 발표는 오는 11월 12일 어플라이드머티어리얼즈(AMAT, EPS $4.06)와 11월 17일 엔비디아(NVDA, EPS $2.49)를 앞두고 있으며 나스닥100 조정 장세 속에서 반도체 실적에 이목이 집중되고 있습니다.",
+    "us_bigtech_summary": "11월 12일 어플라이드머티어리얼즈(AMAT, EPS 예상치 $4.06)와 11월 17일 엔비디아(NVDA, EPS 예상치 $2.49)의 실적 발표를 앞두고 글로벌 기술주 변동성이 확대되고 있습니다. 필라델피아 반도체 지수는 소폭 반등(+0.61%)했으나 나스닥100의 최근 급락 여파로 AI 섹터 전반의 경계감이 지속되고 있습니다.",
     "us_official_calendar": [
       {
         "date": "2026-11-12",
-        "dday": 2,
+        "dday": 1,
         "symbol": "AMAT",
         "kr_name": "어플라이드머티어리얼즈",
         "time_desc": "미 장마감 후(한국시간 익일 새벽 05:00경)",
@@ -111,7 +115,7 @@
       },
       {
         "date": "2026-11-17",
-        "dday": 7,
+        "dday": 6,
         "symbol": "NVDA",
         "kr_name": "엔비디아",
         "time_desc": "미 장마감 후(한국시간 익일 새벽 05:00경)",
@@ -119,14 +123,14 @@
         "quarter": "Oct/2026"
       }
     ],
-    "kr_macro_summary": "원/달러 환율이 1,342원 선에서 방향성을 모색하는 가운데, 외국인 대규모 순매도 기조와 맞물려 국내 증시는 변동성 장세를 지속하고 있습니다.",
+    "kr_macro_summary": "원/달러 환율이 1,344.50원을 기록하며 안정세를 보이고 있으나, 미 기술주 폭락 여파로 코스피 시장의 외국인 수급 불확실성이 커진 상태입니다. NAVER 등 주요 종목의 실적 발표와 DART 공시를 주시하며 보수적인 리스크 관리가 필요합니다.",
     "earnings_alert_level": "CAUTION",
     "stock_notes": {
       "005930": {
         "name": "삼성전자",
         "earnings_imminent": false,
         "earnings_status": "공식 IR 일정 미등록 (발표 완료)",
-        "memo": "지속적인 외국인 수급 이탈 및 100조 영업익 기대감 이후 주가 숨고르기 구간으로 분할 매수 대응.",
+        "memo": "DART 임원 주식 소유 변동 공시 및 외인 수급 추이를 모니터링하며 분할 매수 관점 접근",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
@@ -136,7 +140,7 @@
         "name": "SK하이닉스",
         "earnings_imminent": false,
         "earnings_status": "공식 IR 일정 미등록 (발표 완료)",
-        "memo": "HBM 모멘텀 유효하나 미국 빅테크 실적 및 반도체 지수(SOXX) 연동 흐름을 확인하며 보수적 접근.",
+        "memo": "HBM 수요 모멘텀과 미국 반도체(AMAT·NVDA) 실적 발표 연동성을 확인한 후 진입",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
@@ -146,7 +150,7 @@
         "name": "현대차",
         "earnings_imminent": false,
         "earnings_status": "공식 IR 일정 미등록 (발표 완료)",
-        "memo": "3분기 호실적 발표 이후 본업 초점 이동 및 로보틱스 모멘텀 반영하며 박스권 트레이딩.",
+        "memo": "본업 실적 호조 및 로보틱스 모멘텀 유효하나, 거시경제 변동성 완화 시까지 추격 매수 자제",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
@@ -156,33 +160,33 @@
         "name": "KB금융",
         "earnings_imminent": false,
         "earnings_status": "공식 IR 일정 미등록 (발표 완료)",
-        "memo": "높은 CET-1 비율을 바탕으로 한 방어력 우수, 매크로 변동성 방어용 포트폴리오 유지.",
+        "memo": "높은 CET-1 비율을 바탕으로 한 방어력 검증 완료, 안정적인 밴드 내 트레이딩 수행",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
-        "consensus_target_price": "219,722"
+        "consensus_target_price": "218,684"
       },
       "035420": {
         "name": "NAVER",
         "earnings_imminent": true,
-        "earnings_status": "2026-11-12 (D-2) '2026년 3분기 실적' 공식 발표 예정",
-        "memo": "D-2 임박 및 유상증자/DC 사업 이슈가 혼재되어 있으므로 공식 실적 발표 확인 후 진입.",
-        "official_ir_schedule": "2026-11-12 (D-2) 2026년 3분기 실적",
+        "earnings_status": "2026-11-12 (D-1) 3분기 실적 공식 발표 예정",
+        "memo": "내일 실적 발표 및 AI DC 사업 본격화에 따른 불확실성 해소 여부를 확인한 후 대응",
+        "official_ir_schedule": "2026-11-12 (D-1) 2026년 3분기 실적",
         "ir_date": "2026-11-12",
-        "ir_dday": 2,
+        "ir_dday": 1,
         "consensus_target_price": "319,696"
       },
       "267260": {
         "name": "HD현대일렉트릭",
         "earnings_imminent": false,
         "earnings_status": "공식 IR 일정 미등록",
-        "memo": "미국 전력망 인프라 관련 수급 및 글로벌 전력기기 업황 변동성에 연동하여 탄력적 대응."
+        "memo": "미국 빅테크 전력 인프라 투자 방향성과 연동하여 수급 유입 시 제한적 비중 확대"
       },
       "091160": {
         "name": "KODEX 반도체",
         "earnings_imminent": false,
-        "earnings_status": "향후 AMAT(11/12) 및 엔비디아(11/17) 실적 일정 연동",
-        "memo": "미국 반도체 지수(SOXX)와 주요 빅테크 실적 발표 전까지 추격 매수 자제 및 비중 유지."
+        "earnings_status": "미국 AMAT(11/12) 및 엔비디아(11/17) 실적 발표 연동",
+        "memo": "미국 대형 반도체 실적 발표 직전까지 성급한 추격 매수를 자제하고 관망 유지"
       },
       "465580": {
         "name": "ACE 미국빅테크TOP7 Plus",
@@ -190,25 +194,25 @@
         "ir_date": null,
         "ir_dday": null
       },
-      "458730": {
-        "name": "TIGER 미국배당다우존스",
+      "381170": {
+        "name": "TIGER 미국테크TOP10 INDXX",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null
       },
-      "035720": {
-        "name": "카카오",
+      "051910": {
+        "name": "LG화학",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
-        "consensus_target_price": "46,682"
+        "consensus_target_price": "355,583"
       },
-      "066570": {
-        "name": "LG전자",
+      "012330": {
+        "name": "현대모비스",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
-        "consensus_target_price": "253,235"
+        "consensus_target_price": "606,957"
       }
     }
   },
@@ -3171,24 +3175,24 @@
         "name": "KB금융"
       },
       {
-        "code": "458730",
-        "name": "TIGER 미국배당다우존스"
+        "code": "381170",
+        "name": "TIGER 미국테크TOP10 INDXX"
       },
       {
         "code": "035420",
         "name": "NAVER"
       },
       {
-        "code": "035720",
-        "name": "카카오"
+        "code": "051910",
+        "name": "LG화학"
       },
       {
-        "code": "066570",
-        "name": "LG전자"
+        "code": "012330",
+        "name": "현대모비스"
       }
     ],
     "last_rotation": {
-      "rotated_at": "2026-11-10 12:52:11",
+      "rotated_at": "2026-11-11 08:30:24",
       "universe_size": 30,
       "watch_size": 8,
       "core_stocks": [
@@ -3219,59 +3223,63 @@
       ],
       "dynamic_leaders": [
         {
-          "code": "458730",
-          "name": "TIGER 미국배당다우존스",
+          "code": "381170",
+          "name": "TIGER 미국테크TOP10 INDXX",
           "sector": "미국증시·글로벌빅테크",
           "is_us_etf": true,
-          "price": 15175,
-          "chg_rate": 0.26,
-          "frgn_today": -49866,
-          "orgn_today": 54732,
+          "price": 28795,
+          "chg_rate": 0.0,
+          "frgn_today": -67947,
+          "orgn_today": 61901,
           "leader_score": 86,
-          "reason": "당일 기관 순매수(+54,732주) · 5일 누적 외인·기관 동반 매집 · 견조한 상승 추세(+0.26%) · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
+          "reason": "당일 기관 순매수(+61,901주) · 5일 누적 외인·기관 동반 매집 · 견조한 상승 추세(+0.00%) · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
         },
         {
           "code": "035420",
           "name": "NAVER",
           "sector": "플랫폼·바이오",
           "is_us_etf": false,
-          "price": 192800,
-          "chg_rate": 3.05,
-          "frgn_today": 13772,
-          "orgn_today": 168922,
+          "price": 193000,
+          "chg_rate": 0.0,
+          "frgn_today": 236539,
+          "orgn_today": 120884,
           "leader_score": 89,
-          "reason": "당일 외인(+13,772)·기관(+168,922) 쌍끌이 매수 · 5일 누적 외인·기관 동반 매집 · 견조한 상승 추세(+3.05%)"
+          "reason": "당일 외인(+236,539)·기관(+120,884) 쌍끌이 매수 · 5일 누적 외인·기관 동반 매집 · 견조한 상승 추세(+0.00%)"
         },
         {
-          "code": "035720",
-          "name": "카카오",
+          "code": "051910",
+          "name": "LG화학",
           "sector": "플랫폼·바이오",
           "is_us_etf": false,
-          "price": 32000,
-          "chg_rate": -0.31,
-          "frgn_today": -124054,
-          "orgn_today": 106768,
-          "leader_score": 79,
-          "reason": "당일 기관 순매수(+106,768주) · 5일 누적 외인·기관 동반 매집 · 조정 중 메이저 저가매수 유입(-0.31%)"
+          "price": 238000,
+          "chg_rate": 0.0,
+          "frgn_today": 16095,
+          "orgn_today": 24469,
+          "leader_score": 89,
+          "reason": "당일 외인(+16,095)·기관(+24,469) 쌍끌이 매수 · 5일 누적 외인·기관 동반 매집 · 견조한 상승 추세(+0.00%)"
         },
         {
-          "code": "066570",
-          "name": "LG전자",
-          "sector": "반도체·IT하드웨어",
+          "code": "012330",
+          "name": "현대모비스",
+          "sector": "자동차·모빌리티",
           "is_us_etf": false,
-          "price": 138200,
-          "chg_rate": 2.6,
-          "frgn_today": -50883,
-          "orgn_today": 119392,
-          "leader_score": 74,
-          "reason": "당일 기관 순매수(+119,392주) · 5일 합산 메이저 순매수(+132,311주) · 견조한 상승 추세(+2.60%)"
+          "price": 351500,
+          "chg_rate": 0.0,
+          "frgn_today": 9877,
+          "orgn_today": 13271,
+          "leader_score": 83,
+          "reason": "당일 외인(+9,877)·기관(+13,271) 쌍끌이 매수 · 5일 합산 메이저 순매수(+101,302주) · 견조한 상승 추세(+0.00%)"
         }
       ],
       "added": [
-        "카카오(035720)"
+        "TIGER 미국테크TOP10 INDXX(381170)",
+        "LG화학(051910)",
+        "현대모비스(012330)"
       ],
       "removed": [
-        "메리츠금융지주(138040)"
+        "TIGER 미국배당다우존스(458730)",
+        "카카오(035720)",
+        "LG전자(066570)"
       ]
     },
     "master_universe_size": 30
