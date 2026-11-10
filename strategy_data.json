@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11 03:25:35",
+  "updated_at": "2026-11-11 03:32:07",
   "battery": "85% (⚡ 충전 중, 22.5°C)",
   "market_intel": {
     "updated_at": "2026-11-10 08:30:16",
@@ -213,15 +213,15 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-11 03:24:21",
-    "checked_ts": 1794335061,
+    "checked_at": "2026-11-11 03:30:53",
+    "checked_ts": 1794335453,
     "date": "2026-11-10",
     "overall_status": "⚠️ 주의 항목 1건 감지 (한투 잔고 조회 일시 지연 (balance_ok=False - 서킷브레이커 오발동 방어 중))",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 10,
-    "toss_bot_sec_ago": 5,
-    "toss_strategy_monitor_sec_ago": 9,
-    "scheduler_heartbeat_sec_ago": 14,
+    "main_bot_sec_ago": 14,
+    "toss_bot_sec_ago": 9,
+    "toss_strategy_monitor_sec_ago": 10,
+    "scheduler_heartbeat_sec_ago": 6,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2500000,
     "market_opened_today": true,
@@ -260,7 +260,7 @@
     "last_thread_alert_ts": 0.0
   },
   "ai_audit": {
-    "updated_at": "2026-11-11 01:32:06",
+    "updated_at": "2026-11-11 03:31:51",
     "items": {
       "005930": {
         "code": "005930",
@@ -1097,7 +1097,7 @@
         "code": "AAPL",
         "name": "애플 (AAPL)",
         "sector": "미국증시·글로벌빅테크",
-        "checked_at": "2026-11-11 01:30:40",
+        "checked_at": "2026-11-11 03:30:36",
         "price": 0,
         "ma20": 0,
         "rsi": 50.0,
@@ -1110,16 +1110,16 @@
         "flow_summary": "글로벌 헤지펀드 및 기관 수급 추적 중",
         "ir_schedule": "일정 없음",
         "fact_breakdown": "시장레짐(강세장 +3점) | 20일선 중립(0점) | RSI 50.0 중립안정(+3점) | 글로벌수급중립(0점) | 거래량100%·캔들(+0점) | 실적일정 중립(0점)",
-        "cited_facts": "S&P500 현재 강세장, 20일선 상회; AAPL 현재가 $0.00(정보 부족), 14일 RSI 50.0(중립); ATR 2.20% 중변동, 목표익절선 +8.5%·과열익절선 +4.5%; 외국인·기관 수급 정보 미확인, 거래량 평시 수준; 실전 계좌 현금 2,500,000원, 종목당 한도 750,000원, 현재 보유 0주",
+        "cited_facts": "S&P500 정상·강세장, 현재 AAPL 가격 $0.00(0원)이며 14일 RSI 50.0(중립), 14일 ATR 2.20% (중변동), 외국인·기관 수급 정보 확인 중, 최신 뉴스 특이 없음",
         "quant_score": 61,
-        "ai_raw_score": 52,
-        "final_score": 52,
+        "ai_raw_score": 54,
+        "final_score": 54,
         "decision": "관망",
-        "score_gap": 9,
+        "score_gap": 7,
         "hit_rate_pct": null,
         "hit_desc": "초기 표본 수집 중 (평가 데이터 없음)",
         "audit_status": "PASS",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 61점 ↔ AI 52점 | 편차 9점)",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 61점 ↔ AI 54점 | 편차 7점)",
         "models": [
           {
             "provider": "Google",
@@ -1130,18 +1130,18 @@
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 55,
+            "score": 58,
             "decision": "관망"
           }
         ],
         "consensus": "2:0 관망 우세",
-        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 52점 · 편차 5점 | Groq:gpt-oss-120b(55점 관망), Google:3.5-flash-lite(50점 관망))] RSI가 중립 수준이고 외인·기관 순매수와 같은 강력한 매수 신호가 없으며, 현재 가격 정보가 제공되지 않아 목표익절선 도달 여부를 판단할 수 없습니다. 따라서 신규 진입을 보류하고 관망하는 것이 바람직합니다."
+        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 54점 · 편차 8점 | Groq:gpt-oss-120b(58점 관망), Google:3.5-flash-lite(50점 관망))] 현재 RSI가 중립 수준이고 매수 신호인 저가 매수(RSI≤40)나 외인·기관 순매수 호재가 확인되지 않아 진입 타이밍이 불명확합니다. 또한 보유 포지션이 없으므로 매도도 불가능하고, 현 상황에서는 관망이 가장 안전합니다."
       },
       "NVDA": {
         "code": "NVDA",
         "name": "엔비디아 (NVDA)",
         "sector": "미국증시·글로벌빅테크",
-        "checked_at": "2026-11-11 01:30:58",
+        "checked_at": "2026-11-11 03:30:41",
         "price": 0,
         "ma20": 0,
         "rsi": 50.0,
@@ -1154,7 +1154,7 @@
         "flow_summary": "글로벌 헤지펀드 및 기관 수급 추적 중",
         "ir_schedule": "일정 없음",
         "fact_breakdown": "시장레짐(강세장 +3점) | 20일선 중립(0점) | RSI 50.0 중립안정(+3점) | 글로벌수급중립(0점) | 거래량100%·캔들(+0점) | 실적일정 중립(0점)",
-        "cited_facts": "S&P500 정상·강세장, RSI 50.0 중립, 14일 ATR 2.20% 중변동, 거래량 평시 수준, 현재 보유 0주",
+        "cited_facts": "미국 S&P500 정상·강세장, NVDA 현재가 $0.00(등락률 +0.00%), 14일 RSI 50.0(중립), 14일 ATR 2.20%(중변동), 거래량 평시 수준, 외국인·기관 수급 정보 미확인, 현금 가용 2,500,000원(종목당 한도 충족) 및 보유 주식 0주",
         "quant_score": 61,
         "ai_raw_score": 52,
         "final_score": 52,
@@ -1179,13 +1179,13 @@
           }
         ],
         "consensus": "2:0 관망 우세",
-        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 52점 · 편차 5점 | Groq:gpt-oss-120b(55점 관망), Google:3.5-flash-lite(50점 관망))] 시장 레짐은 강세이지만 RSI가 중립이며 거래량도 평범해 매수 신호가 약합니다. ATR 목표익절선과 손절선도 아직 도달되지 않아 진입을 미루는 것이 바람직합니다."
+        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 52점 · 편차 5점 | Groq:gpt-oss-120b(55점 관망), Google:3.5-flash-lite(50점 관망))] NVDA는 현재 RSI가 중립 수준이며, 거래량도 평시 수준으로 특별한 매수 신호가 없습니다. 또한 보유 주식이 없으므로 신규 진입을 위한 명확한 호재나 외인·기관 순매수 추세가 확인되지 않아 관망을 권고합니다."
       },
       "TSLA": {
         "code": "TSLA",
         "name": "테슬라 (TSLA)",
         "sector": "미국증시·글로벌빅테크",
-        "checked_at": "2026-11-11 01:31:24",
+        "checked_at": "2026-11-11 03:31:00",
         "price": 0,
         "ma20": 0,
         "rsi": 50.0,
@@ -1198,16 +1198,16 @@
         "flow_summary": "글로벌 헤지펀드 및 기관 수급 추적 중",
         "ir_schedule": "일정 없음",
         "fact_breakdown": "시장레짐(강세장 +3점) | 20일선 중립(0점) | RSI 50.0 중립안정(+3점) | 글로벌수급중립(0점) | 거래량100%·캔들(+0점) | 실적일정 중립(0점)",
-        "cited_facts": "RSI 50.0(중립), ATR 2.20%(중변동), 현재가 0.00USD(데이터 오류), 외인·기관 수급 미확인, 거래량 평시 수준",
+        "cited_facts": "현재 S&P500 정상·강세장, TSLA 현재가 $0.00(등락률 0.00%), 14일 RSI 50.0(중립), 14일 ATR 2.20% (중변동), 당일 거래량 평시 수준, 가용 현금 2,500,000원(종목당 한도 750,000원) 및 보유 0주",
         "quant_score": 61,
-        "ai_raw_score": 50,
-        "final_score": 50,
+        "ai_raw_score": 51,
+        "final_score": 51,
         "decision": "관망",
-        "score_gap": 11,
+        "score_gap": 10,
         "hit_rate_pct": null,
         "hit_desc": "초기 표본 수집 중 (평가 데이터 없음)",
         "audit_status": "PASS",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 61점 ↔ AI 50점 | 편차 11점)",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 61점 ↔ AI 51점 | 편차 10점)",
         "models": [
           {
             "provider": "Google",
@@ -1217,19 +1217,19 @@
           },
           {
             "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 50,
+            "model": "Groq 120B",
+            "score": 52,
             "decision": "관망"
           }
         ],
         "consensus": "2:0 관망 우세",
-        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 50점 · 편차 0점 | Groq:gpt-oss-20b(50점 관망), Google:3.5-flash-lite(50점 관망))] RSI가 중립 수준이며, ATR 목표익절선·과열익절선이 아직 도달하지 않았고, 외인·기관 수급이 명확하지 않아 매수·매도 판단이 어려운 상황입니다. 현재 가용 현금과 종목 한도는 충족하지만, 구체적인 매수 신호가 없으므로 관망이 가장 합리적입니다."
+        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 51점 · 편차 2점 | Groq:gpt-oss-120b(52점 관망), Google:3.5-flash-lite(50점 관망))] RSI가 중립 수준이고 외인·기관 수급 및 호재 신호가 뚜렷하지 않아 매수 타이밍이 확정되지 않았습니다. 현금 여유는 있으나 현재 가격과 변동성 프로파일만으로는 진입 위험이 높아 관망을 유지합니다."
       },
       "SGOV": {
         "code": "SGOV",
         "name": "iShares 0-3M 단기국채",
         "sector": "초단기채권·현금성자산",
-        "checked_at": "2026-11-11 01:31:49",
+        "checked_at": "2026-11-11 03:31:35",
         "price": 0,
         "ma20": 0,
         "rsi": 50.0,
@@ -1242,109 +1242,21 @@
         "flow_summary": "글로벌 헤지펀드 및 기관 수급 추적 중",
         "ir_schedule": "일정 없음",
         "fact_breakdown": "시장레짐(강세장 +3점) | 20일선 중립(0점) | RSI 50.0 중립안정(+3점) | 글로벌수급중립(0점) | 거래량100%·캔들(+0점) | 실적일정 중립(0점)",
-        "cited_facts": "ATR 2.20% (중변동), RSI 50.0 (중립), 현재가 0.00 USD, 거래량 평시 수준, 외인·기관 수급 추적 중",
+        "cited_facts": "현재 S&P500 정상·강세장, SGOV 현재가 $0.00, 14일 RSI 50.0(중립), 거래량 평시 수준, 현금 2,500,000원·종목당 한도 750,000원·보유 0주",
         "quant_score": 61,
-        "ai_raw_score": 50,
-        "final_score": 50,
+        "ai_raw_score": 52,
+        "final_score": 52,
         "decision": "관망",
-        "score_gap": 11,
+        "score_gap": 9,
         "hit_rate_pct": null,
         "hit_desc": "초기 표본 수집 중 (평가 데이터 없음)",
         "audit_status": "PASS",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 61점 ↔ AI 50점 | 편차 11점)",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 61점 ↔ AI 52점 | 편차 9점)",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
             "score": 50,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 50,
-            "decision": "관망"
-          }
-        ],
-        "consensus": "2:0 관망 우세",
-        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 50점 · 편차 0점 | Groq:gpt-oss-20b(50점 관망), Google:3.5-flash-lite(50점 관망))] 현재 RSI가 중립 수준이며, ATR 목표익절선·과열익절선이 아직 도달하지 않았고, 외인·기관 수급이 명확히 매수 신호를 보이지 않으므로 보유하거나 진입을 보류하는 것이 가장 안전한 판단이다."
-      },
-      "SCHD": {
-        "code": "SCHD",
-        "name": "Schwab 미국 배당 다우",
-        "sector": "미국배당·가치주ETF",
-        "checked_at": "2026-11-11 01:32:06",
-        "price": 0,
-        "ma20": 0,
-        "rsi": 50.0,
-        "atr_pct": 2.2,
-        "vol_label": "중변동 표준주",
-        "target_tp_pct": 8.5,
-        "hard_stop_pct": -7.0,
-        "vol_ratio_pct": 100.0,
-        "candle_desc": "확인 중",
-        "flow_summary": "글로벌 헤지펀드 및 기관 수급 추적 중",
-        "ir_schedule": "일정 없음",
-        "fact_breakdown": "시장레짐(강세장 +3점) | 20일선 중립(0점) | RSI 50.0 중립안정(+3점) | 글로벌수급중립(0점) | 거래량100%·캔들(+0점) | 실적일정 중립(0점)",
-        "cited_facts": "ATR 2.20% (중변동), RSI 50.0 (중립), 현재가 0.00 USD, 20일 MA20 확인 중, 거래량 평시 수준, 외인·기관 수급 추적 중",
-        "quant_score": 61,
-        "ai_raw_score": 55,
-        "final_score": 55,
-        "decision": "관망",
-        "score_gap": 6,
-        "hit_rate_pct": null,
-        "hit_desc": "초기 표본 수집 중 (평가 데이터 없음)",
-        "audit_status": "PASS",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 61점 ↔ AI 55점 | 편차 6점)",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 55,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 55,
-            "decision": "관망"
-          }
-        ],
-        "consensus": "2:0 관망 우세",
-        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 55점 · 편차 0점 | Groq:gpt-oss-20b(55점 관망), Google:3.5-flash-lite(55점 관망))] 현재 RSI가 중립 수준이며, ATR 목표익절선·과열익절선이 아직 도달하지 않았고, 외인·기관 수급이 불확실한 상태이므로 보유하거나 진입하기에 적절한 시점이 아니라고 판단했습니다. 따라서 관망으로 유지하고 추가 정보를 기다리겠습니다."
-      },
-      "GOOGL": {
-        "code": "GOOGL",
-        "name": "알파벳 A (GOOGL)",
-        "sector": "미국증시·글로벌빅테크",
-        "checked_at": "2026-11-11 01:31:03",
-        "price": 0,
-        "ma20": 0,
-        "rsi": 50.0,
-        "atr_pct": 2.2,
-        "vol_label": "중변동 표준주",
-        "target_tp_pct": 8.5,
-        "hard_stop_pct": -7.0,
-        "vol_ratio_pct": 100.0,
-        "candle_desc": "확인 중",
-        "flow_summary": "글로벌 헤지펀드 및 기관 수급 추적 중",
-        "ir_schedule": "일정 없음",
-        "fact_breakdown": "시장레짐(강세장 +3점) | 20일선 중립(0점) | RSI 50.0 중립안정(+3점) | 글로벌수급중립(0점) | 거래량100%·캔들(+0점) | 실적일정 중립(0점)",
-        "cited_facts": "미국 S&P500 정상·강세장, GOOGL 현재가 $0.00(등락 0.00%), 14일 ATR 2.20% (중변동), 14일 RSI 50.0(중립), 거래량 평시 수준, 외국인·기관 수급 정보 미확인, 최신 뉴스 없음",
-        "quant_score": 61,
-        "ai_raw_score": 55,
-        "final_score": 55,
-        "decision": "관망",
-        "score_gap": 6,
-        "hit_rate_pct": null,
-        "hit_desc": "초기 표본 수집 중 (평가 데이터 없음)",
-        "audit_status": "PASS",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 61점 ↔ AI 55점 | 편차 6점)",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 55,
             "decision": "관망"
           },
           {
@@ -1355,7 +1267,95 @@
           }
         ],
         "consensus": "2:0 관망 우세",
-        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 55점 · 편차 0점 | Groq:gpt-oss-120b(55점 관망), Google:3.5-flash-lite(55점 관망))] 현재 시장은 강세이지만 GOOGL의 RSI가 중립이고 거래량도 평범해 매수 신호가 부족합니다. 또한 보유 포지션이 없으며, 특별한 호재나 외인·기관 순매수 흐름이 확인되지 않아 관망하는 것이 바람직합니다."
+        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 52점 · 편차 5점 | Groq:gpt-oss-120b(55점 관망), Google:3.5-flash-lite(50점 관망))] RSI가 중립 수준이고 외인·기관 수급 및 호재가 확인되지 않아 매수 신호가 약합니다. 현금과 종목 한도는 충족하지만, 현재 시장 상황과 기술적 지표만으로는 진입 타이밍이 명확하지 않으므로 관망을 권고합니다."
+      },
+      "SCHD": {
+        "code": "SCHD",
+        "name": "Schwab 미국 배당 다우",
+        "sector": "미국배당·가치주ETF",
+        "checked_at": "2026-11-11 03:31:51",
+        "price": 0,
+        "ma20": 0,
+        "rsi": 50.0,
+        "atr_pct": 2.2,
+        "vol_label": "중변동 표준주",
+        "target_tp_pct": 8.5,
+        "hard_stop_pct": -7.0,
+        "vol_ratio_pct": 100.0,
+        "candle_desc": "확인 중",
+        "flow_summary": "글로벌 헤지펀드 및 기관 수급 추적 중",
+        "ir_schedule": "일정 없음",
+        "fact_breakdown": "시장레짐(강세장 +3점) | 20일선 중립(0점) | RSI 50.0 중립안정(+3점) | 글로벌수급중립(0점) | 거래량100%·캔들(+0점) | 실적일정 중립(0점)",
+        "cited_facts": "S&P500 정상·강세장, SCHD 현재가 $0.00, 14일 RSI 50.0(중립), ATR 2.20%→중변동 표준주, 거래량 평시 수준, 보유 수량 0주, 가용 현금 충분하지만 매수 조건(RSI<=40 또는 외인·기관 순매수·호재) 미충족",
+        "quant_score": 61,
+        "ai_raw_score": 52,
+        "final_score": 52,
+        "decision": "관망",
+        "score_gap": 9,
+        "hit_rate_pct": null,
+        "hit_desc": "초기 표본 수집 중 (평가 데이터 없음)",
+        "audit_status": "PASS",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 61점 ↔ AI 52점 | 편차 9점)",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 50,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 55,
+            "decision": "관망"
+          }
+        ],
+        "consensus": "2:0 관망 우세",
+        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 52점 · 편차 5점 | Groq:gpt-oss-120b(55점 관망), Google:3.5-flash-lite(50점 관망))] 현재 RSI가 중립 수준이며 외인·기관의 뚜렷한 순매수 신호와 호재가 없으므로 신규 진입 시점이 아니다. 보유하고 있지 않아 매도도 불가능하고, 매수 기준을 만족하지 않아 관망으로 판단한다."
+      },
+      "GOOGL": {
+        "code": "GOOGL",
+        "name": "알파벳 A (GOOGL)",
+        "sector": "미국증시·글로벌빅테크",
+        "checked_at": "2026-11-11 03:30:53",
+        "price": 0,
+        "ma20": 0,
+        "rsi": 50.0,
+        "atr_pct": 2.2,
+        "vol_label": "중변동 표준주",
+        "target_tp_pct": 8.5,
+        "hard_stop_pct": -7.0,
+        "vol_ratio_pct": 100.0,
+        "candle_desc": "확인 중",
+        "flow_summary": "글로벌 헤지펀드 및 기관 수급 추적 중",
+        "ir_schedule": "일정 없음",
+        "fact_breakdown": "시장레짐(강세장 +3점) | 20일선 중립(0점) | RSI 50.0 중립안정(+3점) | 글로벌수급중립(0점) | 거래량100%·캔들(+0점) | 실적일정 중립(0점)",
+        "cited_facts": "현재 S&P500 정상·강세장, GOOGL 현재가 $0.00(등락 0%), 14일 RSI 50.0(중립), 14일 ATR 2.20% (중변동), 거래량 평시 수준, 가용 현금 2,500,000원(종목당 한도 750,000원) 및 보유 0주",
+        "quant_score": 61,
+        "ai_raw_score": 54,
+        "final_score": 54,
+        "decision": "관망",
+        "score_gap": 7,
+        "hit_rate_pct": null,
+        "hit_desc": "초기 표본 수집 중 (평가 데이터 없음)",
+        "audit_status": "PASS",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 61점 ↔ AI 54점 | 편차 7점)",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 55,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 52,
+            "decision": "관망"
+          }
+        ],
+        "consensus": "2:0 관망 우세",
+        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 54점 · 편차 3점 | Groq:gpt-oss-120b(52점 관망), Google:3.5-flash-lite(55점 관망))] RSI가 중립 수준이고 외인·기관 수급 및 호재 뉴스가 없으며, 현재 가격 변동성도 중간 수준이므로 신중히 기다리는 것이 바람직합니다. 현금과 한도는 충분하지만 매수 타점이 명확하지 않아 관망을 권고합니다."
       }
     },
     "prediction_history": {
@@ -2553,200 +2553,24 @@
     "has_data": true,
     "file_name": "flight_log_2026-11-11.jsonl",
     "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-11.jsonl",
-    "period": "2026-11-11 00:25:46 ~ 2026-11-11 03:24:50",
+    "period": "2026-11-11 00:25:46 ~ 2026-11-11 03:32:06",
     "commit_hash": "v2.0-live",
-    "total_events": 353,
-    "error_count": 117,
-    "warn_count": 230,
+    "total_events": 381,
+    "error_count": 125,
+    "warn_count": 244,
     "level_counts": {
       "ERROR": 5,
-      "CRITICAL": 112,
-      "WARN": 230,
-      "INFO": 6
+      "CRITICAL": 120,
+      "WARN": 244,
+      "INFO": 12
     },
     "categories": {
       "AI_PARSE": 5,
-      "KIS_API": 336,
-      "AI_ENSEMBLE": 6,
-      "QUANT_FACTS": 6
+      "KIS_API": 355,
+      "AI_ENSEMBLE": 9,
+      "QUANT_FACTS": 12
     },
     "top_errors": [
-      {
-        "ts": "2026-11-11 03:11:16",
-        "ver": "v2.0-live",
-        "thread": "Thread-2 (monitor)",
-        "loc": "test_connection.py:432 in get_balance()",
-        "lvl": "CRITICAL",
-        "cat": "KIS_API",
-        "msg": "증권사 API 에러: [EGW00123] 기간이 만료된 token 입니다. (/uapi/domestic-stock/v1/trading/inquire-balance)",
-        "error_type": "",
-        "error_str": "",
-        "raw_snippet": "",
-        "msg_cd": "EGW00123",
-        "ctx": {
-          "attempt": 3,
-          "broker": "KIS",
-          "endpoint": "/uapi/domestic-stock/v1/trading/inquire-balance",
-          "msg_cd": "EGW00123",
-          "msg1": "기간이 만료된 token 입니다.",
-          "rt_cd": "1",
-          "http_status": 500
-        }
-      },
-      {
-        "ts": "2026-11-11 03:11:20",
-        "ver": "v2.0-live",
-        "thread": "Thread-2 (monitor)",
-        "loc": "test_connection.py:432 in get_balance()",
-        "lvl": "CRITICAL",
-        "cat": "KIS_API",
-        "msg": "증권사 API 에러: [EGW00123] 기간이 만료된 token 입니다. (/uapi/domestic-stock/v1/trading/inquire-balance)",
-        "error_type": "",
-        "error_str": "",
-        "raw_snippet": "",
-        "msg_cd": "EGW00123",
-        "ctx": {
-          "attempt": 4,
-          "broker": "KIS",
-          "endpoint": "/uapi/domestic-stock/v1/trading/inquire-balance",
-          "msg_cd": "EGW00123",
-          "msg1": "기간이 만료된 token 입니다.",
-          "rt_cd": "1",
-          "http_status": 500
-        }
-      },
-      {
-        "ts": "2026-11-11 03:17:42",
-        "ver": "v2.0-live",
-        "thread": "Thread-2 (monitor)",
-        "loc": "test_connection.py:432 in get_balance()",
-        "lvl": "CRITICAL",
-        "cat": "KIS_API",
-        "msg": "증권사 API 에러: [EGW00123] 기간이 만료된 token 입니다. (/uapi/domestic-stock/v1/trading/inquire-balance)",
-        "error_type": "",
-        "error_str": "",
-        "raw_snippet": "",
-        "msg_cd": "EGW00123",
-        "ctx": {
-          "attempt": 1,
-          "broker": "KIS",
-          "endpoint": "/uapi/domestic-stock/v1/trading/inquire-balance",
-          "msg_cd": "EGW00123",
-          "msg1": "기간이 만료된 token 입니다.",
-          "rt_cd": "1",
-          "http_status": 500
-        }
-      },
-      {
-        "ts": "2026-11-11 03:17:43",
-        "ver": "v2.0-live",
-        "thread": "Thread-2 (monitor)",
-        "loc": "test_connection.py:432 in get_balance()",
-        "lvl": "CRITICAL",
-        "cat": "KIS_API",
-        "msg": "증권사 API 에러: [EGW00123] 기간이 만료된 token 입니다. (/uapi/domestic-stock/v1/trading/inquire-balance)",
-        "error_type": "",
-        "error_str": "",
-        "raw_snippet": "",
-        "msg_cd": "EGW00123",
-        "ctx": {
-          "attempt": 2,
-          "broker": "KIS",
-          "endpoint": "/uapi/domestic-stock/v1/trading/inquire-balance",
-          "msg_cd": "EGW00123",
-          "msg1": "기간이 만료된 token 입니다.",
-          "rt_cd": "1",
-          "http_status": 500
-        }
-      },
-      {
-        "ts": "2026-11-11 03:17:45",
-        "ver": "v2.0-live",
-        "thread": "Thread-2 (monitor)",
-        "loc": "test_connection.py:432 in get_balance()",
-        "lvl": "CRITICAL",
-        "cat": "KIS_API",
-        "msg": "증권사 API 에러: [EGW00123] 기간이 만료된 token 입니다. (/uapi/domestic-stock/v1/trading/inquire-balance)",
-        "error_type": "",
-        "error_str": "",
-        "raw_snippet": "",
-        "msg_cd": "EGW00123",
-        "ctx": {
-          "attempt": 3,
-          "broker": "KIS",
-          "endpoint": "/uapi/domestic-stock/v1/trading/inquire-balance",
-          "msg_cd": "EGW00123",
-          "msg1": "기간이 만료된 token 입니다.",
-          "rt_cd": "1",
-          "http_status": 500
-        }
-      },
-      {
-        "ts": "2026-11-11 03:17:49",
-        "ver": "v2.0-live",
-        "thread": "Thread-2 (monitor)",
-        "loc": "test_connection.py:432 in get_balance()",
-        "lvl": "CRITICAL",
-        "cat": "KIS_API",
-        "msg": "증권사 API 에러: [EGW00123] 기간이 만료된 token 입니다. (/uapi/domestic-stock/v1/trading/inquire-balance)",
-        "error_type": "",
-        "error_str": "",
-        "raw_snippet": "",
-        "msg_cd": "EGW00123",
-        "ctx": {
-          "attempt": 4,
-          "broker": "KIS",
-          "endpoint": "/uapi/domestic-stock/v1/trading/inquire-balance",
-          "msg_cd": "EGW00123",
-          "msg1": "기간이 만료된 token 입니다.",
-          "rt_cd": "1",
-          "http_status": 500
-        }
-      },
-      {
-        "ts": "2026-11-11 03:24:09",
-        "ver": "v2.0-live",
-        "thread": "Thread-2 (monitor)",
-        "loc": "test_connection.py:432 in get_balance()",
-        "lvl": "CRITICAL",
-        "cat": "KIS_API",
-        "msg": "증권사 API 에러: [EGW00123] 기간이 만료된 token 입니다. (/uapi/domestic-stock/v1/trading/inquire-balance)",
-        "error_type": "",
-        "error_str": "",
-        "raw_snippet": "",
-        "msg_cd": "EGW00123",
-        "ctx": {
-          "attempt": 1,
-          "broker": "KIS",
-          "endpoint": "/uapi/domestic-stock/v1/trading/inquire-balance",
-          "msg_cd": "EGW00123",
-          "msg1": "기간이 만료된 token 입니다.",
-          "rt_cd": "1",
-          "http_status": 500
-        }
-      },
-      {
-        "ts": "2026-11-11 03:24:10",
-        "ver": "v2.0-live",
-        "thread": "Thread-2 (monitor)",
-        "loc": "test_connection.py:432 in get_balance()",
-        "lvl": "CRITICAL",
-        "cat": "KIS_API",
-        "msg": "증권사 API 에러: [EGW00123] 기간이 만료된 token 입니다. (/uapi/domestic-stock/v1/trading/inquire-balance)",
-        "error_type": "",
-        "error_str": "",
-        "raw_snippet": "",
-        "msg_cd": "EGW00123",
-        "ctx": {
-          "attempt": 2,
-          "broker": "KIS",
-          "endpoint": "/uapi/domestic-stock/v1/trading/inquire-balance",
-          "msg_cd": "EGW00123",
-          "msg1": "기간이 만료된 token 입니다.",
-          "rt_cd": "1",
-          "http_status": 500
-        }
-      },
       {
         "ts": "2026-11-11 03:24:13",
         "ver": "v2.0-live",
@@ -2790,12 +2614,188 @@
           "rt_cd": "1",
           "http_status": 500
         }
+      },
+      {
+        "ts": "2026-11-11 03:30:21",
+        "ver": "v2.0-live",
+        "thread": "Thread-7 (_worker)",
+        "loc": "test_connection.py:432 in get_balance()",
+        "lvl": "CRITICAL",
+        "cat": "KIS_API",
+        "msg": "증권사 API 에러: [EGW00123] 기간이 만료된 token 입니다. (/uapi/domestic-stock/v1/trading/inquire-balance)",
+        "error_type": "",
+        "error_str": "",
+        "raw_snippet": "",
+        "msg_cd": "EGW00123",
+        "ctx": {
+          "attempt": 1,
+          "broker": "KIS",
+          "endpoint": "/uapi/domestic-stock/v1/trading/inquire-balance",
+          "msg_cd": "EGW00123",
+          "msg1": "기간이 만료된 token 입니다.",
+          "rt_cd": "1",
+          "http_status": 500
+        }
+      },
+      {
+        "ts": "2026-11-11 03:30:22",
+        "ver": "v2.0-live",
+        "thread": "Thread-7 (_worker)",
+        "loc": "test_connection.py:432 in get_balance()",
+        "lvl": "CRITICAL",
+        "cat": "KIS_API",
+        "msg": "증권사 API 에러: [EGW00123] 기간이 만료된 token 입니다. (/uapi/domestic-stock/v1/trading/inquire-balance)",
+        "error_type": "",
+        "error_str": "",
+        "raw_snippet": "",
+        "msg_cd": "EGW00123",
+        "ctx": {
+          "attempt": 2,
+          "broker": "KIS",
+          "endpoint": "/uapi/domestic-stock/v1/trading/inquire-balance",
+          "msg_cd": "EGW00123",
+          "msg1": "기간이 만료된 token 입니다.",
+          "rt_cd": "1",
+          "http_status": 500
+        }
+      },
+      {
+        "ts": "2026-11-11 03:30:25",
+        "ver": "v2.0-live",
+        "thread": "Thread-7 (_worker)",
+        "loc": "test_connection.py:432 in get_balance()",
+        "lvl": "CRITICAL",
+        "cat": "KIS_API",
+        "msg": "증권사 API 에러: [EGW00123] 기간이 만료된 token 입니다. (/uapi/domestic-stock/v1/trading/inquire-balance)",
+        "error_type": "",
+        "error_str": "",
+        "raw_snippet": "",
+        "msg_cd": "EGW00123",
+        "ctx": {
+          "attempt": 3,
+          "broker": "KIS",
+          "endpoint": "/uapi/domestic-stock/v1/trading/inquire-balance",
+          "msg_cd": "EGW00123",
+          "msg1": "기간이 만료된 token 입니다.",
+          "rt_cd": "1",
+          "http_status": 500
+        }
+      },
+      {
+        "ts": "2026-11-11 03:30:28",
+        "ver": "v2.0-live",
+        "thread": "Thread-7 (_worker)",
+        "loc": "test_connection.py:432 in get_balance()",
+        "lvl": "CRITICAL",
+        "cat": "KIS_API",
+        "msg": "증권사 API 에러: [EGW00123] 기간이 만료된 token 입니다. (/uapi/domestic-stock/v1/trading/inquire-balance)",
+        "error_type": "",
+        "error_str": "",
+        "raw_snippet": "",
+        "msg_cd": "EGW00123",
+        "ctx": {
+          "attempt": 4,
+          "broker": "KIS",
+          "endpoint": "/uapi/domestic-stock/v1/trading/inquire-balance",
+          "msg_cd": "EGW00123",
+          "msg1": "기간이 만료된 token 입니다.",
+          "rt_cd": "1",
+          "http_status": 500
+        }
+      },
+      {
+        "ts": "2026-11-11 03:30:40",
+        "ver": "v2.0-live",
+        "thread": "Thread-2 (monitor)",
+        "loc": "test_connection.py:432 in get_balance()",
+        "lvl": "CRITICAL",
+        "cat": "KIS_API",
+        "msg": "증권사 API 에러: [EGW00123] 기간이 만료된 token 입니다. (/uapi/domestic-stock/v1/trading/inquire-balance)",
+        "error_type": "",
+        "error_str": "",
+        "raw_snippet": "",
+        "msg_cd": "EGW00123",
+        "ctx": {
+          "attempt": 1,
+          "broker": "KIS",
+          "endpoint": "/uapi/domestic-stock/v1/trading/inquire-balance",
+          "msg_cd": "EGW00123",
+          "msg1": "기간이 만료된 token 입니다.",
+          "rt_cd": "1",
+          "http_status": 500
+        }
+      },
+      {
+        "ts": "2026-11-11 03:30:42",
+        "ver": "v2.0-live",
+        "thread": "Thread-2 (monitor)",
+        "loc": "test_connection.py:432 in get_balance()",
+        "lvl": "CRITICAL",
+        "cat": "KIS_API",
+        "msg": "증권사 API 에러: [EGW00123] 기간이 만료된 token 입니다. (/uapi/domestic-stock/v1/trading/inquire-balance)",
+        "error_type": "",
+        "error_str": "",
+        "raw_snippet": "",
+        "msg_cd": "EGW00123",
+        "ctx": {
+          "attempt": 2,
+          "broker": "KIS",
+          "endpoint": "/uapi/domestic-stock/v1/trading/inquire-balance",
+          "msg_cd": "EGW00123",
+          "msg1": "기간이 만료된 token 입니다.",
+          "rt_cd": "1",
+          "http_status": 500
+        }
+      },
+      {
+        "ts": "2026-11-11 03:30:45",
+        "ver": "v2.0-live",
+        "thread": "Thread-2 (monitor)",
+        "loc": "test_connection.py:432 in get_balance()",
+        "lvl": "CRITICAL",
+        "cat": "KIS_API",
+        "msg": "증권사 API 에러: [EGW00123] 기간이 만료된 token 입니다. (/uapi/domestic-stock/v1/trading/inquire-balance)",
+        "error_type": "",
+        "error_str": "",
+        "raw_snippet": "",
+        "msg_cd": "EGW00123",
+        "ctx": {
+          "attempt": 3,
+          "broker": "KIS",
+          "endpoint": "/uapi/domestic-stock/v1/trading/inquire-balance",
+          "msg_cd": "EGW00123",
+          "msg1": "기간이 만료된 token 입니다.",
+          "rt_cd": "1",
+          "http_status": 500
+        }
+      },
+      {
+        "ts": "2026-11-11 03:30:48",
+        "ver": "v2.0-live",
+        "thread": "Thread-2 (monitor)",
+        "loc": "test_connection.py:432 in get_balance()",
+        "lvl": "CRITICAL",
+        "cat": "KIS_API",
+        "msg": "증권사 API 에러: [EGW00123] 기간이 만료된 token 입니다. (/uapi/domestic-stock/v1/trading/inquire-balance)",
+        "error_type": "",
+        "error_str": "",
+        "raw_snippet": "",
+        "msg_cd": "EGW00123",
+        "ctx": {
+          "attempt": 4,
+          "broker": "KIS",
+          "endpoint": "/uapi/domestic-stock/v1/trading/inquire-balance",
+          "msg_cd": "EGW00123",
+          "msg1": "기간이 만료된 token 입니다.",
+          "rt_cd": "1",
+          "http_status": 500
+        }
       }
     ],
     "top_code_locations": [
       [
         "test_connection.py:432 in get_balance()",
-        112
+        120
       ],
       [
         "ai_analyst.py:96 in _call_single_gemini_api()",
@@ -2805,17 +2805,20 @@
     "top_api_codes": [
       [
         "EGW00123",
-        112
+        120
       ]
     ],
     "thread_distribution": {
       "ThreadPoolExecutor-4_0": 3,
-      "Thread-2 (monitor)": 324,
+      "Thread-2 (monitor)": 336,
       "ThreadPoolExecutor-3_0": 2,
       "ThreadPoolExecutor-0_0": 2,
       "ThreadPoolExecutor-1_0": 3,
       "ThreadPoolExecutor-5_0": 1,
-      "Thread-5 (_worker)": 18
+      "Thread-5 (_worker)": 18,
+      "Thread-7 (_worker)": 13,
+      "ThreadPoolExecutor-18_0": 2,
+      "ThreadPoolExecutor-19_0": 1
     },
     "stats": {
       "api_throttles": 0,
@@ -3435,10 +3438,10 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 0.340143,
-        "lastPrice": 286.2,
+        "lastPrice": 286.02,
         "averagePurchasePrice": 293.699999,
-        "profitLossRate": -2.55,
-        "profitLossAmount": -2.551073,
+        "profitLossRate": -2.61,
+        "profitLossAmount": -2.612299,
         "rsi": 31.9,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "매수",
@@ -3468,11 +3471,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 96.76,
+        "lastPrice": 96.78,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 9.92,
-        "profitLossAmount": 34.96,
-        "rsi": 67.3,
+        "profitLossRate": 9.95,
+        "profitLossAmount": 35.04,
+        "rsi": 67.4,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 74,
@@ -3501,11 +3504,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 35.75,
+        "lastPrice": 35.77,
         "averagePurchasePrice": 34.3786,
-        "profitLossRate": 3.98,
-        "profitLossAmount": 5.4856,
-        "rsi": 61.2,
+        "profitLossRate": 4.04,
+        "profitLossAmount": 5.5656,
+        "rsi": 61.4,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 65,
