@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11 00:38:04",
+  "updated_at": "2026-11-11 00:40:35",
   "battery": "85% (⚡ 충전 중, 22.5°C)",
   "market_intel": {
     "updated_at": "2026-11-10 08:30:16",
@@ -213,15 +213,15 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-11 00:37:10",
-    "checked_ts": 1794325030,
+    "checked_at": "2026-11-11 00:38:25",
+    "checked_ts": 1794325105,
     "date": "2026-11-10",
-    "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
+    "overall_status": "⚠️ 주의 항목 1건 감지 (한투 잔고 조회 일시 지연 (balance_ok=False - 서킷브레이커 오발동 방어 중))",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 14,
-    "toss_bot_sec_ago": 14,
-    "toss_strategy_monitor_sec_ago": 4,
-    "scheduler_heartbeat_sec_ago": 4,
+    "main_bot_sec_ago": 11,
+    "toss_bot_sec_ago": 9,
+    "toss_strategy_monitor_sec_ago": 11,
+    "scheduler_heartbeat_sec_ago": 11,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2500000,
     "market_opened_today": true,
@@ -248,11 +248,13 @@
     "battery_pct": 85,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
-      "✅ 4,500만 원 동결금 및 500만 원 시드 분리 무결성 정상",
+      "⚠️ 한투 잔고 조회 일시 지연 (balance_ok=False - 서킷브레이커 오발동 방어 중)",
       "✅ 손절/익절 가드레일 누락 착오 0건"
     ],
-    "anomaly_count": 0,
-    "anomalies": [],
+    "anomaly_count": 1,
+    "anomalies": [
+      "한투 잔고 조회 일시 지연 (balance_ok=False - 서킷브레이커 오발동 방어 중)"
+    ],
     "last_battery_alert_ts": 0.0,
     "last_anomaly_alert_ts": 0.0,
     "last_thread_alert_ts": 0.0
@@ -2503,16 +2505,19 @@
     "has_data": true,
     "file_name": "flight_log_2026-11-11.jsonl",
     "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-11.jsonl",
-    "period": "2026-11-11 00:25:46 ~ 2026-11-11 00:25:46",
+    "period": "2026-11-11 00:25:46 ~ 2026-11-11 00:40:02",
     "commit_hash": "v2.0-live",
-    "total_events": 1,
-    "error_count": 1,
-    "warn_count": 0,
+    "total_events": 14,
+    "error_count": 6,
+    "warn_count": 8,
     "level_counts": {
-      "ERROR": 1
+      "ERROR": 2,
+      "CRITICAL": 4,
+      "WARN": 8
     },
     "categories": {
-      "AI_PARSE": 1
+      "AI_PARSE": 2,
+      "KIS_API": 12
     },
     "top_errors": [
       {
@@ -2536,24 +2541,145 @@
           "error_str": "Unterminated string starting at: line 3 column 3 (char 24)",
           "traceback": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/ai_analyst.py\", line 88, in _call_single_gemini_api\n    d = json.loads(text, strict=False)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/__init__.py\", line 365, in loads\n    return cls(**kw).decode(s)\n           ~~~~~~~~~~~~~~~~^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 361, in raw_decode\n    obj, end = self.scan_once(s, idx)\n               ~~~~~~~~~~~~~~^^^^^^^^\njson.decoder.JSONDecodeError: Unterminated string starting at: line 3 column 3 (char 24)\n"
         }
+      },
+      {
+        "ts": "2026-11-11 00:38:13",
+        "ver": "v2.0-live",
+        "thread": "Thread-2 (monitor)",
+        "loc": "test_connection.py:432 in get_balance()",
+        "lvl": "CRITICAL",
+        "cat": "KIS_API",
+        "msg": "증권사 API 에러: [EGW00123] 기간이 만료된 token 입니다. (/uapi/domestic-stock/v1/trading/inquire-balance)",
+        "error_type": "",
+        "error_str": "",
+        "raw_snippet": "",
+        "msg_cd": "EGW00123",
+        "ctx": {
+          "attempt": 1,
+          "broker": "KIS",
+          "endpoint": "/uapi/domestic-stock/v1/trading/inquire-balance",
+          "msg_cd": "EGW00123",
+          "msg1": "기간이 만료된 token 입니다.",
+          "rt_cd": "1",
+          "http_status": 500
+        }
+      },
+      {
+        "ts": "2026-11-11 00:38:14",
+        "ver": "v2.0-live",
+        "thread": "Thread-2 (monitor)",
+        "loc": "test_connection.py:432 in get_balance()",
+        "lvl": "CRITICAL",
+        "cat": "KIS_API",
+        "msg": "증권사 API 에러: [EGW00123] 기간이 만료된 token 입니다. (/uapi/domestic-stock/v1/trading/inquire-balance)",
+        "error_type": "",
+        "error_str": "",
+        "raw_snippet": "",
+        "msg_cd": "EGW00123",
+        "ctx": {
+          "attempt": 2,
+          "broker": "KIS",
+          "endpoint": "/uapi/domestic-stock/v1/trading/inquire-balance",
+          "msg_cd": "EGW00123",
+          "msg1": "기간이 만료된 token 입니다.",
+          "rt_cd": "1",
+          "http_status": 500
+        }
+      },
+      {
+        "ts": "2026-11-11 00:38:17",
+        "ver": "v2.0-live",
+        "thread": "Thread-2 (monitor)",
+        "loc": "test_connection.py:432 in get_balance()",
+        "lvl": "CRITICAL",
+        "cat": "KIS_API",
+        "msg": "증권사 API 에러: [EGW00123] 기간이 만료된 token 입니다. (/uapi/domestic-stock/v1/trading/inquire-balance)",
+        "error_type": "",
+        "error_str": "",
+        "raw_snippet": "",
+        "msg_cd": "EGW00123",
+        "ctx": {
+          "attempt": 3,
+          "broker": "KIS",
+          "endpoint": "/uapi/domestic-stock/v1/trading/inquire-balance",
+          "msg_cd": "EGW00123",
+          "msg1": "기간이 만료된 token 입니다.",
+          "rt_cd": "1",
+          "http_status": 500
+        }
+      },
+      {
+        "ts": "2026-11-11 00:38:20",
+        "ver": "v2.0-live",
+        "thread": "Thread-2 (monitor)",
+        "loc": "test_connection.py:432 in get_balance()",
+        "lvl": "CRITICAL",
+        "cat": "KIS_API",
+        "msg": "증권사 API 에러: [EGW00123] 기간이 만료된 token 입니다. (/uapi/domestic-stock/v1/trading/inquire-balance)",
+        "error_type": "",
+        "error_str": "",
+        "raw_snippet": "",
+        "msg_cd": "EGW00123",
+        "ctx": {
+          "attempt": 4,
+          "broker": "KIS",
+          "endpoint": "/uapi/domestic-stock/v1/trading/inquire-balance",
+          "msg_cd": "EGW00123",
+          "msg1": "기간이 만료된 token 입니다.",
+          "rt_cd": "1",
+          "http_status": 500
+        }
+      },
+      {
+        "ts": "2026-11-11 00:40:02",
+        "ver": "v2.0-live",
+        "thread": "ThreadPoolExecutor-3_0",
+        "loc": "ai_analyst.py:96 in _call_single_gemini_api()",
+        "lvl": "ERROR",
+        "cat": "AI_PARSE",
+        "msg": "[Google:gemini-3.5-flash-lite] LLM 응답 JSON 파싱 실패",
+        "error_type": "JSONDecodeError",
+        "error_str": "Unterminated string starting at: line 4 column 13 (char 49)",
+        "raw_snippet": "{\n  \"decision\": \"매수\",\n  \"score\": 85,\n  \"reason\": \"현재가 $542.82는 20일선을 상회하고 RSI",
+        "msg_cd": null,
+        "ctx": {
+          "provider": "Google",
+          "model": "gemini-3.5-flash-lite",
+          "raw_snippet": "{\n  \"decision\": \"매수\",\n  \"score\": 85,\n  \"reason\": \"현재가 $542.82는 20일선을 상회하고 RSI",
+          "raw_length": 77,
+          "error_type": "JSONDecodeError",
+          "error_str": "Unterminated string starting at: line 4 column 13 (char 49)",
+          "traceback": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/ai_analyst.py\", line 88, in _call_single_gemini_api\n    d = json.loads(text, strict=False)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/__init__.py\", line 365, in loads\n    return cls(**kw).decode(s)\n           ~~~~~~~~~~~~~~~~^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/json/decoder.py\", line 361, in raw_decode\n    obj, end = self.scan_once(s, idx)\n               ~~~~~~~~~~~~~~^^^^^^^^\njson.decoder.JSONDecodeError: Unterminated string starting at: line 4 column 13 (char 49)\n"
+        }
       }
     ],
     "top_code_locations": [
       [
+        "test_connection.py:432 in get_balance()",
+        4
+      ],
+      [
         "ai_analyst.py:96 in _call_single_gemini_api()",
-        1
+        2
       ]
     ],
-    "top_api_codes": [],
+    "top_api_codes": [
+      [
+        "EGW00123",
+        4
+      ]
+    ],
     "thread_distribution": {
-      "ThreadPoolExecutor-4_0": 1
+      "ThreadPoolExecutor-4_0": 1,
+      "Thread-2 (monitor)": 12,
+      "ThreadPoolExecutor-3_0": 1
     },
     "stats": {
       "api_throttles": 0,
       "api_naver_fallbacks": 0,
       "ai_429_retries": 0,
       "ai_backup_fallbacks": 0,
-      "ai_parse_failures": 1,
+      "ai_parse_failures": 2,
       "quant_overrides": 0,
       "order_unfilled_revises": 0,
       "circuit_breaker_trips": 0,
@@ -2796,7 +2922,7 @@
     }
   ],
   "kis_system": {
-    "name": "한투 500만 원 AI 자율 매매 펀드",
+    "name": "한투 실전 AI 자율 운용 계좌 (10154692)",
     "mode": "100% 오토파일럿 (Full Autonomous Trading)",
     "budget_limit": 2500000,
     "frozen_reserve": 0,
@@ -3166,11 +3292,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 0.340143,
-        "lastPrice": 289.96,
+        "lastPrice": 289.83,
         "averagePurchasePrice": 293.699999,
-        "profitLossRate": -1.27,
-        "profitLossAmount": -1.272135,
-        "rsi": 34.5,
+        "profitLossRate": -1.31,
+        "profitLossAmount": -1.316354,
+        "rsi": 34.2,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "매수",
         "ai_score": 82,
@@ -3199,11 +3325,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 96.34,
+        "lastPrice": 96.36,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 9.45,
-        "profitLossAmount": 33.28,
-        "rsi": 66.1,
+        "profitLossRate": 9.47,
+        "profitLossAmount": 33.36,
+        "rsi": 66.2,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 65,
@@ -3265,10 +3391,10 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 5.0,
-        "lastPrice": 100.51,
+        "lastPrice": 100.52,
         "averagePurchasePrice": 100.62,
-        "profitLossRate": -0.1,
-        "profitLossAmount": -0.55,
+        "profitLossRate": -0.09,
+        "profitLossAmount": -0.5,
         "rsi": 45.8,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
