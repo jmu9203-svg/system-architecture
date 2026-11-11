@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12 01:26:46",
+  "updated_at": "2026-11-12 01:32:50",
   "battery": "85% (⚡ 충전 중, 22.7°C)",
   "market_intel": {
     "updated_at": "2026-11-11 08:30:22",
@@ -217,34 +217,38 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-12 01:25:55",
-    "checked_ts": 1794414355,
+    "checked_at": "2026-11-12 01:31:52",
+    "checked_ts": 1794414712,
     "date": "2026-11-11",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 14,
-    "toss_bot_sec_ago": 14,
-    "toss_strategy_monitor_sec_ago": 16,
-    "scheduler_heartbeat_sec_ago": 12,
+    "main_bot_sec_ago": 2,
+    "toss_bot_sec_ago": 2,
+    "toss_strategy_monitor_sec_ago": 13,
+    "scheduler_heartbeat_sec_ago": 19,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2500000,
     "market_opened_today": true,
     "opening_confirmed": false,
-    "current_fund_eval": 2500000,
+    "current_fund_eval": 2735273,
     "peak_fund_eval": 7648676,
     "mdd_pct": -67.31,
-    "fund_return_pct": 0.0,
+    "fund_return_pct": 9.41,
     "kospi200_base_price": 87886,
     "kospi200_cur_price": 84540,
     "kospi200_return_pct": -3.81,
-    "alpha_pct": 3.81,
-    "sector_map": {},
-    "sector_summary_str": "보유 섹터 없음 (현금 100%)",
-    "max_per_sector_krw": 1250000,
-    "bought_today": [],
+    "alpha_pct": 13.22,
+    "sector_map": {
+      "미국증시·글로벌빅테크": 235273
+    },
+    "sector_summary_str": "미국증시·글로벌빅테크: 235,273원(시드대비 9.4%)",
+    "max_per_sector_krw": 1367636,
+    "bought_today": [
+      "NVDA"
+    ],
     "sold_today": [],
-    "daily_pnl_krw": 0,
-    "daily_pnl_pct": 0.0,
+    "daily_pnl_krw": 235273,
+    "daily_pnl_pct": 9.41,
     "circuit_breaker_limit_pct": -3.5,
     "circuit_breaker_tripped": false,
     "circuit_breaker_reason": "",
@@ -262,7 +266,7 @@
     "last_thread_alert_ts": 0.0
   },
   "ai_audit": {
-    "updated_at": "2026-11-11 23:36:17",
+    "updated_at": "2026-11-12 01:32:15",
     "items": {
       "005930": {
         "code": "005930",
@@ -1095,34 +1099,122 @@
         "code": "AAPL",
         "name": "애플 (AAPL)",
         "sector": "미국증시·글로벌빅테크",
-        "checked_at": "2026-11-11 23:35:27",
-        "price": 351.365,
-        "ma20": 344.72,
-        "rsi": 58.6,
-        "atr_pct": 2.73,
+        "checked_at": "2026-11-12 01:30:59",
+        "price": 354.06,
+        "ma20": 344.79,
+        "rsi": 59.5,
+        "atr_pct": 2.76,
         "vol_label": "중변동 표준 우량주",
         "target_tp_pct": 8.5,
         "hard_stop_pct": -7.0,
-        "vol_ratio_pct": 1.5,
+        "vol_ratio_pct": 13.9,
         "candle_desc": "🟢 양봉 흐름 유지",
         "flow_summary": "글로벌 헤지펀드 및 기관 수급 추적 중",
         "ir_schedule": "일정 없음",
-        "fact_breakdown": "시장레짐(강세장 +3점) | 20일선 상회(+6점) | RSI 58.6 중립안정(+3점) | 글로벌추세프록시(+8점) | 거래량2%·캔들(-5점) | 실적일정 중립(0점)",
-        "cited_facts": "S&P500 상승·20일선 상회, AAPL 현재가 $351.37(+0.82%) MA20 $344.72 상회, 14일 RSI 58.6(중립), 거래량 20일 평균 대비 2% 부족, 보유 주식 0주",
+        "fact_breakdown": "시장레짐(강세장 +3점) | 20일선 상회(+6점) | RSI 59.5 중립안정(+3점) | 글로벌추세프록시(+8점) | 거래량14%·캔들(-5점) | 실적일정 중립(0점)",
+        "cited_facts": "현재가 $354.06(≈473,732원)로 20일 MA(344.79) 상회, 14일 RSI 59.5(중립), 당일 거래량 20일 평균 대비 14% 부족, 외국인·기관 수급 정보는 미확인, 현금 2,500,000원으로 1주 매수 가능",
         "quant_score": 70,
-        "ai_raw_score": 58,
-        "final_score": 58,
+        "ai_raw_score": 54,
+        "final_score": 54,
         "decision": "관망",
-        "score_gap": 12,
-        "hit_rate_pct": 100.0,
-        "hit_desc": "직전 관망·방어(58점) 판정 적중✅ (변동 +0.4%)",
-        "audit_status": "PASS",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 70점 ↔ AI 58점 | 편차 12점)",
+        "score_gap": 16,
+        "hit_rate_pct": 80.0,
+        "hit_desc": "직전 관망·방어(58점) 판정 적중✅ (변동 +1.2%)",
+        "audit_status": "WARN_GAP",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 70점 ↔ AI 54점 | 편차 16점 · 보수적 관망)",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 62,
+            "score": 55,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 52,
+            "decision": "관망"
+          }
+        ],
+        "consensus": "2:0 관망 우세",
+        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 54점 · 편차 3점 | Groq:gpt-oss-120b(52점 관망), Google:3.5-flash(55점 관망))] 가격은 상승 추세에 있으나 RSI가 중립이고 거래량이 감소한 상태이며, 외인·기관의 명확한 순매수 신호가 없어 즉각적인 매수 근거가 부족합니다. 현금 여유는 있지만 신중히 관망하며 추가 신호를 기다리는 것이 바람직합니다."
+      },
+      "NVDA": {
+        "code": "NVDA",
+        "name": "엔비디아 (NVDA)",
+        "sector": "미국증시·글로벌빅테크",
+        "checked_at": "2026-11-12 01:31:08",
+        "price": 176.19,
+        "ma20": 203.9,
+        "rsi": 30.5,
+        "atr_pct": 4.62,
+        "vol_label": "고변동 성장·빅테크",
+        "target_tp_pct": 10.0,
+        "hard_stop_pct": -8.5,
+        "vol_ratio_pct": 56.0,
+        "candle_desc": "🟢 양봉 흐름 유지",
+        "flow_summary": "글로벌 헤지펀드 및 기관 수급 추적 중",
+        "ir_schedule": "일정 없음",
+        "fact_breakdown": "시장레짐(강세장 +3점) | 20일선 하회(-5점) | RSI 30.5 과매도반등(+12점) | 글로벌수급중립(0점) | 거래량56%·캔들(+0점) | 실적일정 중립(0점)",
+        "cited_facts": "현재 NVDA 주가 $176.19, 20일 MA $203.90 이하, 14일 RSI 30.5(과매도), ATR 목표익절선 +10% 미달, 당일 거래량 20일 평균 대비 56% 낮음, 가용 현금 2,500,000원으로 1주 매수 가능",
+        "quant_score": 65,
+        "ai_raw_score": 76,
+        "final_score": 76,
+        "decision": "매수",
+        "score_gap": 11,
+        "hit_rate_pct": 75.0,
+        "hit_desc": "직전 관망·방어(54점) 판정 적중✅ (변동 +1.3%)",
+        "audit_status": "PASS",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 65점 ↔ AI 76점 | 편차 11점)",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 75,
+            "decision": "매수"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 78,
+            "decision": "매수"
+          }
+        ],
+        "consensus": "2:0 매수 합의",
+        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 매수 합의] (평균 76점 · 편차 3점 | Groq:gpt-oss-120b(78점 매수), Google:3.5-flash(75점 매수))] RSI가 30.5로 과매도 구간에 있어 단기 반등 매수 기회이며, 주가가 20일 이동평균선 아래에 위치해 저평가된 상태입니다. 현금 및 종목당 한도 내에서 1주 매수가 가능하므로 신중히 진입하는 것이 바람직합니다."
+      },
+      "TSLA": {
+        "code": "TSLA",
+        "name": "테슬라 (TSLA)",
+        "sector": "미국증시·글로벌빅테크",
+        "checked_at": "2026-11-12 01:31:47",
+        "price": 392.735,
+        "ma20": 381.95,
+        "rsi": 55.1,
+        "atr_pct": 4.8,
+        "vol_label": "고변동 성장·빅테크",
+        "target_tp_pct": 10.0,
+        "hard_stop_pct": -8.5,
+        "vol_ratio_pct": 21.3,
+        "candle_desc": "🟢 양봉 흐름 유지",
+        "flow_summary": "글로벌 헤지펀드 및 기관 수급 추적 중",
+        "ir_schedule": "일정 없음",
+        "fact_breakdown": "시장레짐(강세장 +3점) | 20일선 상회(+6점) | RSI 55.1 중립안정(+3점) | 글로벌추세프록시(+8점) | 거래량21%·캔들(-5점) | 실적일정 중립(0점)",
+        "cited_facts": "현재가 $392.74, MA20 $381.95 상회·상승추세, 14일 RSI 55.1(중립), 당일 거래량 20일 평균 대비 21% 부족, 최근 3.41% 상승 및 ATR 목표익절선 +10% 미달, 보유주식 0주이며 가용 현금으로 1주 매수 가능하지만 최근 예측 적중률 0%·자기반성 -4점",
+        "quant_score": 70,
+        "ai_raw_score": 52,
+        "final_score": 52,
+        "decision": "관망",
+        "score_gap": 18,
+        "hit_rate_pct": 0.0,
+        "hit_desc": "직전 관망(52점) 후 +4.2% 상승(기회놓침)",
+        "audit_status": "SANITY_CHECKED",
+        "audit_badge": "🛡️ 감사관 자동 교정 완료 (정량 70점 ↔ 교정후 52점 | 편차 18점)",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 48,
             "decision": "관망"
           },
           {
@@ -1133,79 +1225,79 @@
           }
         ],
         "consensus": "2:0 관망 우세",
-        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 58점 · 편차 7점 | Groq:gpt-oss-120b(55점 관망), Google:3.5-flash-lite(62점 관망))] 현재 시장은 강세이지만 AAPL은 RSI가 중립 수준이고 거래량이 약화된 상태이며, 외인·기관 수급에 대한 긍정적 신호가 부족합니다. 따라서 신규 매수는 보류하고 관망하는 것이 바람직합니다."
+        "reason": "🛡️ [정량 가드레일: 관망 유지 및 매수 집행 유보] [🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 52점 · 편차 7점 | Groq:gpt-oss-120b(55점 관망), Google:3.5-flash(48점 관망))] RSI가 중립이고 거래량이 평균보다 크게 낮아 매수 신호가 약합니다. 최근 급등(+3.41%)과 예측 적중률 저조로 위험이 커 보이며, 현재 현금으로 1주 매수는 가능하지만 보수적으로 관망하는 것이 바람직합니다."
       },
-      "NVDA": {
-        "code": "NVDA",
-        "name": "엔비디아 (NVDA)",
-        "sector": "미국증시·글로벌빅테크",
-        "checked_at": "2026-11-11 23:35:36",
-        "price": 173.88,
-        "ma20": 203.79,
-        "rsi": 28.5,
-        "atr_pct": 4.53,
-        "vol_label": "고변동 성장·빅테크",
-        "target_tp_pct": 10.0,
-        "hard_stop_pct": -8.5,
-        "vol_ratio_pct": 11.2,
-        "candle_desc": "🟢 양봉 흐름 유지",
+      "SGOV": {
+        "code": "SGOV",
+        "name": "iShares 0-3M 단기국채",
+        "sector": "초단기채권·현금성자산",
+        "checked_at": "2026-11-12 01:32:08",
+        "price": 100.52,
+        "ma20": 100.38,
+        "rsi": 95.6,
+        "atr_pct": 0.02,
+        "vol_label": "초저변동 국채·현금성",
+        "target_tp_pct": 3.0,
+        "hard_stop_pct": -3.0,
+        "vol_ratio_pct": 29.4,
+        "candle_desc": "🔻 음봉 흐름",
         "flow_summary": "글로벌 헤지펀드 및 기관 수급 추적 중",
         "ir_schedule": "일정 없음",
-        "fact_breakdown": "시장레짐(강세장 +3점) | 20일선 하회(-5점) | RSI 28.5 과매도반등(+12점) | 글로벌수급중립(0점) | 거래량11%·캔들(-5점) | 실적일정 중립(0점)",
-        "cited_facts": "현재 NVDA 가격 $173.88은 20일 MA($203.79) 이하이며 14일 RSI 28.5(과매도)·ATR 목표익절선 +10% 미달, 거래량 20일 평균 대비 11% 부족, 당일 양봉 지속, 가용 현금 2,500,000원으로 1주 매수 가능",
-        "quant_score": 60,
-        "ai_raw_score": 70,
-        "final_score": 70,
+        "fact_breakdown": "시장레짐(강세장 +3점) | 20일선 상회(+6점) | RSI 95.6 과열경보(-14점) | 글로벌수급중립(0점) | 거래량29%·캔들(-5점) | 실적일정 중립(0점)",
+        "cited_facts": "현재가 $100.52, MA20 $100.38 상회·상승추세, 14일 RSI 95.6(과열), 거래량 20일 평균 대비 29% 부족, 당일 음봉, 가용 현금 2,251,292원·종목당 한도 750,000원·보유 0주",
+        "quant_score": 45,
+        "ai_raw_score": 50,
+        "final_score": 50,
         "decision": "관망",
-        "score_gap": 10,
-        "hit_rate_pct": 75.0,
-        "hit_desc": "직전 관망·방어(54점) 판정 적중✅ (변동 -0.1%)",
+        "score_gap": 5,
+        "hit_rate_pct": 100.0,
+        "hit_desc": "직전 관망·방어(49점) 판정 적중✅ (변동 +0.5%)",
         "audit_status": "PASS",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 60점 ↔ AI 70점 | 편차 10점)",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 45점 ↔ AI 50점 | 편차 5점)",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 62,
+            "score": 45,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 78,
-            "decision": "매수"
+            "score": 55,
+            "decision": "관망"
           }
         ],
-        "consensus": "1:1 의견 분립 (안전 관망 채택)",
-        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [1:1 의견 분립 (안전 관망 채택)] (평균 70점 · 편차 16점 | Groq:gpt-oss-120b(78점 매수), Google:3.5-flash-lite(62점 관망))] 14일 RSI가 28.5로 과매도 구간에 진입하여 반등 기대감이 있으나, 거래량이 20일 평균 대비 11%로 크게 부족하고 20일 이동평균선을 하회하고 있어 추가적인 주가 조정을 대비해야 합니다. 따라서 당일 무리한 신규 진입보다는 관망하며 향후 거래량 유입 및 추세 안정 시 재진입을 검토하겠습니다."
+        "consensus": "2:0 관망 우세",
+        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 50점 · 편차 10점 | Groq:gpt-oss-120b(55점 관망), Google:3-flash-preview(45점 관망))] RSI가 95.6으로 과열 상태이며 거래량도 크게 부족해 단기 매수 시 과열 매도 위험이 높습니다. 현재 보유가 없고 가용 현금은 충분하지만, 시장은 강세이지만 과열 신호가 강해 관망을 유지하는 것이 바람직합니다."
       },
-      "TSLA": {
-        "code": "TSLA",
-        "name": "테슬라 (TSLA)",
-        "sector": "미국증시·글로벌빅테크",
-        "checked_at": "2026-11-11 23:36:03",
-        "price": 390.25,
-        "ma20": 381.89,
-        "rsi": 54.7,
-        "atr_pct": 4.73,
-        "vol_label": "고변동 성장·빅테크",
-        "target_tp_pct": 10.0,
-        "hard_stop_pct": -8.5,
-        "vol_ratio_pct": 2.7,
-        "candle_desc": "🟢 양봉 흐름 유지",
+      "SCHD": {
+        "code": "SCHD",
+        "name": "Schwab 미국 배당 다우",
+        "sector": "미국배당·가치주ETF",
+        "checked_at": "2026-11-12 01:32:15",
+        "price": 35.7771,
+        "ma20": 35.26,
+        "rsi": 61.4,
+        "atr_pct": 1.29,
+        "vol_label": "저변동 고배당 ETF",
+        "target_tp_pct": 7.0,
+        "hard_stop_pct": -5.5,
+        "vol_ratio_pct": 28.2,
+        "candle_desc": "🔻 음봉 흐름",
         "flow_summary": "글로벌 헤지펀드 및 기관 수급 추적 중",
         "ir_schedule": "일정 없음",
-        "fact_breakdown": "시장레짐(강세장 +3점) | 20일선 상회(+6점) | RSI 54.7 중립안정(+3점) | 글로벌추세프록시(+8점) | 거래량3%·캔들(-5점) | 실적일정 중립(0점)",
-        "cited_facts": "현재가 $390.25가 20일 MA($381.89) 상회, 14일 RSI 54.7(중립), 거래량 20일 평균 대비 3% 부족, 최근 예측 적중률 0%로 -4점 보수조정, 보유 주식 0주",
-        "quant_score": 70,
+        "fact_breakdown": "시장레짐(강세장 +3점) | 20일선 상회(+6점) | RSI 61.4 중립안정(+3점) | 글로벌추세프록시(+5점) | 거래량28%·캔들(-5점) | 실적일정 중립(0점)",
+        "cited_facts": "현재가 $35.78로 20일 MA20 $35.26을 상회해 상승추세이며 14일 RSI 61.4(중립), 당일 거래량 20일 평균 대비 28% 부족, 음봉 형성, 가용 현금 충분하지만 외인·기관 수급 정보 부재 및 호재 없음",
+        "quant_score": 67,
         "ai_raw_score": 56,
         "final_score": 56,
         "decision": "관망",
-        "score_gap": 14,
-        "hit_rate_pct": 0.0,
-        "hit_desc": "직전 관망(52점) 후 +3.5% 상승(기회놓침)",
+        "score_gap": 11,
+        "hit_rate_pct": 100.0,
+        "hit_desc": "직전 관망·방어(56점) 판정 적중✅ (변동 +2.2%)",
         "audit_status": "PASS",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 70점 ↔ AI 56점 | 편차 14점)",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 67점 ↔ AI 56점 | 편차 11점)",
         "models": [
           {
             "provider": "Google",
@@ -1221,139 +1313,51 @@
           }
         ],
         "consensus": "2:0 관망 우세",
-        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 56점 · 편차 3점 | Groq:gpt-oss-120b(55점 관망), Google:flash-lite-latest(58점 관망))] 가격은 상승 추세에 있지만 RSI가 중립이며 거래량이 부족해 단기 매수 신호가 약합니다. 또한 최근 예측 적중률이 저조하고 보유 포지션이 없어 신중히 관망하는 것이 바람직합니다."
-      },
-      "SGOV": {
-        "code": "SGOV",
-        "name": "iShares 0-3M 단기국채",
-        "sector": "초단기채권·현금성자산",
-        "checked_at": "2026-11-11 23:36:08",
-        "price": 100.52,
-        "ma20": 100.38,
-        "rsi": 96.0,
-        "atr_pct": 0.02,
-        "vol_label": "초저변동 국채·현금성",
-        "target_tp_pct": 3.0,
-        "hard_stop_pct": -3.0,
-        "vol_ratio_pct": 2.4,
-        "candle_desc": "🔻 음봉 흐름",
-        "flow_summary": "글로벌 헤지펀드 및 기관 수급 추적 중",
-        "ir_schedule": "일정 없음",
-        "fact_breakdown": "시장레짐(강세장 +3점) | 20일선 상회(+6점) | RSI 96.0 과열경보(-14점) | 글로벌수급중립(0점) | 거래량2%·캔들(-5점) | 실적일정 중립(0점)",
-        "cited_facts": "SGOV 현재가 $100.52, MA20 $100.38 상회; 14일 RSI 96.0 (과열); 거래량 20일 평균 대비 2% 부족, 음봉 형성; 가용 현금 2,500,000원 중 종목당 한도 750,000원 충족하지만 보유 0주; 최신 뉴스 없음",
-        "quant_score": 45,
-        "ai_raw_score": 52,
-        "final_score": 52,
-        "decision": "관망",
-        "score_gap": 7,
-        "hit_rate_pct": 100.0,
-        "hit_desc": "직전 관망·방어(49점) 판정 적중✅ (변동 +0.5%)",
-        "audit_status": "PASS",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 45점 ↔ AI 52점 | 편차 7점)",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 52,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 52,
-            "decision": "관망"
-          }
-        ],
-        "consensus": "2:0 관망 우세",
-        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 52점 · 편차 0점 | Groq:gpt-oss-120b(52점 관망), Google:flash-lite-latest(52점 관망))] RSI가 96으로 과열 상태이며 거래량도 저조하고 음봉이 나타나 단기 매수 시점이 부적절합니다. 현재 현금과 한도는 충분하지만 보유가 없으므로 관망하며 추세와 수급 변화를 기다리는 것이 바람직합니다."
-      },
-      "SCHD": {
-        "code": "SCHD",
-        "name": "Schwab 미국 배당 다우",
-        "sector": "미국배당·가치주ETF",
-        "checked_at": "2026-11-11 23:36:17",
-        "price": 35.71,
-        "ma20": 35.25,
-        "rsi": 60.7,
-        "atr_pct": 1.27,
-        "vol_label": "저변동 고배당 ETF",
-        "target_tp_pct": 7.0,
-        "hard_stop_pct": -5.5,
-        "vol_ratio_pct": 2.4,
-        "candle_desc": "🔻 음봉 흐름",
-        "flow_summary": "글로벌 헤지펀드 및 기관 수급 추적 중",
-        "ir_schedule": "일정 없음",
-        "fact_breakdown": "시장레짐(강세장 +3점) | 20일선 상회(+6점) | RSI 60.7 중립안정(+3점) | 글로벌추세프록시(+5점) | 거래량2%·캔들(-5점) | 실적일정 중립(0점)",
-        "cited_facts": "현재가 $35.71, MA20 $35.25 상회·상승추세, 14일 RSI 60.7(중립), 거래량 20일 평균 대비 2% 부족, ATR 목표익절선 +7% 미달, 보유량 0주, 가용 현금 충분",
-        "quant_score": 67,
-        "ai_raw_score": 58,
-        "final_score": 58,
-        "decision": "관망",
-        "score_gap": 9,
-        "hit_rate_pct": 100.0,
-        "hit_desc": "직전 관망·방어(56점) 판정 적중✅ (변동 +2.0%)",
-        "audit_status": "PASS",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 67점 ↔ AI 58점 | 편차 9점)",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 60,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 55,
-            "decision": "관망"
-          }
-        ],
-        "consensus": "2:0 관망 우세",
-        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 58점 · 편차 5점 | Groq:gpt-oss-120b(55점 관망), Google:flash-lite-latest(60점 관망))] 가격은 20일 이동평균 위에 있어 상승추세지만 RSI가 중립 수준이고 거래량이 평균보다 현저히 낮아 매수 신호가 약합니다. 또한 외인·기관 수급 및 호재 뉴스가 없으므로 현재는 관망하며 추세 확인을 기다리는 것이 바람직합니다."
+        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 56점 · 편차 3점 | Groq:gpt-oss-120b(55점 관망), Google:3.5-flash-lite(58점 관망))] 가격은 MA20 위에 있어 추세는 유지되지만 RSI는 중립이고 거래량이 크게 감소한 상태이며, 외국인·기관 순매수와 같은 긍정적 수급 신호가 없어 즉시 매수하기엔 불확실합니다. 따라서 현재는 관망하며 추가 신호를 기다리는 것이 바람직합니다."
       },
       "GOOGL": {
         "code": "GOOGL",
         "name": "알파벳 A (GOOGL)",
         "sector": "미국증시·글로벌빅테크",
-        "checked_at": "2026-11-11 23:35:50",
-        "price": 290.54,
-        "ma20": 308.01,
-        "rsi": 35.0,
-        "atr_pct": 3.57,
+        "checked_at": "2026-11-12 01:31:37",
+        "price": 291.95,
+        "ma20": 308.13,
+        "rsi": 37.0,
+        "atr_pct": 3.62,
         "vol_label": "고변동 성장·빅테크",
         "target_tp_pct": 10.0,
         "hard_stop_pct": -8.5,
-        "vol_ratio_pct": 2.2,
-        "candle_desc": "🔻 음봉 흐름",
+        "vol_ratio_pct": 13.4,
+        "candle_desc": "🟢 양봉 흐름 유지",
         "flow_summary": "글로벌 헤지펀드 및 기관 수급 추적 중",
         "ir_schedule": "일정 없음",
-        "fact_breakdown": "시장레짐(강세장 +3점) | 20일선 하회(-5점) | RSI 35.0 과매도반등(+12점) | 글로벌수급중립(0점) | 거래량2%·캔들(-5점) | 실적일정 중립(0점)",
-        "cited_facts": "현재가 $290.54, 20일 MA $308.01 하회·단기조정, 14일 RSI 35(과매도), 거래량 20일 평균 대비 2% 부족, 당일 음봉, 가용 현금 2,500,000원·종목당 한도 750,000원·보유 0주",
-        "quant_score": 60,
+        "fact_breakdown": "시장레짐(강세장 +3점) | 20일선 하회(-5점) | RSI 37.0 눌림목(+6점) | 글로벌수급중립(0점) | 거래량13%·캔들(-5점) | 실적일정 중립(0점)",
+        "cited_facts": "현재 S&P500 상승·강세장, GOOGL 현재가 $291.95(+1.59%)가 20일 MA308.13 이하, 14일 RSI 37(저가 매수 신호), 14일 ATR 3.62%·목표익절선 +10%·과열익절선 +6%, 당일 거래량 20일 평균 대비 13% 부족, 가용 현금 2,251,292원으로 1주(≈390,629원) 매수 가능",
+        "quant_score": 54,
         "ai_raw_score": 70,
         "final_score": 70,
         "decision": "관망",
-        "score_gap": 10,
+        "score_gap": 16,
         "hit_rate_pct": 75.0,
-        "hit_desc": "직전 강세예측(68점) 후 +0.2% 적중✅",
-        "audit_status": "PASS",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 60점 ↔ AI 70점 | 편차 10점)",
+        "hit_desc": "직전 강세예측(68점) 후 +0.7% 적중✅",
+        "audit_status": "WARN_GAP",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 54점 ↔ AI 70점 | 편차 16점 · 보수적 관망)",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 78,
-            "decision": "매수"
+            "score": 58,
+            "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 62,
-            "decision": "관망"
+            "score": 82,
+            "decision": "매수"
           }
         ],
         "consensus": "1:1 의견 분립 (안전 관망 채택)",
-        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [1:1 의견 분립 (안전 관망 채택)] (평균 70점 · 편차 16점 | Groq:gpt-oss-120b(62점 관망), Google:3.5-flash-lite(78점 매수))] RSI가 과매도 구역에 있어 반등 가능성이 있으나, 거래량이 현저히 낮고 음봉이 형성돼 단기 하락 압력이 남아 있습니다. 또한 현재 가격이 MA20 이하이며 포지션 한도는 충족하지만 진입 타이밍이 불확실하므로 관망을 권고합니다."
+        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [1:1 의견 분립 (안전 관망 채택)] (평균 70점 · 편차 24점 | Groq:gpt-oss-120b(82점 매수), Google:3.5-flash(58점 관망))] RSI가 37.0으로 단기 과조정 구간에 진입하며 양봉을 형성했으나, 당일 거래량이 20일 평균 대비 13% 수준으로 수급 유입이 미미한 가짜 반등 위험이 존재합니다. 미 빅테크 실적 발표를 앞두고 기술주 전반의 경계감이 지속되는 만큼, 거래량 회복 및 안정적인 수급 확인 시까지 관망하며 향후 시장 안정 시 재진입을 검토하겠습니다."
       }
     },
     "prediction_history": {
@@ -2349,6 +2353,14 @@
           "decision": "관망",
           "score": 52,
           "quant_score": 61
+        },
+        {
+          "date": "2026-11-12",
+          "checked_at": "2026-11-12 01:30:59",
+          "price": 354.06,
+          "decision": "관망",
+          "score": 54,
+          "quant_score": 70
         }
       ],
       "NVDA": [
@@ -2399,6 +2411,14 @@
           "decision": "관망",
           "score": 52,
           "quant_score": 61
+        },
+        {
+          "date": "2026-11-12",
+          "checked_at": "2026-11-12 01:31:08",
+          "price": 176.19,
+          "decision": "매수",
+          "score": 76,
+          "quant_score": 65
         }
       ],
       "TSLA": [
@@ -2449,6 +2469,14 @@
           "decision": "관망",
           "score": 50,
           "quant_score": 61
+        },
+        {
+          "date": "2026-11-12",
+          "checked_at": "2026-11-12 01:31:47",
+          "price": 392.735,
+          "decision": "관망",
+          "score": 52,
+          "quant_score": 70
         }
       ],
       "SGOV": [
@@ -2499,6 +2527,14 @@
           "decision": "관망",
           "score": 50,
           "quant_score": 61
+        },
+        {
+          "date": "2026-11-12",
+          "checked_at": "2026-11-12 01:32:08",
+          "price": 100.52,
+          "decision": "관망",
+          "score": 50,
+          "quant_score": 45
         }
       ],
       "SCHD": [
@@ -2549,6 +2585,14 @@
           "decision": "관망",
           "score": 55,
           "quant_score": 61
+        },
+        {
+          "date": "2026-11-12",
+          "checked_at": "2026-11-12 01:32:15",
+          "price": 35.7771,
+          "decision": "관망",
+          "score": 56,
+          "quant_score": 67
         }
       ],
       "GOOGL": [
@@ -2591,49 +2635,55 @@
           "decision": "관망",
           "score": 55,
           "quant_score": 61
+        },
+        {
+          "date": "2026-11-12",
+          "checked_at": "2026-11-12 01:31:37",
+          "price": 291.95,
+          "decision": "관망",
+          "score": 70,
+          "quant_score": 54
         }
       ]
     }
   },
   "flight_recorder": {
     "has_data": true,
-    "file_name": "flight_log_2026_W44.jsonl",
-    "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026_W44.jsonl",
-    "period": "2026-11-01 06:02:44 ~ 2026-11-01 22:58:18",
+    "file_name": "flight_log_2026-11-12.jsonl",
+    "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-12.jsonl",
+    "period": "2026-11-12 01:30:23 ~ 2026-11-12 01:32:15",
     "commit_hash": "v2.0-live",
-    "total_events": 29,
+    "total_events": 11,
     "error_count": 0,
-    "warn_count": 28,
+    "warn_count": 4,
     "level_counts": {
-      "INFO": 1,
-      "WARN": 28
+      "WARN": 4,
+      "INFO": 7
     },
     "categories": {
-      "KIS_API": 2,
-      "QUANT_AUDITOR": 27
+      "AI_ENSEMBLE": 3,
+      "QUANT_FACTS": 6,
+      "ORDER": 1,
+      "QUANT_AUDITOR": 1
     },
     "top_errors": [],
     "top_code_locations": [],
-    "top_api_codes": [
-      [
-        "HTTP_500",
-        1
-      ]
-    ],
+    "top_api_codes": [],
     "thread_distribution": {
-      "Thread-2 (monitor)": 1,
-      "MainThread": 28
+      "ThreadPoolExecutor-28_0": 2,
+      "Thread-8 (_worker)": 8,
+      "ThreadPoolExecutor-32_0": 1
     },
     "stats": {
-      "api_throttles": 1,
-      "api_naver_fallbacks": 3,
+      "api_throttles": 0,
+      "api_naver_fallbacks": 0,
       "ai_429_retries": 0,
       "ai_backup_fallbacks": 0,
       "ai_parse_failures": 0,
-      "quant_overrides": 27,
+      "quant_overrides": 1,
       "order_unfilled_revises": 0,
       "circuit_breaker_trips": 0,
-      "orders_executed": 0,
+      "orders_executed": 1,
       "telegram_delivery_fails": 0
     }
   },
@@ -2878,11 +2928,11 @@
     "frozen_reserve": 0,
     "buy_threshold": 75,
     "sell_threshold": 70,
-    "target_order_krw": 250000,
-    "max_per_stock_krw": 750000,
-    "max_per_sector_krw": 1250000,
+    "target_order_krw": 273527,
+    "max_per_stock_krw": 820581,
+    "max_per_sector_krw": 1367636,
     "round_trip_cost_pct": 0.35,
-    "max_share_price_krw": 750000,
+    "max_share_price_krw": 820581,
     "auto_trade": true,
     "schedule": "평일 정규장 10:00 / 14:30 (1일 2회 정기 자율 매매)",
     "realtime_monitor": "정규장 5분 주기 급락 감시 (2시간 쿨다운 & -1.0%p 재개입)",
@@ -3074,7 +3124,7 @@
   },
   "toss_system": {
     "name": "토스증권 실전 계좌 AI 완전 자율 매매 & 반도체 보호 (Option B)",
-    "account_no": "",
+    "account_no": "17601069723",
     "mode": "100% 완전 자율 매수·매도 가동 (삼전·하닉·배당코어 매도 영구 제외)",
     "krw_cash": 3065120,
     "usd_cash": 216.37,
@@ -3243,11 +3293,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 0.340143,
-        "lastPrice": 292.38,
+        "lastPrice": 291.9,
         "averagePurchasePrice": 293.699999,
-        "profitLossRate": -0.44,
-        "profitLossAmount": -0.448989,
-        "rsi": 37.0,
+        "profitLossRate": -0.61,
+        "profitLossAmount": -0.612258,
+        "rsi": 36.6,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "매수",
         "ai_score": 84,
@@ -3277,11 +3327,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 96.48,
+        "lastPrice": 96.55,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 9.61,
-        "profitLossAmount": 33.84,
-        "rsi": 65.1,
+        "profitLossRate": 9.69,
+        "profitLossAmount": 34.12,
+        "rsi": 65.3,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 64,
@@ -3315,7 +3365,7 @@
         "averagePurchasePrice": 34.3786,
         "profitLossRate": 4.04,
         "profitLossAmount": 5.5656,
-        "rsi": 60.8,
+        "rsi": 60.9,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 62,
@@ -3403,7 +3453,7 @@
     "flight_recorder": {
       "name": "일일 비행기록장치(Daily Flight Recorder) & 구글 드라이브 자동 동기화",
       "storage_mode": "일자별 자동 분할 및 이벤트 실시간 원자적 기록 (flight_log_YYYY-MM-DD.jsonl)",
-      "active_file": "flight_log_2026_W44.jsonl",
+      "active_file": "flight_log_2026-11-12.jsonl",
       "google_drive_folder": "AI_Stock_Daily_Logs (구글 앱스 스크립트 웹훅 다이렉트 업로드)",
       "auto_purge": "최근 14일 초과 파일 자동 삭제 (공기계 100% 저장공간 보호)",
       "delivery_schedule": "평일 15:40(장마감 결산) & 매일 23:50(자정 전 최종 결산) 구글 드라이브 동기화 및 텔레그램 발송",
