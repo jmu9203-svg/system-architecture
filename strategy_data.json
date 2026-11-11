@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11 14:43:17",
+  "updated_at": "2026-11-11 14:50:04",
   "battery": "71% (🔋 배터리 사용 중, 20.6°C)",
   "market_intel": {
     "updated_at": "2026-11-11 08:30:22",
@@ -217,15 +217,15 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-11 14:41:55",
-    "checked_ts": 1794375715,
+    "checked_at": "2026-11-11 14:48:34",
+    "checked_ts": 1794376114,
     "date": "2026-11-11",
     "overall_status": "⚠️ 주의 항목 1건 감지 (한투 잔고 조회 일시 지연 (balance_ok=False - 서킷브레이커 오발동 방어 중))",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 7,
-    "toss_bot_sec_ago": 12,
-    "toss_strategy_monitor_sec_ago": 22,
-    "scheduler_heartbeat_sec_ago": 18,
+    "main_bot_sec_ago": 4,
+    "toss_bot_sec_ago": 5,
+    "toss_strategy_monitor_sec_ago": 1,
+    "scheduler_heartbeat_sec_ago": 16,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2500000,
     "market_opened_today": true,
@@ -235,9 +235,9 @@
     "mdd_pct": -67.31,
     "fund_return_pct": 0.0,
     "kospi200_base_price": 87886,
-    "kospi200_cur_price": 84445,
-    "kospi200_return_pct": -3.92,
-    "alpha_pct": 3.92,
+    "kospi200_cur_price": 84610,
+    "kospi200_return_pct": -3.73,
+    "alpha_pct": 3.73,
     "sector_map": {},
     "sector_summary_str": "보유 섹터 없음 (현금 100%)",
     "max_per_sector_krw": 1250000,
@@ -2577,20 +2577,20 @@
     "has_data": true,
     "file_name": "flight_log_2026-11-11.jsonl",
     "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-11.jsonl",
-    "period": "2026-11-11 00:25:46 ~ 2026-11-11 14:42:41",
+    "period": "2026-11-11 00:25:46 ~ 2026-11-11 14:49:48",
     "commit_hash": "v2.0-live",
-    "total_events": 1795,
-    "error_count": 662,
-    "warn_count": 1083,
+    "total_events": 1814,
+    "error_count": 673,
+    "warn_count": 1091,
     "level_counts": {
-      "ERROR": 167,
-      "CRITICAL": 495,
-      "WARN": 1083,
+      "ERROR": 174,
+      "CRITICAL": 499,
+      "WARN": 1091,
       "INFO": 50
     },
     "categories": {
       "AI_PARSE": 5,
-      "KIS_API": 1700,
+      "KIS_API": 1719,
       "AI_ENSEMBLE": 30,
       "QUANT_FACTS": 50,
       "QUANT_AUDITOR": 1,
@@ -2598,29 +2598,7 @@
     },
     "top_errors": [
       {
-        "ts": "2026-11-11 14:41:43",
-        "ver": "v2.0-live",
-        "thread": "Thread-2 (monitor)",
-        "loc": "test_connection.py:472 in get_balance()",
-        "lvl": "CRITICAL",
-        "cat": "KIS_API",
-        "msg": "증권사 API 에러: [EGW00123] 기간이 만료된 token 입니다. (/uapi/domestic-stock/v1/trading/inquire-balance)",
-        "error_type": "",
-        "error_str": "",
-        "raw_snippet": "",
-        "msg_cd": "EGW00123",
-        "ctx": {
-          "attempt": 1,
-          "broker": "KIS",
-          "endpoint": "/uapi/domestic-stock/v1/trading/inquire-balance",
-          "msg_cd": "EGW00123",
-          "msg1": "기간이 만료된 token 입니다.",
-          "rt_cd": "1",
-          "http_status": 500
-        }
-      },
-      {
-        "ts": "2026-11-11 14:41:44",
+        "ts": "2026-11-11 14:48:23",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:472 in get_balance()",
@@ -2642,7 +2620,7 @@
         }
       },
       {
-        "ts": "2026-11-11 14:41:47",
+        "ts": "2026-11-11 14:48:26",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:472 in get_balance()",
@@ -2664,7 +2642,7 @@
         }
       },
       {
-        "ts": "2026-11-11 14:41:50",
+        "ts": "2026-11-11 14:48:29",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:472 in get_balance()",
@@ -2686,7 +2664,7 @@
         }
       },
       {
-        "ts": "2026-11-11 14:42:28",
+        "ts": "2026-11-11 14:49:07",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:190 in get_access_token()",
@@ -2702,7 +2680,7 @@
         }
       },
       {
-        "ts": "2026-11-11 14:42:31",
+        "ts": "2026-11-11 14:49:09",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:190 in get_access_token()",
@@ -2718,7 +2696,7 @@
         }
       },
       {
-        "ts": "2026-11-11 14:42:33",
+        "ts": "2026-11-11 14:49:12",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:190 in get_access_token()",
@@ -2734,7 +2712,7 @@
         }
       },
       {
-        "ts": "2026-11-11 14:42:36",
+        "ts": "2026-11-11 14:49:14",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:190 in get_access_token()",
@@ -2750,7 +2728,7 @@
         }
       },
       {
-        "ts": "2026-11-11 14:42:39",
+        "ts": "2026-11-11 14:49:17",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:190 in get_access_token()",
@@ -2766,7 +2744,23 @@
         }
       },
       {
-        "ts": "2026-11-11 14:42:41",
+        "ts": "2026-11-11 14:49:19",
+        "ver": "v2.0-live",
+        "thread": "Thread-2 (monitor)",
+        "loc": "test_connection.py:190 in get_access_token()",
+        "lvl": "ERROR",
+        "cat": "KIS_API",
+        "msg": "한투 REAL 토큰 발급 실패 (HTTP 403)",
+        "error_type": "",
+        "error_str": "",
+        "raw_snippet": "",
+        "msg_cd": null,
+        "ctx": {
+          "response": "{\"error_code\":\"EGW00103\",\"error_description\":\"유효하지 않은 AppKey입니다.\"}"
+        }
+      },
+      {
+        "ts": "2026-11-11 14:49:48",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:190 in get_access_token()",
@@ -2789,11 +2783,11 @@
       ],
       [
         "test_connection.py:190 in get_access_token()",
-        162
+        169
       ],
       [
         "test_connection.py:472 in get_balance()",
-        97
+        101
       ],
       [
         "ai_analyst.py:96 in _call_single_gemini_api()",
@@ -2803,7 +2797,7 @@
     "top_api_codes": [
       [
         "EGW00123",
-        495
+        499
       ],
       [
         "EGW00215",
@@ -2812,7 +2806,7 @@
     ],
     "thread_distribution": {
       "ThreadPoolExecutor-4_0": 3,
-      "Thread-2 (monitor)": 1560,
+      "Thread-2 (monitor)": 1579,
       "ThreadPoolExecutor-3_0": 4,
       "ThreadPoolExecutor-0_0": 2,
       "ThreadPoolExecutor-1_0": 3,
@@ -3290,7 +3284,7 @@
   },
   "toss_system": {
     "name": "토스증권 실전 계좌 AI 완전 자율 매매 & 반도체 보호 (Option B)",
-    "account_no": "",
+    "account_no": "17601069723",
     "mode": "100% 완전 자율 매수·매도 가동 (삼전·하닉·배당코어 매도 영구 제외)",
     "krw_cash": 3065120,
     "usd_cash": 216.37,
@@ -3361,13 +3355,13 @@
         "averagePurchasePrice": 261136.363636,
         "profitLossRate": -21.11,
         "profitLossAmount": -1213000.0,
-        "rsi": 42.6,
+        "rsi": 42.7,
         "investor_summary": "수급 데이터 확인 중",
         "ai_decision": "홀딩 관망",
         "ai_score": 64,
         "ai_action_tip": "현재 22주 보유 중으로 1주 추매 시 평단 인하 폭이 -0.92%(261,136원→258,739원)에 불과하고 국내 계좌 내 반도체 비중이 과다하므로, 원화 예수금(3,065,120원)을 아끼고 홀딩 관망하세요.",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 62점 · 편차 5점 | Google:3.5-flash-lite(65점 관망), Groq:gpt-oss-20b(60점 관망))] [5단계 퀀트 전략 — 섹터 편중 & 물타기 실효성 가드레일 작동] 최근 단기 조정(최근 5거래일 -7.1%)으로 Wilder 14일 RSI(42.6)가 조정 구간에 진입했으나, 이미 22주를 보유 중이어서 원화 예수금으로 1주를 더 사더라도 평단가 인하 효과가 -0.92%로 미미하며, 국내 계좌 내 반도체 고비중 편중 리스크가 있어 현금 보존 또는 타 업종(금융·배당주) 분산이 훨씬 유리합니다.",
-        "checked_at": "2026-11-11 14:43:02",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 62점 · 편차 5점 | Google:3.5-flash-lite(65점 관망), Groq:gpt-oss-20b(60점 관망))] [5단계 퀀트 전략 — 섹터 편중 & 물타기 실효성 가드레일 작동] 최근 단기 조정(최근 5거래일 -7.0%)으로 Wilder 14일 RSI(42.7)가 조정 구간에 진입했으나, 이미 22주를 보유 중이어서 원화 예수금으로 1주를 더 사더라도 평단가 인하 효과가 -0.92%로 미미하며, 국내 계좌 내 반도체 고비중 편중 리스크가 있어 현금 보존 또는 타 업종(금융·배당주) 분산이 훨씬 유리합니다.",
+        "checked_at": "2026-11-11 14:49:40",
         "ai_models": [
           {
             "provider": "Google",
@@ -3391,10 +3385,10 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 2.0,
-        "lastPrice": 1283000.0,
+        "lastPrice": 1284000.0,
         "averagePurchasePrice": 1432000.0,
-        "profitLossRate": -10.4,
-        "profitLossAmount": -298000.0,
+        "profitLossRate": -10.33,
+        "profitLossAmount": -296000.0,
         "rsi": 44.2,
         "investor_summary": "수급 데이터 확인 중",
         "ai_decision": "홀딩 관망",
@@ -3429,13 +3423,13 @@
         "averagePurchasePrice": 24930.0,
         "profitLossRate": 0.38,
         "profitLossAmount": 1900.0,
-        "rsi": 43.0,
+        "rsi": 42.9,
         "investor_summary": "수급 데이터 확인 중",
         "ai_decision": "홀딩 관망",
         "ai_score": 64,
         "ai_action_tip": "현재 20주 보유 중으로 1주 추매 시 평단 인하 폭이 -0.02%(24,930원→24,934원)에 불과하고 이미 충분한 수량을 보유하고 있으므로, 원화 예수금(3,065,120원)을 아끼고 홀딩 관망하세요.",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 64점 · 편차 8점 | Groq:gpt-oss-20b(60점 관망), Google:3.5-flash-lite(68점 관망))] [5단계 퀀트 전략 — 섹터 편중 & 물타기 실효성 가드레일 작동] 최근 단기 조정(최근 5거래일 -0.2%)으로 Wilder 14일 RSI(43.0)가 조정 구간에 진입했으나, 이미 20주를 보유 중이어서 원화 예수금으로 1주를 더 사더라도 평단가 인하 효과가 -0.02%로 미미하며, 단일 종목 과다 편중 리스크가 있어 현금 보존 또는 타 업종(금융·배당주) 분산이 훨씬 유리합니다.",
-        "checked_at": "2026-11-11 14:43:06",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 64점 · 편차 8점 | Groq:gpt-oss-20b(60점 관망), Google:3.5-flash-lite(68점 관망))] [5단계 퀀트 전략 — 섹터 편중 & 물타기 실효성 가드레일 작동] 최근 단기 조정(최근 5거래일 -0.2%)으로 Wilder 14일 RSI(42.9)가 조정 구간에 진입했으나, 이미 20주를 보유 중이어서 원화 예수금으로 1주를 더 사더라도 평단가 인하 효과가 -0.02%로 미미하며, 단일 종목 과다 편중 리스크가 있어 현금 보존 또는 타 업종(금융·배당주) 분산이 훨씬 유리합니다.",
+        "checked_at": "2026-11-11 14:49:44",
         "ai_models": [
           {
             "provider": "Google",
@@ -3459,11 +3453,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 0.340143,
-        "lastPrice": 290.96,
+        "lastPrice": 290.71,
         "averagePurchasePrice": 293.699999,
-        "profitLossRate": -0.93,
-        "profitLossAmount": -0.931992,
-        "rsi": 35.8,
+        "profitLossRate": -1.01,
+        "profitLossAmount": -1.017028,
+        "rsi": 35.6,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "매수",
         "ai_score": 81,
@@ -3493,11 +3487,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 96.11,
+        "lastPrice": 96.07,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 9.19,
-        "profitLossAmount": 32.36,
-        "rsi": 63.0,
+        "profitLossRate": 9.14,
+        "profitLossAmount": 32.2,
+        "rsi": 62.8,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 62,
@@ -3527,11 +3521,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 35.81,
+        "lastPrice": 35.8,
         "averagePurchasePrice": 34.3786,
-        "profitLossRate": 4.16,
-        "profitLossAmount": 5.7256,
-        "rsi": 61.4,
+        "profitLossRate": 4.13,
+        "profitLossAmount": 5.6856,
+        "rsi": 61.2,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 62,
