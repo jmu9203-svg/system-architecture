@@ -1,21 +1,27 @@
 {
-  "updated_at": "2026-11-12 08:20:22",
+  "updated_at": "2026-11-12 08:30:41",
   "battery": "85% (⚡ 충전 중, 22.7°C)",
   "market_intel": {
-    "updated_at": "2026-11-11 08:30:22",
+    "updated_at": "2026-11-12 08:30:02",
     "fx_soxx_info": {
-      "usd_krw": "1,344.50",
-      "usd_krw_change": "0.00",
-      "usd_krw_rate": "0.00",
-      "soxx_price": "$147.48",
-      "soxx_pct": "+0.61%",
-      "summary": "원/달러 환율: 1,344.50원 (전일대비 0.00원 / 0.00%) | 미 필라델피아 반도체(SOXX): $147.48 (+0.61%)"
+      "usd_krw": "1,336.50",
+      "usd_krw_change": "-1.00",
+      "usd_krw_rate": "-0.07",
+      "soxx_price": "$153.39",
+      "soxx_pct": "-1.29%",
+      "summary": "원/달러 환율: 1,336.50원 (전일대비 -1.00원 / -0.07%) | 미 필라델피아 반도체(SOXX): $153.39 (-1.29%)"
     },
     "last_rotation": {
-      "rotated_at": "2026-11-11 08:30:24",
+      "rotated_at": "2026-11-12 08:30:07",
       "universe_size": 30,
       "watch_size": 8,
       "core_stocks": [
+        {
+          "code": "NVDA",
+          "name": "엔비디아",
+          "sector": "미국증시·글로벌빅테크",
+          "role": "현재 보유 중 (익절·손절 밀착 관리)"
+        },
         {
           "code": "465580",
           "name": "ACE 미국빅테크TOP7 Plus",
@@ -43,70 +49,56 @@
       ],
       "dynamic_leaders": [
         {
-          "code": "381170",
-          "name": "TIGER 미국테크TOP10 INDXX",
+          "code": "458730",
+          "name": "TIGER 미국배당다우존스",
           "sector": "미국증시·글로벌빅테크",
           "is_us_etf": true,
-          "price": 28795,
+          "price": 15065,
           "chg_rate": 0.0,
-          "frgn_today": -67947,
-          "orgn_today": 61901,
-          "leader_score": 86,
-          "reason": "당일 기관 순매수(+61,901주) · 5일 누적 외인·기관 동반 매집 · 견조한 상승 추세(+0.00%) · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
+          "frgn_today": 304138,
+          "orgn_today": -521418,
+          "leader_score": 77,
+          "reason": "당일 외인 순매수(+304,138주) · 견조한 상승 추세(+0.00%) · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
         },
         {
           "code": "035420",
           "name": "NAVER",
           "sector": "플랫폼·바이오",
           "is_us_etf": false,
-          "price": 193000,
+          "price": 194300,
           "chg_rate": 0.0,
-          "frgn_today": 236539,
-          "orgn_today": 120884,
+          "frgn_today": 47985,
+          "orgn_today": 125961,
           "leader_score": 89,
-          "reason": "당일 외인(+236,539)·기관(+120,884) 쌍끌이 매수 · 5일 누적 외인·기관 동반 매집 · 견조한 상승 추세(+0.00%)"
+          "reason": "당일 외인(+47,985)·기관(+125,961) 쌍끌이 매수 · 5일 누적 외인·기관 동반 매집 · 견조한 상승 추세(+0.00%)"
         },
         {
-          "code": "051910",
-          "name": "LG화학",
-          "sector": "플랫폼·바이오",
+          "code": "086790",
+          "name": "하나금융지주",
+          "sector": "금융·밸류업지주",
           "is_us_etf": false,
-          "price": 238000,
+          "price": 120100,
           "chg_rate": 0.0,
-          "frgn_today": 16095,
-          "orgn_today": 24469,
-          "leader_score": 89,
-          "reason": "당일 외인(+16,095)·기관(+24,469) 쌍끌이 매수 · 5일 누적 외인·기관 동반 매집 · 견조한 상승 추세(+0.00%)"
-        },
-        {
-          "code": "012330",
-          "name": "현대모비스",
-          "sector": "자동차·모빌리티",
-          "is_us_etf": false,
-          "price": 351500,
-          "chg_rate": 0.0,
-          "frgn_today": 9877,
-          "orgn_today": 13271,
+          "frgn_today": 35023,
+          "orgn_today": 669,
           "leader_score": 83,
-          "reason": "당일 외인(+9,877)·기관(+13,271) 쌍끌이 매수 · 5일 합산 메이저 순매수(+101,302주) · 견조한 상승 추세(+0.00%)"
+          "reason": "당일 외인(+35,023)·기관(+669) 쌍끌이 매수 · 5일 합산 메이저 순매수(+146,039주) · 견조한 상승 추세(+0.00%)"
         }
       ],
       "added": [
-        "TIGER 미국테크TOP10 INDXX(381170)",
-        "LG화학(051910)",
-        "현대모비스(012330)"
+        "엔비디아(NVDA)",
+        "하나금융지주(086790)"
       ],
       "removed": [
-        "TIGER 미국배당다우존스(458730)",
         "카카오(035720)",
         "LG전자(066570)"
       ]
     },
-    "us_bigtech_summary": "11월 12일 어플라이드머티어리얼즈(AMAT, EPS 예상치 $4.06)와 11월 17일 엔비디아(NVDA, EPS 예상치 $2.49)의 실적 발표를 앞두고 글로벌 기술주 변동성이 확대되고 있습니다. 필라델피아 반도체 지수는 소폭 반등(+0.61%)했으나 나스닥100의 최근 급락 여파로 AI 섹터 전반의 경계감이 지속되고 있습니다.",
+    "us_bigtech_summary": "어플라이드머티어리얼즈(AMAT)가 오늘 장마감 후 EPS 예상치 $4.06으로 실적을 발표하며, 11월 17일 엔비디아(NVDA) 실적 발표를 앞두고 반도체 섹터 변동성이 확대되고 있습니다.",
     "us_official_calendar": [
       {
         "date": "2026-11-12",
-        "dday": 1,
+        "dday": 0,
         "symbol": "AMAT",
         "kr_name": "어플라이드머티어리얼즈",
         "time_desc": "미 장마감 후(한국시간 익일 새벽 05:00경)",
@@ -115,7 +107,7 @@
       },
       {
         "date": "2026-11-17",
-        "dday": 6,
+        "dday": 5,
         "symbol": "NVDA",
         "kr_name": "엔비디아",
         "time_desc": "미 장마감 후(한국시간 익일 새벽 05:00경)",
@@ -123,14 +115,14 @@
         "quarter": "Oct/2026"
       }
     ],
-    "kr_macro_summary": "원/달러 환율이 1,344.50원을 기록하며 안정세를 보이고 있으나, 미 기술주 폭락 여파로 코스피 시장의 외국인 수급 불확실성이 커진 상태입니다. NAVER 등 주요 종목의 실적 발표와 DART 공시를 주시하며 보수적인 리스크 관리가 필요합니다.",
+    "kr_macro_summary": "원/달러 환율이 1,336원대로 소폭 하락하고 미 필라델피아 반도체 지수가 하락세를 보인 가운데, NAVER가 오늘 3분기 실적을 공식 발표하며 외국인 수급과 실적 모멘텀이 증시 방향성을 결정할 전망입니다.",
     "earnings_alert_level": "CAUTION",
     "stock_notes": {
       "005930": {
         "name": "삼성전자",
         "earnings_imminent": false,
-        "earnings_status": "공식 IR 일정 미등록 (발표 완료)",
-        "memo": "DART 임원 주식 소유 변동 공시 및 외인 수급 추이를 모니터링하며 분할 매수 관점 접근",
+        "earnings_status": "공식 확정 IR 일정 미등록(발표 완료)",
+        "memo": "DART 임원 주식 소유 변동 공시를 모니터링하며 미국 반도체 섹터 및 AMAT 실적 발표 연동 흐름 주시",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
@@ -139,28 +131,28 @@
       "000660": {
         "name": "SK하이닉스",
         "earnings_imminent": false,
-        "earnings_status": "공식 IR 일정 미등록 (발표 완료)",
-        "memo": "HBM 수요 모멘텀과 미국 반도체(AMAT·NVDA) 실적 발표 연동성을 확인한 후 진입",
+        "earnings_status": "공식 확정 IR 일정 미등록(발표 완료)",
+        "memo": "HBM 수요 모멘텀이 유효하나 미국 반도체 지수 하락 및 엔비디아 실적 대기 기간이므로 추격 매수 자제",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
-        "consensus_target_price": "3,054,286"
+        "consensus_target_price": "3,102,000"
       },
       "005380": {
         "name": "현대차",
         "earnings_imminent": false,
-        "earnings_status": "공식 IR 일정 미등록 (발표 완료)",
-        "memo": "본업 실적 호조 및 로보틱스 모멘텀 유효하나, 거시경제 변동성 완화 시까지 추격 매수 자제",
+        "earnings_status": "공식 확정 IR 일정 미등록(발표 완료)",
+        "memo": "본업 판매 반등 및 로보틱스 실행 국면 리포트를 참고하되 외국인 수급 변동성에 따른 분할 접근",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
-        "consensus_target_price": "525,417"
+        "consensus_target_price": "516,667"
       },
       "105560": {
         "name": "KB금융",
         "earnings_imminent": false,
-        "earnings_status": "공식 IR 일정 미등록 (발표 완료)",
-        "memo": "높은 CET-1 비율을 바탕으로 한 방어력 검증 완료, 안정적인 밴드 내 트레이딩 수행",
+        "earnings_status": "공식 확정 IR 일정 미등록(발표 완료)",
+        "memo": "높은 CET-1 비율과 안정적인 주주환원 여력을 바탕으로 변동성 장세 속 방어적 관점 유지",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
@@ -169,24 +161,30 @@
       "035420": {
         "name": "NAVER",
         "earnings_imminent": true,
-        "earnings_status": "2026-11-12 (D-1) 3분기 실적 공식 발표 예정",
-        "memo": "내일 실적 발표 및 AI DC 사업 본격화에 따른 불확실성 해소 여부를 확인한 후 대응",
-        "official_ir_schedule": "2026-11-12 (D-1) 2026년 3분기 실적",
+        "earnings_status": "2026-11-12 (D-0) 3분기 실적 공정공시 공식 발표",
+        "memo": "금일 실적 발표 직후 AI DC 사업 및 조달 불확실성 해소 여부를 확인한 뒤 보수적으로 진입",
+        "official_ir_schedule": "2026-11-12 (D-Day(오늘)) 2026년 3분기 실적",
         "ir_date": "2026-11-12",
-        "ir_dday": 1,
-        "consensus_target_price": "319,696"
+        "ir_dday": 0,
+        "consensus_target_price": "318,150"
       },
       "267260": {
         "name": "HD현대일렉트릭",
         "earnings_imminent": false,
-        "earnings_status": "공식 IR 일정 미등록",
-        "memo": "미국 빅테크 전력 인프라 투자 방향성과 연동하여 수급 유입 시 제한적 비중 확대"
+        "earnings_status": "공식 확정 IR 일정 미등록",
+        "memo": "글로벌 전력망 및 빅테크 인프라 투자 관련 수급 연동성을 체크하며 박스권 대응"
       },
       "091160": {
         "name": "KODEX 반도체",
-        "earnings_imminent": false,
-        "earnings_status": "미국 AMAT(11/12) 및 엔비디아(11/17) 실적 발표 연동",
-        "memo": "미국 대형 반도체 실적 발표 직전까지 성급한 추격 매수를 자제하고 관망 유지"
+        "earnings_imminent": true,
+        "earnings_status": "2026-11-12 AMAT 및 11-17 NVDA 실적 발표 일정 연동",
+        "memo": "미 필라델피아 반도체 지수 하락(-1.29%) 및 오늘 AMAT 실적 대기 중이므로 신규 매수 보류"
+      },
+      "NVDA": {
+        "name": "엔비디아",
+        "official_ir_schedule": "향후 공식 IR 일정 미등록",
+        "ir_date": null,
+        "ir_dday": null
       },
       "465580": {
         "name": "ACE 미국빅테크TOP7 Plus",
@@ -194,38 +192,31 @@
         "ir_date": null,
         "ir_dday": null
       },
-      "381170": {
-        "name": "TIGER 미국테크TOP10 INDXX",
+      "458730": {
+        "name": "TIGER 미국배당다우존스",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null
       },
-      "051910": {
-        "name": "LG화학",
+      "086790": {
+        "name": "하나금융지주",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
-        "consensus_target_price": "355,583"
-      },
-      "012330": {
-        "name": "현대모비스",
-        "official_ir_schedule": "향후 공식 IR 일정 미등록",
-        "ir_date": null,
-        "ir_dday": null,
-        "consensus_target_price": "606,957"
+        "consensus_target_price": "166,650"
       }
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-12 08:19:30",
-    "checked_ts": 1794439170,
+    "checked_at": "2026-11-12 08:30:29",
+    "checked_ts": 1794439829,
     "date": "2026-11-12",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 3,
-    "toss_bot_sec_ago": 3,
-    "toss_strategy_monitor_sec_ago": 8,
-    "scheduler_heartbeat_sec_ago": 18,
+    "main_bot_sec_ago": 2,
+    "toss_bot_sec_ago": 1,
+    "toss_strategy_monitor_sec_ago": 7,
+    "scheduler_heartbeat_sec_ago": 2,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2496298,
     "market_opened_today": false,
@@ -2649,23 +2640,45 @@
     "has_data": true,
     "file_name": "flight_log_2026-11-12.jsonl",
     "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-12.jsonl",
-    "period": "2026-11-12 01:30:23 ~ 2026-11-12 05:31:00",
+    "period": "2026-11-12 01:30:23 ~ 2026-11-12 08:30:32",
     "commit_hash": "v2.0-live",
-    "total_events": 29,
-    "error_count": 0,
+    "total_events": 30,
+    "error_count": 1,
     "warn_count": 10,
     "level_counts": {
       "WARN": 10,
-      "INFO": 19
+      "INFO": 19,
+      "ERROR": 1
     },
     "categories": {
       "AI_ENSEMBLE": 9,
       "QUANT_FACTS": 18,
       "ORDER": 1,
-      "QUANT_AUDITOR": 1
+      "QUANT_AUDITOR": 1,
+      "KIS_API": 1
     },
-    "top_errors": [],
-    "top_code_locations": [],
+    "top_errors": [
+      {
+        "ts": "2026-11-12 08:30:32",
+        "ver": "v2.0-live",
+        "thread": "Thread-2 (monitor)",
+        "loc": "test_connection.py:682 in get_current_price()",
+        "lvl": "ERROR",
+        "cat": "KIS_API",
+        "msg": "시세 조회 최종 실패 (NVDA)",
+        "error_type": "",
+        "error_str": "",
+        "raw_snippet": "",
+        "msg_cd": null,
+        "ctx": {}
+      }
+    ],
+    "top_code_locations": [
+      [
+        "test_connection.py:682 in get_current_price()",
+        1
+      ]
+    ],
     "top_api_codes": [],
     "thread_distribution": {
       "ThreadPoolExecutor-28_0": 2,
@@ -2678,7 +2691,8 @@
       "ThreadPoolExecutor-46_0": 1,
       "ThreadPoolExecutor-49_0": 1,
       "ThreadPoolExecutor-52_0": 1,
-      "Thread-12 (_worker)": 6
+      "Thread-12 (_worker)": 6,
+      "Thread-2 (monitor)": 1
     },
     "stats": {
       "api_throttles": 0,
@@ -3007,6 +3021,10 @@
     },
     "watch_basket": [
       {
+        "code": "NVDA",
+        "name": "엔비디아"
+      },
+      {
         "code": "465580",
         "name": "ACE 미국빅테크TOP7 Plus"
       },
@@ -3031,19 +3049,21 @@
         "name": "NAVER"
       },
       {
-        "code": "035720",
-        "name": "카카오"
-      },
-      {
-        "code": "066570",
-        "name": "LG전자"
+        "code": "086790",
+        "name": "하나금융지주"
       }
     ],
     "last_rotation": {
-      "rotated_at": "2026-11-10 12:52:11",
+      "rotated_at": "2026-11-12 08:30:07",
       "universe_size": 30,
       "watch_size": 8,
       "core_stocks": [
+        {
+          "code": "NVDA",
+          "name": "엔비디아",
+          "sector": "미국증시·글로벌빅테크",
+          "role": "현재 보유 중 (익절·손절 밀착 관리)"
+        },
         {
           "code": "465580",
           "name": "ACE 미국빅테크TOP7 Plus",
@@ -3075,55 +3095,45 @@
           "name": "TIGER 미국배당다우존스",
           "sector": "미국증시·글로벌빅테크",
           "is_us_etf": true,
-          "price": 15175,
-          "chg_rate": 0.26,
-          "frgn_today": -49866,
-          "orgn_today": 54732,
-          "leader_score": 86,
-          "reason": "당일 기관 순매수(+54,732주) · 5일 누적 외인·기관 동반 매집 · 견조한 상승 추세(+0.26%) · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
+          "price": 15065,
+          "chg_rate": 0.0,
+          "frgn_today": 304138,
+          "orgn_today": -521418,
+          "leader_score": 77,
+          "reason": "당일 외인 순매수(+304,138주) · 견조한 상승 추세(+0.00%) · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
         },
         {
           "code": "035420",
           "name": "NAVER",
           "sector": "플랫폼·바이오",
           "is_us_etf": false,
-          "price": 192800,
-          "chg_rate": 3.05,
-          "frgn_today": 13772,
-          "orgn_today": 168922,
+          "price": 194300,
+          "chg_rate": 0.0,
+          "frgn_today": 47985,
+          "orgn_today": 125961,
           "leader_score": 89,
-          "reason": "당일 외인(+13,772)·기관(+168,922) 쌍끌이 매수 · 5일 누적 외인·기관 동반 매집 · 견조한 상승 추세(+3.05%)"
+          "reason": "당일 외인(+47,985)·기관(+125,961) 쌍끌이 매수 · 5일 누적 외인·기관 동반 매집 · 견조한 상승 추세(+0.00%)"
         },
         {
-          "code": "035720",
-          "name": "카카오",
-          "sector": "플랫폼·바이오",
+          "code": "086790",
+          "name": "하나금융지주",
+          "sector": "금융·밸류업지주",
           "is_us_etf": false,
-          "price": 32000,
-          "chg_rate": -0.31,
-          "frgn_today": -124054,
-          "orgn_today": 106768,
-          "leader_score": 79,
-          "reason": "당일 기관 순매수(+106,768주) · 5일 누적 외인·기관 동반 매집 · 조정 중 메이저 저가매수 유입(-0.31%)"
-        },
-        {
-          "code": "066570",
-          "name": "LG전자",
-          "sector": "반도체·IT하드웨어",
-          "is_us_etf": false,
-          "price": 138200,
-          "chg_rate": 2.6,
-          "frgn_today": -50883,
-          "orgn_today": 119392,
-          "leader_score": 74,
-          "reason": "당일 기관 순매수(+119,392주) · 5일 합산 메이저 순매수(+132,311주) · 견조한 상승 추세(+2.60%)"
+          "price": 120100,
+          "chg_rate": 0.0,
+          "frgn_today": 35023,
+          "orgn_today": 669,
+          "leader_score": 83,
+          "reason": "당일 외인(+35,023)·기관(+669) 쌍끌이 매수 · 5일 합산 메이저 순매수(+146,039주) · 견조한 상승 추세(+0.00%)"
         }
       ],
       "added": [
-        "카카오(035720)"
+        "엔비디아(NVDA)",
+        "하나금융지주(086790)"
       ],
       "removed": [
-        "메리츠금융지주(138040)"
+        "카카오(035720)",
+        "LG전자(066570)"
       ]
     },
     "master_universe_size": 30
