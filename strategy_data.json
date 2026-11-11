@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-11 15:47:12",
-  "battery": "69% (🔋 배터리 사용 중, 20.5°C)",
+  "updated_at": "2026-11-11 15:58:46",
+  "battery": "68% (🔋 배터리 사용 중, 20.3°C)",
   "market_intel": {
     "updated_at": "2026-11-11 08:30:22",
     "fx_soxx_info": {
@@ -217,15 +217,15 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-11 15:45:50",
-    "checked_ts": 1794379550,
+    "checked_at": "2026-11-11 15:57:28",
+    "checked_ts": 1794380248,
     "date": "2026-11-11",
     "overall_status": "⚠️ 주의 항목 1건 감지 (한투 잔고 조회 일시 지연 (balance_ok=False - 서킷브레이커 오발동 방어 중))",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 2,
-    "toss_bot_sec_ago": 2,
-    "toss_strategy_monitor_sec_ago": 17,
-    "scheduler_heartbeat_sec_ago": 3,
+    "main_bot_sec_ago": 8,
+    "toss_bot_sec_ago": 8,
+    "toss_strategy_monitor_sec_ago": 25,
+    "scheduler_heartbeat_sec_ago": 1,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2500000,
     "market_opened_today": true,
@@ -248,8 +248,8 @@
     "circuit_breaker_limit_pct": -3.5,
     "circuit_breaker_tripped": false,
     "circuit_breaker_reason": "",
-    "battery_str": "69% (🔋 배터리 사용 중, 20.5°C)",
-    "battery_pct": 69,
+    "battery_str": "68% (🔋 배터리 사용 중, 20.3°C)",
+    "battery_pct": 68,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
       "⚠️ 한투 잔고 조회 일시 지연 (balance_ok=False - 서킷브레이커 오발동 방어 중)",
@@ -2577,20 +2577,20 @@
     "has_data": true,
     "file_name": "flight_log_2026-11-11.jsonl",
     "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-11.jsonl",
-    "period": "2026-11-11 00:25:46 ~ 2026-11-11 15:46:59",
+    "period": "2026-11-11 00:25:46 ~ 2026-11-11 15:58:35",
     "commit_hash": "v2.0-live",
-    "total_events": 1944,
-    "error_count": 747,
-    "warn_count": 1147,
+    "total_events": 1963,
+    "error_count": 758,
+    "warn_count": 1155,
     "level_counts": {
-      "ERROR": 220,
-      "CRITICAL": 527,
-      "WARN": 1147,
+      "ERROR": 227,
+      "CRITICAL": 531,
+      "WARN": 1155,
       "INFO": 50
     },
     "categories": {
       "AI_PARSE": 5,
-      "KIS_API": 1849,
+      "KIS_API": 1868,
       "AI_ENSEMBLE": 30,
       "QUANT_FACTS": 50,
       "QUANT_AUDITOR": 1,
@@ -2598,7 +2598,7 @@
     },
     "top_errors": [
       {
-        "ts": "2026-11-11 15:45:40",
+        "ts": "2026-11-11 15:57:18",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:472 in get_balance()",
@@ -2620,7 +2620,7 @@
         }
       },
       {
-        "ts": "2026-11-11 15:45:42",
+        "ts": "2026-11-11 15:57:20",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:472 in get_balance()",
@@ -2642,7 +2642,7 @@
         }
       },
       {
-        "ts": "2026-11-11 15:45:46",
+        "ts": "2026-11-11 15:57:24",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:472 in get_balance()",
@@ -2664,7 +2664,7 @@
         }
       },
       {
-        "ts": "2026-11-11 15:46:23",
+        "ts": "2026-11-11 15:58:01",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:190 in get_access_token()",
@@ -2680,7 +2680,7 @@
         }
       },
       {
-        "ts": "2026-11-11 15:46:26",
+        "ts": "2026-11-11 15:58:04",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:190 in get_access_token()",
@@ -2696,7 +2696,7 @@
         }
       },
       {
-        "ts": "2026-11-11 15:46:29",
+        "ts": "2026-11-11 15:58:06",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:190 in get_access_token()",
@@ -2712,7 +2712,7 @@
         }
       },
       {
-        "ts": "2026-11-11 15:46:31",
+        "ts": "2026-11-11 15:58:09",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:190 in get_access_token()",
@@ -2728,7 +2728,7 @@
         }
       },
       {
-        "ts": "2026-11-11 15:46:34",
+        "ts": "2026-11-11 15:58:12",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:190 in get_access_token()",
@@ -2744,7 +2744,7 @@
         }
       },
       {
-        "ts": "2026-11-11 15:46:36",
+        "ts": "2026-11-11 15:58:14",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:190 in get_access_token()",
@@ -2760,7 +2760,7 @@
         }
       },
       {
-        "ts": "2026-11-11 15:46:59",
+        "ts": "2026-11-11 15:58:35",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:190 in get_access_token()",
@@ -2783,11 +2783,11 @@
       ],
       [
         "test_connection.py:190 in get_access_token()",
-        215
+        222
       ],
       [
         "test_connection.py:472 in get_balance()",
-        129
+        133
       ],
       [
         "ai_analyst.py:96 in _call_single_gemini_api()",
@@ -2797,7 +2797,7 @@
     "top_api_codes": [
       [
         "EGW00123",
-        527
+        531
       ],
       [
         "EGW00215",
@@ -2806,7 +2806,7 @@
     ],
     "thread_distribution": {
       "ThreadPoolExecutor-4_0": 3,
-      "Thread-2 (monitor)": 1709,
+      "Thread-2 (monitor)": 1728,
       "ThreadPoolExecutor-3_0": 4,
       "ThreadPoolExecutor-0_0": 2,
       "ThreadPoolExecutor-1_0": 3,
@@ -3317,11 +3317,11 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 1.0,
-        "lastPrice": 127300.0,
+        "lastPrice": 125400.0,
         "averagePurchasePrice": 123100.0,
-        "profitLossRate": 3.41,
-        "profitLossAmount": 4200.0,
-        "rsi": 46.2,
+        "profitLossRate": 1.86,
+        "profitLossAmount": 2300.0,
+        "rsi": 43.2,
         "investor_summary": "최근(11-11) 순매수: 외인 +19,376주, 기관 -9,042주 (개인 -11,449주) | [5일누적: 외인 +193,929주, 기관 -20,658주]",
         "ai_decision": "홀딩 관망",
         "ai_score": 62,
@@ -3351,17 +3351,17 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 22.0,
-        "lastPrice": 206000.0,
+        "lastPrice": 205000.0,
         "averagePurchasePrice": 261136.363636,
-        "profitLossRate": -21.11,
-        "profitLossAmount": -1213000.0,
-        "rsi": 42.7,
+        "profitLossRate": -21.49,
+        "profitLossAmount": -1235000.0,
+        "rsi": 42.5,
         "investor_summary": "최근(11-11) 순매수: 외인 +2,630,911주, 기관 -598,253주 (개인 -2,062,478주) | [5일누적: 외인 -4,562,969주, 기관 +2,103,938주]",
         "ai_decision": "홀딩 관망",
         "ai_score": 64,
-        "ai_action_tip": "현재 22주 보유 중으로 1주 추매 시 평단 인하 폭이 -0.92%(261,136원→258,739원)에 불과하고 국내 계좌 내 반도체 비중이 과다하므로, 원화 예수금(3,065,120원)을 아끼고 홀딩 관망하세요.",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 62점 · 편차 5점 | Google:3.5-flash-lite(65점 관망), Groq:gpt-oss-20b(60점 관망))] [5단계 퀀트 전략 — 섹터 편중 & 물타기 실효성 가드레일 작동] 최근 단기 조정(최근 5거래일 -7.0%)으로 Wilder 14일 RSI(42.7)가 조정 구간에 진입했으나, 이미 22주를 보유 중이어서 원화 예수금으로 1주를 더 사더라도 평단가 인하 효과가 -0.92%로 미미하며, 국내 계좌 내 반도체 고비중 편중 리스크가 있어 현금 보존 또는 타 업종(금융·배당주) 분산이 훨씬 유리합니다.",
-        "checked_at": "2026-11-11 15:35:07",
+        "ai_action_tip": "현재 22주 보유 중으로 1주 추매 시 평단 인하 폭이 -0.93%(261,136원→258,695원)에 불과하고 국내 계좌 내 반도체 비중이 과다하므로, 원화 예수금(3,065,120원)을 아끼고 홀딩 관망하세요.",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 62점 · 편차 5점 | Google:3.5-flash-lite(65점 관망), Groq:gpt-oss-20b(60점 관망))] [5단계 퀀트 전략 — 섹터 편중 & 물타기 실효성 가드레일 작동] 최근 단기 조정(최근 5거래일 -7.2%)으로 Wilder 14일 RSI(42.5)가 조정 구간에 진입했으나, 이미 22주를 보유 중이어서 원화 예수금으로 1주를 더 사더라도 평단가 인하 효과가 -0.93%로 미미하며, 국내 계좌 내 반도체 고비중 편중 리스크가 있어 현금 보존 또는 타 업종(금융·배당주) 분산이 훨씬 유리합니다.",
+        "checked_at": "2026-11-11 15:58:29",
         "ai_models": [
           {
             "provider": "Google",
@@ -3385,11 +3385,11 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 2.0,
-        "lastPrice": 1275000.0,
+        "lastPrice": 1277000.0,
         "averagePurchasePrice": 1432000.0,
-        "profitLossRate": -10.96,
-        "profitLossAmount": -314000.0,
-        "rsi": 43.7,
+        "profitLossRate": -10.82,
+        "profitLossAmount": -310000.0,
+        "rsi": 43.9,
         "investor_summary": "최근(11-11) 순매수: 외인 +99,862주, 기관 -146,888주 (개인 -298,085주) | [5일누적: 외인 -2,705,684주, 기관 +1,012,974주]",
         "ai_decision": "홀딩 관망",
         "ai_score": 62,
@@ -3453,11 +3453,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 0.340143,
-        "lastPrice": 290.27,
+        "lastPrice": 290.09,
         "averagePurchasePrice": 293.699999,
-        "profitLossRate": -1.16,
-        "profitLossAmount": -1.166691,
-        "rsi": 35.2,
+        "profitLossRate": -1.22,
+        "profitLossAmount": -1.227917,
+        "rsi": 35.0,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "매수",
         "ai_score": 81,
@@ -3487,11 +3487,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 96.1,
+        "lastPrice": 96.16,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 9.17,
-        "profitLossAmount": 32.32,
-        "rsi": 62.9,
+        "profitLossRate": 9.24,
+        "profitLossAmount": 32.56,
+        "rsi": 63.3,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 62,
