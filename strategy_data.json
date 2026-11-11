@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-11 19:06:14",
-  "battery": "61% (🔋 배터리 사용 중, 20.6°C)",
+  "updated_at": "2026-11-11 19:17:54",
+  "battery": "60% (🔋 배터리 사용 중, 20.6°C)",
   "market_intel": {
     "updated_at": "2026-11-11 08:30:22",
     "fx_soxx_info": {
@@ -217,15 +217,15 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-11 19:04:52",
-    "checked_ts": 1794391492,
+    "checked_at": "2026-11-11 19:16:30",
+    "checked_ts": 1794392190,
     "date": "2026-11-11",
     "overall_status": "⚠️ 주의 항목 1건 감지 (한투 잔고 조회 일시 지연 (balance_ok=False - 서킷브레이커 오발동 방어 중))",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 12,
-    "toss_bot_sec_ago": 12,
-    "toss_strategy_monitor_sec_ago": 17,
-    "scheduler_heartbeat_sec_ago": 19,
+    "main_bot_sec_ago": 0,
+    "toss_bot_sec_ago": 11,
+    "toss_strategy_monitor_sec_ago": 24,
+    "scheduler_heartbeat_sec_ago": 17,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2500000,
     "market_opened_today": true,
@@ -248,8 +248,8 @@
     "circuit_breaker_limit_pct": -3.5,
     "circuit_breaker_tripped": false,
     "circuit_breaker_reason": "",
-    "battery_str": "61% (🔋 배터리 사용 중, 20.6°C)",
-    "battery_pct": 61,
+    "battery_str": "60% (🔋 배터리 사용 중, 20.6°C)",
+    "battery_pct": 60,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
       "⚠️ 한투 잔고 조회 일시 지연 (balance_ok=False - 서킷브레이커 오발동 방어 중)",
@@ -2577,28 +2577,28 @@
     "has_data": true,
     "file_name": "flight_log_2026-11-11.jsonl",
     "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-11.jsonl",
-    "period": "2026-11-11 00:25:46 ~ 2026-11-11 19:06:02",
+    "period": "2026-11-11 00:25:46 ~ 2026-11-11 19:17:38",
     "commit_hash": "v2.0-live",
-    "total_events": 2268,
-    "error_count": 934,
-    "warn_count": 1284,
+    "total_events": 2288,
+    "error_count": 945,
+    "warn_count": 1293,
     "level_counts": {
-      "ERROR": 339,
-      "CRITICAL": 595,
-      "WARN": 1284,
+      "ERROR": 346,
+      "CRITICAL": 599,
+      "WARN": 1293,
       "INFO": 50
     },
     "categories": {
       "AI_PARSE": 5,
-      "KIS_API": 2172,
+      "KIS_API": 2191,
       "AI_ENSEMBLE": 31,
       "QUANT_FACTS": 50,
       "QUANT_AUDITOR": 1,
-      "TELEGRAM": 9
+      "TELEGRAM": 10
     },
     "top_errors": [
       {
-        "ts": "2026-11-11 19:04:42",
+        "ts": "2026-11-11 19:16:20",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:472 in get_balance()",
@@ -2620,7 +2620,7 @@
         }
       },
       {
-        "ts": "2026-11-11 19:04:44",
+        "ts": "2026-11-11 19:16:22",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:472 in get_balance()",
@@ -2642,7 +2642,7 @@
         }
       },
       {
-        "ts": "2026-11-11 19:04:47",
+        "ts": "2026-11-11 19:16:25",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:472 in get_balance()",
@@ -2664,7 +2664,7 @@
         }
       },
       {
-        "ts": "2026-11-11 19:05:25",
+        "ts": "2026-11-11 19:17:03",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:190 in get_access_token()",
@@ -2680,7 +2680,7 @@
         }
       },
       {
-        "ts": "2026-11-11 19:05:28",
+        "ts": "2026-11-11 19:17:06",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:190 in get_access_token()",
@@ -2696,7 +2696,7 @@
         }
       },
       {
-        "ts": "2026-11-11 19:05:30",
+        "ts": "2026-11-11 19:17:08",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:190 in get_access_token()",
@@ -2712,7 +2712,7 @@
         }
       },
       {
-        "ts": "2026-11-11 19:05:33",
+        "ts": "2026-11-11 19:17:11",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:190 in get_access_token()",
@@ -2728,7 +2728,7 @@
         }
       },
       {
-        "ts": "2026-11-11 19:05:35",
+        "ts": "2026-11-11 19:17:13",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:190 in get_access_token()",
@@ -2744,7 +2744,7 @@
         }
       },
       {
-        "ts": "2026-11-11 19:05:38",
+        "ts": "2026-11-11 19:17:16",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:190 in get_access_token()",
@@ -2760,7 +2760,7 @@
         }
       },
       {
-        "ts": "2026-11-11 19:06:02",
+        "ts": "2026-11-11 19:17:38",
         "ver": "v2.0-live",
         "thread": "Thread-2 (monitor)",
         "loc": "test_connection.py:190 in get_access_token()",
@@ -2783,11 +2783,11 @@
       ],
       [
         "test_connection.py:190 in get_access_token()",
-        334
+        341
       ],
       [
         "test_connection.py:472 in get_balance()",
-        197
+        201
       ],
       [
         "ai_analyst.py:96 in _call_single_gemini_api()",
@@ -2797,7 +2797,7 @@
     "top_api_codes": [
       [
         "EGW00123",
-        595
+        599
       ],
       [
         "EGW00215",
@@ -2806,7 +2806,7 @@
     ],
     "thread_distribution": {
       "ThreadPoolExecutor-4_0": 3,
-      "Thread-2 (monitor)": 2032,
+      "Thread-2 (monitor)": 2051,
       "ThreadPoolExecutor-3_0": 4,
       "ThreadPoolExecutor-0_0": 2,
       "ThreadPoolExecutor-1_0": 3,
@@ -2834,7 +2834,7 @@
       "ThreadPoolExecutor-79_0": 1,
       "Thread-14 (_worker)": 28,
       "ThreadPoolExecutor-100_0": 1,
-      "MainThread": 4,
+      "MainThread": 5,
       "ThreadPoolExecutor-23_0": 1,
       "ThreadPoolExecutor-41_0": 1,
       "ThreadPoolExecutor-52_0": 1
@@ -2849,7 +2849,7 @@
       "order_unfilled_revises": 0,
       "circuit_breaker_trips": 0,
       "orders_executed": 0,
-      "telegram_delivery_fails": 9
+      "telegram_delivery_fails": 10
     }
   },
   "master_plan": {
@@ -3318,11 +3318,11 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 1.0,
-        "lastPrice": 124700.0,
+        "lastPrice": 124300.0,
         "averagePurchasePrice": 123100.0,
-        "profitLossRate": 1.29,
-        "profitLossAmount": 1600.0,
-        "rsi": 42.2,
+        "profitLossRate": 0.97,
+        "profitLossAmount": 1200.0,
+        "rsi": 41.6,
         "investor_summary": "최근(11-11) 순매수: 외인 +19,376주, 기관 -9,042주 (개인 -11,449주) | [5일누적: 외인 +193,929주, 기관 -20,658주]",
         "ai_decision": "홀딩 관망",
         "ai_score": 71,
@@ -3386,11 +3386,11 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 2.0,
-        "lastPrice": 1289000.0,
+        "lastPrice": 1286000.0,
         "averagePurchasePrice": 1432000.0,
-        "profitLossRate": -9.98,
-        "profitLossAmount": -286000.0,
-        "rsi": 44.5,
+        "profitLossRate": -10.19,
+        "profitLossAmount": -292000.0,
+        "rsi": 44.4,
         "investor_summary": "최근(11-11) 순매수: 외인 +99,862주, 기관 -146,888주 (개인 -298,085주) | [5일누적: 외인 -2,705,684주, 기관 +1,012,974주]",
         "ai_decision": "홀딩 관망",
         "ai_score": 60,
@@ -3454,11 +3454,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 0.340143,
-        "lastPrice": 290.94,
+        "lastPrice": 290.9,
         "averagePurchasePrice": 293.699999,
-        "profitLossRate": -0.93,
-        "profitLossAmount": -0.938795,
-        "rsi": 35.8,
+        "profitLossRate": -0.95,
+        "profitLossAmount": -0.952401,
+        "rsi": 35.7,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "매수",
         "ai_score": 81,
@@ -3488,11 +3488,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 95.99,
+        "lastPrice": 95.91,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 9.05,
-        "profitLossAmount": 31.88,
-        "rsi": 62.4,
+        "profitLossRate": 8.96,
+        "profitLossAmount": 31.56,
+        "rsi": 62.0,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 64,
@@ -3522,11 +3522,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 35.75,
+        "lastPrice": 35.73,
         "averagePurchasePrice": 34.3786,
-        "profitLossRate": 3.98,
-        "profitLossAmount": 5.4856,
-        "rsi": 60.5,
+        "profitLossRate": 3.93,
+        "profitLossAmount": 5.4056,
+        "rsi": 60.1,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 65,
@@ -3560,13 +3560,13 @@
         "averagePurchasePrice": 100.62,
         "profitLossRate": -0.09,
         "profitLossAmount": -0.5,
-        "rsi": 45.8,
+        "rsi": 46.4,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 68,
         "ai_action_tip": "월초 배당락 직후 국채 이자 재누적 구간 — 기존 파킹 포지션은 든든히 홀딩 유지하되 유휴 달러 예수금 파킹 시에만 활용하세요.",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 67점 · 편차 0점 | Google:3.5-flash-lite(67점 관망), Groq:gpt-oss-20b(67점 관망))] SGOV의 14일 RSI(45.8)는 주가 하락이나 기술적 과매도 신호가 아니라, 매월 초 배당락(-$0.32)으로 월배당금이 지급된 직후 다시 초단기 미국채 이자가 하루 $0.01~$0.02씩 계단식으로 누적되기 시작하는 정상적인 금리 사이클입니다. 연 4~5% 달러 월배당 이자를 안정적으로 수령하면서 향후 빅테크·배당주 조정 시 투입할 대기 자금(Dry Powder)으로서 든든하게 홀딩 관망합니다.",
-        "checked_at": "2026-11-11 18:54:22",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 67점 · 편차 0점 | Google:3.5-flash-lite(67점 관망), Groq:gpt-oss-20b(67점 관망))] SGOV의 14일 RSI(46.4)는 주가 하락이나 기술적 과매도 신호가 아니라, 매월 초 배당락(-$0.32)으로 월배당금이 지급된 직후 다시 초단기 미국채 이자가 하루 $0.01~$0.02씩 계단식으로 누적되기 시작하는 정상적인 금리 사이클입니다. 연 4~5% 달러 월배당 이자를 안정적으로 수령하면서 향후 빅테크·배당주 조정 시 투입할 대기 자금(Dry Powder)으로서 든든하게 홀딩 관망합니다.",
+        "checked_at": "2026-11-11 19:17:36",
         "ai_models": [
           {
             "provider": "Google",
