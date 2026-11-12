@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12 09:55:28",
+  "updated_at": "2026-11-12 10:01:41",
   "battery": "83% (🔋 배터리 사용 중, 21.2°C)",
   "market_intel": {
     "updated_at": "2026-11-12 08:30:02",
@@ -208,15 +208,15 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-12 09:54:37",
-    "checked_ts": 1794444877,
+    "checked_at": "2026-11-12 10:00:35",
+    "checked_ts": 1794445235,
     "date": "2026-11-12",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 2,
-    "toss_bot_sec_ago": 2,
-    "toss_strategy_monitor_sec_ago": 21,
-    "scheduler_heartbeat_sec_ago": 11,
+    "main_bot_sec_ago": 7,
+    "toss_bot_sec_ago": 7,
+    "toss_strategy_monitor_sec_ago": 18,
+    "scheduler_heartbeat_sec_ago": 18,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2496298,
     "market_opened_today": true,
@@ -226,9 +226,9 @@
     "mdd_pct": -67.37,
     "fund_return_pct": -0.15,
     "kospi200_base_price": 87886,
-    "kospi200_cur_price": 85110,
-    "kospi200_return_pct": -3.16,
-    "alpha_pct": 3.01,
+    "kospi200_cur_price": 85135,
+    "kospi200_return_pct": -3.13,
+    "alpha_pct": 2.98,
     "sector_map": {
       "미국증시·글로벌빅테크": 232225
     },
@@ -255,35 +255,35 @@
     "last_thread_alert_ts": 0.0
   },
   "ai_audit": {
-    "updated_at": "2026-11-12 05:31:00",
+    "updated_at": "2026-11-12 10:01:11",
     "items": {
       "005930": {
         "code": "005930",
         "name": "삼성전자",
         "sector": "반도체·IT하드웨어",
-        "checked_at": "2026-11-11 19:49:29",
-        "price": 208000,
-        "ma20": 214775,
-        "rsi": 40.2,
+        "checked_at": "2026-11-12 10:00:34",
+        "price": 211250,
+        "ma20": 214762,
+        "rsi": 40.7,
         "atr_pct": 2.8,
         "vol_label": "중변동 표준주",
         "target_tp_pct": 8.5,
         "hard_stop_pct": -7.0,
-        "vol_ratio_pct": 82.1,
-        "candle_desc": "🔥 장대 양봉 돌파 (시가 197,100원 대비 +5.3% 강한 매수세 분출)",
-        "flow_summary": "당일(11/11) 순매수: 외국인 +2,618,486주(2일연속매수🔥), 기관 -598,253주 | [5일누적 합계: 외인 -4,221,821주, 기관 +1,566,996주]",
+        "vol_ratio_pct": 130.8,
+        "candle_desc": "🟢 양봉 흐름 유지 (시가 208,500원 → 현재 211,250원, +1.3%)",
+        "flow_summary": "최근(11/11 마감) 순매수: 외국인 +2,648,292주(2일연속매수🔥), 기관 -629,449주 | [5일누적 합계: 외인 -4,192,015주, 기관 +1,535,800주]",
         "ir_schedule": "향후 공식 IR 일정 미등록",
-        "fact_breakdown": "시장레짐(강세장 +3점) | 20일선 하회(-5점) | RSI 40.2 눌림목(+6점) | 외인기관수급(+1점) | 거래량82%·캔들(+0점) | 실적일정 중립(0점)",
-        "cited_facts": "현재가 208,000원, MA20 214,775원 하회; 14일 RSI 40.2 (중립/저가 매수 가능); 당일 거래량 20일 평균 대비 82% (평시 수준); 외국인 당일 순매수 2,618,486주(2일 연속), 5일 누적 외인 순매도 -4,221,821주; 당일 장대 양봉 (+5.3%)으로 급등",
-        "quant_score": 60,
-        "ai_raw_score": 56,
-        "final_score": 56,
+        "fact_breakdown": "시장레짐(약세조정 -5점) | 20일선 하회(-5점) | RSI 40.7 눌림목(+6점) | 외인기관수급(+1점) | 거래량131%·캔들(+5점) | 실적일정 중립(0점)",
+        "cited_facts": "MA20 하회(211,250원), RSI 40.7 중립, 외인 5일 누적 순매도 및 2일 연속 매수, 거래량 131%, 약세·조정장 레짐 및 적중률 저조 피드백",
+        "quant_score": 57,
+        "ai_raw_score": 60,
+        "final_score": 60,
         "decision": "관망",
-        "score_gap": 4,
-        "hit_rate_pct": 50.0,
-        "hit_desc": "직전 관망(56점) 후 +4.2% 상승(기회놓침)",
+        "score_gap": 3,
+        "hit_rate_pct": 37.5,
+        "hit_desc": "직전 관망(56점) 후 +5.8% 상승(기회놓침)",
         "audit_status": "PASS",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 60점 ↔ AI 56점 | 편차 4점)",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 57점 ↔ AI 60점 | 편차 3점)",
         "models": [
           {
             "provider": "Google",
@@ -294,40 +294,40 @@
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 55,
+            "score": 62,
             "decision": "관망"
           }
         ],
         "consensus": "2:0 관망 우세",
-        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 56점 · 편차 3점 | Groq:gpt-oss-120b(55점 관망), Google:3.5-flash-lite(58점 관망))] RSI가 저가 매수 구간에 들어서 매수 매력은 있지만, 현재가가 20일 평균선 아래에 위치하고 5일 누적 외국인 순매도가 마이너스이며 당일 급등(+5.3%)으로 단기 고점 추격 위험이 있어 보수적으로 관망한다."
+        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 60점 · 편차 4점 | Google:3.5-flash-lite(58점 관망), Groq:gpt-oss-120b(62점 관망))] 현재 코스피200 약세장과 20일선 아래의 단기 조정 흐름 속에서 최근 예측 적중률 보정 및 외인 5일 누적 순매도세가 겹쳐 보수적 접근이 필요합니다. 14일 RSI가 40.7로 중립적이나 명확한 수급 반전과 지지력 확인을 위해 추가적인 눌림목 조정을 대기하며 향후 시장 안정 시 재진입을 검토합니다."
       },
       "005380": {
         "code": "005380",
         "name": "현대차",
         "sector": "자동차·모빌리티",
-        "checked_at": "2026-11-11 19:50:46",
-        "price": 274500,
-        "ma20": 292025,
-        "rsi": 32.7,
+        "checked_at": "2026-11-12 10:00:46",
+        "price": 270500,
+        "ma20": 290700,
+        "rsi": 32.0,
         "atr_pct": 2.8,
         "vol_label": "중변동 표준주",
         "target_tp_pct": 8.5,
         "hard_stop_pct": -7.0,
-        "vol_ratio_pct": 68.6,
-        "candle_desc": "⚠️ 윗꼬리 발생 (고점 278,000원 대비 +1.5% 윗꼬리 후퇴 — 단기 차익매물 출회)",
-        "flow_summary": "당일(11/11) 순매수: 외국인 -34,564주, 기관 -72,340주(2일연속매도⚠️) | [5일누적 합계: 외인 -68,192주, 기관 +145,827주]",
+        "vol_ratio_pct": 91.0,
+        "candle_desc": "🔻 음봉 흐름 (시가 272,000원 → 현재 270,500원, -0.6%)",
+        "flow_summary": "최근(11/11 마감) 순매수: 외국인 -34,333주, 기관 -73,481주(2일연속매도⚠️) | [5일누적 합계: 외인 -67,961주, 기관 +144,686주]",
         "ir_schedule": "향후 공식 IR 일정 미등록",
-        "fact_breakdown": "시장레짐(강세장 +3점) | 20일선 하회(-5점) | RSI 32.7 과매도반등(+12점) | 외인기관수급(-6점) | 거래량69%·캔들(-7점) | 실적일정 중립(0점)",
-        "cited_facts": "MA20 하회(현재가 274,500원), RSI 32.7 과매도 구간, 외국인 5일 누적 순매도, 기관 2일 연속 순매도, 당일 거래량 20일 평균 대비 69%",
-        "quant_score": 52,
-        "ai_raw_score": 69,
-        "final_score": 69,
+        "fact_breakdown": "시장레짐(약세조정 -5점) | 20일선 하회(-5점) | RSI 32.0 과매도·하락추세 보수(+6점) | 외인기관수급(-6점) | 거래량91%·캔들(+0점) | 실적일정 중립(0점)",
+        "cited_facts": "코스피200 약세장, 현대차 현재가 270,500원, RSI 32.0(과매도), 기관 5일 누적 순매수이나 2일 연속 매도, 미보유 상태",
+        "quant_score": 45,
+        "ai_raw_score": 56,
+        "final_score": 56,
         "decision": "관망",
-        "score_gap": 17,
+        "score_gap": 11,
         "hit_rate_pct": 100.0,
-        "hit_desc": "직전 관망·방어(58점) 판정 적중✅ (변동 +0.7%)",
-        "audit_status": "WARN_GAP",
-        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 52점 ↔ AI 69점 | 편차 17점 · 보수적 관망)",
+        "hit_desc": "직전 관망·방어(58점) 판정 적중✅ (변동 -0.7%)",
+        "audit_status": "PASS",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 45점 ↔ AI 56점 | 편차 11점)",
         "models": [
           {
             "provider": "Google",
@@ -338,45 +338,45 @@
           {
             "provider": "Groq",
             "model": "Groq 20B",
-            "score": 80,
-            "decision": "매수"
+            "score": 55,
+            "decision": "관망"
           }
         ],
-        "consensus": "1:1 의견 분립 (안전 관망 채택)",
-        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [1:1 의견 분립 (안전 관망 채택)] (평균 69점 · 편차 22점 | Google:3.5-flash-lite(58점 관망), Groq:gpt-oss-20b(80점 매수))] 14일 RSI가 과매도 구간(32.7)에 진입했으나, 외국인과 기관의 5일 누적 수급이 부진하고 기관의 2일 연속 매도세가 이어지고 있습니다. 당일 거래량이 20일 평균 대비 69%로 다소 실종되어 단기 반등 모멘텀이 약하므로, 향후 수급 개선 및 시장 안정 시 재진입을 검토합니다."
+        "consensus": "2:0 관망 우세",
+        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 56점 · 편차 3점 | Google:3.5-flash-lite(58점 관망), Groq:gpt-oss-20b(55점 관망))] 현재 코스피200 약세장 속에서 현대차의 20일선 하회와 기관 2일 연속 매도세가 관측되어 보수적인 접근이 필요합니다. 다만 RSI 32.0으로 과매도권에 진입하여 추가 하락 여부를 모니터링하며 향후 시장 안정 시 재진입을 검토하겠습니다."
       },
       "105560": {
         "code": "105560",
         "name": "KB금융",
         "sector": "금융·밸류업지주",
-        "checked_at": "2026-11-11 19:50:54",
-        "price": 153300,
-        "ma20": 154715,
-        "rsi": 40.5,
+        "checked_at": "2026-11-12 10:00:51",
+        "price": 151700,
+        "ma20": 154470,
+        "rsi": 39.3,
         "atr_pct": 2.8,
         "vol_label": "중변동 표준주",
         "target_tp_pct": 8.5,
         "hard_stop_pct": -7.0,
-        "vol_ratio_pct": 96.4,
-        "candle_desc": "🔻 음봉 흐름 (시가 153,800원 → 현재 153,200원, -0.4%)",
-        "flow_summary": "당일(11/11) 순매수: 외국인 +291,052주(2일연속매수🔥), 기관 -275,119주(2일연속매도⚠️) | [5일누적 합계: 외인 -255,265주, 기관 +256,529주]",
+        "vol_ratio_pct": 120.7,
+        "candle_desc": "🔻 장대 음봉 급락 (시가 154,800원 대비 -2.0% 하락 압력 거셈 — 추가 조정 경계)",
+        "flow_summary": "최근(11/11 마감) 순매수: 외국인 +291,130주(2일연속매수🔥), 기관 -276,842주(2일연속매도⚠️) | [5일누적 합계: 외인 -255,187주, 기관 +254,806주]",
         "ir_schedule": "향후 공식 IR 일정 미등록",
-        "fact_breakdown": "시장레짐(강세장 +3점) | 20일선 하회(-5점) | RSI 40.5 눌림목(+6점) | 외인기관수급(+3점) | 거래량96%·캔들(+0점) | 실적일정 중립(0점)",
-        "cited_facts": "MA20 하회(154,715원), RSI 40.5 중립, 외인 2일 연속 순매수 및 기관 매도, 거래량 96% 평시 수준, 현재가 153,300원 미보유",
-        "quant_score": 62,
-        "ai_raw_score": 58,
-        "final_score": 58,
+        "fact_breakdown": "시장레짐(약세조정 -5점) | 20일선 하회(-5점) | RSI 39.3 눌림목(+6점) | 외인기관수급(-3점) | 거래량121%·캔들(+0점) | 실적일정 중립(0점)",
+        "cited_facts": "MA20 하회, RSI 39.3, 외인 5일 누적 순매수 +291,130주, 거래량 121% 활발, 기관 5일 누적 순매도 -276,842주",
+        "quant_score": 48,
+        "ai_raw_score": 56,
+        "final_score": 56,
         "decision": "관망",
-        "score_gap": 4,
-        "hit_rate_pct": 100.0,
-        "hit_desc": "직전 강세예측(65점) 후 +0.0% 적중✅",
+        "score_gap": 8,
+        "hit_rate_pct": 87.5,
+        "hit_desc": "직전 강세예측(65점) 후 -1.0% 빗나감⚠️",
         "audit_status": "PASS",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 62점 ↔ AI 58점 | 편차 4점)",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 48점 ↔ AI 56점 | 편차 8점)",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 60,
+            "score": 58,
             "decision": "관망"
           },
           {
@@ -387,51 +387,51 @@
           }
         ],
         "consensus": "2:0 관망 우세",
-        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 58점 · 편차 5점 | Google:3.5-flash-lite(60점 관망), Groq:gpt-oss-20b(55점 관망))] 현재 KB금융은 20일 이동평균선을 하회하며 단기 조정을 받고 있고 14일 RSI가 40.5로 중립 상태입니다. 외국인 수급이 일부 유입되고 있으나 기관의 연속 매도세와 음봉 흐름이 겹쳐 명확한 돌파 시그널이 부족하므로, 향후 시장 안정 및 수급 개선 시 재진입을 검토하며 현재는 관망합니다."
+        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 56점 · 편차 3점 | Groq:gpt-oss-20b(55점 관망), Google:3.5-flash-lite(58점 관망))] 현재 가격이 MA20 아래에 위치하고, 기관이 매도세를 보이는 가운데 외인 매수세가 일시적이지만, ATR 목표익절선이 아직 도달하지 않았으며, 시장이 약세·조정장으로 판단됩니다. 따라서 보유 없이 관망으로 유지하는 것이 가장 안전한 전략입니다."
       },
       "035420": {
         "code": "035420",
         "name": "NAVER",
         "sector": "플랫폼·바이오",
-        "checked_at": "2026-11-11 19:50:02",
-        "price": 194700,
-        "ma20": 179140,
-        "rsi": 58.7,
+        "checked_at": "2026-11-12 10:01:11",
+        "price": 185100,
+        "ma20": 179695,
+        "rsi": 50.3,
         "atr_pct": 2.8,
         "vol_label": "중변동 표준주",
         "target_tp_pct": 8.5,
         "hard_stop_pct": -7.0,
-        "vol_ratio_pct": 155.1,
-        "candle_desc": "⚠️ 윗꼬리 발생 (고점 197,900원 대비 +1.6% 윗꼬리 후퇴 — 단기 차익매물 출회)",
-        "flow_summary": "당일(11/11) 순매수: 외국인 +48,223주(5일연속매수🔥), 기관 +127,100주(5일연속매수🔥) | [5일누적 합계: 외인 +848,677주, 기관 +1,140,889주]",
-        "ir_schedule": "2026-11-12 (D-1) 2026년 3분기 실적",
-        "fact_breakdown": "시장레짐(강세장 +3점) | 20일선 상회(+6점) | RSI 58.7 중립안정(+3점) | 외인기관수급(+18점) | 거래량155%·캔들(-7점) | 공식실적 D-1 임박주의(-8점)",
-        "cited_facts": "MA20 상회(상승추세), RSI 58.7(중립), 외인·기관 5일 연속 순매수, 거래량 155% 활발, 실적발표 D-1(불확실성 대기)",
-        "quant_score": 70,
-        "ai_raw_score": 54,
-        "final_score": 54,
+        "vol_ratio_pct": 274.6,
+        "candle_desc": "🔻 음봉 흐름 (시가 187,500원 → 현재 185,100원, -1.3%)",
+        "flow_summary": "최근(11/11 마감) 순매수: 외국인 +47,985주(5일연속매수🔥), 기관 +125,961주(5일연속매수🔥) | [5일누적 합계: 외인 +848,439주, 기관 +1,139,750주]",
+        "ir_schedule": "2026-11-12 (D-Day(오늘)) 2026년 3분기 실적",
+        "fact_breakdown": "시장레짐(약세조정 -5점) | 20일선 상회(+6점) | RSI 50.3 중립안정(+3점) | 외인기관수급(+18점) | 거래량275%·캔들(+0점) | 공식실적 D-0 임박주의(-8점)",
+        "cited_facts": "약세장 레짐, 20일선 상회, RSI 50.3, 외인·기관 5일 연속 순매수, 당일 실적발표 D-0",
+        "quant_score": 69,
+        "ai_raw_score": 58,
+        "final_score": 58,
         "decision": "관망",
-        "score_gap": 16,
-        "hit_rate_pct": 37.5,
-        "hit_desc": "직전 관망·방어(54점) 판정 적중✅ (변동 +0.5%)",
-        "audit_status": "WARN_GAP",
-        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 70점 ↔ AI 54점 | 편차 16점 · 보수적 관망)",
+        "score_gap": 11,
+        "hit_rate_pct": 50.0,
+        "hit_desc": "직전 관망·방어(54점) 판정 적중✅ (변동 -4.5%)",
+        "audit_status": "PASS",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 69점 ↔ AI 58점 | 편차 11점)",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 53,
+            "score": 62,
             "decision": "관망"
           },
           {
             "provider": "Groq",
-            "model": "Groq 20B",
+            "model": "Groq Qwen",
             "score": 55,
             "decision": "관망"
           }
         ],
         "consensus": "2:0 관망 우세",
-        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 54점 · 편차 2점 | Google:3.5-flash-lite(53점 관망), Groq:gpt-oss-20b(55점 관망))] 외국인과 기관의 5일 연속 동반 순매수와 풍부한 거래량은 긍정적이나, 내일(11/12) 3분기 공식 실적 발표를 앞두고 있어 단기 불확실성이 존재합니다. 또한 과거 예측 적중률 피드백에 따른 보수적 감점이 적용되어, 실적 발표 후 방향성이 확인될 때까지 신규 진입을 유보하고 관망합니다."
+        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 58점 · 편차 7점 | Google:3.5-flash-lite(62점 관망), Groq:qwen/qwen3.8-27b(55점 관망))] 코스피200 약세장 레짐과 당일 3분기 실적 공식 발표를 앞두고 있어 변동성 확대가 우려됩니다. 외인과 기관의 5일 연속 순매수세가 유입되고 있으나 실적 직후 AI DC 사업 및 조달 불확실성 해소 여부를 확인한 뒤 보수적으로 진입하기 위해 관망합니다."
       },
       "267260": {
         "code": "267260",
@@ -508,45 +508,45 @@
         "code": "465580",
         "name": "ACE 미국빅테크TOP7 Plus",
         "sector": "미국증시·글로벌빅테크",
-        "checked_at": "2026-11-11 19:49:24",
-        "price": 22935,
-        "ma20": 23288,
-        "rsi": 43.4,
+        "checked_at": "2026-11-12 10:00:23",
+        "price": 22505,
+        "ma20": 23209,
+        "rsi": 39.2,
         "atr_pct": 1.8,
         "vol_label": "저변동 방어주",
         "target_tp_pct": 6.0,
         "hard_stop_pct": -5.5,
-        "vol_ratio_pct": 66.1,
-        "candle_desc": "🟢 양봉 흐름 유지 (시가 22,920원 → 현재 22,935원, +0.1%)",
-        "flow_summary": "당일(11/11) 순매수: 외국인 +2,012주, 기관 -22,827주(5일연속매도⚠️) | [5일누적 합계: 외인 -315주, 기관 -276,095주]",
+        "vol_ratio_pct": 216.6,
+        "candle_desc": "🟢 양봉 흐름 유지 (시가 22,490원 → 현재 22,505원, +0.1%)",
+        "flow_summary": "최근(11/11 마감) 순매수: 외국인 +2,012주, 기관 -22,827주(5일연속매도⚠️) | [5일누적 합계: 외인 -315주, 기관 -276,095주]",
         "ir_schedule": "향후 공식 IR 일정 미등록",
-        "fact_breakdown": "시장레짐(강세장 +3점) | 20일선 하회(-5점) | RSI 43.4 눌림목(+6점) | 외인기관수급(-14점) | 거래량66%·캔들(+0점) | 실적일정 중립(0점)",
-        "cited_facts": "현재가 22,935원, MA20 23,288원 하회·단기조정, 14일 RSI 43.4(중립), 외국인 5일누적 순매도-315주·기관 5일누적 순매도-276,095주, 당일 거래량 20일 평균 대비 66% 낮음, 긍정 뉴스(ETF 순자산 1조원 돌파)",
+        "fact_breakdown": "시장레짐(약세조정 -5점) | 20일선 하회(-5점) | RSI 39.2 눌림목(+6점) | 외인기관수급(-14점) | 거래량217%·캔들(+8점) | 실적일정 중립(0점)",
+        "cited_facts": "현재가 22,505원, MA20 23,209원 하회·단기조정, 14일 RSI 39.2(저가매수 구간), 거래량 20일 평균 대비 217% 급증, 외국인 5일 누적 순매수 -315주·기관 5일 누적 순매도 -276,095주, 긍정적 뉴스: ACE ETF 순자산 1조원 돌파",
         "quant_score": 45,
-        "ai_raw_score": 56,
-        "final_score": 56,
+        "ai_raw_score": 58,
+        "final_score": 58,
         "decision": "관망",
-        "score_gap": 11,
-        "hit_rate_pct": 100.0,
-        "hit_desc": "직전 관망·방어(59점) 판정 적중✅ (변동 +0.2%)",
+        "score_gap": 13,
+        "hit_rate_pct": 85.7,
+        "hit_desc": "직전 관망·방어(59점) 판정 적중✅ (변동 -1.7%)",
         "audit_status": "PASS",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 45점 ↔ AI 56점 | 편차 11점)",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 45점 ↔ AI 58점 | 편차 13점)",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 55,
+            "score": 60,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 58,
+            "score": 55,
             "decision": "관망"
           }
         ],
         "consensus": "2:0 관망 우세",
-        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 56점 · 편차 3점 | Groq:gpt-oss-120b(58점 관망), Google:3.5-flash-lite(55점 관망))] 가격이 20일 평균선 아래에 위치하고 RSI는 중립 수준이며 외국인·기관이 지속적으로 순매도하고 있어 단기 매수 시점으로는 약함이 있다. 긍정적인 펀드 자산 규모 뉴스가 있지만, 거래량 감소와 약세 수급이 결합돼 현재는 관망이 바람직하다."
+        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 58점 · 편차 5점 | Groq:gpt-oss-120b(55점 관망), Google:3.5-flash-lite(60점 관망))] RSI가 저가 매수 구간에 있으나 외국인·기관이 지속적으로 순매도하고 있어 매수 신호가 약합니다. 또한 코스피200이 약세·조정장이고 거래량 급증이 가짜 반등 가능성을 내포하므로 보수적으로 관망을 유지합니다."
       },
       "381170": {
         "code": "381170",
@@ -1000,29 +1000,29 @@
         "code": "458730",
         "name": "TIGER 미국배당다우존스",
         "sector": "미국증시·글로벌빅테크",
-        "checked_at": "2026-11-11 19:49:53",
-        "price": 15065,
-        "ma20": 14874,
-        "rsi": 57.2,
-        "atr_pct": 1.25,
+        "checked_at": "2026-11-12 10:00:56",
+        "price": 15225,
+        "ma20": 14914,
+        "rsi": 61.5,
+        "atr_pct": 1.17,
         "vol_label": "저변동 방어주",
         "target_tp_pct": 6.0,
         "hard_stop_pct": -5.5,
-        "vol_ratio_pct": 151.9,
-        "candle_desc": "🔻 음봉 흐름 (시가 15,200원 → 현재 15,065원, -0.9%)",
-        "flow_summary": "당일(11/11) 순매수: 외국인 +304,138주, 기관 -521,419주(2일연속매도⚠️) | [5일누적 합계: 외인 +258,336주, 기관 -271,364주]",
-        "ir_schedule": "일정 없음",
-        "fact_breakdown": "시장레짐(강세장 +3점) | 20일선 상회(+6점) | RSI 57.2 중립안정(+3점) | 외인기관수급(-7점) | 거래량152%·캔들(+0점) | 실적일정 중립(0점)",
-        "cited_facts": "MA20 상회(15,065원), RSI 57.2 중립, 외인 5일 누적 순매수(+258,336주), 당일 음봉(-0.33%), 기관 2일 연속 매도",
-        "quant_score": 60,
-        "ai_raw_score": 58,
-        "final_score": 58,
+        "vol_ratio_pct": 100.1,
+        "candle_desc": "🟢 양봉 흐름 유지 (시가 15,190원 → 현재 15,225원, +0.2%)",
+        "flow_summary": "최근(11/11 마감) 순매수: 외국인 +304,138주, 기관 -521,418주(2일연속매도⚠️) | [5일누적 합계: 외인 +258,336주, 기관 -271,363주]",
+        "ir_schedule": "향후 공식 IR 일정 미등록",
+        "fact_breakdown": "시장레짐(약세조정 -5점) | 20일선 상회(+6점) | RSI 61.5 중립안정(+3점) | 외인기관수급(-7점) | 거래량100%·캔들(+0점) | 실적일정 중립(0점)",
+        "cited_facts": "MA20 상회, RSI 61.5, 외인 5일누적 순매수 +258,336주, 기관 5일누적 순매도 -271,363주, 거래량 100% 평시",
+        "quant_score": 52,
+        "ai_raw_score": 71,
+        "final_score": 71,
         "decision": "관망",
-        "score_gap": 2,
-        "hit_rate_pct": 50.0,
-        "hit_desc": "직전 강세예측(70점) 후 -0.7% 빗나감⚠️",
-        "audit_status": "PASS",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 60점 ↔ AI 58점 | 편차 2점)",
+        "score_gap": 19,
+        "hit_rate_pct": 100.0,
+        "hit_desc": "직전 관망·방어(58점) 판정 적중✅ (변동 +1.1%)",
+        "audit_status": "WARN_GAP",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 52점 ↔ AI 71점 | 편차 19점 · 보수적 관망)",
         "models": [
           {
             "provider": "Google",
@@ -1033,12 +1033,12 @@
           {
             "provider": "Groq",
             "model": "Groq 20B",
-            "score": 55,
-            "decision": "관망"
+            "score": 80,
+            "decision": "매수"
           }
         ],
-        "consensus": "2:0 관망 우세",
-        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 58점 · 편차 7점 | Google:3.5-flash-lite(62점 관망), Groq:gpt-oss-20b(55점 관망))] 코스피200 강세장 속에서 TIGER 미국배당다우존스는 20일 이동평균선을 상회하고 있으나, 당일 음봉 흐름과 기관의 2일 연속 순매도세가 겹쳐 명확한 매수 타이밍을 유보합니다. 미 기술주 실적 발표를 앞둔 거시경제 불확실성을 감안하여 현재 미보유 상태를 유지하며 향후 시장 안정 시 재진입을 검토합니다."
+        "consensus": "1:1 의견 분립 (안전 관망 채택)",
+        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [1:1 의견 분립 (안전 관망 채택)] (평균 71점 · 편차 18점 | Groq:gpt-oss-20b(80점 매수), Google:3.5-flash-lite(62점 관망))] 현재 코스피200 시장 상태가 약세·조정장이며 기관의 2일 연속 매도 및 5일 누적 순매도세가 이어져 보수적 접근이 필요합니다. RSI 61.5 및 완만한 양봉 흐름을 보이고 있으나, 적극적인 매수 가산점 조건이 부족하므로 미보유 상태를 유지하며 향후 시장 안정 시 재진입을 검토합니다."
       },
       "051910": {
         "code": "051910",
@@ -1347,18 +1347,54 @@
         ],
         "consensus": "1:1 의견 분립 (안전 관망 채택)",
         "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [1:1 의견 분립 (안전 관망 채택)] (평균 64점 · 편차 28점 | Groq:gpt-oss-120b(78점 매수), Google:3.5-flash-lite(50점 관망))] 현재 미 증시 약세장과 20일 이동평균선 하회 흐름 속에서 거래량이 29%로 실종되어 단기 반등 모멘텀이 부족합니다. RSI 38.4로 낙폭과대 국면에 진입하고 있으나 거래량 부진 및 대형 실적 발표 경계감으로 인해 적극적 신규 진입보다는 향후 시장 안정 시 재진입을 검토하며 관망합니다."
+      },
+      "086790": {
+        "code": "086790",
+        "name": "하나금융지주",
+        "sector": "금융·밸류업지주",
+        "checked_at": "2026-11-12 10:01:00",
+        "price": 118800,
+        "ma20": 118530,
+        "rsi": 44.1,
+        "atr_pct": 2.8,
+        "vol_label": "중변동 표준주",
+        "target_tp_pct": 8.5,
+        "hard_stop_pct": -7.0,
+        "vol_ratio_pct": 94.4,
+        "candle_desc": "🔻 음봉 흐름 (시가 121,000원 → 현재 118,900원, -1.7%)",
+        "flow_summary": "최근(11/11 마감) 순매수: 외국인 +35,023주(2일연속매수🔥), 기관 +669주 | [5일누적 합계: 외인 -227,204주, 기관 +373,243주]",
+        "ir_schedule": "향후 공식 IR 일정 미등록",
+        "fact_breakdown": "시장레짐(약세조정 -5점) | 20일선 상회(+6점) | RSI 44.1 눌림목(+6점) | 외인기관수급(+12점) | 거래량94%·캔들(+0점) | 실적일정 중립(0점)",
+        "cited_facts": "MA20 상회, RSI 44.1, 외인 5일 누적 순매수 +35,023주, 거래량 94% 평균, 공식 실적 일정 없음",
+        "quant_score": 74,
+        "ai_raw_score": 68,
+        "final_score": 68,
+        "decision": "관망",
+        "score_gap": 6,
+        "hit_rate_pct": null,
+        "hit_desc": "초기 표본 수집 중 (평가 데이터 없음)",
+        "audit_status": "PASS",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 74점 ↔ AI 68점 | 편차 6점)",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 55,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 20B",
+            "score": 80,
+            "decision": "매수"
+          }
+        ],
+        "consensus": "1:1 의견 분립 (안전 관망 채택)",
+        "reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [1:1 의견 분립 (안전 관망 채택)] (평균 68점 · 편차 25점 | Groq:gpt-oss-20b(80점 매수), Google:3.5-flash-lite(55점 관망))] 현재 코스피200 시장이 약세·조정장이며 하나금융지주는 장중 음봉 흐름과 함께 5일 누적 외국인 수급이 이탈한 상태입니다. 명확한 수급 유입 및 기술적 반등 시그널이 나타날 때까지 진입을 유보하고 향후 시장 안정 시 재진입을 검토합니다."
       }
     },
     "prediction_history": {
       "005930": [
-        {
-          "date": "2026-10-30",
-          "checked_at": "2026-10-30 10:01:08",
-          "price": 221750,
-          "decision": "관망",
-          "score": 50,
-          "quant_score": 50
-        },
         {
           "date": "2026-11-01",
           "checked_at": "2026-11-01 01:48:14",
@@ -1430,17 +1466,17 @@
           "decision": "관망",
           "score": 56,
           "quant_score": 58
+        },
+        {
+          "date": "2026-11-12",
+          "checked_at": "2026-11-12 10:00:34",
+          "price": 211250,
+          "decision": "관망",
+          "score": 60,
+          "quant_score": 57
         }
       ],
       "005380": [
-        {
-          "date": "2026-10-30",
-          "checked_at": "2026-10-30 10:01:35",
-          "price": 283500,
-          "decision": "관망",
-          "score": 50,
-          "quant_score": 45
-        },
         {
           "date": "2026-11-01",
           "checked_at": "2026-11-01 01:47:57",
@@ -1512,17 +1548,17 @@
           "decision": "관망",
           "score": 58,
           "quant_score": 58
+        },
+        {
+          "date": "2026-11-12",
+          "checked_at": "2026-11-12 10:00:46",
+          "price": 270500,
+          "decision": "관망",
+          "score": 56,
+          "quant_score": 45
         }
       ],
       "105560": [
-        {
-          "date": "2026-10-30",
-          "checked_at": "2026-10-30 10:01:43",
-          "price": 152100,
-          "decision": "관망",
-          "score": 54,
-          "quant_score": 39
-        },
         {
           "date": "2026-11-01",
           "checked_at": "2026-11-01 01:49:00",
@@ -1594,17 +1630,17 @@
           "decision": "관망",
           "score": 65,
           "quant_score": 58
+        },
+        {
+          "date": "2026-11-12",
+          "checked_at": "2026-11-12 10:00:51",
+          "price": 151700,
+          "decision": "관망",
+          "score": 56,
+          "quant_score": 48
         }
       ],
       "035420": [
-        {
-          "date": "2026-10-30",
-          "checked_at": "2026-10-30 10:00:39",
-          "price": 171800,
-          "decision": "관망",
-          "score": 48,
-          "quant_score": 26
-        },
         {
           "date": "2026-11-01",
           "checked_at": "2026-11-01 01:47:42",
@@ -1676,6 +1712,14 @@
           "decision": "관망",
           "score": 54,
           "quant_score": 50
+        },
+        {
+          "date": "2026-11-12",
+          "checked_at": "2026-11-12 10:01:11",
+          "price": 185100,
+          "decision": "관망",
+          "score": 58,
+          "quant_score": 69
         }
       ],
       "267260": [
@@ -1756,14 +1800,6 @@
       ],
       "465580": [
         {
-          "date": "2026-10-30",
-          "checked_at": "2026-10-30 10:01:00",
-          "price": 22685,
-          "decision": "관망",
-          "score": 49,
-          "quant_score": 52
-        },
-        {
           "date": "2026-11-01",
           "checked_at": "2026-11-01 01:48:48",
           "price": 22695,
@@ -1834,6 +1870,14 @@
           "decision": "관망",
           "score": 59,
           "quant_score": 58
+        },
+        {
+          "date": "2026-11-12",
+          "checked_at": "2026-11-12 10:00:23",
+          "price": 22505,
+          "decision": "관망",
+          "score": 58,
+          "quant_score": 45
         }
       ],
       "381170": [
@@ -2266,6 +2310,14 @@
           "decision": "관망",
           "score": 58,
           "quant_score": 60
+        },
+        {
+          "date": "2026-11-12",
+          "checked_at": "2026-11-12 10:00:56",
+          "price": 15225,
+          "decision": "관망",
+          "score": 71,
+          "quant_score": 52
         }
       ],
       "051910": [
@@ -2633,6 +2685,16 @@
           "score": 70,
           "quant_score": 54
         }
+      ],
+      "086790": [
+        {
+          "date": "2026-11-12",
+          "checked_at": "2026-11-12 10:01:00",
+          "price": 118800,
+          "decision": "관망",
+          "score": 68,
+          "quant_score": 74
+        }
       ]
     }
   },
@@ -2640,22 +2702,22 @@
     "has_data": true,
     "file_name": "flight_log_2026-11-12.jsonl",
     "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-12.jsonl",
-    "period": "2026-11-12 01:30:23 ~ 2026-11-12 09:37:03",
+    "period": "2026-11-12 01:30:23 ~ 2026-11-12 10:01:16",
     "commit_hash": "v2.0-live",
-    "total_events": 36,
-    "error_count": 6,
-    "warn_count": 11,
+    "total_events": 46,
+    "error_count": 8,
+    "warn_count": 12,
     "level_counts": {
-      "WARN": 11,
-      "INFO": 19,
-      "ERROR": 6
+      "WARN": 12,
+      "INFO": 26,
+      "ERROR": 8
     },
     "categories": {
-      "AI_ENSEMBLE": 10,
-      "QUANT_FACTS": 18,
+      "AI_ENSEMBLE": 11,
+      "QUANT_FACTS": 25,
       "ORDER": 1,
       "QUANT_AUDITOR": 1,
-      "KIS_API": 6
+      "KIS_API": 8
     },
     "top_errors": [
       {
@@ -2741,12 +2803,40 @@
         "raw_snippet": "",
         "msg_cd": null,
         "ctx": {}
+      },
+      {
+        "ts": "2026-11-12 10:00:39",
+        "ver": "v2.0-live",
+        "thread": "Thread-2 (monitor)",
+        "loc": "test_connection.py:682 in get_current_price()",
+        "lvl": "ERROR",
+        "cat": "KIS_API",
+        "msg": "시세 조회 최종 실패 (NVDA)",
+        "error_type": "",
+        "error_str": "",
+        "raw_snippet": "",
+        "msg_cd": null,
+        "ctx": {}
+      },
+      {
+        "ts": "2026-11-12 10:01:16",
+        "ver": "v2.0-live",
+        "thread": "Thread-5 (_worker)",
+        "loc": "test_connection.py:682 in get_current_price()",
+        "lvl": "ERROR",
+        "cat": "KIS_API",
+        "msg": "시세 조회 최종 실패 (NVDA)",
+        "error_type": "",
+        "error_str": "",
+        "raw_snippet": "",
+        "msg_cd": null,
+        "ctx": {}
       }
     ],
     "top_code_locations": [
       [
         "test_connection.py:682 in get_current_price()",
-        6
+        8
       ]
     ],
     "top_api_codes": [],
@@ -2762,13 +2852,14 @@
       "ThreadPoolExecutor-49_0": 1,
       "ThreadPoolExecutor-52_0": 1,
       "Thread-12 (_worker)": 6,
-      "Thread-2 (monitor)": 5,
-      "Thread-5 (_worker)": 1,
-      "ThreadPoolExecutor-9_1": 1
+      "Thread-2 (monitor)": 6,
+      "Thread-5 (_worker)": 9,
+      "ThreadPoolExecutor-9_1": 1,
+      "ThreadPoolExecutor-16_1": 1
     },
     "stats": {
       "api_throttles": 0,
-      "api_naver_fallbacks": 0,
+      "api_naver_fallbacks": 1,
       "ai_429_retries": 0,
       "ai_backup_fallbacks": 0,
       "ai_parse_failures": 0,
@@ -3093,6 +3184,10 @@
     },
     "watch_basket": [
       {
+        "code": "NVDA",
+        "name": "엔비디아"
+      },
+      {
         "code": "465580",
         "name": "ACE 미국빅테크TOP7 Plus"
       },
@@ -3113,23 +3208,25 @@
         "name": "TIGER 미국배당다우존스"
       },
       {
+        "code": "086790",
+        "name": "하나금융지주"
+      },
+      {
         "code": "035420",
         "name": "NAVER"
-      },
-      {
-        "code": "035720",
-        "name": "카카오"
-      },
-      {
-        "code": "066570",
-        "name": "LG전자"
       }
     ],
     "last_rotation": {
-      "rotated_at": "2026-11-10 12:52:11",
+      "rotated_at": "2026-11-12 10:00:20",
       "universe_size": 30,
       "watch_size": 8,
       "core_stocks": [
+        {
+          "code": "NVDA",
+          "name": "엔비디아",
+          "sector": "미국증시·글로벌빅테크",
+          "role": "현재 보유 중 (익절·손절 밀착 관리)"
+        },
         {
           "code": "465580",
           "name": "ACE 미국빅테크TOP7 Plus",
@@ -3161,62 +3258,52 @@
           "name": "TIGER 미국배당다우존스",
           "sector": "미국증시·글로벌빅테크",
           "is_us_etf": true,
-          "price": 15175,
-          "chg_rate": 0.26,
-          "frgn_today": -49866,
-          "orgn_today": 54732,
-          "leader_score": 86,
-          "reason": "당일 기관 순매수(+54,732주) · 5일 누적 외인·기관 동반 매집 · 견조한 상승 추세(+0.26%) · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
+          "price": 15222,
+          "chg_rate": 1.04,
+          "frgn_today": 304138,
+          "orgn_today": -521418,
+          "leader_score": 77,
+          "reason": "당일 외인 순매수(+304,138주) · 견조한 상승 추세(+1.04%) · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
+        },
+        {
+          "code": "086790",
+          "name": "하나금융지주",
+          "sector": "금융·밸류업지주",
+          "is_us_etf": false,
+          "price": 118900,
+          "chg_rate": -1.0,
+          "frgn_today": 35023,
+          "orgn_today": 669,
+          "leader_score": 82,
+          "reason": "당일 외인(+35,023)·기관(+669) 쌍끌이 매수 · 5일 합산 메이저 순매수(+146,039주) · 조정 중 메이저 저가매수 유입(-1.00%)"
         },
         {
           "code": "035420",
           "name": "NAVER",
           "sector": "플랫폼·바이오",
           "is_us_etf": false,
-          "price": 192800,
-          "chg_rate": 3.05,
-          "frgn_today": 13772,
-          "orgn_today": 168922,
-          "leader_score": 89,
-          "reason": "당일 외인(+13,772)·기관(+168,922) 쌍끌이 매수 · 5일 누적 외인·기관 동반 매집 · 견조한 상승 추세(+3.05%)"
-        },
-        {
-          "code": "035720",
-          "name": "카카오",
-          "sector": "플랫폼·바이오",
-          "is_us_etf": false,
-          "price": 32000,
-          "chg_rate": -0.31,
-          "frgn_today": -124054,
-          "orgn_today": 106768,
-          "leader_score": 79,
-          "reason": "당일 기관 순매수(+106,768주) · 5일 누적 외인·기관 동반 매집 · 조정 중 메이저 저가매수 유입(-0.31%)"
-        },
-        {
-          "code": "066570",
-          "name": "LG전자",
-          "sector": "반도체·IT하드웨어",
-          "is_us_etf": false,
-          "price": 138200,
-          "chg_rate": 2.6,
-          "frgn_today": -50883,
-          "orgn_today": 119392,
-          "leader_score": 74,
-          "reason": "당일 기관 순매수(+119,392주) · 5일 합산 메이저 순매수(+132,311주) · 견조한 상승 추세(+2.60%)"
+          "price": 185000,
+          "chg_rate": -4.79,
+          "frgn_today": 47985,
+          "orgn_today": 125961,
+          "leader_score": 82,
+          "reason": "당일 외인(+47,985)·기관(+125,961) 쌍끌이 매수 · 5일 누적 외인·기관 동반 매집"
         }
       ],
       "added": [
-        "카카오(035720)"
+        "엔비디아(NVDA)",
+        "하나금융지주(086790)"
       ],
       "removed": [
-        "메리츠금융지주(138040)"
+        "카카오(035720)",
+        "LG전자(066570)"
       ]
     },
     "master_universe_size": 30
   },
   "toss_system": {
     "name": "토스증권 실전 계좌 AI 완전 자율 매매 & 반도체 보호 (Option B)",
-    "account_no": "17601069723",
+    "account_no": "",
     "mode": "100% 완전 자율 매수·매도 가동 (삼전·하닉·배당코어 매도 영구 제외)",
     "krw_cash": 3065120,
     "usd_cash": 216.37,
@@ -3249,11 +3336,11 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 1.0,
-        "lastPrice": 113700.0,
+        "lastPrice": 112600.0,
         "averagePurchasePrice": 123100.0,
-        "profitLossRate": -7.63,
-        "profitLossAmount": -9400.0,
-        "rsi": 30.4,
+        "profitLossRate": -8.52,
+        "profitLossAmount": -10500.0,
+        "rsi": 29.6,
         "investor_summary": "최근(11/11 마감) 순매수: 외국인 +16,399주(2일연속매수🔥), 기관 -9,237주(4일연속매도⚠️) | [5일누적 합계: 외인 +132,564주, 기관 -12,927주]",
         "ai_decision": "매수",
         "ai_score": 82,
@@ -3283,17 +3370,17 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 22.0,
-        "lastPrice": 211000.0,
+        "lastPrice": 211250.0,
         "averagePurchasePrice": 261136.363636,
-        "profitLossRate": -19.19,
-        "profitLossAmount": -1103000.0,
+        "profitLossRate": -19.1,
+        "profitLossAmount": -1097500.0,
         "rsi": 44.7,
         "investor_summary": "최근(11/11 마감) 순매수: 외국인 +2,648,292주(2일연속매수🔥), 기관 -629,449주 | [5일누적 합계: 외인 -4,192,015주, 기관 +1,535,800주]",
         "ai_decision": "홀딩 관망",
         "ai_score": 64,
-        "ai_action_tip": "현재 22주 보유 중으로 1주 추매 시 평단 인하 폭이 -0.83%(261,136원→258,956원)에 불과하고 국내 계좌 내 반도체 비중이 과다하므로, 원화 예수금(3,065,120원)을 아끼고 홀딩 관망하세요.",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 62점 · 편차 7점 | Google:3.5-flash-lite(65점 관망), Groq:gpt-oss-20b(58점 관망))] [5단계 퀀트 전략 — 섹터 편중 & 물타기 실효성 가드레일 작동] 최근 단기 조정(최근 5거래일 +4.7%)으로 Wilder 14일 RSI(44.7)가 조정 구간에 진입했으나, 이미 22주를 보유 중이어서 원화 예수금으로 1주를 더 사더라도 평단가 인하 효과가 -0.83%로 미미하며, 국내 계좌 내 반도체 고비중 편중 리스크가 있어 현금 보존 또는 타 업종(금융·배당주) 분산이 훨씬 유리합니다.",
-        "checked_at": "2026-11-12 09:55:14",
+        "ai_action_tip": "현재 22주 보유 중으로 1주 추매 시 평단 인하 폭이 -0.83%(261,136원→258,967원)에 불과하고 국내 계좌 내 반도체 비중이 과다하므로, 원화 예수금(3,065,120원)을 아끼고 홀딩 관망하세요.",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 62점 · 편차 7점 | Google:3.5-flash-lite(65점 관망), Groq:gpt-oss-20b(58점 관망))] [5단계 퀀트 전략 — 섹터 편중 & 물타기 실효성 가드레일 작동] 최근 단기 조정(최근 5거래일 +5.0%)으로 Wilder 14일 RSI(44.7)가 조정 구간에 진입했으나, 이미 22주를 보유 중이어서 원화 예수금으로 1주를 더 사더라도 평단가 인하 효과가 -0.83%로 미미하며, 국내 계좌 내 반도체 고비중 편중 리스크가 있어 현금 보존 또는 타 업종(금융·배당주) 분산이 훨씬 유리합니다.",
+        "checked_at": "2026-11-12 10:01:13",
         "ai_models": [
           {
             "provider": "Google",
@@ -3317,11 +3404,11 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 2.0,
-        "lastPrice": 1281000.0,
+        "lastPrice": 1280000.0,
         "averagePurchasePrice": 1432000.0,
-        "profitLossRate": -10.54,
-        "profitLossAmount": -302000.0,
-        "rsi": 44.0,
+        "profitLossRate": -10.61,
+        "profitLossAmount": -304000.0,
+        "rsi": 43.9,
         "investor_summary": "최근(11/11 마감) 순매수: 외국인 +98,654주(3일연속매수🔥), 기관 -152,520주(3일연속매도⚠️) | [5일누적 합계: 외인 -2,624,550주, 기관 +800,208주]",
         "ai_decision": "홀딩 관망",
         "ai_score": 60,
@@ -3351,17 +3438,17 @@
         "marketCountry": "KR",
         "currency": "KRW",
         "quantity": 20.0,
-        "lastPrice": 25105.0,
+        "lastPrice": 25090.0,
         "averagePurchasePrice": 24930.0,
-        "profitLossRate": 0.7,
-        "profitLossAmount": 3500.0,
-        "rsi": 44.6,
+        "profitLossRate": 0.64,
+        "profitLossAmount": 3200.0,
+        "rsi": 43.8,
         "investor_summary": "최근(11/11 마감) 순매수: 외국인 +179,763주(2일연속매수🔥), 기관 -787,957주(5일연속매도⚠️) | [5일누적 합계: 외인 -530,916주, 기관 -3,161,619주]",
         "ai_decision": "홀딩 관망",
         "ai_score": 64,
-        "ai_action_tip": "현재 20주 보유 중으로 1주 추매 시 평단 인하 폭이 -0.03%(24,930원→24,938원)에 불과하고 이미 충분한 수량을 보유하고 있으므로, 원화 예수금(3,065,120원)을 아끼고 홀딩 관망하세요.",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [1:1 의견 분립 (안전 관망 채택)] [5단계 퀀트 전략 — 섹터 편중 & 물타기 실효성 가드레일 작동] 최근 단기 조정(최근 5거래일 -1.7%)으로 Wilder 14일 RSI(44.6)가 조정 구간에 진입했으나, 이미 20주를 보유 중이어서 원화 예수금으로 1주를 더 사더라도 평단가 인하 효과가 -0.03%로 미미하며, 단일 종목 과다 편중 리스크가 있어 현금 보존 또는 타 업종(금융·배당주) 분산이 훨씬 유리합니다.",
-        "checked_at": "2026-11-12 09:55:16",
+        "ai_action_tip": "현재 20주 보유 중으로 1주 추매 시 평단 인하 폭이 -0.03%(24,930원→24,937원)에 불과하고 이미 충분한 수량을 보유하고 있으므로, 원화 예수금(3,065,120원)을 아끼고 홀딩 관망하세요.",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [1:1 의견 분립 (안전 관망 채택)] [5단계 퀀트 전략 — 섹터 편중 & 물타기 실효성 가드레일 작동] 최근 단기 조정(최근 5거래일 -1.7%)으로 Wilder 14일 RSI(43.8)가 조정 구간에 진입했으나, 이미 20주를 보유 중이어서 원화 예수금으로 1주를 더 사더라도 평단가 인하 효과가 -0.03%로 미미하며, 단일 종목 과다 편중 리스크가 있어 현금 보존 또는 타 업종(금융·배당주) 분산이 훨씬 유리합니다.",
+        "checked_at": "2026-11-12 10:01:15",
         "ai_models": [
           {
             "provider": "Google",
@@ -3385,11 +3472,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 0.340143,
-        "lastPrice": 294.5,
+        "lastPrice": 294.04,
         "averagePurchasePrice": 293.699999,
-        "profitLossRate": 0.27,
-        "profitLossAmount": 0.272114,
-        "rsi": 38.0,
+        "profitLossRate": 0.11,
+        "profitLossAmount": 0.115648,
+        "rsi": 38.5,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 74,
@@ -3419,11 +3506,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 97.86,
+        "lastPrice": 97.97,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 11.17,
-        "profitLossAmount": 39.36,
-        "rsi": 69.6,
+        "profitLossRate": 11.3,
+        "profitLossAmount": 39.8,
+        "rsi": 70.3,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 64,
@@ -3457,7 +3544,7 @@
         "averagePurchasePrice": 34.3786,
         "profitLossRate": 4.86,
         "profitLossAmount": 6.6856,
-        "rsi": 63.5,
+        "rsi": 62.0,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 62,
@@ -3487,17 +3574,17 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 5.0,
-        "lastPrice": 100.52,
+        "lastPrice": 100.53,
         "averagePurchasePrice": 100.62,
-        "profitLossRate": -0.09,
-        "profitLossAmount": -0.5,
-        "rsi": 45.8,
+        "profitLossRate": -0.08,
+        "profitLossAmount": -0.45,
+        "rsi": 47.1,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 68,
         "ai_action_tip": "월초 배당락 직후 국채 이자 재누적 구간 — 기존 파킹 포지션은 든든히 홀딩 유지하되 유휴 달러 예수금 파킹 시에만 활용하세요.",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 67점 · 편차 0점 | Google:3.5-flash-lite(67점 관망), Groq:gpt-oss-20b(67점 관망))] SGOV의 14일 RSI(45.8)는 주가 하락이나 기술적 과매도 신호가 아니라, 매월 초 배당락(-$0.32)으로 월배당금이 지급된 직후 다시 초단기 미국채 이자가 하루 $0.01~$0.02씩 계단식으로 누적되기 시작하는 정상적인 금리 사이클입니다. 연 4~5% 달러 월배당 이자를 안정적으로 수령하면서 향후 빅테크·배당주 조정 시 투입할 대기 자금(Dry Powder)으로서 든든하게 홀딩 관망합니다.",
-        "checked_at": "2026-11-12 09:43:17",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 67점 · 편차 0점 | Google:3.5-flash-lite(67점 관망), Groq:gpt-oss-20b(67점 관망))] SGOV의 14일 RSI(47.1)는 주가 하락이나 기술적 과매도 신호가 아니라, 매월 초 배당락(-$0.32)으로 월배당금이 지급된 직후 다시 초단기 미국채 이자가 하루 $0.01~$0.02씩 계단식으로 누적되기 시작하는 정상적인 금리 사이클입니다. 연 4~5% 달러 월배당 이자를 안정적으로 수령하면서 향후 빅테크·배당주 조정 시 투입할 대기 자금(Dry Powder)으로서 든든하게 홀딩 관망합니다.",
+        "checked_at": "2026-11-12 10:01:18",
         "ai_models": [
           {
             "provider": "Google",
