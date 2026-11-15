@@ -1,28 +1,28 @@
 {
-  "updated_at": "2026-11-16 08:28:15",
+  "updated_at": "2026-11-16 08:30:58",
   "battery": "85% (⚡ 충전 중, 22.9°C)",
   "market_intel": {
-    "updated_at": "2026-11-13 08:30:14",
+    "updated_at": "2026-11-16 08:30:27",
     "fx_soxx_info": {
-      "usd_krw": "1,335.50",
-      "usd_krw_change": "-1.00",
-      "usd_krw_rate": "-0.07",
-      "soxx_price": "$156.27",
-      "soxx_pct": "+0.83%",
-      "summary": "원/달러 환율: 1,335.50원 (전일대비 -1.00원 / -0.07%) | 미 필라델피아 반도체(SOXX): $156.27 (+0.83%)"
+      "usd_krw": "1,336.00",
+      "usd_krw_change": "-2.00",
+      "usd_krw_rate": "-0.15",
+      "soxx_price": "$149.30",
+      "soxx_pct": "-3.67%",
+      "summary": "원/달러 환율: 1,336.00원 (전일대비 -2.00원 / -0.15%) | 미 필라델피아 반도체(SOXX): $149.30 (-3.67%)"
     },
     "last_rotation": {
-      "rotated_at": "2026-11-13 08:30:15",
+      "rotated_at": "2026-11-16 08:30:28",
       "holdings_only_fixed": true,
       "scoring_version": 2,
       "universe_size": 30,
-      "screener_pool_size": 88,
+      "screener_pool_size": 89,
       "screener_picked": [
-        "003670",
-        "145020",
+        "034730",
+        "017670",
         "012330",
         "086790",
-        "323410"
+        "145020"
       ],
       "watch_size": 10,
       "core_stocks": [],
@@ -32,178 +32,174 @@
           "name": "TIGER 미국배당다우존스",
           "sector": "미국증시·글로벌빅테크",
           "is_us_etf": true,
-          "price": 15170,
+          "price": 15200,
           "chg_rate": 0.0,
-          "frgn_today": 209353,
-          "orgn_today": -240526,
-          "net_5d_krw": -2615353510,
+          "frgn_today": 14305,
+          "orgn_today": -85213,
+          "net_5d_krw": -7552150400,
           "above_ma20": true,
           "chasing_risk": true,
           "drop_risk": false,
           "leader_score": 6,
           "source": "MASTER_UNIVERSE",
-          "reason": "20일선 상회(+1.4%) + RSI 60.0 상승 지속 · 외인 5일 순매수 주도 · ⚠️ 최근 기관 3일 연속매도 · 거래량 부족(0%) · 🚨 거래정지/거래량 전무 종목 배제 · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
+          "reason": "20일선 상회(+1.3%) + RSI 60.8 상승 지속 · 외인 5일 순매수 주도 · 메이저 3일 연속매수 · ⚠️ 최근 기관 4일 연속매도 · 거래량 부족(0%) · 🚨 거래정지/거래량 전무 종목 배제 · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
         },
         {
-          "code": "003670",
-          "name": "포스코퓨처엠",
-          "sector": "철강·에너지·소재",
+          "code": "034730",
+          "name": "SK",
+          "sector": "금융·밸류업지주",
           "is_us_etf": false,
-          "price": 174500,
+          "price": 504000,
           "chg_rate": 0.0,
-          "frgn_today": -25814,
-          "orgn_today": 6460,
+          "frgn_today": 150,
+          "orgn_today": 13176,
           "leader_score": 79,
           "source": "QUANT_SCREENER",
-          "reason": "🔍 100선 퀀트 발굴(79점): 20일선 상회(+3.3%) + RSI 51.6 눌림목 적격 · 외인·기관 5일 쌍끌이 순매수🔥 · 메이저 4일 연속매수 · 거래량 부족(2%)"
+          "reason": "🔍 100선 퀀트 발굴(79점): 20일선 상회(+2.7%) + RSI 50.2 눌림목 적격 · 외인·기관 5일 쌍끌이 순매수🔥 · 메이저 3일 연속매수 · 거래량 부족(0%)"
         },
         {
-          "code": "145020",
-          "name": "휴젤",
-          "sector": "기타·분산섹터",
+          "code": "017670",
+          "name": "SK텔레콤",
+          "sector": "통신·유틸리티",
           "is_us_etf": false,
-          "price": 196400,
+          "price": 83900,
           "chg_rate": 0.0,
-          "frgn_today": -4075,
-          "orgn_today": 11168,
-          "leader_score": 79,
+          "frgn_today": 145442,
+          "orgn_today": 81202,
+          "leader_score": 76,
           "source": "QUANT_SCREENER",
-          "reason": "🔍 100선 퀀트 발굴(79점): 20일선 상회(+5.6%) + RSI 56.1 눌림목 적격 · 외인·기관 5일 쌍끌이 순매수🔥 · 메이저 4일 연속매수 · 거래량 부족(0%)"
+          "reason": "🔍 100선 퀀트 발굴(76점): 20일선 상회(+7.9%) + RSI 56.8 눌림목 적격 · 외인·기관 5일 쌍끌이 순매수🔥 · 거래량 부족(8%)"
         },
         {
           "code": "012330",
           "name": "현대모비스",
           "sector": "자동차·모빌리티",
           "is_us_etf": false,
-          "price": 352000,
+          "price": 355500,
           "chg_rate": 0.0,
-          "frgn_today": 78644,
-          "orgn_today": -61135,
-          "leader_score": 77,
+          "frgn_today": 17072,
+          "orgn_today": 3996,
+          "leader_score": 76,
           "source": "QUANT_SCREENER",
-          "reason": "🔍 100선 퀀트 발굴(77점): 20일선 상회(+1.5%) + RSI 47.5 눌림목 적격 · 외인·기관 5일 쌍끌이 순매수🔥 · 메이저 3일 연속매수 · 거래량 부족(1%)"
+          "reason": "🔍 100선 퀀트 발굴(76점): 20일선 상회(+2.5%) + RSI 48.9 눌림목 적격 · 외인 5일 순매수 주도 · 메이저 4일 연속매수 · 거래량 부족(2%)"
         },
         {
           "code": "086790",
           "name": "하나금융지주",
           "sector": "금융·밸류업지주",
           "is_us_etf": false,
-          "price": 120500,
+          "price": 124600,
           "chg_rate": 0.0,
-          "frgn_today": 178574,
-          "orgn_today": -164720,
-          "leader_score": 77,
-          "source": "QUANT_SCREENER",
-          "reason": "🔍 100선 퀀트 발굴(77점): 20일선 상회(+1.4%) + RSI 48.1 눌림목 적격 · 외인·기관 5일 쌍끌이 순매수🔥 · 메이저 3일 연속매수 · 거래량 부족(0%)"
-        },
-        {
-          "code": "323410",
-          "name": "카카오뱅크",
-          "sector": "플랫폼·바이오",
-          "is_us_etf": false,
-          "price": 20250,
-          "chg_rate": 0.0,
-          "frgn_today": 332614,
-          "orgn_today": -317969,
-          "leader_score": 77,
-          "source": "QUANT_SCREENER",
-          "reason": "🔍 100선 퀀트 발굴(77점): 20일선 상회(+1.0%) + RSI 50.7 눌림목 적격 · 외인·기관 5일 쌍끌이 순매수🔥 · 메이저 3일 연속매수 · 거래량 부족(0%)"
-        },
-        {
-          "code": "051910",
-          "name": "LG화학",
-          "sector": "플랫폼·바이오",
-          "is_us_etf": false,
-          "price": 241500,
-          "chg_rate": 0.0,
-          "frgn_today": -44081,
-          "orgn_today": 36964,
-          "net_5d_krw": 4593088500,
-          "above_ma20": true,
-          "chasing_risk": false,
-          "drop_risk": false,
+          "frgn_today": 83259,
+          "orgn_today": -6582,
           "leader_score": 75,
-          "source": "MASTER_UNIVERSE",
-          "reason": "20일선 상회(+0.7%) + RSI 48.5 눌림목 적격 · 외인·기관 5일 쌍끌이 순매수🔥 · 거래량 부족(1%)"
+          "source": "QUANT_SCREENER",
+          "reason": "🔍 100선 퀀트 발굴(75점): 20일선 상회(+4.6%) + RSI 56.6 눌림목 적격 · 외인 5일 순매수 주도 · 메이저 4일 연속매수 · 거래량 부족(0%)"
         },
         {
-          "code": "316140",
-          "name": "우리금융지주",
-          "sector": "금융·밸류업지주",
+          "code": "145020",
+          "name": "휴젤",
+          "sector": "기타·분산섹터",
           "is_us_etf": false,
-          "price": 31550,
+          "price": 192300,
           "chg_rate": 0.0,
-          "frgn_today": 617973,
-          "orgn_today": -531114,
-          "net_5d_krw": 8462467200,
-          "above_ma20": true,
-          "chasing_risk": false,
-          "drop_risk": false,
-          "leader_score": 69,
-          "source": "MASTER_UNIVERSE",
-          "reason": "20일선 상회(+1.9%) + RSI 49.1 눌림목 적격 · 기관 5일 순매수 받침 · 거래량 부족(0%)"
+          "frgn_today": -1227,
+          "orgn_today": 1046,
+          "leader_score": 74,
+          "source": "QUANT_SCREENER",
+          "reason": "🔍 100선 퀀트 발굴(74점): 20일선 상회(+3.4%) + RSI 52.4 눌림목 적격 · 외인·기관 5일 쌍끌이 순매수🔥 · 메이저 5일 연속매수 · ⚠️ 최근 외인 3일 연속매도 · 거래량 부족(0%)"
         },
         {
           "code": "018260",
           "name": "삼성에스디에스",
           "sector": "반도체·IT하드웨어",
           "is_us_etf": false,
-          "price": 230500,
+          "price": 234500,
           "chg_rate": 0.0,
-          "frgn_today": 23073,
-          "orgn_today": 28811,
-          "net_5d_krw": 79199108500,
+          "frgn_today": 17597,
+          "orgn_today": 4414,
+          "net_5d_krw": 51478378000,
           "above_ma20": true,
           "chasing_risk": false,
           "drop_risk": false,
-          "leader_score": 67,
+          "leader_score": 69,
           "source": "MASTER_UNIVERSE",
-          "reason": "20일선 상회(+8.3%) + RSI 60.5 상승 지속 · 기관 5일 순매수 받침 · 메이저 6일 연속매수 · 거래량 부족(2%)"
+          "reason": "20일선 상회(+9.2%) + RSI 62.2 상승 지속 · 기관 5일 순매수 받침 · 외인·기관 연속 동반매수 · 거래량 부족(2%)"
         },
         {
-          "code": "034020",
-          "name": "두산에너빌리티",
-          "sector": "전력망·중공업·방산",
+          "code": "005380",
+          "name": "현대차",
+          "sector": "자동차·모빌리티",
           "is_us_etf": false,
-          "price": 47200,
+          "price": 269500,
           "chg_rate": 0.0,
-          "frgn_today": 12376,
-          "orgn_today": -190032,
-          "net_5d_krw": -20126504800,
+          "frgn_today": 81203,
+          "orgn_today": 36389,
+          "net_5d_krw": -23160021500,
           "above_ma20": false,
           "chasing_risk": false,
           "drop_risk": false,
-          "leader_score": 62,
+          "leader_score": 63,
           "source": "MASTER_UNIVERSE",
-          "reason": "RSI 33.6 과매도 반등권 · 외인 5일 순매수 주도 · 거래량 부족(6%)"
+          "reason": "RSI 35.5 과매도 반등권 · 외인 5일 순매수 주도 · 거래량 부족(3%)"
+        },
+        {
+          "code": "042660",
+          "name": "한화오션",
+          "sector": "전력망·중공업·방산",
+          "is_us_etf": false,
+          "price": 48350,
+          "chg_rate": 0.0,
+          "frgn_today": -482759,
+          "orgn_today": 633145,
+          "net_5d_krw": 1850547900,
+          "above_ma20": false,
+          "chasing_risk": false,
+          "drop_risk": false,
+          "leader_score": 56,
+          "source": "MASTER_UNIVERSE",
+          "reason": "RSI 33.9 과매도 반등권 · 기관 5일 순매수 받침 · 거래량 부족(1%)"
+        },
+        {
+          "code": "066570",
+          "name": "LG전자",
+          "sector": "반도체·IT하드웨어",
+          "is_us_etf": false,
+          "price": 135600,
+          "chg_rate": 0.0,
+          "frgn_today": -5297,
+          "orgn_today": -13595,
+          "net_5d_krw": -1439800800,
+          "above_ma20": false,
+          "chasing_risk": false,
+          "drop_risk": false,
+          "leader_score": 55,
+          "source": "MASTER_UNIVERSE",
+          "reason": "RSI 33.2 과매도 반등권 · 기관 5일 순매수 받침 · ⚠️ 최근 기관 3일 연속매도 · 거래량 부족(2%) · 아래꼬리 양봉 지지"
         }
       ],
       "added": [
-        "포스코퓨처엠(003670)",
-        "휴젤(145020)",
+        "SK(034730)",
+        "SK텔레콤(017670)",
         "현대모비스(012330)",
         "하나금융지주(086790)",
-        "카카오뱅크(323410)",
-        "LG화학(051910)",
-        "우리금융지주(316140)",
+        "휴젤(145020)",
         "삼성에스디에스(018260)",
-        "두산에너빌리티(034020)"
+        "한화오션(042660)"
       ],
       "removed": [
         "ACE 미국빅테크TOP7 Plus(465580)",
         "삼성전자(005930)",
-        "현대차(005380)",
         "KB금융(105560)",
         "NAVER(035420)",
-        "카카오(035720)",
-        "LG전자(066570)"
+        "카카오(035720)"
       ]
     },
-    "us_bigtech_summary": "엔비디아(NVDA)가 오는 2026년 11월 17일(D-4) 장 마감 후 월가 EPS 예상치 $2.49로 3분기 실적 공식 발표를 앞두고 있습니다. 미 필라델피아 반도체 지수(SOXX)가 +0.83% 상승하며 기술주 전반에 긍정적인 온기를 불어넣고 있습니다.",
+    "us_bigtech_summary": "엔비디아(NVDA)가 2026년 11월 17일(D-1) 장 마감 후 실적 발표를 앞두고 있으며 월가 EPS 예상치는 $2.49입니다. 최근 필라델피아 반도체 지수(SOXX)가 -3.67% 급락하는 등 변동성이 확대되어 실적 결과에 따른 시장 파급력에 주의가 필요합니다.",
     "us_official_calendar": [
       {
         "date": "2026-11-17",
-        "dday": 4,
+        "dday": 1,
         "symbol": "NVDA",
         "kr_name": "엔비디아",
         "time_desc": "미 장마감 후(한국시간 익일 새벽 05:00경)",
@@ -211,43 +207,81 @@
         "quarter": "Oct/2026"
       }
     ],
-    "kr_macro_summary": "원/달러 환율이 1,335.50원(-1.00원)으로 소폭 하락하며 원화 강세 기조 속 외국인 수급과 코스피의 방향성이 주요 변수로 작용하고 있습니다. 국내 주요 종목들은 대부분 실적 발표 시즌을 지나 개별 공시 및 주주환원(자사주 소각 등) 모멘텀에 집중하고 있습니다.",
-    "earnings_alert_level": "CAUTION",
+    "kr_macro_summary": "원/달러 환율은 1,336.00원으로 소폭 하락(-2.00원)하며 원화 강세 기조 속 외국인 수급과 코스피의 방향성이 맞물려 있습니다. 국내 주요 종목들은 대부분 실적 발표 시즌을 지나며 개별 기업의 펀더멘털과 수급 동향에 의존하고 있습니다.",
+    "earnings_alert_level": "HIGH_VOLATILITY",
     "stock_notes": {
-      "458730": {
-        "name": "TIGER 미국배당다우존스",
+      "005930": {
+        "name": "삼성전자",
         "earnings_imminent": false,
         "earnings_status": "공식 확정 IR 일정 미등록 (발표 완료)",
-        "memo": "지수 연동형 ETF로 개별 실적 발표 리스크는 없으나 미국 거시 지표 및 배당 정책 모니터링 후 분할 매수 집행.",
+        "memo": "엔비디아 실적 발표 직전이므로 지수 연동성 완화 및 외국인 수급 변동성을 모니터링하며 보수적으로 접근하세요."
+      },
+      "000660": {
+        "name": "SK하이닉스",
+        "earnings_imminent": false,
+        "earnings_status": "공식 확정 IR 일정 미등록 (발표 완료)",
+        "memo": "미국 SOXX 지수 급락(-3.67%) 및 내일 밤 엔비디아 실적 발표를 앞두고 있으므로 추격 매수를 자제하고 관망하세요.",
+        "official_ir_schedule": "향후 공식 IR 일정 미등록",
+        "ir_date": null,
+        "ir_dday": null,
+        "consensus_target_price": "3,062,000"
+      },
+      "005380": {
+        "name": "현대차",
+        "earnings_imminent": false,
+        "earnings_status": "공식 확정 IR 일정 미등록 (발표 완료)",
+        "memo": "로보틱스 및 본업 모멘텀 중심의 중장기 관점 유지하되, 글로벌 매크로 변동성 확대 시 분할 매수로 대응하세요.",
+        "official_ir_schedule": "향후 공식 IR 일정 미등록",
+        "ir_date": null,
+        "ir_dday": null,
+        "consensus_target_price": "516,667"
+      },
+      "105560": {
+        "name": "KB금융",
+        "earnings_imminent": false,
+        "earnings_status": "공식 확정 IR 일정 미등록 (발표 완료)",
+        "memo": "안정적인 펀더멘털과 주주환원 여력을 바탕으로 지수 방어력 점검 후 지지선 부근에서만 제한적으로 접근하세요."
+      },
+      "035420": {
+        "name": "NAVER",
+        "earnings_imminent": false,
+        "earnings_status": "공식 확정 IR 일정 미등록 (발표 완료)",
+        "memo": "AI 전환 및 글로벌 파트너십 논의 진행 상황을 체크하며 박스권 하단에서 저점 매수 전략을 유지하세요."
+      },
+      "267260": {
+        "name": "HD현대일렉트릭",
+        "earnings_imminent": false,
+        "earnings_status": "공식 확정 IR 일정 미등록 (발표 완료)",
+        "memo": "원화 강세에 따른 환율 영향 및 수급 주체들의 이탈 여부를 확인한 뒤 탄력적으로 대응하세요."
+      },
+      "091160": {
+        "name": "KODEX 반도체",
+        "earnings_imminent": false,
+        "earnings_status": "엔비디아(11/17) 실적 발표 및 미국 SOXX 지수(-3.67%) 연동",
+        "memo": "엔비디아 실적 발표 직전 변동성 극대화 구간이므로 신규 진입을 유보하고 공식 실적 확인 후 분할 매수 검토하세요."
+      },
+      "458730": {
+        "name": "TIGER 미국배당다우존스",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null
       },
-      "003670": {
-        "name": "포스코퓨처엠",
-        "earnings_imminent": false,
-        "earnings_status": "공식 확정 IR 일정 미등록 (발표 완료)",
-        "memo": "양극재 회복 및 LFP 출하 개시 모멘텀이 유효하나, 추격 매수보다는 외국인/기관 수급 유입 확인 후 눌림목 진입.",
+      "034730": {
+        "name": "SK",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
-        "consensus_target_price": "228,875"
+        "consensus_target_price": "804,000"
       },
-      "145020": {
-        "name": "휴젤",
-        "earnings_imminent": false,
-        "earnings_status": "공식 확정 IR 일정 미등록 (발표 완료)",
-        "memo": "미국 직판 체제 전환에 따른 성장통 및 풍문·보도 해명 공시가 존재하므로 변동성 완화 시까지 신규 진입 자제.",
+      "017670": {
+        "name": "SK텔레콤",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
-        "consensus_target_price": "277,000"
+        "consensus_target_price": "125,150"
       },
       "012330": {
         "name": "현대모비스",
-        "earnings_imminent": false,
-        "earnings_status": "공식 확정 IR 일정 미등록 (발표 완료)",
-        "memo": "자기주소 처분 결정 및 구조적 수익성 개선세가 확인되므로, 저평가 구간에서 분할 관점 대응.",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
@@ -255,47 +289,17 @@
       },
       "086790": {
         "name": "하나금융지주",
-        "earnings_imminent": false,
-        "earnings_status": "공식 확정 IR 일정 미등록 (발표 완료)",
-        "memo": "주식소각 결정 및 주주환원 여력이 유효하므로 안정적인 우상향 흐름 속에서 조정 시 매수.",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
         "consensus_target_price": "166,650"
       },
-      "323410": {
-        "name": "카카오뱅크",
-        "earnings_imminent": false,
-        "earnings_status": "공식 확정 IR 일정 미등록 (발표 완료)",
-        "memo": "대출성장률 회복 기대감이 상존하나 뚜렷한 수급 주체가 확인될 때까지 중립 의견 유지.",
+      "145020": {
+        "name": "휴젤",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
-        "consensus_target_price": "27,800"
-      },
-      "000660": {
-        "name": "SK하이닉스",
-        "earnings_imminent": false,
-        "earnings_status": "공식 확정 IR 일정 미등록 (발표 완료)",
-        "memo": "엔비디아 실적 발표(D-4)를 앞두고 HBM 수요 기대감이 선반영될 수 있으므로 대외 변동성에 대비한 헷지 병행.",
-        "official_ir_schedule": "향후 공식 IR 일정 미등록",
-        "ir_date": null,
-        "ir_dday": null,
-        "consensus_target_price": "3,102,000"
-      },
-      "051910": {
-        "name": "LG화학",
-        "official_ir_schedule": "향후 공식 IR 일정 미등록",
-        "ir_date": null,
-        "ir_dday": null,
-        "consensus_target_price": "355,583"
-      },
-      "316140": {
-        "name": "우리금융지주",
-        "official_ir_schedule": "향후 공식 IR 일정 미등록",
-        "ir_date": null,
-        "ir_dday": null,
-        "consensus_target_price": "43,550"
+        "consensus_target_price": "277,000"
       },
       "018260": {
         "name": "삼성에스디에스",
@@ -304,12 +308,19 @@
         "ir_dday": null,
         "consensus_target_price": "279,200"
       },
-      "034020": {
-        "name": "두산에너빌리티",
+      "042660": {
+        "name": "한화오션",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
-        "consensus_target_price": "101,615"
+        "consensus_target_price": "99,318"
+      },
+      "066570": {
+        "name": "LG전자",
+        "official_ir_schedule": "향후 공식 IR 일정 미등록",
+        "ir_date": null,
+        "ir_dday": null,
+        "consensus_target_price": "253,235"
       }
     }
   },
@@ -4826,32 +4837,40 @@
     },
     "watch_basket": [
       {
-        "code": "465580",
-        "name": "ACE 미국빅테크TOP7 Plus"
+        "code": "458730",
+        "name": "TIGER 미국배당다우존스"
       },
       {
-        "code": "005930",
-        "name": "삼성전자"
+        "code": "034730",
+        "name": "SK"
+      },
+      {
+        "code": "017670",
+        "name": "SK텔레콤"
+      },
+      {
+        "code": "012330",
+        "name": "현대모비스"
+      },
+      {
+        "code": "086790",
+        "name": "하나금융지주"
+      },
+      {
+        "code": "145020",
+        "name": "휴젤"
+      },
+      {
+        "code": "018260",
+        "name": "삼성에스디에스"
       },
       {
         "code": "005380",
         "name": "현대차"
       },
       {
-        "code": "105560",
-        "name": "KB금융"
-      },
-      {
-        "code": "458730",
-        "name": "TIGER 미국배당다우존스"
-      },
-      {
-        "code": "035420",
-        "name": "NAVER"
-      },
-      {
-        "code": "035720",
-        "name": "카카오"
+        "code": "042660",
+        "name": "한화오션"
       },
       {
         "code": "066570",
@@ -4859,90 +4878,187 @@
       }
     ],
     "last_rotation": {
-      "rotated_at": "2026-11-10 12:52:11",
+      "rotated_at": "2026-11-16 08:30:28",
+      "holdings_only_fixed": true,
+      "scoring_version": 2,
       "universe_size": 30,
-      "watch_size": 8,
-      "core_stocks": [
-        {
-          "code": "465580",
-          "name": "ACE 미국빅테크TOP7 Plus",
-          "sector": "미국증시·글로벌빅테크",
-          "role": "🇺🇸 미국 빅테크 코어 ETF"
-        },
-        {
-          "code": "005930",
-          "name": "삼성전자",
-          "sector": "반도체·IT하드웨어",
-          "role": "🇰🇷 한국 대표 코어 우량주"
-        },
-        {
-          "code": "005380",
-          "name": "현대차",
-          "sector": "자동차·모빌리티",
-          "role": "🇰🇷 한국 대표 코어 우량주"
-        },
-        {
-          "code": "105560",
-          "name": "KB금융",
-          "sector": "금융·밸류업지주",
-          "role": "🇰🇷 한국 대표 코어 우량주"
-        }
+      "screener_pool_size": 89,
+      "screener_picked": [
+        "034730",
+        "017670",
+        "012330",
+        "086790",
+        "145020"
       ],
+      "watch_size": 10,
+      "core_stocks": [],
       "dynamic_leaders": [
         {
           "code": "458730",
           "name": "TIGER 미국배당다우존스",
           "sector": "미국증시·글로벌빅테크",
           "is_us_etf": true,
-          "price": 15175,
-          "chg_rate": 0.26,
-          "frgn_today": -49866,
-          "orgn_today": 54732,
-          "leader_score": 86,
-          "reason": "당일 기관 순매수(+54,732주) · 5일 누적 외인·기관 동반 매집 · 견조한 상승 추세(+0.26%) · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
+          "price": 15200,
+          "chg_rate": 0.0,
+          "frgn_today": 14305,
+          "orgn_today": -85213,
+          "net_5d_krw": -7552150400,
+          "above_ma20": true,
+          "chasing_risk": true,
+          "drop_risk": false,
+          "leader_score": 6,
+          "source": "MASTER_UNIVERSE",
+          "reason": "20일선 상회(+1.3%) + RSI 60.8 상승 지속 · 외인 5일 순매수 주도 · 메이저 3일 연속매수 · ⚠️ 최근 기관 4일 연속매도 · 거래량 부족(0%) · 🚨 거래정지/거래량 전무 종목 배제 · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
         },
         {
-          "code": "035420",
-          "name": "NAVER",
-          "sector": "플랫폼·바이오",
+          "code": "034730",
+          "name": "SK",
+          "sector": "금융·밸류업지주",
           "is_us_etf": false,
-          "price": 192800,
-          "chg_rate": 3.05,
-          "frgn_today": 13772,
-          "orgn_today": 168922,
-          "leader_score": 89,
-          "reason": "당일 외인(+13,772)·기관(+168,922) 쌍끌이 매수 · 5일 누적 외인·기관 동반 매집 · 견조한 상승 추세(+3.05%)"
-        },
-        {
-          "code": "035720",
-          "name": "카카오",
-          "sector": "플랫폼·바이오",
-          "is_us_etf": false,
-          "price": 32000,
-          "chg_rate": -0.31,
-          "frgn_today": -124054,
-          "orgn_today": 106768,
+          "price": 504000,
+          "chg_rate": 0.0,
+          "frgn_today": 150,
+          "orgn_today": 13176,
           "leader_score": 79,
-          "reason": "당일 기관 순매수(+106,768주) · 5일 누적 외인·기관 동반 매집 · 조정 중 메이저 저가매수 유입(-0.31%)"
+          "source": "QUANT_SCREENER",
+          "reason": "🔍 100선 퀀트 발굴(79점): 20일선 상회(+2.7%) + RSI 50.2 눌림목 적격 · 외인·기관 5일 쌍끌이 순매수🔥 · 메이저 3일 연속매수 · 거래량 부족(0%)"
+        },
+        {
+          "code": "017670",
+          "name": "SK텔레콤",
+          "sector": "통신·유틸리티",
+          "is_us_etf": false,
+          "price": 83900,
+          "chg_rate": 0.0,
+          "frgn_today": 145442,
+          "orgn_today": 81202,
+          "leader_score": 76,
+          "source": "QUANT_SCREENER",
+          "reason": "🔍 100선 퀀트 발굴(76점): 20일선 상회(+7.9%) + RSI 56.8 눌림목 적격 · 외인·기관 5일 쌍끌이 순매수🔥 · 거래량 부족(8%)"
+        },
+        {
+          "code": "012330",
+          "name": "현대모비스",
+          "sector": "자동차·모빌리티",
+          "is_us_etf": false,
+          "price": 355500,
+          "chg_rate": 0.0,
+          "frgn_today": 17072,
+          "orgn_today": 3996,
+          "leader_score": 76,
+          "source": "QUANT_SCREENER",
+          "reason": "🔍 100선 퀀트 발굴(76점): 20일선 상회(+2.5%) + RSI 48.9 눌림목 적격 · 외인 5일 순매수 주도 · 메이저 4일 연속매수 · 거래량 부족(2%)"
+        },
+        {
+          "code": "086790",
+          "name": "하나금융지주",
+          "sector": "금융·밸류업지주",
+          "is_us_etf": false,
+          "price": 124600,
+          "chg_rate": 0.0,
+          "frgn_today": 83259,
+          "orgn_today": -6582,
+          "leader_score": 75,
+          "source": "QUANT_SCREENER",
+          "reason": "🔍 100선 퀀트 발굴(75점): 20일선 상회(+4.6%) + RSI 56.6 눌림목 적격 · 외인 5일 순매수 주도 · 메이저 4일 연속매수 · 거래량 부족(0%)"
+        },
+        {
+          "code": "145020",
+          "name": "휴젤",
+          "sector": "기타·분산섹터",
+          "is_us_etf": false,
+          "price": 192300,
+          "chg_rate": 0.0,
+          "frgn_today": -1227,
+          "orgn_today": 1046,
+          "leader_score": 74,
+          "source": "QUANT_SCREENER",
+          "reason": "🔍 100선 퀀트 발굴(74점): 20일선 상회(+3.4%) + RSI 52.4 눌림목 적격 · 외인·기관 5일 쌍끌이 순매수🔥 · 메이저 5일 연속매수 · ⚠️ 최근 외인 3일 연속매도 · 거래량 부족(0%)"
+        },
+        {
+          "code": "018260",
+          "name": "삼성에스디에스",
+          "sector": "반도체·IT하드웨어",
+          "is_us_etf": false,
+          "price": 234500,
+          "chg_rate": 0.0,
+          "frgn_today": 17597,
+          "orgn_today": 4414,
+          "net_5d_krw": 51478378000,
+          "above_ma20": true,
+          "chasing_risk": false,
+          "drop_risk": false,
+          "leader_score": 69,
+          "source": "MASTER_UNIVERSE",
+          "reason": "20일선 상회(+9.2%) + RSI 62.2 상승 지속 · 기관 5일 순매수 받침 · 외인·기관 연속 동반매수 · 거래량 부족(2%)"
+        },
+        {
+          "code": "005380",
+          "name": "현대차",
+          "sector": "자동차·모빌리티",
+          "is_us_etf": false,
+          "price": 269500,
+          "chg_rate": 0.0,
+          "frgn_today": 81203,
+          "orgn_today": 36389,
+          "net_5d_krw": -23160021500,
+          "above_ma20": false,
+          "chasing_risk": false,
+          "drop_risk": false,
+          "leader_score": 63,
+          "source": "MASTER_UNIVERSE",
+          "reason": "RSI 35.5 과매도 반등권 · 외인 5일 순매수 주도 · 거래량 부족(3%)"
+        },
+        {
+          "code": "042660",
+          "name": "한화오션",
+          "sector": "전력망·중공업·방산",
+          "is_us_etf": false,
+          "price": 48350,
+          "chg_rate": 0.0,
+          "frgn_today": -482759,
+          "orgn_today": 633145,
+          "net_5d_krw": 1850547900,
+          "above_ma20": false,
+          "chasing_risk": false,
+          "drop_risk": false,
+          "leader_score": 56,
+          "source": "MASTER_UNIVERSE",
+          "reason": "RSI 33.9 과매도 반등권 · 기관 5일 순매수 받침 · 거래량 부족(1%)"
         },
         {
           "code": "066570",
           "name": "LG전자",
           "sector": "반도체·IT하드웨어",
           "is_us_etf": false,
-          "price": 138200,
-          "chg_rate": 2.6,
-          "frgn_today": -50883,
-          "orgn_today": 119392,
-          "leader_score": 74,
-          "reason": "당일 기관 순매수(+119,392주) · 5일 합산 메이저 순매수(+132,311주) · 견조한 상승 추세(+2.60%)"
+          "price": 135600,
+          "chg_rate": 0.0,
+          "frgn_today": -5297,
+          "orgn_today": -13595,
+          "net_5d_krw": -1439800800,
+          "above_ma20": false,
+          "chasing_risk": false,
+          "drop_risk": false,
+          "leader_score": 55,
+          "source": "MASTER_UNIVERSE",
+          "reason": "RSI 33.2 과매도 반등권 · 기관 5일 순매수 받침 · ⚠️ 최근 기관 3일 연속매도 · 거래량 부족(2%) · 아래꼬리 양봉 지지"
         }
       ],
       "added": [
-        "카카오(035720)"
+        "SK(034730)",
+        "SK텔레콤(017670)",
+        "현대모비스(012330)",
+        "하나금융지주(086790)",
+        "휴젤(145020)",
+        "삼성에스디에스(018260)",
+        "한화오션(042660)"
       ],
       "removed": [
-        "메리츠금융지주(138040)"
+        "ACE 미국빅테크TOP7 Plus(465580)",
+        "삼성전자(005930)",
+        "KB금융(105560)",
+        "NAVER(035420)",
+        "카카오(035720)"
       ]
     },
     "master_universe_size": 30,
