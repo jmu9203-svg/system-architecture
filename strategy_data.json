@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-16 00:39:22",
-  "battery": "85% (⚡ 충전 중, 24.0°C)",
+  "updated_at": "2026-11-16 00:50:31",
+  "battery": "85% (⚡ 충전 중, 22.9°C)",
   "market_intel": {
     "updated_at": "2026-11-13 08:30:14",
     "fx_soxx_info": {
@@ -314,15 +314,15 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-16 00:38:15",
-    "checked_ts": 1794757095,
+    "checked_at": "2026-11-16 00:49:28",
+    "checked_ts": 1794757768,
     "date": "2026-11-15",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
     "main_bot_sec_ago": 14,
-    "toss_bot_sec_ago": 1,
-    "toss_strategy_monitor_sec_ago": 10,
-    "scheduler_heartbeat_sec_ago": 3,
+    "toss_bot_sec_ago": 11,
+    "toss_strategy_monitor_sec_ago": 23,
+    "scheduler_heartbeat_sec_ago": 1,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2467883,
     "market_opened_today": false,
@@ -345,7 +345,7 @@
     "circuit_breaker_limit_pct": -3.5,
     "circuit_breaker_tripped": false,
     "circuit_breaker_reason": "",
-    "battery_str": "85% (⚡ 충전 중, 24.0°C)",
+    "battery_str": "85% (⚡ 충전 중, 22.9°C)",
     "battery_pct": 85,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
@@ -4480,44 +4480,36 @@
   },
   "flight_recorder": {
     "has_data": true,
-    "file_name": "flight_log_2026_W44.jsonl",
-    "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026_W44.jsonl",
-    "period": "2026-11-01 06:02:44 ~ 2026-11-01 22:58:18",
+    "file_name": "flight_log_2026-11-16.jsonl",
+    "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-16.jsonl",
+    "period": "2026-11-16 00:45:27 ~ 2026-11-16 00:50:26",
     "commit_hash": "v2.0-live",
-    "total_events": 29,
+    "total_events": 5,
     "error_count": 0,
-    "warn_count": 28,
+    "warn_count": 5,
     "level_counts": {
-      "INFO": 1,
-      "WARN": 28
+      "WARN": 5
     },
     "categories": {
-      "KIS_API": 2,
-      "QUANT_AUDITOR": 27
+      "TELEGRAM": 5
     },
     "top_errors": [],
     "top_code_locations": [],
-    "top_api_codes": [
-      [
-        "HTTP_500",
-        1
-      ]
-    ],
+    "top_api_codes": [],
     "thread_distribution": {
-      "Thread-2 (monitor)": 1,
-      "MainThread": 28
+      "MainThread": 5
     },
     "stats": {
-      "api_throttles": 1,
-      "api_naver_fallbacks": 3,
+      "api_throttles": 0,
+      "api_naver_fallbacks": 0,
       "ai_429_retries": 0,
       "ai_backup_fallbacks": 0,
       "ai_parse_failures": 0,
-      "quant_overrides": 27,
+      "quant_overrides": 0,
       "order_unfilled_revises": 0,
       "circuit_breaker_trips": 0,
       "orders_executed": 0,
-      "telegram_delivery_fails": 0
+      "telegram_delivery_fails": 5
     }
   },
   "master_plan": {
@@ -5254,7 +5246,7 @@
     "flight_recorder": {
       "name": "일일 비행기록장치(Daily Flight Recorder) & 구글 드라이브 자동 동기화",
       "storage_mode": "일자별 자동 분할 및 이벤트 실시간 원자적 기록 (flight_log_YYYY-MM-DD.jsonl)",
-      "active_file": "flight_log_2026_W44.jsonl",
+      "active_file": "flight_log_2026-11-16.jsonl",
       "google_drive_folder": "AI_Stock_Daily_Logs (구글 앱스 스크립트 웹훅 다이렉트 업로드)",
       "auto_purge": "최근 14일 초과 파일 자동 삭제 (공기계 100% 저장공간 보호)",
       "delivery_schedule": "평일 15:40(장마감 결산) & 매일 23:50(자정 전 최종 결산) 구글 드라이브 동기화 및 텔레그램 발송",
