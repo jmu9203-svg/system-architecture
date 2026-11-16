@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-16 22:45:27",
-  "battery": "56% (🔋 배터리 사용 중, 22.2°C)",
+  "updated_at": "2026-11-16 22:57:13",
+  "battery": "58% (⚡ 충전 중, 24.4°C)",
   "market_intel": {
     "updated_at": "2026-11-16 08:30:27",
     "fx_soxx_info": {
@@ -325,15 +325,15 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-16 22:44:08",
-    "checked_ts": 1794836648,
+    "checked_at": "2026-11-16 22:55:35",
+    "checked_ts": 1794837335,
     "date": "2026-11-16",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 14,
-    "toss_bot_sec_ago": 3,
-    "toss_strategy_monitor_sec_ago": 17,
-    "scheduler_heartbeat_sec_ago": 0,
+    "main_bot_sec_ago": 10,
+    "toss_bot_sec_ago": 0,
+    "toss_strategy_monitor_sec_ago": 14,
+    "scheduler_heartbeat_sec_ago": 12,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2468084,
     "market_opened_today": false,
@@ -356,8 +356,8 @@
     "circuit_breaker_limit_pct": -3.5,
     "circuit_breaker_tripped": false,
     "circuit_breaker_reason": "",
-    "battery_str": "56% (🔋 배터리 사용 중, 22.2°C)",
-    "battery_pct": 56,
+    "battery_str": "58% (⚡ 충전 중, 24.4°C)",
+    "battery_pct": 58,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
       "✅ 실전 계좌 예수금 및 자산 무결성 정상 (실시간 100% 연동)",
@@ -5657,28 +5657,28 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 0.340143,
-        "lastPrice": 294.0,
+        "lastPrice": 293.87,
         "averagePurchasePrice": 293.699999,
-        "profitLossRate": 0.1,
-        "profitLossAmount": 0.102043,
+        "profitLossRate": 0.05,
+        "profitLossAmount": 0.057824,
         "rsi": 39.3,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 60,
-        "ai_action_tip": "현재 보유량에 추가로 1주(≈$295) 매수하여 포지션을 확대하세요.",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 매수 합의 -> 폭락장 락다운으로 관망 전환] (평균 60점 · 편차 4점 | Groq:gpt-oss-120b(82점 매수), Google:3.5-flash-lite(78점 매수))] 알파벳 A는 성장주(GROWTH_CYCLICAL)이며, RSI 39.7으로 과매도 근접, 5일 상승 추세와 현재 MA20 하회로 단기 조정 단계에 있습니다. 계좌에 충분한 현금($1,472)과 자동 환전·소수점 매수 지원이 가능해 1주 추가 매수가 물리적으로 가능하고, 외인·기관 수급이 개선될 여지가 있어 매수 타이밍으로 판단됩니다.",
-        "checked_at": "2026-11-16 18:47:26",
+        "ai_action_tip": "현재 현금 여력으로 1주 추가 매수하여 포지션을 확대하세요.",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 매수 합의 -> 폭락장 락다운으로 관망 전환] (평균 60점 · 편차 4점 | Groq:gpt-oss-120b(78점 매수), Google:3.5-flash-lite(82점 매수))] 알파벳 A는 성장주이며 RSI 39.3으로 과매도 근접, 최근 5일 상승 추세와 양봉 지속으로 매수 타이밍이 유리합니다. 현금 여력이 충분하고 1주 가격보다 보유 달러·원화 환전 여력이 충분하므로 추가 매수가 가능하고, 수급 흐름도 크게 부정적 요인이 없습니다.",
+        "checked_at": "2026-11-16 22:56:23",
         "ai_models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 78,
+            "score": 82,
             "decision": "매수"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 82,
+            "score": 78,
             "decision": "매수"
           }
         ],
@@ -5691,17 +5691,17 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 99.99,
+        "lastPrice": 100.07,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 13.59,
-        "profitLossAmount": 47.88,
-        "rsi": 74.6,
+        "profitLossRate": 13.69,
+        "profitLossAmount": 48.2,
+        "rsi": 74.7,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
-        "ai_score": 64,
-        "ai_action_tip": "배당 안전판 자산으로 현재 포지션을 유지하며, 향후 RSI가 40~50 구간으로 조정받을 때 달러 예수금으로 추가 매수를 고려하십시오.",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 64점 · 편차 3점 | Google:3.5-flash-lite(65점 관망), Groq:gpt-oss-120b(62점 관망))] 코카콜라(KO)는 포트폴리오의 장기 배당 방어주(보호 종목)로 단기 RSI 74.8 과열이나 신고가 경신을 이유로 매도해서는 안 됩니다. 현재 미국 주식 주문 가능 총 여력이 충분하되, 지표상 단기 상승 추세 속에서 과열 구간에 위치해 있어 추가 매수보다는 홀딩 관망이 적절합니다.",
-        "checked_at": "2026-11-16 18:47:32",
+        "ai_score": 66,
+        "ai_action_tip": "현재 포지션을 강력한 배당 안전판으로 유지하며 향후 RSI 조정 시 추매를 준비하세요.",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 66점 · 편차 1점 | Google:3.5-flash-lite(65점 관망), Groq:gpt-oss-120b(66점 관망))] 코카콜라(KO)는 포트폴리오의 변동성을 완화하는 장기 배당 방어주 보호 종목으로, 단기 RSI 74.7 과열 구간이라도 매도 없이 홀딩해야 합니다. 현재 추가 매수는 추세 조정기(RSI 40~50대 진입)를 활용하는 것이 유리하므로 관망을 유지합니다.",
+        "checked_at": "2026-11-16 22:56:28",
         "ai_models": [
           {
             "provider": "Google",
@@ -5712,7 +5712,7 @@
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 62,
+            "score": 66,
             "decision": "관망"
           }
         ],
@@ -5729,13 +5729,13 @@
         "averagePurchasePrice": 34.3786,
         "profitLossRate": 5.23,
         "profitLossAmount": 7.2056,
-        "rsi": 64.4,
+        "rsi": 64.5,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
-        "ai_score": 64,
-        "ai_action_tip": "현재 포지션을 매도하지 않고 장기 배당 안전판으로 홀딩하며, 향후 RSI 40~50 아래로 조정 시 달러 예수금으로 추가 매수를 고려하십시오.",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 64점 · 편차 3점 | Google:3.5-flash-lite(65점 관망), Groq:gpt-oss-120b(62점 관망))] 본 종목은 포트폴리오의 배당 안전판 역할을 수행하는 코어 자산으로, 소폭 수익이나 단기 RSI(64.7) 구간에서의 매도는 금지됩니다. 현재 가용 예수금은 충분하나 과매도 국면이 아니므로, 추후 증시 조정 시 분할 매수하며 배당을 수령하는 전략이 유효합니다.",
-        "checked_at": "2026-11-16 18:47:44",
+        "ai_score": 66,
+        "ai_action_tip": "현재 포지션을 매도하지 않고 장기 배당 안전판으로서 지속 홀딩 및 적립식 관망",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 66점 · 편차 3점 | Google:3.5-flash-lite(65점 관망), Groq:gpt-oss-120b(68점 관망))] 본 종목은 포트폴리오의 핵심 배당 방어주로서 소폭 수익이나 단기 RSI 과열(64.5)을 이유로 매도해서는 안 되는 보호 자산입니다. 최근 5거래일간 상승 추세를 유지하며 안정적인 흐름을 보이고 있으므로, 향후 지수 조정 시 RSI가 낮아질 때 추가 매수를 노리며 배당 수령 및 홀딩 전략을 유지합니다.",
+        "checked_at": "2026-11-16 22:56:40",
         "ai_models": [
           {
             "provider": "Google",
@@ -5746,7 +5746,7 @@
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 62,
+            "score": 68,
             "decision": "관망"
           }
         ],
