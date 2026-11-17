@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18 06:05:48",
+  "updated_at": "2026-11-18 06:16:55",
   "battery": "85% (⚡ 충전 중, 24.3°C)",
   "market_intel": {
     "updated_at": "2026-11-17 08:30:11",
@@ -319,15 +319,15 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-18 06:04:56",
-    "checked_ts": 1794949496,
+    "checked_at": "2026-11-18 06:15:57",
+    "checked_ts": 1794950157,
     "date": "2026-11-17",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 1,
-    "toss_bot_sec_ago": 5,
-    "toss_strategy_monitor_sec_ago": 24,
-    "scheduler_heartbeat_sec_ago": 20,
+    "main_bot_sec_ago": 2,
+    "toss_bot_sec_ago": 6,
+    "toss_strategy_monitor_sec_ago": 25,
+    "scheduler_heartbeat_sec_ago": 5,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2468283,
     "market_opened_today": false,
@@ -5440,102 +5440,44 @@
   },
   "flight_recorder": {
     "has_data": true,
-    "file_name": "flight_log_2026-11-17.jsonl",
-    "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-17.jsonl",
-    "period": "2026-11-17 01:30:32 ~ 2026-11-18 05:31:09",
+    "file_name": "flight_log_2026_W44.jsonl",
+    "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026_W44.jsonl",
+    "period": "2026-11-01 06:02:44 ~ 2026-11-01 22:58:18",
     "commit_hash": "v2.0-live",
-    "total_events": 132,
-    "error_count": 1,
-    "warn_count": 34,
+    "total_events": 29,
+    "error_count": 0,
+    "warn_count": 28,
     "level_counts": {
-      "INFO": 97,
-      "WARN": 34,
-      "ERROR": 1
+      "INFO": 1,
+      "WARN": 28
     },
     "categories": {
-      "QUANT_FACTS": 96,
-      "AI_ENSEMBLE": 20,
-      "QUANT_AUDITOR": 1,
-      "TELEGRAM": 9,
-      "KIS_API": 5,
-      "MONITOR_US_BALANCE_FAIL": 1
+      "KIS_API": 2,
+      "QUANT_AUDITOR": 27
     },
-    "top_errors": [
-      {
-        "ts": "2026-11-17 11:36:52",
-        "ver": "v2.0-live",
-        "thread": "Thread-36 (_worker)",
-        "loc": "telegram_interactive_bot.py:1960 in send_telegram_chunked()",
-        "lvl": "ERROR",
-        "cat": "TELEGRAM",
-        "msg": "텔레그램 통신 예외: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8913555002:AAHmNqQquxrZI9cyo2H8YdZW2W0jLKa1uqs/sendMessage (Caused by NewConnectionError(\"HTTPSConnection(host='api.telegram.org', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
-        "error_type": "ConnectionError",
-        "error_str": "HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8913555002:AAHmNqQquxrZI9cyo2H8YdZW2W0jLKa1uqs/sendMessage (Caused by NewConnectionError(\"HTTPSConnection(host='api.telegram.org', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
-        "raw_snippet": "",
-        "msg_cd": null,
-        "ctx": {
-          "error_type": "ConnectionError",
-          "error_str": "HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8913555002:AAHmNqQquxrZI9cyo2H8YdZW2W0jLKa1uqs/sendMessage (Caused by NewConnectionError(\"HTTPSConnection(host='api.telegram.org', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
-          "traceback": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connection.py\", line 239, in _new_conn\n    sock = connection.create_connection(\n        (self._dns_host, self.port),\n    ...<2 lines>...\n        socket_options=self.socket_options,\n    )\n  File \"/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/util/connection.py\", line 85, in create_connection\n    raise err\n  File \"/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/util/connection.py\", line 73, in create_connection\n    sock.connect(sa)\n    ~~~~~~~~~~~~^^^^\nOSError: [Errno 101] Network is unreachable\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py\", line 793, in urlopen\n    response = self._make_request(\n        conn,\n    ...<10 lines>...\n        **response_kw,\n    )\n  File \"/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py\", line 494, in _make_request\n    raise new_e\n  File \"/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py\", line 470, in _make_request\n    self._validate_conn(conn)\n    ~~~~~~~~~~~~~~~~~~~^^^^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py\", line 1125, in _validate_conn\n    conn.connect()\n    ~~~~~~~~~~~~^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connection.py\", line 827, in connect\n    self.sock = sock = self._new_conn()\n                       ~~~~~~~~~~~~~~^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connection.py\", line 254, in _new_conn\n    raise NewConnectionError(\n        self, f\"Failed to establish a new connection: {e}\"\n    ) from e\nurllib3.exceptions.NewConnectionError: HTTPSConnection(host='api.telegram.org', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/adapters.py\", line 696, in send\n    resp = conn.urlopen(\n        method=request.method,\n    ...<9 lines>...\n        chunked=chunked,\n    )\n  File \"/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py\", line 847, in urlopen\n    retries = retries.increment(\n        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]\n    )\n  File \"/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/util/retry.py\", line 555, in increment\n    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nurllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8913555002:AAHmNqQquxrZI9cyo2H8YdZW2W0jLKa1uqs/sendMessage (Caused by NewConnectionError(\"HTTPSConnection(host='api.telegram.org', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/data/data/com.termux/files/home/telegram_interactive_bot.py\", line 1946, in send_telegram_chunked\n    res = requests.post(url, json=payload, timeout=timeout)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/api.py\", line 134, in post\n    return request(\"post\", url, data=data, json=json, **kwargs)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/api.py\", line 71, in request\n    return session.request(method=method, url=url, **kwargs)\n           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/sessions.py\", line 651, in request\n    resp = self.send(prep, **send_kwargs)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/sessions.py\", line 784, in send\n    r = adapter.send(request, **kwargs)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/adapters.py\", line 729, in send\n    raise ConnectionError(e, request=request)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8913555002:AAHmNqQquxrZI9cyo2H8YdZW2W0jLKa1uqs/sendMessage (Caused by NewConnectionError(\"HTTPSConnection(host='api.telegram.org', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))\n"
-        }
-      }
-    ],
-    "top_code_locations": [
+    "top_errors": [],
+    "top_code_locations": [],
+    "top_api_codes": [
       [
-        "telegram_interactive_bot.py:1960 in send_telegram_chunked()",
+        "HTTP_500",
         1
       ]
     ],
-    "top_api_codes": [
-      [
-        "APBK1350",
-        4
-      ]
-    ],
     "thread_distribution": {
-      "Thread-26 (_worker)": 9,
-      "ThreadPoolExecutor-336_0": 1,
-      "ThreadPoolExecutor-339_0": 2,
-      "ThreadPoolExecutor-340_0": 1,
-      "ThreadPoolExecutor-343_0": 1,
-      "ThreadPoolExecutor-346_0": 2,
-      "MainThread": 5,
-      "ThreadPoolExecutor-355_0": 1,
-      "Thread-28 (_worker)": 8,
-      "ThreadPoolExecutor-362_0": 1,
-      "Thread-30 (_worker)": 8,
-      "Thread-33 (_worker)": 10,
-      "ThreadPoolExecutor-403_0": 1,
-      "Thread-3 (toss_worker)": 3,
-      "Thread-2 (monitor)": 6,
-      "ThreadPoolExecutor-424_0": 1,
-      "Thread-35 (_worker)": 10,
-      "ThreadPoolExecutor-436_1": 1,
-      "Thread-36 (_worker)": 1,
-      "Thread-37 (_worker)": 10,
-      "ThreadPoolExecutor-445_0": 2,
-      "ThreadPoolExecutor-460_0": 1,
-      "ThreadPoolExecutor-461_0": 1,
-      "Thread-39 (_worker)": 10,
-      "Thread-5 (_worker)": 16,
-      "ThreadPoolExecutor-17_0": 1,
-      "ThreadPoolExecutor-18_0": 1,
-      "ThreadPoolExecutor-21_1": 1,
-      "Thread-7 (_worker)": 8,
-      "ThreadPoolExecutor-27_1": 1,
-      "Thread-9 (_worker)": 8
+      "Thread-2 (monitor)": 1,
+      "MainThread": 28
     },
     "stats": {
-      "api_throttles": 0,
-      "api_naver_fallbacks": 0,
-      "ai_429_retries": 1,
-      "ai_backup_fallbacks": 1,
+      "api_throttles": 1,
+      "api_naver_fallbacks": 3,
+      "ai_429_retries": 0,
+      "ai_backup_fallbacks": 0,
       "ai_parse_failures": 0,
-      "quant_overrides": 1,
+      "quant_overrides": 27,
       "order_unfilled_revises": 0,
       "circuit_breaker_trips": 0,
       "orders_executed": 0,
-      "telegram_delivery_fails": 9
+      "telegram_delivery_fails": 0
     }
   },
   "master_plan": {
@@ -6114,10 +6056,10 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 0.340143,
-        "lastPrice": 279.7,
+        "lastPrice": 279.66,
         "averagePurchasePrice": 293.699999,
-        "profitLossRate": -4.76,
-        "profitLossAmount": -4.762002,
+        "profitLossRate": -4.78,
+        "profitLossAmount": -4.775608,
         "rsi": 32.8,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
@@ -6148,10 +6090,10 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 98.99,
+        "lastPrice": 99.2,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 12.46,
-        "profitLossAmount": 43.88,
+        "profitLossRate": 12.7,
+        "profitLossAmount": 44.72,
         "rsi": 69.0,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
@@ -6182,10 +6124,10 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 35.34,
+        "lastPrice": 35.36,
         "averagePurchasePrice": 34.3786,
-        "profitLossRate": 2.79,
-        "profitLossAmount": 3.8456,
+        "profitLossRate": 2.85,
+        "profitLossAmount": 3.9256,
         "rsi": 51.3,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
@@ -6274,7 +6216,7 @@
     "flight_recorder": {
       "name": "일일 비행기록장치(Daily Flight Recorder) & 구글 드라이브 자동 동기화",
       "storage_mode": "일자별 자동 분할 및 이벤트 실시간 원자적 기록 (flight_log_YYYY-MM-DD.jsonl)",
-      "active_file": "flight_log_2026-11-17.jsonl",
+      "active_file": "flight_log_2026_W44.jsonl",
       "google_drive_folder": "AI_Stock_Daily_Logs (구글 앱스 스크립트 웹훅 다이렉트 업로드)",
       "auto_purge": "최근 14일 초과 파일 자동 삭제 (공기계 100% 저장공간 보호)",
       "delivery_schedule": "평일 15:40(장마감 결산) & 매일 23:50(자정 전 최종 결산) 구글 드라이브 동기화 및 텔레그램 발송",
