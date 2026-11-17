@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17 23:18:07",
+  "updated_at": "2026-11-17 23:29:39",
   "battery": "55% (🔋 배터리 사용 중, 21.9°C)",
   "market_intel": {
     "updated_at": "2026-11-17 08:30:11",
@@ -319,15 +319,15 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-17 23:17:04",
-    "checked_ts": 1794925024,
+    "checked_at": "2026-11-17 23:27:40",
+    "checked_ts": 1794925660,
     "date": "2026-11-17",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 5,
-    "toss_bot_sec_ago": 10,
-    "toss_strategy_monitor_sec_ago": 0,
-    "scheduler_heartbeat_sec_ago": 18,
+    "main_bot_sec_ago": 1,
+    "toss_bot_sec_ago": 0,
+    "toss_strategy_monitor_sec_ago": 1,
+    "scheduler_heartbeat_sec_ago": 2,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2468283,
     "market_opened_today": false,
@@ -5698,220 +5698,123 @@
     },
     "watch_basket": [
       {
-        "code": "458730",
-        "name": "TIGER 미국배당다우존스"
+        "code": "465580",
+        "name": "ACE 미국빅테크TOP7 Plus"
       },
       {
-        "code": "017670",
-        "name": "SK텔레콤"
+        "code": "005930",
+        "name": "삼성전자"
       },
       {
-        "code": "068760",
-        "name": "셀트리온제약"
-      },
-      {
-        "code": "003490",
-        "name": "대한항공"
-      },
-      {
-        "code": "145020",
-        "name": "휴젤"
-      },
-      {
-        "code": "012330",
-        "name": "현대모비스"
+        "code": "005380",
+        "name": "현대차"
       },
       {
         "code": "105560",
         "name": "KB금융"
       },
       {
-        "code": "316140",
-        "name": "우리금융지주"
+        "code": "458730",
+        "name": "TIGER 미국배당다우존스"
       },
       {
-        "code": "018260",
-        "name": "삼성에스디에스"
+        "code": "035420",
+        "name": "NAVER"
       },
       {
-        "code": "068270",
-        "name": "셀트리온"
+        "code": "035720",
+        "name": "카카오"
+      },
+      {
+        "code": "066570",
+        "name": "LG전자"
       }
     ],
     "last_rotation": {
-      "rotated_at": "2026-11-17 14:30:14",
-      "holdings_only_fixed": true,
-      "scoring_version": 2,
+      "rotated_at": "2026-11-10 12:52:11",
       "universe_size": 30,
-      "screener_pool_size": 88,
-      "screener_picked": [
-        "017670",
-        "068760",
-        "003490",
-        "145020",
-        "012330"
+      "watch_size": 8,
+      "core_stocks": [
+        {
+          "code": "465580",
+          "name": "ACE 미국빅테크TOP7 Plus",
+          "sector": "미국증시·글로벌빅테크",
+          "role": "🇺🇸 미국 빅테크 코어 ETF"
+        },
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "sector": "반도체·IT하드웨어",
+          "role": "🇰🇷 한국 대표 코어 우량주"
+        },
+        {
+          "code": "005380",
+          "name": "현대차",
+          "sector": "자동차·모빌리티",
+          "role": "🇰🇷 한국 대표 코어 우량주"
+        },
+        {
+          "code": "105560",
+          "name": "KB금융",
+          "sector": "금융·밸류업지주",
+          "role": "🇰🇷 한국 대표 코어 우량주"
+        }
       ],
-      "watch_size": 10,
-      "core_stocks": [],
       "dynamic_leaders": [
         {
           "code": "458730",
           "name": "TIGER 미국배당다우존스",
           "sector": "미국증시·글로벌빅테크",
           "is_us_etf": true,
-          "price": 15110,
-          "chg_rate": -1.21,
-          "frgn_today": -49874,
-          "orgn_today": 15581,
-          "net_5d_krw": -8099126210,
-          "above_ma20": true,
-          "chasing_risk": false,
-          "drop_risk": false,
-          "leader_score": 80,
-          "source": "MASTER_UNIVERSE",
-          "reason": "20일선 상회(+0.5%) + RSI 55.3 눌림목 적격 · 외인 5일 순매수 주도 · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
+          "price": 15175,
+          "chg_rate": 0.26,
+          "frgn_today": -49866,
+          "orgn_today": 54732,
+          "leader_score": 86,
+          "reason": "당일 기관 순매수(+54,732주) · 5일 누적 외인·기관 동반 매집 · 견조한 상승 추세(+0.26%) · 미국 증시 대표 ETF(환전수수료 0원·매도세 0%)"
         },
         {
-          "code": "017670",
-          "name": "SK텔레콤",
-          "sector": "통신·유틸리티",
-          "is_us_etf": false,
-          "price": 83300,
-          "chg_rate": -0.72,
-          "frgn_today": -161380,
-          "orgn_today": 277032,
-          "leader_score": 88,
-          "source": "QUANT_SCREENER",
-          "reason": "🔍 100선 퀀트 발굴(88점): 20일선 상회(+6.7%) + RSI 55.5 눌림목 적격 · 외인·기관 5일 쌍끌이 순매수🔥 · 거래량 활발(177% 양봉) · 아래꼬리 양봉 지지"
-        },
-        {
-          "code": "068760",
-          "name": "셀트리온제약",
+          "code": "035420",
+          "name": "NAVER",
           "sector": "플랫폼·바이오",
           "is_us_etf": false,
-          "price": 41500,
-          "chg_rate": 2.72,
-          "frgn_today": 8199,
-          "orgn_today": 13,
-          "leader_score": 87,
-          "source": "QUANT_SCREENER",
-          "reason": "🔍 100선 퀀트 발굴(87점): 20일선 상회(+6.9%) + RSI 60.4 상승 지속 · 외인·기관 5일 쌍끌이 순매수🔥 · 외인·기관 연속 동반매수 · 거래량 활발(176% 양봉)"
+          "price": 192800,
+          "chg_rate": 3.05,
+          "frgn_today": 13772,
+          "orgn_today": 168922,
+          "leader_score": 89,
+          "reason": "당일 외인(+13,772)·기관(+168,922) 쌍끌이 매수 · 5일 누적 외인·기관 동반 매집 · 견조한 상승 추세(+3.05%)"
         },
         {
-          "code": "003490",
-          "name": "대한항공",
-          "sector": "항공·운송·물류",
+          "code": "035720",
+          "name": "카카오",
+          "sector": "플랫폼·바이오",
           "is_us_etf": false,
-          "price": 32050,
-          "chg_rate": 1.26,
-          "frgn_today": 234874,
-          "orgn_today": 125185,
-          "leader_score": 80,
-          "source": "QUANT_SCREENER",
-          "reason": "🔍 100선 퀀트 발굴(80점): 20일선 상회(+11.1%) + RSI 63.6 상승 지속 · 외인·기관 5일 쌍끌이 순매수🔥 · 외인·기관 연속 동반매수"
+          "price": 32000,
+          "chg_rate": -0.31,
+          "frgn_today": -124054,
+          "orgn_today": 106768,
+          "leader_score": 79,
+          "reason": "당일 기관 순매수(+106,768주) · 5일 누적 외인·기관 동반 매집 · 조정 중 메이저 저가매수 유입(-0.31%)"
         },
         {
-          "code": "145020",
-          "name": "휴젤",
-          "sector": "기타·분산섹터",
-          "is_us_etf": false,
-          "price": 193900,
-          "chg_rate": 0.83,
-          "frgn_today": -9464,
-          "orgn_today": 10909,
-          "leader_score": 78,
-          "source": "QUANT_SCREENER",
-          "reason": "🔍 100선 퀀트 발굴(78점): 20일선 상회(+3.9%) + RSI 53.9 눌림목 적격 · 기관 5일 순매수 받침 · 메이저 6일 연속매수 · ⚠️ 최근 외인 4일 연속매도 · 아래꼬리 양봉 지지"
-        },
-        {
-          "code": "012330",
-          "name": "현대모비스",
-          "sector": "자동차·모빌리티",
-          "is_us_etf": false,
-          "price": 348000,
-          "chg_rate": -2.25,
-          "frgn_today": -8595,
-          "orgn_today": 24286,
-          "leader_score": 74,
-          "source": "QUANT_SCREENER",
-          "reason": "🔍 100선 퀀트 발굴(74점): 20일선 상회(+0.3%) + RSI 45.9 눌림목 적격 · 외인 5일 순매수 주도"
-        },
-        {
-          "code": "105560",
-          "name": "KB금융",
-          "sector": "금융·밸류업지주",
-          "is_us_etf": false,
-          "price": 157600,
-          "chg_rate": -2.48,
-          "frgn_today": -1770,
-          "orgn_today": 35607,
-          "net_5d_krw": 16519316800,
-          "above_ma20": true,
-          "chasing_risk": false,
-          "drop_risk": false,
-          "leader_score": 74,
-          "source": "MASTER_UNIVERSE",
-          "reason": "20일선 상회(+1.9%) + RSI 50.3 눌림목 적격 · 외인 5일 순매수 주도"
-        },
-        {
-          "code": "316140",
-          "name": "우리금융지주",
-          "sector": "금융·밸류업지주",
-          "is_us_etf": false,
-          "price": 32650,
-          "chg_rate": -1.06,
-          "frgn_today": -631713,
-          "orgn_today": 778347,
-          "net_5d_krw": 22206440400,
-          "above_ma20": true,
-          "chasing_risk": false,
-          "drop_risk": false,
-          "leader_score": 72,
-          "source": "MASTER_UNIVERSE",
-          "reason": "20일선 상회(+4.9%) + RSI 56.4 눌림목 적격 · 기관 5일 순매수 받침"
-        },
-        {
-          "code": "018260",
-          "name": "삼성에스디에스",
+          "code": "066570",
+          "name": "LG전자",
           "sector": "반도체·IT하드웨어",
           "is_us_etf": false,
-          "price": 226000,
-          "chg_rate": -1.31,
-          "frgn_today": -19055,
-          "orgn_today": 35006,
-          "net_5d_krw": 43716762000,
-          "above_ma20": true,
-          "chasing_risk": false,
-          "drop_risk": false,
-          "leader_score": 71,
-          "source": "MASTER_UNIVERSE",
-          "reason": "20일선 상회(+4.7%) + RSI 55.8 눌림목 적격 · 기관 5일 순매수 받침 · 메이저 6일 연속매수 · ⚠️ 윗꼬리 차익매물(+1.3%)"
-        },
-        {
-          "code": "068270",
-          "name": "셀트리온",
-          "sector": "플랫폼·바이오",
-          "is_us_etf": false,
-          "price": 213500,
-          "chg_rate": -0.47,
-          "frgn_today": -22097,
-          "orgn_today": 122839,
-          "net_5d_krw": 83533369500,
-          "above_ma20": true,
-          "chasing_risk": false,
-          "drop_risk": false,
-          "leader_score": 60,
-          "source": "MASTER_UNIVERSE",
-          "reason": "20일선 상회 + RSI 66.3 단기과열 주의 · 외인·기관 5일 쌍끌이 순매수🔥 · ⚠️ 윗꼬리 차익매물(+1.4%)"
+          "price": 138200,
+          "chg_rate": 2.6,
+          "frgn_today": -50883,
+          "orgn_today": 119392,
+          "leader_score": 74,
+          "reason": "당일 기관 순매수(+119,392주) · 5일 합산 메이저 순매수(+132,311주) · 견조한 상승 추세(+2.60%)"
         }
       ],
       "added": [
-        "휴젤(145020)",
-        "셀트리온(068270)"
+        "카카오(035720)"
       ],
       "removed": [
-        "파마리서치(214450)",
-        "TIGER 미국테크TOP10 INDXX(381170)"
+        "메리츠금융지주(138040)"
       ]
     },
     "master_universe_size": 30,
@@ -6055,10 +5958,10 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 0.340143,
-        "lastPrice": 283.3,
+        "lastPrice": 283.13,
         "averagePurchasePrice": 293.699999,
-        "profitLossRate": -3.54,
-        "profitLossAmount": -3.537488,
+        "profitLossRate": -3.59,
+        "profitLossAmount": -3.595312,
         "rsi": 34.1,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
@@ -6089,11 +5992,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 98.65,
+        "lastPrice": 98.78,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 12.07,
-        "profitLossAmount": 42.52,
-        "rsi": 68.1,
+        "profitLossRate": 12.22,
+        "profitLossAmount": 43.04,
+        "rsi": 68.7,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 64,
@@ -6123,11 +6026,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 35.66,
+        "lastPrice": 35.65,
         "averagePurchasePrice": 34.3786,
-        "profitLossRate": 3.72,
-        "profitLossAmount": 5.1256,
-        "rsi": 56.1,
+        "profitLossRate": 3.69,
+        "profitLossAmount": 5.0856,
+        "rsi": 56.0,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 64,
