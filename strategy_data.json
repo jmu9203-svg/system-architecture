@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18 22:10:47",
+  "updated_at": "2026-11-18 22:22:03",
   "battery": "56% (🔋 배터리 사용 중, 21.3°C)",
   "market_intel": {
     "updated_at": "2026-11-18 08:30:14",
@@ -365,15 +365,15 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-18 22:09:39",
-    "checked_ts": 1795007379,
+    "checked_at": "2026-11-18 22:20:56",
+    "checked_ts": 1795008056,
     "date": "2026-11-18",
-    "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
+    "overall_status": "⚠️ 주의 항목 1건 감지 (한투 잔고 조회 일시 지연 (balance_ok=False - 서킷브레이커 오발동 방어 중))",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 8,
-    "toss_bot_sec_ago": 15,
-    "toss_strategy_monitor_sec_ago": 2,
-    "scheduler_heartbeat_sec_ago": 9,
+    "main_bot_sec_ago": 7,
+    "toss_bot_sec_ago": 11,
+    "toss_strategy_monitor_sec_ago": 19,
+    "scheduler_heartbeat_sec_ago": 11,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2468867,
     "market_opened_today": false,
@@ -401,11 +401,13 @@
     "battery_pct": 56,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
-      "✅ 실전 계좌 예수금 및 자산 무결성 정상 (실시간 100% 연동)",
+      "⚠️ 한투 잔고 조회 일시 지연 (balance_ok=False - 서킷브레이커 오발동 방어 중)",
       "✅ 손절/익절 가드레일 누락 착오 0건"
     ],
-    "anomaly_count": 0,
-    "anomalies": [],
+    "anomaly_count": 1,
+    "anomalies": [
+      "한투 잔고 조회 일시 지연 (balance_ok=False - 서킷브레이커 오발동 방어 중)"
+    ],
     "last_battery_alert_ts": 1794544753.596243,
     "last_anomaly_alert_ts": 0.0,
     "last_thread_alert_ts": 0.0
@@ -5684,17 +5686,17 @@
     "has_data": true,
     "file_name": "flight_log_2026-11-18.jsonl",
     "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-18.jsonl",
-    "period": "2026-11-18 09:34:53 ~ 2026-11-18 22:10:37",
+    "period": "2026-11-18 09:34:53 ~ 2026-11-18 22:20:53",
     "commit_hash": "v2.0-live",
-    "total_events": 58,
+    "total_events": 59,
     "error_count": 0,
-    "warn_count": 17,
+    "warn_count": 18,
     "level_counts": {
       "INFO": 41,
-      "WARN": 17
+      "WARN": 18
     },
     "categories": {
-      "KIS_API": 7,
+      "KIS_API": 8,
       "QUANT_FACTS": 40,
       "TELEGRAM": 1,
       "AI_ENSEMBLE": 2,
@@ -5706,11 +5708,11 @@
     "top_api_codes": [
       [
         "OPSQ0008",
-        4
+        5
       ]
     ],
     "thread_distribution": {
-      "Thread-2 (monitor)": 15,
+      "Thread-2 (monitor)": 16,
       "Thread-26 (_worker)": 10,
       "Thread-3 (toss_worker)": 1,
       "Thread-28 (_worker)": 10,
@@ -6415,11 +6417,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 0.340143,
-        "lastPrice": 282.4,
+        "lastPrice": 282.33,
         "averagePurchasePrice": 293.699999,
-        "profitLossRate": -3.84,
-        "profitLossAmount": -3.843616,
-        "rsi": 34.9,
+        "profitLossRate": -3.87,
+        "profitLossAmount": -3.867426,
+        "rsi": 34.8,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "매수",
         "ai_score": 82,
@@ -6449,11 +6451,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 98.1,
+        "lastPrice": 98.06,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 11.45,
-        "profitLossAmount": 40.32,
-        "rsi": 64.9,
+        "profitLossRate": 11.4,
+        "profitLossAmount": 40.16,
+        "rsi": 64.7,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 74,
@@ -6483,11 +6485,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 35.18,
+        "lastPrice": 35.2,
         "averagePurchasePrice": 34.3786,
-        "profitLossRate": 2.33,
-        "profitLossAmount": 3.2056,
-        "rsi": 49.5,
+        "profitLossRate": 2.38,
+        "profitLossAmount": 3.2856,
+        "rsi": 49.7,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 64,
@@ -6521,13 +6523,13 @@
         "averagePurchasePrice": 100.62,
         "profitLossRate": -0.02,
         "profitLossAmount": -0.15,
-        "rsi": 54.3,
+        "rsi": 54.7,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 68,
         "ai_action_tip": "월초 배당락 직후 국채 이자 재누적 구간 — 기존 파킹 포지션은 든든히 홀딩 유지하되 유휴 달러 예수금 파킹 시에만 활용하세요.",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 66점 · 편차 1점 | Google:3.5-flash-lite(67점 관망), Groq:gpt-oss-20b(66점 관망))] SGOV의 14일 RSI(54.3)는 주가 하락이나 기술적 과매도 신호가 아니라, 매월 초 배당락(-$0.32)으로 월배당금이 지급된 직후 다시 초단기 미국채 이자가 하루 $0.01~$0.02씩 계단식으로 누적되기 시작하는 정상적인 금리 사이클입니다. 연 4~5% 달러 월배당 이자를 안정적으로 수령하면서 향후 빅테크·배당주 조정 시 투입할 대기 자금(Dry Powder)으로서 든든하게 홀딩 관망합니다.",
-        "checked_at": "2026-11-18 21:59:15",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 66점 · 편차 1점 | Google:3.5-flash-lite(67점 관망), Groq:gpt-oss-20b(66점 관망))] SGOV의 14일 RSI(54.7)는 주가 하락이나 기술적 과매도 신호가 아니라, 매월 초 배당락(-$0.32)으로 월배당금이 지급된 직후 다시 초단기 미국채 이자가 하루 $0.01~$0.02씩 계단식으로 누적되기 시작하는 정상적인 금리 사이클입니다. 연 4~5% 달러 월배당 이자를 안정적으로 수령하면서 향후 빅테크·배당주 조정 시 투입할 대기 자금(Dry Powder)으로서 든든하게 홀딩 관망합니다.",
+        "checked_at": "2026-11-18 22:21:45",
         "ai_models": [
           {
             "provider": "Google",
