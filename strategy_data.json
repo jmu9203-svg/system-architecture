@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19 06:15:04",
+  "updated_at": "2026-11-19 06:26:19",
   "battery": "85% (⚡ 충전 중, 23.5°C)",
   "market_intel": {
     "updated_at": "2026-11-18 08:30:14",
@@ -365,31 +365,31 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-19 06:13:55",
-    "checked_ts": 1795036435,
+    "checked_at": "2026-11-19 06:25:12",
+    "checked_ts": 1795037112,
     "date": "2026-11-18",
-    "overall_status": "⚠️ 주의 항목 1건 감지 (한투 잔고 조회 일시 지연 (balance_ok=False - 서킷브레이커 오발동 방어 중))",
+    "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 3,
-    "toss_bot_sec_ago": 9,
-    "toss_strategy_monitor_sec_ago": 14,
+    "main_bot_sec_ago": 5,
+    "toss_bot_sec_ago": 10,
+    "toss_strategy_monitor_sec_ago": 0,
     "scheduler_heartbeat_sec_ago": 12,
     "monitor_heartbeat_sec_ago": 0,
-    "opening_fund_eval": 2468867,
+    "opening_fund_eval": 2263254,
     "market_opened_today": false,
     "opening_confirmed": true,
-    "current_fund_eval": 2468867,
+    "current_fund_eval": 2263254,
     "peak_fund_eval": 7648676,
-    "cur_dd_pct": -67.72,
+    "cur_dd_pct": -70.41,
     "mdd_pct": -70.41,
-    "fund_return_pct": -1.25,
+    "fund_return_pct": -9.47,
     "kospi200_base_price": 87886,
     "kospi200_cur_price": 79400,
     "kospi200_return_pct": -9.66,
-    "alpha_pct": 8.41,
+    "alpha_pct": 0.19,
     "sector_map": {},
     "sector_summary_str": "보유 섹터 없음 (현금 100%)",
-    "max_per_sector_krw": 1234433,
+    "max_per_sector_krw": 1131627,
     "bought_today": [],
     "sold_today": [],
     "daily_pnl_krw": 0,
@@ -401,13 +401,11 @@
     "battery_pct": 85,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
-      "⚠️ 한투 잔고 조회 일시 지연 (balance_ok=False - 서킷브레이커 오발동 방어 중)",
+      "✅ 실전 계좌 예수금 및 자산 무결성 정상 (실시간 100% 연동)",
       "✅ 손절/익절 가드레일 누락 착오 0건"
     ],
-    "anomaly_count": 1,
-    "anomalies": [
-      "한투 잔고 조회 일시 지연 (balance_ok=False - 서킷브레이커 오발동 방어 중)"
-    ],
+    "anomaly_count": 0,
+    "anomalies": [],
     "last_battery_alert_ts": 1794544753.596243,
     "last_anomaly_alert_ts": 0.0,
     "last_thread_alert_ts": 0.0
@@ -415,8 +413,8 @@
   "mdd_defense": {
     "scale": 0.0,
     "level": "FREEZE",
-    "cur_dd_pct": -67.72,
-    "reason": "고점 대비 -67.72% (-20% 도달 → 신규매수 0% 전액 현금 방어)"
+    "cur_dd_pct": -70.41,
+    "reason": "고점 대비 -70.41% (-20% 도달 → 신규매수 0% 전액 현금 방어)"
   },
   "ai_audit": {
     "updated_at": "2026-11-19 05:31:43",
@@ -5740,40 +5738,32 @@
   },
   "flight_recorder": {
     "has_data": true,
-    "file_name": "flight_log_2026_W44.jsonl",
-    "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026_W44.jsonl",
-    "period": "2026-11-01 06:02:44 ~ 2026-11-01 22:58:18",
+    "file_name": "flight_log_2026-11-19.jsonl",
+    "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-19.jsonl",
+    "period": "2026-11-19 06:26:09 ~ 2026-11-19 06:26:09",
     "commit_hash": "v2.0-live",
-    "total_events": 29,
+    "total_events": 1,
     "error_count": 0,
-    "warn_count": 28,
+    "warn_count": 1,
     "level_counts": {
-      "INFO": 1,
-      "WARN": 28
+      "WARN": 1
     },
     "categories": {
-      "KIS_API": 2,
-      "QUANT_AUDITOR": 27
+      "TOSS_REC_FAIL_CLOSED": 1
     },
     "top_errors": [],
     "top_code_locations": [],
-    "top_api_codes": [
-      [
-        "HTTP_500",
-        1
-      ]
-    ],
+    "top_api_codes": [],
     "thread_distribution": {
-      "Thread-2 (monitor)": 1,
-      "MainThread": 28
+      "Thread-2 (monitor)": 1
     },
     "stats": {
-      "api_throttles": 1,
-      "api_naver_fallbacks": 3,
+      "api_throttles": 0,
+      "api_naver_fallbacks": 0,
       "ai_429_retries": 0,
       "ai_backup_fallbacks": 0,
       "ai_parse_failures": 0,
-      "quant_overrides": 27,
+      "quant_overrides": 0,
       "order_unfilled_revises": 0,
       "circuit_breaker_trips": 0,
       "orders_executed": 0,
@@ -6023,11 +6013,11 @@
     "frozen_reserve": 0,
     "buy_threshold": 75,
     "sell_threshold": 70,
-    "target_order_krw": 246886,
-    "max_per_stock_krw": 740660,
-    "max_per_sector_krw": 1234433,
+    "target_order_krw": 226325,
+    "max_per_stock_krw": 678976,
+    "max_per_sector_krw": 1131627,
     "round_trip_cost_pct": 0.35,
-    "max_share_price_krw": 740660,
+    "max_share_price_krw": 678976,
     "auto_trade": true,
     "schedule": "평일 정규장 10:00 / 14:30 (1일 2회 정기 자율 매매)",
     "realtime_monitor": "정규장 5분 주기 급락 감시 (2시간 쿨다운 & -1.0%p 재개입)",
@@ -6463,10 +6453,10 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 0.340143,
-        "lastPrice": 283.27,
+        "lastPrice": 283.15,
         "averagePurchasePrice": 293.699999,
-        "profitLossRate": -3.55,
-        "profitLossAmount": -3.547692,
+        "profitLossRate": -3.59,
+        "profitLossAmount": -3.588509,
         "rsi": 34.8,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "매수",
@@ -6497,10 +6487,10 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 98.06,
+        "lastPrice": 98.01,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 11.4,
-        "profitLossAmount": 40.16,
+        "profitLossRate": 11.34,
+        "profitLossAmount": 39.96,
         "rsi": 64.9,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
@@ -6531,10 +6521,10 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 34.72,
+        "lastPrice": 34.71,
         "averagePurchasePrice": 34.3786,
-        "profitLossRate": 0.99,
-        "profitLossAmount": 1.3656,
+        "profitLossRate": 0.96,
+        "profitLossAmount": 1.3256,
         "rsi": 44.1,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
@@ -6623,7 +6613,7 @@
     "flight_recorder": {
       "name": "일일 비행기록장치(Daily Flight Recorder) & 구글 드라이브 자동 동기화",
       "storage_mode": "일자별 자동 분할 및 이벤트 실시간 원자적 기록 (flight_log_YYYY-MM-DD.jsonl)",
-      "active_file": "flight_log_2026_W44.jsonl",
+      "active_file": "flight_log_2026-11-19.jsonl",
       "google_drive_folder": "AI_Stock_Daily_Logs (구글 앱스 스크립트 웹훅 다이렉트 업로드)",
       "auto_purge": "최근 14일 초과 파일 자동 삭제 (공기계 100% 저장공간 보호)",
       "delivery_schedule": "평일 15:40(장마감 결산) & 매일 23:50(자정 전 최종 결산) 구글 드라이브 동기화 및 텔레그램 발송",
