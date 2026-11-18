@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-19 06:48:51",
-  "battery": "85% (⚡ 충전 중, 23.5°C)",
+  "updated_at": "2026-11-19 07:00:13",
+  "battery": "85% (⚡ 충전 중, 22.4°C)",
   "market_intel": {
     "updated_at": "2026-11-18 08:30:14",
     "fx_soxx_info": {
@@ -365,15 +365,15 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-19 06:47:43",
-    "checked_ts": 1795038463,
+    "checked_at": "2026-11-19 06:59:01",
+    "checked_ts": 1795039141,
     "date": "2026-11-18",
-    "overall_status": "⚠️ 주의 항목 1건 감지 (한투 잔고 조회 일시 지연 (balance_ok=False - 서킷브레이커 오발동 방어 중))",
+    "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 5,
-    "toss_bot_sec_ago": 9,
-    "toss_strategy_monitor_sec_ago": 2,
-    "scheduler_heartbeat_sec_ago": 14,
+    "main_bot_sec_ago": 6,
+    "toss_bot_sec_ago": 10,
+    "toss_strategy_monitor_sec_ago": 19,
+    "scheduler_heartbeat_sec_ago": 16,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2468867,
     "market_opened_today": false,
@@ -397,17 +397,15 @@
     "circuit_breaker_limit_pct": -3.5,
     "circuit_breaker_tripped": false,
     "circuit_breaker_reason": "",
-    "battery_str": "85% (⚡ 충전 중, 23.5°C)",
+    "battery_str": "85% (⚡ 충전 중, 22.4°C)",
     "battery_pct": 85,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
-      "⚠️ 한투 잔고 조회 일시 지연 (balance_ok=False - 서킷브레이커 오발동 방어 중)",
+      "✅ 실전 계좌 예수금 및 자산 무결성 정상 (실시간 100% 연동)",
       "✅ 손절/익절 가드레일 누락 착오 0건"
     ],
-    "anomaly_count": 1,
-    "anomalies": [
-      "한투 잔고 조회 일시 지연 (balance_ok=False - 서킷브레이커 오발동 방어 중)"
-    ],
+    "anomaly_count": 0,
+    "anomalies": [],
     "last_battery_alert_ts": 1794544753.596243,
     "last_anomaly_alert_ts": 0.0,
     "last_thread_alert_ts": 0.0
@@ -5742,28 +5740,28 @@
     "has_data": true,
     "file_name": "flight_log_2026-11-19.jsonl",
     "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-19.jsonl",
-    "period": "2026-11-19 06:26:09 ~ 2026-11-19 06:36:24",
+    "period": "2026-11-19 06:26:09 ~ 2026-11-19 07:00:03",
     "commit_hash": "v2.0-live",
-    "total_events": 2,
+    "total_events": 4,
     "error_count": 0,
-    "warn_count": 2,
+    "warn_count": 4,
     "level_counts": {
-      "WARN": 2
+      "WARN": 4
     },
     "categories": {
-      "TOSS_REC_FAIL_CLOSED": 1,
-      "KIS_API": 1
+      "TOSS_REC_FAIL_CLOSED": 2,
+      "KIS_API": 2
     },
     "top_errors": [],
     "top_code_locations": [],
     "top_api_codes": [
       [
         "OPSQ0008",
-        1
+        2
       ]
     ],
     "thread_distribution": {
-      "Thread-2 (monitor)": 2
+      "Thread-2 (monitor)": 4
     },
     "stats": {
       "api_throttles": 0,
@@ -6495,10 +6493,10 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 98.08,
+        "lastPrice": 98.07,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 11.42,
-        "profitLossAmount": 40.24,
+        "profitLossRate": 11.41,
+        "profitLossAmount": 40.2,
         "rsi": 64.9,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
@@ -6529,10 +6527,10 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 34.72,
+        "lastPrice": 34.71,
         "averagePurchasePrice": 34.3786,
-        "profitLossRate": 0.99,
-        "profitLossAmount": 1.3656,
+        "profitLossRate": 0.96,
+        "profitLossAmount": 1.3256,
         "rsi": 44.1,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
