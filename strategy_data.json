@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19 03:59:07",
+  "updated_at": "2026-11-19 04:05:24",
   "battery": "85% (⚡ 충전 중, 23.5°C)",
   "market_intel": {
     "updated_at": "2026-11-18 08:30:14",
@@ -365,15 +365,15 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-19 03:58:04",
-    "checked_ts": 1795028284,
+    "checked_at": "2026-11-19 04:04:16",
+    "checked_ts": 1795028656,
     "date": "2026-11-18",
-    "overall_status": "⚠️ 주의 항목 1건 감지 (한투 잔고 조회 일시 지연 (balance_ok=False - 서킷브레이커 오발동 방어 중))",
+    "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 6,
-    "toss_bot_sec_ago": 5,
-    "toss_strategy_monitor_sec_ago": 24,
-    "scheduler_heartbeat_sec_ago": 12,
+    "main_bot_sec_ago": 8,
+    "toss_bot_sec_ago": 9,
+    "toss_strategy_monitor_sec_ago": 6,
+    "scheduler_heartbeat_sec_ago": 9,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2468867,
     "market_opened_today": true,
@@ -401,13 +401,11 @@
     "battery_pct": 85,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
-      "⚠️ 한투 잔고 조회 일시 지연 (balance_ok=False - 서킷브레이커 오발동 방어 중)",
+      "✅ 실전 계좌 예수금 및 자산 무결성 정상 (실시간 100% 연동)",
       "✅ 손절/익절 가드레일 누락 착오 0건"
     ],
-    "anomaly_count": 1,
-    "anomalies": [
-      "한투 잔고 조회 일시 지연 (balance_ok=False - 서킷브레이커 오발동 방어 중)"
-    ],
+    "anomaly_count": 0,
+    "anomalies": [],
     "last_battery_alert_ts": 1794544753.596243,
     "last_anomaly_alert_ts": 0.0,
     "last_thread_alert_ts": 0.0
@@ -5742,18 +5740,18 @@
     "has_data": true,
     "file_name": "flight_log_2026-11-18.jsonl",
     "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-18.jsonl",
-    "period": "2026-11-18 09:34:53 ~ 2026-11-19 03:58:02",
+    "period": "2026-11-18 09:34:53 ~ 2026-11-19 04:04:13",
     "commit_hash": "v2.0-live",
-    "total_events": 124,
+    "total_events": 125,
     "error_count": 2,
-    "warn_count": 57,
+    "warn_count": 58,
     "level_counts": {
       "INFO": 65,
-      "WARN": 57,
+      "WARN": 58,
       "ERROR": 2
     },
     "categories": {
-      "KIS_API": 14,
+      "KIS_API": 15,
       "QUANT_FACTS": 64,
       "TELEGRAM": 20,
       "AI_ENSEMBLE": 8,
@@ -5809,11 +5807,11 @@
     "top_api_codes": [
       [
         "OPSQ0008",
-        10
+        11
       ]
     ],
     "thread_distribution": {
-      "Thread-2 (monitor)": 31,
+      "Thread-2 (monitor)": 32,
       "Thread-26 (_worker)": 10,
       "Thread-3 (toss_worker)": 10,
       "Thread-28 (_worker)": 10,
@@ -6528,11 +6526,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 0.340143,
-        "lastPrice": 283.7,
+        "lastPrice": 283.27,
         "averagePurchasePrice": 293.699999,
-        "profitLossRate": -3.4,
-        "profitLossAmount": -3.40143,
-        "rsi": 36.0,
+        "profitLossRate": -3.55,
+        "profitLossAmount": -3.547692,
+        "rsi": 35.7,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "매수",
         "ai_score": 82,
@@ -6562,11 +6560,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 97.92,
+        "lastPrice": 97.98,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 11.24,
-        "profitLossAmount": 39.6,
-        "rsi": 64.0,
+        "profitLossRate": 11.31,
+        "profitLossAmount": 39.84,
+        "rsi": 64.3,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 62,
@@ -6596,11 +6594,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 34.87,
+        "lastPrice": 34.8,
         "averagePurchasePrice": 34.3786,
-        "profitLossRate": 1.42,
-        "profitLossAmount": 1.9656,
-        "rsi": 45.8,
+        "profitLossRate": 1.22,
+        "profitLossAmount": 1.6856,
+        "rsi": 45.2,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 62,
