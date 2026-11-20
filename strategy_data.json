@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20 19:27:57",
+  "updated_at": "2026-11-20 19:32:47",
   "battery": "62% (🔋 배터리 사용 중, 18.3°C)",
   "market_intel": {
     "updated_at": "2026-11-20 08:30:19",
@@ -369,16 +369,16 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-20 19:26:54",
-    "checked_ts": 1795170414,
+    "checked_at": "2026-11-20 19:30:42",
+    "checked_ts": 1795170642,
     "date": "2026-11-20",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 8,
-    "toss_bot_sec_ago": 8,
-    "toss_strategy_monitor_sec_ago": 15,
-    "scheduler_heartbeat_sec_ago": 1,
-    "monitor_heartbeat_sec_ago": -1,
+    "main_bot_sec_ago": 2,
+    "toss_bot_sec_ago": 0,
+    "toss_strategy_monitor_sec_ago": 2,
+    "scheduler_heartbeat_sec_ago": 2,
+    "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2467638,
     "market_opened_today": false,
     "opening_confirmed": true,
@@ -6531,9 +6531,9 @@
     }
   },
   "master_plan": {
-    "schema_version": "2.0.0",
-    "plan_name": "토스증권 마스터플랜 v2.0 (비반도체 전환·방어)",
-    "updated_at": "2026-11-20T14:46:00+09:00",
+    "schema_version": "2.1.0",
+    "plan_name": "토스증권 마스터플랜 v2.1 (비반도체 전환 + 잉여금 극저점 스나이퍼)",
+    "updated_at": "2026-11-20T19:05:00+09:00",
     "account_safety": {
       "krw_hard_floor": 500000,
       "daily_max_buy_krw": 1700000,
@@ -6611,6 +6611,32 @@
         "rationale": "반도체 쏠림 완화를 위해 주 1회 20주(49.9만원 이하)씩 총 3회 분할 매수 — 50만원 단일주문 상한 준수 및 폭락장 락다운 해제 후 11/23 이후 3차 마무리",
         "signal_state": "EXECUTED",
         "last_signaled_date": "2026-11-16"
+      },
+      {
+        "step_id": "STEP_3_SEC_DIP_DCA",
+        "name": "잉여금 극저점 스나이퍼 - 삼성전자 동적 분할매수",
+        "market": "KR",
+        "symbol": "A005930",
+        "stock_name": "삼성전자",
+        "side": "BUY",
+        "order_type": "LIMIT",
+        "sizing_mode": "SURPLUS_KRW_DCA",
+        "quantity": 1,
+        "min_quantity": 1,
+        "max_executions": 6,
+        "completed_executions": 0,
+        "cooldown_days": 5,
+        "status": "ACTIVE_CONDITIONAL",
+        "protected": true,
+        "conditions": {
+          "max_price": 168000,
+          "max_order_krw": 500000,
+          "max_rsi": 30.0,
+          "require_intraday_rebound_pct_from_low": 1.2,
+          "require_lockdown_off": true,
+          "require_ai_ensemble": false
+        },
+        "rationale": "원화 비상금(50만원) 및 잔여 비반도체 예약금(S&P500·메리츠·스윙슬롯)을 100% 보호한 뒤 남는 잉여 예수금(월별 추가 입금 자동 반영)으로만 삼성전자 극저점(168,000원 이하 · 14일 RSI<=30 · 장중 저점대비 +1.2% 반등 · 락다운 해제)에서 1회 50만원 상한·5일 쿨다운으로 동적 온주 분할매수"
       },
       {
         "step_id": "STEP_4_MERITZ_SWING_V2",
@@ -6719,6 +6745,18 @@
         "suggested_sell_qty": 5,
         "auto_execute": false,
         "action": "NOTIFY_MANUAL_CONFIRM"
+      }
+    ],
+    "extreme_low_alerts": [
+      {
+        "alert_id": "LOW_WATCH_HYNIX_1",
+        "symbol": "000660",
+        "name": "SK하이닉스",
+        "trigger_price_krw": 974000,
+        "condition": "LTE",
+        "auto_execute": false,
+        "action": "NOTIFY_MANUAL_CONFIRM",
+        "rationale": "SK하이닉스 1주 단가가 단일주문 상한(50만원)을 초과하므로 자동매수하지 않고, 974,000원 이하 극저점 도달 시 수동 검토 알림만 1일 1회 발송"
       }
     ],
     "sgov_reserve_trigger": {
@@ -7102,7 +7140,7 @@
       "execution_trigger": "마스터플랜 완료 후 감시종목 75점 자동 매수 · 비보호 종목 한투식 ATR 손절/50% 반절익절/트레일링 스탑"
     },
     "features": [
-      "마스터플랜 v2.0 비반도체 전환: STEP 2(360750 3차 24,950원)·STEP 4(메리츠 3주 128,000원/RSI<=50)·STEP 5(비반도체 단일 퀀트 슬롯 48만원)·STEP 6(SCHD 4주 $34.50/RSI<=40) 가동, 일반 감시종목 전체 매수 영구 잠금(watchlist_buy_unlocked=false)",
+      "마스터플랜 v2.1 비반도체 전환 + 잉여금 극저점 스나이퍼: STEP 2(360750 3차 24,950원)·STEP 4(메리츠 3주 128,000원/RSI<=50)·STEP 5(비반도체 단일 퀀트 슬롯 48만원)·STEP 6(SCHD 4주 $34.50/RSI<=40) 우선 배정 후, 잉여 원화(월별 입금 자동 반영)로 STEP 3(삼성전자 168,000원 이하·RSI<=30·저점반등+1.2% 동적 온주 스나이퍼, 5일 쿨다운) 가동 · SK하이닉스 974,000원 이하 수동 검토 알림 · 일반 감시종목 전체 매수 영구 잠금(watchlist_buy_unlocked=false)",
       "한투 동일 ATR 익절·손절 엔진: 비보호 종목에 5분 실시간 1차 50% 반절익절, 트레일링 스탑(-2.5%p), ATR 손절선, 급락 AI 악재 손절 적용",
       "영구 매도 제외 보호 가드: 삼성전자(005930)·SK하이닉스(000660) 반도체 구출주, TIGER 미국S&P500(360750) 장기 지수 코어 및 KO·SCHD·SGOV 배당·파킹 코어는 손실·수익과 무관하게 자동 매도 차단 (반등 탈출·SGOV -10% 전환은 수동 확인 알림만 발송)",
       "예수금 50만원 하한선 · 단일주문 50만원 · 일일 170만원 한도: 잔여 원화 50만원 이하 침범·단일/일일 한도 초과·달러 부족·1주 미만 소수점 자동 주문 전면 차단",
@@ -7121,13 +7159,13 @@
         "averagePurchasePrice": 261136.363636,
         "profitLossRate": -30.72,
         "profitLossAmount": -1765200.0,
-        "rsi": 35.7,
+        "rsi": 35.6,
         "investor_summary": "최근(11-20) 순매수: 외인 -2,332,770주, 기관 -1,951,435주 (개인 +4,100,860주) | [5일누적: 외인 -9,751,555주, 기관 +673,704주]",
         "ai_decision": "홀딩 관망",
         "ai_score": 64,
         "ai_action_tip": "현재 22주 보유 중으로 1주 추매 시 평단 인하 폭이 -1.34%(261,136원→257,647원)에 불과하고 국내 계좌 내 반도체 비중이 과다하므로, 원화 예수금(2,476,406원)을 아끼고 홀딩 관망하세요.",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 62점 · 편차 7점 | Groq:gpt-oss-20b(58점 관망), Google:3.5-flash-lite(65점 관망))] [5단계 퀀트 전략 — 섹터 편중 & 물타기 실효성 가드레일 작동] 최근 단기 조정(최근 5거래일 -13.2%)으로 Wilder 14일 RSI(35.7)가 과매도 근접 구간에 진입했으나, 이미 22주를 보유 중이어서 원화 예수금으로 1주를 더 사더라도 평단가 인하 효과가 -1.34%로 미미하며, 국내 계좌 내 반도체 고비중 편중 리스크가 있어 현금 보존 또는 타 업종(금융·배당주) 분산이 훨씬 유리합니다.",
-        "checked_at": "2026-11-20 19:27:35",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 62점 · 편차 7점 | Groq:gpt-oss-20b(58점 관망), Google:3.5-flash-lite(65점 관망))] [5단계 퀀트 전략 — 섹터 편중 & 물타기 실효성 가드레일 작동] 최근 단기 조정(최근 5거래일 -13.2%)으로 Wilder 14일 RSI(35.6)가 과매도 근접 구간에 진입했으나, 이미 22주를 보유 중이어서 원화 예수금으로 1주를 더 사더라도 평단가 인하 효과가 -1.34%로 미미하며, 국내 계좌 내 반도체 고비중 편중 리스크가 있어 현금 보존 또는 타 업종(금융·배당주) 분산이 훨씬 유리합니다.",
+        "checked_at": "2026-11-20 19:31:22",
         "ai_models": [
           {
             "provider": "Google",
@@ -7219,11 +7257,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 0.340143,
-        "lastPrice": 274.43,
+        "lastPrice": 274.58,
         "averagePurchasePrice": 293.699999,
-        "profitLossRate": -6.56,
-        "profitLossAmount": -6.554556,
-        "rsi": 32.1,
+        "profitLossRate": -6.51,
+        "profitLossAmount": -6.503535,
+        "rsi": 32.4,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 74,
@@ -7253,11 +7291,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 97.35,
+        "lastPrice": 97.36,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 10.59,
-        "profitLossAmount": 37.32,
-        "rsi": 59.0,
+        "profitLossRate": 10.61,
+        "profitLossAmount": 37.36,
+        "rsi": 58.9,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 64,
