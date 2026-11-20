@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21 06:04:01",
+  "updated_at": "2026-11-21 06:15:10",
   "battery": "85% (⚡ 충전 중, 21.5°C)",
   "market_intel": {
     "updated_at": "2026-11-20 08:30:19",
@@ -369,15 +369,15 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-21 06:03:09",
-    "checked_ts": 1795208589,
+    "checked_at": "2026-11-21 06:14:09",
+    "checked_ts": 1795209249,
     "date": "2026-11-20",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 13,
-    "toss_bot_sec_ago": 5,
-    "toss_strategy_monitor_sec_ago": 1,
-    "scheduler_heartbeat_sec_ago": 21,
+    "main_bot_sec_ago": 12,
+    "toss_bot_sec_ago": 1,
+    "toss_strategy_monitor_sec_ago": 0,
+    "scheduler_heartbeat_sec_ago": 6,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2467638,
     "market_opened_today": false,
@@ -6648,90 +6648,44 @@
   },
   "flight_recorder": {
     "has_data": true,
-    "file_name": "flight_log_2026-11-20.jsonl",
-    "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-20.jsonl",
-    "period": "2026-11-20 06:27:35 ~ 2026-11-21 06:00:09",
+    "file_name": "flight_log_2026_W44.jsonl",
+    "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026_W44.jsonl",
+    "period": "2026-11-01 06:02:44 ~ 2026-11-01 22:58:18",
     "commit_hash": "v2.0-live",
-    "total_events": 92,
-    "error_count": 1,
-    "warn_count": 17,
+    "total_events": 29,
+    "error_count": 0,
+    "warn_count": 28,
     "level_counts": {
-      "WARN": 17,
-      "INFO": 74,
-      "ERROR": 1
+      "INFO": 1,
+      "WARN": 28
     },
     "categories": {
-      "TELEGRAM": 3,
-      "KIS_API": 1,
-      "QUANT_FACTS": 72,
-      "AI_ENSEMBLE": 13,
-      "QUANT_AUDITOR": 2,
-      "TOSS_API": 1
+      "KIS_API": 2,
+      "QUANT_AUDITOR": 27
     },
-    "top_errors": [
-      {
-        "ts": "2026-11-20 10:07:17",
-        "ver": "v2.0-live",
-        "thread": "Thread-142 (_worker)",
-        "loc": "telegram_interactive_bot.py:1972 in send_telegram_chunked()",
-        "lvl": "ERROR",
-        "cat": "TELEGRAM",
-        "msg": "텔레그램 통신 예외: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)",
-        "error_type": "ReadTimeout",
-        "error_str": "HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)",
-        "raw_snippet": "",
-        "msg_cd": null,
-        "ctx": {
-          "error_type": "ReadTimeout",
-          "error_str": "HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)",
-          "traceback": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py\", line 540, in _make_request\n    response = conn.getresponse()\n  File \"/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connection.py\", line 638, in getresponse\n    httplib_response = super().getresponse()\n  File \"/data/data/com.termux/files/usr/lib/python3.14/http/client.py\", line 1459, in getresponse\n    response.begin()\n    ~~~~~~~~~~~~~~^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/http/client.py\", line 336, in begin\n    version, status, reason = self._read_status()\n                              ~~~~~~~~~~~~~~~~~^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/http/client.py\", line 297, in _read_status\n    line = str(self.fp.readline(_MAXLINE + 1), \"iso-8859-1\")\n               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/socket.py\", line 729, in readinto\n    return self._sock.recv_into(b)\n           ~~~~~~~~~~~~~~~~~~~~^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/ssl.py\", line 1304, in recv_into\n    return self.read(nbytes, buffer)\n           ~~~~~~~~~^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/ssl.py\", line 1138, in read\n    return self._sslobj.read(len, buffer)\n           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^\nTimeoutError: The read operation timed out\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/adapters.py\", line 696, in send\n    resp = conn.urlopen(\n        method=request.method,\n    ...<9 lines>...\n        chunked=chunked,\n    )\n  File \"/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py\", line 847, in urlopen\n    retries = retries.increment(\n        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]\n    )\n  File \"/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/util/retry.py\", line 510, in increment\n    raise reraise(type(error), error, _stacktrace)\n          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/util/util.py\", line 39, in reraise\n    raise value\n  File \"/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py\", line 793, in urlopen\n    response = self._make_request(\n        conn,\n    ...<10 lines>...\n        **response_kw,\n    )\n  File \"/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py\", line 542, in _make_request\n    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)\n    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py\", line 373, in _raise_timeout\n    raise ReadTimeoutError(\n        self, url, f\"Read timed out. (read timeout={timeout_value})\"\n    ) from err\nurllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/data/data/com.termux/files/home/telegram_interactive_bot.py\", line 1958, in send_telegram_chunked\n    res = requests.post(url, json=payload, timeout=timeout)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/api.py\", line 134, in post\n    return request(\"post\", url, data=data, json=json, **kwargs)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/api.py\", line 71, in request\n    return session.request(method=method, url=url, **kwargs)\n           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/sessions.py\", line 651, in request\n    resp = self.send(prep, **send_kwargs)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/sessions.py\", line 784, in send\n    r = adapter.send(request, **kwargs)\n  File \"/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/adapters.py\", line 742, in send\n    raise ReadTimeout(e, request=request)\nrequests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)\n"
-        }
-      }
-    ],
-    "top_code_locations": [
+    "top_errors": [],
+    "top_code_locations": [],
+    "top_api_codes": [
       [
-        "telegram_interactive_bot.py:1972 in send_telegram_chunked()",
+        "HTTP_500",
         1
       ]
     ],
-    "top_api_codes": [],
     "thread_distribution": {
-      "Thread-3 (toss_worker)": 1,
       "Thread-2 (monitor)": 1,
-      "Thread-141 (_worker)": 10,
-      "ThreadPoolExecutor-342_1": 1,
-      "Thread-142 (_worker)": 1,
-      "Thread-5 (_worker)": 10,
-      "ThreadPoolExecutor-10_1": 1,
-      "Thread-7 (_worker)": 10,
-      "ThreadPoolExecutor-35_1": 1,
-      "Thread-9 (_worker)": 10,
-      "Thread-22 (_worker)": 9,
-      "ThreadPoolExecutor-29_0": 1,
-      "Thread-24 (_worker)": 9,
-      "ThreadPoolExecutor-33_0": 2,
-      "ThreadPoolExecutor-34_0": 1,
-      "ThreadPoolExecutor-35_0": 2,
-      "ThreadPoolExecutor-36_0": 1,
-      "ThreadPoolExecutor-40_0": 1,
-      "ThreadPoolExecutor-40_1": 1,
-      "Thread-26 (_worker)": 8,
-      "Thread-5 (start_toss_strategy_monitor)": 1,
-      "Thread-28 (_worker)": 8,
-      "ThreadPoolExecutor-78_0": 1,
-      "MainThread": 1
+      "MainThread": 28
     },
     "stats": {
-      "api_throttles": 0,
-      "api_naver_fallbacks": 0,
-      "ai_429_retries": 1,
-      "ai_backup_fallbacks": 1,
+      "api_throttles": 1,
+      "api_naver_fallbacks": 3,
+      "ai_429_retries": 0,
+      "ai_backup_fallbacks": 0,
       "ai_parse_failures": 0,
-      "quant_overrides": 2,
+      "quant_overrides": 27,
       "order_unfilled_revises": 0,
       "circuit_breaker_trips": 0,
-      "orders_executed": 1,
-      "telegram_delivery_fails": 3
+      "orders_executed": 0,
+      "telegram_delivery_fails": 0
     }
   },
   "master_plan": {
@@ -7476,10 +7430,10 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 0.340143,
-        "lastPrice": 266.98,
+        "lastPrice": 268.13,
         "averagePurchasePrice": 293.699999,
-        "profitLossRate": -9.09,
-        "profitLossAmount": -9.088621,
+        "profitLossRate": -8.7,
+        "profitLossAmount": -8.697457,
         "rsi": 27.9,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
@@ -7510,10 +7464,10 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 96.91,
+        "lastPrice": 96.97,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 10.09,
-        "profitLossAmount": 35.56,
+        "profitLossRate": 10.16,
+        "profitLossAmount": 35.8,
         "rsi": 57.8,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
@@ -7544,10 +7498,10 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 8.0,
-        "lastPrice": 34.03,
+        "lastPrice": 34.01,
         "averagePurchasePrice": 34.3043,
-        "profitLossRate": -0.79,
-        "profitLossAmount": -2.1944,
+        "profitLossRate": -0.85,
+        "profitLossAmount": -2.3544,
         "rsi": 36.9,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
@@ -7636,7 +7590,7 @@
     "flight_recorder": {
       "name": "일일 비행기록장치(Daily Flight Recorder) & 구글 드라이브 자동 동기화",
       "storage_mode": "일자별 자동 분할 및 이벤트 실시간 원자적 기록 (flight_log_YYYY-MM-DD.jsonl)",
-      "active_file": "flight_log_2026-11-20.jsonl",
+      "active_file": "flight_log_2026_W44.jsonl",
       "google_drive_folder": "AI_Stock_Daily_Logs (구글 앱스 스크립트 웹훅 다이렉트 업로드)",
       "auto_purge": "최근 14일 초과 파일 자동 삭제 (공기계 100% 저장공간 보호)",
       "delivery_schedule": "평일 15:40(장마감 결산) & 매일 23:50(자정 전 최종 결산) 구글 드라이브 동기화 및 텔레그램 발송",
