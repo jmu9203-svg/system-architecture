@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22 00:38:03",
+  "updated_at": "2026-11-22 00:49:12",
   "battery": "85% (⚡ 충전 중, 20.5°C)",
   "market_intel": {
     "updated_at": "2026-11-20 08:30:19",
@@ -369,16 +369,16 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-22 00:37:02",
-    "checked_ts": 1795275422,
+    "checked_at": "2026-11-22 00:48:10",
+    "checked_ts": 1795276090,
     "date": "2026-11-21",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 13,
-    "toss_bot_sec_ago": 3,
-    "toss_strategy_monitor_sec_ago": 12,
-    "scheduler_heartbeat_sec_ago": 22,
-    "monitor_heartbeat_sec_ago": 0,
+    "main_bot_sec_ago": 1,
+    "toss_bot_sec_ago": 9,
+    "toss_strategy_monitor_sec_ago": 19,
+    "scheduler_heartbeat_sec_ago": 15,
+    "monitor_heartbeat_sec_ago": -1,
     "opening_fund_eval": 2467638,
     "market_opened_today": false,
     "opening_confirmed": true,
