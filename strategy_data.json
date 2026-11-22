@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 04:48:55",
-  "battery": "63% (🔋 배터리 사용 중, 20.7°C)",
+  "updated_at": "2026-11-23 05:00:21",
+  "battery": "62% (🔋 배터리 사용 중, 20.6°C)",
   "market_intel": {
     "updated_at": "2026-11-20 08:30:19",
     "fx_soxx_info": {
@@ -369,15 +369,15 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-23 04:47:45",
-    "checked_ts": 1795376865,
+    "checked_at": "2026-11-23 04:59:03",
+    "checked_ts": 1795377543,
     "date": "2026-11-22",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 13,
-    "toss_bot_sec_ago": 13,
-    "toss_strategy_monitor_sec_ago": 24,
-    "scheduler_heartbeat_sec_ago": 1,
+    "main_bot_sec_ago": 12,
+    "toss_bot_sec_ago": 11,
+    "toss_strategy_monitor_sec_ago": 12,
+    "scheduler_heartbeat_sec_ago": 4,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2467638,
     "market_opened_today": false,
@@ -401,8 +401,8 @@
     "circuit_breaker_limit_pct": -3.5,
     "circuit_breaker_tripped": false,
     "circuit_breaker_reason": "",
-    "battery_str": "63% (🔋 배터리 사용 중, 20.7°C)",
-    "battery_pct": 63,
+    "battery_str": "62% (🔋 배터리 사용 중, 20.6°C)",
+    "battery_pct": 62,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
       "✅ 실전 계좌 예수금 및 자산 무결성 정상 (실시간 100% 연동)",
@@ -6650,19 +6650,20 @@
     "has_data": true,
     "file_name": "flight_log_2026-11-22.jsonl",
     "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-22.jsonl",
-    "period": "2026-11-22 09:38:27 ~ 2026-11-23 03:29:56",
+    "period": "2026-11-22 09:38:27 ~ 2026-11-23 04:59:01",
     "commit_hash": "v2.0-live",
-    "total_events": 31,
+    "total_events": 32,
     "error_count": 1,
     "warn_count": 30,
     "level_counts": {
       "WARN": 30,
-      "ERROR": 1
+      "ERROR": 1,
+      "INFO": 1
     },
     "categories": {
       "TELEGRAM": 3,
       "AI_ENSEMBLE": 3,
-      "KIS_API": 25
+      "KIS_API": 26
     },
     "top_errors": [
       {
@@ -6702,7 +6703,7 @@
       "ThreadPoolExecutor-176_0": 1,
       "ThreadPoolExecutor-189_0": 1,
       "ThreadPoolExecutor-192_0": 1,
-      "Thread-2 (monitor)": 25
+      "Thread-2 (monitor)": 26
     },
     "stats": {
       "api_throttles": 0,
@@ -7439,8 +7440,8 @@
         "ai_decision": "홀딩 관망",
         "ai_score": 64,
         "ai_action_tip": "현재 22주 보유 중으로 1주 추매 시 평단 인하 폭이 -1.34%(261,136원→257,647원)에 불과하고 국내 계좌 내 반도체 비중이 과다하므로, 원화 예수금(2,476,406원)을 아끼고 홀딩 관망하세요.",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 64점 · 편차 3점 | Groq:gpt-oss-120b(62점 관망), Google:3.5-flash-lite(65점 관망))] [5단계 퀀트 전략 — 섹터 편중 & 물타기 실효성 가드레일 작동] 최근 단기 조정(최근 5거래일 -13.2%)으로 Wilder 14일 RSI(35.6)가 과매도 근접 구간에 진입했으나, 이미 22주를 보유 중이어서 원화 예수금으로 1주를 더 사더라도 평단가 인하 효과가 -1.34%로 미미하며, 국내 계좌 내 반도체 고비중 편중 리스크가 있어 현금 보존 또는 타 업종(금융·배당주) 분산이 훨씬 유리합니다.",
-        "checked_at": "2026-11-23 00:52:39",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 62점 · 편차 7점 | Groq:gpt-oss-120b(58점 관망), Google:3.5-flash-lite(65점 관망))] [5단계 퀀트 전략 — 섹터 편중 & 물타기 실효성 가드레일 작동] 최근 단기 조정(최근 5거래일 -13.2%)으로 Wilder 14일 RSI(35.6)가 과매도 근접 구간에 진입했으나, 이미 22주를 보유 중이어서 원화 예수금으로 1주를 더 사더라도 평단가 인하 효과가 -1.34%로 미미하며, 국내 계좌 내 반도체 고비중 편중 리스크가 있어 현금 보존 또는 타 업종(금융·배당주) 분산이 훨씬 유리합니다.",
+        "checked_at": "2026-11-23 04:59:43",
         "ai_models": [
           {
             "provider": "Google",
@@ -7451,7 +7452,7 @@
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 62,
+            "score": 58,
             "decision": "관망"
           }
         ],
@@ -7507,8 +7508,8 @@
         "ai_decision": "홀딩 관망",
         "ai_score": 64,
         "ai_action_tip": "현재 40주 보유 중으로 1주 추매 시 평단 인하 폭이 -0.13%(24,990원→24,957원)에 불과하고 이미 충분한 수량을 보유하고 있으므로, 원화 예수금(2,476,406원)을 아끼고 홀딩 관망하세요.",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 64점 · 편차 3점 | Google:3.5-flash-lite(65점 관망), Groq:gpt-oss-120b(62점 관망))] [5단계 퀀트 전략 — 섹터 편중 & 물타기 실효성 가드레일 작동] 최근 단기 조정(최근 5거래일 -5.8%)으로 Wilder 14일 RSI(27.2)가 과매도 근접 구간에 진입했으나, 이미 40주를 보유 중이어서 원화 예수금으로 1주를 더 사더라도 평단가 인하 효과가 -0.13%로 미미하며, 단일 종목 과다 편중 리스크가 있어 현금 보존 또는 타 업종(금융·배당주) 분산이 훨씬 유리합니다.",
-        "checked_at": "2026-11-23 00:52:45",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 60점 · 편차 10점 | Google:3.5-flash-lite(65점 관망), Groq:gpt-oss-120b(55점 관망))] [5단계 퀀트 전략 — 섹터 편중 & 물타기 실효성 가드레일 작동] 최근 단기 조정(최근 5거래일 -5.8%)으로 Wilder 14일 RSI(27.2)가 과매도 근접 구간에 진입했으나, 이미 40주를 보유 중이어서 원화 예수금으로 1주를 더 사더라도 평단가 인하 효과가 -0.13%로 미미하며, 단일 종목 과다 편중 리스크가 있어 현금 보존 또는 타 업종(금융·배당주) 분산이 훨씬 유리합니다.",
+        "checked_at": "2026-11-23 04:59:50",
         "ai_models": [
           {
             "provider": "Google",
@@ -7519,7 +7520,7 @@
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 62,
+            "score": 55,
             "decision": "관망"
           }
         ],
