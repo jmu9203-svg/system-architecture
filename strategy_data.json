@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23 02:56:45",
+  "updated_at": "2026-11-23 03:08:02",
   "battery": "66% (🔋 배터리 사용 중, 20.6°C)",
   "market_intel": {
     "updated_at": "2026-11-20 08:30:19",
@@ -369,15 +369,15 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-23 02:55:44",
-    "checked_ts": 1795370144,
+    "checked_at": "2026-11-23 03:07:03",
+    "checked_ts": 1795370823,
     "date": "2026-11-22",
     "overall_status": "⚠️ 주의 항목 1건 감지 (한투 잔고 조회 일시 지연 (balance_ok=False - 서킷브레이커 오발동 방어 중))",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 12,
-    "toss_bot_sec_ago": 12,
-    "toss_strategy_monitor_sec_ago": 24,
-    "scheduler_heartbeat_sec_ago": 6,
+    "main_bot_sec_ago": 11,
+    "toss_bot_sec_ago": 11,
+    "toss_strategy_monitor_sec_ago": 13,
+    "scheduler_heartbeat_sec_ago": 9,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2467638,
     "market_opened_today": false,
@@ -6652,19 +6652,19 @@
     "has_data": true,
     "file_name": "flight_log_2026-11-22.jsonl",
     "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-22.jsonl",
-    "period": "2026-11-22 09:38:27 ~ 2026-11-23 02:55:44",
+    "period": "2026-11-22 09:38:27 ~ 2026-11-23 03:07:03",
     "commit_hash": "v2.0-live",
-    "total_events": 16,
+    "total_events": 21,
     "error_count": 1,
-    "warn_count": 15,
+    "warn_count": 20,
     "level_counts": {
-      "WARN": 15,
+      "WARN": 20,
       "ERROR": 1
     },
     "categories": {
       "TELEGRAM": 3,
       "AI_ENSEMBLE": 3,
-      "KIS_API": 10
+      "KIS_API": 15
     },
     "top_errors": [
       {
@@ -6695,7 +6695,7 @@
     "top_api_codes": [
       [
         "APBK1350",
-        10
+        15
       ]
     ],
     "thread_distribution": {
@@ -6704,7 +6704,7 @@
       "ThreadPoolExecutor-176_0": 1,
       "ThreadPoolExecutor-189_0": 1,
       "ThreadPoolExecutor-192_0": 1,
-      "Thread-2 (monitor)": 10
+      "Thread-2 (monitor)": 15
     },
     "stats": {
       "api_throttles": 0,
