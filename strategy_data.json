@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 03:19:38",
-  "battery": "66% (🔋 배터리 사용 중, 20.6°C)",
+  "updated_at": "2026-11-23 03:30:56",
+  "battery": "65% (🔋 배터리 사용 중, 20.8°C)",
   "market_intel": {
     "updated_at": "2026-11-20 08:30:19",
     "fx_soxx_info": {
@@ -369,15 +369,15 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-23 03:18:20",
-    "checked_ts": 1795371500,
+    "checked_at": "2026-11-23 03:29:56",
+    "checked_ts": 1795372196,
     "date": "2026-11-22",
     "overall_status": "⚠️ 주의 항목 1건 감지 (한투 잔고 조회 일시 지연 (balance_ok=False - 서킷브레이커 오발동 방어 중))",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
     "main_bot_sec_ago": 9,
     "toss_bot_sec_ago": 9,
-    "toss_strategy_monitor_sec_ago": 0,
-    "scheduler_heartbeat_sec_ago": 11,
+    "toss_strategy_monitor_sec_ago": 5,
+    "scheduler_heartbeat_sec_ago": 7,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2467638,
     "market_opened_today": false,
@@ -401,8 +401,8 @@
     "circuit_breaker_limit_pct": -3.5,
     "circuit_breaker_tripped": false,
     "circuit_breaker_reason": "",
-    "battery_str": "66% (🔋 배터리 사용 중, 20.6°C)",
-    "battery_pct": 66,
+    "battery_str": "65% (🔋 배터리 사용 중, 20.8°C)",
+    "battery_pct": 65,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
       "⚠️ 한투 잔고 조회 일시 지연 (balance_ok=False - 서킷브레이커 오발동 방어 중)",
@@ -6652,19 +6652,19 @@
     "has_data": true,
     "file_name": "flight_log_2026-11-22.jsonl",
     "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-22.jsonl",
-    "period": "2026-11-22 09:38:27 ~ 2026-11-23 03:18:20",
+    "period": "2026-11-22 09:38:27 ~ 2026-11-23 03:29:56",
     "commit_hash": "v2.0-live",
-    "total_events": 26,
+    "total_events": 31,
     "error_count": 1,
-    "warn_count": 25,
+    "warn_count": 30,
     "level_counts": {
-      "WARN": 25,
+      "WARN": 30,
       "ERROR": 1
     },
     "categories": {
       "TELEGRAM": 3,
       "AI_ENSEMBLE": 3,
-      "KIS_API": 20
+      "KIS_API": 25
     },
     "top_errors": [
       {
@@ -6695,7 +6695,7 @@
     "top_api_codes": [
       [
         "APBK1350",
-        20
+        25
       ]
     ],
     "thread_distribution": {
@@ -6704,7 +6704,7 @@
       "ThreadPoolExecutor-176_0": 1,
       "ThreadPoolExecutor-189_0": 1,
       "ThreadPoolExecutor-192_0": 1,
-      "Thread-2 (monitor)": 20
+      "Thread-2 (monitor)": 25
     },
     "stats": {
       "api_throttles": 0,
