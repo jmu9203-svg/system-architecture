@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24 09:28:33",
+  "updated_at": "2026-11-24 09:36:25",
   "battery": "84% (🔋 배터리 사용 중, 20.5°C)",
   "market_intel": {
     "updated_at": "2026-11-24 08:30:31",
@@ -336,15 +336,15 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-24 09:27:17",
-    "checked_ts": 1795480037,
+    "checked_at": "2026-11-24 09:34:48",
+    "checked_ts": 1795480488,
     "date": "2026-11-24",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 12,
-    "toss_bot_sec_ago": 2,
+    "main_bot_sec_ago": 1,
+    "toss_bot_sec_ago": 6,
     "toss_strategy_monitor_sec_ago": 8,
-    "scheduler_heartbeat_sec_ago": 15,
+    "scheduler_heartbeat_sec_ago": 16,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2470065,
     "market_opened_today": true,
@@ -355,9 +355,9 @@
     "mdd_pct": -70.41,
     "fund_return_pct": -1.2,
     "kospi200_base_price": 87886,
-    "kospi200_cur_price": 78300,
-    "kospi200_return_pct": -10.91,
-    "alpha_pct": 9.71,
+    "kospi200_cur_price": 78200,
+    "kospi200_return_pct": -11.02,
+    "alpha_pct": 9.82,
     "sector_map": {},
     "sector_summary_str": "보유 섹터 없음 (현금 100%)",
     "max_per_sector_krw": 988026,
@@ -7182,40 +7182,32 @@
   },
   "flight_recorder": {
     "has_data": true,
-    "file_name": "flight_log_2026_W44.jsonl",
-    "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026_W44.jsonl",
-    "period": "2026-11-01 06:02:44 ~ 2026-11-01 22:58:18",
+    "file_name": "flight_log_2026-11-24.jsonl",
+    "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-24.jsonl",
+    "period": "2026-11-24 09:36:00 ~ 2026-11-24 09:36:00",
     "commit_hash": "v2.0-live",
-    "total_events": 29,
+    "total_events": 1,
     "error_count": 0,
-    "warn_count": 28,
+    "warn_count": 1,
     "level_counts": {
-      "INFO": 1,
-      "WARN": 28
+      "WARN": 1
     },
     "categories": {
-      "KIS_API": 2,
-      "QUANT_AUDITOR": 27
+      "AI_ENSEMBLE": 1
     },
     "top_errors": [],
     "top_code_locations": [],
-    "top_api_codes": [
-      [
-        "HTTP_500",
-        1
-      ]
-    ],
+    "top_api_codes": [],
     "thread_distribution": {
-      "Thread-2 (monitor)": 1,
-      "MainThread": 28
+      "ThreadPoolExecutor-47_0": 1
     },
     "stats": {
-      "api_throttles": 1,
-      "api_naver_fallbacks": 3,
+      "api_throttles": 0,
+      "api_naver_fallbacks": 0,
       "ai_429_retries": 0,
       "ai_backup_fallbacks": 0,
       "ai_parse_failures": 0,
-      "quant_overrides": 27,
+      "quant_overrides": 0,
       "order_unfilled_revises": 0,
       "circuit_breaker_trips": 0,
       "orders_executed": 0,
@@ -7958,29 +7950,29 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 0.340143,
-        "lastPrice": 284.29,
+        "lastPrice": 284.36,
         "averagePurchasePrice": 293.699999,
-        "profitLossRate": -3.2,
-        "profitLossAmount": -3.200746,
+        "profitLossRate": -3.18,
+        "profitLossAmount": -3.176936,
         "rsi": 41.2,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
-        "ai_score": 74,
-        "ai_action_tip": "단기 20일선 하회 및 음봉 조정 국면이나, 소수점 적립 매수 여력을 활용한 분할 관점의 홀딩 및 관망 유지",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [1:1 의견 분립 (안전 관망 채택)] (평균 74점 · 편차 12점 | Google:flash-lite-latest(68점 관망), Groq:gpt-oss-120b(80점 매수))] 성장 주기형 자산인 알파벳 A(GOOGL)는 14일 RSI 42.0으로 과매도 근접 구간이나 단기 하방 압력이 존재하여 추가 모니터링이 필요합니다. 토스증권의 원화 자동 환전 및 소수점 적립 매수 제도가 완벽히 지원되므로 급격한 손절보다는 추세 안정화 여부를 확인하며 홀딩하는 것이 타당합니다.",
-        "checked_at": "2026-11-24 05:35:53",
+        "ai_score": 70,
+        "ai_action_tip": "현재 보유 중인 0.340143주를 유지하고 추가 매수는 보류합니다.",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [1:1 의견 분립 (안전 관망 채택)] (평균 70점 · 편차 16점 | Groq:gpt-oss-120b(62점 관망), Google:flash-lite-latest(78점 매수))] 알파벳 A는 성장주이며 보호종목이 아니지만 RSI 41.2로 과매도 수준에 도달하지 않았고, 현재 가격이 20일 이동평균선(287.73) 아래에 위치해 단기 조정 흐름이 지속되고 있습니다. 현금 여력은 충분하지만, 외국인·기관 수급이 뚜렷하게 유입된 신호가 없으며 기술적 신호가 강력히 매수 쪽을 가리키지 않아 관망이 적절합니다.",
+        "checked_at": "2026-11-24 09:35:54",
         "ai_models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 68,
-            "decision": "관망"
+            "score": 78,
+            "decision": "매수"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 80,
-            "decision": "매수"
+            "score": 62,
+            "decision": "관망"
           }
         ],
         "consensus": "1:1 의견 분립 (안전 관망 채택)",
@@ -7992,10 +7984,10 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 96.0,
+        "lastPrice": 96.01,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 9.06,
-        "profitLossAmount": 31.92,
+        "profitLossRate": 9.07,
+        "profitLossAmount": 31.96,
         "rsi": 52.8,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
@@ -8030,7 +8022,7 @@
         "averagePurchasePrice": 34.3043,
         "profitLossRate": 0.33,
         "profitLossAmount": 0.9256,
-        "rsi": 43.1,
+        "rsi": 43.3,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 74,
@@ -8118,7 +8110,7 @@
     "flight_recorder": {
       "name": "일일 비행기록장치(Daily Flight Recorder) & 구글 드라이브 자동 동기화",
       "storage_mode": "일자별 자동 분할 및 이벤트 실시간 원자적 기록 (flight_log_YYYY-MM-DD.jsonl)",
-      "active_file": "flight_log_2026_W44.jsonl",
+      "active_file": "flight_log_2026-11-24.jsonl",
       "google_drive_folder": "AI_Stock_Daily_Logs (구글 앱스 스크립트 웹훅 다이렉트 업로드)",
       "auto_purge": "최근 14일 초과 파일 자동 삭제 (공기계 100% 저장공간 보호)",
       "delivery_schedule": "평일 15:40(장마감 결산) & 매일 23:50(자정 전 최종 결산) 구글 드라이브 동기화 및 텔레그램 발송",
