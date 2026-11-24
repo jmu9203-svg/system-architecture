@@ -1,34 +1,28 @@
 {
-  "updated_at": "2026-11-25 08:22:43",
+  "updated_at": "2026-11-25 08:32:02",
   "battery": "85% (⚡ 충전 중, 21.5°C)",
   "market_intel": {
-    "updated_at": "2026-11-24 08:30:31",
+    "updated_at": "2026-11-25 08:30:26",
     "fx_soxx_info": {
-      "usd_krw": "1,342.50",
-      "usd_krw_change": "0.00",
-      "usd_krw_rate": "0.00",
-      "soxx_price": "$139.70",
-      "soxx_pct": "-0.37%",
-      "summary": "원/달러 환율: 1,342.50원 (전일대비 0.00원 / 0.00%) | 미 필라델피아 반도체(SOXX): $139.70 (-0.37%)"
+      "usd_krw": "1,341.50",
+      "usd_krw_change": "-1.00",
+      "usd_krw_rate": "-0.07",
+      "soxx_price": "$128.82",
+      "soxx_pct": "",
+      "summary": "원/달러 환율: 1,341.50원 (전일대비 -1.00원 / -0.07%) | 미 필라델피아 반도체(SOXX): $128.82 ()"
     },
     "fred_macro": {
       "dgs10": {
         "value": "4.92",
-        "date": "2026-11-20",
+        "date": "2026-11-23",
         "name": "10년물 국채금리",
         "series_id": "DGS10",
-        "chg_3m": 0.25,
-        "trend_3m": "금리 오르는 중"
-      },
-      "dgs2": {
-        "value": "4.63",
-        "date": "2026-11-20",
-        "name": "2년물 국채금리",
-        "series_id": "DGS2"
+        "chg_3m": 0.19,
+        "trend_3m": "금리 횡보"
       },
       "t10y2y": {
-        "value": "0.29",
-        "date": "2026-11-23",
+        "value": "0.28",
+        "date": "2026-11-24",
         "name": "장단기 금리차(10Y-2Y)",
         "series_id": "T10Y2Y"
       },
@@ -48,12 +42,12 @@
       },
       "macro_3m_regime": {
         "dgs10_cur": 4.92,
-        "dgs10_date": "2026-11-20",
-        "dgs10_prev_3m": 4.67,
-        "dgs10_prev_date": "2026-08-27",
-        "dgs10_chg_3m": 0.25,
-        "dgs10_trend": "금리 오르는 중",
-        "rate_rising": true,
+        "dgs10_date": "2026-11-23",
+        "dgs10_prev_3m": 4.73,
+        "dgs10_prev_date": "2026-08-28",
+        "dgs10_chg_3m": 0.19,
+        "dgs10_trend": "금리 횡보",
+        "rate_rising": false,
         "fx_cur": 1342.41,
         "fx_date": "2026-11-20",
         "fx_prev_3m": 1381.25,
@@ -61,12 +55,12 @@
         "fx_chg_3m_pct": -2.81,
         "fx_trend": "환율 보합",
         "fx_weak": false,
-        "macro_summary": "미10Y 4.92%(+0.25%p/3M, 금리 오르는 중) | 원/달러 1,342.4원(-2.8%/3M, 환율 보합)"
+        "macro_summary": "미10Y 4.92%(+0.19%p/3M, 금리 횡보) | 원/달러 1,342.4원(-2.8%/3M, 환율 보합)"
       },
-      "summary": "미 국채10Y 4.92% | 연준 기준금리 3.88% | 장단기차 0.29%p | 원/달러 1342.41원 | 3개월 추세: 미10Y 4.92%(+0.25%p/3M, 금리 오르는 중) | 원/달러 1,342.4원(-2.8%/3M, 환율 보합)"
+      "summary": "미 국채10Y 4.92% | 연준 기준금리 3.88% | 장단기차 0.28%p | 원/달러 1342.41원 | 3개월 추세: 미10Y 4.92%(+0.19%p/3M, 금리 횡보) | 원/달러 1,342.4원(-2.8%/3M, 환율 보합)"
     },
     "last_rotation": {
-      "rotated_at": "2026-11-24 08:30:31",
+      "rotated_at": "2026-11-25 08:30:26",
       "locked": true,
       "strategy_mode": "S2_BREAKOUT_MA10",
       "holdings_only_fixed": true,
@@ -189,16 +183,16 @@
       "added": [],
       "removed": []
     },
-    "us_bigtech_summary": "향후 7일 내 나스닥 공식 빅테크 실적발표 일정은 없으나, 유가 100달러 돌파 및 AI 투자 부담 여파로 뉴욕증시 변동성이 확대된 상태입니다. SOXX 지수 하락 및 매크로 불확실성에 연동된 보수적 리스크 관리가 필요합니다.",
+    "us_bigtech_summary": "향후 7일 내 나스닥 공식 빅테크 실적발표 일정은 없으나, 미·중·러 정상회담 및 젠슨 황 의회 출석 등 첨단 기술 이벤트와 매크로 변동성에 주목해야 합니다. 필라델피아 반도체 지수($128.82) 및 환율 움직임과 연동하여 보수적인 리스크 관리가 필요합니다.",
     "us_official_calendar": [],
-    "kr_macro_summary": "원/달러 환율은 1,342.50원으로 보합세를 보이고 있으나, 코스피 5,100선 등락 속 외국인 매도세 진정 여부가 지수 반등의 핵심 관건입니다. 국내 주요 대기업들은 3분기 실적 발표를 마무리하고 DART 공시 및 주주환원 정책 중심으로 수급이 재편되고 있습니다.",
-    "earnings_alert_level": "CAUTION",
+    "kr_macro_summary": "원/달러 환율은 1,341.50원(-1.00원, -0.07%)으로 하락 안정세를 보이고 있으며, 주요 감시 종목들은 이미 3분기 분기보고서 공시를 완료한 상태입니다. 특이 매크로 뉴스가 부재한 가운데 외국인 수급과 개별 기업의 주주환원 및 자사주 처분 공시를 중심으로 한 장중 대응이 요구됩니다.",
+    "earnings_alert_level": "NORMAL",
     "stock_notes": {
       "005930": {
         "name": "삼성전자",
         "earnings_imminent": false,
-        "earnings_status": "2026-11-16 분기보고서 발표 완료 (IR 일정 미등록)",
-        "memo": "외국인 매도세 진정 여부와 실적 바닥 확인 후 분할 매수 관점 접근.",
+        "earnings_status": "2026-11-16 3분기 분기보고서 공시 완료 (IR 일정 미등록)",
+        "memo": "최근 1.5조원 규모의 개인 매수세 유입 및 임원 소유상황 변동 공시를 참고하되, HBM4 및 4분기 실적 기대감에 따른 수급 변동성에 유의하여 분할 접근하세요.",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
@@ -207,8 +201,8 @@
       "000660": {
         "name": "SK하이닉스",
         "earnings_imminent": false,
-        "earnings_status": "2026년 3분기 실적 발표 완료 (IR 일정 미등록)",
-        "memo": "HBM 모멘텀 유효하나 지수 급락 연동 변동성에 대비해 추격 매수 자제.",
+        "earnings_status": "2026-11-20 타법인주식취득결정 및 임원 소유상황 보고 공시 완료 (IR 일정 미등록)",
+        "memo": "증권가 목표주가 상향 조정 및 HBM 기반 실적 기대감이 유효하나 최근 주가 변동성이 크므로 외국인 현물 수급 방향성을 확인하며 대응하세요.",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
@@ -217,8 +211,8 @@
       "005380": {
         "name": "현대차",
         "earnings_imminent": false,
-        "earnings_status": "2026-11-16 분기보고서 발표 완료 (IR 일정 미등록)",
-        "memo": "본업 실적 개선세와 로보틱스 모멘텀 체크하며 저점 분할 매수 대응.",
+        "earnings_status": "2026-11-16 3분기 분기보고서 및 11월 24일 자기주식처분결과 공시 완료 (IR 일정 미등록)",
+        "memo": "자사주 처분 결과 및 로보틱스 모멘텀과 본업 판매 반등 여부를 점검하며 지지선 부근에서 분할 매수 관점으로 접근하세요.",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
@@ -227,18 +221,18 @@
       "105560": {
         "name": "KB금융",
         "earnings_imminent": false,
-        "earnings_status": "2026년 3분기 실적 발표 완료 (IR 일정 미등록)",
-        "memo": "압도적 자본력과 주주환원 모멘텀을 바탕으로 변동성 장세 방어주 역할 집중.",
+        "earnings_status": "2026-11-23 상각형조건부자본증권 발행결정 및 대표이사 변경 공시 완료 (IR 일정 미등록)",
+        "memo": "압도적인 자본력과 양호한 3분기 실적 기반의 방어력이 돋보이나, 지주사 전반의 수급 흐름을 체크하며 안정적으로 트레이딩하세요.",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
-        "consensus_target_price": "218,684"
+        "consensus_target_price": "218,716"
       },
       "035420": {
         "name": "NAVER",
         "earnings_imminent": false,
-        "earnings_status": "2026-11-13 분기보고서 발표 완료 (IR 일정 미등록)",
-        "memo": "AI 성장성 기반 기회 요인과 기관 수급 유입 여부 확인 후 진입.",
+        "earnings_status": "2026-11-13 3분기 분기보고서 공시 완료 (IR 일정 미등록)",
+        "memo": "AI 서비스 및 외형 성장에 대한 기대감이 유효하므로 AI 관련 뉴스 플로우와 연동하여 저점 매수 기회를 포착하세요.",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
@@ -247,8 +241,8 @@
       "267260": {
         "name": "HD현대일렉트릭",
         "earnings_imminent": false,
-        "earnings_status": "2026-11-16 분기보고서 발표 완료 (IR 일정 미등록)",
-        "memo": "데이터센터 향 전력기기 모멘텀 유효하나 단기 수급 이탈 시 관망.",
+        "earnings_status": "2026-11-24 임원 소유상황 보고 공시 완료 (IR 일정 미등록)",
+        "memo": "데이터센터향 전력기기 모멘텀과 환율 부담 요인을 동시에 감안하며, 단기 급등락 시 밴드 하단 중심의 탄력적 대응을 수행하세요.",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
@@ -257,8 +251,8 @@
       "091160": {
         "name": "KODEX 반도체",
         "earnings_imminent": false,
-        "earnings_status": "미 필라델피아 반도체(SOXX) 및 국내 반도체 대형주 실적 연동",
-        "memo": "SOXX 지수 약세(-0.37%) 반영하여 장중 외국인 반도체 수급 반전 전까지 추격 매수 금지.",
+        "earnings_status": "국내 주요 반도체 기업 실적 시즌 종료 후 박스권 등락 연동",
+        "memo": "필라델피아 반도체 지수($128.82) 및 국내 대형 반도체(삼성전자·SK하이닉스)의 수급 탄력성을 실시간으로 추종하여 진입하세요.",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null
