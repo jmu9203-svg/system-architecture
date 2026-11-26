@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-26 15:35:52",
+  "updated_at": "2026-11-26 15:47:25",
   "battery": "72% (🔋 배터리 사용 중, 19.0°C)",
   "market_intel": {
     "updated_at": "2026-11-26 08:30:11",
@@ -336,15 +336,15 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-26 15:34:28",
-    "checked_ts": 1795674868,
+    "checked_at": "2026-11-26 15:46:01",
+    "checked_ts": 1795675561,
     "date": "2026-11-26",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 1,
-    "toss_bot_sec_ago": 5,
-    "toss_strategy_monitor_sec_ago": 5,
-    "scheduler_heartbeat_sec_ago": 14,
+    "main_bot_sec_ago": 3,
+    "toss_bot_sec_ago": 7,
+    "toss_strategy_monitor_sec_ago": 8,
+    "scheduler_heartbeat_sec_ago": 7,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2469650,
     "market_opened_today": false,
@@ -8505,7 +8505,7 @@
         "profitLossRate": -2.13,
         "profitLossAmount": -31500.0,
         "rsi": 38.9,
-        "investor_summary": "최근(11-25) 순매수: 외인 +266,603주, 기관 -1,153,352주 (개인 +882,468주) | [5일누적: 외인 +573,211주, 기관 -4,174,488주]",
+        "investor_summary": "최근(11-26) 순매수: 외인 -63,863주, 기관 -373,226주 (개인 +429,450주) | [5일누적: 외인 +323,406주, 기관 -4,114,406주]",
         "ai_decision": "홀딩 관망",
         "ai_score": 64,
         "ai_action_tip": "현재 60주 보유 중으로 1주 추매 시 평단 인하 폭이 -0.04%(24,535원→24,526원)에 불과하고 이미 충분한 수량을 보유하고 있으므로, 원화 예수금(6,606,436원)을 아끼고 홀딩 관망하세요.",
