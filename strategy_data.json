@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27 06:04:00",
+  "updated_at": "2026-11-27 06:15:29",
   "battery": "85% (⚡ 충전 중, 21.1°C)",
   "market_intel": {
     "updated_at": "2026-11-26 08:30:11",
@@ -336,15 +336,15 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-27 06:02:40",
-    "checked_ts": 1795726960,
+    "checked_at": "2026-11-27 06:14:08",
+    "checked_ts": 1795727648,
     "date": "2026-11-26",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 14,
-    "toss_bot_sec_ago": 13,
-    "toss_strategy_monitor_sec_ago": 9,
-    "scheduler_heartbeat_sec_ago": 2,
+    "main_bot_sec_ago": 11,
+    "toss_bot_sec_ago": 9,
+    "toss_strategy_monitor_sec_ago": 6,
+    "scheduler_heartbeat_sec_ago": 14,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2469650,
     "market_opened_today": false,
@@ -8144,67 +8144,44 @@
   },
   "flight_recorder": {
     "has_data": true,
-    "file_name": "flight_log_2026-11-26.jsonl",
-    "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-26.jsonl",
-    "period": "2026-11-26 10:00:07 ~ 2026-11-27 05:31:26",
+    "file_name": "flight_log_2026_W44.jsonl",
+    "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026_W44.jsonl",
+    "period": "2026-11-01 06:02:44 ~ 2026-11-01 22:58:18",
     "commit_hash": "v2.0-live",
-    "total_events": 125,
+    "total_events": 29,
     "error_count": 0,
-    "warn_count": 20,
+    "warn_count": 28,
     "level_counts": {
-      "INFO": 105,
-      "WARN": 20
+      "INFO": 1,
+      "WARN": 28
     },
     "categories": {
-      "QUANT_FACTS": 104,
-      "AI_ENSEMBLE": 18,
-      "TELEGRAM": 2,
-      "KIS_API": 1
+      "KIS_API": 2,
+      "QUANT_AUDITOR": 27
     },
     "top_errors": [],
     "top_code_locations": [],
-    "top_api_codes": [],
+    "top_api_codes": [
+      [
+        "HTTP_500",
+        1
+      ]
+    ],
     "thread_distribution": {
-      "Thread-117 (_worker)": 18,
-      "ThreadPoolExecutor-376_1": 1,
-      "ThreadPoolExecutor-380_1": 1,
-      "ThreadPoolExecutor-383_1": 1,
-      "ThreadPoolExecutor-385_1": 1,
-      "ThreadPoolExecutor-388_1": 1,
-      "ThreadPoolExecutor-391_1": 1,
-      "MainThread": 1,
-      "Thread-4 (toss_worker)": 1,
-      "Thread-119 (_worker)": 18,
-      "ThreadPoolExecutor-404_1": 1,
-      "Thread-121 (_worker)": 18,
-      "ThreadPoolExecutor-442_0": 1,
-      "ThreadPoolExecutor-446_0": 1,
-      "ThreadPoolExecutor-447_1": 1,
-      "Thread-123 (_worker)": 19,
-      "ThreadPoolExecutor-479_1": 1,
-      "ThreadPoolExecutor-483_1": 1,
-      "ThreadPoolExecutor-486_0": 1,
-      "ThreadPoolExecutor-486_1": 1,
-      "ThreadPoolExecutor-490_0": 1,
-      "Thread-3 (monitor)": 1,
-      "Thread-165 (_worker)": 8,
-      "Thread-167 (_worker)": 8,
-      "ThreadPoolExecutor-551_1": 1,
-      "ThreadPoolExecutor-557_1": 1,
-      "Thread-169 (_worker)": 8,
-      "Thread-171 (_worker)": 8
+      "Thread-2 (monitor)": 1,
+      "MainThread": 28
     },
     "stats": {
-      "api_throttles": 0,
-      "api_naver_fallbacks": 4,
-      "ai_429_retries": 9,
-      "ai_backup_fallbacks": 9,
+      "api_throttles": 1,
+      "api_naver_fallbacks": 3,
+      "ai_429_retries": 0,
+      "ai_backup_fallbacks": 0,
       "ai_parse_failures": 0,
-      "quant_overrides": 0,
+      "quant_overrides": 27,
       "order_unfilled_revises": 0,
       "circuit_breaker_trips": 0,
       "orders_executed": 0,
-      "telegram_delivery_fails": 2
+      "telegram_delivery_fails": 0
     }
   },
   "master_plan": {
@@ -8879,7 +8856,7 @@
     "flight_recorder": {
       "name": "일일 비행기록장치(Daily Flight Recorder) & 구글 드라이브 자동 동기화",
       "storage_mode": "일자별 자동 분할 및 이벤트 실시간 원자적 기록 (flight_log_YYYY-MM-DD.jsonl)",
-      "active_file": "flight_log_2026-11-26.jsonl",
+      "active_file": "flight_log_2026_W44.jsonl",
       "google_drive_folder": "AI_Stock_Daily_Logs (구글 앱스 스크립트 웹훅 다이렉트 업로드)",
       "auto_purge": "최근 14일 초과 파일 자동 삭제 (공기계 100% 저장공간 보호)",
       "delivery_schedule": "평일 15:40(장마감 결산) & 매일 23:50(자정 전 최종 결산) 구글 드라이브 동기화 및 텔레그램 발송",
