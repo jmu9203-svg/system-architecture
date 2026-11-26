@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-26 20:01:58",
-  "battery": "85% (⚡ 충전 중, 22.2°C)",
+  "updated_at": "2026-11-26 20:13:28",
+  "battery": "85% (⚡ 충전 중, 21.1°C)",
   "market_intel": {
     "updated_at": "2026-11-26 08:30:11",
     "fx_soxx_info": {
@@ -336,15 +336,15 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-26 20:00:31",
-    "checked_ts": 1795690831,
+    "checked_at": "2026-11-26 20:12:06",
+    "checked_ts": 1795691526,
     "date": "2026-11-26",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 3,
-    "toss_bot_sec_ago": 12,
-    "toss_strategy_monitor_sec_ago": 6,
-    "scheduler_heartbeat_sec_ago": 1,
+    "main_bot_sec_ago": 6,
+    "toss_bot_sec_ago": 11,
+    "toss_strategy_monitor_sec_ago": 11,
+    "scheduler_heartbeat_sec_ago": 21,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2469650,
     "market_opened_today": false,
@@ -368,7 +368,7 @@
     "circuit_breaker_limit_pct": -3.5,
     "circuit_breaker_tripped": false,
     "circuit_breaker_reason": "",
-    "battery_str": "85% (⚡ 충전 중, 22.2°C)",
+    "battery_str": "85% (⚡ 충전 중, 21.1°C)",
     "battery_pct": 85,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
@@ -7974,19 +7974,20 @@
     "has_data": true,
     "file_name": "flight_log_2026-11-26.jsonl",
     "file_path": "/data/data/com.termux/files/home/logs/flight_log_2026-11-26.jsonl",
-    "period": "2026-11-26 10:00:07 ~ 2026-11-26 14:40:09",
+    "period": "2026-11-26 10:00:07 ~ 2026-11-26 20:12:04",
     "commit_hash": "v2.0-live",
-    "total_events": 90,
+    "total_events": 91,
     "error_count": 0,
     "warn_count": 18,
     "level_counts": {
-      "INFO": 72,
+      "INFO": 73,
       "WARN": 18
     },
     "categories": {
       "QUANT_FACTS": 72,
       "AI_ENSEMBLE": 16,
-      "TELEGRAM": 2
+      "TELEGRAM": 2,
+      "KIS_API": 1
     },
     "top_errors": [],
     "top_code_locations": [],
@@ -8012,7 +8013,8 @@
       "ThreadPoolExecutor-483_1": 1,
       "ThreadPoolExecutor-486_0": 1,
       "ThreadPoolExecutor-486_1": 1,
-      "ThreadPoolExecutor-490_0": 1
+      "ThreadPoolExecutor-490_0": 1,
+      "Thread-3 (monitor)": 1
     },
     "stats": {
       "api_throttles": 0,
@@ -8505,7 +8507,7 @@
         "profitLossRate": -2.13,
         "profitLossAmount": -31500.0,
         "rsi": 38.9,
-        "investor_summary": "최근(11-26) 순매수: 외인 -63,863주, 기관 -373,226주 (개인 +429,450주) | [5일누적: 외인 +323,406주, 기관 -4,114,406주]",
+        "investor_summary": "최근(11-26) 순매수: 외인 -63,863주, 기관 -374,297주 (개인 +430,521주) | [5일누적: 외인 +323,406주, 기관 -4,115,477주]",
         "ai_decision": "홀딩 관망",
         "ai_score": 64,
         "ai_action_tip": "현재 60주 보유 중으로 1주 추매 시 평단 인하 폭이 -0.04%(24,535원→24,526원)에 불과하고 이미 충분한 수량을 보유하고 있으므로, 원화 예수금(6,606,436원)을 아끼고 홀딩 관망하세요.",
