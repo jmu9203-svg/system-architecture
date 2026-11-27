@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-27 16:21:40",
-  "battery": "68% (🔋 배터리 사용 중, 20.0°C)",
+  "updated_at": "2026-11-27 16:32:16",
+  "battery": "67% (🔋 배터리 사용 중, 20.0°C)",
   "market_intel": {
     "updated_at": "2026-11-27 08:30:21",
     "fx_soxx_info": {
@@ -336,15 +336,15 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-27 16:20:17",
-    "checked_ts": 1795764017,
+    "checked_at": "2026-11-27 16:30:51",
+    "checked_ts": 1795764651,
     "date": "2026-11-27",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 13,
-    "toss_bot_sec_ago": 6,
-    "toss_strategy_monitor_sec_ago": 4,
-    "scheduler_heartbeat_sec_ago": 20,
+    "main_bot_sec_ago": 2,
+    "toss_bot_sec_ago": 0,
+    "toss_strategy_monitor_sec_ago": 2,
+    "scheduler_heartbeat_sec_ago": 2,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2469466,
     "market_opened_today": false,
@@ -368,8 +368,8 @@
     "circuit_breaker_limit_pct": -3.5,
     "circuit_breaker_tripped": false,
     "circuit_breaker_reason": "",
-    "battery_str": "68% (🔋 배터리 사용 중, 20.0°C)",
-    "battery_pct": 68,
+    "battery_str": "67% (🔋 배터리 사용 중, 20.0°C)",
+    "battery_pct": 67,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
       "✅ 실전 계좌 예수금 및 자산 무결성 정상 (실시간 100% 연동)",
@@ -8267,8 +8267,11 @@
       "usd_hard_floor": 150.0,
       "daily_max_buy_krw": 1500000,
       "single_order_max_krw": 500000,
+      "single_order_max_usd": 500.0,
       "max_per_order_krw": 500000,
       "target_order_krw": 500000,
+      "enable_atr_volatility_sizing": true,
+      "smart_ai_fast_reject": true,
       "max_per_stock_krw": 1000000,
       "max_per_sector_krw": 1500000,
       "daily_max_stop_loss_count": 2,
@@ -8492,9 +8495,13 @@
   ],
   "kis_system": {
     "name": "한투 실전 AI 추세돌파 스윙 봇 · 안 A (10154692)",
-    "mode": "안 A (KR_UNIFIED 18종 국내주 10+국/미 ETF 8 · 3년 백테스트 +26.29%/MDD -6.28%/PF 1.80 | 50만 원×최대 4종목 · 현금 20% 쿠션 · MA20≥MA60 · 20일 신고가 돌파 · 거래량 110%↑ · RSI 50~74 · MA20 이탈/고점+5%후-2.5%p 전량청산/-4.0% 칼손절)",
+    "mode": "안 A (KR_UNIFIED 18종 국내주 10+국/미 ETF 8 · 전원 50만 원 이하 · 모닝 하이브리드 로테이션 · 1Y +13.88%/PF 2.44 · 3Y +43.27% | 50만 원×최대 4종목 · 현금 20% · MA20≥MA60 · 20일 신고가 · 거래량 110%↑ · RSI 50~74 · ATR 적응형 트레일링·역비중 / -4.0% 칼손절)",
     "strategy_mode": "S2_BREAKOUT_MA10",
     "lock_watch_list": true,
+    "hybrid_dynamic_rotation": true,
+    "enable_atr_adaptive_trailing": true,
+    "enable_atr_volatility_sizing": true,
+    "smart_ai_fast_reject": true,
     "use_half_tp": false,
     "enable_ma10_break_exit": true,
     "trend_exit_ma_period": 20,
@@ -8620,8 +8627,8 @@
         "name": "삼성전자"
       },
       {
-        "code": "000660",
-        "name": "SK하이닉스"
+        "code": "138040",
+        "name": "메리츠금융지주"
       },
       {
         "code": "005380",
@@ -8644,8 +8651,8 @@
         "name": "LG전자"
       },
       {
-        "code": "012450",
-        "name": "한화에어로스페이스"
+        "code": "000270",
+        "name": "기아"
       },
       {
         "code": "267260",
@@ -8691,6 +8698,9 @@
     "usd_hard_floor": 150.0,
     "daily_max_buy_krw": 1500000,
     "single_order_max_krw": 500000,
+    "single_order_max_usd": 500.0,
+    "enable_atr_volatility_sizing": true,
+    "smart_ai_fast_reject": true,
     "max_per_sector_krw": 1500000,
     "daily_max_stop_loss_count": 2,
     "manual_only_tickers": [
@@ -8715,7 +8725,7 @@
       "volatility_guard": "정량 ≥ 75 · 2사 AI ≥ 75 · 편차 ≤ 15 · MA20≥MA60 · 미국 30선 20일 돌파(거래량 110%↑·RSI 50~72) · 중대악재/논리모순 감사 통과 우량주만 온주 자동매수 / ATR 손절(-4.5%~-6.5%) · 전량 트레일링(+6.0%~+10.5%/-2.5%p) · MA20 조기청산",
       "intent_parser": "한·미 우량주 자율 매매 v3.1 (한투 동일 퀀트+AI 기준) + 텔레그램 자연어 2중확인 수동주문 병행",
       "safety_guard": "삼전(005930)·하닉(000660) 주문엔진 3중 하드잠금 · 섹터 150만 상한 · 일일 손절 2회 서킷브레이커 · 360750·KO·SCHD·SGOV 영구보호 · 한투 계좌 100% 독립 격리",
-      "execution_trigger": "한·미 정규장 4회 자율 세션(1회 ≤ 50만 원) + 2분 급락/트레일링/MA20 추세이탈 실시간 집행"
+      "execution_trigger": "한·미 정규장 4회 자율 세션(국내 ≤ 50만 원 / 미국 온주 ≤ $500 · ATR 역비중 스케일링 · 휴장일·Fast-Reject 자동 스킵) + 2분 급락/트레일링/MA20 추세이탈 실시간 집행"
     },
     "features": [
       "기존 저가·물타기 마스터플랜 전면 폐지 및 한·미 우량주 자율 매매(Option B v3.1) 고도화: 국내 100선 MA20≥MA60 정배열 + 미국 30선 20일 신고가 추세돌파(거래량 110%↑·양봉·RSI 50~72) · 2사 AI 교차검증(≥ 75점 PASS)을 모두 통과한 우량주만 온주(1주 이상) 자율 매수",
@@ -8766,11 +8776,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 0.340143,
-        "lastPrice": 280.05,
+        "lastPrice": 280.12,
         "averagePurchasePrice": 293.699999,
-        "profitLossRate": -4.64,
-        "profitLossAmount": -4.642952,
-        "rsi": 41.8,
+        "profitLossRate": -4.62,
+        "profitLossAmount": -4.619142,
+        "rsi": 41.9,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 72,
@@ -8801,11 +8811,11 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 97.17,
+        "lastPrice": 97.27,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 10.39,
-        "profitLossAmount": 36.6,
-        "rsi": 56.8,
+        "profitLossRate": 10.5,
+        "profitLossAmount": 37.0,
+        "rsi": 57.3,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 65,
