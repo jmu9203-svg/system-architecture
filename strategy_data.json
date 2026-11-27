@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-27 18:27:33",
-  "battery": "63% (🔋 배터리 사용 중, 19.9°C)",
+  "updated_at": "2026-11-27 18:39:34",
+  "battery": "62% (🔋 배터리 사용 중, 20.0°C)",
   "market_intel": {
     "updated_at": "2026-11-27 08:30:21",
     "fx_soxx_info": {
@@ -336,15 +336,15 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-27 18:26:08",
-    "checked_ts": 1795771568,
+    "checked_at": "2026-11-27 18:37:42",
+    "checked_ts": 1795772262,
     "date": "2026-11-27",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
     "main_bot_sec_ago": 6,
-    "toss_bot_sec_ago": 2,
-    "toss_strategy_monitor_sec_ago": 18,
-    "scheduler_heartbeat_sec_ago": 18,
+    "toss_bot_sec_ago": 3,
+    "toss_strategy_monitor_sec_ago": 22,
+    "scheduler_heartbeat_sec_ago": 12,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2469466,
     "market_opened_today": false,
@@ -368,8 +368,8 @@
     "circuit_breaker_limit_pct": -3.5,
     "circuit_breaker_tripped": false,
     "circuit_breaker_reason": "",
-    "battery_str": "63% (🔋 배터리 사용 중, 19.9°C)",
-    "battery_pct": 63,
+    "battery_str": "62% (🔋 배터리 사용 중, 20.0°C)",
+    "battery_pct": 62,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
       "✅ 실전 계좌 예수금 및 자산 무결성 정상 (실시간 100% 연동)",
@@ -8776,32 +8776,32 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 0.340143,
-        "lastPrice": 281.0,
+        "lastPrice": 280.95,
         "averagePurchasePrice": 293.699999,
-        "profitLossRate": -4.32,
-        "profitLossAmount": -4.319816,
+        "profitLossRate": -4.34,
+        "profitLossAmount": -4.336824,
         "rsi": 42.4,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
-        "ai_score": 72,
-        "ai_action_tip": "현재 보유 0.34주 포지션을 유지하고, RSI 30 이하 확정 과매도 신호 또는 MA20($282.92) 회복 확인 전까지 추가 매수 없이 관망합니다.",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [1:1 의견 분립 (안전 관망 채택)] (평균 72점 · 편차 27점 | Google:3.5-flash-lite(85점 매수), Groq:qwen/qwen3.8-27b(58점 관망))] Wilder 14일 RSI 36.9로 과매도 근접 구간이나 아직 30 이하 확정 신호가 아니며, MA20 하회로 단기 조정 구간에 진입해 추세가 훼손된 상태입니다. 원화 예수금으로 소수점 매수가 가능하나, 젠슨 황 의회 출석 및 AI 투자 부담 등 거시적 변동성 리스크가 존재하므로 무리한 추매보다는 바닥 확인을 우선시해야 합니다.",
-        "checked_at": "2026-11-27 14:38:14",
+        "ai_score": 66,
+        "ai_action_tip": "현재 포지션을 유지하고, 추가 매수는 신중히 검토하세요.",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 66점 · 편차 1점 | Groq:gpt-oss-120b(66점 관망), Google:3.5-flash-lite(65점 관망))] 알파벳 A는 성장주이며 현재 보유 달러와 원화 예수금으로 추가 매수가 가능하지만 RSI 42.4는 과매도 수준에 미치지 않아 즉각적인 추매 근거가 약합니다. 최근 5일 상승세와 MA20 하회 조정 구간을 고려해 관망 전략이 적절합니다.",
+        "checked_at": "2026-11-27 18:38:33",
         "ai_models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 85,
-            "decision": "매수"
+            "score": 65,
+            "decision": "관망"
           },
           {
             "provider": "Groq",
-            "model": "Groq Qwen",
-            "score": 58,
+            "model": "Groq 120B",
+            "score": 66,
             "decision": "관망"
           }
         ],
-        "consensus": "1:1 의견 분립 (안전 관망 채택)",
+        "consensus": "2:0 관망 우세",
         "auto_sell_protected": false,
         "manual_only_locked": false
       },
@@ -8811,28 +8811,28 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 4.0,
-        "lastPrice": 96.78,
+        "lastPrice": 96.84,
         "averagePurchasePrice": 88.02,
-        "profitLossRate": 9.95,
-        "profitLossAmount": 35.04,
-        "rsi": 55.0,
+        "profitLossRate": 10.02,
+        "profitLossAmount": 35.28,
+        "rsi": 55.3,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
         "ai_score": 65,
-        "ai_action_tip": "배당 안전판으로서 물량을 절대 매도하지 말고 홀딩하며, 향후 RSI 40~50 아래로 조정 시 달러 예수금으로 추가 매수를 준비하세요.",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 65점 · 편차 0점 | Google:3.5-flash-lite(65점 관망), Groq:qwen/qwen3.8-27b(65점 관망))] 코카콜라(KO)는 포트폴리오의 장기 배당 방어주(보호 종목)로 단기 RSI 과열이나 소폭 수익을 이유로 매도해선 안 됩니다. 현재 20일선을 상회하며 완만한 단기 상승세를 보이고 있으나, 추가 매수보다는 안전판 유지 및 배당 수령을 위한 홀딩 관망이 최적입니다.",
-        "checked_at": "2026-11-27 14:38:21",
+        "ai_action_tip": "배당 안전판 보호 종목으로 매도 없이 홀딩을 유지하며, 추후 RSI가 40~50 구간으로 하락 시 달러 예수금으로 추매를 고려하세요.",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 65점 · 편차 6점 | Google:3.5-flash-lite(68점 관망), Groq:gpt-oss-120b(62점 관망))] 코카콜라(KO)는 포트폴리오의 배당 안전판이자 장기 코어 자산으로 단기 수익이나 RSI 과열을 이유로 매도하지 않는 보호 종목입니다. 현재 Wilder 14일 RSI 55.3 및 완만한 단기 상승추세를 보이며 추가 매수 여력은 있으나, 조정 구간에서의 분할 매집 전략이 유리하므로 홀딩 관망을 유지합니다.",
+        "checked_at": "2026-11-27 18:38:38",
         "ai_models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 65,
+            "score": 68,
             "decision": "관망"
           },
           {
             "provider": "Groq",
-            "model": "Groq Qwen",
-            "score": 65,
+            "model": "Groq 120B",
+            "score": 62,
             "decision": "관망"
           }
         ],
@@ -8846,17 +8846,17 @@
         "marketCountry": "US",
         "currency": "USD",
         "quantity": 8.0,
-        "lastPrice": 35.55,
+        "lastPrice": 35.56,
         "averagePurchasePrice": 34.3043,
-        "profitLossRate": 3.63,
-        "profitLossAmount": 9.9656,
-        "rsi": 56.0,
+        "profitLossRate": 3.66,
+        "profitLossAmount": 10.0456,
+        "rsi": 56.2,
         "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
         "ai_decision": "홀딩 관망",
-        "ai_score": 65,
-        "ai_action_tip": "배당 안전판으로서 포트폴리오에 지속 보유하며 추후 단기 조정 시 추가 매수 고려",
-        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 65점 · 편차 0점 | Google:3.5-flash-lite(65점 관망), Groq:qwen/qwen3.8-27b(65점 관망))] 본 종목은 포트폴리오 배당 안전판(장기 코어 자산)으로 보호되므로 소폭 수익이나 단기 RSI 과열을 이유로 매도하지 않습니다. 14일 RSI 55.0과 20일 이동평균선을 상회하는 안정적 흐름을 보이고 있으므로 현재는 홀딩 관망을 유지합니다.",
-        "checked_at": "2026-11-27 14:38:36",
+        "ai_score": 64,
+        "ai_action_tip": "현재 포지션 유지 및 장기 배당 재투자 관점의 홀딩 관망",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 64점 · 편차 3점 | Google:3.5-flash-lite(65점 관망), Groq:gpt-oss-120b(62점 관망))] 본 종목은 포트폴리오의 장기 배당 안전판 보호 자산으로, 소폭 수익이나 단기 RSI 과열(현재 56.2)을 이유로 매도하지 않습니다. 현재 달러 예수금으로 추가 매수가 가능하지만, 추후 증시 조정으로 RSI가 40~50 아래로 내려올 때까지 홀딩하며 배당 수익을 확보하는 전략을 유지합니다.",
+        "checked_at": "2026-11-27 18:38:51",
         "ai_models": [
           {
             "provider": "Google",
@@ -8866,8 +8866,8 @@
           },
           {
             "provider": "Groq",
-            "model": "Groq Qwen",
-            "score": 65,
+            "model": "Groq 120B",
+            "score": 62,
             "decision": "관망"
           }
         ],
