@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-27 11:38:19",
-  "battery": "79% (🔋 배터리 사용 중, 20.2°C)",
+  "updated_at": "2026-11-27 11:46:04",
+  "battery": "79% (🔋 배터리 사용 중, 20.3°C)",
   "market_intel": {
     "updated_at": "2026-11-27 08:30:21",
     "fx_soxx_info": {
@@ -336,15 +336,15 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-27 11:37:22",
-    "checked_ts": 1795747042,
+    "checked_at": "2026-11-27 11:44:34",
+    "checked_ts": 1795747474,
     "date": "2026-11-27",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 9,
-    "toss_bot_sec_ago": 13,
-    "toss_strategy_monitor_sec_ago": 17,
-    "scheduler_heartbeat_sec_ago": 4,
+    "main_bot_sec_ago": 10,
+    "toss_bot_sec_ago": 0,
+    "toss_strategy_monitor_sec_ago": 29,
+    "scheduler_heartbeat_sec_ago": 11,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2469466,
     "market_opened_today": true,
@@ -355,9 +355,9 @@
     "mdd_pct": -70.41,
     "fund_return_pct": -1.22,
     "kospi200_base_price": 87886,
-    "kospi200_cur_price": 75685,
-    "kospi200_return_pct": -13.88,
-    "alpha_pct": 12.66,
+    "kospi200_cur_price": 75665,
+    "kospi200_return_pct": -13.91,
+    "alpha_pct": 12.69,
     "sector_map": {},
     "sector_summary_str": "보유 섹터 없음 (현금 100%)",
     "max_per_sector_krw": 987786,
@@ -368,9 +368,9 @@
     "circuit_breaker_limit_pct": -3.5,
     "circuit_breaker_tripped": false,
     "circuit_breaker_reason": "",
-    "battery_str": "79% (🔋 배터리 사용 중, 20.2°C)",
+    "battery_str": "79% (🔋 배터리 사용 중, 20.3°C)",
     "battery_pct": 79,
-    "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
+    "api_status": "한투 API: 🟢 정상 | 토스 API: 🟡 파일 점검 필요 | Gemini AI: 🟢 정상",
     "integrity_checks": [
       "✅ 실전 계좌 예수금 및 자산 무결성 정상 (실시간 100% 연동)",
       "✅ 손절/익절 가드레일 누락 착오 0건"
@@ -8669,8 +8669,8 @@
     "name": "토스증권 한·미 우량주 AI 완전 자율 매매 v3.1 (삼전·하닉 수동전용 · 배당/지수코어 보호)",
     "account_no": "17601069723",
     "mode": "한·미 우량주 AI 완전 자율 매매 v3.1 가동 중 (국내 100선 MA20≥MA60·미국 30선 20일 추세돌파 + 2사 AI 교차검증 · 전량 트레일링 · MA20(-1% KR/-1.5% 4일 US) 조기청산 · 삼전/하닉 수동전용 · 360750·KO·SCHD·SGOV 영구보호)",
-    "krw_cash": 0,
-    "usd_cash": 0.0,
+    "krw_cash": 6450952,
+    "usd_cash": 1495.23,
     "schedule": "국내(10:05·11:35·13:35·14:35) & 미국(23:40·01:35·03:35·05:35) 정기 자율 매매 + 장중 2분 실시간 ATR 손절 · 전량 트레일링(-2.5%p) · MA20(-1% KR/-1.5% US) 추세이탈 조기청산",
     "auto_trade": true,
     "use_half_tp": false,
@@ -8713,8 +8713,184 @@
       "4중 계좌 방어선 & 슬롯 제한: 원화 100만 원·달러 $150 안전 하한선, 1회 50만 원/종목당 100만 원/당일 150만 원 한도, 국내 최대 5종·미국 최대 4종 분산, 손절 후 3거래일 쿨다운 및 09:00~09:59 매수 차단",
       "전량 트레일링 + MA20 추세이탈 조기 청산: 비보호 보유주는 강화된 ATR 손익비(-4.5%/+6.0% ~ -6.5%/+10.5%) · 100% 전량 트레일링(-2.5%p) · MA20 조기청산(KR 2거래일↑/-1.0% · US 4거래일↑/-1.5%) · 2사 AI 매도(≥ 70점)로 2분마다 관리되며 한투(KIS 10154692-01) 안 A 스윙 트랙과는 100% 독립 운용"
     ],
-    "holdings_count": 0,
-    "holdings": []
+    "holdings_count": 5,
+    "holdings": [
+      {
+        "symbol": "360750",
+        "name": "TIGER 미국S&P500",
+        "marketCountry": "KR",
+        "currency": "KRW",
+        "quantity": 60.0,
+        "lastPrice": 24205.0,
+        "averagePurchasePrice": 24535.0,
+        "profitLossRate": -1.34,
+        "profitLossAmount": -19800.0,
+        "rsi": 42.4,
+        "investor_summary": "최근(11/26 마감) 순매수: 외국인 -62,538주, 기관 -374,297주(5일연속매도⚠️) | [5일누적 합계: 외인 +337,052주, 기관 -4,115,477주]",
+        "ai_decision": "홀딩 관망",
+        "ai_score": 64,
+        "ai_action_tip": "현재 60주 보유 중으로 1주 추매 시 평단 인하 폭이 -0.02%(24,535원→24,529원)에 불과하고 이미 충분한 수량을 보유하고 있으므로, 원화 예수금(6,450,952원)을 아끼고 홀딩 관망하세요.",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 65점 · 편차 0점 | Groq:qwen/qwen3.8-27b(65점 관망), Google:3.5-flash-lite(65점 관망))] [5단계 퀀트 전략 — 섹터 편중 & 물타기 실효성 가드레일 작동] 최근 단기 조정(최근 5거래일 +2.3%)으로 Wilder 14일 RSI(42.4)가 조정 구간에 진입했으나, 이미 60주를 보유 중이어서 원화 예수금으로 1주를 더 사더라도 평단가 인하 효과가 -0.02%로 미미하며, 단일 종목 과다 편중 리스크가 있어 현금 보존 또는 타 업종(금융·배당주) 분산이 훨씬 유리합니다.",
+        "checked_at": "2026-11-27 11:45:25",
+        "ai_models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 65,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq Qwen",
+            "score": 65,
+            "decision": "관망"
+          }
+        ],
+        "consensus": "2:0 관망 우세",
+        "auto_sell_protected": true,
+        "manual_only_locked": false
+      },
+      {
+        "symbol": "GOOGL",
+        "name": "알파벳 A",
+        "marketCountry": "US",
+        "currency": "USD",
+        "quantity": 0.340143,
+        "lastPrice": 278.85,
+        "averagePurchasePrice": 293.699999,
+        "profitLossRate": -5.05,
+        "profitLossAmount": -5.051124,
+        "rsi": 41.0,
+        "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
+        "ai_decision": "홀딩 관망",
+        "ai_score": 68,
+        "ai_action_tip": "현재 소수점 포지션(0.34주)은 손절 기준에 미달하므로 유지하되, MA20 하회 및 RSI 41의 중립 구간에서 추가 매수는 보류합니다.",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [1:1 의견 분립 (안전 관망 채택)] (평균 68점 · 편차 20점 | Groq:qwen/qwen3.8-27b(58점 관망), Google:3.5-flash-lite(78점 매수))] RSI 41은 과매도(30 이하)가 아닌 중립 약세 구간이며, MA20 하회와 함께 단기 조정세가 지속되고 있어 추매 타이밍이 아닙니다. 보유 수량이 극소(0.34주)라 손절의 실익이 없으므로, 환율 변동성 및 AI 섹터 불확실성 해소 후 기술적 반등 확인 시 재진입을 검토하는 것이 합리적입니다.",
+        "checked_at": "2026-11-27 11:45:30",
+        "ai_models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 78,
+            "decision": "매수"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq Qwen",
+            "score": 58,
+            "decision": "관망"
+          }
+        ],
+        "consensus": "1:1 의견 분립 (안전 관망 채택)",
+        "auto_sell_protected": false,
+        "manual_only_locked": false
+      },
+      {
+        "symbol": "KO",
+        "name": "코카콜라",
+        "marketCountry": "US",
+        "currency": "USD",
+        "quantity": 4.0,
+        "lastPrice": 97.32,
+        "averagePurchasePrice": 88.02,
+        "profitLossRate": 10.56,
+        "profitLossAmount": 37.2,
+        "rsi": 58.8,
+        "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
+        "ai_decision": "홀딩 관망",
+        "ai_score": 66,
+        "ai_action_tip": "현재 4주 포지션을 그대로 유지하며 배당 수령 및 장기 안전판 역할을 수행하세요.",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 66점 · 편차 3점 | Groq:qwen/qwen3.8-27b(65점 관망), Google:3.5-flash-lite(68점 관망))] 코카콜라(KO)는 포트폴리오의 배당 안전판이자 장기 코어 자산으로, 단기 RSI 58.8의 소폭 상승이나 +10.56%의 수익을 이유로 매도하는 것은 매매 비용과 배당 손실만 초래하므로 절대 금지됩니다. 현재 기술적 지표가 과매도 상태가 아니며, 향후 RSI가 40~50 아래로 조정될 때 달러 예수금을 활용해 추매하는 것이 올바른 전략입니다.",
+        "checked_at": "2026-11-27 11:45:35",
+        "ai_models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 68,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq Qwen",
+            "score": 65,
+            "decision": "관망"
+          }
+        ],
+        "consensus": "2:0 관망 우세",
+        "auto_sell_protected": true,
+        "manual_only_locked": false
+      },
+      {
+        "symbol": "SCHD",
+        "name": "SCHD",
+        "marketCountry": "US",
+        "currency": "USD",
+        "quantity": 8.0,
+        "lastPrice": 35.42,
+        "averagePurchasePrice": 34.3043,
+        "profitLossRate": 3.25,
+        "profitLossAmount": 8.9256,
+        "rsi": 54.8,
+        "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
+        "ai_decision": "홀딩 관망",
+        "ai_score": 65,
+        "ai_action_tip": "현재 8주 포지션을 그대로 유지하며 배당 수령 및 장기 코어 자산으로서의 안전판 역할을 수행하세요.",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 65점 · 편차 0점 | Groq:qwen/qwen3.8-27b(65점 관망), Google:3.5-flash-lite(65점 관망))] SCHD는 포트폴리오의 배당 안전판이자 장기 코어 자산으로, 소폭 수익(+3.25%)이나 RSI 54.8의 중립적 수준을 이유로 매도할 이유가 없으며, 추후 RSI 40~50 이하 조정 시 달러 예수금으로 추매하는 것이 최적 전략입니다. 현재 기술적 지표(20일선 상회, +3.57% 5일 상승)는 건전하지만, 추가 매수보다는 기존 포지션의 배당 수익 극대화에 집중하는 것이 수수료 및 환전 스프레드 손실을 방지하는 최선입니다.",
+        "checked_at": "2026-11-27 11:45:40",
+        "ai_models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 65,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq Qwen",
+            "score": 65,
+            "decision": "관망"
+          }
+        ],
+        "consensus": "2:0 관망 우세",
+        "auto_sell_protected": true,
+        "manual_only_locked": false
+      },
+      {
+        "symbol": "SGOV",
+        "name": "SGOV",
+        "marketCountry": "US",
+        "currency": "USD",
+        "quantity": 5.0,
+        "lastPrice": 100.71,
+        "averagePurchasePrice": 100.62,
+        "profitLossRate": 0.08,
+        "profitLossAmount": 0.45,
+        "rsi": 68.1,
+        "investor_summary": "미국 증시 종목 (글로벌 ETF/배당·대형주 수급 적용)",
+        "ai_decision": "홀딩 관망",
+        "ai_score": 68,
+        "ai_action_tip": "월초 배당락 직후 국채 이자 재누적 구간 — 기존 파킹 포지션은 든든히 홀딩 유지하되 유휴 달러 예수금 파킹 시에만 활용하세요.",
+        "ai_reason": "[🤖 이종 2사 듀얼 앙상블(Google+Groq) 교차검증 [2:0 관망 우세] (평균 66점 · 편차 2점 | Google:3.5-flash-lite(67점 관망), Groq:qwen/qwen3.8-27b(65점 관망))] SGOV의 14일 RSI(68.1)는 주가 하락이나 기술적 과매도 신호가 아니라, 매월 초 배당락(-$0.32)으로 월배당금이 지급된 직후 다시 초단기 미국채 이자가 하루 $0.01~$0.02씩 계단식으로 누적되기 시작하는 정상적인 금리 사이클입니다. 연 4~5% 달러 월배당 이자를 안정적으로 수령하면서 향후 빅테크·배당주 조정 시 투입할 대기 자금(Dry Powder)으로서 든든하게 홀딩 관망합니다.",
+        "checked_at": "2026-11-27 11:45:44",
+        "ai_models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 67,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq Qwen",
+            "score": 65,
+            "decision": "관망"
+          }
+        ],
+        "consensus": "2:0 관망 우세",
+        "auto_sell_protected": true,
+        "manual_only_locked": false
+      }
+    ]
   },
   "infrastructure": {
     "hardware": "삼성 갤럭시 S10 (안드로이드 Termux 리눅스 상시 구동 홈서버)",
