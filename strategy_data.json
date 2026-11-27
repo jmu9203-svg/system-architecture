@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-27 09:51:37",
-  "battery": "84% (🔋 배터리 사용 중, 21.4°C)",
+  "updated_at": "2026-11-27 09:59:27",
+  "battery": "83% (🔋 배터리 사용 중, 20.8°C)",
   "market_intel": {
     "updated_at": "2026-11-27 08:30:21",
     "fx_soxx_info": {
@@ -336,15 +336,15 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-27 09:50:25",
-    "checked_ts": 1795740625,
+    "checked_at": "2026-11-27 09:57:53",
+    "checked_ts": 1795741073,
     "date": "2026-11-27",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 3,
-    "toss_bot_sec_ago": 6,
-    "toss_strategy_monitor_sec_ago": 21,
-    "scheduler_heartbeat_sec_ago": 12,
+    "main_bot_sec_ago": 6,
+    "toss_bot_sec_ago": 9,
+    "toss_strategy_monitor_sec_ago": 19,
+    "scheduler_heartbeat_sec_ago": 10,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2469466,
     "market_opened_today": true,
@@ -355,9 +355,9 @@
     "mdd_pct": -70.41,
     "fund_return_pct": -1.22,
     "kospi200_base_price": 87886,
-    "kospi200_cur_price": 73900,
-    "kospi200_return_pct": -15.91,
-    "alpha_pct": 14.69,
+    "kospi200_cur_price": 73730,
+    "kospi200_return_pct": -16.11,
+    "alpha_pct": 14.89,
     "sector_map": {},
     "sector_summary_str": "보유 섹터 없음 (현금 100%)",
     "max_per_sector_krw": 987786,
@@ -368,8 +368,8 @@
     "circuit_breaker_limit_pct": -3.5,
     "circuit_breaker_tripped": false,
     "circuit_breaker_reason": "",
-    "battery_str": "84% (🔋 배터리 사용 중, 21.4°C)",
-    "battery_pct": 84,
+    "battery_str": "83% (🔋 배터리 사용 중, 20.8°C)",
+    "battery_pct": 83,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
     "integrity_checks": [
       "✅ 실전 계좌 예수금 및 자산 무결성 정상 (실시간 100% 연동)",
@@ -8603,7 +8603,7 @@
   },
   "toss_system": {
     "name": "토스증권 한·미 우량주 AI 완전 자율 매매 v3.1 (삼전·하닉 수동전용 · 배당/지수코어 보호)",
-    "account_no": "",
+    "account_no": "17601069723",
     "mode": "한·미 우량주 AI 완전 자율 매매 v3.1 가동 중 (국내 100선 MA20≥MA60·미국 30선 20일 추세돌파 + 2사 AI 교차검증 · 전량 트레일링 · MA20(-1% KR/-1.5% 4일 US) 조기청산 · 삼전/하닉 수동전용 · 360750·KO·SCHD·SGOV 영구보호)",
     "krw_cash": 6606436,
     "usd_cash": 1495.23,
