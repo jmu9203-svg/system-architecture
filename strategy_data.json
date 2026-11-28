@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-28 23:55:54",
+  "updated_at": "2026-11-29 00:07:19",
   "battery": "85% (⚡ 충전 중, 21.4°C)",
   "market_intel": {
     "updated_at": "2026-11-27 08:30:21",
@@ -336,15 +336,15 @@
     }
   },
   "watchdog": {
-    "checked_at": "2026-11-28 23:54:34",
-    "checked_ts": 1795877674,
+    "checked_at": "2026-11-29 00:06:02",
+    "checked_ts": 1795878362,
     "date": "2026-11-28",
     "overall_status": "🟢 정상 가동 중 (착오 0건 · 자체 감시 통과)",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
-    "main_bot_sec_ago": 14,
-    "toss_bot_sec_ago": 14,
-    "toss_strategy_monitor_sec_ago": 28,
-    "scheduler_heartbeat_sec_ago": 13,
+    "main_bot_sec_ago": 9,
+    "toss_bot_sec_ago": 9,
+    "toss_strategy_monitor_sec_ago": 25,
+    "scheduler_heartbeat_sec_ago": 0,
     "monitor_heartbeat_sec_ago": 0,
     "opening_fund_eval": 2469466,
     "market_opened_today": false,
@@ -370,7 +370,7 @@
     "circuit_breaker_reason": "",
     "battery_str": "85% (⚡ 충전 중, 21.4°C)",
     "battery_pct": 85,
-    "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
+    "api_status": "한투 API: 🟢 정상 | 토스 API: 🟡 대기 | Gemini AI: 🟢 정상",
     "integrity_checks": [
       "✅ 실전 계좌 예수금 및 자산 무결성 정상 (실시간 100% 연동)",
       "✅ 손절/익절 가드레일 누락 착오 0건"
